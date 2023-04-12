@@ -1,0 +1,2 @@
+scorbot_gazebo_effort
+-DCATKIN_DEVEL_PREFIX=/home/lovi/proyectos_robotica/scorbot/ED-Scorbot/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/lovi/proyectos_robotica/scorbot/ED-Scorbot/catkin_ws/install -G Unix Makefiles

@@ -1,0 +1,8 @@
+prefix=/home/lovi/proyectos_robotica/scorbot/ED-Scorbot/catkin_ws/install
+
+Name: scorbot_gazebo_effort
+Description: Description of scorbot_gazebo_effort
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
