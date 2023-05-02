@@ -4,13 +4,13 @@
   name="scorbot">
 
   <!-- URDF Materials -->
-  <xacro:include filename="$(find scorbot_gazebo)/urdf/materials.urdf.xacro" />
+  <xacro:include filename="$(find scorbot_gazebo_tf)/urdf/materials.urdf.xacro" />
   <!-- Gazebo macros -->
-  <xacro:include filename="$(find scorbot_gazebo)/urdf/gazebo.urdf.xacro" />
+  <xacro:include filename="$(find scorbot_gazebo_tf)/urdf/gazebo.urdf.xacro" />
 
   <!-- Gazebo elements -->
   <!-- Gazebo Links material -->
-  <xacro:gazebo_dae_link link="base_" />
+  <xacro:gazebo_dae_link link="base_link" />
   <xacro:gazebo_dae_link link="body" />
   <xacro:gazebo_dae_link link="upper_arm" />
   <xacro:gazebo_dae_link link="forearm" />
@@ -55,12 +55,12 @@
     <link name="world"/>
     <joint name="fixed" type="fixed">
       <parent link="world"/>
-      <child link="base_"/>
+      <child link="base_link"/>
     </joint>
   </xacro:if>
 
   <link
-    name="base_">
+    name="base_link">
     <inertial>
       <origin
         xyz="-5.6661E-09 -4.8129E-10 0.049865"
@@ -81,7 +81,7 @@
         rpy="${M_PI/2.0} 0 0" />
       <geometry>
         <mesh
-          filename="package://scorbot_gazebo/meshes/base.dae" />
+          filename="package://scorbot_gazebo_tf/meshes/base.dae" />
       </geometry>
       <material
         name="">
@@ -124,7 +124,7 @@
         rpy="${-M_PI/2.0} 0 0" />
       <geometry>
         <mesh
-          filename="package://scorbot_gazebo/meshes/body.dae" />
+          filename="package://scorbot_gazebo_tf/meshes/body.dae" />
       </geometry>
       <material
         name="">
@@ -146,7 +146,7 @@
       xyz="0 0 0.17"
       rpy="0 0 0" />
     <parent
-      link="base_" />
+      link="base_link" />
     <child
       link="body" />
     <axis
@@ -175,7 +175,7 @@
         rpy="${-M_PI/2.0} 0 0" />
       <geometry>
         <mesh
-          filename="package://scorbot_gazebo/meshes/upper_arm.dae" />
+          filename="package://scorbot_gazebo_tf/meshes/upper_arm.dae" />
       </geometry>
       <material
         name="">
@@ -226,7 +226,7 @@
         rpy="${M_PI/2.0} 0 0" />
       <geometry>
         <mesh
-          filename="package://scorbot_gazebo/meshes/forearm.dae" />
+          filename="package://scorbot_gazebo_tf/meshes/forearm.dae" />
       </geometry>
       <material
         name="">
@@ -277,7 +277,7 @@
         rpy="${-M_PI/2.0} 0 0" />
       <geometry>
         <mesh
-          filename="package://scorbot_gazebo/meshes/flange.dae" />
+          filename="package://scorbot_gazebo_tf/meshes/flange.dae" />
       </geometry>
       <material
         name="">
@@ -344,7 +344,7 @@
         rpy="${-M_PI/2.0} 0 0" />
       <geometry>
         <mesh
-          filename="package://scorbot_gazebo/meshes/gripper_base.dae" />
+          filename="package://scorbot_gazebo_tf/meshes/gripper_base.dae" />
       </geometry>
       <material
         name="">
@@ -387,7 +387,7 @@
         rpy="${-M_PI/2.0} 0 0" />
       <geometry>
         <mesh
-          filename="package://scorbot_gazebo/meshes/gripper_finger.dae" />
+          filename="package://scorbot_gazebo_tf/meshes/gripper_finger.dae" />
       </geometry>
       <material
         name="">
@@ -401,7 +401,7 @@
         rpy="${-M_PI/2.0} 0 0" />
       <geometry>
         <mesh
-          filename="package://scorbot_gazebo/meshes/gripper_finger.dae" />
+          filename="package://scorbot_gazebo_tf/meshes/gripper_finger.dae" />
       </geometry>
     </collision>
   </link>
@@ -441,7 +441,7 @@
         rpy="${M_PI/2.0} 0 0" />
       <geometry>
         <mesh
-          filename="package://scorbot_gazebo/meshes/gripper_finger.dae" />
+          filename="package://scorbot_gazebo_tf/meshes/gripper_finger.dae" />
       </geometry>
       <material
         name="">
@@ -455,7 +455,7 @@
         rpy="${M_PI/2.0} 0 0" />
       <geometry>
         <mesh
-          filename="package://scorbot_gazebo/meshes/gripper_finger.dae" />
+          filename="package://scorbot_gazebo_tf/meshes/gripper_finger.dae" />
       </geometry>
     </collision>
   </link>

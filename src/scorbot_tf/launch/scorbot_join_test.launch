@@ -22,21 +22,25 @@
 
   <group ns="scorbot">
     <!-- Load the URDF into the ROS Parameter Server -->
-    <include file="$(find scorbot_gazebo_tf)/launch/load_robot_description.launch">
+    <param
+        name="robot_description"
+        command="$(find xacro)/xacro '$(find scorbot_gazebo_tf)/urdf/scorbot.urdf.xacro' fixed:='true'" />
+
+    <!-- <include file="$(find scorbot_gazebo_tf)/launch/load_robot_description.launch">
       <arg name="fixed" value="true"/>
-    </include>
+    </include> -->
     <!-- Add URDF in Gazebo  -->
     <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -model Scorbot_ER-VII -param /scorbot/robot_description"/>
 
     <!-- TF from joint states -->
    <!-- Load the urdf into the parameter server. -->
-   <!-- <param name="robot_description" textfile="$(find scorbot_gazebo_tf)/urdf/scorbot.urdf"/> -->
+    <!-- <param name="robot_description" textfile="$(find scorbot_gazebo_tf)/urdf/scorbot.urdf"/> -->
     <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/> 
-    <!-- <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/> -->
-    <!--     <remap from="/robot_description" to="/scorbot/robot_description" />
+    <!-- <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/> 
+        <remap from="/robot_description" to="/scorbot/robot_description" />
         <remap from="/joint_states" to="/scorbot/joint_states" />
         <param name="tf_prefix" value="/scorbot" />
-    </node> -->
+    </node>-->
 
 
     <!-- Controllers-->
