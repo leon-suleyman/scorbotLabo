@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/lovi/proyectos_robotica/scorbot/ED-Scorbot/catkin_ws/devel/setup.sh
+    local-name: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/devel/setup.sh

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lovi/proyectos_robotica/scorbot/ED-Scorbot/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/lovi/proyectos_robotica/scorbot/scorbotLabo/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lovi/proyectos_robotica/scorbot/ED-Scorbot/catkin_ws/build
+CMAKE_BINARY_DIR = /home/lovi/proyectos_robotica/scorbot/scorbotLabo/build
 
 # Utility rule file for tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/tests.dir/clean:
 .PHONY : CMakeFiles/tests.dir/clean
 
 CMakeFiles/tests.dir/depend:
-	cd /home/lovi/proyectos_robotica/scorbot/ED-Scorbot/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lovi/proyectos_robotica/scorbot/ED-Scorbot/catkin_ws/src /home/lovi/proyectos_robotica/scorbot/ED-Scorbot/catkin_ws/src /home/lovi/proyectos_robotica/scorbot/ED-Scorbot/catkin_ws/build /home/lovi/proyectos_robotica/scorbot/ED-Scorbot/catkin_ws/build /home/lovi/proyectos_robotica/scorbot/ED-Scorbot/catkin_ws/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lovi/proyectos_robotica/scorbot/scorbotLabo/src /home/lovi/proyectos_robotica/scorbot/scorbotLabo/src /home/lovi/proyectos_robotica/scorbot/scorbotLabo/build /home/lovi/proyectos_robotica/scorbot/scorbotLabo/build /home/lovi/proyectos_robotica/scorbot/scorbotLabo/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tests.dir/depend
 
