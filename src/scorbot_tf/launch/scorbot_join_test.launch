@@ -56,6 +56,7 @@
         roll_position_controller
         gripper_left_controller
         gripper_right_controller
+      
         --shutdown-timeout 2"/>
     <!-- Use trajectory controllers -->
     <node if="$(arg trajectory_controller)" name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen"

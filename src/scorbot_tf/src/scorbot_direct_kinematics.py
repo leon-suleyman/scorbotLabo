@@ -82,7 +82,7 @@ def direct_kinematics_orientation (theta1, theta2, theta3, theta4):
     c234 = math.cos (theta2 + theta3 + theta4)  
 
     result = []
-    # Yaw: atan (r21/r11) --> yaw = math.atan ((s1*c234)/(c1*c234)) --> yaw = math.atan (s1/s1) --> yaw = theta1
+    # Yaw: atan (r21/r11) --> yaw = math.atan ((s1*c234)/(c1*c234)) --> yaw = math.atan (s1/c1) --> yaw = theta1
     yaw = theta1
     # Pitch: atan (-r31 / sqrt (r32*r32 + r33*r33)) --> pitch = math.atan (s234 / sqrt (cos234*cos234)+0) --> 
     #        pitch = math.atan (s234 / cos234) --> pitch = theta2+theta3+theta4
