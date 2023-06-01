@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/src
+CMAKE_SOURCE_DIR = /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/build
+CMAKE_BINARY_DIR = /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/build
 
 # Utility rule file for download_extra_data.
 
@@ -67,6 +67,6 @@ CMakeFiles/download_extra_data.dir/clean:
 .PHONY : CMakeFiles/download_extra_data.dir/clean
 
 CMakeFiles/download_extra_data.dir/depend:
-	cd /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/src /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/src /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/build /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/build /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/src /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/src /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/build /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/build /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/download_extra_data.dir/depend
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/src
+CMAKE_SOURCE_DIR = /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/build
+CMAKE_BINARY_DIR = /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/build
 
 # Utility rule file for geometry_msgs_generate_messages_eus.
 
@@ -63,10 +63,10 @@ ros-universal-teleop/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build: g
 .PHONY : ros-universal-teleop/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
 
 ros-universal-teleop/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean:
-	cd /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/build/ros-universal-teleop && $(CMAKE_COMMAND) -P CMakeFiles/geometry_msgs_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/build/ros-universal-teleop && $(CMAKE_COMMAND) -P CMakeFiles/geometry_msgs_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : ros-universal-teleop/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
 
 ros-universal-teleop/CMakeFiles/geometry_msgs_generate_messages_eus.dir/depend:
-	cd /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/src /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/src/ros-universal-teleop /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/build /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/build/ros-universal-teleop /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/build/ros-universal-teleop/CMakeFiles/geometry_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/src /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/build /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/build/ros-universal-teleop /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/build/ros-universal-teleop/CMakeFiles/geometry_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ros-universal-teleop/CMakeFiles/geometry_msgs_generate_messages_eus.dir/depend
 

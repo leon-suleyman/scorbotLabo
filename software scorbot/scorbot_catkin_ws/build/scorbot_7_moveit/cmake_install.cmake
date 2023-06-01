@@ -1,8 +1,8 @@
-# Install script for directory: /home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src/scorbot_7_moveit
+# Install script for directory: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src/scorbot_7_moveit
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,25 +38,25 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot_7_moveit/catkin_generated/installspace/scorbot_7_moveit.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot_7_moveit/catkin_generated/installspace/scorbot_7_moveit.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scorbot_7_moveit/cmake" TYPE FILE FILES
-    "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot_7_moveit/catkin_generated/installspace/scorbot_7_moveitConfig.cmake"
-    "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot_7_moveit/catkin_generated/installspace/scorbot_7_moveitConfig-version.cmake"
+    "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot_7_moveit/catkin_generated/installspace/scorbot_7_moveitConfig.cmake"
+    "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot_7_moveit/catkin_generated/installspace/scorbot_7_moveitConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scorbot_7_moveit" TYPE FILE FILES "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src/scorbot_7_moveit/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scorbot_7_moveit" TYPE FILE FILES "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src/scorbot_7_moveit/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scorbot_7_moveit" TYPE DIRECTORY FILES "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src/scorbot_7_moveit/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scorbot_7_moveit" TYPE DIRECTORY FILES "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src/scorbot_7_moveit/launch")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scorbot_7_moveit" TYPE DIRECTORY FILES "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src/scorbot_7_moveit/config")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scorbot_7_moveit" TYPE DIRECTORY FILES "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src/scorbot_7_moveit/config")
 endif()
 

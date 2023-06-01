@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/src/joystick_drivers-main/spacenav_node/src/spacenav_node.cpp" "/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/build/joystick_drivers-main/spacenav_node/CMakeFiles/spacenav_node.dir/src/spacenav_node.cpp.o"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/src/joystick_drivers-main/spacenav_node/src/spacenav_node.cpp" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/build/joystick_drivers-main/spacenav_node/CMakeFiles/spacenav_node.dir/src/spacenav_node.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

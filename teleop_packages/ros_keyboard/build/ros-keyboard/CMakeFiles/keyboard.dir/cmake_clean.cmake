@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/devel/lib/keyboard/keyboard"
-  "/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/devel/lib/keyboard/keyboard.pdb"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/devel/lib/keyboard/keyboard"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/devel/lib/keyboard/keyboard.pdb"
   "CMakeFiles/keyboard.dir/src/keyboard.cpp.o"
   "CMakeFiles/keyboard.dir/src/main.cpp.o"
 )

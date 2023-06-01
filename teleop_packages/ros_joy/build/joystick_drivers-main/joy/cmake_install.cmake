@@ -1,8 +1,8 @@
-# Install script for directory: /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/src/joystick_drivers-main/joy
+# Install script for directory: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/src/joystick_drivers-main/joy
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/install")
+  set(CMAKE_INSTALL_PREFIX "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,18 +38,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/build/joystick_drivers-main/joy/catkin_generated/installspace/joy.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/build/joystick_drivers-main/joy/catkin_generated/installspace/joy.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joy/cmake" TYPE FILE FILES
-    "/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/build/joystick_drivers-main/joy/catkin_generated/installspace/joyConfig.cmake"
-    "/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/build/joystick_drivers-main/joy/catkin_generated/installspace/joyConfig-version.cmake"
+    "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/build/joystick_drivers-main/joy/catkin_generated/installspace/joyConfig.cmake"
+    "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/build/joystick_drivers-main/joy/catkin_generated/installspace/joyConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joy" TYPE FILE FILES "/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/src/joystick_drivers-main/joy/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joy" TYPE FILE FILES "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/src/joystick_drivers-main/joy/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -59,7 +59,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/joy/joy_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/joy" TYPE EXECUTABLE FILES "/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/devel/lib/joy/joy_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/joy" TYPE EXECUTABLE FILES "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/devel/lib/joy/joy_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/joy/joy_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/joy/joy_node")
     file(RPATH_CHANGE
@@ -74,10 +74,10 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joy" TYPE DIRECTORY FILES
-    "/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/src/joystick_drivers-main/joy/migration_rules"
-    "/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/src/joystick_drivers-main/joy/scripts"
-    "/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/src/joystick_drivers-main/joy/config"
-    "/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/src/joystick_drivers-main/joy/launch"
+    "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/src/joystick_drivers-main/joy/migration_rules"
+    "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/src/joystick_drivers-main/joy/scripts"
+    "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/src/joystick_drivers-main/joy/config"
+    "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/src/joystick_drivers-main/joy/launch"
     USE_SOURCE_PERMISSIONS)
 endif()
 

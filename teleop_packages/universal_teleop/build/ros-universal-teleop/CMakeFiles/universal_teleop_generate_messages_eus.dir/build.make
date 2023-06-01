@@ -43,41 +43,41 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/src
+CMAKE_SOURCE_DIR = /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/build
+CMAKE_BINARY_DIR = /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/build
 
 # Utility rule file for universal_teleop_generate_messages_eus.
 
 # Include the progress variables for this target.
 include ros-universal-teleop/CMakeFiles/universal_teleop_generate_messages_eus.dir/progress.make
 
-ros-universal-teleop/CMakeFiles/universal_teleop_generate_messages_eus: /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/msg/Event.l
-ros-universal-teleop/CMakeFiles/universal_teleop_generate_messages_eus: /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/msg/Control.l
-ros-universal-teleop/CMakeFiles/universal_teleop_generate_messages_eus: /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/manifest.l
+ros-universal-teleop/CMakeFiles/universal_teleop_generate_messages_eus: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/msg/Event.l
+ros-universal-teleop/CMakeFiles/universal_teleop_generate_messages_eus: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/msg/Control.l
+ros-universal-teleop/CMakeFiles/universal_teleop_generate_messages_eus: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/manifest.l
 
 
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/msg/Event.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/msg/Event.l: /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/src/ros-universal-teleop/msg/Event.msg
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/msg/Event.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from universal_teleop/Event.msg"
-	cd /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/build/ros-universal-teleop && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/src/ros-universal-teleop/msg/Event.msg -Iuniversal_teleop:/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/src/ros-universal-teleop/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p universal_teleop -o /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/msg
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/msg/Event.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/msg/Event.l: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/msg/Event.msg
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/msg/Event.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from universal_teleop/Event.msg"
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/build/ros-universal-teleop && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/msg/Event.msg -Iuniversal_teleop:/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p universal_teleop -o /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/msg
 
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/msg/Control.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/msg/Control.l: /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/src/ros-universal-teleop/msg/Control.msg
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/msg/Control.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from universal_teleop/Control.msg"
-	cd /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/build/ros-universal-teleop && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/src/ros-universal-teleop/msg/Control.msg -Iuniversal_teleop:/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/src/ros-universal-teleop/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p universal_teleop -o /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/msg
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/msg/Control.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/msg/Control.l: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/msg/Control.msg
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/msg/Control.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from universal_teleop/Control.msg"
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/build/ros-universal-teleop && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/msg/Control.msg -Iuniversal_teleop:/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p universal_teleop -o /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/msg
 
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/manifest.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp manifest code for universal_teleop"
-	cd /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/build/ros-universal-teleop && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop universal_teleop std_msgs
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/manifest.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp manifest code for universal_teleop"
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/build/ros-universal-teleop && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop universal_teleop std_msgs
 
 universal_teleop_generate_messages_eus: ros-universal-teleop/CMakeFiles/universal_teleop_generate_messages_eus
-universal_teleop_generate_messages_eus: /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/msg/Event.l
-universal_teleop_generate_messages_eus: /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/msg/Control.l
-universal_teleop_generate_messages_eus: /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/manifest.l
+universal_teleop_generate_messages_eus: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/msg/Event.l
+universal_teleop_generate_messages_eus: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/msg/Control.l
+universal_teleop_generate_messages_eus: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/manifest.l
 universal_teleop_generate_messages_eus: ros-universal-teleop/CMakeFiles/universal_teleop_generate_messages_eus.dir/build.make
 
 .PHONY : universal_teleop_generate_messages_eus
@@ -88,10 +88,10 @@ ros-universal-teleop/CMakeFiles/universal_teleop_generate_messages_eus.dir/build
 .PHONY : ros-universal-teleop/CMakeFiles/universal_teleop_generate_messages_eus.dir/build
 
 ros-universal-teleop/CMakeFiles/universal_teleop_generate_messages_eus.dir/clean:
-	cd /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/build/ros-universal-teleop && $(CMAKE_COMMAND) -P CMakeFiles/universal_teleop_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/build/ros-universal-teleop && $(CMAKE_COMMAND) -P CMakeFiles/universal_teleop_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : ros-universal-teleop/CMakeFiles/universal_teleop_generate_messages_eus.dir/clean
 
 ros-universal-teleop/CMakeFiles/universal_teleop_generate_messages_eus.dir/depend:
-	cd /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/src /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/src/ros-universal-teleop /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/build /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/build/ros-universal-teleop /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/build/ros-universal-teleop/CMakeFiles/universal_teleop_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/src /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/build /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/build/ros-universal-teleop /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/build/ros-universal-teleop/CMakeFiles/universal_teleop_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ros-universal-teleop/CMakeFiles/universal_teleop_generate_messages_eus.dir/depend
 

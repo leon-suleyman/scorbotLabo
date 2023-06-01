@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src"
+CMAKE_SOURCE_DIR = "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build"
+CMAKE_BINARY_DIR = "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build"
 
 # Utility rule file for scorbot_gennodejs.
 
@@ -63,10 +63,10 @@ scorbot/CMakeFiles/scorbot_gennodejs.dir/build: scorbot_gennodejs
 .PHONY : scorbot/CMakeFiles/scorbot_gennodejs.dir/build
 
 scorbot/CMakeFiles/scorbot_gennodejs.dir/clean:
-	cd "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot" && $(CMAKE_COMMAND) -P CMakeFiles/scorbot_gennodejs.dir/cmake_clean.cmake
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot" && $(CMAKE_COMMAND) -P CMakeFiles/scorbot_gennodejs.dir/cmake_clean.cmake
 .PHONY : scorbot/CMakeFiles/scorbot_gennodejs.dir/clean
 
 scorbot/CMakeFiles/scorbot_gennodejs.dir/depend:
-	cd "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src/scorbot" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot/CMakeFiles/scorbot_gennodejs.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src/scorbot" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot/CMakeFiles/scorbot_gennodejs.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : scorbot/CMakeFiles/scorbot_gennodejs.dir/depend
 

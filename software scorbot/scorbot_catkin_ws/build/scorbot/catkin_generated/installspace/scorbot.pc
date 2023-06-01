@@ -1,4 +1,4 @@
-prefix=/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/install
+prefix=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/install
 
 Name: scorbot
 Description: Description of scorbot

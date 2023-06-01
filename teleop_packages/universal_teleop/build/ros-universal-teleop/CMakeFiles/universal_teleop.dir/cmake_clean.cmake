@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/lib/universal_teleop/universal_teleop"
-  "/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/lib/universal_teleop/universal_teleop.pdb"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/lib/universal_teleop/universal_teleop"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/lib/universal_teleop/universal_teleop.pdb"
   "CMakeFiles/universal_teleop.dir/src/main.cpp.o"
   "CMakeFiles/universal_teleop.dir/src/teleop.cpp.o"
 )

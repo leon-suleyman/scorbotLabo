@@ -1,8 +1,8 @@
-prefix=/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel
+prefix=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel
 
 Name: universal_teleop
 Description: Description of universal_teleop
 Version: 0.1.0
-Cflags: -I/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/include
+Cflags: -I/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/include
 Libs: -L${prefix}/lib 
 Requires: roscpp geometry_msgs nav_msgs std_msgs message_runtime

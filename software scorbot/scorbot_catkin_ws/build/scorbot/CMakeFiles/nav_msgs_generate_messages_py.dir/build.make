@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src"
+CMAKE_SOURCE_DIR = "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build"
+CMAKE_BINARY_DIR = "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build"
 
 # Utility rule file for nav_msgs_generate_messages_py.
 
@@ -63,10 +63,10 @@ scorbot/CMakeFiles/nav_msgs_generate_messages_py.dir/build: nav_msgs_generate_me
 .PHONY : scorbot/CMakeFiles/nav_msgs_generate_messages_py.dir/build
 
 scorbot/CMakeFiles/nav_msgs_generate_messages_py.dir/clean:
-	cd "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot" && $(CMAKE_COMMAND) -P CMakeFiles/nav_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot" && $(CMAKE_COMMAND) -P CMakeFiles/nav_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : scorbot/CMakeFiles/nav_msgs_generate_messages_py.dir/clean
 
 scorbot/CMakeFiles/nav_msgs_generate_messages_py.dir/depend:
-	cd "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src/scorbot" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot/CMakeFiles/nav_msgs_generate_messages_py.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src/scorbot" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot/CMakeFiles/nav_msgs_generate_messages_py.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : scorbot/CMakeFiles/nav_msgs_generate_messages_py.dir/depend
 

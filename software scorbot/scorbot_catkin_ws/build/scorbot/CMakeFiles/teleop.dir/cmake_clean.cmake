@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/devel/lib/scorbot/teleop"
-  "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/devel/lib/scorbot/teleop.pdb"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/devel/lib/scorbot/teleop"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/devel/lib/scorbot/teleop.pdb"
   "CMakeFiles/teleop.dir/src/teleop.cpp.o"
   "CMakeFiles/teleop.dir/src/teleop_node.cpp.o"
 )

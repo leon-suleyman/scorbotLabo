@@ -1,8 +1,0 @@
-prefix=/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/devel
-
-Name: seguidor_de_poses
-Description: Description of seguidor_de_poses
-Version: 0.1.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: roscpp control_msgs

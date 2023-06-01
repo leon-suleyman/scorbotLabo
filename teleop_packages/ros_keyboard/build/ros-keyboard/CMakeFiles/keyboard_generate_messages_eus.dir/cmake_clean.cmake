@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/devel/share/roseus/ros/keyboard/manifest.l"
-  "/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/devel/share/roseus/ros/keyboard/msg/Key.l"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/devel/share/roseus/ros/keyboard/manifest.l"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/devel/share/roseus/ros/keyboard/msg/Key.l"
   "CMakeFiles/keyboard_generate_messages_eus"
 )
 

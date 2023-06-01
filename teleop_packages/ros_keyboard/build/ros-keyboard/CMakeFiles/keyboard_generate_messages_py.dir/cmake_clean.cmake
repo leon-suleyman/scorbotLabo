@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/devel/lib/python3/dist-packages/keyboard/msg/_Key.py"
-  "/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/devel/lib/python3/dist-packages/keyboard/msg/__init__.py"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/devel/lib/python3/dist-packages/keyboard/msg/_Key.py"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/devel/lib/python3/dist-packages/keyboard/msg/__init__.py"
   "CMakeFiles/keyboard_generate_messages_py"
 )
 

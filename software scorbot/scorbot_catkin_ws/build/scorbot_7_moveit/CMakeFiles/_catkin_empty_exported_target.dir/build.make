@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src"
+CMAKE_SOURCE_DIR = "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build"
+CMAKE_BINARY_DIR = "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build"
 
 # Utility rule file for _catkin_empty_exported_target.
 
@@ -63,10 +63,10 @@ scorbot_7_moveit/CMakeFiles/_catkin_empty_exported_target.dir/build: _catkin_emp
 .PHONY : scorbot_7_moveit/CMakeFiles/_catkin_empty_exported_target.dir/build
 
 scorbot_7_moveit/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	cd "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot_7_moveit" && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot_7_moveit" && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
 .PHONY : scorbot_7_moveit/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 scorbot_7_moveit/CMakeFiles/_catkin_empty_exported_target.dir/depend:
-	cd "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src/scorbot_7_moveit" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot_7_moveit" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot_7_moveit/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src/scorbot_7_moveit" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot_7_moveit" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot_7_moveit/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : scorbot_7_moveit/CMakeFiles/_catkin_empty_exported_target.dir/depend
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/src
+CMAKE_SOURCE_DIR = /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/build
+CMAKE_BINARY_DIR = /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/build
 
 # Utility rule file for clean_test_results_joy.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy
 include joystick_drivers-main/joy/CMakeFiles/clean_test_results_joy.dir/progress.make
 
 joystick_drivers-main/joy/CMakeFiles/clean_test_results_joy:
-	cd /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/build/joystick_drivers-main/joy && /usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/build/test_results/joy
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/build/joystick_drivers-main/joy && /usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/build/test_results/joy
 
 clean_test_results_joy: joystick_drivers-main/joy/CMakeFiles/clean_test_results_joy
 clean_test_results_joy: joystick_drivers-main/joy/CMakeFiles/clean_test_results_joy.dir/build.make
@@ -67,10 +67,10 @@ joystick_drivers-main/joy/CMakeFiles/clean_test_results_joy.dir/build: clean_tes
 .PHONY : joystick_drivers-main/joy/CMakeFiles/clean_test_results_joy.dir/build
 
 joystick_drivers-main/joy/CMakeFiles/clean_test_results_joy.dir/clean:
-	cd /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/build/joystick_drivers-main/joy && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_joy.dir/cmake_clean.cmake
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/build/joystick_drivers-main/joy && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_joy.dir/cmake_clean.cmake
 .PHONY : joystick_drivers-main/joy/CMakeFiles/clean_test_results_joy.dir/clean
 
 joystick_drivers-main/joy/CMakeFiles/clean_test_results_joy.dir/depend:
-	cd /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/src /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/src/joystick_drivers-main/joy /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/build /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/build/joystick_drivers-main/joy /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/build/joystick_drivers-main/joy/CMakeFiles/clean_test_results_joy.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/src /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/src/joystick_drivers-main/joy /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/build /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/build/joystick_drivers-main/joy /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/build/joystick_drivers-main/joy/CMakeFiles/clean_test_results_joy.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : joystick_drivers-main/joy/CMakeFiles/clean_test_results_joy.dir/depend
 

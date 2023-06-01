@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/devel/include/keyboard/Key.h
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/devel/include/keyboard/Key.h
 string
 -
 vector
@@ -24,23 +24,23 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/src/ros-keyboard/src/keyboard.cpp
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/keyboard.cpp
 keyboard.h
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/src/ros-keyboard/src/keyboard.h
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/keyboard.h
 
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/src/ros-keyboard/src/keyboard.h
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/keyboard.h
 keyboard/Key.h
 -
 SDL.h
 -
 
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/src/ros-keyboard/src/main.cpp
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/main.cpp
 ros/ros.h
 -
 iostream
 -
 keyboard.h
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/src/ros-keyboard/src/keyboard.h
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/keyboard.h
 
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h

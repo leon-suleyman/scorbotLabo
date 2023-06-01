@@ -1,2 +1,2 @@
 ros-universal-teleop
--DCATKIN_DEVEL_PREFIX=/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel -DCMAKE_INSTALL_PREFIX=/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel -DCMAKE_INSTALL_PREFIX=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/install -G Unix Makefiles

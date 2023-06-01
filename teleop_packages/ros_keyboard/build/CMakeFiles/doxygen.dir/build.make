@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/src
+CMAKE_SOURCE_DIR = /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/build
+CMAKE_BINARY_DIR = /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/build
 
 # Utility rule file for doxygen.
 
@@ -67,6 +67,6 @@ CMakeFiles/doxygen.dir/clean:
 .PHONY : CMakeFiles/doxygen.dir/clean
 
 CMakeFiles/doxygen.dir/depend:
-	cd /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/src /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/src /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/build /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/build /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/src /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/src /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/build /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/build /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doxygen.dir/depend
 

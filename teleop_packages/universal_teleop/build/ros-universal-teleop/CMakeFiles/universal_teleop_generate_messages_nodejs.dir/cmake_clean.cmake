@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/share/gennodejs/ros/universal_teleop/msg/Control.js"
-  "/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/share/gennodejs/ros/universal_teleop/msg/Event.js"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/share/gennodejs/ros/universal_teleop/msg/Control.js"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/share/gennodejs/ros/universal_teleop/msg/Event.js"
   "CMakeFiles/universal_teleop_generate_messages_nodejs"
 )
 

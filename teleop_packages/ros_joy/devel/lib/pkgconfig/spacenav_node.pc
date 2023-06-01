@@ -1,4 +1,4 @@
-prefix=/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/devel
+prefix=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/devel
 
 Name: spacenav_node
 Description: Description of spacenav_node

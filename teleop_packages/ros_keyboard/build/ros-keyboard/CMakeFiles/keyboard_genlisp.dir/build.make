@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/src
+CMAKE_SOURCE_DIR = /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/build
+CMAKE_BINARY_DIR = /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/build
 
 # Utility rule file for keyboard_genlisp.
 
@@ -63,10 +63,10 @@ ros-keyboard/CMakeFiles/keyboard_genlisp.dir/build: keyboard_genlisp
 .PHONY : ros-keyboard/CMakeFiles/keyboard_genlisp.dir/build
 
 ros-keyboard/CMakeFiles/keyboard_genlisp.dir/clean:
-	cd /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/build/ros-keyboard && $(CMAKE_COMMAND) -P CMakeFiles/keyboard_genlisp.dir/cmake_clean.cmake
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/build/ros-keyboard && $(CMAKE_COMMAND) -P CMakeFiles/keyboard_genlisp.dir/cmake_clean.cmake
 .PHONY : ros-keyboard/CMakeFiles/keyboard_genlisp.dir/clean
 
 ros-keyboard/CMakeFiles/keyboard_genlisp.dir/depend:
-	cd /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/src /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/src/ros-keyboard /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/build /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/build/ros-keyboard /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/build/ros-keyboard/CMakeFiles/keyboard_genlisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/src /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/build /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/build/ros-keyboard /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/build/ros-keyboard/CMakeFiles/keyboard_genlisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ros-keyboard/CMakeFiles/keyboard_genlisp.dir/depend
 

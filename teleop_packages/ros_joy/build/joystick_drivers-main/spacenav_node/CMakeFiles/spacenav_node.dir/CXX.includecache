@@ -6,23 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/src/joystick_drivers-main/spacenav_node/src/spacenav_node.cpp
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/src/joystick_drivers-main/spacenav_node/src/spacenav_node.cpp
 cstdio
 -
 vector
 -
 ros/node_handle.h
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/src/joystick_drivers-main/spacenav_node/src/ros/node_handle.h
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/src/joystick_drivers-main/spacenav_node/src/ros/node_handle.h
 ros/param.h
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/src/joystick_drivers-main/spacenav_node/src/ros/param.h
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/src/joystick_drivers-main/spacenav_node/src/ros/param.h
 spnav.h
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/src/joystick_drivers-main/spacenav_node/src/spnav.h
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/src/joystick_drivers-main/spacenav_node/src/spnav.h
 geometry_msgs/Vector3.h
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/src/joystick_drivers-main/spacenav_node/src/geometry_msgs/Vector3.h
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/src/joystick_drivers-main/spacenav_node/src/geometry_msgs/Vector3.h
 geometry_msgs/Twist.h
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/src/joystick_drivers-main/spacenav_node/src/geometry_msgs/Twist.h
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/src/joystick_drivers-main/spacenav_node/src/geometry_msgs/Twist.h
 sensor_msgs/Joy.h
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/src/joystick_drivers-main/spacenav_node/src/sensor_msgs/Joy.h
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/src/joystick_drivers-main/spacenav_node/src/sensor_msgs/Joy.h
 
 /opt/ros/noetic/include/geometry_msgs/Twist.h
 string

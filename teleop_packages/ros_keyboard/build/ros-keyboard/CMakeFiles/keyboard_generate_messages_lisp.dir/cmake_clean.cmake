@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/devel/share/common-lisp/ros/keyboard/msg/Key.lisp"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/devel/share/common-lisp/ros/keyboard/msg/Key.lisp"
   "CMakeFiles/keyboard_generate_messages_lisp"
 )
 

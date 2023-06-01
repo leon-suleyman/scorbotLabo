@@ -67,14 +67,14 @@ set(universal_teleop_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(universal_teleop_SOURCE_PREFIX /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/src/ros-universal-teleop)
-  set(universal_teleop_DEVEL_PREFIX /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel)
+  set(universal_teleop_SOURCE_PREFIX /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop)
+  set(universal_teleop_DEVEL_PREFIX /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel)
   set(universal_teleop_INSTALL_PREFIX "")
   set(universal_teleop_PREFIX ${universal_teleop_DEVEL_PREFIX})
 else()
   set(universal_teleop_SOURCE_PREFIX "")
   set(universal_teleop_DEVEL_PREFIX "")
-  set(universal_teleop_INSTALL_PREFIX /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/install)
+  set(universal_teleop_INSTALL_PREFIX /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/install)
   set(universal_teleop_PREFIX ${universal_teleop_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(universal_teleop_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/include " STREQUAL " ")
+if(NOT "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/include " STREQUAL " ")
   set(universal_teleop_INCLUDE_DIRS "")
-  set(_include_dirs "/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/include")
+  set(_include_dirs "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/d
         message(FATAL_ERROR "Project 'universal_teleop' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'universal_teleop' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/src/ros-universal-teleop/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'universal_teleop' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/${idir}'.  ${_report}")
     endif()
     _list_append_unique(universal_teleop_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/lib;/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/lib;/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/devel/lib;/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

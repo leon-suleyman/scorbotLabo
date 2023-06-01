@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/src
+CMAKE_SOURCE_DIR = /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/build
+CMAKE_BINARY_DIR = /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/build
 
 # Utility rule file for std_msgs_generate_messages_nodejs.
 
@@ -63,10 +63,10 @@ joystick_drivers-main/joy/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : joystick_drivers-main/joy/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 
 joystick_drivers-main/joy/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean:
-	cd /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/build/joystick_drivers-main/joy && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/build/joystick_drivers-main/joy && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : joystick_drivers-main/joy/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 
 joystick_drivers-main/joy/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend:
-	cd /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/src /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/src/joystick_drivers-main/joy /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/build /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/build/joystick_drivers-main/joy /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/build/joystick_drivers-main/joy/CMakeFiles/std_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/src /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/src/joystick_drivers-main/joy /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/build /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/build/joystick_drivers-main/joy /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/build/joystick_drivers-main/joy/CMakeFiles/std_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : joystick_drivers-main/joy/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
 

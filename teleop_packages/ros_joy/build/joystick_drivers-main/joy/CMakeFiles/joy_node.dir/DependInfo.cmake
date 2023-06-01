@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/src/joystick_drivers-main/joy/src/joy_node.cpp" "/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/build/joystick_drivers-main/joy/CMakeFiles/joy_node.dir/src/joy_node.cpp.o"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/src/joystick_drivers-main/joy/src/joy_node.cpp" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/build/joystick_drivers-main/joy/CMakeFiles/joy_node.dir/src/joy_node.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,7 +17,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/src/joystick_drivers-main/joy/msg/cpp"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/src/joystick_drivers-main/joy/msg/cpp"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )

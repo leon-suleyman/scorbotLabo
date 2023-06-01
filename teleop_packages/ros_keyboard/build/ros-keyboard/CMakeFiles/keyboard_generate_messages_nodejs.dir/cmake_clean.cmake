@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/devel/share/gennodejs/ros/keyboard/msg/Key.js"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/devel/share/gennodejs/ros/keyboard/msg/Key.js"
   "CMakeFiles/keyboard_generate_messages_nodejs"
 )
 

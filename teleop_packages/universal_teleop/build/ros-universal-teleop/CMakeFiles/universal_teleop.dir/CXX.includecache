@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/devel/include/keyboard/Key.h
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/devel/include/keyboard/Key.h
 string
 -
 vector
@@ -24,7 +24,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/include/universal_teleop/Control.h
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/include/universal_teleop/Control.h
 string
 -
 vector
@@ -42,7 +42,7 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/include/universal_teleop/Event.h
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/include/universal_teleop/Event.h
 string
 -
 vector
@@ -60,13 +60,13 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/src/ros-universal-teleop/src/main.cpp
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/main.cpp
 ros/ros.h
 -
 teleop.h
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h
 
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp
 geometry_msgs/Twist.h
 -
 std_msgs/Empty.h
@@ -74,11 +74,11 @@ std_msgs/Empty.h
 iostream
 -
 universal_teleop/Control.h
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/src/ros-universal-teleop/src/universal_teleop/Control.h
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/universal_teleop/Control.h
 teleop.h
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h
 
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h
 ros/ros.h
 -
 sensor_msgs/Joy.h
@@ -86,7 +86,7 @@ sensor_msgs/Joy.h
 keyboard/Key.h
 -
 universal_teleop/Event.h
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/src/ros-universal-teleop/src/universal_teleop/Event.h
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/universal_teleop/Event.h
 
 /opt/ros/noetic/include/geometry_msgs/Twist.h
 string

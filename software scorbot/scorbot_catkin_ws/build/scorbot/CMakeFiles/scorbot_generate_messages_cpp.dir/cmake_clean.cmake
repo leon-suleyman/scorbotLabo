@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/devel/include/scorbot/JointTrajectory.h"
-  "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/devel/include/scorbot/JointVelocities.h"
-  "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/devel/include/scorbot/TrajectoryPoint.h"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/devel/include/scorbot/JointTrajectory.h"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/devel/include/scorbot/JointVelocities.h"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/devel/include/scorbot/TrajectoryPoint.h"
   "CMakeFiles/scorbot_generate_messages_cpp"
 )
 

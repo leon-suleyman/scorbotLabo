@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/include/universal_teleop/Control.h"
-  "/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/include/universal_teleop/Event.h"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/include/universal_teleop/Control.h"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/include/universal_teleop/Event.h"
   "CMakeFiles/universal_teleop_generate_messages_cpp"
 )
 

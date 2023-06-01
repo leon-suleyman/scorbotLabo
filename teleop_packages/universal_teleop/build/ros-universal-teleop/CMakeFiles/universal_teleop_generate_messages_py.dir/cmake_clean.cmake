@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/lib/python3/dist-packages/universal_teleop/msg/_Control.py"
-  "/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/lib/python3/dist-packages/universal_teleop/msg/_Event.py"
-  "/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/lib/python3/dist-packages/universal_teleop/msg/__init__.py"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/lib/python3/dist-packages/universal_teleop/msg/_Control.py"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/lib/python3/dist-packages/universal_teleop/msg/_Event.py"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/lib/python3/dist-packages/universal_teleop/msg/__init__.py"
   "CMakeFiles/universal_teleop_generate_messages_py"
 )
 

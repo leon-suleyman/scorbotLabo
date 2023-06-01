@@ -1,4 +1,4 @@
-prefix=/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/install
+prefix=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/install
 
 Name: keyboard
 Description: Description of keyboard

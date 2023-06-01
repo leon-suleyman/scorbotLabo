@@ -1,4 +1,4 @@
-prefix=/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/install
+prefix=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/install
 
 Name: joy
 Description: Description of joy

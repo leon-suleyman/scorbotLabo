@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/devel/lib/joy/joy_node"
-  "/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/devel/lib/joy/joy_node.pdb"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/devel/lib/joy/joy_node"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/devel/lib/joy/joy_node.pdb"
   "CMakeFiles/joy_node.dir/src/joy_node.cpp.o"
 )
 

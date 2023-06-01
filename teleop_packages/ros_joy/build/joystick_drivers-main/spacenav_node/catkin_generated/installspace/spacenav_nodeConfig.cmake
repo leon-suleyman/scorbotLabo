@@ -67,14 +67,14 @@ set(spacenav_node_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(spacenav_node_SOURCE_PREFIX /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/src/joystick_drivers-main/spacenav_node)
-  set(spacenav_node_DEVEL_PREFIX /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/devel)
+  set(spacenav_node_SOURCE_PREFIX /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/src/joystick_drivers-main/spacenav_node)
+  set(spacenav_node_DEVEL_PREFIX /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/devel)
   set(spacenav_node_INSTALL_PREFIX "")
   set(spacenav_node_PREFIX ${spacenav_node_DEVEL_PREFIX})
 else()
   set(spacenav_node_SOURCE_PREFIX "")
   set(spacenav_node_DEVEL_PREFIX "")
-  set(spacenav_node_INSTALL_PREFIX /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/install)
+  set(spacenav_node_INSTALL_PREFIX /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/install)
   set(spacenav_node_PREFIX ${spacenav_node_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/install/lib;/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/lib;/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

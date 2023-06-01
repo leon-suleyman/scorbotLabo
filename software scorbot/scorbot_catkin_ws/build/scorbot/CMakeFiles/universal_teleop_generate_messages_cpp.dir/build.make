@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src"
+CMAKE_SOURCE_DIR = "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build"
+CMAKE_BINARY_DIR = "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build"
 
 # Utility rule file for universal_teleop_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ scorbot/CMakeFiles/universal_teleop_generate_messages_cpp.dir/build: universal_t
 .PHONY : scorbot/CMakeFiles/universal_teleop_generate_messages_cpp.dir/build
 
 scorbot/CMakeFiles/universal_teleop_generate_messages_cpp.dir/clean:
-	cd "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot" && $(CMAKE_COMMAND) -P CMakeFiles/universal_teleop_generate_messages_cpp.dir/cmake_clean.cmake
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot" && $(CMAKE_COMMAND) -P CMakeFiles/universal_teleop_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : scorbot/CMakeFiles/universal_teleop_generate_messages_cpp.dir/clean
 
 scorbot/CMakeFiles/universal_teleop_generate_messages_cpp.dir/depend:
-	cd "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src/scorbot" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot/CMakeFiles/universal_teleop_generate_messages_cpp.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src/scorbot" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot/CMakeFiles/universal_teleop_generate_messages_cpp.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : scorbot/CMakeFiles/universal_teleop_generate_messages_cpp.dir/depend
 

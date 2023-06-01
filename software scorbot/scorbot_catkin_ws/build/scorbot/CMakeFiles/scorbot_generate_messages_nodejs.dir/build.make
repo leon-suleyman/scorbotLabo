@@ -43,42 +43,42 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src"
+CMAKE_SOURCE_DIR = "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build"
+CMAKE_BINARY_DIR = "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build"
 
 # Utility rule file for scorbot_generate_messages_nodejs.
 
 # Include the progress variables for this target.
 include scorbot/CMakeFiles/scorbot_generate_messages_nodejs.dir/progress.make
 
-scorbot/CMakeFiles/scorbot_generate_messages_nodejs: /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/share/gennodejs/ros/scorbot/msg/JointVelocities.js
-scorbot/CMakeFiles/scorbot_generate_messages_nodejs: /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/share/gennodejs/ros/scorbot/msg/TrajectoryPoint.js
-scorbot/CMakeFiles/scorbot_generate_messages_nodejs: /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/share/gennodejs/ros/scorbot/msg/JointTrajectory.js
+scorbot/CMakeFiles/scorbot_generate_messages_nodejs: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/share/gennodejs/ros/scorbot/msg/JointVelocities.js
+scorbot/CMakeFiles/scorbot_generate_messages_nodejs: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/share/gennodejs/ros/scorbot/msg/TrajectoryPoint.js
+scorbot/CMakeFiles/scorbot_generate_messages_nodejs: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/share/gennodejs/ros/scorbot/msg/JointTrajectory.js
 
 
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/share/gennodejs/ros/scorbot/msg/JointVelocities.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/share/gennodejs/ros/scorbot/msg/JointVelocities.js: /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/src/scorbot/msg/JointVelocities.msg
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/share/gennodejs/ros/scorbot/msg/JointVelocities.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from scorbot/JointVelocities.msg"
-	cd "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot" && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/src/scorbot/msg/JointVelocities.msg -Iscorbot:/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/src/scorbot/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p scorbot -o /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/share/gennodejs/ros/scorbot/msg
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/share/gennodejs/ros/scorbot/msg/JointVelocities.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/share/gennodejs/ros/scorbot/msg/JointVelocities.js: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/src/scorbot/msg/JointVelocities.msg
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/share/gennodejs/ros/scorbot/msg/JointVelocities.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from scorbot/JointVelocities.msg"
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot" && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/src/scorbot/msg/JointVelocities.msg -Iscorbot:/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/src/scorbot/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p scorbot -o /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/share/gennodejs/ros/scorbot/msg
 
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/share/gennodejs/ros/scorbot/msg/TrajectoryPoint.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/share/gennodejs/ros/scorbot/msg/TrajectoryPoint.js: /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/src/scorbot/msg/TrajectoryPoint.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from scorbot/TrajectoryPoint.msg"
-	cd "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot" && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/src/scorbot/msg/TrajectoryPoint.msg -Iscorbot:/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/src/scorbot/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p scorbot -o /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/share/gennodejs/ros/scorbot/msg
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/share/gennodejs/ros/scorbot/msg/TrajectoryPoint.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/share/gennodejs/ros/scorbot/msg/TrajectoryPoint.js: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/src/scorbot/msg/TrajectoryPoint.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from scorbot/TrajectoryPoint.msg"
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot" && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/src/scorbot/msg/TrajectoryPoint.msg -Iscorbot:/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/src/scorbot/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p scorbot -o /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/share/gennodejs/ros/scorbot/msg
 
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/share/gennodejs/ros/scorbot/msg/JointTrajectory.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/share/gennodejs/ros/scorbot/msg/JointTrajectory.js: /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/src/scorbot/msg/JointTrajectory.msg
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/share/gennodejs/ros/scorbot/msg/JointTrajectory.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from scorbot/JointTrajectory.msg"
-	cd "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot" && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/src/scorbot/msg/JointTrajectory.msg -Iscorbot:/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/src/scorbot/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p scorbot -o /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/share/gennodejs/ros/scorbot/msg
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/share/gennodejs/ros/scorbot/msg/JointTrajectory.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/share/gennodejs/ros/scorbot/msg/JointTrajectory.js: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/src/scorbot/msg/JointTrajectory.msg
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/share/gennodejs/ros/scorbot/msg/JointTrajectory.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from scorbot/JointTrajectory.msg"
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot" && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/src/scorbot/msg/JointTrajectory.msg -Iscorbot:/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/src/scorbot/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p scorbot -o /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/share/gennodejs/ros/scorbot/msg
 
 scorbot_generate_messages_nodejs: scorbot/CMakeFiles/scorbot_generate_messages_nodejs
-scorbot_generate_messages_nodejs: /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/share/gennodejs/ros/scorbot/msg/JointVelocities.js
-scorbot_generate_messages_nodejs: /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/share/gennodejs/ros/scorbot/msg/TrajectoryPoint.js
-scorbot_generate_messages_nodejs: /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/share/gennodejs/ros/scorbot/msg/JointTrajectory.js
+scorbot_generate_messages_nodejs: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/share/gennodejs/ros/scorbot/msg/JointVelocities.js
+scorbot_generate_messages_nodejs: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/share/gennodejs/ros/scorbot/msg/TrajectoryPoint.js
+scorbot_generate_messages_nodejs: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/share/gennodejs/ros/scorbot/msg/JointTrajectory.js
 scorbot_generate_messages_nodejs: scorbot/CMakeFiles/scorbot_generate_messages_nodejs.dir/build.make
 
 .PHONY : scorbot_generate_messages_nodejs
@@ -89,10 +89,10 @@ scorbot/CMakeFiles/scorbot_generate_messages_nodejs.dir/build: scorbot_generate_
 .PHONY : scorbot/CMakeFiles/scorbot_generate_messages_nodejs.dir/build
 
 scorbot/CMakeFiles/scorbot_generate_messages_nodejs.dir/clean:
-	cd "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot" && $(CMAKE_COMMAND) -P CMakeFiles/scorbot_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot" && $(CMAKE_COMMAND) -P CMakeFiles/scorbot_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : scorbot/CMakeFiles/scorbot_generate_messages_nodejs.dir/clean
 
 scorbot/CMakeFiles/scorbot_generate_messages_nodejs.dir/depend:
-	cd "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src/scorbot" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot/CMakeFiles/scorbot_generate_messages_nodejs.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src/scorbot" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot/CMakeFiles/scorbot_generate_messages_nodejs.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : scorbot/CMakeFiles/scorbot_generate_messages_nodejs.dir/depend
 

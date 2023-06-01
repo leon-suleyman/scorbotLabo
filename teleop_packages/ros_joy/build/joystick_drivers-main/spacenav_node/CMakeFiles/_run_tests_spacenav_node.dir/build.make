@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/src
+CMAKE_SOURCE_DIR = /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/build
+CMAKE_BINARY_DIR = /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/build
 
 # Utility rule file for _run_tests_spacenav_node.
 
@@ -63,10 +63,10 @@ joystick_drivers-main/spacenav_node/CMakeFiles/_run_tests_spacenav_node.dir/buil
 .PHONY : joystick_drivers-main/spacenav_node/CMakeFiles/_run_tests_spacenav_node.dir/build
 
 joystick_drivers-main/spacenav_node/CMakeFiles/_run_tests_spacenav_node.dir/clean:
-	cd /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/build/joystick_drivers-main/spacenav_node && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_spacenav_node.dir/cmake_clean.cmake
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/build/joystick_drivers-main/spacenav_node && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_spacenav_node.dir/cmake_clean.cmake
 .PHONY : joystick_drivers-main/spacenav_node/CMakeFiles/_run_tests_spacenav_node.dir/clean
 
 joystick_drivers-main/spacenav_node/CMakeFiles/_run_tests_spacenav_node.dir/depend:
-	cd /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/src /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/src/joystick_drivers-main/spacenav_node /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/build /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/build/joystick_drivers-main/spacenav_node /home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/build/joystick_drivers-main/spacenav_node/CMakeFiles/_run_tests_spacenav_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/src /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/src/joystick_drivers-main/spacenav_node /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/build /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/build/joystick_drivers-main/spacenav_node /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/build/joystick_drivers-main/spacenav_node/CMakeFiles/_run_tests_spacenav_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : joystick_drivers-main/spacenav_node/CMakeFiles/_run_tests_spacenav_node.dir/depend
 

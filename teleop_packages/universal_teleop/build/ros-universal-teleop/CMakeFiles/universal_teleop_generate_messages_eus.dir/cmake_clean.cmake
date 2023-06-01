@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/manifest.l"
-  "/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/msg/Control.l"
-  "/home/lovi/proyectos_robotica/scorbot/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/msg/Event.l"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/manifest.l"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/msg/Control.l"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/share/roseus/ros/universal_teleop/msg/Event.l"
   "CMakeFiles/universal_teleop_generate_messages_eus"
 )
 

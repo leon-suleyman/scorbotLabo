@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/devel/share/roseus/ros/scorbot/manifest.l"
-  "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/devel/share/roseus/ros/scorbot/msg/JointTrajectory.l"
-  "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/devel/share/roseus/ros/scorbot/msg/JointVelocities.l"
-  "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/devel/share/roseus/ros/scorbot/msg/TrajectoryPoint.l"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/devel/share/roseus/ros/scorbot/manifest.l"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/devel/share/roseus/ros/scorbot/msg/JointTrajectory.l"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/devel/share/roseus/ros/scorbot/msg/JointVelocities.l"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/devel/share/roseus/ros/scorbot/msg/TrajectoryPoint.l"
   "CMakeFiles/scorbot_generate_messages_eus"
 )
 

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/devel/share/gennodejs/ros/scorbot/msg/JointTrajectory.js"
-  "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/devel/share/gennodejs/ros/scorbot/msg/JointVelocities.js"
-  "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/devel/share/gennodejs/ros/scorbot/msg/TrajectoryPoint.js"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/devel/share/gennodejs/ros/scorbot/msg/JointTrajectory.js"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/devel/share/gennodejs/ros/scorbot/msg/JointVelocities.js"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/devel/share/gennodejs/ros/scorbot/msg/TrajectoryPoint.js"
   "CMakeFiles/scorbot_generate_messages_nodejs"
 )
 

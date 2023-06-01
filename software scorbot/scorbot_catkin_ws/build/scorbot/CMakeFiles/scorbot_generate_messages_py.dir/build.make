@@ -43,51 +43,51 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src"
+CMAKE_SOURCE_DIR = "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build"
+CMAKE_BINARY_DIR = "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build"
 
 # Utility rule file for scorbot_generate_messages_py.
 
 # Include the progress variables for this target.
 include scorbot/CMakeFiles/scorbot_generate_messages_py.dir/progress.make
 
-scorbot/CMakeFiles/scorbot_generate_messages_py: /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_JointVelocities.py
-scorbot/CMakeFiles/scorbot_generate_messages_py: /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_TrajectoryPoint.py
-scorbot/CMakeFiles/scorbot_generate_messages_py: /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_JointTrajectory.py
-scorbot/CMakeFiles/scorbot_generate_messages_py: /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/__init__.py
+scorbot/CMakeFiles/scorbot_generate_messages_py: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_JointVelocities.py
+scorbot/CMakeFiles/scorbot_generate_messages_py: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_TrajectoryPoint.py
+scorbot/CMakeFiles/scorbot_generate_messages_py: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_JointTrajectory.py
+scorbot/CMakeFiles/scorbot_generate_messages_py: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/__init__.py
 
 
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_JointVelocities.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_JointVelocities.py: /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/src/scorbot/msg/JointVelocities.msg
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_JointVelocities.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG scorbot/JointVelocities"
-	cd "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot" && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/src/scorbot/msg/JointVelocities.msg -Iscorbot:/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/src/scorbot/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p scorbot -o /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/python3/dist-packages/scorbot/msg
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_JointVelocities.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_JointVelocities.py: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/src/scorbot/msg/JointVelocities.msg
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_JointVelocities.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG scorbot/JointVelocities"
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot" && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/src/scorbot/msg/JointVelocities.msg -Iscorbot:/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/src/scorbot/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p scorbot -o /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/python3/dist-packages/scorbot/msg
 
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_TrajectoryPoint.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_TrajectoryPoint.py: /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/src/scorbot/msg/TrajectoryPoint.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG scorbot/TrajectoryPoint"
-	cd "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot" && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/src/scorbot/msg/TrajectoryPoint.msg -Iscorbot:/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/src/scorbot/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p scorbot -o /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/python3/dist-packages/scorbot/msg
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_TrajectoryPoint.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_TrajectoryPoint.py: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/src/scorbot/msg/TrajectoryPoint.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG scorbot/TrajectoryPoint"
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot" && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/src/scorbot/msg/TrajectoryPoint.msg -Iscorbot:/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/src/scorbot/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p scorbot -o /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/python3/dist-packages/scorbot/msg
 
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_JointTrajectory.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_JointTrajectory.py: /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/src/scorbot/msg/JointTrajectory.msg
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_JointTrajectory.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG scorbot/JointTrajectory"
-	cd "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot" && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/src/scorbot/msg/JointTrajectory.msg -Iscorbot:/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/src/scorbot/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p scorbot -o /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/python3/dist-packages/scorbot/msg
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_JointTrajectory.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_JointTrajectory.py: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/src/scorbot/msg/JointTrajectory.msg
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_JointTrajectory.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG scorbot/JointTrajectory"
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot" && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/src/scorbot/msg/JointTrajectory.msg -Iscorbot:/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/src/scorbot/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p scorbot -o /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/python3/dist-packages/scorbot/msg
 
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/__init__.py: /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_JointVelocities.py
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/__init__.py: /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_TrajectoryPoint.py
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/__init__.py: /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_JointTrajectory.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Generating Python msg __init__.py for scorbot"
-	cd "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot" && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/python3/dist-packages/scorbot/msg --initpy
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/__init__.py: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_JointVelocities.py
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/__init__.py: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_TrajectoryPoint.py
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/__init__.py: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_JointTrajectory.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Generating Python msg __init__.py for scorbot"
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot" && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/python3/dist-packages/scorbot/msg --initpy
 
 scorbot_generate_messages_py: scorbot/CMakeFiles/scorbot_generate_messages_py
-scorbot_generate_messages_py: /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_JointVelocities.py
-scorbot_generate_messages_py: /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_TrajectoryPoint.py
-scorbot_generate_messages_py: /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_JointTrajectory.py
-scorbot_generate_messages_py: /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/__init__.py
+scorbot_generate_messages_py: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_JointVelocities.py
+scorbot_generate_messages_py: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_TrajectoryPoint.py
+scorbot_generate_messages_py: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/_JointTrajectory.py
+scorbot_generate_messages_py: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/python3/dist-packages/scorbot/msg/__init__.py
 scorbot_generate_messages_py: scorbot/CMakeFiles/scorbot_generate_messages_py.dir/build.make
 
 .PHONY : scorbot_generate_messages_py
@@ -98,10 +98,10 @@ scorbot/CMakeFiles/scorbot_generate_messages_py.dir/build: scorbot_generate_mess
 .PHONY : scorbot/CMakeFiles/scorbot_generate_messages_py.dir/build
 
 scorbot/CMakeFiles/scorbot_generate_messages_py.dir/clean:
-	cd "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot" && $(CMAKE_COMMAND) -P CMakeFiles/scorbot_generate_messages_py.dir/cmake_clean.cmake
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot" && $(CMAKE_COMMAND) -P CMakeFiles/scorbot_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : scorbot/CMakeFiles/scorbot_generate_messages_py.dir/clean
 
 scorbot/CMakeFiles/scorbot_generate_messages_py.dir/depend:
-	cd "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src/scorbot" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot/CMakeFiles/scorbot_generate_messages_py.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src/scorbot" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot/CMakeFiles/scorbot_generate_messages_py.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : scorbot/CMakeFiles/scorbot_generate_messages_py.dir/depend
 

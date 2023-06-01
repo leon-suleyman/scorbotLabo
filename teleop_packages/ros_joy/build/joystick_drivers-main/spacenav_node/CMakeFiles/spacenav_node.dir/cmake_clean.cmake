@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/devel/lib/spacenav_node/spacenav_node"
-  "/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/devel/lib/spacenav_node/spacenav_node.pdb"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/devel/lib/spacenav_node/spacenav_node"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/devel/lib/spacenav_node/spacenav_node.pdb"
   "CMakeFiles/spacenav_node.dir/src/spacenav_node.cpp.o"
 )
 

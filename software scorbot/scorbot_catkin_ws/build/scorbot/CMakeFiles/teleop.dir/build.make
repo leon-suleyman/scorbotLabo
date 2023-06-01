@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src"
+CMAKE_SOURCE_DIR = "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build"
+CMAKE_BINARY_DIR = "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build"
 
 # Include any dependencies generated for this target.
 include scorbot/CMakeFiles/teleop.dir/depend.make
@@ -58,30 +58,30 @@ include scorbot/CMakeFiles/teleop.dir/progress.make
 include scorbot/CMakeFiles/teleop.dir/flags.make
 
 scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.o: scorbot/CMakeFiles/teleop.dir/flags.make
-scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.o: /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/src/scorbot/src/teleop.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.o"
-	cd "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/teleop.dir/src/teleop.cpp.o -c "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src/scorbot/src/teleop.cpp"
+scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.o: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/src/scorbot/src/teleop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.o"
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/teleop.dir/src/teleop.cpp.o -c "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src/scorbot/src/teleop.cpp"
 
 scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/teleop.dir/src/teleop.cpp.i"
-	cd "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src/scorbot/src/teleop.cpp" > CMakeFiles/teleop.dir/src/teleop.cpp.i
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src/scorbot/src/teleop.cpp" > CMakeFiles/teleop.dir/src/teleop.cpp.i
 
 scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/teleop.dir/src/teleop.cpp.s"
-	cd "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src/scorbot/src/teleop.cpp" -o CMakeFiles/teleop.dir/src/teleop.cpp.s
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src/scorbot/src/teleop.cpp" -o CMakeFiles/teleop.dir/src/teleop.cpp.s
 
 scorbot/CMakeFiles/teleop.dir/src/teleop_node.cpp.o: scorbot/CMakeFiles/teleop.dir/flags.make
-scorbot/CMakeFiles/teleop.dir/src/teleop_node.cpp.o: /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/src/scorbot/src/teleop_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object scorbot/CMakeFiles/teleop.dir/src/teleop_node.cpp.o"
-	cd "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/teleop.dir/src/teleop_node.cpp.o -c "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src/scorbot/src/teleop_node.cpp"
+scorbot/CMakeFiles/teleop.dir/src/teleop_node.cpp.o: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/src/scorbot/src/teleop_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object scorbot/CMakeFiles/teleop.dir/src/teleop_node.cpp.o"
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/teleop.dir/src/teleop_node.cpp.o -c "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src/scorbot/src/teleop_node.cpp"
 
 scorbot/CMakeFiles/teleop.dir/src/teleop_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/teleop.dir/src/teleop_node.cpp.i"
-	cd "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src/scorbot/src/teleop_node.cpp" > CMakeFiles/teleop.dir/src/teleop_node.cpp.i
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src/scorbot/src/teleop_node.cpp" > CMakeFiles/teleop.dir/src/teleop_node.cpp.i
 
 scorbot/CMakeFiles/teleop.dir/src/teleop_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/teleop.dir/src/teleop_node.cpp.s"
-	cd "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src/scorbot/src/teleop_node.cpp" -o CMakeFiles/teleop.dir/src/teleop_node.cpp.s
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src/scorbot/src/teleop_node.cpp" -o CMakeFiles/teleop.dir/src/teleop_node.cpp.s
 
 # Object files for target teleop
 teleop_OBJECTS = \
@@ -91,41 +91,41 @@ teleop_OBJECTS = \
 # External object files for target teleop
 teleop_EXTERNAL_OBJECTS =
 
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/scorbot/teleop: scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.o
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/scorbot/teleop: scorbot/CMakeFiles/teleop.dir/src/teleop_node.cpp.o
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/scorbot/teleop: scorbot/CMakeFiles/teleop.dir/build.make
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/scorbot/teleop: /opt/ros/noetic/lib/libroscpp.so
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/scorbot/teleop: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/scorbot/teleop: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/scorbot/teleop: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/scorbot/teleop: /opt/ros/noetic/lib/librosconsole.so
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/scorbot/teleop: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/scorbot/teleop: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/scorbot/teleop: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/scorbot/teleop: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/scorbot/teleop: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/scorbot/teleop: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/scorbot/teleop: /opt/ros/noetic/lib/librostime.so
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/scorbot/teleop: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/scorbot/teleop: /opt/ros/noetic/lib/libcpp_common.so
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/scorbot/teleop: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/scorbot/teleop: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/scorbot/teleop: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/scorbot/teleop: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/scorbot/teleop: scorbot/CMakeFiles/teleop.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable \"/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/devel/lib/scorbot/teleop\""
-	cd "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/teleop.dir/link.txt --verbose=$(VERBOSE)
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/scorbot/teleop: scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.o
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/scorbot/teleop: scorbot/CMakeFiles/teleop.dir/src/teleop_node.cpp.o
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/scorbot/teleop: scorbot/CMakeFiles/teleop.dir/build.make
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/scorbot/teleop: /opt/ros/noetic/lib/libroscpp.so
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/scorbot/teleop: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/scorbot/teleop: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/scorbot/teleop: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/scorbot/teleop: /opt/ros/noetic/lib/librosconsole.so
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/scorbot/teleop: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/scorbot/teleop: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/scorbot/teleop: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/scorbot/teleop: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/scorbot/teleop: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/scorbot/teleop: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/scorbot/teleop: /opt/ros/noetic/lib/librostime.so
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/scorbot/teleop: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/scorbot/teleop: /opt/ros/noetic/lib/libcpp_common.so
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/scorbot/teleop: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/scorbot/teleop: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/scorbot/teleop: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/scorbot/teleop: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/scorbot/teleop: scorbot/CMakeFiles/teleop.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable \"/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/devel/lib/scorbot/teleop\""
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/teleop.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-scorbot/CMakeFiles/teleop.dir/build: /home/lovi/proyectos_robotica/scorbot/software\ scorbot/catkin_ws/devel/lib/scorbot/teleop
+scorbot/CMakeFiles/teleop.dir/build: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software\ scorbot/scorbot_catkin_ws/devel/lib/scorbot/teleop
 
 .PHONY : scorbot/CMakeFiles/teleop.dir/build
 
 scorbot/CMakeFiles/teleop.dir/clean:
-	cd "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot" && $(CMAKE_COMMAND) -P CMakeFiles/teleop.dir/cmake_clean.cmake
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot" && $(CMAKE_COMMAND) -P CMakeFiles/teleop.dir/cmake_clean.cmake
 .PHONY : scorbot/CMakeFiles/teleop.dir/clean
 
 scorbot/CMakeFiles/teleop.dir/depend:
-	cd "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src/scorbot" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot" "/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/build/scorbot/CMakeFiles/teleop.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src/scorbot" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot" "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build/scorbot/CMakeFiles/teleop.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : scorbot/CMakeFiles/teleop.dir/depend
 

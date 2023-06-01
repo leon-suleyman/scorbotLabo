@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/devel/include/keyboard/Key.h"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/devel/include/keyboard/Key.h"
   "CMakeFiles/keyboard_generate_messages_cpp"
 )
 

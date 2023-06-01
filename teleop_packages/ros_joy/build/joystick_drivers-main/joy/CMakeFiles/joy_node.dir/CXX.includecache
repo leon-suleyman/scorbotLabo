@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_joy/src/joystick_drivers-main/joy/src/joy_node.cpp
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/src/joystick_drivers-main/joy/src/joy_node.cpp
 memory
 -
 string

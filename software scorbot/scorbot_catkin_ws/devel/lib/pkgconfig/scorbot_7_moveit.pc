@@ -1,4 +1,4 @@
-prefix=/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/devel
+prefix=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/devel
 
 Name: scorbot_7_moveit
 Description: Description of scorbot_7_moveit
