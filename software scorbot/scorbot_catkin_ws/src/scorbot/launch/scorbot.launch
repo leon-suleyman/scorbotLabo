@@ -1,14 +1,16 @@
-<launch>
+<launch>  
   <node pkg="industrial_robot_client" type="joint_trajectory_action" name="joint_trajectory_action">
     <remap from="/feedback_states" to="/scorbot/feedback_states"/>
     <remap from="/joint_path_command" to="/scorbot/joint_path_command"/>
   </node>
+
   <node pkg="rosserial_python" type="serial_node.py" name="scorbot_serial" output="screen">
     <param name="port" value="/dev/ttyACM0"/>
     <param name="baud" value="57600"/>
     <remap from="/scorbot/joint_states" to="/joint_states"/>
     <!-- TODO: usar require -->
   </node>
+
   <node pkg="scorbot" type="teleop" name="teleop" output="screen">
     <param name="control_frequency" value="4"/>
   </node>
