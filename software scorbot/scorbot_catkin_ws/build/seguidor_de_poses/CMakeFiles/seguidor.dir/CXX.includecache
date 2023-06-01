@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src/seguidor_de_poses/src/Seguidor.cpp
+Seguidor.hpp
+/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src/seguidor_de_poses/src/Seguidor.hpp
+
+/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src/seguidor_de_poses/src/Seguidor.hpp
+ros/ros.h
+-
+trajectory_msgs/JointTrajectory.h
+-
+control_msgs/FollowJointTrajectoryFeedback.h
+-
+
+/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src/seguidor_de_poses/src/nodo_seguidor.cpp
+ros/ros.h
+-
+Seguidor.hpp
+/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/src/seguidor_de_poses/src/Seguidor.hpp
+

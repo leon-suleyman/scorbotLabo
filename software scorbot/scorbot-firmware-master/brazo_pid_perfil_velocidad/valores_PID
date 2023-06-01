@@ -1,0 +1,51 @@
+
+primero busco pwm_min=30 (es necesario que el robot este quieto, xq si no cuando le pones set_pid_speed=0 no se queda quieto y diberge)
+
+PID velocidad
+solo iP cPv= 1 cIv= 8
+PID
+double kp_vel = 0.8, ki_vel = 20, kd_vel = 0.1; anda para todas las juntas suave muy bien!!! :)
+
+
+PID posicion
+
+converge pero tarda porq no tiene I. 
+double kp_pos = 0.0025, ki_pos = 0, kd_pos = 0.001;
+
+
+motor 1 
+pwm_min=35
+cPp=0.0025	cIp=0.000001	cDp=0.001 
+cPv=0.8		cIv=20	 	cDv=0.1
+anda el home
+
+
+motor 2 
+pwm_min=35
+cPp=0.0025	cIp=0.000001	cDp=0.001 
+cPv=0.8		cIv=20	 	cDv=0.1
+NO anda el home si estoy en la parte de arriba
+
+
+motor 3
+pwm_min=35
+cPp=0.0025	cIp=0.000001	cDp=0.001 
+cPv=0.8		cIv=20	 	cDv=0.1
+anda el home
+
+
+motor 4 
+pwm_min=35
+cPp=0.0025	cIp=0.000001	cDp=0.001 
+cPv=0.8		cIv=20	 	cDv=0.1
+No anda el home vamos a tener q cambiar algo
+
+
+motor 5
+pwm_min=35
+cPp=0.0025	cIp=0.000001	cDp=0.001 
+cPv=0.8		cIv=20	 	cDv=0.1
+anda el home
+
+
+

@@ -1,0 +1,2 @@
+ros-keyboard
+-DCATKIN_DEVEL_PREFIX=/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/devel -DCMAKE_INSTALL_PREFIX=/home/lovi/proyectos_robotica/scorbot/teleop_packages/ros_keyboard/install -G Unix Makefiles

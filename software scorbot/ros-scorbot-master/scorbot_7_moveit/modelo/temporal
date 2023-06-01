@@ -1,0 +1,111 @@
+	
+  <link name="table">
+    <visual>
+      <geometry>
+		<mesh filename="file:///home/facu/catkin_ws/src/scorbot/scorbot_moveit/modelo/mesa.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <link name="base_robot">
+    <visual>
+      <geometry>
+        <mesh filename="file:///home/facu/catkin_ws/src/scorbot/scorbot_moveit/modelo/base_robot.dae" scale="1 1 1"/>
+      </geometry>
+      <origin xyz="0 0 0.015"/>
+    </visual>
+  </link>
+  
+  <joint name="table_to_base" type="fixed">
+    <parent link="table"/>
+    <child link="base_robot"/>
+    <origin xyz="0 0 0.015"/>
+  </joint>
+
+<link name="link1">
+    <visual>
+      <geometry>
+        <mesh filename="file:///home/facu/catkin_ws/src/scorbot/scorbot_moveit/modelo/link1.dae" scale="1 1 1"/>
+      </geometry>
+      <origin xyz="0 0 0"/>
+    </visual>
+  </link>
+  
+  <joint name="joint1" type="revolute">
+    <parent link="link1"/>
+    <child link="base_robot"/>
+    <origin xyz="-0.05 0 -0.378"/>   
+    <limit effort="1000.0" lower="-2.7" upper="2.7" velocity="0.5"/>
+    <axis xyz="0 0 1" />
+  </joint>
+
+<link name="link2">
+    <visual>
+      <geometry>
+        <mesh  filename="file:///home/facu/catkin_ws/src/scorbot/scorbot_moveit/modelo/link2.dae" scale="1 1 1"/>
+      </geometry>
+      <origin xyz="0 0 0" rpy="0 0 3.14" />
+      <material name="robot"/>
+    </visual>
+  </link>
+
+  <joint name="joint2" type="revolute">
+    <parent link="link1"/>
+    <child link="link2"/>
+    <origin xyz="0.05 -0.09 0" rpy="0 0 0" />
+    <limit effort="1000.0" lower="-1.74" upper="1.22" velocity="0.5"/>
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <link name="link3">
+    <visual>
+      <geometry>
+        <mesh  filename="file:///home/facu/catkin_ws/src/scorbot/scorbot_moveit/modelo/link3.dae" scale="1 1 1"/>
+      </geometry>
+      <origin xyz="0 -0.01 0" />
+      <material name="robot"/>
+    </visual>
+  </link>
+
+  <joint name="joint3" type="revolute">
+    <parent link="link2"/>
+    <child link="link3"/>
+    <origin xyz="0.3 0 0"/>
+    <limit effort="1000.0" lower="-1.74" upper="1.74" velocity="0.5"/>
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <link name="link4">
+    <visual>
+      <geometry>
+        <mesh  filename="file:///home/facu/catkin_ws/src/scorbot/scorbot_moveit/modelo/link4.dae" scale="1 1 1"/>
+      </geometry>
+      <origin xyz="0 0 0" />
+      <material name="robot"/>
+    </visual>
+  </link>
+
+  <joint name="joint4" type="revolute">
+    <parent link="link3"/>
+    <child link="link4"/>
+    <origin xyz="0.35 0.05 0"/>
+    <limit effort="1000.0" lower="-1.57" upper="1.57" velocity="0.5"/>
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <link name="link5">
+    <visual>
+      <geometry>
+        <mesh  filename="file:///home/facu/catkin_ws/src/scorbot/scorbot_moveit/modelo/link5.dae" scale="1 1 1"/>
+      </geometry>
+      <origin xyz="0 0.003 -0.003" />
+      <material name="robot"/>
+    </visual>
+  </link>
+
+  <joint name="joint5" type="continuous">
+    <parent link="link4"/>
+    <child link="link5"/>
+    <origin xyz="0.15 0 0"/>
+    <axis xyz="1 0 0" />
+  </joint>

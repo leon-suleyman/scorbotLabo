@@ -1,0 +1,2 @@
+scorbot:scorbot_7_moveit
+-DCATKIN_DEVEL_PREFIX=/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/lovi/proyectos_robotica/scorbot/software scorbot/catkin_ws/install -G Unix Makefiles
