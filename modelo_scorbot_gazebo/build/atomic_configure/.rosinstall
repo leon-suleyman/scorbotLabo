@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/devel/setup.sh
+    local-name: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/devel/setup.sh

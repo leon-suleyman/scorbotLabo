@@ -15,11 +15,14 @@ from geometry_msgs.msg import Point
 
 # (θ1,θ2,θ3,θ4) Input angles are expressed in radians
 # (x,y,z) output position is expressed in millimeters
-def direct_kinematics_position (theta1, theta2, theta3, theta4):
+def direct_kinematics_position (theta1, theta2, theta3, theta4, theta5):
     # Distance are expressed in meters.
-    d1 = 0.358  # Distance from base center (0,0,0) rotation (1) to shoulder/body center
-    d2 = -0.075      # ?? Distance from center of the base to center of the shoulder/body axis
-    a1 = 0.050     # Distance from shoulder/body center to shoulder/body joint (2)
+    #d1 = 0.358  # Distance from base center (0,0,0) rotation (1) to shoulder/body center
+    #d2 = -0.075      # ?? Distance from center of the base to center of the shoulder/body axis
+    #a1 = 0.050     # Distance from shoulder/body center to shoulder/body joint (2)
+    d2 = 0.137
+    d3 = 0.101
+    a1 = 0.370
     a2 = 0.300    # Distance from shoulder/body joint to elbow/arm joint (3)
     a3 = 0.250    # Distance from elbow/arm joint to pitch/forearm joint (4)
     a4 = 0.212    # End efector (gripper) length 
@@ -28,37 +31,51 @@ def direct_kinematics_position (theta1, theta2, theta3, theta4):
     # theta2 (θ2) = shoulder/body rotation angle (2)
     # theta3 (θ3) = elbow/arm rotation angle (3)
     # theta4 (θ4) = pitch/forearm rotation angle (4)
+    # theta5 (θ5) = roll angle
 
     c1 = math.cos (theta1)
     c2 = math.cos (theta2)
     c23 = math.cos (theta2 + theta3)
     c234 = math.cos (theta2 + theta3 + theta4)
+    c3 = math.cos(theta3)
+    c4 = math.cos(theta4)
+    c5 = math.cos(theta5)
+
     s1 = math.sin (theta1)
+    s2 = math.sin (theta2)
+    s23 = math.sin (theta2 + theta3)
+    s234 = math.sin (theta2 + theta3 + theta4)
+    s3 = math.sin(theta3)
+    s4 = math.sin(theta4)
+    s5 = math.sin(theta5)
 
     # x:
+    #T'0-5
+    x = s1*(d2 + d3) + a1*c1 + a2*c1*c2 + a3*c1*(c2*c3 - s2*s3) + a4*c1*c4*(c23-s23) - a5*(c5*s1 + s234*c1*s5)
     # T0-5:
-    x = a4*c1*c234 + c1*c23*a3 + c1*c2*a2 + c1*a1 - s1*d2
+    #x = a4*c1*c234 + c1*c23*a3 + c1*c2*a2 + c1*a1 - s1*d2
     # T0-4:
     #x = c1*c23*a3 + c1*c2*a2 + c1*a1 - s1*d2
     # T0-3:
     #x = c1*c2*a2 + c1*a1 - s1*d2
      
     # y:
+    #T'0-5
+    y = -c1*(d2+d3) + a1*s1 + a2*c2*s1 + a3*c1*(c2*c3 - s2*s3) + a4*c1*(c23*c4 - s23*c4) + a5*(c1*c5 - s234*s1*s5)
     # T0-5:
-    y = s1*c23*a3 + s1*c2*a2 + s1*a1 + c1*d2
+    #y = s1*c23*a3 + s1*c2*a2 + s1*a1 + c1*d2
     # T0-4:
     #y = s1*c23*a3 + s1*c2*a2 + s1*a1 + c1*d2
     # T0-3:
     #y = s1*c2*a2 + s1*a1 + c1*d2
 
-    s2 = math.sin (theta2)
-    s23 = math.sin (theta2 + theta3)
-    s234 = math.sin (theta2 + theta3 + theta4)
-
     # z:
+    #T'0-5
+    z = a2*s2 + a3*s23 + a4*(c23*s4 + s23*c4) + a5*s5*(c23*c4 - s23*s4)
+
     #z = s23*a3 + s2*a2 + d1
     # T0-5:
-    z = -a4*s234 -s23*a3 - s2*a2 + d1
+    #z = -a4*s234 -s23*a3 - s2*a2 + d1
     # T0-4:
     #z = -s23*a3 - s2*a2 + d1
     # T0-3:
@@ -73,7 +90,7 @@ def direct_kinematics_position (theta1, theta2, theta3, theta4):
 
 # It is needed the rotation matrix for obtaining the yaw, pitch and roll angles (Euler angles).
 # Rotation is the same for the wrist and the scorbot end effector.
-def direct_kinematics_orientation (theta1, theta2, theta3, theta4):
+def direct_kinematics_orientation (theta1, theta2, theta3, theta4, theta5):
     # r11 r12 r13
     # r21 r22 r23
     # r31 r32 r33
@@ -88,14 +105,14 @@ def direct_kinematics_orientation (theta1, theta2, theta3, theta4):
     #        pitch = math.atan (s234 / cos234) --> pitch = theta2+theta3+theta4
     pitch = theta2 + theta3 + theta4
     # Roll: atan (r32/r33) --> There is no roll because r33 == 0
-    roll = 0
+    roll = theta5
     result.append(yaw)
     result.append(pitch)
     result.append(roll)
     return result
 
 
-def move_angles_(theta1, theta2, theta3, theta4):
+def move_angles_(theta1, theta2, theta3, theta4, theta5):
     pub_base = rospy.Publisher('/scorbot/base_position_controller/command', Float64, queue_size=10)
     pub_shoulder = rospy.Publisher('/scorbot/shoulder_position_controller/command', Float64, queue_size=10)
     pub_elbow = rospy.Publisher('/scorbot/elbow_position_controller/command', Float64, queue_size=10)
@@ -108,7 +125,7 @@ def move_angles_(theta1, theta2, theta3, theta4):
     pub_shoulder.publish (theta2)
     pub_elbow.publish (theta3)
     pub_pitch.publish (theta4)
-    pub_roll.publish (0)    # Wrist is fixed
+    pub_roll.publish (theta5)    
     pub_gripper_finger_left.publish (-1)
     pub_gripper_finger_right.publish (-1)
 
@@ -136,11 +153,13 @@ if __name__ == '__main__':
         a2 = 0  #y0 = 0
         a3 = 0  #z0 = 0.358
         a4 = 0
+        a5 = 0
                                     # 01 solution
         b1 = 1                      #x1 = 0.750
         b2 = -0.5401742497052632    #y1 = 0
         b3 = 0.9355365085259083     #z1 = 0.300
-        b4 = -0.39536225882064513   
+        b4 = -0.39536225882064513
+        b5 = 0.5   
 
                                     # 02 solution
         #b1 = 0                      #x1 = 0.750
@@ -152,18 +171,18 @@ if __name__ == '__main__':
 
         print ("Begin example ...")
 
-        data0 = direct_kinematics_position (a1, a2,-a3,-a4)
+        data0 = direct_kinematics_position (a1, a2,-a3,-a4,a5)
         print ( 'Scorbot end-effector (x,y,z) position for angles: theta1: ' + str(a1) + ' theta2: ' + str(a2) + ' theta3: ' + str(-a3) + ' theta4: ' + str(-a4))
         print (data0)
-        data0 = direct_kinematics_orientation (a1, a2,-a3,-a4)
+        data0 = direct_kinematics_orientation (a1, a2,-a3,-a4,a5)
         print ( 'Scorbot end-effector (x,y,z) orientation for angles: theta1: ' + str(a1) + ' theta2: ' + str(a2) + ' theta3: ' + str(-a3) + ' theta4: ' + str(-a4))
         print (data0)
         print ()
 
-        data1 = direct_kinematics_position (b1, b2,-b3,-b4)
+        data1 = direct_kinematics_position (b1, b2,-b3,-b4,b5)
         print ( 'Scorbot end-effector (x,y,z) position for angles: theta1: ' + str(b1) + ' theta2: ' + str(b2) + ' theta3: ' + str(-b3) + ' theta4: ' + str(-b4) )
         print (data1)
-        data1 = direct_kinematics_orientation (b1, b2,-b3,-b4)
+        data1 = direct_kinematics_orientation (b1, b2,-b3,-b4,b5)
         print ( 'Scorbot end-effector (x,y,z) orientation for angles: theta1: ' + str(b1) + ' theta2: ' + str(b2) + ' theta3: ' + str(-b3) + ' theta4: ' + str(-b4))
         print (data1)
         print ()        
@@ -172,10 +191,10 @@ if __name__ == '__main__':
         rate = rospy.Rate(0.2)
 
         while not rospy.is_shutdown():
-            move_angles_ (a1,a2,a3,a4)
+            move_angles_ (a1,a2,a3,a4,a5)
             rate.sleep()
             #read_position()
-            move_angles_ (b1,b2,b3,b4) 
+            move_angles_ (b1,b2,b3,b4,b5) 
             rate.sleep()  
             #read_position()                    
 

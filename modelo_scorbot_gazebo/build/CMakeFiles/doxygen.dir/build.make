@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lovi/proyectos_robotica/scorbot/scorbotLabo/src
+CMAKE_SOURCE_DIR = /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lovi/proyectos_robotica/scorbot/scorbotLabo/build
+CMAKE_BINARY_DIR = /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build
 
 # Utility rule file for doxygen.
 
@@ -67,6 +67,6 @@ CMakeFiles/doxygen.dir/clean:
 .PHONY : CMakeFiles/doxygen.dir/clean
 
 CMakeFiles/doxygen.dir/depend:
-	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lovi/proyectos_robotica/scorbot/scorbotLabo/src /home/lovi/proyectos_robotica/scorbot/scorbotLabo/src /home/lovi/proyectos_robotica/scorbot/scorbotLabo/build /home/lovi/proyectos_robotica/scorbot/scorbotLabo/build /home/lovi/proyectos_robotica/scorbot/scorbotLabo/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/src /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/src /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doxygen.dir/depend
 

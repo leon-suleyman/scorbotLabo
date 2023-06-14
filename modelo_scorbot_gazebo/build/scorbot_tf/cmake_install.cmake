@@ -1,8 +1,8 @@
-# Install script for directory: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/src/scorbot_tf
+# Install script for directory: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/src/scorbot_tf
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/install")
+  set(CMAKE_INSTALL_PREFIX "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/build/scorbot_tf/catkin_generated/installspace/scorbot_gazebo_tf.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/scorbot_tf/catkin_generated/installspace/scorbot_gazebo_tf.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scorbot_gazebo_tf/cmake" TYPE FILE FILES
-    "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/build/scorbot_tf/catkin_generated/installspace/scorbot_gazebo_tfConfig.cmake"
-    "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/build/scorbot_tf/catkin_generated/installspace/scorbot_gazebo_tfConfig-version.cmake"
+    "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/scorbot_tf/catkin_generated/installspace/scorbot_gazebo_tfConfig.cmake"
+    "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/scorbot_tf/catkin_generated/installspace/scorbot_gazebo_tfConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scorbot_gazebo_tf" TYPE FILE FILES "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/src/scorbot_tf/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scorbot_gazebo_tf" TYPE FILE FILES "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/src/scorbot_tf/package.xml")
 endif()
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lovi/proyectos_robotica/scorbot/scorbotLabo/src
+CMAKE_SOURCE_DIR = /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lovi/proyectos_robotica/scorbot/scorbotLabo/build
+CMAKE_BINARY_DIR = /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build
 
 # Utility rule file for dynamic_reconfigure_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ scorbot_tf/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build: dynam
 .PHONY : scorbot_tf/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
 
 scorbot_tf/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/clean:
-	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/build/scorbot_tf && $(CMAKE_COMMAND) -P CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/scorbot_tf && $(CMAKE_COMMAND) -P CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : scorbot_tf/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/clean
 
 scorbot_tf/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/depend:
-	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lovi/proyectos_robotica/scorbot/scorbotLabo/src /home/lovi/proyectos_robotica/scorbot/scorbotLabo/src/scorbot_tf /home/lovi/proyectos_robotica/scorbot/scorbotLabo/build /home/lovi/proyectos_robotica/scorbot/scorbotLabo/build/scorbot_tf /home/lovi/proyectos_robotica/scorbot/scorbotLabo/build/scorbot_tf/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/src /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/src/scorbot_tf /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/scorbot_tf /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/scorbot_tf/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : scorbot_tf/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/depend
 

@@ -67,14 +67,14 @@ set(scorbot_gazebo_tf_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(scorbot_gazebo_tf_SOURCE_PREFIX /home/lovi/proyectos_robotica/scorbot/scorbotLabo/src/scorbot_tf)
-  set(scorbot_gazebo_tf_DEVEL_PREFIX /home/lovi/proyectos_robotica/scorbot/scorbotLabo/devel)
+  set(scorbot_gazebo_tf_SOURCE_PREFIX /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/src/scorbot_tf)
+  set(scorbot_gazebo_tf_DEVEL_PREFIX /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/devel)
   set(scorbot_gazebo_tf_INSTALL_PREFIX "")
   set(scorbot_gazebo_tf_PREFIX ${scorbot_gazebo_tf_DEVEL_PREFIX})
 else()
   set(scorbot_gazebo_tf_SOURCE_PREFIX "")
   set(scorbot_gazebo_tf_DEVEL_PREFIX "")
-  set(scorbot_gazebo_tf_INSTALL_PREFIX /home/lovi/proyectos_robotica/scorbot/scorbotLabo/install)
+  set(scorbot_gazebo_tf_INSTALL_PREFIX /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/install)
   set(scorbot_gazebo_tf_PREFIX ${scorbot_gazebo_tf_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/lovi/proyectos_robotica/scorbot/scorbotLabo/install/lib;/opt/ros/noetic/lib)
+    foreach(path /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/install/lib;/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

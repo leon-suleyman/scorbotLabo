@@ -1,4 +1,4 @@
-prefix=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/install
+prefix=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/install
 
 Name: scorbot_gazebo_tf
 Description: Description of scorbot_gazebo_tf
