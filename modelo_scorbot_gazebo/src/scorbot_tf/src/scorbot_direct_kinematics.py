@@ -203,26 +203,26 @@ if __name__ == '__main__':
             #j5b = 0.5   
         
             j1b = np.pi/4
-            j2b = -np.pi/4
+            j2b = np.pi/4
             j3b = -np.pi/2
             j4b = np.pi/4
-            j5b = -np.pi/2
+            j5b = np.pi/2
             
 
             print ("Begin example ...")
 
-            data0 = direct_kinematics_position (j1a, j2a,-j3a,-j4a,j5a)
+            data0 = direct_kinematics_position (j1a, j2a,j3a,j4a,j5a)
             print ( 'Scorbot end-effector (x,y,z) position for angles: theta1: ' + str(j1a) + ' theta2: ' + str(j2a) + ' theta3: ' + str(-j3a) + ' theta4: ' + str(-j4a) + ' theta5: ' + str(j5a))
             print (data0)
-            data0 = direct_kinematics_orientation (j1a, j2a,-j3a,-j4a,j5a)
+            data0 = direct_kinematics_orientation (j1a, j2a,j3a,j4a,j5a)
             print ( 'Scorbot end-effector (x,y,z) orientation for angles: theta1: ' + str(j1a) + ' theta2: ' + str(j2a) + ' theta3: ' + str(-j3a) + ' theta4: ' + str(-j4a) + ' theta5: ' + str(j5a))
             print (data0)
             print ()
 
-            data1 = direct_kinematics_position (j1b, j2b,-j3b,-j4b,j5b)
+            data1 = direct_kinematics_position (j1b, j2b,j3b,j4b,j5b)
             print ( 'Scorbot end-effector (x,y,z) position for angles: theta1: ' + str(j1b) + ' theta2: ' + str(j2b) + ' theta3: ' + str(-j3b) + ' theta4: ' + str(-j4b)  + ' theta5: ' + str(j5b))
             print (data1)
-            data1 = direct_kinematics_orientation (j1b, j2b,-j3b,-j4b,j5b)
+            data1 = direct_kinematics_orientation (j1b, j2b,j3b,j4b,j5b)
             print ( 'Scorbot end-effector (x,y,z) orientation for angles: theta1: ' + str(j1b) + ' theta2: ' + str(j2b) + ' theta3: ' + str(-j3b) + ' theta4: ' + str(-j4b) + ' theta5: ' + str(j5b))
             print (data1)
             print ()        

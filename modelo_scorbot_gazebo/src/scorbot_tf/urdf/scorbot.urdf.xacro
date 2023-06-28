@@ -155,7 +155,7 @@
     <child
       link="body" />
     <axis
-      xyz="0 0 1" />
+      xyz="0 0 -1" />
     <limit effort="30" velocity="1.0" lower="${base_lower_limit}" upper="${base_upper_limit}" />
   </joint>
   <link
@@ -206,7 +206,7 @@
     <child
       link="upper_arm" />
     <axis
-      xyz="0 1 0" />
+      xyz="0 -1 0" />
     <limit effort="30" velocity="1.0" lower="${shoulder_lower_limit}" upper="${shoulder_upper_limit}" />
   </joint>
   <link
