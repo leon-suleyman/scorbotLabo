@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import math
+import numpy as np
 import rospy
 from std_msgs.msg import Float64
 import roslib 
@@ -11,7 +12,13 @@ from geometry_msgs.msg import Point
 # by Luke Cole, Adam Ferenc Nagy-Sochacki and Jonathan Symonds (2007)
 # See: https://www.lukecole.name/doc/reports/drawing_using_the_scorbot_manipulator_arm.pdf
 
-
+#scorbot measurements in meters
+a1 = 0.043 #horizontal distance from base joint to shoulder joint (1 to 2)
+a2 = 0.300 #distance from shoulder joint to elbow joint (2 to 3) 
+a3 = 0.250 #distance from elbow to wrist joint (3 to 4)
+db = 0.200 #distance from base's base to base joint
+d1 = 0.170 #vertical distance from base joint to shoulder joint (1 to 2)
+d5 = 0.197 #distance from wrist joint to end efector
 
 # (θ1,θ2,θ3,θ4) Input angles are expressed in radians
 # (x,y,z) output position is expressed in millimeters
@@ -20,12 +27,12 @@ def direct_kinematics_position (theta1, theta2, theta3, theta4, theta5):
     #d1 = 0.358  # Distance from base center (0,0,0) rotation (1) to shoulder/body center
     #d2 = -0.075      # ?? Distance from center of the base to center of the shoulder/body axis
     #a1 = 0.050     # Distance from shoulder/body center to shoulder/body joint (2)
-    d2 = 0.137
-    d3 = 0.101
-    a1 = 0.370
-    a2 = 0.300    # Distance from shoulder/body joint to elbow/arm joint (3)
-    a3 = 0.250    # Distance from elbow/arm joint to pitch/forearm joint (4)
-    a4 = 0.212    # End efector (gripper) length 
+    #d2 = 0.137
+    #d3 = 0.101
+    #a1 = 0.370
+    #a2 = 0.300    # Distance from shoulder/body joint to elbow/arm joint (3)
+    #a3 = 0.250    # Distance from elbow/arm joint to pitch/forearm joint (4)
+    #a4 = 0.212    # End efector (gripper) length 
 
     # theta1 (θ1) = base rotation angle (1)
     # theta2 (θ2) = shoulder/body rotation angle (2)
@@ -50,8 +57,10 @@ def direct_kinematics_position (theta1, theta2, theta3, theta4, theta5):
     s5 = math.sin(theta5)
 
     # x:
+    #T0-e
+    x = -s1*(a1+a2*c2+a3*c23+d5*c234)
     #T'0-5
-    x = s1*(d2 + d3) + a1*c1 + a2*c1*c2 + a3*c1*(c2*c3 - s2*s3) + a4*c1*c4*(c23-s23) - a5*(c5*s1 + s234*c1*s5)
+    #x = s1*(d2 + d3) + a1*c1 + a2*c1*c2 + a3*c1*(c2*c3 - s2*s3) + a4*c1*c4*(c23-s23) - a5*(c5*s1 + s234*c1*s5)
     # T0-5:
     #x = a4*c1*c234 + c1*c23*a3 + c1*c2*a2 + c1*a1 - s1*d2
     # T0-4:
@@ -60,8 +69,10 @@ def direct_kinematics_position (theta1, theta2, theta3, theta4, theta5):
     #x = c1*c2*a2 + c1*a1 - s1*d2
      
     # y:
+    #T0-e
+    y = c1*(a1+a2*c2+a3*c23+d5*c234)
     #T'0-5
-    y = -c1*(d2+d3) + a1*s1 + a2*c2*s1 + a3*c1*(c2*c3 - s2*s3) + a4*c1*(c23*c4 - s23*c4) + a5*(c1*c5 - s234*s1*s5)
+    #y = -c1*(d2+d3) + a1*s1 + a2*c2*s1 + a3*c1*(c2*c3 - s2*s3) + a4*c1*(c23*c4 - s23*c4) + a5*(c1*c5 - s234*s1*s5)
     # T0-5:
     #y = s1*c23*a3 + s1*c2*a2 + s1*a1 + c1*d2
     # T0-4:
@@ -70,8 +81,10 @@ def direct_kinematics_position (theta1, theta2, theta3, theta4, theta5):
     #y = s1*c2*a2 + s1*a1 + c1*d2
 
     # z:
+    #T0-e
+    z = d1+a2*s2+a3*s23+d5*s234
     #T'0-5
-    z = a2*s2 + a3*s23 + a4*(c23*s4 + s23*c4) + a5*s5*(c23*c4 - s23*s4)
+    #z = a2*s2 + a3*s23 + a4*(c23*s4 + s23*c4) + a5*s5*(c23*c4 - s23*s4)
 
     #z = s23*a3 + s2*a2 + d1
     # T0-5:
@@ -94,9 +107,6 @@ def direct_kinematics_orientation (theta1, theta2, theta3, theta4, theta5):
     # r11 r12 r13
     # r21 r22 r23
     # r31 r32 r33
-    c1 = math.cos (theta1)
-    s1 = math.sin (theta1)  
-    c234 = math.cos (theta2 + theta3 + theta4)  
 
     result = []
     # Yaw: atan (r21/r11) --> yaw = math.atan ((s1*c234)/(c1*c234)) --> yaw = math.atan (s1/c1) --> yaw = theta1
@@ -109,6 +119,34 @@ def direct_kinematics_orientation (theta1, theta2, theta3, theta4, theta5):
     result.append(yaw)
     result.append(pitch)
     result.append(roll)
+    return result
+
+def inverse_kinematics(x,y,z):
+
+    result = []
+
+    theta_1 = np.arctan2(y,x)
+
+    #Horizontal Distance
+    h_d = math.sqrt(x**2+y**2)-a1-d5
+    #Vertical Distance
+    v_d = z-d1
+    theta_3 = np.arccos((h_d**2 + v_d**2 - a2**2 - a3**2)/(2*a2*a3))
+
+    alpha = np.arctan2(a3*np.sin(theta_3), a2+a3*np.cos(theta_3))
+    beta = np.arctan2(v_d,h_d)
+    theta_2 = beta - alpha
+
+    #theta_4 bajo la condición de que tiene que el efector tiene que estár paralelo a la base
+    theta_4 = -theta_2 - theta_3
+
+    result.append(theta_1)
+    result.append(theta_2)
+    result.append(theta_3)
+    result.append(theta_4)
+    result.append(0) #asumimos rotacion 0 = theta_5
+
+
     return result
 
 
@@ -149,54 +187,84 @@ def read_position ():
 if __name__ == '__main__':
 
     try:
-        a1 = 0  #x0 = 0.8119999999   # 0.812 gives error (singular point: working area limit)
-        a2 = 0  #y0 = 0
-        a3 = 0  #z0 = 0.358
-        a4 = 0
-        a5 = 0
-                                    # 01 solution
-        b1 = 1                      #x1 = 0.750
-        b2 = -0.5401742497052632    #y1 = 0
-        b3 = 0.9355365085259083     #z1 = 0.300
-        b4 = -0.39536225882064513
-        b5 = 0.5   
+        mode = input('test direct or inverse kinematics? : ')
+        if mode == 'direct' :
 
-                                    # 02 solution
-        #b1 = 0                      #x1 = 0.750
-        #b2 = 0.6616072627919588    #y1 = 0
-        #b3 = 1.1324677292534087     #z1 = 0.300
-        #b4 = -0.2232786652504709   
-
+            j1a = 0  #x0 = 0.8119999999   # 0.812 gives error (singular point: working area limit)
+            j2a = 0  #y0 = 0
+            j3a = 0  #z0 = 0.358
+            j4a = 0
+            j5a = 0
+                                        # 01 solution
+            #j1b = 1                      #x1 = 0.750
+            #j2b = -0.5401742497052632    #y1 = 0
+            #j3b = 0.9355365085259083     #z1 = 0.300
+            #j4b = -0.39536225882064513
+            #j5b = 0.5   
         
+            j1b = np.pi/4
+            j2b = -np.pi/4
+            j3b = -np.pi/2
+            j4b = np.pi/4
+            j5b = -np.pi/2
+            
 
-        print ("Begin example ...")
+            print ("Begin example ...")
 
-        data0 = direct_kinematics_position (a1, a2,-a3,-a4,a5)
-        print ( 'Scorbot end-effector (x,y,z) position for angles: theta1: ' + str(a1) + ' theta2: ' + str(a2) + ' theta3: ' + str(-a3) + ' theta4: ' + str(-a4))
-        print (data0)
-        data0 = direct_kinematics_orientation (a1, a2,-a3,-a4,a5)
-        print ( 'Scorbot end-effector (x,y,z) orientation for angles: theta1: ' + str(a1) + ' theta2: ' + str(a2) + ' theta3: ' + str(-a3) + ' theta4: ' + str(-a4))
-        print (data0)
-        print ()
+            data0 = direct_kinematics_position (j1a, j2a,-j3a,-j4a,j5a)
+            print ( 'Scorbot end-effector (x,y,z) position for angles: theta1: ' + str(j1a) + ' theta2: ' + str(j2a) + ' theta3: ' + str(-j3a) + ' theta4: ' + str(-j4a) + ' theta5: ' + str(j5a))
+            print (data0)
+            data0 = direct_kinematics_orientation (j1a, j2a,-j3a,-j4a,j5a)
+            print ( 'Scorbot end-effector (x,y,z) orientation for angles: theta1: ' + str(j1a) + ' theta2: ' + str(j2a) + ' theta3: ' + str(-j3a) + ' theta4: ' + str(-j4a) + ' theta5: ' + str(j5a))
+            print (data0)
+            print ()
 
-        data1 = direct_kinematics_position (b1, b2,-b3,-b4,b5)
-        print ( 'Scorbot end-effector (x,y,z) position for angles: theta1: ' + str(b1) + ' theta2: ' + str(b2) + ' theta3: ' + str(-b3) + ' theta4: ' + str(-b4) )
-        print (data1)
-        data1 = direct_kinematics_orientation (b1, b2,-b3,-b4,b5)
-        print ( 'Scorbot end-effector (x,y,z) orientation for angles: theta1: ' + str(b1) + ' theta2: ' + str(b2) + ' theta3: ' + str(-b3) + ' theta4: ' + str(-b4))
-        print (data1)
-        print ()        
+            data1 = direct_kinematics_position (j1b, j2b,-j3b,-j4b,j5b)
+            print ( 'Scorbot end-effector (x,y,z) position for angles: theta1: ' + str(j1b) + ' theta2: ' + str(j2b) + ' theta3: ' + str(-j3b) + ' theta4: ' + str(-j4b)  + ' theta5: ' + str(j5b))
+            print (data1)
+            data1 = direct_kinematics_orientation (j1b, j2b,-j3b,-j4b,j5b)
+            print ( 'Scorbot end-effector (x,y,z) orientation for angles: theta1: ' + str(j1b) + ' theta2: ' + str(j2b) + ' theta3: ' + str(-j3b) + ' theta4: ' + str(-j4b) + ' theta5: ' + str(j5b))
+            print (data1)
+            print ()        
 
-        rospy.init_node('simple_angle_mover')
-        rate = rospy.Rate(0.2)
+            rospy.init_node('simple_angle_mover')
+            rate = rospy.Rate(0.2)
 
-        while not rospy.is_shutdown():
-            move_angles_ (a1,a2,a3,a4,a5)
-            rate.sleep()
-            #read_position()
-            move_angles_ (b1,b2,b3,b4,b5) 
-            rate.sleep()  
-            #read_position()                    
+            while not rospy.is_shutdown():
+                move_angles_ (j1a,j2a,j3a,j4a,j5a)
+                rate.sleep()
+                #read_position()
+                move_angles_ (j1b,j2b,j3b,j4b,j5b) 
+                rate.sleep()  
+                #read_position()
+
+        elif mode == 'inverse' :
+            xa = 0.789
+            ya = 0.000
+            za = 0.170
+            joint_angles_a = inverse_kinematics(xa, ya, za)
+            #should be all 0
+            print ( 'Scorbot angles for end-effector (x,y,z): \n x: ' + str(xa) + ' y: ' + str(ya) + ' z: ' + str(za))
+            print(joint_angles_a)
+
+            xb = 0.257
+            yb = 0.320
+            zb = 0.535
+            joint_angles_b = inverse_kinematics(xb,yb,zb)
+            #should be something like 1 , -0.5401, 0.9355, -0.3954, 0
+            print ( 'Scorbot angles for end-effector (x,y,z): \n x: ' + str(xb) + ' y: ' + str(yb) + ' z: ' + str(zb))
+            print(joint_angles_b)
+
+            rospy.init_node('simple_angle_mover')
+            rate = rospy.Rate(0.2)
+
+            while not rospy.is_shutdown():
+                move_angles_ (joint_angles_a[0],joint_angles_a[1],joint_angles_a[2],joint_angles_a[3],joint_angles_a[4])
+                rate.sleep()
+                #read_position()
+                move_angles_ (joint_angles_b[0],joint_angles_b[1],joint_angles_b[2],joint_angles_b[3],joint_angles_b[4]) 
+                rate.sleep()  
+                #read_position()               
 
     except rospy.ROSInterruptException:
         pass

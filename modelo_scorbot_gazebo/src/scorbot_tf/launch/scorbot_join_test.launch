@@ -56,11 +56,6 @@
         roll_position_controller
         gripper_left_controller
         gripper_right_controller
-        base_velocity_controller
-        shoulder_velocity_controller
-        elbow_velocity_controller
-        pitch_velocity_controller
-        roll_velocity_controller
       
         --shutdown-timeout 2"/>
     <!-- Use trajectory controllers -->
