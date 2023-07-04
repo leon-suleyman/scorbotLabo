@@ -23,17 +23,7 @@ d5 = 0.197 #distance from wrist joint to end efector
 # (θ1,θ2,θ3,θ4) Input angles are expressed in radians
 # (x,y,z) output position is expressed in millimeters
 def direct_kinematics_position (theta1, theta2, theta3, theta4, theta5):
-    # Distance are expressed in meters.
-    #d1 = 0.358  # Distance from base center (0,0,0) rotation (1) to shoulder/body center
-    #d2 = -0.075      # ?? Distance from center of the base to center of the shoulder/body axis
-    #a1 = 0.050     # Distance from shoulder/body center to shoulder/body joint (2)
-    #d2 = 0.137
-    #d3 = 0.101
-    #a1 = 0.370
-    #a2 = 0.300    # Distance from shoulder/body joint to elbow/arm joint (3)
-    #a3 = 0.250    # Distance from elbow/arm joint to pitch/forearm joint (4)
-    #a4 = 0.212    # End efector (gripper) length 
-
+    
     # theta1 (θ1) = base rotation angle (1)
     # theta2 (θ2) = shoulder/body rotation angle (2)
     # theta3 (θ3) = elbow/arm rotation angle (3)
@@ -44,55 +34,29 @@ def direct_kinematics_position (theta1, theta2, theta3, theta4, theta5):
     c2 = math.cos (theta2)
     c23 = math.cos (theta2 + theta3)
     c234 = math.cos (theta2 + theta3 + theta4)
-    c3 = math.cos(theta3)
-    c4 = math.cos(theta4)
-    c5 = math.cos(theta5)
 
     s1 = math.sin (theta1)
     s2 = math.sin (theta2)
     s23 = math.sin (theta2 + theta3)
     s234 = math.sin (theta2 + theta3 + theta4)
-    s3 = math.sin(theta3)
-    s4 = math.sin(theta4)
-    s5 = math.sin(theta5)
 
     # x:
+    #Tb-e
+    x = -c1*(a1+a2*c2+a3*c23+d5*c234)
     #T0-e
-    x = -s1*(a1+a2*c2+a3*c23+d5*c234)
-    #T'0-5
-    #x = s1*(d2 + d3) + a1*c1 + a2*c1*c2 + a3*c1*(c2*c3 - s2*s3) + a4*c1*c4*(c23-s23) - a5*(c5*s1 + s234*c1*s5)
-    # T0-5:
-    #x = a4*c1*c234 + c1*c23*a3 + c1*c2*a2 + c1*a1 - s1*d2
-    # T0-4:
-    #x = c1*c23*a3 + c1*c2*a2 + c1*a1 - s1*d2
-    # T0-3:
-    #x = c1*c2*a2 + c1*a1 - s1*d2
+    #x = -s1*(a1+a2*c2+a3*c23+d5*c234)
      
     # y:
+    #Tb-e
+    y = s1*(a1+a2*c2+a3*c23+d5*c234)
     #T0-e
-    y = c1*(a1+a2*c2+a3*c23+d5*c234)
-    #T'0-5
-    #y = -c1*(d2+d3) + a1*s1 + a2*c2*s1 + a3*c1*(c2*c3 - s2*s3) + a4*c1*(c23*c4 - s23*c4) + a5*(c1*c5 - s234*s1*s5)
-    # T0-5:
-    #y = s1*c23*a3 + s1*c2*a2 + s1*a1 + c1*d2
-    # T0-4:
-    #y = s1*c23*a3 + s1*c2*a2 + s1*a1 + c1*d2
-    # T0-3:
-    #y = s1*c2*a2 + s1*a1 + c1*d2
-
+    #y = c1*(a1+a2*c2+a3*c23+d5*c234)
+    
     # z:
+    #Tb-e
+    z = db+d1+a2*s2+a3*s23+d5*s234
     #T0-e
-    z = d1+a2*s2+a3*s23+d5*s234
-    #T'0-5
-    #z = a2*s2 + a3*s23 + a4*(c23*s4 + s23*c4) + a5*s5*(c23*c4 - s23*s4)
-
-    #z = s23*a3 + s2*a2 + d1
-    # T0-5:
-    #z = -a4*s234 -s23*a3 - s2*a2 + d1
-    # T0-4:
-    #z = -s23*a3 - s2*a2 + d1
-    # T0-3:
-    #z = - s2*a2 + d1
+    #z = d1+a2*s2+a3*s23+d5*s234
 
     result = []
     result.append(x)
