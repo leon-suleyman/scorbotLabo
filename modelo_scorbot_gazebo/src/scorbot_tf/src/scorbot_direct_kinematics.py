@@ -22,6 +22,13 @@ d5 = 0.197 #distance from wrist joint to end efector
 
 # (θ1,θ2,θ3,θ4) Input angles are expressed in radians
 # (x,y,z) output position is expressed in millimeters
+
+def truncate_5_decimals(f):
+    res = f*(10**5)
+    res = math.trunc(res)
+    res = res/(10**5)
+    return res
+
 def direct_kinematics_position (theta1, theta2, theta3, theta4, theta5):
     
     # theta1 (θ1) = base rotation angle (1)
@@ -42,13 +49,13 @@ def direct_kinematics_position (theta1, theta2, theta3, theta4, theta5):
 
     # x:
     #Tb-e
-    x = -c1*(a1+a2*c2+a3*c23+d5*c234)
+    x = c1*(a1+a2*c2+a3*c23+d5*c234)
     #T0-e
     #x = -s1*(a1+a2*c2+a3*c23+d5*c234)
      
     # y:
     #Tb-e
-    y = s1*(a1+a2*c2+a3*c23+d5*c234)
+    y = -s1*(a1+a2*c2+a3*c23+d5*c234)
     #T0-e
     #y = c1*(a1+a2*c2+a3*c23+d5*c234)
     
@@ -86,16 +93,16 @@ def direct_kinematics_orientation (theta1, theta2, theta3, theta4, theta5):
     return result
 
 def inverse_kinematics(x,y,z):
-
     result = []
 
-    theta_1 = np.arctan2(y,x)
+    theta_1 = -np.arctan2(y,x)
 
     #Horizontal Distance
-    h_d = math.sqrt(x**2+y**2)-a1-d5
+    h_d = np.sqrt(x**2+y**2)-a1-d5
+    x_y_sqrt_pow = math.sqrt(x**2+y**2)
     #Vertical Distance
-    v_d = z-d1
-    theta_3 = np.arccos((h_d**2 + v_d**2 - a2**2 - a3**2)/(2*a2*a3))
+    v_d = z-(d1+db)
+    theta_3 = np.arccos(truncate_5_decimals((h_d**2 + v_d**2 - a2**2 - a3**2)/(2*a2*a3)))
 
     alpha = np.arctan2(a3*np.sin(theta_3), a2+a3*np.cos(theta_3))
     beta = np.arctan2(v_d,h_d)
@@ -112,6 +119,7 @@ def inverse_kinematics(x,y,z):
 
 
     return result
+
 
 
 def move_angles_(theta1, theta2, theta3, theta4, theta5):
@@ -167,9 +175,9 @@ if __name__ == '__main__':
             #j5b = 0.5   
         
             j1b = np.pi/4
-            j2b = np.pi/4
-            j3b = -np.pi/2
-            j4b = np.pi/4
+            j2b = -np.pi/4
+            j3b = np.pi/2
+            j4b = -np.pi/4
             j5b = np.pi/2
             
 
@@ -203,19 +211,19 @@ if __name__ == '__main__':
                 #read_position()
 
         elif mode == 'inverse' :
-            xa = 0.789
+            xa = 0.790
             ya = 0.000
-            za = 0.170
+            za = 0.370
             joint_angles_a = inverse_kinematics(xa, ya, za)
             #should be all 0
             print ( 'Scorbot angles for end-effector (x,y,z): \n x: ' + str(xa) + ' y: ' + str(ya) + ' z: ' + str(za))
             print(joint_angles_a)
 
-            xb = 0.257
-            yb = 0.320
-            zb = 0.535
+            xb = 0.400
+            yb = -0.460
+            zb = 0.385
             joint_angles_b = inverse_kinematics(xb,yb,zb)
-            #should be something like 1 , -0.5401, 0.9355, -0.3954, 0
+            #should be something like pi/4 , -pi/4, pi/2, -pi/4, 0
             print ( 'Scorbot angles for end-effector (x,y,z): \n x: ' + str(xb) + ' y: ' + str(yb) + ' z: ' + str(zb))
             print(joint_angles_b)
 
