@@ -1,8 +1,12 @@
+
+
 #include <ArduinoHardware.h>
 #include <ros.h>
-//#include "JointVelocities.h"
+#include "JointVelocities.h"
+//#include <scorbot/JointVelocities.h>
 #include <control_msgs/FollowJointTrajectoryFeedback.h>
-//#include "JointTrajectory.h"
+#include "JointTrajectory.h"
+//#include <scorbot/JointTrajectory.h>
 #include <sensor_msgs/JointState.h>
 #include <std_msgs/Empty.h>
 #include <Wire.h>
@@ -32,21 +36,6 @@
 #define MAX_TRAJECTORY_SIZE 10
 #define NUM_JUNTAS 5
 #define SERIAL_BINARY 1
-
-namespace scorbot{
-    struct JointVelocities{
-      public:
-          int32_t joint_velocities_length;
-          float   joint_velocities[MAX_TRAJECTORY_SIZE];
-  };
-
-  struct JointTrajectory{
-      public:
-          int32_t points_length;
-          int32_t points[MAX_TRAJECTORY_SIZE*NUM_JUNTAS];
-  };
-};
-
 
 /******** variables de ROS *******/
 ros::NodeHandle nh;
