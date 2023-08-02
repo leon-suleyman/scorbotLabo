@@ -1,12 +1,8 @@
-
-
 #include <ArduinoHardware.h>
 #include <ros.h>
-#include "JointVelocities.h"
-//#include <scorbot/JointVelocities.h>
+#include <scorbot/JointVelocities.h>
 #include <control_msgs/FollowJointTrajectoryFeedback.h>
-#include "JointTrajectory.h"
-//#include <scorbot/JointTrajectory.h>
+#include <scorbot/JointTrajectory.h>
 #include <sensor_msgs/JointState.h>
 #include <std_msgs/Empty.h>
 #include <Wire.h>
@@ -55,8 +51,8 @@ ros::Subscriber<scorbot::JointVelocities> vel_sub("/scorbot/joint_velocities", &
 void on_trajectory(const scorbot::JointTrajectory& trajectory);
 ros::Subscriber<scorbot::JointTrajectory> trajectory_sub("/scorbot/joint_path_command_enc", &on_trajectory);
 
-/*control_msgs::FollowJointTrajectoryFeedback trajectory_feedback;
-ros::Publisher trajectory_feedback_pub("/scorbot/feedback_states", &trajectory_feedback);*/
+control_msgs::FollowJointTrajectoryFeedback trajectory_feedback;
+ros::Publisher trajectory_feedback_pub("/scorbot/feedback_states", &trajectory_feedback);
 
 /* debugging */
 std_msgs::Empty empty_msg;
@@ -98,7 +94,7 @@ void setup(void)
   nh.subscribe(trajectory_sub);
 
   nh.advertise(joint_state_pub);
-  //nh.advertise(trajectory_feedback_pub);
+  nh.advertise(trajectory_feedback_pub);
   
   nh.advertise(debug_pub);
   #endif
@@ -182,7 +178,7 @@ void publish_state(void)
   joint_state.name = joint_names;
   joint_state.name_length = NUM_JUNTAS;
   joint_state.position = positions;
-    joint_state.position_length = NUM_JUNTAS;
+  joint_state.position_length = NUM_JUNTAS;
   joint_state.velocity_length = 0; // TODO: llenar
   joint_state.effort_length = 0;
   
@@ -193,11 +189,12 @@ void publish_state(void)
   positions[4] = ENC2RAD5(pos_juntas[4]);  
   joint_state_pub.publish(&joint_state);
   
-  /*trajectory_feedback.header.stamp = nh.now();
+  trajectory_feedback.header.stamp = nh.now();
   trajectory_feedback.joint_names_length = NUM_JUNTAS;
   trajectory_feedback.joint_names = joint_names;
 
-  float desired_positions[NUM_JUNTAS];
+  float desired_positions[NUM_JUNTAS];  
+  current_goal_index = -1;
   if (current_goal_index == -1) {
     trajectory_feedback.desired.positions_length = 0;
   }
@@ -225,7 +222,7 @@ void publish_state(void)
   trajectory_feedback.actual.velocities_length = 0;
   trajectory_feedback.actual.effort_length = 0;
 
-  trajectory_feedback_pub.publish(&trajectory_feedback);*/
+  trajectory_feedback_pub.publish(&trajectory_feedback);
 }
 
 /***************** i2c **************/

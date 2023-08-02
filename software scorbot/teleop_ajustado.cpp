@@ -2,6 +2,8 @@
 #include <scorbot/JointTrajectory.h>
 #include "teleop.h"
 
+using namespace std;
+
 scorbot::Teleop::Teleop(ros::NodeHandle& n)
 {
   n.param("control_frequency", control_frequency, 5);
@@ -49,7 +51,7 @@ void scorbot::Teleop::on_controls(const universal_teleop::ControlConstPtr& msg)
 {
   if (!override_enabled) return;
 
-  for (int i = 0; i < msg->controls.size(); i++)
+  /*for (int i = 0; i < msg->controls.size(); i++)
   {
     if (msg->controls[i] == "joint1" || msg->controls[i] == "joint2")
     {
@@ -59,7 +61,15 @@ void scorbot::Teleop::on_controls(const universal_teleop::ControlConstPtr& msg)
       velocities.joint_velocities[msg->controls[i] == "joint1" ? 0 : 1] = joint_states[msg->controls[i] == "joint1" ? 0 : 1] * (slow_mode_enabled ? 0.5 : 1);
       vel_pub.publish(velocities);
     }
-  }
+  }*/
+  if (msg->control == "joint1" || msg->control == "joint2")
+    {
+      joint_states[msg->control == "joint1" ? 0 : 1] = (int)(fabsf(msg->value) < 0.1 ? 0 : msg->value);
+   
+      velocities.header = msg->header; 
+      velocities.joint_velocities[msg->control == "joint1" ? 0 : 1] = joint_states[msg->control == "joint1" ? 0 : 1] * (slow_mode_enabled ? 0.5 : 1);
+      vel_pub.publish(velocities);
+    }
 }
 
 void scorbot::Teleop::on_events(const universal_teleop::EventConstPtr& msg)

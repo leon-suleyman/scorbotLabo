@@ -5,6 +5,10 @@ find_package(catkin REQUIRED COMPONENTS roscpp std_msgs message_generation)
 find_package(SDL REQUIRED)
 set(LIBS ${SDL_LIBRARY})
 
+include_directories(include
+ ${catkin_INCLUDE_DIRS}
+)
+
 #######################################
 ## Declare ROS messages and services ##
 #######################################

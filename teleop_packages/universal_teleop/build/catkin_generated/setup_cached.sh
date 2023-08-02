@@ -7,4 +7,7 @@
 # new environment variables
 
 # modified environment variables
+export CMAKE_PREFIX_PATH="/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/lib:$LD_LIBRARY_PATH"
 export PWD='/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/build'
+export ROS_PACKAGE_PATH="/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/src:$ROS_PACKAGE_PATH"
