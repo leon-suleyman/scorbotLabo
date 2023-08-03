@@ -24,13 +24,9 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/keyboard.cpp
-keyboard.h
-/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/keyboard.h
-
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/keyboard.h
 keyboard/Key.h
--
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/keyboard/Key.h
 SDL.h
 -
 

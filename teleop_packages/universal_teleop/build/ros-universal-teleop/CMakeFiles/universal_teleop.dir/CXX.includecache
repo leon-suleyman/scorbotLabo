@@ -60,12 +60,6 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/main.cpp
-ros/ros.h
--
-teleop.h
-/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h
-
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp
 geometry_msgs/Twist.h
 -
