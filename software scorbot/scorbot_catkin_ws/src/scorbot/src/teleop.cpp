@@ -47,9 +47,9 @@ void scorbot::Teleop::on_trajectory(const trajectory_msgs::JointTrajectoryConstP
 
 void scorbot::Teleop::on_controls(const universal_teleop::ControlConstPtr& msg)
 {
-  if (!override_enabled) return;
+  if (override_enabled) return;
 
-  for (int i = 0; i < msg->controls.size(); i++)
+  /*for (int i = 0; i < msg->controls.size(); i++)
   {
     if (msg->controls[i] == "joint1" || msg->controls[i] == "joint2")
     {
@@ -59,7 +59,15 @@ void scorbot::Teleop::on_controls(const universal_teleop::ControlConstPtr& msg)
       velocities.joint_velocities[msg->controls[i] == "joint1" ? 0 : 1] = joint_states[msg->controls[i] == "joint1" ? 0 : 1] * (slow_mode_enabled ? 0.5 : 1);
       vel_pub.publish(velocities);
     }
-  }
+  }*/
+  if (msg->control == "base" || msg->control == "shoulder")
+    {
+      joint_states[msg->control == "base" ? 0 : 1] = (int)(fabsf(msg->value) < 0.1 ? 0 : msg->value);
+   
+      velocities.header = msg->header; 
+      velocities.joint_velocities[msg->control == "base" ? 0 : 1] = joint_states[msg->control == "base" ? 0 : 1] * (slow_mode_enabled ? 0.5 : 1);
+      vel_pub.publish(velocities);
+    }
 }
 
 void scorbot::Teleop::on_events(const universal_teleop::EventConstPtr& msg)
@@ -81,24 +89,24 @@ void scorbot::Teleop::on_events(const universal_teleop::EventConstPtr& msg)
     vel_pub.publish(velocities);
   }
 
-  if (override_enabled)
+  if (!override_enabled)
   {
     if (msg->event == "home" && msg->state) {
       home_pub.publish(std_msgs::Empty());
     }
-    else if (msg->event == "joint3_up") {
+    else if (msg->event == "elbow_up") {
 	  joint_states[2] = (msg->state ? 1 : 0);
       velocities.joint_velocities[2] = joint_states[2] * (slow_mode_enabled ? 0.5 : 1);
     }
-    else if (msg->event == "joint3_down") {
+    else if (msg->event == "elbow_down") {
 	  joint_states[2] = (msg->state ? -1 : 0);
       velocities.joint_velocities[2] = joint_states[2] * (slow_mode_enabled ? 0.5 : 1);
     }
-    else if (msg->event == "joint4_up") {
+    else if (msg->event == "wrist_up") {
 	  joint_states[3] = (msg->state ? 1 : 0);
       velocities.joint_velocities[3] = joint_states[3] * (slow_mode_enabled ? 0.5 : 1);
     }
-    else if (msg->event == "joint4_down") {
+    else if (msg->event == "wrist_down") {
 	  joint_states[3] = (msg->state ? -1 : 0);
       velocities.joint_velocities[3] = joint_states[3] * (slow_mode_enabled ? 0.5 : 1);
     }

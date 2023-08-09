@@ -7,6 +7,3 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/devel:$CMAKE_PREFIX_PATH"
-export PWD='/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build'
-export ROS_PACKAGE_PATH="/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src:$ROS_PACKAGE_PATH"
