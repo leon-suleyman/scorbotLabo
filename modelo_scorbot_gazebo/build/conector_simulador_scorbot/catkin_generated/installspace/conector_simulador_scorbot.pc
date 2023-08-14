@@ -1,0 +1,8 @@
+prefix=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/install
+
+Name: conector_simulador_scorbot
+Description: Description of conector_simulador_scorbot
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

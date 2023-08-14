@@ -7,7 +7,8 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH='/opt/ros/noetic/lib'
-export PKG_CONFIG_PATH='/opt/ros/noetic/lib/pkgconfig'
+export CMAKE_PREFIX_PATH="/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build'
-export ROS_PACKAGE_PATH='/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/src:/opt/ros/noetic/share'
+export ROS_PACKAGE_PATH="/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/src:$ROS_PACKAGE_PATH"
