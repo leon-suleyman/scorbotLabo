@@ -35,11 +35,11 @@
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/gtest/googletest/CMakeFiles/test.dir
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/gtest/googletest/CMakeFiles/gtest_main.dir
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/gtest/googletest/CMakeFiles/gtest.dir
-/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/conector_simulador_scorbot/CMakeFiles/install/local.dir
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/conector_simulador_scorbot/CMakeFiles/rebuild_cache.dir
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/conector_simulador_scorbot/CMakeFiles/edit_cache.dir
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/conector_simulador_scorbot/CMakeFiles/test.dir
-/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/conector_simulador_scorbot/CMakeFiles/conector.dir
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/conector_simulador_scorbot/CMakeFiles/install/local.dir
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/conector_simulador_scorbot/CMakeFiles/conector_simulador_scorbot_node.dir
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/conector_simulador_scorbot/CMakeFiles/std_msgs_generate_messages_py.dir
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/conector_simulador_scorbot/CMakeFiles/std_msgs_generate_messages_nodejs.dir
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/conector_simulador_scorbot/CMakeFiles/roscpp_generate_messages_cpp.dir

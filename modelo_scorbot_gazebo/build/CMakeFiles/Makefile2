@@ -82,7 +82,7 @@ clean: scorbot_tf/clean
 # Directory level rules for directory conector_simulador_scorbot
 
 # Recursive "all" directory target.
-conector_simulador_scorbot/all: conector_simulador_scorbot/CMakeFiles/conector.dir/all
+conector_simulador_scorbot/all: conector_simulador_scorbot/CMakeFiles/conector_simulador_scorbot_node.dir/all
 
 .PHONY : conector_simulador_scorbot/all
 
@@ -92,7 +92,7 @@ conector_simulador_scorbot/preinstall:
 .PHONY : conector_simulador_scorbot/preinstall
 
 # Recursive "clean" directory target.
-conector_simulador_scorbot/clean: conector_simulador_scorbot/CMakeFiles/conector.dir/clean
+conector_simulador_scorbot/clean: conector_simulador_scorbot/CMakeFiles/conector_simulador_scorbot_node.dir/clean
 conector_simulador_scorbot/clean: conector_simulador_scorbot/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 conector_simulador_scorbot/clean: conector_simulador_scorbot/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 conector_simulador_scorbot/clean: conector_simulador_scorbot/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
@@ -484,31 +484,31 @@ gtest/googletest/CMakeFiles/gtest.dir/clean:
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/clean
 
 #=============================================================================
-# Target rules for target conector_simulador_scorbot/CMakeFiles/conector.dir
+# Target rules for target conector_simulador_scorbot/CMakeFiles/conector_simulador_scorbot_node.dir
 
 # All Build rule for target.
-conector_simulador_scorbot/CMakeFiles/conector.dir/all:
-	$(MAKE) -f conector_simulador_scorbot/CMakeFiles/conector.dir/build.make conector_simulador_scorbot/CMakeFiles/conector.dir/depend
-	$(MAKE) -f conector_simulador_scorbot/CMakeFiles/conector.dir/build.make conector_simulador_scorbot/CMakeFiles/conector.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/CMakeFiles --progress-num=1,2,3 "Built target conector"
-.PHONY : conector_simulador_scorbot/CMakeFiles/conector.dir/all
+conector_simulador_scorbot/CMakeFiles/conector_simulador_scorbot_node.dir/all:
+	$(MAKE) -f conector_simulador_scorbot/CMakeFiles/conector_simulador_scorbot_node.dir/build.make conector_simulador_scorbot/CMakeFiles/conector_simulador_scorbot_node.dir/depend
+	$(MAKE) -f conector_simulador_scorbot/CMakeFiles/conector_simulador_scorbot_node.dir/build.make conector_simulador_scorbot/CMakeFiles/conector_simulador_scorbot_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/CMakeFiles --progress-num=1,2,3 "Built target conector_simulador_scorbot_node"
+.PHONY : conector_simulador_scorbot/CMakeFiles/conector_simulador_scorbot_node.dir/all
 
 # Build rule for subdir invocation for target.
-conector_simulador_scorbot/CMakeFiles/conector.dir/rule: cmake_check_build_system
+conector_simulador_scorbot/CMakeFiles/conector_simulador_scorbot_node.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 conector_simulador_scorbot/CMakeFiles/conector.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 conector_simulador_scorbot/CMakeFiles/conector_simulador_scorbot_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/CMakeFiles 0
-.PHONY : conector_simulador_scorbot/CMakeFiles/conector.dir/rule
+.PHONY : conector_simulador_scorbot/CMakeFiles/conector_simulador_scorbot_node.dir/rule
 
 # Convenience name for target.
-conector: conector_simulador_scorbot/CMakeFiles/conector.dir/rule
+conector_simulador_scorbot_node: conector_simulador_scorbot/CMakeFiles/conector_simulador_scorbot_node.dir/rule
 
-.PHONY : conector
+.PHONY : conector_simulador_scorbot_node
 
 # clean rule for target.
-conector_simulador_scorbot/CMakeFiles/conector.dir/clean:
-	$(MAKE) -f conector_simulador_scorbot/CMakeFiles/conector.dir/build.make conector_simulador_scorbot/CMakeFiles/conector.dir/clean
-.PHONY : conector_simulador_scorbot/CMakeFiles/conector.dir/clean
+conector_simulador_scorbot/CMakeFiles/conector_simulador_scorbot_node.dir/clean:
+	$(MAKE) -f conector_simulador_scorbot/CMakeFiles/conector_simulador_scorbot_node.dir/build.make conector_simulador_scorbot/CMakeFiles/conector_simulador_scorbot_node.dir/clean
+.PHONY : conector_simulador_scorbot/CMakeFiles/conector_simulador_scorbot_node.dir/clean
 
 #=============================================================================
 # Target rules for target conector_simulador_scorbot/CMakeFiles/std_msgs_generate_messages_py.dir

@@ -285,17 +285,17 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
-# Target rules for targets named conector
+# Target rules for targets named conector_simulador_scorbot_node
 
 # Build rule for target.
-conector: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 conector
-.PHONY : conector
+conector_simulador_scorbot_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 conector_simulador_scorbot_node
+.PHONY : conector_simulador_scorbot_node
 
 # fast build rule for target.
-conector/fast:
-	$(MAKE) -f conector_simulador_scorbot/CMakeFiles/conector.dir/build.make conector_simulador_scorbot/CMakeFiles/conector.dir/build
-.PHONY : conector/fast
+conector_simulador_scorbot_node/fast:
+	$(MAKE) -f conector_simulador_scorbot/CMakeFiles/conector_simulador_scorbot_node.dir/build.make conector_simulador_scorbot/CMakeFiles/conector_simulador_scorbot_node.dir/build
+.PHONY : conector_simulador_scorbot_node/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_py
@@ -1216,7 +1216,7 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... conector"
+	@echo "... conector_simulador_scorbot_node"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_cpp"
