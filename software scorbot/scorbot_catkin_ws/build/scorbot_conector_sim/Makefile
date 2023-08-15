@@ -56,6 +56,18 @@ CMAKE_BINARY_DIR = "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software s
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -88,18 +100,6 @@ test:
 test/fast: test
 
 .PHONY : test/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -168,19 +168,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-scorbot_conector_sim/CMakeFiles/conector_simulador_scorbot_node.dir/rule:
-	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 scorbot_conector_sim/CMakeFiles/conector_simulador_scorbot_node.dir/rule
-.PHONY : scorbot_conector_sim/CMakeFiles/conector_simulador_scorbot_node.dir/rule
+scorbot_conector_sim/CMakeFiles/conector_scorbot_sim.dir/rule:
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" && $(MAKE) -f CMakeFiles/Makefile2 scorbot_conector_sim/CMakeFiles/conector_scorbot_sim.dir/rule
+.PHONY : scorbot_conector_sim/CMakeFiles/conector_scorbot_sim.dir/rule
 
 # Convenience name for target.
-conector_simulador_scorbot_node: scorbot_conector_sim/CMakeFiles/conector_simulador_scorbot_node.dir/rule
+conector_scorbot_sim: scorbot_conector_sim/CMakeFiles/conector_scorbot_sim.dir/rule
 
-.PHONY : conector_simulador_scorbot_node
+.PHONY : conector_scorbot_sim
 
 # fast build rule for target.
-conector_simulador_scorbot_node/fast:
-	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" && $(MAKE) -f scorbot_conector_sim/CMakeFiles/conector_simulador_scorbot_node.dir/build.make scorbot_conector_sim/CMakeFiles/conector_simulador_scorbot_node.dir/build
-.PHONY : conector_simulador_scorbot_node/fast
+conector_scorbot_sim/fast:
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" && $(MAKE) -f scorbot_conector_sim/CMakeFiles/conector_scorbot_sim.dir/build.make scorbot_conector_sim/CMakeFiles/conector_scorbot_sim.dir/build
+.PHONY : conector_scorbot_sim/fast
 
 # Convenience name for target.
 scorbot_conector_sim/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
@@ -413,7 +413,7 @@ src/conector.o: src/conector.cpp.o
 
 # target to build an object file
 src/conector.cpp.o:
-	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" && $(MAKE) -f scorbot_conector_sim/CMakeFiles/conector_simulador_scorbot_node.dir/build.make scorbot_conector_sim/CMakeFiles/conector_simulador_scorbot_node.dir/src/conector.cpp.o
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" && $(MAKE) -f scorbot_conector_sim/CMakeFiles/conector_scorbot_sim.dir/build.make scorbot_conector_sim/CMakeFiles/conector_scorbot_sim.dir/src/conector.cpp.o
 .PHONY : src/conector.cpp.o
 
 src/conector.i: src/conector.cpp.i
@@ -422,7 +422,7 @@ src/conector.i: src/conector.cpp.i
 
 # target to preprocess a source file
 src/conector.cpp.i:
-	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" && $(MAKE) -f scorbot_conector_sim/CMakeFiles/conector_simulador_scorbot_node.dir/build.make scorbot_conector_sim/CMakeFiles/conector_simulador_scorbot_node.dir/src/conector.cpp.i
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" && $(MAKE) -f scorbot_conector_sim/CMakeFiles/conector_scorbot_sim.dir/build.make scorbot_conector_sim/CMakeFiles/conector_scorbot_sim.dir/src/conector.cpp.i
 .PHONY : src/conector.cpp.i
 
 src/conector.s: src/conector.cpp.s
@@ -431,7 +431,7 @@ src/conector.s: src/conector.cpp.s
 
 # target to generate assembly for a file
 src/conector.cpp.s:
-	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" && $(MAKE) -f scorbot_conector_sim/CMakeFiles/conector_simulador_scorbot_node.dir/build.make scorbot_conector_sim/CMakeFiles/conector_simulador_scorbot_node.dir/src/conector.cpp.s
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" && $(MAKE) -f scorbot_conector_sim/CMakeFiles/conector_scorbot_sim.dir/build.make scorbot_conector_sim/CMakeFiles/conector_scorbot_sim.dir/src/conector.cpp.s
 .PHONY : src/conector.cpp.s
 
 src/conector_node.o: src/conector_node.cpp.o
@@ -440,7 +440,7 @@ src/conector_node.o: src/conector_node.cpp.o
 
 # target to build an object file
 src/conector_node.cpp.o:
-	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" && $(MAKE) -f scorbot_conector_sim/CMakeFiles/conector_simulador_scorbot_node.dir/build.make scorbot_conector_sim/CMakeFiles/conector_simulador_scorbot_node.dir/src/conector_node.cpp.o
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" && $(MAKE) -f scorbot_conector_sim/CMakeFiles/conector_scorbot_sim.dir/build.make scorbot_conector_sim/CMakeFiles/conector_scorbot_sim.dir/src/conector_node.cpp.o
 .PHONY : src/conector_node.cpp.o
 
 src/conector_node.i: src/conector_node.cpp.i
@@ -449,7 +449,7 @@ src/conector_node.i: src/conector_node.cpp.i
 
 # target to preprocess a source file
 src/conector_node.cpp.i:
-	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" && $(MAKE) -f scorbot_conector_sim/CMakeFiles/conector_simulador_scorbot_node.dir/build.make scorbot_conector_sim/CMakeFiles/conector_simulador_scorbot_node.dir/src/conector_node.cpp.i
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" && $(MAKE) -f scorbot_conector_sim/CMakeFiles/conector_scorbot_sim.dir/build.make scorbot_conector_sim/CMakeFiles/conector_scorbot_sim.dir/src/conector_node.cpp.i
 .PHONY : src/conector_node.cpp.i
 
 src/conector_node.s: src/conector_node.cpp.s
@@ -458,7 +458,7 @@ src/conector_node.s: src/conector_node.cpp.s
 
 # target to generate assembly for a file
 src/conector_node.cpp.s:
-	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" && $(MAKE) -f scorbot_conector_sim/CMakeFiles/conector_simulador_scorbot_node.dir/build.make scorbot_conector_sim/CMakeFiles/conector_simulador_scorbot_node.dir/src/conector_node.cpp.s
+	cd "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/build" && $(MAKE) -f scorbot_conector_sim/CMakeFiles/conector_scorbot_sim.dir/build.make scorbot_conector_sim/CMakeFiles/conector_scorbot_sim.dir/src/conector_node.cpp.s
 .PHONY : src/conector_node.cpp.s
 
 # Help Target
@@ -467,11 +467,11 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install/local"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... install/local"
-	@echo "... conector_simulador_scorbot_node"
+	@echo "... conector_scorbot_sim"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_cpp"

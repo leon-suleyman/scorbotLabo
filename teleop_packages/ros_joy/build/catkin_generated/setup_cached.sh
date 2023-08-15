@@ -7,9 +7,6 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH='/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/devel:/opt/ros/noetic'
-export LD_LIBRARY_PATH='/opt/ros/noetic/lib'
-export PKG_CONFIG_PATH='/opt/ros/noetic/lib/pkgconfig'
+export CMAKE_PREFIX_PATH="/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/devel:$CMAKE_PREFIX_PATH"
 export PWD='/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/build'
-export PYTHONPATH='/opt/ros/noetic/lib/python3/dist-packages'
-export ROS_PACKAGE_PATH='/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/src:/opt/ros/noetic/share'
+export ROS_PACKAGE_PATH="/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/src:$ROS_PACKAGE_PATH"

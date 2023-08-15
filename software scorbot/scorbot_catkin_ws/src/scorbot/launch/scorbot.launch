@@ -1,8 +1,8 @@
 <launch>  
-  <node pkg="industrial_robot_client" type="joint_trajectory_action" name="joint_trajectory_action">
+  <!--<node pkg="industrial_robot_client" type="joint_trajectory_action" name="joint_trajectory_action">
     <remap from="/feedback_states" to="/scorbot/feedback_states"/>
     <remap from="/joint_path_command" to="/scorbot/joint_path_command"/>
-  </node>
+  </node>-->
 
   <node name="keyboard" pkg="keyboard" type="keyboard"/>
   <node name="joy" pkg="joy" type="joy_node"/>
@@ -14,15 +14,13 @@
     <!-- TODO: usar require -->
   </node>
 
+  <node name="conector" pkg="conector_scorbot_sim" type="conector_scorbot_sim" output="screen"/>
+
   <node pkg="scorbot" type="teleop" name="scorbot" output="screen">
     <param name="control_frequency" value="4"/>
   </node>
 
-  <!-- node name="joy" pkg="joy" type="joy_node"/-->
-
   <node name="universal_teleop" pkg="universal_teleop" type="universal_teleop" output="screen">
     <rosparam file="$(find universal_teleop)/launch/scorbot_input_map.yml"/>
   </node>
-
-  <node name="conector" pkg="scorbot_conector_sim" type="scorbot_conector_sim" output="screen"/>
 </launch>

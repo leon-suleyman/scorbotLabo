@@ -1,2 +1,0 @@
-scorbot_conector_sim
--DCATKIN_DEVEL_PREFIX=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/conector_scorbot/devel -DCMAKE_INSTALL_PREFIX=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/conector_scorbot/install -G Unix Makefiles

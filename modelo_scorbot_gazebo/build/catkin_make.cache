@@ -1,2 +1,2 @@
-conector_simulador_scorbot:scorbot_tf
+scorbot_tf
 -DCATKIN_DEVEL_PREFIX=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/devel -DCMAKE_INSTALL_PREFIX=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/install -G Unix Makefiles
