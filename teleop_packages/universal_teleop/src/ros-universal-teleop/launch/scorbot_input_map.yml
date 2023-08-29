@@ -1,3 +1,3 @@
 joy_axes: {base: 0, shoulder: 1}
-joy_buttons: {elbow_up: 2, elbow_down: 1, wrist_down: 3, wrist_up: 4, rotate_cw: 6, rotate_ccw: 5, home: 11, slow: 12, stop: 8, override: 7}
+joy_buttons: {elbow_down: 1, elbow_up: 2, wrist_down: 3, wrist_up: 4, rotate_ccw: 5, rotate_cw: 6, override: 7, stop: 8, claw_catch: 9, claw_release: 10, home: 11, slow: 12}
 keys: {home: 104, stop: 122, action1: 99}

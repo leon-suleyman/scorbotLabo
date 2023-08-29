@@ -45,6 +45,13 @@ ros::NodeHandle nh;
 void on_home(const std_msgs::Empty& msg);
 ros::Subscriber<std_msgs::Empty> home_sub("/scorbot/home", &on_home);
 
+/* subscribers para la garra */
+void on_catch(const std_msgs::Empty& msg);
+ros::Subscriber<std_msgs::Empty> claw_catch_sub("/scorbot/claw_catch", &on_catch);
+
+void on_release(const std_msgs::Empty& msg);
+ros::Subscriber<std_msgs::Empty> claw_release_sub("/scorbot/claw_release", &on_release);
+
 /* publisher de robot state */
 sensor_msgs::JointState joint_state;
 ros::Publisher joint_state_pub("/scorbot/joint_states", &joint_state);
@@ -97,6 +104,8 @@ void setup(void)
   nh.subscribe(vel_sub);
   nh.subscribe(home_sub);
   nh.subscribe(trajectory_sub);
+  nh.subscribe(claw_catch_sub);
+  nh.subscribe(claw_release_sub);
 
   nh.advertise(joint_state_pub);
   nh.advertise(trajectory_feedback_pub);
@@ -142,6 +151,14 @@ void on_velocities(const scorbot::JointVelocities& vel_msg)
 void on_home(const std_msgs::Empty& msg)
 {
   buscar_home();
+}
+
+void on_catch(const std_msgs::Empty& msg){
+
+}
+
+void on_release(const std_msgs::Empty& msg){
+  
 }
 
 void on_trajectory(const scorbot::JointTrajectory& trajectory)

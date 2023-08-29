@@ -14,6 +14,9 @@ scorbot::Teleop::Teleop(ros::NodeHandle& n)
   joint_trajectory_sub = n.subscribe<trajectory_msgs::JointTrajectory>("/scorbot/joint_path_command", 1, &Teleop::on_trajectory, this);
   joint_trajectory_pub = n.advertise<scorbot::JointTrajectory>("/scorbot/joint_path_command_enc", 1);
 
+  claw_catch_pub = n.advertise<std_msgs::Empty>("/scorbot/claw_catch", 1);
+  claw_release_pub = n.advertise<std_msgs::Empty>("/scorbot/claw_release", 1);
+
   override_enabled = slow_mode_enabled = false;
 
   joint_states.resize(5, 0);
@@ -93,6 +96,12 @@ void scorbot::Teleop::on_events(const universal_teleop::EventConstPtr& msg)
   {
     if (msg->event == "home" && msg->state) {
       home_pub.publish(std_msgs::Empty());
+    }
+    else if (msg->event == "claw_catch" && msg->state) {
+      claw_catch_pub.publish(std_msgs::Empty());
+    }
+    else if (msg->event == "claw_release" && msg->state) {
+      claw_release_pub.publish(std_msgs::Empty());
     }
     else if (msg->event == "elbow_up") {
 	  joint_states[2] = (msg->state ? 1 : 0);
