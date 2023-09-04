@@ -2,32 +2,120 @@
 
 Servo servo; // servo object representing the MG 996R servo
 
-int pos = 90;               //position of the servo in degrees
-int receiveCommandPin = 0;  //pin through wich we receive the servo position to move to
-int sendConfirmPin = 0;     //pin through wich we send confirmation of how we succesfully moved to a position
-int interruptPin = 2;       //pin through wich we interrupt to read the receivePin
-int sendCommandPin = 3      //pin through wich we send the position move command to the servo.
+int receiveCommandPin = 0;    //pin through wich we receive the servo position to move to
+int isClosedPin = 0;          //pin through wich we send if the claw is open (0) or closed (1)
+int isHoldingPin = 0;         //pin through wich we send if we are holding (1) something or not (0) with the claw
+int interruptMasterPin = 2;   //pin through wich we interrupt to read the receivePin
+int interruptDebugPin = 2;    //pin through wich we switch states for debugging
+int interruptSensorPin = 3;   //pin through wich we interrupt to know we catched something in the claw
+int sendCommandPin = 7;        //pin through wich we send the position move command to the servo.
+
+int pos = 90;                 //position of the servo in degrees
+volatile bool caughtSomething = false; 
+
+//TODO terminar los estados y el resto
+
+enum {openClaw, closingClaw, closedClaw, holdingClaw, openingClaw};
+volatile unsigned char stateClaw = openClaw;
 
 void setup() {
-  servo.attach(sendCommandPin); // servo is wired to Arduino on digital pin 3
+  servo.attach(sendCommandPin); 
   pinMode(INPUT, receiveCommandPin);
-  pinMode(OUTPUT, sendConfirmPin);
-  attachInterrupt(digitalPinToInterrupt(interruptPin), listenToCommand, RISING);
+  pinMode(OUTPUT, isClosedPin);
+  pinMode(OUTPUT, isHoldingPin);
+  //attachInterrupt(digitalPinToInterrupt(interruptMasterPin), listenToCommand, RISING);
+  attachInterrupt(digitalPinToInterrupt(interruptDebugPin), debugStateSwitch, RISING);
+  attachInterrupt(digitalPinToInterrupt(interruptSensorPin), effectiveCatch, RISING);
+
+
+  servo.write(pos);
   
 }
 
 
 void loop() {
   
-  servo.write(pos);
-  digitalWrite(sendConfirmPin, 1);
+  switch(stateClaw){
 
+    case openClaw:
+      //la  garra está abierta y reporta que no está agarrando nada
+      reportState(0,0);
+      break;
+    
+    case closedClaw:
+      //la garra está cerrada y no aagarró nada
+      reportState(1,0);
+      break;
+
+    case openingClaw:
+      //estamos abriendo la garra
+      pos = 90;
+      servo.write(pos);
+      stateClaw = openClaw;
+      caughtSomething = false;
+      break;
+    
+    case holdingClaw:
+      //estamos agarrando algo
+      reportState(0,1);
+      break;
+
+    case closingClaw:
+      //cerramos la garra
+      closingSequence();
+      if(caughtSomething){
+        pos -= 5;
+        servo.write(pos);
+        delay(10);
+
+        stateClaw = holdingClaw;
+        reportState(0,1);
+      }else{
+        stateClaw = closedClaw;
+        reportState(1,0);
+      }
+      break;
+  }
+
+  delay(100);
+}
+
+void reportState(int isClosed, int isHolding){
+  digitalWrite(isClosedPin, isClosed);
+  digitalWrite(isHoldingPin, isHolding);
+}
+
+void closingSequence(){
+  while (!caughtSomething && pos > 18) {
+    pos -= 5;
+    servo.write(pos);
+    delay(10);
+  }
+}
+
+void effectiveCatch(){
+  caughtSomething = true;
+}
+
+void debugStateSwitch(){
+  switch(stateClaw){
+    case openClaw:
+      stateClaw = closingClaw;
+      break;
+    case closedClaw:
+      stateClaw = openingClaw;
+      break;
+    case holdingClaw:
+      stateClaw = openingClaw;
+      break;
+  }
 }
 
 void listenToCommand(){
-  pos = digitalRead(receiveCommandPin);
-  if(pos == 90){
-    servo.write(pos);
-    digitalWrite(sendConfirmPin, 1);
+  int close_command = digitalRead(receiveCommandPin);
+  if (close_command){
+    stateClaw = closingClaw;
+  }else{
+    stateClaw = openingClaw;
   }
 }
