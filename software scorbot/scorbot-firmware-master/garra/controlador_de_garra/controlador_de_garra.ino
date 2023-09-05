@@ -2,15 +2,15 @@
 
 Servo servo; // servo object representing the MG 996R servo
 
-int receiveCommandPin = 0;    //pin through wich we receive the servo position to move to
-int isClosedPin = 0;          //pin through wich we send if the claw is open (0) or closed (1)
-int isHoldingPin = 0;         //pin through wich we send if we are holding (1) something or not (0) with the claw
+int receiveCommandPin = 10;    //pin through wich we receive the servo position to move to
+int isClosedPin = 9;          //pin through wich we send if the claw is open (0) or closed (1)
+int isHoldingPin = 8;         //pin through wich we send if we are holding (1) something or not (0) with the claw
 int interruptMasterPin = 2;   //pin through wich we interrupt to read the receivePin
 int interruptDebugPin = 2;    //pin through wich we switch states for debugging
 int interruptSensorPin = 3;   //pin through wich we interrupt to know we catched something in the claw
 int sendCommandPin = 7;        //pin through wich we send the position move command to the servo.
 
-int pos = 90;                 //position of the servo in degrees
+int pos = 85;                 //position of the servo in degrees
 volatile bool caughtSomething = false; 
 
 //TODO terminar los estados y el resto
@@ -49,7 +49,7 @@ void loop() {
 
     case openingClaw:
       //estamos abriendo la garra
-      pos = 90;
+      pos = 85;
       servo.write(pos);
       stateClaw = openClaw;
       caughtSomething = false;
@@ -62,14 +62,19 @@ void loop() {
 
     case closingClaw:
       //cerramos la garra
-      closingSequence();
+      //closingSequence();
+      while (!caughtSomething && pos > 25) {
+        pos -= 10;
+        servo.write(pos);
+        delay(60);
+  }
       if(caughtSomething){
-        pos -= 5;
+        /*pos -= 5;
         servo.write(pos);
         delay(10);
 
         stateClaw = holdingClaw;
-        reportState(0,1);
+        reportState(0,1);*/
       }else{
         stateClaw = closedClaw;
         reportState(1,0);
@@ -86,14 +91,20 @@ void reportState(int isClosed, int isHolding){
 }
 
 void closingSequence(){
-  while (!caughtSomething && pos > 18) {
+  while (!caughtSomething && pos > 15) {
     pos -= 5;
     servo.write(pos);
-    delay(10);
+    delay(100);
   }
 }
 
 void effectiveCatch(){
+  pos -= 5;
+  servo.write(pos);
+  //delay(10);
+
+  stateClaw = holdingClaw;
+  reportState(0,1);
   caughtSomething = true;
 }
 
