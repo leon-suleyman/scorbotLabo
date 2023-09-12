@@ -23,6 +23,8 @@ namespace scorbot {
       void on_controls(const universal_teleop::ControlConstPtr& msg);
       void on_events(const universal_teleop::EventConstPtr& msg);
 
+      ros::Publisher claw_catch_pub, claw_release_pub;
+
       void on_control_cycle(const ros::TimerEvent& ev);
 
     private:

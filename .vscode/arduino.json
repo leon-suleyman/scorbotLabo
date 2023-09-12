@@ -1,0 +1,5 @@
+{
+    "board": "arduino:avr:uno",
+    "port": "/dev/ttyUSB0",
+    "sketch": "software scorbot/scorbot-firmware-master/garra/controlador_de_garra/controlador_de_garra.ino"
+}

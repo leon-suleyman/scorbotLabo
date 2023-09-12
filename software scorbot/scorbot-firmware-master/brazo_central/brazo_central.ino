@@ -45,12 +45,15 @@ ros::NodeHandle nh;
 void on_home(const std_msgs::Empty& msg);
 ros::Subscriber<std_msgs::Empty> home_sub("/scorbot/home", &on_home);
 
-/* subscribers para la garra */
+/* subscribers y publishers para la garra */
 void on_catch(const std_msgs::Empty& msg);
 ros::Subscriber<std_msgs::Empty> claw_catch_sub("/scorbot/claw_catch", &on_catch);
 
 void on_release(const std_msgs::Empty& msg);
-ros::Subscriber<std_msgs::Empty> claw_release_sub("/scorbot/claw_release", &on_release);
+ros::Subscriber<std_msgs::Empty> claw_release_sub("/scorbot/claw_release", &on_catch);
+
+std_msgs::Empty claw_caught;
+ros::Publisher claw_caught_pub("/scorbot/claw_caught", &claw_caught);
 
 /* publisher de robot state */
 sensor_msgs::JointState joint_state;
@@ -80,6 +83,16 @@ bool reached_current_goal[NUM_JUNTAS] = { false, false, false, false, false };
 int current_goal_index = -1;
 int current_goal_length = 0;
 
+enum {openClaw, closedClaw, holdingClaw};
+unsigned char stateClaw = openClaw; 
+
+/********* pins de la garra ********/
+
+int sendClawCommandPin = 41;      //pin through wich we send the servo position to move to
+int isClosedClawPin = 39;         //pin through wich we receive if the claw is open (0) or closed (1)
+int isHoldingClawPin = 37;        //pin through wich we receive if we are holding (1) something or not (0) with the claw
+int sendInterruptToClawPin = 35;  //pin through wich we interrupt to read the receivePin
+
 /*********** setup ****************/
 void setup(void)
 {  
@@ -94,6 +107,13 @@ void setup(void)
   
   /* setup LED */
   pinMode(13, OUTPUT);
+
+  /* claw pins */
+
+  pinMode(sendClawCommandPin, OUTPUT);
+  pinMode(isClosedClawPin, INPUT);
+  pinMode(isHoldingClawPin, INPUT);
+  pinMode(sendInterruptToClawPin, OUTPUT);
   
   #if (SERIAL_DEBUG)
   /* init ROS */
@@ -109,6 +129,7 @@ void setup(void)
 
   nh.advertise(joint_state_pub);
   nh.advertise(trajectory_feedback_pub);
+  nh.advertise(claw_caught_pub);
   
   nh.advertise(debug_pub);
   #endif
@@ -153,12 +174,46 @@ void on_home(const std_msgs::Empty& msg)
   buscar_home();
 }
 
+//when ordered to catch something we send the close signal to the claw and the wait 3,5seconds to check if it closed correctly.
 void on_catch(const std_msgs::Empty& msg){
+  if(stateClaw == openClaw){
+    digitalWrite(sendClawCommandPin, 1);
+    digitalWrite(sendInterruptToClawPin, 1);
 
+    int clawIsClosed = digitalRead(isClosedClawPin);
+    int clawIsHolding = digitalRead(isHoldingClawPin);
+    int i = 7;
+    while(!(clawIsClosed) && !(clawIsHolding) && (i>0)){
+      int clawIsClosed = digitalRead(isClosedClawPin);
+      int clawIsHolding = digitalRead(isHoldingClawPin);
+      delay(500);
+      i=i-1;
+    }
+    if(i!=0){
+      stateClaw = closedClaw;
+    }
+  }
 }
 
+//when ordered to release something we send the open signal to the claw and the wait 3,5seconds to check if it opened correctly.
 void on_release(const std_msgs::Empty& msg){
-  
+  if(stateClaw != openClaw){
+    digitalWrite(sendClawCommandPin, 0);
+    digitalWrite(sendInterruptToClawPin, 1);
+
+    int clawIsClosed = digitalRead(isClosedClawPin);
+    int clawIsHolding = digitalRead(isHoldingClawPin);
+    int i = 7;
+    while((clawIsClosed || clawIsHolding) && (i>0)){
+      int clawIsClosed = digitalRead(isClosedClawPin);
+      int clawIsHolding = digitalRead(isHoldingClawPin);
+      delay(500);
+      i=i-1;
+    }
+    if(i!=0){
+      stateClaw = openClaw;
+    }
+  }
 }
 
 void on_trajectory(const scorbot::JointTrajectory& trajectory)
@@ -490,6 +545,10 @@ void loop(void)
   #else
   nh.spinOnce();
   publish_state();
+  int clawIsHolding = digitalRead(isHoldingClawPin);
+  if(clawIsHolding){
+    stateClaw = holdingClaw;
+  }
   #endif
   
   delay(2);

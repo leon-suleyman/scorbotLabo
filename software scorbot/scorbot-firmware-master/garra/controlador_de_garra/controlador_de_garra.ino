@@ -23,8 +23,8 @@ void setup() {
   pinMode(INPUT, receiveCommandPin);
   pinMode(OUTPUT, isClosedPin);
   pinMode(OUTPUT, isHoldingPin);
-  //attachInterrupt(digitalPinToInterrupt(interruptMasterPin), listenToCommand, RISING);
-  attachInterrupt(digitalPinToInterrupt(interruptDebugPin), debugStateSwitch, RISING);
+  attachInterrupt(digitalPinToInterrupt(interruptMasterPin), listenToCommand, RISING);
+  //attachInterrupt(digitalPinToInterrupt(interruptDebugPin), debugStateSwitch, RISING);
   attachInterrupt(digitalPinToInterrupt(interruptSensorPin), effectiveCatch, RISING);
 
 
