@@ -22,7 +22,7 @@
 #define EEPROM_JOINT_ADDRESS 0
 #define EEPROM_CONSTANTS 1
 
-#define SERIAL_DEBUG 0
+#define SERIAL_DEBUG 1
 
 #if (SERIAL_DEBUG)
 #define SERIAL_DBG(x) x
@@ -109,6 +109,49 @@ void setup() {
   set_speed(0,0);*/
     
   //i2c_set_slave_address(4);
+  /*
+
+  int16_t pwm_max, pwm_min, cte_PID_agg;
+  float kp_vel, ki_vel, kd_vel, vel_max, vel_min, kp_pos;
+  float ki_pos, kd_pos, agg_kp_pos, agg_ki_pos, agg_kd_pos;
+  EEPROM.get(EEPROM_CONSTANTS, pid_constants);
+  SERIAL_DBG(Serial.print("pwm_max :"); Serial.println(pid_constants.pwm_max));
+  SERIAL_DBG(Serial.print("pwm_min :"); Serial.println(pid_constants.pwm_min));
+  SERIAL_DBG(Serial.print("cte_PID_agg :"); Serial.println(pid_constants.cte_PID_agg));
+  SERIAL_DBG(Serial.print("kp_vel :"); Serial.println(pid_constants.kp_vel));
+  SERIAL_DBG(Serial.print("ki_vel :"); Serial.println(pid_constants.ki_vel));
+  SERIAL_DBG(Serial.print("kd_vel :"); Serial.println(pid_constants.kd_vel));
+  SERIAL_DBG(Serial.print("vel_max :"); Serial.println(pid_constants.vel_max));
+  SERIAL_DBG(Serial.print("vel_min :"); Serial.println(pid_constants.vel_min));
+  SERIAL_DBG(Serial.print("kp_pos :"); Serial.println(pid_constants.kp_pos));
+  SERIAL_DBG(Serial.print("ki_pos :"); Serial.println(pid_constants.ki_pos));
+  SERIAL_DBG(Serial.print("kd_pos :"); Serial.println(pid_constants.kd_pos));
+  SERIAL_DBG(Serial.print("agg_kp_pos :"); Serial.println(pid_constants.agg_kp_pos));
+  SERIAL_DBG(Serial.print("agg_ki_pos :"); Serial.println(pid_constants.agg_ki_pos));
+  SERIAL_DBG(Serial.print("agg_kd_pos :"); Serial.println(pid_constants.agg_kd_pos));
+  */
+  pid_constants.pwm_max = 128;
+  pid_constants.pwm_min = 45;
+  pid_constants.cte_PID_agg = 0;
+  pid_constants.kp_vel = 10.00;
+  pid_constants.ki_vel = 0.50;
+  pid_constants.kd_vel = 0.01;
+  pid_constants.vel_max = 8.00;
+  pid_constants.vel_min = 0.00;
+  pid_constants.kp_pos = 0.05;
+  pid_constants.ki_pos = 0.00;
+  pid_constants.kd_pos = 0.00;
+  pid_constants.agg_kp_pos = 1.50;
+  pid_constants.agg_ki_pos = 1.00;
+  pid_constants.agg_kd_pos = 0.00;
+
+  EEPROM.put(EEPROM_CONSTANTS, pid_constants);
+  pid_set_constants();
+
+  //TODO ESCRIBIR LA MEMORIA DE LOS NUEVOS
+  
+
+
   i2c_initialize();
   
   Serial.print("bienvenido a la junta "); Serial.println(i2c_slave_address);
@@ -214,7 +257,7 @@ void i2c_update(void) {
     }
   }
 }
-int forwards = true;
+
 /******************* serial communication **************/
 void process_serial(void) {
   if (!Serial.available()) return;
@@ -234,14 +277,7 @@ void process_serial(void) {
   else if (c == 'd') { frenar(); }
   
   else if (c == 'h') buscar_home();
-  if (forwards){
-    pid_pos_status.enable = false; set_pid_speed(7); pid_vel.Reset();
-    forwards = false;
-  }else{
-    pid_pos_status.enable = false; set_pid_speed(-3); pid_vel.Reset();
-    forwards = true;
-  }
-  
+
 }
 
 /***************** control ****************/
@@ -250,7 +286,11 @@ void pid_set_constants(void)
   pid_pos.SetOutputLimits(-(pid_constants.vel_max - pid_constants.vel_min), (pid_constants.vel_max - pid_constants.vel_min));  
   pid_vel.SetOutputLimits(-(pid_constants.pwm_max - pid_constants.pwm_min), (pid_constants.pwm_max - pid_constants.pwm_min));
   pid_pos.SetTunings(pid_constants.kp_pos, pid_constants.ki_pos, pid_constants.kd_pos); 
-  pid_vel.SetTunings(pid_constants.kp_vel, pid_constants.ki_vel, pid_constants.kd_vel);           
+  pid_vel.SetTunings(pid_constants.kp_vel, pid_constants.ki_vel, pid_constants.kd_vel);
+
+  SERIAL_DBG(Serial.print("p: "); Serial.println(pid_constants.kp_vel));
+  SERIAL_DBG(Serial.print("i: "); Serial.println(pid_constants.ki_vel));
+  SERIAL_DBG(Serial.print("d: "); Serial.println(pid_constants.kd_vel));           
     
   pid_pos.Reset();
   pid_vel.Reset();
@@ -321,7 +361,6 @@ void update_position(void)
 
   if (pid_pos_status.time_delta < CONTROL_PID_POS_MS) return;
   SERIAL_DBG(Serial.print(pid_vel_status.setpoint); Serial.print(" "); Serial.print(pid_vel_status.input); Serial.print(" "); Serial.print(pid_vel_status.output + (pid_vel_status.output < 0  ? -pid_constants.pwm_min : pid_constants.pwm_min)); Serial.print(" "); Serial.println(pos));
-
   pid_pos_status.input = pos;
   double gap = abs(pid_pos_status.setpoint - pid_pos_status.input);
   
@@ -353,7 +392,7 @@ void update_vel(void)
 {
   unsigned long time = millis();
   pid_vel_status.time_delta += time - pid_vel_status.prev_time;
-  pid_vel_status.prev_time = time;  
+  pid_vel_status.prev_time = time; 
 
   long pos = enc.read();
   pid_vel_status.pos_delta += pos - pid_vel_status.prev_pos;
@@ -362,7 +401,13 @@ void update_vel(void)
   if (pid_vel_status.time_delta < CONTROL_PID_VEL_MS) return;
   //Serial.print((double)pid_vel_status.pos_delta); Serial.print(" "); Serial.println((double)pid_vel_status.time_delta);
   pid_vel_status.input = (double)pid_vel_status.pos_delta / (double)pid_vel_status.time_delta; // cuenta encoder por ms
-  pid_vel.Compute();  
+
+  SERIAL_DBG(Serial.print("input: "); Serial.println(pid_vel_status.input));
+  SERIAL_DBG(Serial.print("setpoint: "); Serial.println(pid_vel_status.setpoint));
+  
+  bool result_compute = pid_vel.Compute();
+  SERIAL_DBG(Serial.print("result compute: "); Serial.println(result_compute ? "true" : "false"));  
+  SERIAL_DBG(Serial.print("output: "); Serial.println(pid_vel_status.output));  
   if (pid_vel_status.enable) set_speed((pid_vel_status.output < 0 ? -1 : 1), (int)abs(pid_vel_status.output) + pid_constants.pwm_min);
   
   pid_vel_status.time_delta = 0;
@@ -418,10 +463,10 @@ bool check_home(void) {
   
   return false;
 }
-
+int forwards = true;
 /*********************************** main loop *************************************/
 void loop() {
-  i2c_update();
+   i2c_update();
   
   /* actualiza las constantes del PID si cambiaron */
   if (constants_changed) pid_update_constants();
@@ -431,6 +476,7 @@ void loop() {
   update_vel();
   
   /* led indica home */
+  /*
   int home_status_current = digitalReadFast(PIN_HOME);
   if (home_status_current == 1 && home_status == 0) {
     home_status = 1;
@@ -444,9 +490,20 @@ void loop() {
   if (homing) {
     if (check_home()) Serial.println("iupi");
   }
+  */
   
   /* procesar comandos */
   process_serial();
+  
+  if (forwards){
+    pid_pos_status.enable = false; set_pid_speed(150); pid_vel.Reset();
+    //Serial.println("movemos hacía adelante");
+    forwards = false;
+  }else{
+    pid_pos_status.enable = false; set_pid_speed(-150); pid_vel.Reset();
+    //Serial.println("movemos hacía atras");
+    forwards = true;
+  }
   delay(1000);
   //  set_speed(1, 64);
 }

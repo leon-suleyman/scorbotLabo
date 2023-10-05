@@ -273,7 +273,7 @@ double get_speed(int slave) {
 int32_t get_position(int slave) {
   i2c_send_addr(slave, I2C_REG_POSITION, true);
   delay(10); // let arduino time to fill data
-
+  
   int32_t pos = 0;  
   Wire.requestFrom(slave, sizeof(pos));
   Wire.readBytes((char*)&pos, sizeof(pos));
