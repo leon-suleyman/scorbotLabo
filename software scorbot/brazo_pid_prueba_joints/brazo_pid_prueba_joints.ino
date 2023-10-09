@@ -108,9 +108,11 @@ void setup() {
   /*delay(1000);
   set_speed(0,0);*/
     
-  //i2c_set_slave_address(4);
-  /*
+  //escribe el slave address en la memoria EEPROM
+  //i2c_set_slave_address(2);
 
+  /*
+  //lee la memoria EEPROM de uno ya escrito, para buscar contantes.
   int16_t pwm_max, pwm_min, cte_PID_agg;
   float kp_vel, ki_vel, kd_vel, vel_max, vel_min, kp_pos;
   float ki_pos, kd_pos, agg_kp_pos, agg_ki_pos, agg_kd_pos;
@@ -130,6 +132,10 @@ void setup() {
   SERIAL_DBG(Serial.print("agg_ki_pos :"); Serial.println(pid_constants.agg_ki_pos));
   SERIAL_DBG(Serial.print("agg_kd_pos :"); Serial.println(pid_constants.agg_kd_pos));
   */
+
+  
+  //escribe en la memoria EEPROM las constantes (para cargar un micro nuevo)
+  /*
   pid_constants.pwm_max = 128;
   pid_constants.pwm_min = 45;
   pid_constants.cte_PID_agg = 0;
@@ -147,10 +153,7 @@ void setup() {
 
   EEPROM.put(EEPROM_CONSTANTS, pid_constants);
   pid_set_constants();
-
-  //TODO ESCRIBIR LA MEMORIA DE LOS NUEVOS
-  
-
+  */
 
   i2c_initialize();
   
