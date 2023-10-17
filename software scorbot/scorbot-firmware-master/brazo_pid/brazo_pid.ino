@@ -102,6 +102,53 @@ void setup() {
   pid_vel.SetMode(AUTOMATIC);
   pid_vel.SetSampleTime(CONTROL_PID_VEL_MS);
   
+  //escribe el slave address en la memoria EEPROM
+  //i2c_set_slave_address(2);
+
+  /*
+  //lee la memoria EEPROM de uno ya escrito, para buscar contantes.
+  int16_t pwm_max, pwm_min, cte_PID_agg;
+  float kp_vel, ki_vel, kd_vel, vel_max, vel_min, kp_pos;
+  float ki_pos, kd_pos, agg_kp_pos, agg_ki_pos, agg_kd_pos;
+  EEPROM.get(EEPROM_CONSTANTS, pid_constants);
+  SERIAL_DBG(Serial.print("pwm_max :"); Serial.println(pid_constants.pwm_max));
+  SERIAL_DBG(Serial.print("pwm_min :"); Serial.println(pid_constants.pwm_min));
+  SERIAL_DBG(Serial.print("cte_PID_agg :"); Serial.println(pid_constants.cte_PID_agg));
+  SERIAL_DBG(Serial.print("kp_vel :"); Serial.println(pid_constants.kp_vel));
+  SERIAL_DBG(Serial.print("ki_vel :"); Serial.println(pid_constants.ki_vel));
+  SERIAL_DBG(Serial.print("kd_vel :"); Serial.println(pid_constants.kd_vel));
+  SERIAL_DBG(Serial.print("vel_max :"); Serial.println(pid_constants.vel_max));
+  SERIAL_DBG(Serial.print("vel_min :"); Serial.println(pid_constants.vel_min));
+  SERIAL_DBG(Serial.print("kp_pos :"); Serial.println(pid_constants.kp_pos));
+  SERIAL_DBG(Serial.print("ki_pos :"); Serial.println(pid_constants.ki_pos));
+  SERIAL_DBG(Serial.print("kd_pos :"); Serial.println(pid_constants.kd_pos));
+  SERIAL_DBG(Serial.print("agg_kp_pos :"); Serial.println(pid_constants.agg_kp_pos));
+  SERIAL_DBG(Serial.print("agg_ki_pos :"); Serial.println(pid_constants.agg_ki_pos));
+  SERIAL_DBG(Serial.print("agg_kd_pos :"); Serial.println(pid_constants.agg_kd_pos));
+  */
+
+  
+  //escribe en la memoria EEPROM las constantes (para cargar un micro nuevo)
+  /*
+  pid_constants.pwm_max = 128;
+  pid_constants.pwm_min = 45;
+  pid_constants.cte_PID_agg = 0;
+  pid_constants.kp_vel = 10.00;
+  pid_constants.ki_vel = 0.50;
+  pid_constants.kd_vel = 0.01;
+  pid_constants.vel_max = 8.00;
+  pid_constants.vel_min = 0.00;
+  pid_constants.kp_pos = 0.05;
+  pid_constants.ki_pos = 0.00;
+  pid_constants.kd_pos = 0.00;
+  pid_constants.agg_kp_pos = 1.50;
+  pid_constants.agg_ki_pos = 1.00;
+  pid_constants.agg_kd_pos = 0.00;
+
+  EEPROM.put(EEPROM_CONSTANTS, pid_constants);
+  pid_set_constants();
+  */
+
   pid_read_constants();
   
   //set_speed(1, 64);

@@ -14,6 +14,7 @@
 #include "brazo_i2c.h"
 
 #define SERIAL_DEBUG 0 // poner en 1 para controlar el brazo por terminal serial de arduino, poner en 0 para control desde ROS
+#define SETEAR_CONSTS 0 //poner en 1 para setear las constantes de los microcontroladores (arduinos pro mini) (en caso de updatear las consts PID o reemplazar micro)
 
 #if SERIAL_DEBUG
 #define SERIAL_DBG(x) x
@@ -38,22 +39,15 @@
 #define NUM_JUNTAS 5
 #define SERIAL_BINARY 1
 
+int var_imprimible_int;
+float var_imprimible_float;
+
 /******** variables de ROS *******/
 ros::NodeHandle nh;
 
 /* subscriber para home */
 void on_home(const std_msgs::Empty& msg);
 ros::Subscriber<std_msgs::Empty> home_sub("/scorbot/home", &on_home);
-
-/* subscribers y publishers para la garra */
-void on_catch(const std_msgs::Empty& msg);
-ros::Subscriber<std_msgs::Empty> claw_catch_sub("/scorbot/claw_catch", &on_catch);
-
-void on_release(const std_msgs::Empty& msg);
-ros::Subscriber<std_msgs::Empty> claw_release_sub("/scorbot/claw_release", &on_catch);
-
-std_msgs::Empty claw_caught;
-ros::Publisher claw_caught_pub("/scorbot/claw_caught", &claw_caught);
 
 /* publisher de robot state */
 sensor_msgs::JointState joint_state;
@@ -83,16 +77,6 @@ bool reached_current_goal[NUM_JUNTAS] = { false, false, false, false, false };
 int current_goal_index = -1;
 int current_goal_length = 0;
 
-enum {openClaw, closedClaw, holdingClaw};
-unsigned char stateClaw = openClaw; 
-
-/********* pins de la garra ********/
-
-int sendClawCommandPin = 41;      //pin through wich we send the servo position to move to
-int isClosedClawPin = 39;         //pin through wich we receive if the claw is open (0) or closed (1)
-int isHoldingClawPin = 37;        //pin through wich we receive if we are holding (1) something or not (0) with the claw
-int sendInterruptToClawPin = 35;  //pin through wich we interrupt to read the receivePin
-
 /*********** setup ****************/
 void setup(void)
 {  
@@ -102,18 +86,10 @@ void setup(void)
   /* init i2c */
   i2c_init();
    
-  /* (optionally) set constants */
-  setear_constantes();
+  
   
   /* setup LED */
   pinMode(13, OUTPUT);
-
-  /* claw pins */
-
-  pinMode(sendClawCommandPin, OUTPUT);
-  pinMode(isClosedClawPin, INPUT);
-  pinMode(isHoldingClawPin, INPUT);
-  pinMode(sendInterruptToClawPin, OUTPUT);
   
   #if (SERIAL_DEBUG)
   /* init ROS */
@@ -124,15 +100,14 @@ void setup(void)
   nh.subscribe(vel_sub);
   nh.subscribe(home_sub);
   nh.subscribe(trajectory_sub);
-  nh.subscribe(claw_catch_sub);
-  nh.subscribe(claw_release_sub);
 
   nh.advertise(joint_state_pub);
   nh.advertise(trajectory_feedback_pub);
-  nh.advertise(claw_caught_pub);
   
   nh.advertise(debug_pub);
   #endif
+  /* (optionally) set constants */
+  setear_constantes();
 }
 
 /***************** ROS **************/
@@ -172,48 +147,6 @@ void on_velocities(const scorbot::JointVelocities& vel_msg)
 void on_home(const std_msgs::Empty& msg)
 {
   buscar_home();
-}
-
-//when ordered to catch something we send the close signal to the claw and the wait 3,5seconds to check if it closed correctly.
-void on_catch(const std_msgs::Empty& msg){
-  if(stateClaw == openClaw){
-    digitalWrite(sendClawCommandPin, 1);
-    digitalWrite(sendInterruptToClawPin, 1);
-
-    int clawIsClosed = digitalRead(isClosedClawPin);
-    int clawIsHolding = digitalRead(isHoldingClawPin);
-    int i = 7;
-    while(!(clawIsClosed) && !(clawIsHolding) && (i>0)){
-      int clawIsClosed = digitalRead(isClosedClawPin);
-      int clawIsHolding = digitalRead(isHoldingClawPin);
-      delay(500);
-      i=i-1;
-    }
-    if(i!=0){
-      stateClaw = closedClaw;
-    }
-  }
-}
-
-//when ordered to release something we send the open signal to the claw and the wait 3,5seconds to check if it opened correctly.
-void on_release(const std_msgs::Empty& msg){
-  if(stateClaw != openClaw){
-    digitalWrite(sendClawCommandPin, 0);
-    digitalWrite(sendInterruptToClawPin, 1);
-
-    int clawIsClosed = digitalRead(isClosedClawPin);
-    int clawIsHolding = digitalRead(isHoldingClawPin);
-    int i = 7;
-    while((clawIsClosed || clawIsHolding) && (i>0)){
-      int clawIsClosed = digitalRead(isClosedClawPin);
-      int clawIsHolding = digitalRead(isHoldingClawPin);
-      delay(500);
-      i=i-1;
-    }
-    if(i!=0){
-      stateClaw = openClaw;
-    }
-  }
 }
 
 void on_trajectory(const scorbot::JointTrajectory& trajectory)
@@ -345,7 +278,7 @@ double get_speed(int slave) {
 int32_t get_position(int slave) {
   i2c_send_addr(slave, I2C_REG_POSITION, true);
   delay(10); // let arduino time to fill data
-
+  
   int32_t pos = 0;  
   Wire.requestFrom(slave, sizeof(pos));
   Wire.readBytes((char*)&pos, sizeof(pos));
@@ -427,11 +360,11 @@ bool serial_parse(void) {
         case 'r': set_speed_junta(3, -1); break;
         case 't': set_speed_junta(4, -1); break;        
         
-        case 'a': set_speed_junta(0, 0); break;
-        case 's': set_speed_junta(1, 0); break;
-        case 'd': set_speed_junta(2, 0); break;
-        case 'f': set_speed_junta(3, 0); break;
-        case 'g': set_speed_junta(4, 0); break;
+        case 'a': set_speed_junta(0, 1); break;
+        case 's': set_speed_junta(1, 1); break;
+        case 'd': set_speed_junta(2, 1); break;
+        case 'f': set_speed_junta(3, 1); break;
+        case 'g': set_speed_junta(4, 1); break;
       }
     }
   }
@@ -488,8 +421,9 @@ void buscar_home(void) {
 }
 
 void get_pos_juntas(void) {
-  for (int i = 1; i <= NUM_JUNTAS; i++)
+  for (int i = 1; i <= NUM_JUNTAS; i++){
     pos_juntas[i-1] = get_position(i);
+  }
 }
 
 #if SERIAL_DEBUG
@@ -545,10 +479,6 @@ void loop(void)
   #else
   nh.spinOnce();
   publish_state();
-  int clawIsHolding = digitalRead(isHoldingClawPin);
-  if(clawIsHolding){
-    stateClaw = holdingClaw;
-  }
   #endif
   
   delay(2);
@@ -559,7 +489,7 @@ void setear_constantes(void)
   /* seteo de constantes */
   pid_constants_t constants;
   
-  #if 0
+  #if SETEAR_CONSTS
   /* junta 1 */
   constants.pwm_max = 128; 
   constants.pwm_min = 35;
@@ -579,7 +509,7 @@ void setear_constantes(void)
   set_constants(1, constants);
   #endif  
  
-  #if 0
+  #if SETEAR_CONSTS
   /* junta 2 */
   constants.pwm_max = 128; 
   constants.pwm_min = 45;
@@ -599,7 +529,7 @@ void setear_constantes(void)
   set_constants(2, constants);
   #endif  
 
-  #if 0
+  #if SETEAR_CONSTS
   /* junta 3 */
   constants.pwm_max = 128; 
   constants.pwm_min = 45;
@@ -619,7 +549,7 @@ void setear_constantes(void)
   set_constants(3, constants);
   #endif  
 
-  #if 0
+  #if SETEAR_CONSTS
   /* junta 4 */
   constants.pwm_max = 128; 
   constants.pwm_min = 45;
@@ -639,7 +569,7 @@ void setear_constantes(void)
   set_constants(4, constants);
   #endif
   
-  #if 0
+  #if SETEAR_CONSTS
   /* junta 5 */
   constants.pwm_max = 128; 
   constants.pwm_min = 45;
