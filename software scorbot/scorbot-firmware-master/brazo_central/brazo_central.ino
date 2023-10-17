@@ -14,6 +14,7 @@
 #include "brazo_i2c.h"
 
 #define SERIAL_DEBUG 0 // poner en 1 para controlar el brazo por terminal serial de arduino, poner en 0 para control desde ROS
+#define SETEAR_CONSTS 0 //poner en 1 para setear las constantes de los microcontroladores (arduinos pro mini) (en caso de updatear las consts PID o reemplazar micro)
 
 #if SERIAL_DEBUG
 #define SERIAL_DBG(x) x
@@ -37,6 +38,9 @@
 #define MAX_TRAJECTORY_SIZE 10
 #define NUM_JUNTAS 5
 #define SERIAL_BINARY 1
+
+int var_imprimible_int;
+float var_imprimible_float;
 
 /******** variables de ROS *******/
 ros::NodeHandle nh;
@@ -82,8 +86,7 @@ void setup(void)
   /* init i2c */
   i2c_init();
    
-  /* (optionally) set constants */
-  setear_constantes();
+  
   
   /* setup LED */
   pinMode(13, OUTPUT);
@@ -103,6 +106,8 @@ void setup(void)
   
   nh.advertise(debug_pub);
   #endif
+  /* (optionally) set constants */
+  setear_constantes();
 }
 
 /***************** ROS **************/
@@ -355,11 +360,11 @@ bool serial_parse(void) {
         case 'r': set_speed_junta(3, -1); break;
         case 't': set_speed_junta(4, -1); break;        
         
-        case 'a': set_speed_junta(0, 0); break;
-        case 's': set_speed_junta(1, 0); break;
-        case 'd': set_speed_junta(2, 0); break;
-        case 'f': set_speed_junta(3, 0); break;
-        case 'g': set_speed_junta(4, 0); break;
+        case 'a': set_speed_junta(0, 1); break;
+        case 's': set_speed_junta(1, 1); break;
+        case 'd': set_speed_junta(2, 1); break;
+        case 'f': set_speed_junta(3, 1); break;
+        case 'g': set_speed_junta(4, 1); break;
       }
     }
   }
@@ -416,8 +421,9 @@ void buscar_home(void) {
 }
 
 void get_pos_juntas(void) {
-  for (int i = 1; i <= NUM_JUNTAS; i++)
+  for (int i = 1; i <= NUM_JUNTAS; i++){
     pos_juntas[i-1] = get_position(i);
+  }
 }
 
 #if SERIAL_DEBUG
@@ -483,7 +489,7 @@ void setear_constantes(void)
   /* seteo de constantes */
   pid_constants_t constants;
   
-  #if 0
+  #if SETEAR_CONSTS
   /* junta 1 */
   constants.pwm_max = 128; 
   constants.pwm_min = 35;
@@ -503,7 +509,7 @@ void setear_constantes(void)
   set_constants(1, constants);
   #endif  
  
-  #if 0
+  #if SETEAR_CONSTS
   /* junta 2 */
   constants.pwm_max = 128; 
   constants.pwm_min = 45;
@@ -523,7 +529,7 @@ void setear_constantes(void)
   set_constants(2, constants);
   #endif  
 
-  #if 0
+  #if SETEAR_CONSTS
   /* junta 3 */
   constants.pwm_max = 128; 
   constants.pwm_min = 45;
@@ -543,7 +549,7 @@ void setear_constantes(void)
   set_constants(3, constants);
   #endif  
 
-  #if 0
+  #if SETEAR_CONSTS
   /* junta 4 */
   constants.pwm_max = 128; 
   constants.pwm_min = 45;
@@ -563,7 +569,7 @@ void setear_constantes(void)
   set_constants(4, constants);
   #endif
   
-  #if 0
+  #if SETEAR_CONSTS
   /* junta 5 */
   constants.pwm_max = 128; 
   constants.pwm_min = 45;
