@@ -1,5 +1,7 @@
 {
-    "board": "arduino:avr:uno",
-    "port": "/dev/ttyUSB0",
-    "sketch": "software scorbot/scorbot-firmware-master/garra/controlador_de_garra/controlador_de_garra.ino"
+    "board": "arduino:avr:mega",
+    "port": "/dev/ttyACM0",
+    "sketch": "software scorbot/scorbot-firmware-master/brazo_central/brazo_central.ino",
+    "configuration": "cpu=atmega2560",
+    "programmer": "avrisp"
 }

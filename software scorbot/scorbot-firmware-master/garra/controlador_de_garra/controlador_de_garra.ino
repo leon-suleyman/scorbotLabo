@@ -2,30 +2,38 @@
 
 Servo servo; // servo object representing the MG 996R servo
 
-int receiveCommandPin = 10;    //pin through wich we receive the servo position to move to
-int isClosedPin = 9;          //pin through wich we send if the claw is open (0) or closed (1)
-int isHoldingPin = 8;         //pin through wich we send if we are holding (1) something or not (0) with the claw
-int interruptMasterPin = 2;   //pin through wich we interrupt to read the receivePin
-int interruptDebugPin = 2;    //pin through wich we switch states for debugging
-int interruptSensorPin = 3;   //pin through wich we interrupt to know we catched something in the claw
-int sendCommandPin = 7;        //pin through wich we send the position move command to the servo.
+int interruptMasterPin = 8;   //pin through wich we interrupt to read the receivePin
+int interruptDebugPin = 8;    //pin through wich we switch states for debugging
+int isHoldingPin = 7;         //pin through wich we send if we are holding (1) something or not (0) with the claw
+int isClosedPin = 6;          //pin through wich we send if the claw is open (0) or closed (1)
+int receiveCommandPin = 5;    //pin through wich we receive the servo position to move to
+int sendCommandPin = 4;        //pin through wich we send the position move command to the servo.
+int interruptSensor1Pin = 3;   //pin through wich we interrupt to know we catched something in the claw
+int interruptSensor2Pin = 2;   //pin through wich we interrupt to know we catched something in the claw
 
 int pos = 85;                 //position of the servo in degrees
 volatile bool caughtSomething = false; 
 
 //TODO terminar los estados y el resto
 
-enum {openClaw, closingClaw, closedClaw, holdingClaw, openingClaw};
+enum {openClaw, closingClaw, closedClaw, waitingForSecondSensorClaw, holdingClaw, openingClaw};
 volatile unsigned char stateClaw = openClaw;
 
 void setup() {
+
   servo.attach(sendCommandPin); 
   pinMode(INPUT, receiveCommandPin);
   pinMode(OUTPUT, isClosedPin);
   pinMode(OUTPUT, isHoldingPin);
-  attachInterrupt(digitalPinToInterrupt(interruptMasterPin), listenToCommand, RISING);
-  //attachInterrupt(digitalPinToInterrupt(interruptDebugPin), debugStateSwitch, RISING);
-  attachInterrupt(digitalPinToInterrupt(interruptSensorPin), effectiveCatch, RISING);
+  //attachInterrupt(digitalPinToInterrupt(interruptMasterPin), listenToCommand, CHANGE);
+  //attachInterrupt(digitalPinToInterrupt(interruptDebugPin), debugStateSwitch, CHANGE);
+  pinMode(INPUT, interruptMasterPin);
+  attachInterrupt(digitalPinToInterrupt(interruptSensor1Pin), effectiveCatch, RISING);
+  attachInterrupt(digitalPinToInterrupt(interruptSensor2Pin), effectiveCatch, RISING);
+
+  *digitalPinToPCMSK(interruptMasterPin) |= bit (digitalPinToPCMSKbit(interruptMasterPin));  // activar pin en PCMSK
+  PCIFR  |= bit (digitalPinToPCICRbit(interruptMasterPin)); // limpiar flag de la interrupcion en PCIFR
+  PCICR  |= bit (digitalPinToPCICRbit(interruptMasterPin)); // activar interrupcion para el grupo en PCICR
 
 
   servo.write(pos);
@@ -61,21 +69,15 @@ void loop() {
       break;
 
     case closingClaw:
+    case waitingForSecondSensorClaw:
       //cerramos la garra
       //closingSequence();
       while (!caughtSomething && pos > 25) {
         pos -= 10;
         servo.write(pos);
         delay(60);
-  }
-      if(caughtSomething){
-        /*pos -= 5;
-        servo.write(pos);
-        delay(10);
-
-        stateClaw = holdingClaw;
-        reportState(0,1);*/
-      }else{
+      }
+      if(!caughtSomething){
         stateClaw = closedClaw;
         reportState(1,0);
       }
@@ -99,16 +101,21 @@ void closingSequence(){
 }
 
 void effectiveCatch(){
-  pos -= 5;
-  servo.write(pos);
-  //delay(10);
+  if(stateClaw = closingClaw){
+    stateClaw = waitingForSecondSensorClaw;
+  }else if (stateClaw = waitingForSecondSensorClaw){
+    pos -= 5;
+    servo.write(pos);
 
-  stateClaw = holdingClaw;
-  reportState(0,1);
-  caughtSomething = true;
+    stateClaw = holdingClaw;
+    reportState(0,1);
+    caughtSomething = true;
+  }
+  
 }
 
 void debugStateSwitch(){
+  
   switch(stateClaw){
     case openClaw:
       stateClaw = closingClaw;
@@ -120,6 +127,7 @@ void debugStateSwitch(){
       stateClaw = openingClaw;
       break;
   }
+
 }
 
 void listenToCommand(){
@@ -129,4 +137,12 @@ void listenToCommand(){
   }else{
     stateClaw = openingClaw;
   }
+}
+
+ISR(PCINT0_vect){
+  if(digitalRead(interruptMasterPin)){
+    //listenToCommand();
+    debugStateSwitch();
+  }
+  
 }
