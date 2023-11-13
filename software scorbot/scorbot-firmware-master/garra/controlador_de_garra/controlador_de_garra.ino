@@ -141,8 +141,8 @@ void listenToCommand(){
 
 ISR(PCINT0_vect){
   if(digitalRead(interruptMasterPin)){
-    //listenToCommand();
-    debugStateSwitch();
+    listenToCommand();
+    //debugStateSwitch();
   }
   
 }

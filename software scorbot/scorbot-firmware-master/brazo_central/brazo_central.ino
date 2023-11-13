@@ -90,10 +90,10 @@ unsigned char stateClaw = openClaw;
 
 /********* pins de la garra ********/
 
-int sendClawCommandPin = 41;      //pin through wich we send the servo position to move to
-int isClosedClawPin = 39;         //pin through wich we receive if the claw is open (0) or closed (1)
-int isHoldingClawPin = 37;        //pin through wich we receive if we are holding (1) something or not (0) with the claw
-int sendInterruptToClawPin = 35;  //pin through wich we interrupt to read the receivePin
+int sendInterruptToClawPin = 41;  //pin through wich we interrupt to read the receivePin
+int isHoldingClawPin = 39;        //pin through wich we receive if we are holding (1) something or not (0) with the claw
+int isClosedClawPin = 37;         //pin through wich we receive if the claw is open (0) or closed (1)
+int sendClawCommandPin = 35;      //pin through wich we send the servo position to move to
 
 /*********** setup ****************/
 void setup(void)
@@ -110,9 +110,13 @@ void setup(void)
   /* claw pins */
 
   pinMode(sendClawCommandPin, OUTPUT);
+  digitalWrite(sendClawCommandPin, 0); //open the claw
   pinMode(isClosedClawPin, INPUT);
   pinMode(isHoldingClawPin, INPUT);
   pinMode(sendInterruptToClawPin, OUTPUT);
+  digitalWrite(sendClawCommandPin, 1); // make te claw listen to the command
+  delay(10);
+  digitalWrite(sendClawCommandPin, 0);
   
   #if (SERIAL_DEBUG)
   /* init ROS */
@@ -503,6 +507,8 @@ void print_status(void) {
     double sp = get_speed(i + 1);
     Serial.print(i); Serial.print(": "); Serial.print(action); Serial.print(" "); Serial.print(pos); Serial.print(" "); Serial.println(sp);
   }
+  Serial.print("estado garra : ");
+  Serial.println(stateClaw);
 }
 #endif
 
@@ -548,12 +554,11 @@ void loop(void)
   #else
   nh.spinOnce();
   publish_state();
+  #endif
   int clawIsHolding = digitalRead(isHoldingClawPin);
   if(clawIsHolding){
     stateClaw = holdingClaw;
   }
-  #endif
-  
   delay(2);
 }
 
