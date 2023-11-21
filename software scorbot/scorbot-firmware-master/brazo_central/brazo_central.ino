@@ -13,7 +13,7 @@
 #include <Wire.h>
 #include "brazo_i2c.h"
 
-#define SERIAL_DEBUG 0 // poner en 1 para controlar el brazo por terminal serial de arduino, poner en 0 para control desde ROS
+#define SERIAL_DEBUG 1 // poner en 1 para controlar el brazo por terminal serial de arduino, poner en 0 para control desde ROS
 #define SETEAR_CONSTS 0 //poner en 1 para setear las constantes de los microcontroladores (arduinos pro mini) (en caso de updatear las consts PID o reemplazar micro)
 
 
@@ -52,7 +52,7 @@ void on_catch(const std_msgs::Empty& msg);
 ros::Subscriber<std_msgs::Empty> claw_catch_sub("/scorbot/claw_catch", &on_catch);
 
 void on_release(const std_msgs::Empty& msg);
-ros::Subscriber<std_msgs::Empty> claw_release_sub("/scorbot/claw_release", &on_catch);
+ros::Subscriber<std_msgs::Empty> claw_release_sub("/scorbot/claw_release", &on_release);
 
 std_msgs::Empty claw_caught;
 ros::Publisher claw_caught_pub("/scorbot/claw_caught", &claw_caught);
@@ -85,7 +85,10 @@ bool reached_current_goal[NUM_JUNTAS] = { false, false, false, false, false };
 int current_goal_index = -1;
 int current_goal_length = 0;
 
-enum {openClaw, closedClaw, holdingClaw};
+enum ClawState {openClaw, closedClaw, holdingClaw};
+#define IDNAME(name) #name
+const char* clawStatesStr[] = {IDNAME(openClaw), IDNAME(closedClaw), IDNAME(holdingClaw)};
+
 unsigned char stateClaw = openClaw; 
 
 /********* pins de la garra ********/
@@ -184,42 +187,54 @@ void on_home(const std_msgs::Empty& msg)
 void on_catch(const std_msgs::Empty& msg){
   if(stateClaw == openClaw){
     digitalWrite(sendClawCommandPin, 1);
+    digitalWrite(sendInterruptToClawPin, 0);
+    delay(10);
     digitalWrite(sendInterruptToClawPin, 1);
 
     int clawIsClosed = digitalRead(isClosedClawPin);
     int clawIsHolding = digitalRead(isHoldingClawPin);
     int i = 7;
-    while(!(clawIsClosed) && !(clawIsHolding) && (i>0)){
+    while((clawIsClosed != 1) && (clawIsHolding != 1) && (i>0)){
       int clawIsClosed = digitalRead(isClosedClawPin);
       int clawIsHolding = digitalRead(isHoldingClawPin);
+      SERIAL_DBG(Serial.print("pins de la garra: "); Serial.print(clawIsClosed); Serial.print(" , "); Serial.println(clawIsHolding));
       delay(500);
       i=i-1;
     }
-    if(i!=0){
+    if(clawIsClosed){
       stateClaw = closedClaw;
+    }else if(clawIsHolding){
+      stateClaw = holdingClaw;
     }
+    digitalWrite(sendInterruptToClawPin, 0);
   }
+  SERIAL_DBG(Serial.print("Estado de la garra: "); Serial.println(clawStatesStr[stateClaw]));
 }
 
 //when ordered to release something we send the open signal to the claw and the wait 3,5seconds to check if it opened correctly.
 void on_release(const std_msgs::Empty& msg){
   if(stateClaw != openClaw){
     digitalWrite(sendClawCommandPin, 0);
+    digitalWrite(sendInterruptToClawPin, 0);
+    delay(10);
     digitalWrite(sendInterruptToClawPin, 1);
 
     int clawIsClosed = digitalRead(isClosedClawPin);
     int clawIsHolding = digitalRead(isHoldingClawPin);
     int i = 7;
-    while((clawIsClosed || clawIsHolding) && (i>0)){
+    while((clawIsClosed) && (i>0)){
       int clawIsClosed = digitalRead(isClosedClawPin);
       int clawIsHolding = digitalRead(isHoldingClawPin);
+      SERIAL_DBG(Serial.print("pins de la garra: "); Serial.print(clawIsClosed); Serial.print(" , "); Serial.println(clawIsHolding));
       delay(500);
       i=i-1;
     }
     if(i!=0){
       stateClaw = openClaw;
     }
+    digitalWrite(sendInterruptToClawPin, 0);
   }
+  SERIAL_DBG(Serial.print("Estado de la garra: "); Serial.println(clawStatesStr[stateClaw]));
 }
 
 void on_trajectory(const scorbot::JointTrajectory& trajectory)
@@ -438,6 +453,9 @@ bool serial_parse(void) {
         case 'd': set_speed_junta(2, 1); break;
         case 'f': set_speed_junta(3, 1); break;
         case 'g': set_speed_junta(4, 1); break;
+
+        case 'c' : on_catch(empty_msg); break;
+        case 'v' : on_release(empty_msg); break;
       }
     }
   }

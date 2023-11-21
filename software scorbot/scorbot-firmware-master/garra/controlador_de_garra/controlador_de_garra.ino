@@ -2,6 +2,14 @@
 
 Servo servo; // servo object representing the MG 996R servo
 
+#define SERIAL_DEBUG 1 //0 para modo normal 1 para mandar mensajes por el serial monitor de arduino
+
+#if SERIAL_DEBUG
+#define SERIAL_DBG(x) x
+#else
+#define SERIAL_DBG(x)
+#endif
+
 int interruptMasterPin = 8;   //pin through wich we interrupt to read the receivePin
 int interruptDebugPin = 8;    //pin through wich we switch states for debugging
 int isHoldingPin = 7;         //pin through wich we send if we are holding (1) something or not (0) with the claw
@@ -16,7 +24,23 @@ volatile bool caughtSomething = false;
 
 //TODO terminar los estados y el resto
 
-enum {openClaw, closingClaw, closedClaw, waitingForSecondSensorClaw, holdingClaw, openingClaw};
+enum ClawStates { openClaw = 0 , 
+                  closingClaw = 1, 
+                  closedClaw = 2, 
+                  waitingForSecondSensorClaw = 3, 
+                  holdingClaw = 4, 
+                  openingClaw = 5
+                };
+
+#define IDNAME(name) #name
+const char* clawStatesStr[] = { IDNAME(openClaw) , 
+                                IDNAME(closingClaw) , 
+                                IDNAME(closedClaw) , 
+                                IDNAME(waitingForSecondSensorClaw) , 
+                                IDNAME(holdingClaw) , 
+                                IDNAME(openingClaw)
+                              };
+                          
 volatile unsigned char stateClaw = openClaw;
 
 void setup() {
@@ -28,23 +52,28 @@ void setup() {
   //attachInterrupt(digitalPinToInterrupt(interruptMasterPin), listenToCommand, CHANGE);
   //attachInterrupt(digitalPinToInterrupt(interruptDebugPin), debugStateSwitch, CHANGE);
   pinMode(INPUT, interruptMasterPin);
-  attachInterrupt(digitalPinToInterrupt(interruptSensor1Pin), effectiveCatch, RISING);
-  attachInterrupt(digitalPinToInterrupt(interruptSensor2Pin), effectiveCatch, RISING);
+  //attachInterrupt(digitalPinToInterrupt(interruptSensor1Pin), effectiveCatch, RISING);
+  //attachInterrupt(digitalPinToInterrupt(interruptSensor2Pin), effectiveCatch, RISING);
 
   *digitalPinToPCMSK(interruptMasterPin) |= bit (digitalPinToPCMSKbit(interruptMasterPin));  // activar pin en PCMSK
   PCIFR  |= bit (digitalPinToPCICRbit(interruptMasterPin)); // limpiar flag de la interrupcion en PCIFR
   PCICR  |= bit (digitalPinToPCICRbit(interruptMasterPin)); // activar interrupcion para el grupo en PCICR
 
+  Serial.begin(9600);
 
+  SERIAL_DBG(Serial.println("bienvenide al controlador de pinza"));
+  stateClaw = openClaw;
   servo.write(pos);
+  SERIAL_DBG(Serial.println("empieza abierta"));
+
   
 }
 
 
 void loop() {
   
+  SERIAL_DBG(Serial.println("entra al loop"));
   switch(stateClaw){
-
     case openClaw:
       //la  garra está abierta y reporta que no está agarrando nada
       reportState(0,0);
@@ -90,6 +119,9 @@ void loop() {
 void reportState(int isClosed, int isHolding){
   digitalWrite(isClosedPin, isClosed);
   digitalWrite(isHoldingPin, isHolding);
+
+  SERIAL_DBG( Serial.print("Estado de los pins : "); Serial.print(isClosed); Serial.print(" , "); Serial.print(isHolding) );
+  SERIAL_DBG(Serial.print(" , Estado de la garra : "); Serial.println(clawStatesStr[stateClaw]););
 }
 
 void closingSequence(){
@@ -141,6 +173,7 @@ void listenToCommand(){
 
 ISR(PCINT0_vect){
   if(digitalRead(interruptMasterPin)){
+    SERIAL_DBG(Serial.println("escuchando al MEGA"));
     listenToCommand();
     //debugStateSwitch();
   }
