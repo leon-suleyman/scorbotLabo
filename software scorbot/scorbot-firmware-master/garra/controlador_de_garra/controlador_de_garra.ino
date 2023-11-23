@@ -26,16 +26,18 @@ volatile bool caughtSomething = false;
 
 enum ClawStates { openClaw = 0 , 
                   closingClaw = 1, 
-                  closedClaw = 2, 
-                  waitingForSecondSensorClaw = 3, 
-                  holdingClaw = 4, 
-                  openingClaw = 5
+                  closedClaw = 2,
+                  waitingForFirstSensorClaw = 3, 
+                  waitingForSecondSensorClaw = 4, 
+                  holdingClaw = 5, 
+                  openingClaw = 6
                 };
 
 #define IDNAME(name) #name
 const char* clawStatesStr[] = { IDNAME(openClaw) , 
                                 IDNAME(closingClaw) , 
                                 IDNAME(closedClaw) , 
+                                IDNAME(waitingForFirstSensorClaw) ,
                                 IDNAME(waitingForSecondSensorClaw) , 
                                 IDNAME(holdingClaw) , 
                                 IDNAME(openingClaw)
@@ -52,8 +54,8 @@ void setup() {
   //attachInterrupt(digitalPinToInterrupt(interruptMasterPin), listenToCommand, CHANGE);
   //attachInterrupt(digitalPinToInterrupt(interruptDebugPin), debugStateSwitch, CHANGE);
   pinMode(INPUT, interruptMasterPin);
-  //attachInterrupt(digitalPinToInterrupt(interruptSensor1Pin), effectiveCatch, RISING);
-  //attachInterrupt(digitalPinToInterrupt(interruptSensor2Pin), effectiveCatch, RISING);
+  attachInterrupt(digitalPinToInterrupt(interruptSensor1Pin), effectiveCatchSensor1, RISING);
+  attachInterrupt(digitalPinToInterrupt(interruptSensor2Pin), effectiveCatchSensor2, RISING);
 
   *digitalPinToPCMSK(interruptMasterPin) |= bit (digitalPinToPCMSKbit(interruptMasterPin));  // activar pin en PCMSK
   PCIFR  |= bit (digitalPinToPCICRbit(interruptMasterPin)); // limpiar flag de la interrupcion en PCIFR
@@ -99,9 +101,10 @@ void loop() {
 
     case closingClaw:
     case waitingForSecondSensorClaw:
+    case waitingForFirstSensorClaw:
       //cerramos la garra
       //closingSequence();
-      while (!caughtSomething && pos > 25) {
+      while (!caughtSomething && pos > 5) {
         pos -= 10;
         servo.write(pos);
         delay(60);
@@ -136,6 +139,36 @@ void effectiveCatch(){
   if(stateClaw = closingClaw){
     stateClaw = waitingForSecondSensorClaw;
   }else if (stateClaw = waitingForSecondSensorClaw){
+    pos -= 5;
+    servo.write(pos);
+
+    stateClaw = holdingClaw;
+    reportState(0,1);
+    caughtSomething = true;
+  }
+  
+}
+
+void effectiveCatchSensor1(){
+  SERIAL_DBG(Serial.println("entramos a la interrupción del sensor 1"));
+  if(stateClaw == closingClaw){
+    stateClaw = waitingForSecondSensorClaw;
+  }else if (stateClaw == waitingForFirstSensorClaw){
+    pos -= 5;
+    servo.write(pos);
+
+    stateClaw = holdingClaw;
+    reportState(0,1);
+    caughtSomething = true;
+  }
+  
+}
+
+void effectiveCatchSensor2(){
+  SERIAL_DBG(Serial.println("entramos a la interrupción del sensor 2"));
+  if(stateClaw == closingClaw){
+    stateClaw = waitingForFirstSensorClaw;
+  }else if (stateClaw == waitingForSecondSensorClaw){
     pos -= 5;
     servo.write(pos);
 
