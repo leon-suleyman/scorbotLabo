@@ -13,7 +13,7 @@
 #include <Wire.h>
 #include "brazo_i2c.h"
 
-#define SERIAL_DEBUG 1 // poner en 1 para controlar el brazo por terminal serial de arduino, poner en 0 para control desde ROS
+#define SERIAL_DEBUG 0 // poner en 1 para controlar el brazo por terminal serial de arduino, poner en 0 para control desde ROS
 #define SETEAR_CONSTS 0 //poner en 1 para setear las constantes de los microcontroladores (arduinos pro mini) (en caso de updatear las consts PID o reemplazar micro)
 
 
@@ -564,7 +564,7 @@ void check_trajectory_goal(void)
 void loop(void)
 {
   get_pos_juntas();
-  //check_trajectory_goal();
+  check_trajectory_goal();
   
   #if SERIAL_DEBUG
   serial_process();

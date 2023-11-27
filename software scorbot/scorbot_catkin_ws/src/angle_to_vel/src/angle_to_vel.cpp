@@ -12,9 +12,12 @@ scorbot::Angle_To_Vel::Angle_To_Vel(ros::NodeHandle& nh){
 
     joint_state_sub = nh.subscribe("/joint_states", 1, &Conector::on_joint_state, this);
 
-    vector<float> home_offset_joints      = [0.0, 0.0, 0.0, 0.0, 0.0] ;
-    vector<float> current_pos_joints      = [0.0, 0.0, 0.0, 0.0, 0.0] ;
-    vector<float> objective_pos_joints    = [0.0, 0.0, 0.0, 0.0, 0.0] ;
+    home_offset_joints      = [0.0, 0.0, 0.0, 0.0, 0.0] ;
+    current_pos_joints      = [0.0, 0.0, 0.0, 0.0, 0.0] ;
+    objective_pos_joints    = [0.0, 0.0, 0.0, 0.0, 0.0] ;
+
+
+    velocities.joint_velocities.resize(5, 0);   
 
     intialized = false;
 }
@@ -37,13 +40,17 @@ void scorbot::Conector::on_joint_state(const sensor_msgs::JointStateConstPtr& ms
                 current_pos_joints[i] = truncate_to_third_digit(msg->position[i]) - home_offset_joints[i];
             }
             if(current_pos_joints != objective_pos_joints){
-                vector<int> directions[5];
                 vector<float> difference = current_pos_joints - objective_pos_joints;
+                velocities.header = msg.header;
 
                 for(int i = 0; i<5; i++){
-                    directions[i] = difference[i] > 0 ? 1 : -1 ;
+                    if(difference[i] != 0){
+                        velocities.joint_velocities[i] = (difference[i] > 0 ? 1 : -1) * 5 ;
+                    }else{
+                        velocities.joint_velocities[i] = 0;
+                    }
                 }
-                //TODO: mover en las direcciones que encontré.
+                vel_pub.publish(velocities);
             }
 
         }

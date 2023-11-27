@@ -1,4 +1,5 @@
 #include <std_msgs/Empty.h>
+#include <math.h>
 #include <scorbot/JointTrajectory.h>
 #include "teleop.h"
 
@@ -31,6 +32,8 @@ scorbot::Teleop::Teleop(ros::NodeHandle& n)
 #define RAD2ENC4(x) ((int32_t)(x / (double)-0.000054786) + 0)
 #define RAD2ENC5(x) ((int32_t)(x / (double)-0.000163399) + 2200)
 
+vector<float> goal = [0.0, 0.0, 0.0, 0.0, 0.0];
+bool initialized_goal = false;
 
 void scorbot::Teleop::on_trajectory(const trajectory_msgs::JointTrajectoryConstPtr& msg)
 {
@@ -40,6 +43,26 @@ void scorbot::Teleop::on_trajectory(const trajectory_msgs::JointTrajectoryConstP
   ROS_INFO_STREAM("size: " << msg->points.size() << " " << joint_trajectory_enc.points.size());
   size_t last_point = msg->points.size() - 1;
   ROS_INFO_STREAM("pos: " << msg->points[last_point].positions.size());
+
+  if(!intialized_goal){
+
+    for(int i = 0; i<5; i++){
+      goal[i] = msg->points[last_point].positions[i];
+    }
+    goal[2] = goal[2] + M_PI/4;
+
+    joint_trajectory_enc.points[0] = RAD2ENC1(goal[0]);
+    joint_trajectory_enc.points[1] = RAD2ENC2(goal[1]);
+    joint_trajectory_enc.points[2] = RAD2ENC3(goal[2]);
+    joint_trajectory_enc.points[3] = RAD2ENC4(goal[3]);
+    joint_trajectory_enc.points[4] = RAD2ENC5(goal[4]);
+
+  }else{
+    if(goal == msg->points[last_point].positions){
+      //TODO : terminar el test por este lado, hacer que vaya para el otro lado y sino esperar.
+    }
+  }
+
   joint_trajectory_enc.points[0] = RAD2ENC1(msg->points[last_point].positions[0]);
   joint_trajectory_enc.points[1] = RAD2ENC2(msg->points[last_point].positions[1]);
   joint_trajectory_enc.points[2] = RAD2ENC3(msg->points[last_point].positions[2]);

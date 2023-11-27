@@ -21,6 +21,7 @@ namespace scorbot{
 
         private:
             int control_frequency;
+            scorbot::JointVelocities velocities;
             vector<float> home_offset_joints;
             vector<float> current_pos_joints;
             vector<float> objective_pos_joints;
