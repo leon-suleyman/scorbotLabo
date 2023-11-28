@@ -34,6 +34,11 @@ namespace scorbot {
 
       scorbot::JointVelocities velocities;
       std::vector<int> joint_states;
+
+      /*variables de debug*/
+      std::vector<double> goal;
+      bool initialized_goal;
+      int direction;
   };
 }
 

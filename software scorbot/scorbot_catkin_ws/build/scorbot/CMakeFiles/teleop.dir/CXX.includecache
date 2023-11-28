@@ -45,6 +45,8 @@ std_msgs/Header.h
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src/scorbot/src/teleop.cpp
 std_msgs/Empty.h
 -
+math.h
+-
 scorbot/JointTrajectory.h
 -
 teleop.h
