@@ -30,6 +30,7 @@ scorbot::Teleop::Teleop(ros::NodeHandle& n)
   goal = {0.0, 0.0, 0.0, 0.0, 0.0};
   initialized_goal = false;
   direction = -1;
+  
   }
 
 #define RAD2ENC1(x) ((int32_t)(x / (double)0.000034142) + 7000)

@@ -18,6 +18,12 @@ ros/ros.h
 sensor_msgs/JointState.h
 -
 
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src/scorbot_conector_sim/src/conector_node.cpp
+ros/ros.h
+-
+conector.h
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/src/scorbot_conector_sim/src/conector.h
+
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h
 /opt/ros/noetic/include/ros/ros/forwards.h

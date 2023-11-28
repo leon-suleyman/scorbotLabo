@@ -7,6 +7,8 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/devel/share/joy/cmake/joyConfig-version.cmake"
+  "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/devel/share/joy/cmake/joyConfig.cmake"
   "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/devel/share/keyboard/cmake/keyboard-msg-extras.cmake"
   "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/devel/share/keyboard/cmake/keyboardConfig-version.cmake"
   "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/devel/share/keyboard/cmake/keyboardConfig.cmake"
@@ -115,8 +117,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/ros/noetic/share/geometry_msgs/cmake/geometry_msgs-msg-extras.cmake"
   "/opt/ros/noetic/share/geometry_msgs/cmake/geometry_msgsConfig-version.cmake"
   "/opt/ros/noetic/share/geometry_msgs/cmake/geometry_msgsConfig.cmake"
-  "/opt/ros/noetic/share/joy/cmake/joyConfig-version.cmake"
-  "/opt/ros/noetic/share/joy/cmake/joyConfig.cmake"
   "/opt/ros/noetic/share/message_generation/cmake/message_generationConfig-version.cmake"
   "/opt/ros/noetic/share/message_generation/cmake/message_generationConfig.cmake"
   "/opt/ros/noetic/share/message_runtime/cmake/message_runtimeConfig-version.cmake"

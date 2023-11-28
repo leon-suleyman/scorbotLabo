@@ -1,8 +1,0 @@
-prefix=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software scorbot/scorbot_catkin_ws/devel
-
-Name: angle_to_vel
-Description: Description of angle_to_vel
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
