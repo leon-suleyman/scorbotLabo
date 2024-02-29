@@ -71,10 +71,53 @@ void setup() {
   
 }
 
+#if SERIAL_DEBUG
+String serial_buffer;
+void serial_process(void) {  
+  while (Serial.available() > 0) {
+    char received = Serial.read();
+    if (received == '\n') {
+      if (!serial_parse()) Serial.println("ERR unknown/incorrect command"); 
+      serial_buffer = String();
+    }
+    else {
+      serial_buffer += received;
+    }
+  }
+}
+
+bool serial_parse(void) {
+  String command, arg;
+  int idx;
+  if ((idx = serial_buffer.indexOf(' ')) != -1) {
+    command = serial_buffer.substring(0, idx);
+    arg = serial_buffer.substring(idx + 1);
+  }
+  else {
+    command = serial_buffer;
+    command.trim();
+  }
+  
+  if (command.length() == 1) {
+    switch(command[0]) {
+        case 'c' : stateClaw = closingClaw; break;
+        case 'v' : stateClaw = openingClaw; break;
+      }
+  }
+  else {
+    return false;
+  }
+  return true;
+}
+#endif
+
 
 void loop() {
   
   SERIAL_DBG(Serial.println("entra al loop"));
+  #if SERIAL_DEBUG
+    serial_process();
+  #endif
   switch(stateClaw){
     case openClaw:
       //la  garra está abierta y reporta que no está agarrando nada

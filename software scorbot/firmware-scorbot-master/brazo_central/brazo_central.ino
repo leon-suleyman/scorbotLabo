@@ -13,7 +13,7 @@
 #include <Wire.h>
 #include "brazo_i2c.h"
 
-#define SERIAL_DEBUG 0 // poner en 1 para controlar el brazo por terminal serial de arduino, poner en 0 para control desde ROS
+#define SERIAL_DEBUG 1 // poner en 1 para controlar el brazo por terminal serial de arduino, poner en 0 para control desde ROS
 #define SETEAR_CONSTS 0 //poner en 1 para setear las constantes de los microcontroladores (arduinos pro mini) (en caso de updatear las consts PID o reemplazar micro)
 
 
@@ -434,7 +434,9 @@ bool serial_parse(void) {
     command = serial_buffer;
     command.trim();
   }
-  
+  //control por serial monitor del mega:
+  //cada motor está asignado a 1-5, q-t y a-g para hacer que vayan hacía adelante, paren o hacía atras, respectivamente
+  // con c se cierra la pinza y con v se la abre
   if (command.length() == 1) {
     if (command[0] >= '1' && command[0] <= '5') set_speed_junta(command[0] - '1', 1);
     else if (command[0] == 'h') buscar_home();
@@ -442,17 +444,17 @@ bool serial_parse(void) {
     else if (command[0] == 'z') frenar_todo_posta();
     else {
       switch(command[0]) {
-        case 'q': set_speed_junta(0, -1); break;
-        case 'w': set_speed_junta(1, -1); break;
-        case 'e': set_speed_junta(2, -1); break;
-        case 'r': set_speed_junta(3, -1); break;
-        case 't': set_speed_junta(4, -1); break;        
+        case 'q': set_speed_junta(0, 0); break;
+        case 'w': set_speed_junta(1, 0); break;
+        case 'e': set_speed_junta(2, 0); break;
+        case 'r': set_speed_junta(3, 0); break;
+        case 't': set_speed_junta(4, 0); break;        
         
-        case 'a': set_speed_junta(0, 1); break;
-        case 's': set_speed_junta(1, 1); break;
-        case 'd': set_speed_junta(2, 1); break;
-        case 'f': set_speed_junta(3, 1); break;
-        case 'g': set_speed_junta(4, 1); break;
+        case 'a': set_speed_junta(0, -1); break;
+        case 's': set_speed_junta(1, -1); break;
+        case 'd': set_speed_junta(2, -1); break;
+        case 'f': set_speed_junta(3, -1); break;
+        case 'g': set_speed_junta(4, -1); break;
 
         case 'c' : on_catch(empty_msg); break;
         case 'v' : on_release(empty_msg); break;
@@ -526,7 +528,7 @@ void print_status(void) {
     Serial.print(i); Serial.print(": "); Serial.print(action); Serial.print(" "); Serial.print(pos); Serial.print(" "); Serial.println(sp);
   }
   Serial.print("estado garra : ");
-  Serial.println(stateClaw);
+  Serial.println(clawStatesStr[stateClaw]);
 }
 #endif
 
