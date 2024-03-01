@@ -1,0 +1,8 @@
+prefix=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/install
+
+Name: scorbot_7_moveit
+Description: Description of scorbot_7_moveit
+Version: 0.2.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

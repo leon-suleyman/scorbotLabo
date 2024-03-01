@@ -1,0 +1,8 @@
+prefix=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/devel
+
+Name: scorbot
+Description: Description of scorbot
+Version: 0.0.0
+Cflags: -I/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: roscpp universal_teleop

@@ -1,0 +1,8 @@
+prefix=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/devel
+
+Name: conector_scorbot_sim
+Description: Description of conector_scorbot_sim
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
