@@ -242,6 +242,7 @@ void on_trajectory(const scorbot::JointTrajectory& trajectory)
   debug_pub.publish(&empty_msg);
   
   current_goal_length = trajectory.points_length / 5;
+  debug_pub.publish(&empty_msg);
   if (current_goal_length > MAX_TRAJECTORY_SIZE || current_goal_length == 0) return;
   
   current_goal_index = 0;

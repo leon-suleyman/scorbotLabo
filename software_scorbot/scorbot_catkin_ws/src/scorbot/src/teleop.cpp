@@ -14,7 +14,7 @@ scorbot::Teleop::Teleop(ros::NodeHandle& n)
   vel_pub = n.advertise<scorbot::JointVelocities>("/scorbot/joint_velocities", 1);
   home_pub = n.advertise<std_msgs::Empty>("/scorbot/home", 1);
 
-  //trajectory_pub_debug = n.advertise<trajectory_msgs::JointTrajectory>("/scorbot/joint_path_command", 1);
+  trajectory_pub_debug = n.advertise<trajectory_msgs::JointTrajectory>("/scorbot/joint_path_command", 1);
   joint_trajectory_sub = n.subscribe<trajectory_msgs::JointTrajectory>("/scorbot/joint_path_command", 1, &Teleop::on_trajectory, this);
   joint_trajectory_pub = n.advertise<scorbot::JointTrajectory>("/scorbot/joint_path_command_enc", 1);
 
@@ -123,8 +123,13 @@ void scorbot::Teleop::on_events(const universal_teleop::EventConstPtr& msg)
   {
     if (msg->event == "home" && msg->state) {
       //home_pub.publish(std_msgs::Empty());
-      trajectory_msgs::JointTrajectory joint_trajectory_debug_msg;
-      joint_trajectory_debug_msg.points[0] = trajectory_msgs::JointTrajectoryPoint();
+      trajectory_msgs::JointTrajectory  joint_trajectory_debug_msg;
+
+      std::vector<trajectory_msgs::JointTrajectoryPoint> points_n(1);
+      points_n[0].positions.resize(5);
+
+      joint_trajectory_debug_msg.points = points_n;
+
       joint_trajectory_debug_msg.points[0].positions.push_back(0.0);
       joint_trajectory_debug_msg.points[0].positions.push_back(M_PI/2*direction);
       joint_trajectory_debug_msg.points[0].positions.push_back(0.0);
@@ -132,6 +137,7 @@ void scorbot::Teleop::on_events(const universal_teleop::EventConstPtr& msg)
       joint_trajectory_debug_msg.points[0].positions.push_back(0.0);
 
       trajectory_pub_debug.publish(joint_trajectory_debug_msg);
+
       direction = - direction;
     }
     else if (msg->event == "claw_catch" && msg->state) {

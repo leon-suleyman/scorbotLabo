@@ -1,7 +1,7 @@
 {
     "board": "arduino:avr:mega",
     "port": "/dev/ttyACM0",
-    "sketch": "software scorbot/scorbot-firmware-master/brazo_central/brazo_central.ino",
+    "sketch": "software_scorbot/firmware-scorbot-master/brazo_central/brazo_central.ino",
     "configuration": "cpu=atmega2560",
     "programmer": "avrisp"
 }
