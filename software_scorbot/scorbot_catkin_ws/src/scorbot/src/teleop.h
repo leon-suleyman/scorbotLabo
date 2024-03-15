@@ -15,7 +15,8 @@ namespace scorbot {
       Teleop(ros::NodeHandle& n);
 
       ros::Subscriber joint_trajectory_sub;
-      ros::Publisher joint_trajectory_pub;
+      //ros::Publisher joint_trajectory_pub;
+      ros::Publisher joint_pos_array_pub;
       ros::Publisher trajectory_pub_debug;
       void on_trajectory(const trajectory_msgs::JointTrajectoryConstPtr& msg);
 

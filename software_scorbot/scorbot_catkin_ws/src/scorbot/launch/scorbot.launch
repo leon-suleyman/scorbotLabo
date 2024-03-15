@@ -9,7 +9,7 @@
 
   <node pkg="rosserial_python" type="serial_node.py" name="scorbot_serial" output="screen">
     <param name="port" value="/dev/ttyACM0"/>
-    <param name="baud" value="57600"/>
+    <param name="baud" value="115200"/>
     <remap from="/scorbot/joint_states" to="/joint_states"/>
     <!-- TODO: usar require -->
   </node>

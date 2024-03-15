@@ -1,4 +1,5 @@
 #include <std_msgs/Empty.h>
+#include <std_msgs/Int32MultiArray.h>
 #include <math.h>
 #include <scorbot/JointTrajectory.h>
 #include "teleop.h"
@@ -16,7 +17,8 @@ scorbot::Teleop::Teleop(ros::NodeHandle& n)
 
   trajectory_pub_debug = n.advertise<trajectory_msgs::JointTrajectory>("/scorbot/joint_path_command", 1);
   joint_trajectory_sub = n.subscribe<trajectory_msgs::JointTrajectory>("/scorbot/joint_path_command", 1, &Teleop::on_trajectory, this);
-  joint_trajectory_pub = n.advertise<scorbot::JointTrajectory>("/scorbot/joint_path_command_enc", 1);
+  //joint_trajectory_pub = n.advertise<scorbot::JointTrajectory>("/scorbot/joint_path_command_enc", 1);
+  joint_pos_array_pub = n.advertise<std_msgs::Int32MultiArray>("/scorbot/joint_path_command_enc", 1);
 
   claw_catch_pub = n.advertise<std_msgs::Empty>("/scorbot/claw_catch", 1);
   claw_release_pub = n.advertise<std_msgs::Empty>("/scorbot/claw_release", 1);
@@ -39,32 +41,25 @@ scorbot::Teleop::Teleop(ros::NodeHandle& n)
 #define RAD2ENC4(x) ((int32_t)(x / (double)-0.000054786) + 0)
 #define RAD2ENC5(x) ((int32_t)(x / (double)-0.000163399) + 2200)
 
-vector<double> truncate_to_3_digits(vector<double> list){
-  vector<double> res;
-  for(int i = 0; i < list.size(); i++){
-    int temp = (int) (list[i] * 1000);
-    res.push_back((double) temp/1000);
-  }
-  return res;
-}
 
 void scorbot::Teleop::on_trajectory(const trajectory_msgs::JointTrajectoryConstPtr& msg)
 {
   if (msg->points.empty()) return;
-  scorbot::JointTrajectory joint_trajectory_enc;
-  joint_trajectory_enc.points.resize(5);
-  ROS_INFO_STREAM("size: " << msg->points.size() << " " << joint_trajectory_enc.points.size());
+  //scorbot::JointTrajectory joint_trajectory_enc;
+  std_msgs::Int32MultiArray joint_pos_msg;
+  //joint_trajectory_enc.points.resize(5);
+  joint_pos_msg.data.resize(5);
+  ROS_INFO_STREAM("size: " << msg->points.size() << " " << joint_pos_msg.data.size());
   size_t last_point = msg->points.size() - 1;
   ROS_INFO_STREAM("pos: " << msg->points[last_point].positions.size());
 
   goal = msg->points[last_point].positions;
-  goal = truncate_to_3_digits(goal);
 
-  joint_trajectory_enc.points[0] = RAD2ENC1(goal[0]);
-  joint_trajectory_enc.points[1] = RAD2ENC2(goal[1]);
-  joint_trajectory_enc.points[2] = RAD2ENC3(goal[2]);
-  joint_trajectory_enc.points[3] = RAD2ENC4(goal[3]);
-  joint_trajectory_enc.points[4] = RAD2ENC5(goal[4]);
+  joint_pos_msg.data[0] = RAD2ENC1(goal[0]);
+  joint_pos_msg.data[1] = RAD2ENC2(goal[1]);
+  joint_pos_msg.data[2] = RAD2ENC3(goal[2]);
+  joint_pos_msg.data[3] = RAD2ENC4(goal[3]);
+  joint_pos_msg.data[4] = RAD2ENC5(goal[4]);
 /*
   joint_trajectory_enc.points[0] = RAD2ENC1(msg->points[last_point].positions[0]);
   joint_trajectory_enc.points[1] = RAD2ENC2(msg->points[last_point].positions[1]);
@@ -72,7 +67,7 @@ void scorbot::Teleop::on_trajectory(const trajectory_msgs::JointTrajectoryConstP
   joint_trajectory_enc.points[3] = RAD2ENC4(msg->points[last_point].positions[3]);
   joint_trajectory_enc.points[4] = RAD2ENC5(msg->points[last_point].positions[4]);
 */
-  joint_trajectory_pub.publish(joint_trajectory_enc);
+  joint_pos_array_pub.publish(joint_pos_msg);
 }
 
 void scorbot::Teleop::on_controls(const universal_teleop::ControlConstPtr& msg)
@@ -124,9 +119,8 @@ void scorbot::Teleop::on_events(const universal_teleop::EventConstPtr& msg)
     if (msg->event == "home" && msg->state) {
       //home_pub.publish(std_msgs::Empty());
       trajectory_msgs::JointTrajectory  joint_trajectory_debug_msg;
-
       std::vector<trajectory_msgs::JointTrajectoryPoint> points_n(1);
-      points_n[0].positions.resize(5);
+      
 
       joint_trajectory_debug_msg.points = points_n;
 
@@ -135,6 +129,7 @@ void scorbot::Teleop::on_events(const universal_teleop::EventConstPtr& msg)
       joint_trajectory_debug_msg.points[0].positions.push_back(0.0);
       joint_trajectory_debug_msg.points[0].positions.push_back(0.0);
       joint_trajectory_debug_msg.points[0].positions.push_back(0.0);
+      points_n[0].positions.resize(5);
 
       trajectory_pub_debug.publish(joint_trajectory_debug_msg);
 

@@ -10,6 +10,7 @@
 //#include <scorbot/JointTrajectory.h>
 #include <sensor_msgs/JointState.h>
 #include <std_msgs/Empty.h>
+#include <std_msgs/Int32MultiArray.h>
 #include <Wire.h>
 #include "brazo_i2c.h"
 
@@ -65,8 +66,10 @@ ros::Publisher joint_state_pub("/scorbot/joint_states", &joint_state);
 void on_velocities(const scorbot::JointVelocities& vel_msg);
 ros::Subscriber<scorbot::JointVelocities> vel_sub("/scorbot/joint_velocities", &on_velocities);
 
-void on_trajectory(const scorbot::JointTrajectory& trajectory);
-ros::Subscriber<scorbot::JointTrajectory> trajectory_sub("/scorbot/joint_path_command_enc", &on_trajectory);
+//void on_trajectory(const scorbot::JointTrajectory& trajectory);
+//ros::Subscriber<scorbot::JointTrajectory> trajectory_sub("/scorbot/joint_path_command_enc", &on_trajectory);
+void on_trajectory(const std_msgs::Int32MultiArray& trajectory);
+ros::Subscriber<std_msgs::Int32MultiArray> trajectory_sub("/scorbot/joint_path_command_enc", &on_trajectory);
 
 control_msgs::FollowJointTrajectoryFeedback trajectory_feedback;
 ros::Publisher trajectory_feedback_pub("/scorbot/feedback_states", &trajectory_feedback);
@@ -126,6 +129,7 @@ void setup(void)
   Serial.begin(115200);  
   Serial.println("Bienvenido al Scorbot-ER VII");
   #else
+  nh.getHardware()->setBaud(115200);
   nh.initNode();
   nh.subscribe(vel_sub);
   nh.subscribe(home_sub);
@@ -237,24 +241,26 @@ void on_release(const std_msgs::Empty& msg){
   SERIAL_DBG(Serial.print("Estado de la garra: "); Serial.println(clawStatesStr[stateClaw]));
 }
 
-void on_trajectory(const scorbot::JointTrajectory& trajectory)
+//void on_trajectory(const scorbot::JointTrajectory& trajectory)
+void on_trajectory(const std_msgs::Int32MultiArray& trajectory)
 {
   debug_pub.publish(&empty_msg);
   
-  current_goal_length = trajectory.points_length / 5;
-  debug_pub.publish(&empty_msg);
+  current_goal_length = trajectory.data_length/ 5;
   if (current_goal_length > MAX_TRAJECTORY_SIZE || current_goal_length == 0) return;
   
   current_goal_index = 0;
   
   for (int i = 0; i < current_goal_length; i++)
   {
-    joint_trajectory_goals[i][0] = trajectory.points[i*NUM_JUNTAS+0];
-    joint_trajectory_goals[i][1] = trajectory.points[i*NUM_JUNTAS+1];
-    joint_trajectory_goals[i][2] = trajectory.points[i*NUM_JUNTAS+2];
-    joint_trajectory_goals[i][3] = trajectory.points[i*NUM_JUNTAS+3];
-    joint_trajectory_goals[i][4] = trajectory.points[i*NUM_JUNTAS+4];
+    debug_pub.publish(&empty_msg);
+    joint_trajectory_goals[i][0] = trajectory.data[i*NUM_JUNTAS+0];
+    joint_trajectory_goals[i][1] = trajectory.data[i*NUM_JUNTAS+1];
+    joint_trajectory_goals[i][2] = trajectory.data[i*NUM_JUNTAS+2];
+    joint_trajectory_goals[i][3] = trajectory.data[i*NUM_JUNTAS+3];
+    joint_trajectory_goals[i][4] = trajectory.data[i*NUM_JUNTAS+4];
   }
+  debug_pub.publish(&empty_msg);
   
   reached_current_goal[0] = false;
   reached_current_goal[1] = false;
@@ -262,12 +268,15 @@ void on_trajectory(const scorbot::JointTrajectory& trajectory)
   reached_current_goal[3] = false;
   reached_current_goal[4] = false;  
   
+  debug_pub.publish(&empty_msg);
   /* set initial point as goal */
   set_position(1, joint_trajectory_goals[0][0]);
   set_position(2, joint_trajectory_goals[0][1]);
   set_position(3, joint_trajectory_goals[0][2]);
   set_position(4, joint_trajectory_goals[0][3]);
-  set_position(5, joint_trajectory_goals[0][4]);  
+  set_position(5, joint_trajectory_goals[0][4]); 
+  
+  debug_pub.publish(&empty_msg); 
 }
 
 void publish_state(void)
