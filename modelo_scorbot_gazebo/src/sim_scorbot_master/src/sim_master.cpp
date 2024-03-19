@@ -1,7 +1,7 @@
 #include <std_msgs/Empty.h>
 #include <math.h>
-#include <scorbot/JointTrajectory.h>
-#include "teleop.h"
+#include <sim_scorbot_master/JointTrajectory.h>
+#include "sim_master.h"
 
 #define JOINT_GOAL_TOLERANCE 100
 #define MAX_TRAJECTORY_SIZE 10
@@ -21,7 +21,7 @@
 
 using namespace std;
 
-scorbor::Sim_Master::Sim_Master(ros::NodeHandle& n){
+scorbot::Sim_Master::Sim_Master(ros::NodeHandle& n){
     n.param("control_frequency", control_frequency, 5);
 
     joint_trajectory_sub = n.subscribe<trajectory_msgs::JointTrajectory>("/scorbot/joint_path_command", 1, &Teleop::on_trajectory, this);
@@ -41,7 +41,7 @@ scorbor::Sim_Master::Sim_Master(ros::NodeHandle& n){
     int current_goal_length = 0;
 }
 
-void on_trajectory(const scorbot::JointTrajectory& trajectory)
+void on_trajectory(const sim_scorbot_master::JointTrajectory& trajectory)
 {
 
   current_goal_length = trajectory.points_length / 5;

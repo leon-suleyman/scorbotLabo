@@ -1,0 +1,8 @@
+prefix=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/devel
+
+Name: sim_scorbot_master
+Description: Description of sim_scorbot_master
+Version: 0.0.0
+Cflags: -I/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/devel/include
+Libs: -L${prefix}/lib 
+Requires: 
