@@ -3,6 +3,7 @@
 #include <scorbot/JointTrajectory.h>
 #include "teleop.h"
 
+#define JOINT_GOAL_TOLERANCE 100
 #define MAX_TRAJECTORY_SIZE 10
 #define NUM_JUNTAS 5
 
@@ -65,10 +66,36 @@ void on_trajectory(const scorbot::JointTrajectory& trajectory)
   reached_current_goal[4] = false;  
   
   /* set initial point as goal */
-  //cambiar esto por mandar los mensajes al simulador
-  set_position(1, joint_trajectory_goals[0][0]);
-  set_position(2, joint_trajectory_goals[0][1]);
-  set_position(3, joint_trajectory_goals[0][2]);
-  set_position(4, joint_trajectory_goals[0][3]);
-  set_position(5, joint_trajectory_goals[0][4]);  
+  pub_base.publish (joint_trajectory_goals[0][0]);
+  pub_shoulder.publish (joint_trajectory_goals[0][1]);
+  pub_elbow.publish (joint_trajectory_goals[0][2]);
+  pub_pitch.publish (joint_trajectory_goals[0][3]);
+  pub_roll.publish (joint_trajectory_goals[0][4]);
+}
+
+void check_trajectory_goal(void)
+{
+  if (current_goal_index == -1) return; // no goal set
+  
+  bool this_goal_complete = true;
+  for (int i = 0; i < NUM_JUNTAS; i++)
+  {
+    if (!reached_current_goal[i]) {
+      if (abs(joint_trajectory_goals[current_goal_index][i] - pos_juntas[i]) <= JOINT_GOAL_TOLERANCE) reached_current_goal[i] = true;
+      else this_goal_complete = false;
+    }
+  }
+  
+  if (this_goal_complete) {
+    current_goal_index++; // advance to next point
+    if (current_goal_length == current_goal_index) current_goal_index = -1; // completed trajectory
+    else {      
+      /* set current point as new goal */
+      pub_base.publish (joint_trajectory_goals[current_goal_index][0]);
+      pub_shoulder.publish (joint_trajectory_goals[current_goal_index][1]);
+      pub_elbow.publish (joint_trajectory_goals[current_goal_index][2]);
+      pub_pitch.publish (joint_trajectory_goals[current_goal_index][3]);
+      pub_roll.publish (joint_trajectory_goals[current_goal_index][4]);
+    }
+  }  
 }

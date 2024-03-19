@@ -22,6 +22,7 @@ namespace scorbot{
         ros::Publisher pub_elbow;
         ros::Publisher pub_pitch;
         ros::Publisher pub_roll;
+        void check_trajectory_goal(void)
 
         private:
 
