@@ -1,4 +1,5 @@
 #include <std_msgs/Empty.h>
+#include <std_msgs/Float64.h>
 #include <math.h>
 #include <sim_scorbot_master/JointTrajectory.h>
 #include "sim_master.h"
@@ -19,37 +20,38 @@
 #define RAD2ENC4(x) ((int32_t)(x / (float)-0.000054786) + 0)
 #define RAD2ENC5(x) ((int32_t)(x / (float)-0.000163399) + 2200)
 
-using namespace std;
+sim_scorbot_master::Sim_Master::Sim_Master(ros::NodeHandle& n){
+//Sim_Master::Sim_Master(ros::NodeHandle& n){
+  n.param("control_frequency", control_frequency, 5);
 
-scorbot::Sim_Master::Sim_Master(ros::NodeHandle& n){
-    n.param("control_frequency", control_frequency, 5);
+  trajectory_sub = n.subscribe("/scorbot/joint_path_command", 1, &Sim_Master::on_trajectory, this);
 
-    joint_trajectory_sub = n.subscribe<trajectory_msgs::JointTrajectory>("/scorbot/joint_path_command", 1, &Teleop::on_trajectory, this);
-  
-    pub_base = n.publish<std_msgs::Float64>('/scorbot/base_position_controller/command', 1);
-    pub_shoulder = n.publish<std_msgs::Float64>('/scorbot/shoulder_position_controller/command', 1);
-    pub_elbow = n.publish<std_msgs::Float64>('/scorbot/elbow_position_controller/command', 1);
-    pub_pitch = n.publish<std_msgs::Float64>('/scorbot/pitch_position_controller/command', 1);
-    pub_roll = n.publish<std_msgs::Float64>('/scorbot/roll_position_controller/command', 1);
+  pub_base = n.advertise<std_msgs::Float64>("/scorbot/base_position_controller/command", 1);
+  pub_shoulder = n.advertise<std_msgs::Float64>("/scorbot/shoulder_position_controller/command", 1);
+  pub_elbow = n.advertise<std_msgs::Float64>("/scorbot/elbow_position_controller/command", 1);
+  pub_pitch = n.advertise<std_msgs::Float64>("/scorbot/pitch_position_controller/command", 1);
+  pub_roll = n.advertise<std_msgs::Float64>("/scorbot/roll_position_controller/command", 1);
 
-    int32_t pos_juntas[NUM_JUNTAS];
-    char* joint_names[] = { "joint1", "joint2", "joint3", "joint4", "joint5" };
+  for(int i = 0; i<5; i++){
+    pos_juntas[i] = 0;
+    reached_current_goal[i] = false;
+  }
 
-    int32_t joint_trajectory_goals[MAX_TRAJECTORY_SIZE][NUM_JUNTAS];
-    bool reached_current_goal[NUM_JUNTAS] = { false, false, false, false, false };
-    int current_goal_index = -1;
-    int current_goal_length = 0;
+  vector<string> joint_names = { "joint1", "joint2", "joint3", "joint4", "joint5" };
+
+  current_goal_index = -1;
+  current_goal_length = 0;
 }
 
-void on_trajectory(const sim_scorbot_master::JointTrajectory& trajectory)
-{
+void sim_scorbot_master::Sim_Master::on_trajectory(const sim_scorbot_master::JointTrajectory& trajectory){
+//void Sim_Master::on_trajectory(const sim_scorbot_master::JointTrajectory& trajectory){
 
-  current_goal_length = trajectory.points_length / 5;
+  current_goal_length = trajectory.points.size() / 5;
 
   if (current_goal_length > MAX_TRAJECTORY_SIZE || current_goal_length == 0) return;
-  
+
   current_goal_index = 0;
-  
+
   for (int i = 0; i < current_goal_length; i++)
   {
     joint_trajectory_goals[i][0] = trajectory.points[i*NUM_JUNTAS+0];
@@ -58,13 +60,13 @@ void on_trajectory(const sim_scorbot_master::JointTrajectory& trajectory)
     joint_trajectory_goals[i][3] = trajectory.points[i*NUM_JUNTAS+3];
     joint_trajectory_goals[i][4] = trajectory.points[i*NUM_JUNTAS+4];
   }
-  
+
   reached_current_goal[0] = false;
   reached_current_goal[1] = false;
   reached_current_goal[2] = false;
   reached_current_goal[3] = false;
   reached_current_goal[4] = false;  
-  
+
   /* set initial point as goal */
   pub_base.publish (joint_trajectory_goals[0][0]);
   pub_shoulder.publish (joint_trajectory_goals[0][1]);
@@ -73,7 +75,8 @@ void on_trajectory(const sim_scorbot_master::JointTrajectory& trajectory)
   pub_roll.publish (joint_trajectory_goals[0][4]);
 }
 
-void check_trajectory_goal(void)
+void sim_scorbot_master::Sim_Master::check_trajectory_goal(void)
+//void Sim_Master::check_trajectory_goal(void)
 {
   if (current_goal_index == -1) return; // no goal set
   

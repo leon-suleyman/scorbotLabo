@@ -617,6 +617,33 @@ sim_scorbot_master_generate_messages_py/fast:
 	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build && $(MAKE) -f sim_scorbot_master/CMakeFiles/sim_scorbot_master_generate_messages_py.dir/build.make sim_scorbot_master/CMakeFiles/sim_scorbot_master_generate_messages_py.dir/build
 .PHONY : sim_scorbot_master_generate_messages_py/fast
 
+src/sim_master.o: src/sim_master.cpp.o
+
+.PHONY : src/sim_master.o
+
+# target to build an object file
+src/sim_master.cpp.o:
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build && $(MAKE) -f sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/build.make sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/src/sim_master.cpp.o
+.PHONY : src/sim_master.cpp.o
+
+src/sim_master.i: src/sim_master.cpp.i
+
+.PHONY : src/sim_master.i
+
+# target to preprocess a source file
+src/sim_master.cpp.i:
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build && $(MAKE) -f sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/build.make sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/src/sim_master.cpp.i
+.PHONY : src/sim_master.cpp.i
+
+src/sim_master.s: src/sim_master.cpp.s
+
+.PHONY : src/sim_master.s
+
+# target to generate assembly for a file
+src/sim_master.cpp.s:
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build && $(MAKE) -f sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/build.make sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/src/sim_master.cpp.s
+.PHONY : src/sim_master.cpp.s
+
 src/sim_master_node.o: src/sim_master_node.cpp.o
 
 .PHONY : src/sim_master_node.o
@@ -687,6 +714,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... sim_scorbot_master_gencpp"
 	@echo "... sim_scorbot_master_generate_messages_py"
+	@echo "... src/sim_master.o"
+	@echo "... src/sim_master.i"
+	@echo "... src/sim_master.s"
 	@echo "... src/sim_master_node.o"
 	@echo "... src/sim_master_node.i"
 	@echo "... src/sim_master_node.s"

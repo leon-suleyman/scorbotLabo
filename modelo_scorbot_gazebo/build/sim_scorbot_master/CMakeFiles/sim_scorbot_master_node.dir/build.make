@@ -57,9 +57,22 @@ include sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/progress.make
 # Include the compile flags for this target's objects.
 include sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/flags.make
 
+sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/src/sim_master.cpp.o: sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/flags.make
+sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/src/sim_master.cpp.o: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/src/sim_scorbot_master/src/sim_master.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/src/sim_master.cpp.o"
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/sim_scorbot_master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim_scorbot_master_node.dir/src/sim_master.cpp.o -c /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/src/sim_scorbot_master/src/sim_master.cpp
+
+sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/src/sim_master.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim_scorbot_master_node.dir/src/sim_master.cpp.i"
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/sim_scorbot_master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/src/sim_scorbot_master/src/sim_master.cpp > CMakeFiles/sim_scorbot_master_node.dir/src/sim_master.cpp.i
+
+sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/src/sim_master.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim_scorbot_master_node.dir/src/sim_master.cpp.s"
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/sim_scorbot_master && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/src/sim_scorbot_master/src/sim_master.cpp -o CMakeFiles/sim_scorbot_master_node.dir/src/sim_master.cpp.s
+
 sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/src/sim_master_node.cpp.o: sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/flags.make
 sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/src/sim_master_node.cpp.o: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/src/sim_scorbot_master/src/sim_master_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/src/sim_master_node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/src/sim_master_node.cpp.o"
 	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/sim_scorbot_master && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim_scorbot_master_node.dir/src/sim_master_node.cpp.o -c /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/src/sim_scorbot_master/src/sim_master_node.cpp
 
 sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/src/sim_master_node.cpp.i: cmake_force
@@ -72,11 +85,13 @@ sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/src/sim_master_node.cp
 
 # Object files for target sim_scorbot_master_node
 sim_scorbot_master_node_OBJECTS = \
+"CMakeFiles/sim_scorbot_master_node.dir/src/sim_master.cpp.o" \
 "CMakeFiles/sim_scorbot_master_node.dir/src/sim_master_node.cpp.o"
 
 # External object files for target sim_scorbot_master_node
 sim_scorbot_master_node_EXTERNAL_OBJECTS =
 
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/devel/lib/sim_scorbot_master/sim_scorbot_master_node: sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/src/sim_master.cpp.o
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/devel/lib/sim_scorbot_master/sim_scorbot_master_node: sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/src/sim_master_node.cpp.o
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/devel/lib/sim_scorbot_master/sim_scorbot_master_node: sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/build.make
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/devel/lib/sim_scorbot_master/sim_scorbot_master_node: /opt/ros/noetic/lib/libroscpp.so
@@ -98,7 +113,7 @@ sim_scorbot_master_node_EXTERNAL_OBJECTS =
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/devel/lib/sim_scorbot_master/sim_scorbot_master_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/devel/lib/sim_scorbot_master/sim_scorbot_master_node: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/devel/lib/sim_scorbot_master/sim_scorbot_master_node: sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/devel/lib/sim_scorbot_master/sim_scorbot_master_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/devel/lib/sim_scorbot_master/sim_scorbot_master_node"
 	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/sim_scorbot_master && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sim_scorbot_master_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
