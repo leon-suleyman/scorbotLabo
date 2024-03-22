@@ -2,6 +2,7 @@
 #define SCORBOT_H
 
 #include <ros/ros.h>
+#include <std_msgs/Float64.h>
 #include <sim_scorbot_master/JointTrajectory.h>
 
 #define MAX_TRAJECTORY_SIZE 10
@@ -32,6 +33,12 @@ namespace sim_scorbot_master{
           bool reached_current_goal[NUM_JUNTAS];
           int current_goal_index;
           int current_goal_length;
+
+          std_msgs::Float64 base_msg;
+          std_msgs::Float64 shoulder_msg;
+          std_msgs::Float64 elbow_msg;
+          std_msgs::Float64 pitch_msg;
+          std_msgs::Float64 roll_msg;
     };
 }
 

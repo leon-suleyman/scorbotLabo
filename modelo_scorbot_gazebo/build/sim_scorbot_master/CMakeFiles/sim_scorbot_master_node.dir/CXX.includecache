@@ -39,6 +39,22 @@ sim_master.h
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/src/sim_scorbot_master/src/sim_master.h
 ros/ros.h
 -
+std_msgs/Float64.h
+-
+sim_scorbot_master/JointTrajectory.h
+-
+
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/src/sim_scorbot_master/src/sim_master_node.cpp
+ros/ros.h
+-
+sim_master.h
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/src/sim_scorbot_master/src/sim_master.h
+std_msgs/Empty.h
+-
+std_msgs/Float64.h
+-
+math.h
+-
 sim_scorbot_master/JointTrajectory.h
 -
 

@@ -1217,7 +1217,7 @@ sim_scorbot_master/CMakeFiles/sim_scorbot_master_generate_messages_nodejs.dir/cl
 # Target rules for target sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir
 
 # All Build rule for target.
-sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/all:
+sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/all: sim_scorbot_master/CMakeFiles/sim_scorbot_master_generate_messages_cpp.dir/all
 	$(MAKE) -f sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/build.make sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/depend
 	$(MAKE) -f sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/build.make sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/CMakeFiles --progress-num=26,27,28 "Built target sim_scorbot_master_node"
@@ -1225,7 +1225,7 @@ sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/all:
 
 # Build rule for subdir invocation for target.
 sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/build/CMakeFiles 0
 .PHONY : sim_scorbot_master/CMakeFiles/sim_scorbot_master_node.dir/rule

@@ -68,11 +68,20 @@ void sim_scorbot_master::Sim_Master::on_trajectory(const sim_scorbot_master::Joi
   reached_current_goal[4] = false;  
 
   /* set initial point as goal */
-  pub_base.publish (joint_trajectory_goals[0][0]);
-  pub_shoulder.publish (joint_trajectory_goals[0][1]);
-  pub_elbow.publish (joint_trajectory_goals[0][2]);
-  pub_pitch.publish (joint_trajectory_goals[0][3]);
-  pub_roll.publish (joint_trajectory_goals[0][4]);
+  base_msg.data = joint_trajectory_goals[0][0];
+  pub_base.publish (base_msg);
+
+  shoulder_msg.data = joint_trajectory_goals[0][1];
+  pub_shoulder.publish (shoulder_msg);
+
+  elbow_msg.data = joint_trajectory_goals[0][2];
+  pub_elbow.publish (elbow_msg);
+
+  pitch_msg.data = joint_trajectory_goals[0][3];
+  pub_pitch.publish (pitch_msg);
+
+  roll_msg.data = joint_trajectory_goals[0][4];
+  pub_roll.publish (roll_msg);
 }
 
 void sim_scorbot_master::Sim_Master::check_trajectory_goal(void)
@@ -94,11 +103,20 @@ void sim_scorbot_master::Sim_Master::check_trajectory_goal(void)
     if (current_goal_length == current_goal_index) current_goal_index = -1; // completed trajectory
     else {      
       /* set current point as new goal */
-      pub_base.publish (joint_trajectory_goals[current_goal_index][0]);
-      pub_shoulder.publish (joint_trajectory_goals[current_goal_index][1]);
-      pub_elbow.publish (joint_trajectory_goals[current_goal_index][2]);
-      pub_pitch.publish (joint_trajectory_goals[current_goal_index][3]);
-      pub_roll.publish (joint_trajectory_goals[current_goal_index][4]);
+  base_msg.data = joint_trajectory_goals[current_goal_index][0];
+  pub_base.publish (base_msg);
+
+  shoulder_msg.data = joint_trajectory_goals[current_goal_index][1];
+  pub_shoulder.publish (shoulder_msg);
+
+  elbow_msg.data = joint_trajectory_goals[current_goal_index][2];
+  pub_elbow.publish (elbow_msg);
+
+  pitch_msg.data = joint_trajectory_goals[current_goal_index][3];
+  pub_pitch.publish (pitch_msg);
+
+  roll_msg.data = joint_trajectory_goals[current_goal_index][4];
+  pub_roll.publish (roll_msg);
     }
   }  
 }

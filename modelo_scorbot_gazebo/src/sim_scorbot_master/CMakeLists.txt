@@ -9,6 +9,8 @@ project(sim_scorbot_master)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   roscpp
+  rospy
+  std_msgs
   message_generation
 )
 
@@ -144,7 +146,7 @@ add_executable(${PROJECT_NAME}_node src/sim_master.cpp src/sim_master_node.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
-# add_dependencies(${PROJECT_NAME}_node scorbot_generate_messages_cpp)
+add_dependencies(${PROJECT_NAME}_node sim_scorbot_master_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
  target_link_libraries(${PROJECT_NAME}_node
