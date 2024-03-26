@@ -589,7 +589,7 @@ void loop(void)
   if(clawIsHolding){
     stateClaw = holdingClaw;
   }
-  delay(2);
+  delay(100);
 }
 
 void setear_constantes(void)
