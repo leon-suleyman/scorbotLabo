@@ -35,11 +35,19 @@ scorbot::Teleop::Teleop(ros::NodeHandle& n)
 
   }
 
+/*
 #define RAD2ENC1(x) ((int32_t)(x / (double)0.000034142) + 7000)
 #define RAD2ENC2(x) ((int32_t)(x / (double)0.000030712) + 22500)
 #define RAD2ENC3(x) ((int32_t)(x / (double)-0.000032903) + 16500)
 #define RAD2ENC4(x) ((int32_t)(x / (double)-0.000054786) + 0)
 #define RAD2ENC5(x) ((int32_t)(x / (double)-0.000163399) + 2200)
+*/
+
+#define RAD2ENC1(x) ((int32_t)(x / (double)0.000034142))
+#define RAD2ENC2(x) ((int32_t)(x / (double)0.000030712))
+#define RAD2ENC3(x) ((int32_t)(x / (double)-0.000032903))
+#define RAD2ENC4(x) ((int32_t)(x / (double)-0.000054786))
+#define RAD2ENC5(x) ((int32_t)(x / (double)-0.000163399))
 
 
 void scorbot::Teleop::on_trajectory(const trajectory_msgs::JointTrajectoryConstPtr& msg)

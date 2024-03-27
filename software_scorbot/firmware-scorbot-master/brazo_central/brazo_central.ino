@@ -25,6 +25,7 @@
 #endif
 
 /* conversion de encoder desde el home -> angulo en radianes desde posicion estirada */
+/*
 #define ENC2RAD1(x) ((x - 7000)  * (float)0.000034142)
 #define ENC2RAD2(x) ((x - 22500) * (float)0.000030712)
 #define ENC2RAD3(x) ((x - 16500) * (float)-0.000032903)
@@ -36,6 +37,19 @@
 #define RAD2ENC3(x) ((int32_t)(x / (float)-0.000032903) + 16500)
 #define RAD2ENC4(x) ((int32_t)(x / (float)-0.000054786) + 0)
 #define RAD2ENC5(x) ((int32_t)(x / (float)-0.000163399) + 2200)
+*/
+
+#define ENC2RAD1(x) ((x)  * (float)0.000034142)
+#define ENC2RAD2(x) ((x) * (float)0.000030712)
+#define ENC2RAD3(x) ((x) * (float)-0.000032903)
+#define ENC2RAD4(x) ((x)     * (float)-0.000054786)
+#define ENC2RAD5(x) ((x)  * (float)-0.000163399)
+
+#define RAD2ENC1(x) ((int32_t)(x / (float)0.000034142))
+#define RAD2ENC2(x) ((int32_t)(x / (float)0.000030712))
+#define RAD2ENC3(x) ((int32_t)(x / (float)-0.000032903))
+#define RAD2ENC4(x) ((int32_t)(x / (float)-0.000054786))
+#define RAD2ENC5(x) ((int32_t)(x / (float)-0.000163399))
 
 #define MAX_TRAJECTORY_SIZE 10
 #define NUM_JUNTAS 5
