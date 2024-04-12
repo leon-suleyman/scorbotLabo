@@ -23,7 +23,8 @@ namespace universal_teleop {
       
       ros::Subscriber joy_sub, keyup_sub, keydown_sub;
       ros::Publisher pub_vel, pub_event, pub_control;
-      ros::Publisher pub_takeoff, pub_land, pub_emergency;
+      //ros::Publisher pub_takeoff, pub_land, pub_emergency;
+    
 
       sensor_msgs::Joy last_joy_msg;
       std::map<int, std::string> joy_button_map;

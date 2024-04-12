@@ -51,10 +51,11 @@ teleop::Teleop::Teleop(void) : n("~"), key_override_enabled(false), joy_override
   pub_event = n.advertise<teleop::Event>("events", 5);
   pub_control = n.advertise<teleop::Control>("controls", 1);
 
-  /* special events for UAV commands */
+  /* special events for UAV commands 
   pub_takeoff = n.advertise<std_msgs::Empty>("/robot/takeoff", 5);
   pub_land = n.advertise<std_msgs::Empty>("/robot/land", 5);
   pub_emergency = n.advertise<std_msgs::Empty>("/robot/reset", 5);
+  */
 }
 
 void teleop::Teleop::process_event(const teleop::Event& e)
@@ -70,13 +71,13 @@ void teleop::Teleop::process_event(const teleop::Event& e)
       pub_vel.publish(vel);
     }
   }
-  else {
+  /*else {
     if ((joy_override_enabled || key_override_enabled) && e.state) {
       if (e.event == "takeoff") pub_takeoff.publish(std_msgs::Empty());
       else if (e.event == "land") pub_land.publish(std_msgs::Empty());
       else if (e.event == "emergency") pub_emergency.publish(std_msgs::Empty());
     }
-  }
+  }*/
   pub_event.publish(e);
 }
 

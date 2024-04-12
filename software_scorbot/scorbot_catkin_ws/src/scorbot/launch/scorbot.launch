@@ -14,7 +14,7 @@
     <!-- TODO: usar require -->
   </node>
 
-  <node name="conector" pkg="conector_scorbot_sim" type="conector_scorbot_sim" output="screen"/>
+  <!--node name="conector" pkg="conector_scorbot_sim" type="conector_scorbot_sim" output="screen"/-->
 
   <node pkg="scorbot" type="teleop" name="scorbot" output="screen">
     <param name="control_frequency" value="4"/>
