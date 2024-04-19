@@ -35,6 +35,19 @@
       </actuator>
     </transmission>
   </xacro:macro>
+  <!-- For Velocity controllers -->
+  <xacro:macro name="joint_vel_transmission" params="joint">
+    <transmission name="${joint}_transmission">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="${joint}">
+       <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="${joint}_motor">
+        <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+  </xacro:macro>
 
   <!-- No gravity links -->
   <xacro:macro name="gazebo_no_gravity_link" params="link color">

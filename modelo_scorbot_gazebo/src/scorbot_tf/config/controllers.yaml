@@ -35,27 +35,27 @@ joint_state_controller:
 base_position_controller:
   type: position_controllers/JointPositionController
   joint: base
-  pid: {p : 0.0025, i : 0.000001, p : 0.001}
+  pid: {p : 0.0025, i : 0.000001, d : 0.001}
 
 shoulder_position_controller:
   type: position_controllers/JointPositionController
   joint: shoulder
-  pid: {p : 0.0025, i : 0.000001, p : 0.001}
+  pid: {p : 0.0025, i : 0.000001, d : 0.001}
  
 elbow_position_controller:
   type: position_controllers/JointPositionController
   joint: elbow
-  pid: {p : 0.0025, i : 0.000001, p : 0.001}
+  pid: {p : 0.0025, i : 0.000001, d : 0.001}
 
 pitch_position_controller:
   type: position_controllers/JointPositionController
   joint: pitch
-  pid: {p : 0.0025, i : 0.000001, p : 0.001}
+  pid: {p : 0.0025, i : 0.000001, d : 0.001}
 
 roll_position_controller:
   type: position_controllers/JointPositionController
   joint: roll
-  pid: {p : 0.0025, i : 0.000001, p : 0.001}
+  pid: {p : 0.0025, i : 0.000001, d : 0.001}
 
 gripper_left_controller:
   type: effort_controllers/JointEffortController
@@ -66,27 +66,27 @@ gripper_right_controller:
   joint: gripper_finger_right_joint
 
 base_velocity_controller:
-  type: effort_controllers/JointVelocityController
+  type: velocity_controllers/JointVelocityController
   joint: base
   pid: {p : 0.8, i : 20.0, d : 0.1}
 
 shoulder_velocity_controller:
-  type: effort_controllers/JointVelocityController
+  type: velocity_controllers/JointVelocityController
   joint: shoulder
   pid: {p : 0.8, i : 20.0, d : 0.1}
  
 elbow_velocity_controller:
-  type: effort_controllers/JointVelocityController
+  type: velocity_controllers/JointVelocityController
   joint: elbow
   pid: {p : 0.8, i : 20.0, d : 0.1}
 
 pitch_velocity_controller:
-  type: effort_controllers/JointVelocityController
+  type: velocity_controllers/JointVelocityController
   joint: pitch
   pid: {p : 0.8, i : 20.0, d : 0.1}
 
 roll_velocity_controller:
-  type: effort_controllers/JointVelocityController
+  type: velocity_controllers/JointVelocityController
   joint: roll
   pid: {p : 0.8, i : 20.0, d : 0.1}
 

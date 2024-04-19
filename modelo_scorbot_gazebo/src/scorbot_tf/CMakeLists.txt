@@ -9,8 +9,10 @@ project(scorbot_gazebo_tf)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   gazebo_ros
+  gazebo_plugins
   urdf
   xacro
+  roscpp
 )
 
 ## System dependencies are found with CMake's conventions
@@ -106,7 +108,9 @@ catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES scorbot_gazebo_tf
 #  CATKIN_DEPENDS control_toolbox controller_manager gazebo_ros gazebo_ros_pkgs ros_control ros_controllers roscpp rospy std_msgs urdf xacro
-#  DEPENDS system_lib
+  DEPENDS 
+    roscpp
+    gazebo_ros
 )
 
 ###########
@@ -115,15 +119,18 @@ catkin_package(
 
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
+link_directories(${GAZEBO_LIBRARY_DIRS})
 include_directories(
 # include
+  ${Boost_INCLUDE_DIR}
   ${catkin_INCLUDE_DIRS}
+  ${GAZEBO_INCLUDE_DIRS}
 )
 
 ## Declare a C++ library
-# add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/scorbot_gazebo_tf.cpp
-# )
+#add_library(${PROJECT_NAME} 
+#    src/set_speed_joint_plugin.cpp
+#  )
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
@@ -146,9 +153,10 @@ include_directories(
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
-# target_link_libraries(${PROJECT_NAME}_node
-#   ${catkin_LIBRARIES}
-# )
+#  target_link_libraries(${PROJECT_NAME}
+#    ${catkin_LIBRARIES}
+#    ${GAZEBO_LIBRARIES}
+#  )
 
 #############
 ## Install ##
@@ -204,3 +212,5 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+list(APPEND CMAKE_CXX_FLAGS "${GAZEBO_CXX_FLAGS}")
