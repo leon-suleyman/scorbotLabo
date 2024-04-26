@@ -56,13 +56,28 @@
   <xacro:property name="gripper_upper_limit" value="0.016" />
   <xacro:property name="gripper_lower_limit" value="-0.018" />
 
-  <xacro:if value="$(arg fixed)">
+ <!--
+
+   <xacro:property name="fixed" value="true"/>
+   
+   <xacro:if value="${fixed}">
+     <link name="world"/>
+     <joint name="fixed" type="fixed">
+       <parent link="world"/>
+       <child link="base_link"/>
+      </joint>
+    </xacro:if>
+--> 
+    
+<!-- 
+    <xacro:if value="$(arg fixed)">
     <link name="world"/>
     <joint name="fixed" type="fixed">
       <parent link="world"/>
       <child link="base_link"/>
     </joint>
   </xacro:if>
+-->
 
   <link
     name="base_link">

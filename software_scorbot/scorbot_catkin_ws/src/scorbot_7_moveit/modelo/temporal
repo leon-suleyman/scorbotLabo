@@ -2,7 +2,7 @@
   <link name="table">
     <visual>
       <geometry>
-		<mesh filename="file:///home/facu/catkin_ws/src/scorbot/scorbot_moveit/modelo/mesa.dae" scale="1 1 1"/>
+		<mesh filename="$(find scorbot_7_moveit)/modelo/mesa.dae" scale="1 1 1"/>
       </geometry>
     </visual>
   </link>
@@ -10,7 +10,7 @@
   <link name="base_robot">
     <visual>
       <geometry>
-        <mesh filename="file:///home/facu/catkin_ws/src/scorbot/scorbot_moveit/modelo/base_robot.dae" scale="1 1 1"/>
+        <mesh filename="$(find scorbot_7_moveit)/modelo/base_robot.dae" scale="1 1 1"/>
       </geometry>
       <origin xyz="0 0 0.015"/>
     </visual>
@@ -25,7 +25,7 @@
 <link name="link1">
     <visual>
       <geometry>
-        <mesh filename="file:///home/facu/catkin_ws/src/scorbot/scorbot_moveit/modelo/link1.dae" scale="1 1 1"/>
+        <mesh filename="$(find scorbot_7_moveit)/modelo/link1.dae" scale="1 1 1"/>
       </geometry>
       <origin xyz="0 0 0"/>
     </visual>
@@ -42,7 +42,7 @@
 <link name="link2">
     <visual>
       <geometry>
-        <mesh  filename="file:///home/facu/catkin_ws/src/scorbot/scorbot_moveit/modelo/link2.dae" scale="1 1 1"/>
+        <mesh  filename="$(find scorbot_7_moveit)/modelo/link2.dae" scale="1 1 1"/>
       </geometry>
       <origin xyz="0 0 0" rpy="0 0 3.14" />
       <material name="robot"/>
@@ -60,7 +60,7 @@
   <link name="link3">
     <visual>
       <geometry>
-        <mesh  filename="file:///home/facu/catkin_ws/src/scorbot/scorbot_moveit/modelo/link3.dae" scale="1 1 1"/>
+        <mesh  filename="$(find scorbot_7_moveit)/modelo/link3.dae" scale="1 1 1"/>
       </geometry>
       <origin xyz="0 -0.01 0" />
       <material name="robot"/>
@@ -78,7 +78,7 @@
   <link name="link4">
     <visual>
       <geometry>
-        <mesh  filename="file:///home/facu/catkin_ws/src/scorbot/scorbot_moveit/modelo/link4.dae" scale="1 1 1"/>
+        <mesh  filename="$(find scorbot_7_moveit)/modelo/link4.dae" scale="1 1 1"/>
       </geometry>
       <origin xyz="0 0 0" />
       <material name="robot"/>
@@ -96,7 +96,7 @@
   <link name="link5">
     <visual>
       <geometry>
-        <mesh  filename="file:///home/facu/catkin_ws/src/scorbot/scorbot_moveit/modelo/link5.dae" scale="1 1 1"/>
+        <mesh  filename="$(find scorbot_7_moveit)/modelo/link5.dae" scale="1 1 1"/>
       </geometry>
       <origin xyz="0 0.003 -0.003" />
       <material name="robot"/>
