@@ -4,7 +4,7 @@
   <arg name="use_gui" default="true"/>
   <param name="use_gui" value="$(arg use_gui)" />
   <!-- Controller type -->
-  <arg name="trajectory_controller" default="false"/>
+  <arg name="trajectory_controller" default="true"/>
   <!-- Publish /clock -->
   <arg name="use_sim_time" value="true"/>
   <!-- Fix base to World, publish TF for /world frame -->
