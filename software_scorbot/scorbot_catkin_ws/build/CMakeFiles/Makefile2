@@ -55,6 +55,7 @@ CMAKE_BINARY_DIR = /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_sc
 # The main recursive "all" target.
 all: gtest/all
 all: scorbot_7_moveit/all
+all: scorbot_vii_moveit/all
 all: scorbot_conector_sim/all
 all: scorbot/all
 
@@ -63,6 +64,7 @@ all: scorbot/all
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
 preinstall: scorbot_7_moveit/preinstall
+preinstall: scorbot_vii_moveit/preinstall
 preinstall: scorbot_conector_sim/preinstall
 preinstall: scorbot/preinstall
 
@@ -76,6 +78,7 @@ clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
 clean: scorbot_7_moveit/clean
+clean: scorbot_vii_moveit/clean
 clean: scorbot_conector_sim/clean
 clean: scorbot/clean
 
@@ -241,6 +244,24 @@ scorbot_conector_sim/clean: scorbot_conector_sim/CMakeFiles/roscpp_generate_mess
 scorbot_conector_sim/clean: scorbot_conector_sim/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 .PHONY : scorbot_conector_sim/clean
+
+#=============================================================================
+# Directory level rules for directory scorbot_vii_moveit
+
+# Recursive "all" directory target.
+scorbot_vii_moveit/all:
+
+.PHONY : scorbot_vii_moveit/all
+
+# Recursive "preinstall" directory target.
+scorbot_vii_moveit/preinstall:
+
+.PHONY : scorbot_vii_moveit/preinstall
+
+# Recursive "clean" directory target.
+scorbot_vii_moveit/clean:
+
+.PHONY : scorbot_vii_moveit/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/doxygen.dir

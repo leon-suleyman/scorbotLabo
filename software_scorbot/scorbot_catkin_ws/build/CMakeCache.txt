@@ -532,6 +532,12 @@ scorbot_BINARY_DIR:STATIC=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/soft
 //Value Computed by CMake
 scorbot_SOURCE_DIR:STATIC=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/src/scorbot
 
+//Value Computed by CMake
+scorbot_vii_moveit_BINARY_DIR:STATIC=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/build/scorbot_vii_moveit
+
+//Value Computed by CMake
+scorbot_vii_moveit_SOURCE_DIR:STATIC=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/src/scorbot_vii_moveit
+
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/noetic/share/std_msgs/cmake
 
@@ -691,7 +697,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

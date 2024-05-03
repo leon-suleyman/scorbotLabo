@@ -43,6 +43,13 @@
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/build/scorbot_7_moveit/CMakeFiles/edit_cache.dir
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/build/scorbot_7_moveit/CMakeFiles/test.dir
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/build/scorbot_7_moveit/CMakeFiles/_catkin_empty_exported_target.dir
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/build/scorbot_vii_moveit/CMakeFiles/install/strip.dir
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/build/scorbot_vii_moveit/CMakeFiles/install/local.dir
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/build/scorbot_vii_moveit/CMakeFiles/install.dir
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/build/scorbot_vii_moveit/CMakeFiles/list_install_components.dir
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/build/scorbot_vii_moveit/CMakeFiles/rebuild_cache.dir
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/build/scorbot_vii_moveit/CMakeFiles/edit_cache.dir
+/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/build/scorbot_vii_moveit/CMakeFiles/test.dir
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/build/scorbot_conector_sim/CMakeFiles/install/local.dir
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/build/scorbot_conector_sim/CMakeFiles/rebuild_cache.dir
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/build/scorbot_conector_sim/CMakeFiles/edit_cache.dir

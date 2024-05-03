@@ -1,0 +1,50 @@
+arm_group_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - base
+    - shoulder
+    - elbow
+    - pitch
+    - roll
+  gains:
+    base:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    shoulder:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    elbow:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    pitch:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    roll:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+efector_group_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - gripper_finger_left_joint
+    - gripper_finger_right_joint
+  gains:
+    gripper_finger_left_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    gripper_finger_right_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
