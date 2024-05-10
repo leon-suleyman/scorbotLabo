@@ -5,8 +5,8 @@
   <description>
      An automatically generated package with all the configuration and launch files for using the scorbot with the MoveIt Motion Planning Framework
   </description>
-  <author email="leon.suleyman.herrera@gmail.com">leon-suleyman</author>
-  <maintainer email="leon.suleyman.herrera@gmail.com">leon-suleyman</maintainer>
+  <author email="leon.suleyman.herrera@gmail.com">León Herrera</author>
+  <maintainer email="leon.suleyman.herrera@gmail.com">León Herrera</maintainer>
 
   <license>BSD</license>
 
@@ -35,7 +35,7 @@
   <!-- <run_depend>gazebo_ros_control</run_depend> -->
   <!-- This package is referenced in the warehouse launch files, but does not build out of the box at the moment. Commented the dependency until this works. -->
   <!-- <run_depend>warehouse_ros_mongo</run_depend> -->
-  <run_depend>scorbot_tf</run_depend>
+  <run_depend>scorbot_gazebo_tf</run_depend>
 
 
 </package>

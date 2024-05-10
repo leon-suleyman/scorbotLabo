@@ -1,0 +1,13 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/devel/lib/python3/dist-packages",
+        "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/devel/lib/python3/dist-packages",
+        "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "ros.distro": "noetic"
+}

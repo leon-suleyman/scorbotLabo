@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"scorbot\"
 
-CXX_INCLUDES = -I/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/include 
+CXX_INCLUDES = -I/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/devel/include -I/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

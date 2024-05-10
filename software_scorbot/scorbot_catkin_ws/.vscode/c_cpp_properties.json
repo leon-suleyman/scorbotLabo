@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/devel/include/**",
+        "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/src/scorbot_conector_sim/include/**",
+        "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/src/sim_scorbot_master/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

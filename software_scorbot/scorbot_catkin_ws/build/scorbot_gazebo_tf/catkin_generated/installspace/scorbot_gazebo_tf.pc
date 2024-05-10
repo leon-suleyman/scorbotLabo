@@ -1,0 +1,8 @@
+prefix=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/install
+
+Name: scorbot_gazebo_tf
+Description: Description of scorbot_gazebo_tf
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp gazebo_ros

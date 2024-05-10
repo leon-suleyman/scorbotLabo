@@ -1,11 +1,11 @@
 moveit_setup_assistant_config:
   URDF:
-    package: scorbot_tf
+    package: scorbot_gazebo_tf
     relative_path: urdf/scorbot.urdf.xacro
     xacro_args: ""
   SRDF:
     relative_path: config/scorbot.srdf
   CONFIG:
-    author_name: leon-suleyman
+    author_name: León Herrera
     author_email: leon.suleyman.herrera@gmail.com
-    generated_timestamp: 1714757877
+    generated_timestamp: 1715361983

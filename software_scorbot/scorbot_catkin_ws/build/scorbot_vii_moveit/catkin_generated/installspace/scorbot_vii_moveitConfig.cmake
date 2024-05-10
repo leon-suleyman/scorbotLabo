@@ -99,7 +99,7 @@ if(NOT " " STREQUAL " ")
   elseif(NOT "http://moveit.ros.org/ " STREQUAL " ")
     set(_report "Check the website 'http://moveit.ros.org/' for information and consider reporting the problem.")
   else()
-    set(_report "Report the problem to the maintainer 'leon-suleyman <leon.suleyman.herrera@gmail.com>' and request to fix the problem.")
+    set(_report "Report the problem to the maintainer 'León Herrera <leon.suleyman.herrera@gmail.com>' and request to fix the problem.")
   endif()
   foreach(idir ${_include_dirs})
     if(IS_ABSOLUTE ${idir} AND IS_DIRECTORY ${idir})
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/install/lib;/home/lovi/proyectos_robotica/scorbot/scorbotLabo/modelo_scorbot_gazebo/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/install/lib;/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/devel/lib;/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/lib;/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_keyboard/devel/lib;/home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/ros_joy/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -1,5 +1,5 @@
 controller_list:
-  - name: fake_arm_group_controller
+  - name: fake_scorbot_arm_controller
     type: $(arg fake_execution_type)
     joints:
       - base
@@ -7,11 +7,12 @@ controller_list:
       - elbow
       - pitch
       - roll
-  - name: fake_efector_group_controller
+  - name: fake_scorbot_gripper_controller
     type: $(arg fake_execution_type)
     joints:
+      - roll
       - gripper_finger_left_joint
       - gripper_finger_right_joint
 initial:  # Define initial robot poses per group
-  - group: arm_group
+  - group: scorbot_arm
     pose: home

@@ -1,8 +1,0 @@
-moveit_setup_assistant_config:
-  URDF:
-    package: scorbot_moveit
-    relative_path: modelo/Scorbot_7.urdf
-  SRDF:
-    relative_path: config/Scorbot_7.srdf
-  CONFIG:
-    generated_timestamp: 1433795841
