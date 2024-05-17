@@ -1,12 +1,69 @@
-arm_position_contr:
-  type: position_controllers/JointTrajectoryController
-  joints:
-    []
-  gains:
-    {}
-arm_velocity_contr:
-  type: velocity_controllers/JointTrajectoryController
-  joints:
-    []
-  gains:
-    {}
+controller_list:  
+  - arm_position:
+      type: position_controllers/JointTrajectoryController
+      joints:
+        - base
+        - shoulder
+        - elbow
+        - pitch
+        - roll
+      gains:
+        base:
+          p: 100
+          d: 1
+          i: 1
+          i_clamp: 1
+        shoulder:
+          p: 100
+          d: 1
+          i: 1
+          i_clamp: 1
+        elbow:
+          p: 100
+          d: 1
+          i: 1
+          i_clamp: 1
+        pitch:
+          p: 100
+          d: 1
+          i: 1
+          i_clamp: 1
+        roll:
+          p: 100
+          d: 1
+          i: 1
+          i_clamp: 1
+  - arm_velocity:
+      type: velocity_controllers/JointTrajectoryController
+      joints:
+        - base
+        - shoulder
+        - elbow
+        - pitch
+        - roll
+      gains:
+        base:
+          p: 100
+          d: 1
+          i: 1
+          i_clamp: 1
+        shoulder:
+          p: 100
+          d: 1
+          i: 1
+          i_clamp: 1
+        elbow:
+          p: 100
+          d: 1
+          i: 1
+          i_clamp: 1
+        pitch:
+          p: 100
+          d: 1
+          i: 1
+          i_clamp: 1
+        roll:
+          p: 100
+          d: 1
+          i: 1
+          i_clamp: 1

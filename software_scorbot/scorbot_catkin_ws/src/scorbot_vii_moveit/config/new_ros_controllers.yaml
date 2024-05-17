@@ -1,0 +1,11 @@
+controller_list:
+  - name: trajectory_controller
+    action_ns: follow_joint_trajectory
+    type: follow_joint_trajectory
+    default: true
+    joints:
+    - base
+    - shoulder
+    - elbow
+    - pitch
+    - roll

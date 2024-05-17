@@ -2,3 +2,20 @@
 joint_state_controller:
   type: joint_state_controller/JointStateController
   publish_rate: 50
+
+arm_position:
+  type: position_controllers/JointTrajectoryController
+  joints:
+    - base
+    - shoulder
+    - elbow
+    - pitch
+    - roll
+arm_velocity:
+  type: velocity_controllers/JointTrajectoryController
+  joints:
+    - base
+    - shoulder
+    - elbow
+    - pitch
+    - roll

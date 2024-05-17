@@ -7,5 +7,5 @@ moveit_setup_assistant_config:
     relative_path: config/scorbot.srdf
   CONFIG:
     author_name: León Herrera
-    author_email: leon.suleyman.herrera@gmail.com
-    generated_timestamp: 1715361983
+    author_email: lherrera@dc.uba.ar
+    generated_timestamp: 1715971714

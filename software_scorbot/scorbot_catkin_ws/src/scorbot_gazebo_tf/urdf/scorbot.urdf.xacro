@@ -68,8 +68,8 @@
       </joint>
     </xacro:if>
 --> 
-    
-<!-- 
+    <xacro:arg name="fixed" default="true"/>
+
     <xacro:if value="$(arg fixed)">
     <link name="world"/>
     <joint name="fixed" type="fixed">
@@ -77,7 +77,6 @@
       <child link="base_link"/>
     </joint>
   </xacro:if>
--->
 
   <link
     name="base_link">

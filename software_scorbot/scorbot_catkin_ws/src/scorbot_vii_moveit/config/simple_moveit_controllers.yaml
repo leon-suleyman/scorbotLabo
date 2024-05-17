@@ -1,25 +1,38 @@
 controller_list:
-  - name: arm_position_contr
+  - name: arm_position
     action_ns: follow_joint_trajectory
     type: FollowJointTrajectory
     default: True
     joints:
-      []
-  - name: arm_velocity_contr
+      - base
+      - shoulder
+      - elbow
+      - pitch
+      - roll
+  - name: arm_velocity
     action_ns: follow_joint_trajectory
     type: FollowJointTrajectory
     default: True
     joints:
-      []
+      - base
+      - shoulder
+      - elbow
+      - pitch
+      - roll
   - name: arm_follow_joint_trajectory
     action_ns: follow_joint_trajectory
     type: FollowJointTrajectory
     default: True
     joints:
-      []
-  - name: gripper_contr
+      - base
+      - shoulder
+      - elbow
+      - pitch
+      - roll
+  - name: gripper_controller
     action_ns: gripper_action
     type: GripperCommand
     default: True
     joints:
-      []
+      - gripper_finger_left_joint
+      - gripper_finger_right_joint

@@ -1,5 +1,5 @@
-stomp/scorbot_arm:
-  group_name: scorbot_arm
+stomp/arm_group:
+  group_name: arm_group
   optimization:
     num_timesteps: 60
     num_iterations: 40
@@ -37,8 +37,8 @@ stomp/scorbot_arm:
         publish_intermediate: True
         marker_topic: stomp_trajectory
         marker_namespace: optimized
-stomp/scorbot_gripper:
-  group_name: scorbot_gripper
+stomp/gripper_group:
+  group_name: gripper_group
   optimization:
     num_timesteps: 60
     num_iterations: 40

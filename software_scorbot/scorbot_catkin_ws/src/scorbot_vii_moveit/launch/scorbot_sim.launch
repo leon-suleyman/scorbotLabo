@@ -1,0 +1,14 @@
+<launch>
+    <!-- armamos el robot en gazebo -->
+    <include file = "$(find scorbot_gazebo_tf)/launch/scorbot_join_test.launch" />
+
+    <!-- launch moveIt MoveGroup node-->
+    <include file = "$(find scorbot_vii_moveit)/launch/move_group.launch"/>
+
+    <!-- Corremos RViz-->
+    <arg name = "use_rviz" default = "true" />
+
+    <include file = "$(find scorbot_vii_moveit)/launch/moveit_rviz.launch" if = "$(arg use_rviz)"> 
+        <arg name = "rviz_config" value = "$(find scorbot_vii_moveit)/launch/moveit.rviz"/>
+    </include>
+</launch>
