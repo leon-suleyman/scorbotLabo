@@ -1,4 +1,4 @@
-controller_list:  
+controller_list:
   - arm_position:
       type: position_controllers/JointTrajectoryController
       joints:
