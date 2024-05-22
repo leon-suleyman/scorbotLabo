@@ -1,0 +1,9 @@
+<launch>
+
+    <arg name = "moveit_controller_manager" default = "move_it_simple_controller_manager/MoveItSimpleControllerManager"/>
+    <param name = "moveit_controller_manager" value="$(arg moveit_controller_manager)"/>
+
+    <!-- load ros controllers to the param server-->
+    <rosparam file="$(find scorbot_vii_moveit)/config/ros_controllers.yaml"/>
+
+</launch>

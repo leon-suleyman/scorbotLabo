@@ -1,9 +1,4 @@
-scorbot: 
-  # Publish joint_states
-  joint_state_controller:
-    type: joint_state_controller/JointStateController
-    publish_rate: 50
-
+scorbot:
   arm_controller:
     type: position_controllers/JointTrajectoryController
     joints:
@@ -15,14 +10,14 @@ scorbot:
     contraints:
       goal_time: 0.6
       stopped_velocity_tolerances: 0.05
-      base: {trajectory: 0.01, goal: 0.1}
-      shoulder: {trajectory: 0.01, goal: 0.1}
-      elbow: {trajectory: 0.01, goal: 0.1}
-      pitch: {trajectory: 0.01, goal: 0.1}
-      roll: {trajectory: 0.01, goal: 0.1}
+      base: {trajectory: 0.01, goal: 0,1}
+      shoulder: {trajectory: 0.01, goal: 0,1}
+      elbow: {trajectory: 0.01, goal: 0,1}
+      pitch: {trajectory: 0.01, goal: 0,1}
+      roll: {trajectory: 0.01, goal: 0,1}
     stop_trajectory_duration: 0.5
     state_publish_rate: 25
-    action_monitor_rate: 10
+    action_monitor_ rate: 10
   
   gripper_controller:
     type: position_controllers/JointTrajectoryController
@@ -32,8 +27,8 @@ scorbot:
     contraints:
       goal_time: 0.6
       stopped_velocity_tolerances: 0.05
-      gripper_finger_right_joint: {trajectory: 0.01, goal: 0.1}
-      gripper_finger_left_joint: {trajectory: 0.01, goal: 0.1}
+      gripper_finger_right_joint: {trajectory: 0.01, goal: 0,1}
+      gripper_finger_left_joint: {trajectory: 0.01, goal: 0,1}
     stop_trajectory_duration: 0.5
     state_publish_rate: 25
-    action_monitor_rate: 10
+    action_monitor_ rate: 10

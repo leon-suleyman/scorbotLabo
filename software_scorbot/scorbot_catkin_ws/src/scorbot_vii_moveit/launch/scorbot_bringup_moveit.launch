@@ -1,0 +1,7 @@
+<launch>
+
+    <!-- launch Gazebo-->
+    <!-- Associate to the robot description parameter, the urdf file that models the robot-->
+    <param name="robot_description" command="$(find scorbot_vii_moveit)/config/scorbot.urdf"/>
+
+</launch>

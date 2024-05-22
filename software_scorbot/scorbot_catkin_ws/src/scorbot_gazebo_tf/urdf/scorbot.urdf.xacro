@@ -30,8 +30,8 @@
   <xacro:joint_vel_transmission joint="elbow"/>
   <xacro:joint_vel_transmission joint="pitch"/>
   <xacro:joint_vel_transmission joint="roll"/>-->
-  <xacro:joint_transmission joint="gripper_finger_left_joint"/>
-  <xacro:joint_transmission joint="gripper_finger_right_joint"/>
+  <xacro:joint_pos_transmission joint="gripper_finger_left_joint"/>
+  <xacro:joint_pos_transmission joint="gripper_finger_right_joint"/>
 
   <!-- Constants -->
   <xacro:property name="M_PI" value="3.14159265359" />
