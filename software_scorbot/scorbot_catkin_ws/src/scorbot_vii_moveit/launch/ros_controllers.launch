@@ -5,7 +5,7 @@
   <rosparam file="$(find scorbot_vii_moveit)/config/ros_controllers.yaml" command="load"/>
 
   <!-- Load the controllers -->
-  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
-    output="screen" args="arm_comntroller gripper_controller "/>
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" ns="/scorbot"
+    output="screen" args="joint_state_controller arm_position_controller"/>
 
 </launch>

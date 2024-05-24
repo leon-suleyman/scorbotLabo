@@ -52,7 +52,7 @@
     </gazebo>
     <gazebo>
         <plugin filename="libgazebo_ros_control.so" name="ros_control">
-            <robotNamespace>scorbot/</robotNamespace>
+            <robotNamespace>/scorbot</robotNamespace>
         </plugin>
     </gazebo>
     <transmission name="base_transmission">
@@ -108,20 +108,20 @@
     <transmission name="gripper_finger_left_joint_transmission">
         <type>transmission_interface/SimpleTransmission</type>
         <joint name="gripper_finger_left_joint">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
         </joint>
         <actuator name="gripper_finger_left_joint_motor">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
             <mechanicalReduction>1</mechanicalReduction>
         </actuator>
     </transmission>
     <transmission name="gripper_finger_right_joint_transmission">
         <type>transmission_interface/SimpleTransmission</type>
         <joint name="gripper_finger_right_joint">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
         </joint>
         <actuator name="gripper_finger_right_joint_motor">
-            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
             <mechanicalReduction>1</mechanicalReduction>
         </actuator>
     </transmission>

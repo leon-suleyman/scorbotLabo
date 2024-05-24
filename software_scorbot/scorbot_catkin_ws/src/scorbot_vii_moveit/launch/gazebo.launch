@@ -24,14 +24,14 @@
 
   <!-- Load the controller parameters onto the parameter server -->
   <rosparam file="$(find scorbot_vii_moveit)/config/gazebo_controllers.yaml" />
-  <include file="$(dirname)/ros_controllers.launch"/>
+  <!--<include file="$(dirname)/ros_controllers.launch"/>-->
 
   <!-- Spawn the Gazebo ROS controllers -->
   <node name="gazebo_controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="/scorbot"
         args="joint_state_controller
-        arm_controller
+        arm_position_controller
         --timeout 60 " />
-
+  
   <!-- Given the published joint states, publish tf for the robot links -->
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen">
      <remap from="/joint_states" to="/scorbot/joint_states"/>

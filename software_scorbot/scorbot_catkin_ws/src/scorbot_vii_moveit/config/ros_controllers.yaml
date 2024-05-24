@@ -1,8 +1,9 @@
-joint_state_controller:
-  type: joint_state_controller/JointStateController
-  publish_rate: 50
+scorbot:
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
 controller_list:
-  - name: /scorbot/arm_controller
+  - name: /scorbot/arm_position_controller
     action_ns: follow_joint_trajectory
     default: True
     type: FollowJointTrajecotry
@@ -12,13 +13,13 @@ controller_list:
       - elbow
       - pitch
       - roll
-  - name: /scorbot/gripper_controller
-    action_ns: follow_joint_trajectory
-    default: True
-    type: FollowJointTrajecotry
-    joints:
-      - gripper_finger_right_joint
-      - gripper_finger_left_joint
+  #- name: /scorbot/gripper_controller
+  #  action_ns: follow_joint_trajectory
+  #  default: True
+  #  type: FollowJointTrajecotry
+  #  joints:
+  #    - gripper_finger_right_joint
+  #    - gripper_finger_left_joint
 #arm_position:
 #  type: position_controllers/JointTrajectoryController
 #  joints:

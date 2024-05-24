@@ -4,7 +4,7 @@ scorbot:
     type: joint_state_controller/JointStateController
     publish_rate: 50
 
-  arm_controller:
+  arm_position_controller:
     type: position_controllers/JointTrajectoryController
     joints:
       - base
@@ -24,16 +24,16 @@ scorbot:
     state_publish_rate: 25
     action_monitor_rate: 10
   
-  gripper_controller:
-    type: position_controllers/JointTrajectoryController
-    joints:
-      - gripper_finger_right_joint
-      - gripper_finger_left_joint
-    contraints:
-      goal_time: 0.6
-      stopped_velocity_tolerances: 0.05
-      gripper_finger_right_joint: {trajectory: 0.01, goal: 0.1}
-      gripper_finger_left_joint: {trajectory: 0.01, goal: 0.1}
-    stop_trajectory_duration: 0.5
-    state_publish_rate: 25
-    action_monitor_rate: 10
+  #gripper_controller:
+  #  type: position_controllers/JointTrajectoryController
+  #  joints:
+  #    - gripper_finger_right_joint
+  #    - gripper_finger_left_joint
+  #  contraints:
+  #    goal_time: 0.6
+  #    stopped_velocity_tolerances: 0.05
+  #    gripper_finger_right_joint: {trajectory: 0.01, goal: 0.1}
+  #    gripper_finger_left_joint: {trajectory: 0.01, goal: 0.1}
+  #  stop_trajectory_duration: 0.5
+  #  state_publish_rate: 25
+  #  action_monitor_rate: 10
