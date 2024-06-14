@@ -6,34 +6,9 @@
 
 using namespace std;
 
-scorbot::Teleop::Teleop(ros::NodeHandle& n)
-{
-  n.param("control_frequency", control_frequency, 5);
-
-  sub_control = n.subscribe("/universal_teleop/controls", 1, &Teleop::on_controls, this);
-  sub_events = n.subscribe("/universal_teleop/events", 1, &Teleop::on_events, this);
-  vel_pub = n.advertise<scorbot::JointVelocities>("/scorbot/joint_velocities", 1);
-  home_pub = n.advertise<std_msgs::Empty>("/scorbot/home", 1);
-
-  trajectory_pub_debug = n.advertise<trajectory_msgs::JointTrajectory>("/scorbot/joint_path_command", 1);
-  joint_trajectory_sub = n.subscribe<trajectory_msgs::JointTrajectory>("/scorbot/joint_path_command", 1, &Teleop::on_trajectory, this);
-  //joint_trajectory_pub = n.advertise<scorbot::JointTrajectory>("/scorbot/joint_path_command_enc", 1);
-  joint_pos_array_pub = n.advertise<std_msgs::Int32MultiArray>("/scorbot/joint_path_command_enc", 1);
-
-  claw_catch_pub = n.advertise<std_msgs::Empty>("/scorbot/claw_catch", 1);
-  claw_release_pub = n.advertise<std_msgs::Empty>("/scorbot/claw_release", 1);
-
-  override_enabled = slow_mode_enabled = false;
-
-  joint_states.resize(5, 0);
-  velocities.joint_velocities.resize(5, 0);
-
-  control_timer = n.createTimer(ros::Duration(ros::Rate(control_frequency)), &Teleop::on_control_cycle, this);
-
-  goal = {0.0, 0.0, 0.0, 0.0, 0.0};
-  direction = -1;
-
-  }
+#define NUM_JUNTAS 5;
+#define MAX_TRAJECTORY_SIZE 20;
+#define JOINT_GOAL_TOLERANCE 0.001;
 
 /*
 #define RAD2ENC1(x) ((int32_t)(x / (double)0.000034142) + 7000)
@@ -49,25 +24,78 @@ scorbot::Teleop::Teleop(ros::NodeHandle& n)
 #define RAD2ENC4(x) ((int32_t)(x / (double)-0.000054786))
 #define RAD2ENC5(x) ((int32_t)(x / (double)-0.000163399))
 
+scorbot::Teleop::Teleop(ros::NodeHandle& n)
+{
+  n.param("control_frequency", control_frequency, 5);
+
+  sub_control = n.subscribe("/universal_teleop/controls", 1, &Teleop::on_controls, this);
+  sub_events = n.subscribe("/universal_teleop/events", 1, &Teleop::on_events, this);
+  vel_pub = n.advertise<scorbot::JointVelocities>("/scorbot/joint_velocities", 1);
+  home_pub = n.advertise<std_msgs::Empty>("/scorbot/home", 1);
+
+  joint_trajectory_sub = n.subscribe<trajectory_msgs::JointTrajectory>("/scorbot/joint_path_command", 1, &Teleop::on_trajectory, this);
+  //joint_trajectory_pub = n.advertise<scorbot::JointTrajectory>("/scorbot/joint_path_command_enc", 1);
+  joint_pos_array_pub = n.advertise<std_msgs::Int32MultiArray>("/scorbot/joint_path_command_enc", 1);
+
+  claw_catch_pub = n.advertise<std_msgs::Empty>("/scorbot/claw_catch", 1);
+  claw_release_pub = n.advertise<std_msgs::Empty>("/scorbot/claw_release", 1);
+
+  joint_states_sub = n.subscribe<sensor_msgs::JointState>("/joint_states", 1, &Teleop::on_joint_states, this);
+
+  override_enabled = slow_mode_enabled = false;
+  
+  pos_juntas = [.0,.0,.0,.0,.0];
+  joint_trajectory_goals.resize(MAX_TRAJECTORY_SIZE, NUM_JUNTAS);
+  reached_current_goal = [false, false, false, false, false];
+  current_goal_index = -1;
+  current_goal_length = 0;
+
+  joint_states.resize(5, 0);
+  velocities.joint_velocities.resize(5, 0);
+
+  control_timer = n.createTimer(ros::Duration(ros::Rate(control_frequency)), &Teleop::on_control_cycle, this);
+
+
+  }
+
+
 
 void scorbot::Teleop::on_trajectory(const trajectory_msgs::JointTrajectoryConstPtr& msg)
 {
   if (msg->points.empty()) return;
-  //scorbot::JointTrajectory joint_trajectory_enc;
+
+  
+
+  current_goal_length = trajectory.points_length;
+  if (current_goal_length > MAX_TRAJECTORY_SIZE || current_goal_length == 0) return;
+  
   std_msgs::Int32MultiArray joint_pos_msg;
-  //joint_trajectory_enc.points.resize(5);
   joint_pos_msg.data.resize(5);
-  ROS_INFO_STREAM("size: " << msg->points.size() << " " << joint_pos_msg.data.size());
-  size_t last_point = msg->points.size() - 1;
-  ROS_INFO_STREAM("pos: " << msg->points[last_point].positions.size());
+  
+  current_goal_index = 0;
+  
+  for (int i = 0; i < current_goal_length; i++)
+  {
+    joint_trajectory_goals[i][0] = trajectory.points[i*NUM_JUNTAS].positions[0];
+    joint_trajectory_goals[i][1] = trajectory.points[i*NUM_JUNTAS].positions[1];
+    joint_trajectory_goals[i][2] = trajectory.points[i*NUM_JUNTAS].positions[2];
+    joint_trajectory_goals[i][3] = trajectory.points[i*NUM_JUNTAS].positions[3];
+    joint_trajectory_goals[i][4] = trajectory.points[i*NUM_JUNTAS].positions[4];
+  }
+  
+  reached_current_goal[0] = false;
+  reached_current_goal[1] = false;
+  reached_current_goal[2] = false;
+  reached_current_goal[3] = false;
+  reached_current_goal[4] = false;  
+  
+  /* set initial point as goal */
 
-  goal = msg->points[last_point].positions;
-
-  joint_pos_msg.data[0] = RAD2ENC1(goal[0]);
-  joint_pos_msg.data[1] = RAD2ENC2(goal[1]);
-  joint_pos_msg.data[2] = RAD2ENC3(goal[2]);
-  joint_pos_msg.data[3] = RAD2ENC4(goal[3]);
-  joint_pos_msg.data[4] = RAD2ENC5(goal[4]);
+  joint_pos_msg.data[0] = RAD2ENC1(joint_trajectory_goals[0][0]);
+  joint_pos_msg.data[1] = RAD2ENC2(joint_trajectory_goals[0][1]);
+  joint_pos_msg.data[2] = RAD2ENC3(joint_trajectory_goals[0][2]);
+  joint_pos_msg.data[3] = RAD2ENC4(joint_trajectory_goals[0][3]);
+  joint_pos_msg.data[4] = RAD2ENC5(joint_trajectory_goals[0][4]);
 /*
   joint_trajectory_enc.points[0] = RAD2ENC1(msg->points[last_point].positions[0]);
   joint_trajectory_enc.points[1] = RAD2ENC2(msg->points[last_point].positions[1]);
@@ -76,6 +104,44 @@ void scorbot::Teleop::on_trajectory(const trajectory_msgs::JointTrajectoryConstP
   joint_trajectory_enc.points[4] = RAD2ENC5(msg->points[last_point].positions[4]);
 */
   joint_pos_array_pub.publish(joint_pos_msg);
+}
+
+void scorbot::Teleop::on_joint_states(const sensor_msgs::JointStateConstPtr& msg){
+  
+  pos_juntas[0] = msg.position[0];
+  pos_juntas[1] = msg.position[1];
+  pos_juntas[2] = msg.position[2];
+  pos_juntas[3] = msg.position[3];
+  pos_juntas[4] = msg.position[4];
+  
+  if (current_goal_index == -1) return; // no goal set
+  
+  bool this_goal_complete = true;
+  for (int i = 0; i < NUM_JUNTAS; i++)
+  {
+    if (!reached_current_goal[i]) {
+      if (abs(joint_trajectory_goals[current_goal_index][i] - pos_juntas[i]) <= JOINT_GOAL_TOLERANCE) reached_current_goal[i] = true;
+      else this_goal_complete = false;
+    }
+  }
+  
+  if (this_goal_complete) {
+    current_goal_index++; // advance to next point
+    if (current_goal_length == current_goal_index) current_goal_index = -1; // completed trajectory
+    else {      
+      /* set current point as new goal */
+      std_msgs::Int32MultiArray joint_pos_msg;
+      joint_pos_msg.data.resize(5);
+
+      joint_pos_msg.data[0] = RAD2ENC1(joint_trajectory_goals[current_goal_index][0]);
+      joint_pos_msg.data[1] = RAD2ENC2(joint_trajectory_goals[current_goal_index][1]);
+      joint_pos_msg.data[2] = RAD2ENC3(joint_trajectory_goals[current_goal_index][2]);
+      joint_pos_msg.data[3] = RAD2ENC4(joint_trajectory_goals[current_goal_index][3]);
+      joint_pos_msg.data[4] = RAD2ENC5(joint_trajectory_goals[current_goal_index][4]);
+
+  |   joint_pos_array_pub.publish(joint_pos_msg);
+    }
+  }  
 }
 
 void scorbot::Teleop::on_controls(const universal_teleop::ControlConstPtr& msg)
@@ -125,23 +191,7 @@ void scorbot::Teleop::on_events(const universal_teleop::EventConstPtr& msg)
   if (!override_enabled)
   {
     if (msg->event == "home" && msg->state) {
-      //home_pub.publish(std_msgs::Empty());
-      trajectory_msgs::JointTrajectory  joint_trajectory_debug_msg;
-      std::vector<trajectory_msgs::JointTrajectoryPoint> points_n(1);
-      
-
-      joint_trajectory_debug_msg.points = points_n;
-
-      joint_trajectory_debug_msg.points[0].positions.push_back(0.0);
-      joint_trajectory_debug_msg.points[0].positions.push_back(M_PI/2*direction);
-      joint_trajectory_debug_msg.points[0].positions.push_back(0.0);
-      joint_trajectory_debug_msg.points[0].positions.push_back(0.0);
-      joint_trajectory_debug_msg.points[0].positions.push_back(0.0);
-      points_n[0].positions.resize(5);
-
-      trajectory_pub_debug.publish(joint_trajectory_debug_msg);
-
-      direction = - direction;
+      home_pub.publish(std_msgs::Empty());
     }
     else if (msg->event == "claw_catch" && msg->state) {
       claw_catch_pub.publish(std_msgs::Empty());
