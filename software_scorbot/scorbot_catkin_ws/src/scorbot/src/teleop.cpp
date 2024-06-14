@@ -33,7 +33,7 @@ scorbot::Teleop::Teleop(ros::NodeHandle& n)
   vel_pub = n.advertise<scorbot::JointVelocities>("/scorbot/joint_velocities", 1);
   home_pub = n.advertise<std_msgs::Empty>("/scorbot/home", 1);
 
-  joint_trajectory_sub = n.subscribe<trajectory_msgs::JointTrajectory>("/scorbot/joint_path_command", 1, &Teleop::on_trajectory, this);
+  joint_trajectory_sub = n.subscribe<trajectory_msgs::JointTrajectory>("/scorbot/arm_position_controller/follow_joint_trajectory/goal", 1, &Teleop::on_trajectory, this);
   //joint_trajectory_pub = n.advertise<scorbot::JointTrajectory>("/scorbot/joint_path_command_enc", 1);
   joint_pos_array_pub = n.advertise<std_msgs::Int32MultiArray>("/scorbot/joint_path_command_enc", 1);
 
@@ -60,7 +60,7 @@ scorbot::Teleop::Teleop(ros::NodeHandle& n)
 
 
 
-void scorbot::Teleop::on_trajectory(const trajectory_msgs::JointTrajectoryConstPtr& msg)
+void scorbot::Teleop::on_trajectory(const control_msgs::FollowJointTrajectoryActionGoalConstPtr& msg)
 {
   if (msg->points.empty()) return;
 

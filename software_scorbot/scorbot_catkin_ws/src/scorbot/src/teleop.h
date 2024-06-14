@@ -5,6 +5,7 @@
 #include <universal_teleop/Control.h>
 #include <universal_teleop/Event.h>
 #include <trajectory_msgs/JointTrajectory.h>
+#include <control_msgs/FollowJointTrajectoryActionGoal.h>
 #include <sensor_msgs/JointState.h>
 #include <scorbot/JointVelocities.h>
 
@@ -19,7 +20,7 @@ namespace scorbot {
       //ros::Publisher joint_trajectory_pub;
       ros::Subscriber joint_states_sub;
       ros::Publisher joint_pos_array_pub;
-      void on_trajectory(const trajectory_msgs::JointTrajectoryConstPtr& msg);
+      void on_trajectory(const control_msgs::FollowJointTrajectoryActionGoalConstPtr& msg);
       void on_joint_states(const sensor_msgs::JointStatesConstPtr& msg);
 
       ros::Subscriber sub_events, sub_control;
