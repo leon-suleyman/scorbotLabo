@@ -95,7 +95,7 @@ ros::Publisher debug_pub("/scorbot/debug", &empty_msg);
 /********* variables globales ********/
 
 int32_t pos_juntas[NUM_JUNTAS];
-char* joint_names[] = { "joint1", "joint2", "joint3", "joint4", "joint5" };
+char* joint_names[] = { "base", "shoulder", "elbow", "pitch", "roll" };
 
 int32_t joint_trajectory_goals[MAX_TRAJECTORY_SIZE][NUM_JUNTAS];
 bool reached_current_goal[NUM_JUNTAS] = { false, false, false, false, false };

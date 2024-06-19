@@ -6,9 +6,9 @@
 
 using namespace std;
 
-#define NUM_JUNTAS 5;
-#define MAX_TRAJECTORY_SIZE 20;
-#define JOINT_GOAL_TOLERANCE 0.001;
+#define NUM_JUNTAS (5)
+#define MAX_TRAJECTORY_SIZE (20)
+#define JOINT_GOAL_TOLERANCE (0.001)
 
 /*
 #define RAD2ENC1(x) ((int32_t)(x / (double)0.000034142) + 7000)
@@ -33,7 +33,9 @@ scorbot::Teleop::Teleop(ros::NodeHandle& n)
   vel_pub = n.advertise<scorbot::JointVelocities>("/scorbot/joint_velocities", 1);
   home_pub = n.advertise<std_msgs::Empty>("/scorbot/home", 1);
 
-  joint_trajectory_sub = n.subscribe<trajectory_msgs::JointTrajectory>("/scorbot/arm_position_controller/follow_joint_trajectory/goal", 1, &Teleop::on_trajectory, this);
+  debug_pub = n.advertise<std_msgs::Empty>("/scorbot/debugger", 1);
+
+  joint_trajectory_sub = n.subscribe<control_msgs::FollowJointTrajectoryActionGoal>("/scorbot/arm_position_controller/follow_joint_trajectory/goal", 1, &Teleop::on_trajectory, this);
   //joint_trajectory_pub = n.advertise<scorbot::JointTrajectory>("/scorbot/joint_path_command_enc", 1);
   joint_pos_array_pub = n.advertise<std_msgs::Int32MultiArray>("/scorbot/joint_path_command_enc", 1);
 
@@ -44,9 +46,9 @@ scorbot::Teleop::Teleop(ros::NodeHandle& n)
 
   override_enabled = slow_mode_enabled = false;
   
-  pos_juntas = [.0,.0,.0,.0,.0];
-  joint_trajectory_goals.resize(MAX_TRAJECTORY_SIZE, NUM_JUNTAS);
-  reached_current_goal = [false, false, false, false, false];
+  pos_juntas = {0.0,0.0,0.0,0.0,0.0};
+  std::vector<std::vector<float>> joint_trajectory_goals(MAX_TRAJECTORY_SIZE, std::vector<float>(NUM_JUNTAS,0.0));
+  reached_current_goal = {false, false, false, false, false};
   current_goal_index = -1;
   current_goal_length = 0;
 
@@ -62,27 +64,36 @@ scorbot::Teleop::Teleop(ros::NodeHandle& n)
 
 void scorbot::Teleop::on_trajectory(const control_msgs::FollowJointTrajectoryActionGoalConstPtr& msg)
 {
-  if (msg->points.empty()) return;
+  debug_pub.publish(empty_msg);
+  std::vector<trajectory_msgs::JointTrajectoryPoint> points = msg->goal.trajectory.points;
+  //if (points.empty()) return;
 
-  
 
-  current_goal_length = trajectory.points_length;
-  if (current_goal_length > MAX_TRAJECTORY_SIZE || current_goal_length == 0) return;
+  //if (current_goal_length > MAX_TRAJECTORY_SIZE || current_goal_length == 0) return;
   
   std_msgs::Int32MultiArray joint_pos_msg;
   joint_pos_msg.data.resize(5);
   
+  current_goal_length = 0;
   current_goal_index = 0;
   
-  for (int i = 0; i < current_goal_length; i++)
+  debug_pub.publish(empty_msg);
+  for (trajectory_msgs::JointTrajectoryPoint point : points)
   {
-    joint_trajectory_goals[i][0] = trajectory.points[i*NUM_JUNTAS].positions[0];
-    joint_trajectory_goals[i][1] = trajectory.points[i*NUM_JUNTAS].positions[1];
-    joint_trajectory_goals[i][2] = trajectory.points[i*NUM_JUNTAS].positions[2];
-    joint_trajectory_goals[i][3] = trajectory.points[i*NUM_JUNTAS].positions[3];
-    joint_trajectory_goals[i][4] = trajectory.points[i*NUM_JUNTAS].positions[4];
+    debug_pub.publish(empty_msg);
+    current_goal_length++;
+    if (current_goal_length > MAX_TRAJECTORY_SIZE) return;
+    joint_trajectory_goals[current_goal_length - 1][0] = point.positions[0];
+    joint_trajectory_goals[current_goal_length - 1][1] = point.positions[1];
+    joint_trajectory_goals[current_goal_length - 1][2] = point.positions[2];
+    joint_trajectory_goals[current_goal_length - 1][3] = point.positions[3];
+    joint_trajectory_goals[current_goal_length - 1][4] = point.positions[4];
   }
+
+  if(current_goal_length == 0) return;
   
+  debug_pub.publish(empty_msg);
+
   reached_current_goal[0] = false;
   reached_current_goal[1] = false;
   reached_current_goal[2] = false;
@@ -104,15 +115,17 @@ void scorbot::Teleop::on_trajectory(const control_msgs::FollowJointTrajectoryAct
   joint_trajectory_enc.points[4] = RAD2ENC5(msg->points[last_point].positions[4]);
 */
   joint_pos_array_pub.publish(joint_pos_msg);
+
+  debug_pub.publish(empty_msg);
 }
 
 void scorbot::Teleop::on_joint_states(const sensor_msgs::JointStateConstPtr& msg){
   
-  pos_juntas[0] = msg.position[0];
-  pos_juntas[1] = msg.position[1];
-  pos_juntas[2] = msg.position[2];
-  pos_juntas[3] = msg.position[3];
-  pos_juntas[4] = msg.position[4];
+  pos_juntas[0] = msg->position[0];
+  pos_juntas[1] = msg->position[1];
+  pos_juntas[2] = msg->position[2];
+  pos_juntas[3] = msg->position[3];
+  pos_juntas[4] = msg->position[4];
   
   if (current_goal_index == -1) return; // no goal set
   
@@ -139,7 +152,7 @@ void scorbot::Teleop::on_joint_states(const sensor_msgs::JointStateConstPtr& msg
       joint_pos_msg.data[3] = RAD2ENC4(joint_trajectory_goals[current_goal_index][3]);
       joint_pos_msg.data[4] = RAD2ENC5(joint_trajectory_goals[current_goal_index][4]);
 
-  |   joint_pos_array_pub.publish(joint_pos_msg);
+      joint_pos_array_pub.publish(joint_pos_msg);
     }
   }  
 }

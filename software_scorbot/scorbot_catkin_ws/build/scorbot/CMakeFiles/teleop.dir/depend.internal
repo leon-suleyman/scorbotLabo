@@ -8,6 +8,10 @@ scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.o
  /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/src/scorbot/src/teleop.h
  /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/include/universal_teleop/Control.h
  /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/include/universal_teleop/Event.h
+ /opt/ros/noetic/include/actionlib_msgs/GoalID.h
+ /opt/ros/noetic/include/control_msgs/FollowJointTrajectoryActionGoal.h
+ /opt/ros/noetic/include/control_msgs/FollowJointTrajectoryGoal.h
+ /opt/ros/noetic/include/control_msgs/JointTolerance.h
  /opt/ros/noetic/include/ros/advertise_options.h
  /opt/ros/noetic/include/ros/advertise_service_options.h
  /opt/ros/noetic/include/ros/assert.h
@@ -64,6 +68,7 @@ scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.o
  /opt/ros/noetic/include/ros/wall_timer.h
  /opt/ros/noetic/include/ros/wall_timer_options.h
  /opt/ros/noetic/include/rosconsole/macros_generated.h
+ /opt/ros/noetic/include/sensor_msgs/JointState.h
  /opt/ros/noetic/include/std_msgs/Empty.h
  /opt/ros/noetic/include/std_msgs/Header.h
  /opt/ros/noetic/include/std_msgs/Int32MultiArray.h
@@ -79,6 +84,10 @@ scorbot/CMakeFiles/teleop.dir/src/teleop_node.cpp.o
  /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/src/scorbot/src/teleop_node.cpp
  /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/include/universal_teleop/Control.h
  /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/include/universal_teleop/Event.h
+ /opt/ros/noetic/include/actionlib_msgs/GoalID.h
+ /opt/ros/noetic/include/control_msgs/FollowJointTrajectoryActionGoal.h
+ /opt/ros/noetic/include/control_msgs/FollowJointTrajectoryGoal.h
+ /opt/ros/noetic/include/control_msgs/JointTolerance.h
  /opt/ros/noetic/include/ros/advertise_options.h
  /opt/ros/noetic/include/ros/advertise_service_options.h
  /opt/ros/noetic/include/ros/assert.h
@@ -135,6 +144,8 @@ scorbot/CMakeFiles/teleop.dir/src/teleop_node.cpp.o
  /opt/ros/noetic/include/ros/wall_timer.h
  /opt/ros/noetic/include/ros/wall_timer_options.h
  /opt/ros/noetic/include/rosconsole/macros_generated.h
+ /opt/ros/noetic/include/sensor_msgs/JointState.h
+ /opt/ros/noetic/include/std_msgs/Empty.h
  /opt/ros/noetic/include/std_msgs/Header.h
  /opt/ros/noetic/include/trajectory_msgs/JointTrajectory.h
  /opt/ros/noetic/include/trajectory_msgs/JointTrajectoryPoint.h
