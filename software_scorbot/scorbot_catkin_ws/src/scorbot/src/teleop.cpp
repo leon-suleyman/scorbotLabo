@@ -34,6 +34,7 @@ scorbot::Teleop::Teleop(ros::NodeHandle& n)
   home_pub = n.advertise<std_msgs::Empty>("/scorbot/home", 1);
 
   debug_pub = n.advertise<std_msgs::Empty>("/scorbot/debugger", 1);
+  trajectory_debug_pub = n.advertise<control_msgs::FollowJointTrajectoryActionGoal>("/scorbot/debug_trajectory", 1);
 
   joint_trajectory_sub = n.subscribe<control_msgs::FollowJointTrajectoryActionGoal>("/scorbot/arm_position_controller/follow_joint_trajectory/goal", 1, &Teleop::on_trajectory, this);
   //joint_trajectory_pub = n.advertise<scorbot::JointTrajectory>("/scorbot/joint_path_command_enc", 1);
@@ -47,7 +48,12 @@ scorbot::Teleop::Teleop(ros::NodeHandle& n)
   override_enabled = slow_mode_enabled = false;
   
   pos_juntas = {0.0,0.0,0.0,0.0,0.0};
-  std::vector<std::vector<float>> joint_trajectory_goals(MAX_TRAJECTORY_SIZE, std::vector<float>(NUM_JUNTAS,0.0));
+  joint_trajectory_goals = {};
+  for(int i = 0; i<MAX_TRAJECTORY_SIZE; i++){
+    
+    joint_trajectory_goals.push_back({0.0,0.0,0.0,0.0,0.0});
+  }
+  //std::vector<std::vector<double>> joint_trajectory_goals(MAX_TRAJECTORY_SIZE, std::vector<double>(NUM_JUNTAS,0.0));
   reached_current_goal = {false, false, false, false, false};
   current_goal_index = -1;
   current_goal_length = 0;
@@ -64,30 +70,45 @@ scorbot::Teleop::Teleop(ros::NodeHandle& n)
 
 void scorbot::Teleop::on_trajectory(const control_msgs::FollowJointTrajectoryActionGoalConstPtr& msg)
 {
-  debug_pub.publish(empty_msg);
-  std::vector<trajectory_msgs::JointTrajectoryPoint> points = msg->goal.trajectory.points;
+  //debug_pub.publish(empty_msg);
   //if (points.empty()) return;
-
+  trajectory_debug_pub.publish(msg);
 
   //if (current_goal_length > MAX_TRAJECTORY_SIZE || current_goal_length == 0) return;
   
   std_msgs::Int32MultiArray joint_pos_msg;
   joint_pos_msg.data.resize(5);
-  
+  //ROS_INFO(msg->goal_id.id);
   current_goal_length = 0;
   current_goal_index = 0;
   
-  debug_pub.publish(empty_msg);
-  for (trajectory_msgs::JointTrajectoryPoint point : points)
+  //std::vector<trajectory_msgs::JointTrajectoryPoint> points = msg->goal.trajectory.points;
+
+  //debug_pub.publish(empty_msg);
+
+
+  control_msgs::FollowJointTrajectoryGoal msg_goal = msg->goal;
+    std::cout << "msg_goal" << "\n";
+  trajectory_msgs::JointTrajectory msg_trajectory = msg_goal.trajectory;
+    std::cout << "msg_trajectory" << "\n";
+  std::vector<trajectory_msgs::JointTrajectoryPoint> msg_points =msg_trajectory.points;
+    std::cout << "msg_points" << "\n";
+  
+  for (trajectory_msgs::JointTrajectoryPoint point : msg_points)
   {
-    debug_pub.publish(empty_msg);
+      std::cout << "iteración " << current_goal_length << "\n";
     current_goal_length++;
-    if (current_goal_length > MAX_TRAJECTORY_SIZE) return;
-    joint_trajectory_goals[current_goal_length - 1][0] = point.positions[0];
-    joint_trajectory_goals[current_goal_length - 1][1] = point.positions[1];
-    joint_trajectory_goals[current_goal_length - 1][2] = point.positions[2];
-    joint_trajectory_goals[current_goal_length - 1][3] = point.positions[3];
-    joint_trajectory_goals[current_goal_length - 1][4] = point.positions[4];
+      std::cout <<"   añadimos al goal length" << "\n";
+    if (current_goal_length > MAX_TRAJECTORY_SIZE) break;
+      std::cout <<"   chequeamos que no estemos pasados de trayectoria" << "\n";
+    std::vector<double> positions = point.positions;
+      std::cout <<"   positions: " << positions[0] <<"\n";
+    joint_trajectory_goals[current_goal_length - 1][0] = positions[0];
+      std::cout <<"   primer punto asignado" << "\n";
+    joint_trajectory_goals[current_goal_length - 1][1] = positions[1];
+    joint_trajectory_goals[current_goal_length - 1][2] = positions[2];
+    joint_trajectory_goals[current_goal_length - 1][3] = positions[3];
+    joint_trajectory_goals[current_goal_length - 1][4] = positions[4];
   }
 
   if(current_goal_length == 0) return;

@@ -20,6 +20,7 @@ namespace scorbot {
       ros::Subscriber joint_trajectory_sub;
       ros::Subscriber joint_states_sub;
       ros::Publisher joint_pos_array_pub;
+      ros::Publisher trajectory_debug_pub;
       void on_trajectory(const control_msgs::FollowJointTrajectoryActionGoalConstPtr& msg);
       void on_joint_states(const sensor_msgs::JointStateConstPtr& msg);
 
@@ -39,9 +40,9 @@ namespace scorbot {
       ros::Timer control_timer;
       bool override_enabled, slow_mode_enabled;
 
-      std::vector<float> pos_juntas;
+      std::vector<double> pos_juntas;
 
-      std::vector<std::vector<float>> joint_trajectory_goals;
+      std::vector<std::vector<double>> joint_trajectory_goals;
       std::vector<bool> reached_current_goal;
       int current_goal_index;
       int current_goal_length;
