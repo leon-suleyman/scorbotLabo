@@ -18,11 +18,11 @@ using namespace std;
 #define RAD2ENC5(x) ((int32_t)(x / (double)-0.000163399) + 2200)
 */
 
-#define RAD2ENC1(x) ((int32_t)(x / (double)0.000034142))
-#define RAD2ENC2(x) ((int32_t)(x / (double)0.000030712))
-#define RAD2ENC3(x) ((int32_t)(x / (double)-0.000032903))
-#define RAD2ENC4(x) ((int32_t)(x / (double)-0.000054786))
-#define RAD2ENC5(x) ((int32_t)(x / (double)-0.000163399))
+#define RAD2ENC1(x) ((int32_t)(x / (float)-0.000034142 ))
+#define RAD2ENC2(x) ((int32_t)( (x - (float)1.484) / (float)-0.000030712))
+#define RAD2ENC3(x) ((int32_t)(x / (double)0.000032903))
+#define RAD2ENC4(x) ((int32_t)(x / (double)0.000054786))
+#define RAD2ENC5(x) ((int32_t)(x / (double)0.000163399))
 
 scorbot::Teleop::Teleop(ros::NodeHandle& n)
 {

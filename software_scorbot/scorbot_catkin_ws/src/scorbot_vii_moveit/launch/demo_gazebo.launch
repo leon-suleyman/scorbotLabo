@@ -2,6 +2,7 @@
 <launch>
   <!-- MoveIt options -->
   <arg name="pipeline" default="ompl" doc="Planning pipeline to use with MoveIt"/>
+  <arg name="namespace" default="/scorbot"/>
 
   <!-- Gazebo options -->
   <arg name="gazebo_gui" default="true" doc="Start Gazebo GUI"/>
@@ -17,5 +18,6 @@
     <!-- robot_description is loaded by gazebo.launch, to enable Gazebo features -->
     <arg name="load_robot_description" value="false" />
     <arg name="moveit_controller_manager" value="ros_control" />
+    <arg name="joint_namespace" value="$(arg namespace)" />
   </include>
 </launch>

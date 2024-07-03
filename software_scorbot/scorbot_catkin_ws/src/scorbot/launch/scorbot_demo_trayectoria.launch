@@ -20,6 +20,7 @@
     </node>
 
     <include file="$(dirname)/../../scorbot_vii_moveit/launch/demo_gazebo.launch">
+        <arg name="namespace" value=""/>
     </include>
 
   </launch>

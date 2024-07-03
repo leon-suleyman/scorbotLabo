@@ -23,6 +23,9 @@
   <arg name="use_gui" default="false" />
   <arg name="use_rviz" default="true" />
 
+  <!-- By default, the namespace of the joint_state topic is empty, but it can be changed here-->
+   <arg name="joint_namespace" default="" />
+
   <!-- If needed, broadcast static tf for robot root -->
   <node pkg="tf2_ros" type="static_transform_publisher" name="virtual_joint_broadcaster_0" args="0 0 0 0 0 0 world base_link" />
 
@@ -51,6 +54,7 @@
     <arg name="debug" value="$(arg debug)"/>
     <arg name="pipeline" value="$(arg pipeline)"/>
     <arg name="load_robot_description" value="$(arg load_robot_description)"/>
+    <arg name="joint_state_namespace" value="$(arg joint_namespace)" />
   </include>
 
   <!-- Run Rviz and load the default config to see the state of the move_group node -->
