@@ -66,54 +66,57 @@ scorbot::Teleop::Teleop(ros::NodeHandle& n)
 
   }
 
-
+int JointNameToIndex(string joint_name){
+  int res = 99;
+  char name_initial = joint_name[0];
+  switch (name_initial)
+  {
+  case 'b'://base
+    res = 0;
+    break;
+  case 's'://shoulder
+    res = 1;
+    break;
+  case 'e'://elbow
+    res = 2;
+    break;
+  case 'p'://pitch
+    res = 3;
+    break;
+  case 'r'://roll
+    res = 4;
+    break;
+  }
+  return res;
+}
 
 void scorbot::Teleop::on_trajectory(const control_msgs::FollowJointTrajectoryActionGoalConstPtr& msg)
 {
-  //debug_pub.publish(empty_msg);
-  //if (points.empty()) return;
-  trajectory_debug_pub.publish(msg);
-
-  //if (current_goal_length > MAX_TRAJECTORY_SIZE || current_goal_length == 0) return;
-  
   std_msgs::Int32MultiArray joint_pos_msg;
   joint_pos_msg.data.resize(5);
-  //ROS_INFO(msg->goal_id.id);
+
   current_goal_length = 0;
   current_goal_index = 0;
   
-  //std::vector<trajectory_msgs::JointTrajectoryPoint> points = msg->goal.trajectory.points;
 
-  //debug_pub.publish(empty_msg);
-
-
+  //vamos descascarando el mensaje para llegar a las posiciones
   control_msgs::FollowJointTrajectoryGoal msg_goal = msg->goal;
-    std::cout << "msg_goal" << "\n";
   trajectory_msgs::JointTrajectory msg_trajectory = msg_goal.trajectory;
-    std::cout << "msg_trajectory" << "\n";
-  std::vector<trajectory_msgs::JointTrajectoryPoint> msg_points =msg_trajectory.points;
-    std::cout << "msg_points" << "\n";
+  std::vector<trajectory_msgs::JointTrajectoryPoint> msg_points = msg_trajectory.points;
   
+  //vamos cargando las posiciones en la matriz joint_trahectory_goals. Teniendo en cuenta que pueden no venir en el mismo orden que usamos
   for (trajectory_msgs::JointTrajectoryPoint point : msg_points)
   {
-      std::cout << "iteración " << current_goal_length << "\n";
     current_goal_length++;
-      std::cout <<"   añadimos al goal length" << "\n";
     if (current_goal_length > MAX_TRAJECTORY_SIZE) break;
-      std::cout <<"   chequeamos que no estemos pasados de trayectoria" << "\n";
     std::vector<double> positions = point.positions;
-      std::cout <<"   positions: " << positions[0] <<"\n";
-    joint_trajectory_goals[current_goal_length - 1][0] = positions[0];
-      std::cout <<"   primer punto asignado" << "\n";
-    joint_trajectory_goals[current_goal_length - 1][1] = positions[1];
-    joint_trajectory_goals[current_goal_length - 1][2] = positions[2];
-    joint_trajectory_goals[current_goal_length - 1][3] = positions[3];
-    joint_trajectory_goals[current_goal_length - 1][4] = positions[4];
+    for(int i = 0; i < msg_trajectory.joint_names.size(); i++){
+      string name = msg_trajectory.joint_names[i];
+      joint_trajectory_goals[current_goal_length - 1][JointNameToIndex(name)] = positions[i];
+    }
   }
 
   if(current_goal_length == 0) return;
-  
-  debug_pub.publish(empty_msg);
 
   reached_current_goal[0] = false;
   reached_current_goal[1] = false;
@@ -137,7 +140,6 @@ void scorbot::Teleop::on_trajectory(const control_msgs::FollowJointTrajectoryAct
 */
   joint_pos_array_pub.publish(joint_pos_msg);
 
-  debug_pub.publish(empty_msg);
 }
 
 void scorbot::Teleop::on_joint_states(const sensor_msgs::JointStateConstPtr& msg){
