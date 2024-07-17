@@ -85,8 +85,11 @@ ros::Subscriber<scorbot::JointVelocities> vel_sub("/scorbot/joint_velocities", &
 void on_trajectory(const std_msgs::Int32MultiArray& trajectory);
 ros::Subscriber<std_msgs::Int32MultiArray> trajectory_sub("/scorbot/joint_path_command_enc", &on_trajectory);
 
-control_msgs::FollowJointTrajectoryFeedback trajectory_feedback;
-ros::Publisher trajectory_feedback_pub("/scorbot/feedback_states", &trajectory_feedback);
+//control_msgs::FollowJointTrajectoryFeedback trajectory_feedback;
+//ros::Publisher trajectory_feedback_pub("/scorbot/feedback_states", &trajectory_feedback);
+
+//std_msgs::Empty goal_reached_msg;
+//ros::Publisher goal_reached_pub("/scorbot/goal_reached", &goal_reached_msg);
 
 /* debugging */
 std_msgs::Empty empty_msg;
@@ -97,10 +100,12 @@ ros::Publisher debug_pub("/scorbot/debug", &empty_msg);
 int32_t pos_juntas[NUM_JUNTAS];
 char* joint_names[] = { "base", "shoulder", "elbow", "pitch", "roll" };
 
-int32_t joint_trajectory_goals[MAX_TRAJECTORY_SIZE][NUM_JUNTAS];
+//int32_t joint_trajectory_goals[MAX_TRAJECTORY_SIZE][NUM_JUNTAS];
+int32_t joint_trajectory_goals[NUM_JUNTAS];
 bool reached_current_goal[NUM_JUNTAS] = { false, false, false, false, false };
 int current_goal_index = -1;
 int current_goal_length = 0;
+bool unreached_goal = false;
 
 enum ClawState {openClaw, closedClaw, holdingClaw};
 #define IDNAME(name) #name
@@ -152,7 +157,8 @@ void setup(void)
   nh.subscribe(claw_release_sub);
 
   nh.advertise(joint_state_pub);
-  nh.advertise(trajectory_feedback_pub);
+  //nh.advertise(trajectory_feedback_pub);
+  //nh.advertise(goal_reached_pub);
   nh.advertise(claw_caught_pub);
   
   nh.advertise(debug_pub);
@@ -257,15 +263,13 @@ void on_release(const std_msgs::Empty& msg){
 
 //void on_trajectory(const scorbot::JointTrajectory& trajectory)
 void on_trajectory(const std_msgs::Int32MultiArray& trajectory)
-{
-  debug_pub.publish(&empty_msg);
+{ 
+  //current_goal_length = trajectory.data_length/ 5;
+  //if (current_goal_length > MAX_TRAJECTORY_SIZE || current_goal_length == 0) return;
   
-  current_goal_length = trajectory.data_length/ 5;
-  if (current_goal_length > MAX_TRAJECTORY_SIZE || current_goal_length == 0) return;
+  //current_goal_index = 0;
   
-  current_goal_index = 0;
-  
-  for (int i = 0; i < current_goal_length; i++)
+  /*for (int i = 0; i < current_goal_length; i++)
   {
     debug_pub.publish(&empty_msg);
     joint_trajectory_goals[i][0] = trajectory.data[i*NUM_JUNTAS+0];
@@ -273,24 +277,37 @@ void on_trajectory(const std_msgs::Int32MultiArray& trajectory)
     joint_trajectory_goals[i][2] = trajectory.data[i*NUM_JUNTAS+2];
     joint_trajectory_goals[i][3] = trajectory.data[i*NUM_JUNTAS+3];
     joint_trajectory_goals[i][4] = trajectory.data[i*NUM_JUNTAS+4];
-  }
-  debug_pub.publish(&empty_msg);
+  }*/
+
+    joint_trajectory_goals[0] = trajectory.data[0];
+    joint_trajectory_goals[1] = trajectory.data[1];
+    joint_trajectory_goals[2] = trajectory.data[2];
+    joint_trajectory_goals[3] = trajectory.data[3];
+    joint_trajectory_goals[4] = trajectory.data[4];
+  
   
   reached_current_goal[0] = false;
   reached_current_goal[1] = false;
   reached_current_goal[2] = false;
   reached_current_goal[3] = false;
-  reached_current_goal[4] = false;  
+  reached_current_goal[4] = false;
+
+  unreached_goal = true;  
   
-  debug_pub.publish(&empty_msg);
   /* set initial point as goal */
+  /*
   set_position(1, joint_trajectory_goals[0][0]);
   set_position(2, joint_trajectory_goals[0][1]);
   set_position(3, joint_trajectory_goals[0][2]);
   set_position(4, joint_trajectory_goals[0][3]);
   set_position(5, joint_trajectory_goals[0][4]); 
+  */
+  set_position(1, joint_trajectory_goals[0]);
+  set_position(2, joint_trajectory_goals[1]);
+  set_position(3, joint_trajectory_goals[2]);
+  set_position(4, joint_trajectory_goals[3]);
+  set_position(5, joint_trajectory_goals[4]); 
   
-  debug_pub.publish(&empty_msg); 
 }
 
 void publish_state(void)
@@ -311,6 +328,7 @@ void publish_state(void)
   positions[4] = ENC2RAD5(pos_juntas[4]);  
   joint_state_pub.publish(&joint_state);
   
+  /*
   trajectory_feedback.header.stamp = nh.now();
   trajectory_feedback.joint_names_length = NUM_JUNTAS;
   trajectory_feedback.joint_names = joint_names;
@@ -321,11 +339,18 @@ void publish_state(void)
   }
   else {
     trajectory_feedback.desired.positions_length = NUM_JUNTAS;
+    
     desired_positions[0] = ENC2RAD1(joint_trajectory_goals[current_goal_index][0]);
     desired_positions[1] = ENC2RAD2(joint_trajectory_goals[current_goal_index][1]);
     desired_positions[2] = ENC2RAD3(joint_trajectory_goals[current_goal_index][2]);
     desired_positions[3] = ENC2RAD4(joint_trajectory_goals[current_goal_index][3]);
     desired_positions[4] = ENC2RAD5(joint_trajectory_goals[current_goal_index][4]);    
+    
+    desired_positions[0] = ENC2RAD1(joint_trajectory_goals[0]);
+    desired_positions[1] = ENC2RAD2(joint_trajectory_goals[1]);
+    desired_positions[2] = ENC2RAD3(joint_trajectory_goals[2]);
+    desired_positions[3] = ENC2RAD4(joint_trajectory_goals[3]);
+    desired_positions[4] = ENC2RAD5(joint_trajectory_goals[4]);
     trajectory_feedback.desired.positions = desired_positions;
   }
   trajectory_feedback.desired.accelerations_length = 0;
@@ -344,6 +369,8 @@ void publish_state(void)
   trajectory_feedback.actual.effort_length = 0;
 
   trajectory_feedback_pub.publish(&trajectory_feedback);
+  */
+  
 }
 
 /***************** i2c **************/
@@ -560,28 +587,34 @@ void print_status(void) {
 #define JOINT_GOAL_TOLERANCE 100
 void check_trajectory_goal(void)
 {
-  if (current_goal_index == -1) return; // no goal set
+  //if (current_goal_index == -1) return; // no goal set
+  if (!unreached_goal) return; // no goal set
   
   bool this_goal_complete = true;
   for (int i = 0; i < NUM_JUNTAS; i++)
   {
     if (!reached_current_goal[i]) {
-      if (abs(joint_trajectory_goals[current_goal_index][i] - pos_juntas[i]) <= JOINT_GOAL_TOLERANCE) reached_current_goal[i] = true;
+      //if (abs(joint_trajectory_goals[current_goal_index][i] - pos_juntas[i]) <= JOINT_GOAL_TOLERANCE) reached_current_goal[i] = true;
+      if (abs(joint_trajectory_goals[i] - pos_juntas[i]) <= JOINT_GOAL_TOLERANCE) reached_current_goal[i] = true;
       else this_goal_complete = false;
     }
   }
   
   if (this_goal_complete) {
-    current_goal_index++; // advance to next point
-    if (current_goal_length == current_goal_index) current_goal_index = -1; // completed trajectory
-    else {      
+    //current_goal_index++; // advance to next point
+    //if (current_goal_length == current_goal_index) current_goal_index = -1; // completed trajectory
+    //else {      
       /* set current point as new goal */
+      /*
       set_position(1, joint_trajectory_goals[current_goal_index][0]);
       set_position(2, joint_trajectory_goals[current_goal_index][1]);
       set_position(3, joint_trajectory_goals[current_goal_index][2]);
       set_position(4, joint_trajectory_goals[current_goal_index][3]);
       set_position(5, joint_trajectory_goals[current_goal_index][4]);  
-    }
+      */
+    //}
+    unreached_goal = false;
+    //goal_reached_pub.publish(&goal_reached_msg);
   }  
 }
 

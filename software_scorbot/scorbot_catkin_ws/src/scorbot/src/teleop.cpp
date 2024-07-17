@@ -34,11 +34,12 @@ scorbot::Teleop::Teleop(ros::NodeHandle& n)
   home_pub = n.advertise<std_msgs::Empty>("/scorbot/home", 1);
 
   debug_pub = n.advertise<std_msgs::Empty>("/scorbot/debugger", 1);
-  trajectory_debug_pub = n.advertise<control_msgs::FollowJointTrajectoryActionGoal>("/scorbot/debug_trajectory", 1);
-
+  
   joint_trajectory_sub = n.subscribe<control_msgs::FollowJointTrajectoryActionGoal>("/scorbot/arm_position_controller/follow_joint_trajectory/goal", 1, &Teleop::on_trajectory, this);
   //joint_trajectory_pub = n.advertise<scorbot::JointTrajectory>("/scorbot/joint_path_command_enc", 1);
   joint_pos_array_pub = n.advertise<std_msgs::Int32MultiArray>("/scorbot/joint_path_command_enc", 1);
+
+  //goal_reached_sub = n.subscribe<std_msgs::Empty>("/scorbot/goal_reached", 1, &Teleop::on_goal_reached, this);
 
   claw_catch_pub = n.advertise<std_msgs::Empty>("/scorbot/claw_catch", 1);
   claw_release_pub = n.advertise<std_msgs::Empty>("/scorbot/claw_release", 1);
@@ -142,6 +143,24 @@ void scorbot::Teleop::on_trajectory(const control_msgs::FollowJointTrajectoryAct
 
 }
 
+/*void scorbot::Teleop::on_goal_reached(const std_msgs::EmptyConstPtr& msg){
+  current_goal_index++; // advance to next point
+  if (current_goal_length == current_goal_index) current_goal_index = -1; // completed trajectory
+  else {      
+    // set current point as new goal 
+    std_msgs::Int32MultiArray joint_pos_msg;
+    joint_pos_msg.data.resize(5);
+
+    joint_pos_msg.data[0] = RAD2ENC1(joint_trajectory_goals[current_goal_index][0]);
+    joint_pos_msg.data[1] = RAD2ENC2(joint_trajectory_goals[current_goal_index][1]);
+    joint_pos_msg.data[2] = RAD2ENC3(joint_trajectory_goals[current_goal_index][2]);
+    joint_pos_msg.data[3] = RAD2ENC4(joint_trajectory_goals[current_goal_index][3]);
+    joint_pos_msg.data[4] = RAD2ENC5(joint_trajectory_goals[current_goal_index][4]);
+
+    joint_pos_array_pub.publish(joint_pos_msg);
+  }
+}  */
+
 void scorbot::Teleop::on_joint_states(const sensor_msgs::JointStateConstPtr& msg){
   
   pos_juntas[0] = msg->position[0];
@@ -165,7 +184,7 @@ void scorbot::Teleop::on_joint_states(const sensor_msgs::JointStateConstPtr& msg
     current_goal_index++; // advance to next point
     if (current_goal_length == current_goal_index) current_goal_index = -1; // completed trajectory
     else {      
-      /* set current point as new goal */
+      // set current point as new goal
       std_msgs::Int32MultiArray joint_pos_msg;
       joint_pos_msg.data.resize(5);
 
@@ -177,7 +196,7 @@ void scorbot::Teleop::on_joint_states(const sensor_msgs::JointStateConstPtr& msg
 
       joint_pos_array_pub.publish(joint_pos_msg);
     }
-  }  
+  } 
 }
 
 void scorbot::Teleop::on_controls(const universal_teleop::ControlConstPtr& msg)
