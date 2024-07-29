@@ -44,6 +44,7 @@ namespace scorbot {
       std::vector<double> pos_juntas;
 
       std::vector<std::vector<double>> joint_trajectory_goals;
+      std::vector<std::vector<double>> joint_trajectory_velocities;
       std::vector<bool> reached_current_goal;
       int current_goal_index;
       int current_goal_length;

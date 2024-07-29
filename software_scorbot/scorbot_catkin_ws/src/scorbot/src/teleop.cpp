@@ -53,6 +53,7 @@ scorbot::Teleop::Teleop(ros::NodeHandle& n)
   for(int i = 0; i<MAX_TRAJECTORY_SIZE; i++){
     
     joint_trajectory_goals.push_back({0.0,0.0,0.0,0.0,0.0});
+    joint_trajectory_velocities.push_back({0.0,0.0,0.0,0.0,0.0});
   }
   //std::vector<std::vector<double>> joint_trajectory_goals(MAX_TRAJECTORY_SIZE, std::vector<double>(NUM_JUNTAS,0.0));
   reached_current_goal = {false, false, false, false, false};
@@ -93,8 +94,6 @@ int JointNameToIndex(string joint_name){
 
 void scorbot::Teleop::on_trajectory(const control_msgs::FollowJointTrajectoryActionGoalConstPtr& msg)
 {
-  std_msgs::Int32MultiArray joint_pos_msg;
-  joint_pos_msg.data.resize(5);
 
   current_goal_length = 0;
   current_goal_index = 0;
@@ -111,9 +110,11 @@ void scorbot::Teleop::on_trajectory(const control_msgs::FollowJointTrajectoryAct
     current_goal_length++;
     if (current_goal_length > MAX_TRAJECTORY_SIZE) break;
     std::vector<double> positions = point.positions;
+    std::vector<double> velocities = point.velocities;
     for(int i = 0; i < msg_trajectory.joint_names.size(); i++){
       string name = msg_trajectory.joint_names[i];
       joint_trajectory_goals[current_goal_length - 1][JointNameToIndex(name)] = positions[i];
+      joint_trajectory_velocities[current_goal_length - 1][JointNameToIndex(name)] = velocities[i];
     }
   }
 
@@ -126,12 +127,29 @@ void scorbot::Teleop::on_trajectory(const control_msgs::FollowJointTrajectoryAct
   reached_current_goal[4] = false;  
   
   /* set initial point as goal */
-
+  /*
+  std_msgs::Int32MultiArray joint_pos_msg;
+  joint_pos_msg.data.resize(5);
+  
   joint_pos_msg.data[0] = RAD2ENC1(joint_trajectory_goals[0][0]);
   joint_pos_msg.data[1] = RAD2ENC2(joint_trajectory_goals[0][1]);
   joint_pos_msg.data[2] = RAD2ENC3(joint_trajectory_goals[0][2]);
   joint_pos_msg.data[3] = RAD2ENC4(joint_trajectory_goals[0][3]);
   joint_pos_msg.data[4] = RAD2ENC5(joint_trajectory_goals[0][4]);
+  
+  joint_pos_array_pub.publish(joint_pos_msg);
+  */
+
+  scorbot::JointVelocities velocities_msg;
+  velocities_msg.joint_velocities.resize(5, 0);
+
+  velocities_msg.joint_velocities[0] = joint_trajectory_velocities[0][0];
+  velocities_msg.joint_velocities[1] = joint_trajectory_velocities[0][1];
+  velocities_msg.joint_velocities[2] = joint_trajectory_velocities[0][2];
+  velocities_msg.joint_velocities[3] = joint_trajectory_velocities[0][3];
+  velocities_msg.joint_velocities[4] = joint_trajectory_velocities[0][4];
+
+  vel_pub.publish(velocities_msg);
 /*
   joint_trajectory_enc.points[0] = RAD2ENC1(msg->points[last_point].positions[0]);
   joint_trajectory_enc.points[1] = RAD2ENC2(msg->points[last_point].positions[1]);
@@ -139,7 +157,6 @@ void scorbot::Teleop::on_trajectory(const control_msgs::FollowJointTrajectoryAct
   joint_trajectory_enc.points[3] = RAD2ENC4(msg->points[last_point].positions[3]);
   joint_trajectory_enc.points[4] = RAD2ENC5(msg->points[last_point].positions[4]);
 */
-  joint_pos_array_pub.publish(joint_pos_msg);
 
 }
 
@@ -182,9 +199,11 @@ void scorbot::Teleop::on_joint_states(const sensor_msgs::JointStateConstPtr& msg
   
   if (this_goal_complete) {
     current_goal_index++; // advance to next point
+    reached_current_goal = {false,false,false,false,false};
     if (current_goal_length == current_goal_index) current_goal_index = -1; // completed trajectory
     else {      
       // set current point as new goal
+      /*
       std_msgs::Int32MultiArray joint_pos_msg;
       joint_pos_msg.data.resize(5);
 
@@ -195,6 +214,17 @@ void scorbot::Teleop::on_joint_states(const sensor_msgs::JointStateConstPtr& msg
       joint_pos_msg.data[4] = RAD2ENC5(joint_trajectory_goals[current_goal_index][4]);
 
       joint_pos_array_pub.publish(joint_pos_msg);
+      */
+      scorbot::JointVelocities velocities_msg;
+      velocities_msg.joint_velocities.resize(5, 0);
+
+      velocities_msg.joint_velocities[0] = joint_trajectory_velocities[current_goal_index][0];
+      velocities_msg.joint_velocities[1] = joint_trajectory_velocities[current_goal_index][1];
+      velocities_msg.joint_velocities[2] = joint_trajectory_velocities[current_goal_index][2];
+      velocities_msg.joint_velocities[3] = joint_trajectory_velocities[current_goal_index][3];
+      velocities_msg.joint_velocities[4] = joint_trajectory_velocities[current_goal_index][4];
+
+      vel_pub.publish(velocities_msg);
     }
   } 
 }
