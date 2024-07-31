@@ -9,11 +9,12 @@ import struct
 import std_msgs.msg
 
 class JointVelocities(genpy.Message):
-  _md5sum = "995673f17373d5fdcbb63cc182afba57"
+  _md5sum = "ca93a6f07f7d605402dc93ee68f037fe"
   _type = "scorbot/JointVelocities"
   _has_header = True  # flag to mark the presence of a Header object
   _full_text = """Header header
 float32[] joint_velocities
+bool scaled_flag
 
 ================================================================================
 MSG: std_msgs/Header
@@ -31,8 +32,8 @@ time stamp
 #Frame this data is associated with
 string frame_id
 """
-  __slots__ = ['header','joint_velocities']
-  _slot_types = ['std_msgs/Header','float32[]']
+  __slots__ = ['header','joint_velocities','scaled_flag']
+  _slot_types = ['std_msgs/Header','float32[]','bool']
 
   def __init__(self, *args, **kwds):
     """
@@ -42,7 +43,7 @@ string frame_id
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       header,joint_velocities
+       header,joint_velocities,scaled_flag
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -55,9 +56,12 @@ string frame_id
         self.header = std_msgs.msg.Header()
       if self.joint_velocities is None:
         self.joint_velocities = []
+      if self.scaled_flag is None:
+        self.scaled_flag = False
     else:
       self.header = std_msgs.msg.Header()
       self.joint_velocities = []
+      self.scaled_flag = False
 
   def _get_types(self):
     """
@@ -83,6 +87,8 @@ string frame_id
       buff.write(_struct_I.pack(length))
       pattern = '<%sf'%length
       buff.write(struct.Struct(pattern).pack(*self.joint_velocities))
+      _x = self.scaled_flag
+      buff.write(_get_struct_B().pack(_x))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -118,6 +124,10 @@ string frame_id
       s = struct.Struct(pattern)
       end += s.size
       self.joint_velocities = s.unpack(str[start:end])
+      start = end
+      end += 1
+      (self.scaled_flag,) = _get_struct_B().unpack(str[start:end])
+      self.scaled_flag = bool(self.scaled_flag)
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -142,6 +152,8 @@ string frame_id
       buff.write(_struct_I.pack(length))
       pattern = '<%sf'%length
       buff.write(self.joint_velocities.tostring())
+      _x = self.scaled_flag
+      buff.write(_get_struct_B().pack(_x))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -178,6 +190,10 @@ string frame_id
       s = struct.Struct(pattern)
       end += s.size
       self.joint_velocities = numpy.frombuffer(str[start:end], dtype=numpy.float32, count=length)
+      start = end
+      end += 1
+      (self.scaled_flag,) = _get_struct_B().unpack(str[start:end])
+      self.scaled_flag = bool(self.scaled_flag)
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -192,3 +208,9 @@ def _get_struct_3I():
     if _struct_3I is None:
         _struct_3I = struct.Struct("<3I")
     return _struct_3I
+_struct_B = None
+def _get_struct_B():
+    global _struct_B
+    if _struct_B is None:
+        _struct_B = struct.Struct("<B")
+    return _struct_B

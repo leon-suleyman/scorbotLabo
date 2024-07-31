@@ -16,17 +16,19 @@
 
 (defclass scorbot::JointVelocities
   :super ros::object
-  :slots (_header _joint_velocities ))
+  :slots (_header _joint_velocities _scaled_flag ))
 
 (defmethod scorbot::JointVelocities
   (:init
    (&key
     ((:header __header) (instance std_msgs::Header :init))
     ((:joint_velocities __joint_velocities) (make-array 0 :initial-element 0.0 :element-type :float))
+    ((:scaled_flag __scaled_flag) nil)
     )
    (send-super :init)
    (setq _header __header)
    (setq _joint_velocities __joint_velocities)
+   (setq _scaled_flag __scaled_flag)
    self)
   (:header
    (&rest __header)
@@ -38,6 +40,9 @@
   (:joint_velocities
    (&optional __joint_velocities)
    (if __joint_velocities (setq _joint_velocities __joint_velocities)) _joint_velocities)
+  (:scaled_flag
+   (&optional (__scaled_flag :null))
+   (if (not (eq __scaled_flag :null)) (setq _scaled_flag __scaled_flag)) _scaled_flag)
   (:serialization-length
    ()
    (+
@@ -45,6 +50,8 @@
     (send _header :serialization-length)
     ;; float32[] _joint_velocities
     (* 4    (length _joint_velocities)) 4
+    ;; bool _scaled_flag
+    1
     ))
   (:serialize
    (&optional strm)
@@ -57,6 +64,8 @@
      (dotimes (i (length _joint_velocities))
        (sys::poke (elt _joint_velocities i) (send s :buffer) (send s :count) :float) (incf (stream-count s) 4)
        )
+     ;; bool _scaled_flag
+       (if _scaled_flag (write-byte -1 s) (write-byte 0 s))
      ;;
      (if (null strm) (get-output-stream-string s))))
   (:deserialize
@@ -70,15 +79,18 @@
      (dotimes (i n)
      (setf (elt _joint_velocities i) (sys::peek buf ptr- :float)) (incf ptr- 4)
      ))
+   ;; bool _scaled_flag
+     (setq _scaled_flag (not (= 0 (sys::peek buf ptr- :char)))) (incf ptr- 1)
    ;;
    self)
   )
 
-(setf (get scorbot::JointVelocities :md5sum-) "995673f17373d5fdcbb63cc182afba57")
+(setf (get scorbot::JointVelocities :md5sum-) "ca93a6f07f7d605402dc93ee68f037fe")
 (setf (get scorbot::JointVelocities :datatype-) "scorbot/JointVelocities")
 (setf (get scorbot::JointVelocities :definition-)
       "Header header
 float32[] joint_velocities
+bool scaled_flag
 
 ================================================================================
 MSG: std_msgs/Header
@@ -100,6 +112,6 @@ string frame_id
 
 
 
-(provide :scorbot/JointVelocities "995673f17373d5fdcbb63cc182afba57")
+(provide :scorbot/JointVelocities "ca93a6f07f7d605402dc93ee68f037fe")
 
 

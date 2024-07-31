@@ -21,6 +21,7 @@ class JointVelocities {
       // initObj === null is a special case for deserialization where we don't initialize fields
       this.header = null;
       this.joint_velocities = null;
+      this.scaled_flag = null;
     }
     else {
       if (initObj.hasOwnProperty('header')) {
@@ -35,6 +36,12 @@ class JointVelocities {
       else {
         this.joint_velocities = [];
       }
+      if (initObj.hasOwnProperty('scaled_flag')) {
+        this.scaled_flag = initObj.scaled_flag
+      }
+      else {
+        this.scaled_flag = false;
+      }
     }
   }
 
@@ -44,6 +51,8 @@ class JointVelocities {
     bufferOffset = std_msgs.msg.Header.serialize(obj.header, buffer, bufferOffset);
     // Serialize message field [joint_velocities]
     bufferOffset = _arraySerializer.float32(obj.joint_velocities, buffer, bufferOffset, null);
+    // Serialize message field [scaled_flag]
+    bufferOffset = _serializer.bool(obj.scaled_flag, buffer, bufferOffset);
     return bufferOffset;
   }
 
@@ -55,6 +64,8 @@ class JointVelocities {
     data.header = std_msgs.msg.Header.deserialize(buffer, bufferOffset);
     // Deserialize message field [joint_velocities]
     data.joint_velocities = _arrayDeserializer.float32(buffer, bufferOffset, null)
+    // Deserialize message field [scaled_flag]
+    data.scaled_flag = _deserializer.bool(buffer, bufferOffset);
     return data;
   }
 
@@ -62,7 +73,7 @@ class JointVelocities {
     let length = 0;
     length += std_msgs.msg.Header.getMessageSize(object.header);
     length += 4 * object.joint_velocities.length;
-    return length + 4;
+    return length + 5;
   }
 
   static datatype() {
@@ -72,7 +83,7 @@ class JointVelocities {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return '995673f17373d5fdcbb63cc182afba57';
+    return 'ca93a6f07f7d605402dc93ee68f037fe';
   }
 
   static messageDefinition() {
@@ -80,6 +91,7 @@ class JointVelocities {
     return `
     Header header
     float32[] joint_velocities
+    bool scaled_flag
     
     ================================================================================
     MSG: std_msgs/Header
@@ -118,6 +130,13 @@ class JointVelocities {
     }
     else {
       resolved.joint_velocities = []
+    }
+
+    if (msg.scaled_flag !== undefined) {
+      resolved.scaled_flag = msg.scaled_flag;
+    }
+    else {
+      resolved.scaled_flag = false
     }
 
     return resolved;

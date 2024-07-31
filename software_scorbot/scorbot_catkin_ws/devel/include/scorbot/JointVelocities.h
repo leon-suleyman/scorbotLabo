@@ -26,11 +26,13 @@ struct JointVelocities_
 
   JointVelocities_()
     : header()
-    , joint_velocities()  {
+    , joint_velocities()
+    , scaled_flag(false)  {
     }
   JointVelocities_(const ContainerAllocator& _alloc)
     : header(_alloc)
-    , joint_velocities(_alloc)  {
+    , joint_velocities(_alloc)
+    , scaled_flag(false)  {
   (void)_alloc;
     }
 
@@ -41,6 +43,9 @@ struct JointVelocities_
 
    typedef std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> _joint_velocities_type;
   _joint_velocities_type joint_velocities;
+
+   typedef uint8_t _scaled_flag_type;
+  _scaled_flag_type scaled_flag;
 
 
 
@@ -72,7 +77,8 @@ template<typename ContainerAllocator1, typename ContainerAllocator2>
 bool operator==(const ::scorbot::JointVelocities_<ContainerAllocator1> & lhs, const ::scorbot::JointVelocities_<ContainerAllocator2> & rhs)
 {
   return lhs.header == rhs.header &&
-    lhs.joint_velocities == rhs.joint_velocities;
+    lhs.joint_velocities == rhs.joint_velocities &&
+    lhs.scaled_flag == rhs.scaled_flag;
 }
 
 template<typename ContainerAllocator1, typename ContainerAllocator2>
@@ -129,12 +135,12 @@ struct MD5Sum< ::scorbot::JointVelocities_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "995673f17373d5fdcbb63cc182afba57";
+    return "ca93a6f07f7d605402dc93ee68f037fe";
   }
 
   static const char* value(const ::scorbot::JointVelocities_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x995673f17373d5fdULL;
-  static const uint64_t static_value2 = 0xcbb63cc182afba57ULL;
+  static const uint64_t static_value1 = 0xca93a6f07f7d6054ULL;
+  static const uint64_t static_value2 = 0x02dc93ee68f037feULL;
 };
 
 template<class ContainerAllocator>
@@ -155,6 +161,7 @@ struct Definition< ::scorbot::JointVelocities_<ContainerAllocator> >
   {
     return "Header header\n"
 "float32[] joint_velocities\n"
+"bool scaled_flag\n"
 "\n"
 "================================================================================\n"
 "MSG: std_msgs/Header\n"
@@ -191,6 +198,7 @@ namespace serialization
     {
       stream.next(m.header);
       stream.next(m.joint_velocities);
+      stream.next(m.scaled_flag);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -218,6 +226,8 @@ struct Printer< ::scorbot::JointVelocities_<ContainerAllocator> >
       s << indent << "  joint_velocities[" << i << "]: ";
       Printer<float>::stream(s, indent + "  ", v.joint_velocities[i]);
     }
+    s << indent << "scaled_flag: ";
+    Printer<uint8_t>::stream(s, indent + "  ", v.scaled_flag);
   }
 };
 

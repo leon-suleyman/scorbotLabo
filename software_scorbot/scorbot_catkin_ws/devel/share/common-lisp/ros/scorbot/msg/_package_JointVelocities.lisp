@@ -3,4 +3,6 @@
           HEADER
           JOINT_VELOCITIES-VAL
           JOINT_VELOCITIES
+          SCALED_FLAG-VAL
+          SCALED_FLAG
 ))

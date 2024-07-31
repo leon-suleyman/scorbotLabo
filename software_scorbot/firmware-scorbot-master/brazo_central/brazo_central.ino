@@ -39,17 +39,17 @@
 #define RAD2ENC5(x) ((int32_t)(x / (float)-0.000163399) + 2200)
 */
 
-#define ENC2RAD1(x) ((x)  * (float)-0.000034142)
-#define ENC2RAD2(x) (((x)  * (float)-0.000030712) + (float)1.484)
-#define ENC2RAD3(x) ((x)  * (float)0.000032903)
-#define ENC2RAD4(x) ((x)  * (float)0.000054786)
-#define ENC2RAD5(x) ((x)  * (float)0.000163399)
+#define ENC2RAD1(x) ((x)  * (double)-0.000034142)
+#define ENC2RAD2(x) (((x)  * (double)-0.000030712) + (double)1.484)
+#define ENC2RAD3(x) ((x)  * (double)0.000032903)
+#define ENC2RAD4(x) ((x)  * (double)0.000054786)
+#define ENC2RAD5(x) ((x)  * (double)0.000163399)
 
-#define RAD2ENC1(x) ((int32_t)(x / (float)-0.000034142 ))
-#define RAD2ENC2(x) ((int32_t)( (x - (float)1.484) / (float)-0.000030712))
-#define RAD2ENC3(x) ((int32_t)(x / (float)0.000032903))
-#define RAD2ENC4(x) ((int32_t)(x / (float)0.000054786))
-#define RAD2ENC5(x) ((int32_t)(x / (float)0.000163399))
+#define RAD2ENC1(x) ((int32_t)(x / (double)-0.000034142 ))
+#define RAD2ENC2(x) ((int32_t)( (x - (double)1.484) / (double)-0.000030712))
+#define RAD2ENC3(x) ((int32_t)(x / (double)0.000032903))
+#define RAD2ENC4(x) ((int32_t)(x / (double)0.000054786))
+#define RAD2ENC5(x) ((int32_t)(x / (double)0.000163399))
 
 #define MAX_TRAJECTORY_SIZE 10
 #define NUM_JUNTAS 5
@@ -172,30 +172,31 @@ void setup(void)
 void on_velocities(const scorbot::JointVelocities& vel_msg)
 {  
   current_goal_index = -1; /* desactiva la trayectoria actual */
-
+  debug_pub.publish(&empty_msg);
   for (int i = 0; i < vel_msg.joint_velocities_length; i++)
   {
-    float vel = vel_msg.joint_velocities[i];
+    float vel = vel_msg.joint_velocities[i] / (vel_msg.scaled_flag ? 1000 : 1);
+    debug_pub.publish(&empty_msg);
     
     switch(i) {
       case 0:
-        if (vel == 0) set_position(1, pos_juntas[0]);
+        if (vel == 0.0) set_position(1, pos_juntas[0]);
         else set_speed_junta(0, vel);
       break;
       case 1:
-        if (vel == 0) set_position(2, pos_juntas[1]);
+        if (vel == 0.0) set_position(2, pos_juntas[1]);
         else set_speed_junta(1, vel);
       break;
       case 2:
-        if (vel == 0) set_position(3, pos_juntas[2]);        
+        if (vel == 0.0) set_position(3, pos_juntas[2]);        
         else set_speed_junta(2, vel);
       break;
       case 3:
-        if (vel == 0) set_position(4, pos_juntas[3]);        
+        if (vel == 0.0) set_position(4, pos_juntas[3]);        
         else set_speed_junta(3, vel);
       break;
       case 4:
-        if (vel == 0) set_position(5, pos_juntas[4]);        
+        if (vel == 0.0) set_position(5, pos_juntas[4]);        
         else set_speed_junta(4, vel);
       break;
     }
