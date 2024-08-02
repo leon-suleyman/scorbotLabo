@@ -8,7 +8,7 @@ using namespace std;
 
 #define NUM_JUNTAS (5)
 #define MAX_TRAJECTORY_SIZE (20)
-#define JOINT_GOAL_TOLERANCE (0.001)
+#define JOINT_GOAL_TOLERANCE (0.01)
 
 /*
 #define RAD2ENC1(x) ((int32_t)(x / (double)0.000034142) + 7000)
@@ -94,8 +94,34 @@ int JointNameToIndex(string joint_name){
 }
 
 float set_above_minimum_speed(float vel){
-  float res = (vel >= 1/127) ? vel : 1/127;
-  res = res * ((vel >= 0) ? 1 : -1);
+  float abs_vel = abs(vel);
+  float vel_direction = vel/abs_vel;
+  float minimum = 1/5;
+  float minimum_with_direction = minimum * vel_direction; 
+  float res = (abs_vel >= minimum) ? vel : minimum_with_direction;
+  return res;
+}
+
+float set_special_joint_conditions(float vel, int i){
+  float res = vel;
+  float abs_vel = abs(vel);
+  float vel_direction = vel/abs_vel;
+  switch (i)
+  {
+  case 0:
+    res = -1.0 * vel_direction;
+    break;
+  case 1:
+    res = -1.0 * ((vel_direction > 0 )? 2 : -1);
+    break;
+  case 4:
+    res = vel;
+    break;
+  default:
+    res = vel * ((vel_direction > 0 )? 2 : -1);
+    break;
+  }
+
   return res;
 }
 
@@ -121,12 +147,13 @@ void scorbot::Teleop::on_trajectory(const control_msgs::FollowJointTrajectoryAct
     for(int i = 0; i < msg_trajectory.joint_names.size(); i++){
       string name = msg_trajectory.joint_names[i];
       int name_index = JointNameToIndex(name);
-      joint_trajectory_goals[current_goal_length - 1][name_index] = positions[i];
+      joint_trajectory_goals[current_goal_length - 1][name_index] = (float)positions[i];
 
       //tenemos que cambiar la dirección de las velocidades de la base y el hombro si vienen del planificador de trayectoria
-      float vel = velocities[i] * ((name_index > 1) ? 1 : -1);
-      //definimos la velocidad mínimo como 1/127 ya que no podemos comunicarle menos que eso al manipulador por como maneja la comunicación de la velocidad entre componentes en este momento
+      float vel = (float)velocities[i];
+      //definimos la velocidad mínima como 1/127 ya que no podemos comunicarle menos que eso al manipulador por como maneja la comunicación de la velocidad entre componentes en este momento
       vel = set_above_minimum_speed(vel);
+      vel = set_special_joint_conditions(vel, name_index);
     
       joint_trajectory_velocities[current_goal_length - 1][name_index] = vel;
     }
@@ -141,7 +168,7 @@ void scorbot::Teleop::on_trajectory(const control_msgs::FollowJointTrajectoryAct
   reached_current_goal[4] = false;  
   
   /* set initial point as goal */
-  /*
+
   std_msgs::Int32MultiArray joint_pos_msg;
   joint_pos_msg.data.resize(5);
   
@@ -152,19 +179,20 @@ void scorbot::Teleop::on_trajectory(const control_msgs::FollowJointTrajectoryAct
   joint_pos_msg.data[4] = RAD2ENC5(joint_trajectory_goals[0][4]);
   
   joint_pos_array_pub.publish(joint_pos_msg);
-  */
-
+  
+  /*
   scorbot::JointVelocities velocities_msg;
   velocities_msg.joint_velocities.resize(5, 0);
   velocities_msg.scaled_flag = true;
 
-  velocities_msg.joint_velocities[0] = joint_trajectory_velocities[0][0]*1000;
-  velocities_msg.joint_velocities[1] = joint_trajectory_velocities[0][1]*1000;
-  velocities_msg.joint_velocities[2] = joint_trajectory_velocities[0][2]*1000;
-  velocities_msg.joint_velocities[3] = joint_trajectory_velocities[0][3]*1000;
-  velocities_msg.joint_velocities[4] = joint_trajectory_velocities[0][4]*1000;
+  velocities_msg.joint_velocities[0] = joint_trajectory_velocities[0][0];
+  velocities_msg.joint_velocities[1] = joint_trajectory_velocities[0][1];
+  velocities_msg.joint_velocities[2] = joint_trajectory_velocities[0][2];
+  velocities_msg.joint_velocities[3] = joint_trajectory_velocities[0][3];
+  velocities_msg.joint_velocities[4] = joint_trajectory_velocities[0][4];
 
   vel_pub.publish(velocities_msg);
+  */
 /*
   joint_trajectory_enc.points[0] = RAD2ENC1(msg->points[last_point].positions[0]);
   joint_trajectory_enc.points[1] = RAD2ENC2(msg->points[last_point].positions[1]);
@@ -204,61 +232,68 @@ void scorbot::Teleop::on_joint_states(const sensor_msgs::JointStateConstPtr& msg
   if (current_goal_index == -1) return; // no goal set
   
   bool this_goal_complete = true;
+  bool there_is_a_change = false;
   for (int i = 0; i < NUM_JUNTAS; i++)
   {
     if (!reached_current_goal[i]) {
       if (abs(joint_trajectory_goals[current_goal_index][i] - pos_juntas[i]) <= JOINT_GOAL_TOLERANCE){
         reached_current_goal[i] = true;
+        there_is_a_change = true;
       }else{
         this_goal_complete = false;
       }
     }
   }
   
-  if (this_goal_complete) {
-    current_goal_index++; // advance to next point
-    reached_current_goal = {false,false,false,false,false};
-    if (current_goal_length == current_goal_index) current_goal_index = -1; // completed trajectory
-    else {      
-      // set current point as new goal
+  if(there_is_a_change){
+    if (this_goal_complete) {
+      current_goal_index++; // advance to next point
+      reached_current_goal = {false,false,false,false,false};
+      if (current_goal_length == current_goal_index) current_goal_index = -1; // completed trajectory
+      else {      
+        // set current point as new goal
+        
+        std_msgs::Int32MultiArray joint_pos_msg;
+        joint_pos_msg.data.resize(5);
+
+        joint_pos_msg.data[0] = RAD2ENC1(joint_trajectory_goals[current_goal_index][0]);
+        joint_pos_msg.data[1] = RAD2ENC2(joint_trajectory_goals[current_goal_index][1]);
+        joint_pos_msg.data[2] = RAD2ENC3(joint_trajectory_goals[current_goal_index][2]);
+        joint_pos_msg.data[3] = RAD2ENC4(joint_trajectory_goals[current_goal_index][3]);
+        joint_pos_msg.data[4] = RAD2ENC5(joint_trajectory_goals[current_goal_index][4]);
+
+        joint_pos_array_pub.publish(joint_pos_msg);
+        /*
+        scorbot::JointVelocities velocities_msg;
+        velocities_msg.joint_velocities.resize(5, 0);
+        velocities_msg.scaled_flag = true;
+
+        velocities_msg.joint_velocities[0] = joint_trajectory_velocities[current_goal_index][0];
+        velocities_msg.joint_velocities[1] = joint_trajectory_velocities[current_goal_index][1];
+        velocities_msg.joint_velocities[2] = joint_trajectory_velocities[current_goal_index][2];
+        velocities_msg.joint_velocities[3] = joint_trajectory_velocities[current_goal_index][3];
+        velocities_msg.joint_velocities[4] = joint_trajectory_velocities[current_goal_index][4];
+
+        vel_pub.publish(velocities_msg);
+        */
+      }
+    }else{
       /*
-      std_msgs::Int32MultiArray joint_pos_msg;
-      joint_pos_msg.data.resize(5);
-
-      joint_pos_msg.data[0] = RAD2ENC1(joint_trajectory_goals[current_goal_index][0]);
-      joint_pos_msg.data[1] = RAD2ENC2(joint_trajectory_goals[current_goal_index][1]);
-      joint_pos_msg.data[2] = RAD2ENC3(joint_trajectory_goals[current_goal_index][2]);
-      joint_pos_msg.data[3] = RAD2ENC4(joint_trajectory_goals[current_goal_index][3]);
-      joint_pos_msg.data[4] = RAD2ENC5(joint_trajectory_goals[current_goal_index][4]);
-
-      joint_pos_array_pub.publish(joint_pos_msg);
-      */
       scorbot::JointVelocities velocities_msg;
       velocities_msg.joint_velocities.resize(5, 0);
       velocities_msg.scaled_flag = true;
 
-      velocities_msg.joint_velocities[0] = joint_trajectory_velocities[current_goal_index][0]*1000;
-      velocities_msg.joint_velocities[1] = joint_trajectory_velocities[current_goal_index][1]*1000;
-      velocities_msg.joint_velocities[2] = joint_trajectory_velocities[current_goal_index][2]*1000;
-      velocities_msg.joint_velocities[3] = joint_trajectory_velocities[current_goal_index][3]*1000;
-      velocities_msg.joint_velocities[4] = joint_trajectory_velocities[current_goal_index][4]*1000;
+      for(int i = 0; i<5; i++){
+        float vel = joint_trajectory_velocities[current_goal_index][i];
+        velocities_msg.joint_velocities[i] = vel * (reached_current_goal[i] ? 0 : 1);
+        std::cout << "articulación " << i << ": " << (reached_current_goal[i] ? "true" : "false") << "\n";
+      }
 
       vel_pub.publish(velocities_msg);
-    }
-  }else{
-    scorbot::JointVelocities velocities_msg;
-    velocities_msg.joint_velocities.resize(5, 0);
-    velocities_msg.scaled_flag = true;
+      */
 
-    for(int i = 0; i<5; i++){
-      float vel = joint_trajectory_velocities[current_goal_index][i];
-      velocities_msg.joint_velocities[i] = vel * (reached_current_goal[i] ? 0 : 1000);
-      std::cout << "articulación " << i << ": " << reached_current_goal[i] << "\n";
-    }
-
-    vel_pub.publish(velocities_msg);
-
-  } 
+    } 
+  }
 }
 
 void scorbot::Teleop::on_controls(const universal_teleop::ControlConstPtr& msg)

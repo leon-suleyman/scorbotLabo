@@ -175,7 +175,7 @@ void on_velocities(const scorbot::JointVelocities& vel_msg)
   debug_pub.publish(&empty_msg);
   for (int i = 0; i < vel_msg.joint_velocities_length; i++)
   {
-    float vel = vel_msg.joint_velocities[i] / (vel_msg.scaled_flag ? 1000 : 1);
+    float vel = vel_msg.joint_velocities[i]; /// (vel_msg.scaled_flag ? 1000 : 1);
     debug_pub.publish(&empty_msg);
     
     switch(i) {
