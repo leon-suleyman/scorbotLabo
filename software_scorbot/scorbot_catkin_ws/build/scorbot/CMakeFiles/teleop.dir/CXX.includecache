@@ -43,25 +43,17 @@ std_msgs/Header.h
 -
 
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/src/scorbot/src/teleop.cpp
-std_msgs/Empty.h
--
-std_msgs/Int32.h
--
-std_msgs/Int32MultiArray.h
--
-control_msgs/FollowJointTrajectoryActionResult.h
--
-actionlib_msgs/GoalID.h
--
-math.h
--
-scorbot/JointTrajectory.h
--
 teleop.h
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/src/scorbot/src/teleop.h
 
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/src/scorbot/src/teleop.h
 ros/ros.h
+-
+math.h
+-
+string
+-
+vector
 -
 universal_teleop/Control.h
 -
@@ -71,11 +63,23 @@ trajectory_msgs/JointTrajectory.h
 -
 control_msgs/FollowJointTrajectoryActionGoal.h
 -
+control_msgs/FollowJointTrajectoryActionResult.h
+-
+actionlib_msgs/GoalID.h
+-
+actionlib_msgs/GoalStatus.h
+-
 sensor_msgs/JointState.h
 -
 std_msgs/Empty.h
 -
+std_msgs/Int32.h
+-
+std_msgs/Int32MultiArray.h
+-
 scorbot/JointVelocities.h
+-
+scorbot/JointTrajectory.h
 -
 
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/include/universal_teleop/Control.h

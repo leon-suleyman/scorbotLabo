@@ -1,10 +1,3 @@
-#include <std_msgs/Empty.h>
-#include <std_msgs/Int32.h>
-#include <std_msgs/Int32MultiArray.h>
-#include <control_msgs/FollowJointTrajectoryActionResult.h>
-#include <actionlib_msgs/GoalID.h>
-#include <math.h>
-#include <scorbot/JointTrajectory.h>
 #include "teleop.h"
 
 using namespace std;
@@ -12,9 +5,6 @@ using namespace std;
 #define NUM_JUNTAS (5)
 #define MAX_TRAJECTORY_SIZE (50)
 #define JOINT_GOAL_TOLERANCE (0.01)
-
-#define SUCCESSFUL_TRAJECTORY_EXECUTION (0)
-#define FAILED_TRAJECTORY (1)
 
 /*
 #define RAD2ENC1(x) ((int32_t)(x / (double)0.000034142) + 7000)
@@ -38,19 +28,17 @@ scorbot::Teleop::Teleop(ros::NodeHandle& n)
   sub_events = n.subscribe("/universal_teleop/events", 1, &Teleop::on_events, this);
   vel_pub = n.advertise<scorbot::JointVelocities>("/scorbot/joint_velocities", 1);
   home_pub = n.advertise<std_msgs::Empty>("/scorbot/home", 1);
-
-  debug_pub = n.advertise<std_msgs::Empty>("/scorbot/debugger", 1);
   
   joint_trajectory_sub = n.subscribe<control_msgs::FollowJointTrajectoryActionGoal>("/scorbot/arm_position_controller/follow_joint_trajectory/goal", 1, &Teleop::on_trajectory, this);
   //joint_trajectory_pub = n.advertise<scorbot::JointTrajectory>("/scorbot/joint_path_command_enc", 1);
   joint_pos_array_pub = n.advertise<std_msgs::Int32MultiArray>("/scorbot/joint_path_command_enc", 1);
-  trajectory_finished_pub = n.advertise<std_msgs::Int32>("/scorbot/trajectory/result", 1);
-  //goal_reached_sub = n.subscribe<std_msgs::Empty>("/scorbot/goal_reached", 1, &Teleop::on_goal_reached, this);
+  trajectory_finished_pub = n.advertise<control_msgs::FollowJointTrajectoryActionResult>("/arm_position_controller/follow_joint_trajectory/result", 1);
+  goal_reached_sub = n.subscribe<std_msgs::Empty>("/scorbot/goal_reached", 1, &Teleop::on_goal_reached, this);
 
   claw_catch_pub = n.advertise<std_msgs::Empty>("/scorbot/claw_catch", 1);
   claw_release_pub = n.advertise<std_msgs::Empty>("/scorbot/claw_release", 1);
 
-  joint_states_sub = n.subscribe<sensor_msgs::JointState>("/joint_states", 1, &Teleop::on_joint_states, this);
+  //joint_states_sub = n.subscribe<sensor_msgs::JointState>("/joint_states", 1, &Teleop::on_joint_states, this);
 
   override_enabled = slow_mode_enabled = false;
   
@@ -65,6 +53,7 @@ scorbot::Teleop::Teleop(ros::NodeHandle& n)
   reached_current_goal = {false, false, false, false, false};
   current_goal_index = -1;
   current_goal_length = 0;
+  trajectory_goal_id = "";
 
   joint_states.resize(5, 0);
   velocities.joint_velocities.resize(5, 0);
@@ -133,11 +122,13 @@ float set_special_joint_conditions(float vel, int i){
 
 void scorbot::Teleop::on_trajectory(const control_msgs::FollowJointTrajectoryActionGoalConstPtr& msg)
 {
-
+  //inicializamos la longitud y el indice del objetivo
   current_goal_length = 0;
   current_goal_index = 0;
   
-
+  //salvamos la id del objetivo para despues confirmar que llegamos bien
+  actionlib_msgs::GoalID goal_id = msg->goal_id;
+  trajectory_goal_id = goal_id.id;
   //vamos descascarando el mensaje para llegar a las posiciones
   control_msgs::FollowJointTrajectoryGoal msg_goal = msg->goal;
   trajectory_msgs::JointTrajectory msg_trajectory = msg_goal.trajectory;
@@ -209,11 +200,29 @@ void scorbot::Teleop::on_trajectory(const control_msgs::FollowJointTrajectoryAct
 
 }
 
-/*void scorbot::Teleop::on_goal_reached(const std_msgs::EmptyConstPtr& msg){
+void scorbot::Teleop::on_goal_reached(const std_msgs::EmptyConstPtr& msg){
+  std::cout << "completamos el goal " << current_goal_index << "\n";
   current_goal_index++; // advance to next point
-  if (current_goal_length == current_goal_index) current_goal_index = -1; // completed trajectory
-  else {      
-    // set current point as new goal 
+  reached_current_goal = {false,false,false,false,false};
+  if (current_goal_length == current_goal_index){
+    current_goal_index = -1; // completed trajectory
+
+    
+    control_msgs::FollowJointTrajectoryResult result;
+    result.error_code = result.SUCCESSFUL; 
+    control_msgs::FollowJointTrajectoryActionResult result_msg;
+    result_msg.result = result;
+
+    actionlib_msgs::GoalStatus goal_status;
+    goal_status.status = goal_status.SUCCEEDED;
+    actionlib_msgs::GoalID goal_id;
+    goal_id.id = trajectory_goal_id;
+    result_msg.status = goal_status;
+
+    trajectory_finished_pub.publish(result_msg);
+  } else {      
+    // set current point as new goal
+    
     std_msgs::Int32MultiArray joint_pos_msg;
     joint_pos_msg.data.resize(5);
 
@@ -225,7 +234,7 @@ void scorbot::Teleop::on_trajectory(const control_msgs::FollowJointTrajectoryAct
 
     joint_pos_array_pub.publish(joint_pos_msg);
   }
-}  */
+}
 
 void scorbot::Teleop::on_joint_states(const sensor_msgs::JointStateConstPtr& msg){
   
@@ -235,6 +244,7 @@ void scorbot::Teleop::on_joint_states(const sensor_msgs::JointStateConstPtr& msg
   pos_juntas[3] = msg->position[3];
   pos_juntas[4] = msg->position[4];
   
+  /*
   if (current_goal_index == -1) return; // no goal set
   
   bool this_goal_complete = true;
@@ -245,6 +255,7 @@ void scorbot::Teleop::on_joint_states(const sensor_msgs::JointStateConstPtr& msg
       if (abs(joint_trajectory_goals[current_goal_index][i] - pos_juntas[i]) <= JOINT_GOAL_TOLERANCE){
         reached_current_goal[i] = true;
         there_is_a_change = true;
+
       }else{
         this_goal_complete = false;
       }
@@ -253,15 +264,25 @@ void scorbot::Teleop::on_joint_states(const sensor_msgs::JointStateConstPtr& msg
   
   if(there_is_a_change){
     if (this_goal_complete) {
+      std::cout << "completamos el goal " << current_goal_index << "\n";
       current_goal_index++; // advance to next point
       reached_current_goal = {false,false,false,false,false};
       if (current_goal_length == current_goal_index){
         current_goal_index = -1; // completed trajectory
 
-        std_msgs::Int32 result_msg;
-        result_msg.data = SUCCESSFUL_TRAJECTORY_EXECUTION;
+        
+        control_msgs::FollowJointTrajectoryResult result;
+        result.error_code = result.SUCCESSFUL; 
+        control_msgs::FollowJointTrajectoryActionResult result_msg;
+        result_msg.result = result;
 
-        trajectory_finished_pub.publish(&result_msg);
+        actionlib_msgs::GoalStatus goal_status;
+        goal_status.status = goal_status.SUCCEEDED;
+        actionlib_msgs::GoalID goal_id;
+        goal_id.id = trajectory_goal_id;
+        result_msg.status = goal_status;
+
+        trajectory_finished_pub.publish(result_msg);
       } else {      
         // set current point as new goal
         
@@ -288,8 +309,8 @@ void scorbot::Teleop::on_joint_states(const sensor_msgs::JointStateConstPtr& msg
 
         vel_pub.publish(velocities_msg);
         */
-      }
-    }else{
+    //  }
+    //}else{
       /*
       scorbot::JointVelocities velocities_msg;
       velocities_msg.joint_velocities.resize(5, 0);
@@ -304,8 +325,9 @@ void scorbot::Teleop::on_joint_states(const sensor_msgs::JointStateConstPtr& msg
       vel_pub.publish(velocities_msg);
       */
 
-    } 
-  }
+    //} 
+  //}
+  //*/
 }
 
 void scorbot::Teleop::on_controls(const universal_teleop::ControlConstPtr& msg)

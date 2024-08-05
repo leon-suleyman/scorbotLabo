@@ -2,13 +2,22 @@
 #define SCORBOT_H
 
 #include <ros/ros.h>
+#include <math.h>
+#include <string>
+#include <vector>
 #include <universal_teleop/Control.h>
 #include <universal_teleop/Event.h>
 #include <trajectory_msgs/JointTrajectory.h>
 #include <control_msgs/FollowJointTrajectoryActionGoal.h>
+#include <control_msgs/FollowJointTrajectoryActionResult.h>
+#include <actionlib_msgs/GoalID.h>
+#include <actionlib_msgs/GoalStatus.h>
 #include <sensor_msgs/JointState.h>
 #include <std_msgs/Empty.h>
+#include <std_msgs/Int32.h>
+#include <std_msgs/Int32MultiArray.h>
 #include <scorbot/JointVelocities.h>
+#include <scorbot/JointTrajectory.h>
 
 
 namespace scorbot {
@@ -19,12 +28,12 @@ namespace scorbot {
 
       ros::Subscriber joint_trajectory_sub;
       ros::Subscriber joint_states_sub;
-      //ros::Subscriber goal_reached_sub;
+      ros::Subscriber goal_reached_sub;
       ros::Publisher joint_pos_array_pub;
       ros::Publisher trajectory_finished_pub;
       void on_trajectory(const control_msgs::FollowJointTrajectoryActionGoalConstPtr& msg);
       void on_joint_states(const sensor_msgs::JointStateConstPtr& msg);
-      //void on_goal_reached(const std_msgs::EmptyConstPtr& msg);
+      void on_goal_reached(const std_msgs::EmptyConstPtr& msg);
 
       ros::Subscriber sub_events, sub_control;
       ros::Publisher vel_pub, home_pub;
@@ -49,11 +58,14 @@ namespace scorbot {
       std::vector<bool> reached_current_goal;
       int current_goal_index;
       int current_goal_length;
+      std::string trajectory_goal_id;
 
       scorbot::JointVelocities velocities;
       std::vector<int> joint_states;
 
       std_msgs::Empty empty_msg;
+      std_msgs::Int32MultiArray joint_pos_msg;
+      control_msgs::FollowJointTrajectoryActionResult result_msg;
   };
 }
 

@@ -88,8 +88,8 @@ ros::Subscriber<std_msgs::Int32MultiArray> trajectory_sub("/scorbot/joint_path_c
 //control_msgs::FollowJointTrajectoryFeedback trajectory_feedback;
 //ros::Publisher trajectory_feedback_pub("/scorbot/feedback_states", &trajectory_feedback);
 
-//std_msgs::Empty goal_reached_msg;
-//ros::Publisher goal_reached_pub("/scorbot/goal_reached", &goal_reached_msg);
+std_msgs::Empty goal_reached_msg;
+ros::Publisher goal_reached_pub("/scorbot/goal_reached", &goal_reached_msg);
 
 /* debugging */
 std_msgs::Empty empty_msg;
@@ -158,7 +158,7 @@ void setup(void)
 
   nh.advertise(joint_state_pub);
   //nh.advertise(trajectory_feedback_pub);
-  //nh.advertise(goal_reached_pub);
+  nh.advertise(goal_reached_pub);
   nh.advertise(claw_caught_pub);
   
   nh.advertise(debug_pub);
@@ -172,12 +172,9 @@ void setup(void)
 void on_velocities(const scorbot::JointVelocities& vel_msg)
 {  
   current_goal_index = -1; /* desactiva la trayectoria actual */
-  debug_pub.publish(&empty_msg);
   for (int i = 0; i < vel_msg.joint_velocities_length; i++)
   {
     float vel = vel_msg.joint_velocities[i]; /// (vel_msg.scaled_flag ? 1000 : 1);
-    debug_pub.publish(&empty_msg);
-    
     switch(i) {
       case 0:
         if (vel == 0.0) set_position(1, pos_juntas[0]);
@@ -280,11 +277,12 @@ void on_trajectory(const std_msgs::Int32MultiArray& trajectory)
     joint_trajectory_goals[i][4] = trajectory.data[i*NUM_JUNTAS+4];
   }*/
 
-    joint_trajectory_goals[0] = trajectory.data[0];
-    joint_trajectory_goals[1] = trajectory.data[1];
-    joint_trajectory_goals[2] = trajectory.data[2];
-    joint_trajectory_goals[3] = trajectory.data[3];
-    joint_trajectory_goals[4] = trajectory.data[4];
+  /**/
+  joint_trajectory_goals[0] = trajectory.data[0];
+  joint_trajectory_goals[1] = trajectory.data[1];
+  joint_trajectory_goals[2] = trajectory.data[2];
+  joint_trajectory_goals[3] = trajectory.data[3];
+  joint_trajectory_goals[4] = trajectory.data[4];
   
   
   reached_current_goal[0] = false;
@@ -614,8 +612,13 @@ void check_trajectory_goal(void)
       set_position(5, joint_trajectory_goals[current_goal_index][4]);  
       */
     //}
+    reached_current_goal[0] = false;
+    reached_current_goal[1] = false;
+    reached_current_goal[2] = false;
+    reached_current_goal[3] = false;
+    reached_current_goal[4] = false;
     unreached_goal = false;
-    //goal_reached_pub.publish(&goal_reached_msg);
+    goal_reached_pub.publish(&goal_reached_msg);
   }  
 }
 
@@ -636,6 +639,7 @@ void loop(void)
   int clawIsHolding = digitalRead(isHoldingClawPin);
   if(clawIsHolding){
     stateClaw = holdingClaw;
+    claw_caught_pub.publish(&empty_msg);
   }
   delay(100);
 }

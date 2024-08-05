@@ -101,7 +101,10 @@
     <param name="planning_scene_monitor/publish_geometry_updates" value="$(arg publish_monitored_planning_scene)" />
     <param name="planning_scene_monitor/publish_state_updates" value="$(arg publish_monitored_planning_scene)" />
     <param name="planning_scene_monitor/publish_transforms_updates" value="$(arg publish_monitored_planning_scene)" />
+    <!-- Cambios de namespace de algunos topics para que lean segun el paramtro de namespace que agregamos-->
     <remap from="/joint_states" to="$(arg joint_state_namespace)/joint_states"/>
+    <remap from="/scorbot/arm_position_controller/follow_joint_trajectory/result" to="$(arg joint_state_namespace)/arm_position_controller/follow_joint_trajectory/result"/>
+  
   </node>
 
 </launch>
