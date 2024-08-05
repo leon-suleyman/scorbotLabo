@@ -1,5 +1,8 @@
 #include <std_msgs/Empty.h>
+#include <std_msgs/Int32.h>
 #include <std_msgs/Int32MultiArray.h>
+#include <control_msgs/FollowJointTrajectoryActionResult.h>
+#include <actionlib_msgs/GoalID.h>
 #include <math.h>
 #include <scorbot/JointTrajectory.h>
 #include "teleop.h"
@@ -7,8 +10,11 @@
 using namespace std;
 
 #define NUM_JUNTAS (5)
-#define MAX_TRAJECTORY_SIZE (20)
+#define MAX_TRAJECTORY_SIZE (50)
 #define JOINT_GOAL_TOLERANCE (0.01)
+
+#define SUCCESSFUL_TRAJECTORY_EXECUTION (0)
+#define FAILED_TRAJECTORY (1)
 
 /*
 #define RAD2ENC1(x) ((int32_t)(x / (double)0.000034142) + 7000)
@@ -38,7 +44,7 @@ scorbot::Teleop::Teleop(ros::NodeHandle& n)
   joint_trajectory_sub = n.subscribe<control_msgs::FollowJointTrajectoryActionGoal>("/scorbot/arm_position_controller/follow_joint_trajectory/goal", 1, &Teleop::on_trajectory, this);
   //joint_trajectory_pub = n.advertise<scorbot::JointTrajectory>("/scorbot/joint_path_command_enc", 1);
   joint_pos_array_pub = n.advertise<std_msgs::Int32MultiArray>("/scorbot/joint_path_command_enc", 1);
-
+  trajectory_finished_pub = n.advertise<std_msgs::Int32>("/scorbot/trajectory/result", 1);
   //goal_reached_sub = n.subscribe<std_msgs::Empty>("/scorbot/goal_reached", 1, &Teleop::on_goal_reached, this);
 
   claw_catch_pub = n.advertise<std_msgs::Empty>("/scorbot/claw_catch", 1);
@@ -249,8 +255,14 @@ void scorbot::Teleop::on_joint_states(const sensor_msgs::JointStateConstPtr& msg
     if (this_goal_complete) {
       current_goal_index++; // advance to next point
       reached_current_goal = {false,false,false,false,false};
-      if (current_goal_length == current_goal_index) current_goal_index = -1; // completed trajectory
-      else {      
+      if (current_goal_length == current_goal_index){
+        current_goal_index = -1; // completed trajectory
+
+        std_msgs::Int32 result_msg;
+        result_msg.data = SUCCESSFUL_TRAJECTORY_EXECUTION;
+
+        trajectory_finished_pub.publish(&result_msg);
+      } else {      
         // set current point as new goal
         
         std_msgs::Int32MultiArray joint_pos_msg;

@@ -8,8 +8,11 @@ scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.o: /home/lovi/proyectos_robotica/sc
 scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.o: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/include/universal_teleop/Control.h
 scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.o: /home/lovi/proyectos_robotica/scorbot/scorbotLabo/teleop_packages/universal_teleop/devel/include/universal_teleop/Event.h
 scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.o: /opt/ros/noetic/include/actionlib_msgs/GoalID.h
+scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.o: /opt/ros/noetic/include/actionlib_msgs/GoalStatus.h
 scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.o: /opt/ros/noetic/include/control_msgs/FollowJointTrajectoryActionGoal.h
+scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.o: /opt/ros/noetic/include/control_msgs/FollowJointTrajectoryActionResult.h
 scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.o: /opt/ros/noetic/include/control_msgs/FollowJointTrajectoryGoal.h
+scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.o: /opt/ros/noetic/include/control_msgs/FollowJointTrajectoryResult.h
 scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.o: /opt/ros/noetic/include/control_msgs/JointTolerance.h
 scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.o: /opt/ros/noetic/include/ros/advertise_options.h
 scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.o: /opt/ros/noetic/include/ros/advertise_service_options.h
@@ -70,6 +73,7 @@ scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.o: /opt/ros/noetic/include/rosconso
 scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.o: /opt/ros/noetic/include/sensor_msgs/JointState.h
 scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.o: /opt/ros/noetic/include/std_msgs/Empty.h
 scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.o: /opt/ros/noetic/include/std_msgs/Header.h
+scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.o: /opt/ros/noetic/include/std_msgs/Int32.h
 scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.o: /opt/ros/noetic/include/std_msgs/Int32MultiArray.h
 scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.o: /opt/ros/noetic/include/std_msgs/MultiArrayDimension.h
 scorbot/CMakeFiles/teleop.dir/src/teleop.cpp.o: /opt/ros/noetic/include/std_msgs/MultiArrayLayout.h
