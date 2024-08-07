@@ -88,8 +88,8 @@ ros::Subscriber<std_msgs::Int32MultiArray> trajectory_sub("/scorbot/joint_path_c
 //control_msgs::FollowJointTrajectoryFeedback trajectory_feedback;
 //ros::Publisher trajectory_feedback_pub("/scorbot/feedback_states", &trajectory_feedback);
 
-std_msgs::Empty goal_reached_msg;
-ros::Publisher goal_reached_pub("/scorbot/goal_reached", &goal_reached_msg);
+//std_msgs::Empty goal_reached_msg;
+//ros::Publisher goal_reached_pub("/scorbot/goal_reached", &goal_reached_msg);
 
 /* debugging */
 std_msgs::Empty empty_msg;
@@ -158,7 +158,7 @@ void setup(void)
 
   nh.advertise(joint_state_pub);
   //nh.advertise(trajectory_feedback_pub);
-  nh.advertise(goal_reached_pub);
+  //nh.advertise(goal_reached_pub);
   nh.advertise(claw_caught_pub);
   
   nh.advertise(debug_pub);
@@ -618,7 +618,7 @@ void check_trajectory_goal(void)
     reached_current_goal[3] = false;
     reached_current_goal[4] = false;
     unreached_goal = false;
-    goal_reached_pub.publish(&goal_reached_msg);
+    //goal_reached_pub.publish(&goal_reached_msg);
   }  
 }
 
@@ -627,7 +627,7 @@ void check_trajectory_goal(void)
 void loop(void)
 {
   get_pos_juntas();
-  check_trajectory_goal();
+  //check_trajectory_goal();
   
   #if SERIAL_DEBUG
   serial_process();

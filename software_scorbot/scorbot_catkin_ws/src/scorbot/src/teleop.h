@@ -28,12 +28,12 @@ namespace scorbot {
 
       ros::Subscriber joint_trajectory_sub;
       ros::Subscriber joint_states_sub;
-      ros::Subscriber goal_reached_sub;
+      //ros::Subscriber goal_reached_sub;
       ros::Publisher joint_pos_array_pub;
       ros::Publisher trajectory_finished_pub;
       void on_trajectory(const control_msgs::FollowJointTrajectoryActionGoalConstPtr& msg);
       void on_joint_states(const sensor_msgs::JointStateConstPtr& msg);
-      void on_goal_reached(const std_msgs::EmptyConstPtr& msg);
+      //void on_goal_reached(const std_msgs::EmptyConstPtr& msg);
 
       ros::Subscriber sub_events, sub_control;
       ros::Publisher vel_pub, home_pub;
@@ -45,6 +45,7 @@ namespace scorbot {
       ros::Publisher debug_pub;
 
       void on_control_cycle(const ros::TimerEvent& ev);
+      void check_trajectory_progress();
 
     private:
       int control_frequency;
