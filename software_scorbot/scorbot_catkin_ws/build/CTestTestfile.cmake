@@ -7,5 +7,6 @@
 subdirs("gtest")
 subdirs("scorbot_vii_moveit")
 subdirs("scorbot_conector_sim")
+subdirs("testing_scorbot")
 subdirs("scorbot")
 subdirs("scorbot_gazebo_tf")

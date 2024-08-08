@@ -1,0 +1,7 @@
+<launch>
+
+    <include file="$(dirname)/../../scorbot/launch/scorbot_demo_trayectoria.launch"/>
+
+    <node pkg="testing_scorbot" type="testing_scorbot" name="testing_scorbot" output="screen"/>
+
+</launch>
