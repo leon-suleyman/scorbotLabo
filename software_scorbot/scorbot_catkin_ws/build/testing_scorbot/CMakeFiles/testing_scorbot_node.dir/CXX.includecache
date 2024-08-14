@@ -7,6 +7,8 @@
 #IncludeRegexTransform: 
 
 /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/src/testing_scorbot/src/testing_scorbot_node.cpp
+ros/ros.h
+-
 moveit/move_group_interface/move_group_interface.h
 -
 moveit/planning_scene_interface/planning_scene_interface.h
@@ -20,6 +22,8 @@ moveit_msgs/AttachedCollisionObject.h
 moveit_msgs/CollisionObject.h
 -
 moveit_visual_tools/moveit_visual_tools.h
+-
+control_msgs/FollowJointTrajectoryActionResult.h
 -
 
 /opt/ros/noetic/include/actionlib/action_definition.h
@@ -345,6 +349,44 @@ console_bridge/console.h
 /opt/ros/noetic/include/class_loader/console_bridge/console.h
 
 /opt/ros/noetic/include/class_loader/visibility_control.hpp
+
+/opt/ros/noetic/include/control_msgs/FollowJointTrajectoryActionResult.h
+string
+-
+vector
+-
+memory
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+std_msgs/Header.h
+-
+actionlib_msgs/GoalStatus.h
+-
+control_msgs/FollowJointTrajectoryResult.h
+-
+
+/opt/ros/noetic/include/control_msgs/FollowJointTrajectoryResult.h
+string
+-
+vector
+-
+memory
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
 
 /opt/ros/noetic/include/eigen_stl_containers/eigen_stl_containers.h
 eigen_stl_containers/eigen_stl_vector_container.h

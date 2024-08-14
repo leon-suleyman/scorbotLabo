@@ -1,3 +1,6 @@
+
+
+#include <ros/ros.h>
 #include <moveit/move_group_interface/move_group_interface.h>
 #include <moveit/planning_scene_interface/planning_scene_interface.h>
 
@@ -9,15 +12,33 @@
 
 #include <moveit_visual_tools/moveit_visual_tools.h>
 
+#include <control_msgs/FollowJointTrajectoryActionResult.h>
+
 // The circle constant tau = 2*pi. One tau is one rotation in radians.
 const double tau = 2 * M_PI;
-const int test_reps = 10;
+int test_reps = 10;
 int trajectory_index = 0;
+
+std::vector<double> initial_joint_positions;
+std::vector<double> first_pose;
+std::vector<double> second_pose;
+
+ros::Subscriber trayectory_sub;
+
+void on_goal_reached(const control_msgs::FollowJointTrajectoryActionResultConstPtr &msg){
+
+  control_msgs::FollowJointTrajectoryResult result = msg->result;
+  //Cuando lleguemos bien al goal
+  if(result.error_code == result.SUCCESSFUL){
+    //aumentamos el indice
+    trajectory_index++;
+  }
+}
 
 
 int main(int argc, char** argv)
 {
-    ros::init(argc, argv, "move_group_interface_tutorial");
+    ros::init(argc, argv, "testing_scorbot");
     ros::NodeHandle node_handle;
 
     // ROS spinning must be running for the MoveGroupInterface to get information
@@ -29,11 +50,9 @@ int main(int argc, char** argv)
 
     spinner.start();
 
-    // BEGIN_TUTORIAL
-    //
-    // Setup
-    // ^^^^^
-    //
+    trayectory_sub = node_handle.subscribe("/arm_position_controller/follow_joint_trajectory/result", 1, &on_goal_reached);
+
+
     // MoveIt operates on sets of joints called "planning groups" and stores them in an object called
     // the `JointModelGroup`. Throughout MoveIt the terms "planning group" and "joint model group"
     // are used interchangeably.
@@ -55,7 +74,7 @@ int main(int argc, char** argv)
     moveit_visual_tools::MoveItVisualTools visual_tools("base_link");
     Eigen::Isometry3d text_pose = Eigen::Isometry3d::Identity();
     text_pose.translation().z() = 1.0;
-    visual_tools.prompt("Press 'next' in the RvizVisualToolsGui window to continue the demo");
+    //visual_tools.prompt("Press 'next' in the RvizVisualToolsGui window to continue the demo");
 
 
     // To start, we'll create an pointer that references the current robot's state.
@@ -63,23 +82,60 @@ int main(int argc, char** argv)
     moveit::core::RobotStatePtr current_state = move_group_interface.getCurrentState();
     //
     // Next get the current set of joint values for the group.
-    std::vector<double> initial_joint_positions;
     current_state->copyJointGroupPositions(joint_model_group, initial_joint_positions);
 
-    std::vector<double> first_pose = initial_joint_positions;
+    first_pose = initial_joint_positions;
     first_pose[0] = first_pose[0] - tau/4; //a fourth of a rotation
     first_pose[1] = first_pose[1] - tau/4; 
     first_pose[2] = first_pose[2] + tau/4; 
     first_pose[3] = first_pose[3] - tau/4; 
     first_pose[4] = first_pose[4] + tau/4; 
 
-    std::vector<double> second_pose = initial_joint_positions;
+    second_pose = initial_joint_positions;
     second_pose[0] = second_pose[0] + tau/4; 
     second_pose[1] = second_pose[1] - tau/8; 
     second_pose[2] = second_pose[2] - tau/4; 
     second_pose[3] = second_pose[3] + tau/4; 
     second_pose[4] = second_pose[4] - tau/4; 
 
+    do{
+      trajectory_index = 0;
+      move_group_interface.setJointValueTarget(first_pose);
+
+      move_group_interface.setMaxVelocityScalingFactor(0.5);
+      move_group_interface.setMaxAccelerationScalingFactor(0.5);
+
+      moveit::planning_interface::MoveGroupInterface::Plan my_plan;
+      move_group_interface.plan(my_plan);
+
+      move_group_interface.move();
+
+      while(trajectory_index == 0){}
+
+      move_group_interface.setJointValueTarget(second_pose);
+      move_group_interface.plan(my_plan);
+
+      move_group_interface.move();
+
+      while(trajectory_index == 1){}
+
+      move_group_interface.setJointValueTarget(initial_joint_positions);
+      move_group_interface.plan(my_plan);
+
+      move_group_interface.move();
+
+      while(trajectory_index == 2){}
+
+      //al completar una repetición, decrementamos y loopeamos de ser necesario
+      test_reps--;
+    }while(test_reps > 0);
+  
+
+    std::cout << "saliendo del nodo de testing \n";    
+    ros::shutdown();
+    return 0;
+    }
+    /*
     move_group_interface.setJointValueTarget(first_pose);
 
     // We lower the allowed maximum velocity and acceleration to 5% of their maximum.
@@ -100,15 +156,9 @@ int main(int argc, char** argv)
     visual_tools.publishText(text_pose, "Joint Space Goal", rvt::WHITE, rvt::XLARGE);
     visual_tools.publishTrajectoryLine(my_plan.trajectory_, joint_model_group);
     visual_tools.trigger();
-    visual_tools.prompt("Press 'next' in the RvizVisualToolsGui window to continue the demo");
+    //visual_tools.prompt("Press 'next' in the RvizVisualToolsGui window to continue the demo");
+    */
 
-
-    move_group_interface.move();
-
-    std::cout << "saliendo del nodo de testing \n";    
-    ros::shutdown();
-    return 0;
-    }
 
     /*
   // Start the demo

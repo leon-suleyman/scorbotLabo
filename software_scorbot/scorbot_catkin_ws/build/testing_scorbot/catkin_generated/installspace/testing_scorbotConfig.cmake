@@ -177,7 +177,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(testing_scorbot_EXPORTED_TARGETS "")
+set(testing_scorbot_EXPORTED_TARGETS "testing_scorbot_generate_messages_cpp;testing_scorbot_generate_messages_eus;testing_scorbot_generate_messages_lisp;testing_scorbot_generate_messages_nodejs;testing_scorbot_generate_messages_py")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${testing_scorbot_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -185,7 +185,7 @@ foreach(t ${testing_scorbot_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "")
+set(depends "roscpp;std_msgs")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls
@@ -214,7 +214,7 @@ foreach(depend ${depends})
   _list_append_deduplicate(testing_scorbot_EXPORTED_TARGETS ${${testing_scorbot_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "")
+set(pkg_cfg_extras "testing_scorbot-msg-extras.cmake")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${testing_scorbot_DIR}/${extra})

@@ -5,4 +5,4 @@ Description: Description of testing_scorbot
 Version: 0.0.0
 Cflags: 
 Libs: -L${prefix}/lib 
-Requires: 
+Requires: roscpp std_msgs
