@@ -113,21 +113,21 @@ int main(int argc, char** argv)
 
       move_group_interface.move();
 
-      while(trajectory_index == 0){}
+      //while(trajectory_index == 0){}
 
       move_group_interface.setJointValueTarget(second_pose);
       move_group_interface.plan(my_plan);
 
       move_group_interface.move();
 
-      while(trajectory_index == 1){}
+      //while(trajectory_index == 1){}
 
       move_group_interface.setJointValueTarget(initial_joint_positions);
       move_group_interface.plan(my_plan);
 
       move_group_interface.move();
 
-      while(trajectory_index == 2){}
+      //while(trajectory_index == 2){}
 
       //al completar una repetición, decrementamos y loopeamos de ser necesario
       test_reps--;
