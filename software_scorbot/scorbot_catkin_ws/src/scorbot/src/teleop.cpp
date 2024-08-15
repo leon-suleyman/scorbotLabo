@@ -43,6 +43,8 @@ scorbot::Teleop::Teleop(ros::NodeHandle& n)
   override_enabled = slow_mode_enabled = false;
   
   pos_juntas = {0.0,0.0,0.0,0.0,0.0};
+  last_known_pos = pos_juntas;
+
   joint_trajectory_goals = {};
   for(int i = 0; i<MAX_TRAJECTORY_SIZE; i++){
     
@@ -55,6 +57,7 @@ scorbot::Teleop::Teleop(ros::NodeHandle& n)
   current_goal_length = 0;
 
   joint_states.resize(5, 0);
+
   velocities.joint_velocities.resize(5, 0);
   velocities.scaled_flag = false;
 
@@ -253,10 +256,34 @@ void scorbot::Teleop::check_trajectory_progress(){
         
       }
     }
+  }else{
+    bool is_moving = false;
+    //revisamos que esté en moviemiento
+    for(int i = 0; i<5; i++){
+      if(abs(pos_juntas[i] - last_known_pos[i]) > JOINT_GOAL_TOLERANCE){
+        is_moving = true;
+      }
+    }
+    //si no se mueve, pasó algo porque debería estár moviendose
+    if(!is_moving){
+      //asi que volvemos a enviar el mensaje de que se tiene que mover
+      std_msgs::Int32MultiArray joint_pos_msg;
+      joint_pos_msg.data.resize(5);
+
+      joint_pos_msg.data[0] = RAD2ENC1(joint_trajectory_goals[current_goal_index][0]);
+      joint_pos_msg.data[1] = RAD2ENC2(joint_trajectory_goals[current_goal_index][1]);
+      joint_pos_msg.data[2] = RAD2ENC3(joint_trajectory_goals[current_goal_index][2]);
+      joint_pos_msg.data[3] = RAD2ENC4(joint_trajectory_goals[current_goal_index][3]);
+      joint_pos_msg.data[4] = RAD2ENC5(joint_trajectory_goals[current_goal_index][4]);
+
+      joint_pos_array_pub.publish(joint_pos_msg);
+    }
   }
 }
 
 void scorbot::Teleop::on_joint_states(const sensor_msgs::JointStateConstPtr& msg){
+  
+  last_known_pos = pos_juntas;
   
   pos_juntas[0] = msg->position[0];
   pos_juntas[1] = msg->position[1];

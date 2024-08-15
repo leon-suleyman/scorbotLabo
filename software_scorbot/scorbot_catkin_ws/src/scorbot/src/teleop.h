@@ -53,6 +53,7 @@ namespace scorbot {
       bool override_enabled, slow_mode_enabled;
 
       std::vector<double> pos_juntas;
+      std::vector<double> last_known_pos;
 
       std::vector<std::vector<double>> joint_trajectory_goals;
       std::vector<std::vector<double>> joint_trajectory_velocities;
