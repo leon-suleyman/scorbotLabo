@@ -29,9 +29,12 @@ void on_goal_reached(const control_msgs::FollowJointTrajectoryActionResultConstP
 
   control_msgs::FollowJointTrajectoryResult result = msg->result;
   //Cuando lleguemos bien al goal
+    std::cout << "confirmada trayectoria terminada \n";
   if(result.error_code == result.SUCCESSFUL){
     //aumentamos el indice
     trajectory_index++;
+    std::cout << "indice incrementado \n";
+
   }
 }
 
@@ -85,14 +88,14 @@ int main(int argc, char** argv)
     current_state->copyJointGroupPositions(joint_model_group, initial_joint_positions);
 
     first_pose = initial_joint_positions;
-    first_pose[0] = first_pose[0] - tau/4; //a fourth of a rotation
+    //first_pose[0] = first_pose[0] - tau/4; //a fourth of a rotation
     first_pose[1] = first_pose[1] - tau/4; 
     first_pose[2] = first_pose[2] + tau/4; 
     first_pose[3] = first_pose[3] - tau/4; 
     first_pose[4] = first_pose[4] + tau/4; 
 
     second_pose = initial_joint_positions;
-    second_pose[0] = second_pose[0] + tau/4; 
+    //second_pose[0] = second_pose[0] + tau/4; 
     second_pose[1] = second_pose[1] - tau/8; 
     second_pose[2] = second_pose[2] - tau/4; 
     second_pose[3] = second_pose[3] + tau/4; 

@@ -59,7 +59,7 @@ namespace scorbot {
       std::vector<bool> reached_current_goal;
       int current_goal_index;
       int current_goal_length;
-      std::string trajectory_goal_id;
+      actionlib_msgs::GoalID trajectory_goal_id;
 
       scorbot::JointVelocities velocities;
       std::vector<int> joint_states;

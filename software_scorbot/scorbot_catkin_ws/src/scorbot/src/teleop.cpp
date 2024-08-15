@@ -53,7 +53,6 @@ scorbot::Teleop::Teleop(ros::NodeHandle& n)
   reached_current_goal = {false, false, false, false, false};
   current_goal_index = -1;
   current_goal_length = 0;
-  trajectory_goal_id = "";
 
   joint_states.resize(5, 0);
   velocities.joint_velocities.resize(5, 0);
@@ -127,8 +126,7 @@ void scorbot::Teleop::on_trajectory(const control_msgs::FollowJointTrajectoryAct
   current_goal_index = 0;
   
   //salvamos la id del objetivo para despues confirmar que llegamos bien
-  actionlib_msgs::GoalID goal_id = msg->goal_id;
-  trajectory_goal_id = goal_id.id;
+  trajectory_goal_id = msg->goal_id;
   //vamos descascarando el mensaje para llegar a las posiciones
   control_msgs::FollowJointTrajectoryGoal msg_goal = msg->goal;
   trajectory_msgs::JointTrajectory msg_trajectory = msg_goal.trajectory;
@@ -235,8 +233,7 @@ void scorbot::Teleop::check_trajectory_progress(){
 
         actionlib_msgs::GoalStatus goal_status;
         goal_status.status = goal_status.SUCCEEDED;
-        actionlib_msgs::GoalID goal_id;
-        goal_id.id = trajectory_goal_id;
+        goal_status.goal_id = trajectory_goal_id;
         result_msg.status = goal_status;
 
         trajectory_finished_pub.publish(result_msg);
