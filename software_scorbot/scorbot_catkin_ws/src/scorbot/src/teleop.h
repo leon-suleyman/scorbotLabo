@@ -5,17 +5,22 @@
 #include <math.h>
 #include <string>
 #include <vector>
+#include <iostream>
+#include <fstream> 
+
 #include <universal_teleop/Control.h>
 #include <universal_teleop/Event.h>
 #include <trajectory_msgs/JointTrajectory.h>
 #include <control_msgs/FollowJointTrajectoryActionGoal.h>
 #include <control_msgs/FollowJointTrajectoryActionResult.h>
+#include <control_msgs/FollowJointTrajectoryFeedback.h>
 #include <actionlib_msgs/GoalID.h>
 #include <actionlib_msgs/GoalStatus.h>
 #include <sensor_msgs/JointState.h>
 #include <std_msgs/Empty.h>
 #include <std_msgs/Int32.h>
 #include <std_msgs/Int32MultiArray.h>
+#include <std_msgs/String.h>
 #include <scorbot/JointVelocities.h>
 #include <scorbot/JointTrajectory.h>
 
@@ -28,12 +33,15 @@ namespace scorbot {
 
       ros::Subscriber joint_trajectory_sub;
       ros::Subscriber joint_states_sub;
-      //ros::Subscriber goal_reached_sub;
-      ros::Publisher joint_pos_array_pub;
-      ros::Publisher trajectory_finished_pub;
       void on_trajectory(const control_msgs::FollowJointTrajectoryActionGoalConstPtr& msg);
       void on_joint_states(const sensor_msgs::JointStateConstPtr& msg);
-      //void on_goal_reached(const std_msgs::EmptyConstPtr& msg);
+      ros::Publisher joint_pos_array_pub;
+
+
+      ros::Subscriber tolerance_param_sub;
+      ros::Subscriber feedback_filename_sub;
+      void on_tolerance(const std_msgs::Int32ConstPtr& msg);
+      void on_filename(const std_msgs::StringConstPtr& msg);
 
       ros::Subscriber sub_events, sub_control;
       ros::Publisher vel_pub, home_pub;
@@ -51,11 +59,15 @@ namespace scorbot {
       int control_frequency;
       ros::Timer control_timer;
       bool override_enabled, slow_mode_enabled;
+      int joint_goal_tolerance;
+      string filename;
+      int writing_trajectory_index;
 
       std::vector<double> pos_juntas;
       std::vector<double> last_known_pos;
 
       std::vector<std::vector<double>> joint_trajectory_goals;
+      std::vector<std::vector<double>> joint_trajectory_actual_pos;
       std::vector<std::vector<double>> joint_trajectory_velocities;
       std::vector<bool> reached_current_goal;
       int current_goal_index;

@@ -32,8 +32,11 @@ scorbot::Teleop::Teleop(ros::NodeHandle& n)
   joint_trajectory_sub = n.subscribe<control_msgs::FollowJointTrajectoryActionGoal>("/scorbot/arm_position_controller/follow_joint_trajectory/goal", 1, &Teleop::on_trajectory, this);
   //joint_trajectory_pub = n.advertise<scorbot::JointTrajectory>("/scorbot/joint_path_command_enc", 1);
   joint_pos_array_pub = n.advertise<std_msgs::Int32MultiArray>("/scorbot/joint_path_command_enc", 1);
-  trajectory_finished_pub = n.advertise<control_msgs::FollowJointTrajectoryActionResult>("/arm_position_controller/follow_joint_trajectory/result", 1);
   //goal_reached_sub = n.subscribe<std_msgs::Empty>("/scorbot/goal_reached", 1, &Teleop::on_goal_reached, this);
+
+
+  tolerance_param_sub = n.subscribe<std_msgs::Int32>("/scorbot/params/tolerance", 1, &Teleop::on_tolerance, this);
+  feedback_filename_sub = n.subscribe<std_msgs::String>("/scorbot/params/filename", 1, &Teleop::on_filename, this);
 
   claw_catch_pub = n.advertise<std_msgs::Empty>("/scorbot/claw_catch", 1);
   claw_release_pub = n.advertise<std_msgs::Empty>("/scorbot/claw_release", 1);
@@ -46,15 +49,21 @@ scorbot::Teleop::Teleop(ros::NodeHandle& n)
   last_known_pos = pos_juntas;
 
   joint_trajectory_goals = {};
+  joint_trajectory_actual_pos = {};
+  joint_trajectory_velocities = {};
   for(int i = 0; i<MAX_TRAJECTORY_SIZE; i++){
     
     joint_trajectory_goals.push_back({0.0,0.0,0.0,0.0,0.0});
+    joint_trajectory_actual_pos.push_back({0.0,0.0,0.0,0.0,0.0});
     joint_trajectory_velocities.push_back({0.0,0.0,0.0,0.0,0.0});
   }
   //std::vector<std::vector<double>> joint_trajectory_goals(MAX_TRAJECTORY_SIZE, std::vector<double>(NUM_JUNTAS,0.0));
   reached_current_goal = {false, false, false, false, false};
   current_goal_index = -1;
   current_goal_length = 0;
+  joint_goal_tolerance = JOINT_GOAL_TOLERANCE;
+  filename = "";
+  writing_trajectory_index = 0;
 
   joint_states.resize(5, 0);
 
@@ -210,7 +219,7 @@ void scorbot::Teleop::check_trajectory_progress(){
   for (int i = 0; i < NUM_JUNTAS; i++)
   {
     if (!reached_current_goal[i]) {
-      if (abs(joint_trajectory_goals[current_goal_index][i] - pos_juntas[i]) <= JOINT_GOAL_TOLERANCE){
+      if (abs(joint_trajectory_goals[current_goal_index][i] - pos_juntas[i]) <= joint_goal_tolerance){
         reached_current_goal[i] = true;
         there_is_a_change = true;
 
@@ -223,11 +232,32 @@ void scorbot::Teleop::check_trajectory_progress(){
   if(there_is_a_change){
     if (this_goal_complete) {
       std::cout << "completamos el goal " << current_goal_index << "\n";
+
+      //anotamos la posición actual de cada articulación para analizar despues.
+      for(int i = 0; i < 5; i++){
+        joint_trajectory_actual_pos[current_goal_index][i] = pos_juntas[i];
+      }
+
       current_goal_index++; // advance to next point
       reached_current_goal = {false,false,false,false,false};
       if (current_goal_length == current_goal_index){
         current_goal_index = -1; // completed trajectory
 
+        if(filename != ""){
+          string complete_filename = "./test_results/" + filename + "_" + std::to_string(joint_goal_tolerance) + ".txt";
+          std::ofstream out;
+          //std::ios::app es el modo "append" al abrir un archivo, me deja escribir al final del archivo
+          out.open(complete_filename, std::ios::app);
+
+          for(int i = 0; i < current_goal_length; i++){
+            string expected_positions = std::to_string(joint_trajectory_goals[i][0]) + ";" std::to_string(joint_trajectory_goals[i][1]) + ";" std::to_string(joint_trajectory_goals[i][2]) + ";" std::to_string(joint_trajectory_goals[i][3]) + ";" std::to_string(joint_trajectory_goals[i][4]) + ";" + std::to_string(i != current_goal_length) + "\n";
+            string actual_positions = std::to_string(joint_trajectory_actual_pos[i][0]) + ";" std::to_string(joint_trajectory_actual_pos[i][1]) + ";" std::to_string(joint_trajectory_actual_pos[i][2]) + ";" std::to_string(joint_trajectory_actual_pos[i][3]) + ";" std::to_string(joint_trajectory_actual_pos[i][4]) + ";" + std::to_string(i != current_goal_length) + "\n";
+            out << expected_positions + actual_positions;
+          }
+
+          out.close();
+
+        }
         
         control_msgs::FollowJointTrajectoryResult result;
         result.error_code = result.SUCCESSFUL; 
@@ -260,7 +290,7 @@ void scorbot::Teleop::check_trajectory_progress(){
     bool is_moving = false;
     //revisamos que esté en moviemiento
     for(int i = 0; i<5; i++){
-      if(abs(pos_juntas[i] - last_known_pos[i]) > JOINT_GOAL_TOLERANCE){
+      if(abs(pos_juntas[i] - last_known_pos[i]) > joint_goal_tolerance){
         is_moving = true;
       }
     }
@@ -375,6 +405,14 @@ void scorbot::Teleop::on_joint_states(const sensor_msgs::JointStateConstPtr& msg
     //} 
   //}
   //*/
+}
+
+void scorbot::Teleop::on_tolerance(const std_msgs::Int32ConstPtr& msg){
+  joint_goal_tolerance = msg->data;
+}
+
+void scorbot::Teleop::on_filename(const std_msgs::StringConstPtr& msg){
+  filename = msg->data;
 }
 
 void scorbot::Teleop::on_controls(const universal_teleop::ControlConstPtr& msg)

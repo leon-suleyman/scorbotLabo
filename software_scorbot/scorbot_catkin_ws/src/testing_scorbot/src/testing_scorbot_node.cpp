@@ -89,7 +89,7 @@ int main(int argc, char** argv)
 
     first_pose = initial_joint_positions;
     //first_pose[0] = first_pose[0] - tau/4; //a fourth of a rotation
-    first_pose[1] = first_pose[1] - tau/4; 
+    first_pose[1] = first_pose[1] - tau/6; 
     first_pose[2] = first_pose[2] + tau/4; 
     first_pose[3] = first_pose[3] - tau/4; 
     first_pose[4] = first_pose[4] + tau/4; 
