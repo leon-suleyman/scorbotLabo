@@ -19,6 +19,7 @@
 #include <sensor_msgs/JointState.h>
 #include <std_msgs/Empty.h>
 #include <std_msgs/Int32.h>
+#include <std_msgs/Float64.h>
 #include <std_msgs/Int32MultiArray.h>
 #include <std_msgs/String.h>
 #include <scorbot/JointVelocities.h>
@@ -36,11 +37,12 @@ namespace scorbot {
       void on_trajectory(const control_msgs::FollowJointTrajectoryActionGoalConstPtr& msg);
       void on_joint_states(const sensor_msgs::JointStateConstPtr& msg);
       ros::Publisher joint_pos_array_pub;
+      ros::Publisher trajectory_finished_pub;
 
 
       ros::Subscriber tolerance_param_sub;
       ros::Subscriber feedback_filename_sub;
-      void on_tolerance(const std_msgs::Int32ConstPtr& msg);
+      void on_tolerance(const std_msgs::Float64ConstPtr& msg);
       void on_filename(const std_msgs::StringConstPtr& msg);
 
       ros::Subscriber sub_events, sub_control;
@@ -59,8 +61,8 @@ namespace scorbot {
       int control_frequency;
       ros::Timer control_timer;
       bool override_enabled, slow_mode_enabled;
-      int joint_goal_tolerance;
-      string filename;
+      double joint_goal_tolerance;
+      std::string filename;
       int writing_trajectory_index;
 
       std::vector<double> pos_juntas;

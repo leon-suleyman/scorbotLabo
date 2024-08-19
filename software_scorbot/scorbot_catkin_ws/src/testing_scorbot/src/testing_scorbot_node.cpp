@@ -1,6 +1,11 @@
 
 
 #include <ros/ros.h>
+#include <std_msgs/String.h>
+#include <std_msgs/Float64.h>
+#include <iostream>
+#include <fstream> 
+
 #include <moveit/move_group_interface/move_group_interface.h>
 #include <moveit/planning_scene_interface/planning_scene_interface.h>
 
@@ -24,6 +29,7 @@ std::vector<double> first_pose;
 std::vector<double> second_pose;
 
 ros::Subscriber trayectory_sub;
+ros::Publisher tolerance_pub, filename_pub;
 
 void on_goal_reached(const control_msgs::FollowJointTrajectoryActionResultConstPtr &msg){
 
@@ -54,7 +60,8 @@ int main(int argc, char** argv)
     spinner.start();
 
     trayectory_sub = node_handle.subscribe("/arm_position_controller/follow_joint_trajectory/result", 1, &on_goal_reached);
-
+    filename_pub = node_handle.advertise<std_msgs::String>("scorbot/params/filename", 1);
+    tolerance_pub = node_handle.advertise<std_msgs::Float64>("scorbot/params/tolerance", 1);
 
     // MoveIt operates on sets of joints called "planning groups" and stores them in an object called
     // the `JointModelGroup`. Throughout MoveIt the terms "planning group" and "joint model group"
@@ -89,9 +96,9 @@ int main(int argc, char** argv)
 
     first_pose = initial_joint_positions;
     //first_pose[0] = first_pose[0] - tau/4; //a fourth of a rotation
-    first_pose[1] = first_pose[1] - tau/6; 
-    first_pose[2] = first_pose[2] + tau/4; 
-    first_pose[3] = first_pose[3] - tau/4; 
+    first_pose[1] = first_pose[1] - tau/4; 
+    first_pose[2] = first_pose[2] + tau/4 - tau/12; 
+    first_pose[3] = first_pose[3] - tau/4 + tau/12; 
     first_pose[4] = first_pose[4] + tau/4; 
 
     second_pose = initial_joint_positions;
@@ -100,6 +107,10 @@ int main(int argc, char** argv)
     second_pose[2] = second_pose[2] - tau/4; 
     second_pose[3] = second_pose[3] + tau/4; 
     second_pose[4] = second_pose[4] - tau/4; 
+
+    std_msgs::String filename_msg;
+    filename_msg.data = "test_movimiento";
+    filename_pub.publish(filename_msg);
 
     do{
       trajectory_index = 0;

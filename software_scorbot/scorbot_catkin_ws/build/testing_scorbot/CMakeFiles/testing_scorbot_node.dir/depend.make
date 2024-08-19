@@ -252,7 +252,9 @@ testing_scorbot/CMakeFiles/testing_scorbot_node.dir/src/testing_scorbot_node.cpp
 testing_scorbot/CMakeFiles/testing_scorbot_node.dir/src/testing_scorbot_node.cpp.o: /opt/ros/noetic/include/shape_msgs/SolidPrimitive.h
 testing_scorbot/CMakeFiles/testing_scorbot_node.dir/src/testing_scorbot_node.cpp.o: /opt/ros/noetic/include/srdfdom/model.h
 testing_scorbot/CMakeFiles/testing_scorbot_node.dir/src/testing_scorbot_node.cpp.o: /opt/ros/noetic/include/std_msgs/ColorRGBA.h
+testing_scorbot/CMakeFiles/testing_scorbot_node.dir/src/testing_scorbot_node.cpp.o: /opt/ros/noetic/include/std_msgs/Float64.h
 testing_scorbot/CMakeFiles/testing_scorbot_node.dir/src/testing_scorbot_node.cpp.o: /opt/ros/noetic/include/std_msgs/Header.h
+testing_scorbot/CMakeFiles/testing_scorbot_node.dir/src/testing_scorbot_node.cpp.o: /opt/ros/noetic/include/std_msgs/String.h
 testing_scorbot/CMakeFiles/testing_scorbot_node.dir/src/testing_scorbot_node.cpp.o: /opt/ros/noetic/include/tf2/LinearMath/MinMax.h
 testing_scorbot/CMakeFiles/testing_scorbot_node.dir/src/testing_scorbot_node.cpp.o: /opt/ros/noetic/include/tf2/LinearMath/QuadWord.h
 testing_scorbot/CMakeFiles/testing_scorbot_node.dir/src/testing_scorbot_node.cpp.o: /opt/ros/noetic/include/tf2/LinearMath/Quaternion.h

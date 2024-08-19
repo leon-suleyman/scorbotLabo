@@ -4,7 +4,7 @@ using namespace std;
 
 #define NUM_JUNTAS (5)
 #define MAX_TRAJECTORY_SIZE (50)
-#define JOINT_GOAL_TOLERANCE (0.01)
+#define JOINT_GOAL_TOLERANCE (0.005)
 
 /*
 #define RAD2ENC1(x) ((int32_t)(x / (double)0.000034142) + 7000)
@@ -33,9 +33,10 @@ scorbot::Teleop::Teleop(ros::NodeHandle& n)
   //joint_trajectory_pub = n.advertise<scorbot::JointTrajectory>("/scorbot/joint_path_command_enc", 1);
   joint_pos_array_pub = n.advertise<std_msgs::Int32MultiArray>("/scorbot/joint_path_command_enc", 1);
   //goal_reached_sub = n.subscribe<std_msgs::Empty>("/scorbot/goal_reached", 1, &Teleop::on_goal_reached, this);
+  trajectory_finished_pub = n.advertise<control_msgs::FollowJointTrajectoryActionResult>("/arm_position_controller/follow_joint_trajectory/result", 1);
 
 
-  tolerance_param_sub = n.subscribe<std_msgs::Int32>("/scorbot/params/tolerance", 1, &Teleop::on_tolerance, this);
+  tolerance_param_sub = n.subscribe<std_msgs::Float64>("/scorbot/params/tolerance", 1, &Teleop::on_tolerance, this);
   feedback_filename_sub = n.subscribe<std_msgs::String>("/scorbot/params/filename", 1, &Teleop::on_filename, this);
 
   claw_catch_pub = n.advertise<std_msgs::Empty>("/scorbot/claw_catch", 1);
@@ -231,31 +232,32 @@ void scorbot::Teleop::check_trajectory_progress(){
   
   if(there_is_a_change){
     if (this_goal_complete) {
-      std::cout << "completamos el goal " << current_goal_index << "\n";
 
       //anotamos la posición actual de cada articulación para analizar despues.
       for(int i = 0; i < 5; i++){
         joint_trajectory_actual_pos[current_goal_index][i] = pos_juntas[i];
       }
 
+      std::cout << "completamos el goal " << current_goal_index << "\n";
       current_goal_index++; // advance to next point
       reached_current_goal = {false,false,false,false,false};
       if (current_goal_length == current_goal_index){
         current_goal_index = -1; // completed trajectory
 
         if(filename != ""){
-          string complete_filename = "./test_results/" + filename + "_" + std::to_string(joint_goal_tolerance) + ".txt";
-          std::ofstream out;
+          std::cout << "escribiendo resultados \n" ;
+          string complete_filename = "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/testing_results/" + filename + "_" + std::to_string(joint_goal_tolerance) + ".txt";
+          std::ofstream outfile;
           //std::ios::app es el modo "append" al abrir un archivo, me deja escribir al final del archivo
-          out.open(complete_filename, std::ios::app);
+          outfile.open(complete_filename, std::ios::app);
 
           for(int i = 0; i < current_goal_length; i++){
-            string expected_positions = std::to_string(joint_trajectory_goals[i][0]) + ";" std::to_string(joint_trajectory_goals[i][1]) + ";" std::to_string(joint_trajectory_goals[i][2]) + ";" std::to_string(joint_trajectory_goals[i][3]) + ";" std::to_string(joint_trajectory_goals[i][4]) + ";" + std::to_string(i != current_goal_length) + "\n";
-            string actual_positions = std::to_string(joint_trajectory_actual_pos[i][0]) + ";" std::to_string(joint_trajectory_actual_pos[i][1]) + ";" std::to_string(joint_trajectory_actual_pos[i][2]) + ";" std::to_string(joint_trajectory_actual_pos[i][3]) + ";" std::to_string(joint_trajectory_actual_pos[i][4]) + ";" + std::to_string(i != current_goal_length) + "\n";
-            out << expected_positions + actual_positions;
+            string expected_positions = std::to_string(joint_trajectory_goals[i][0]) + ";" + std::to_string(joint_trajectory_goals[i][1]) + ";" + std::to_string(joint_trajectory_goals[i][2]) + ";" + std::to_string(joint_trajectory_goals[i][3]) + ";" + std::to_string(joint_trajectory_goals[i][4]) + ";" + std::to_string(i == current_goal_length-1);
+            string actual_positions = std::to_string(joint_trajectory_actual_pos[i][0]) + ";" + std::to_string(joint_trajectory_actual_pos[i][1]) + ";" + std::to_string(joint_trajectory_actual_pos[i][2]) + ";" + std::to_string(joint_trajectory_actual_pos[i][3]) + ";" + std::to_string(joint_trajectory_actual_pos[i][4]) + ";" + std::to_string(i == current_goal_length-1);
+            outfile << expected_positions + "\n" + actual_positions << std::endl;
           }
 
-          out.close();
+          outfile.close();
 
         }
         
@@ -270,9 +272,9 @@ void scorbot::Teleop::check_trajectory_progress(){
         result_msg.status = goal_status;
 
         trajectory_finished_pub.publish(result_msg);
+
       } else {      
         // set current point as new goal
-        
         std_msgs::Int32MultiArray joint_pos_msg;
         joint_pos_msg.data.resize(5);
 
@@ -407,7 +409,7 @@ void scorbot::Teleop::on_joint_states(const sensor_msgs::JointStateConstPtr& msg
   //*/
 }
 
-void scorbot::Teleop::on_tolerance(const std_msgs::Int32ConstPtr& msg){
+void scorbot::Teleop::on_tolerance(const std_msgs::Float64ConstPtr& msg){
   joint_goal_tolerance = msg->data;
 }
 
