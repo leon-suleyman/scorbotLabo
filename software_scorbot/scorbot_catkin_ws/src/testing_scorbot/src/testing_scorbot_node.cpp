@@ -5,6 +5,7 @@
 #include <std_msgs/Float64.h>
 #include <iostream>
 #include <fstream> 
+#include <string>
 
 #include <moveit/move_group_interface/move_group_interface.h>
 #include <moveit/planning_scene_interface/planning_scene_interface.h>
@@ -95,14 +96,14 @@ int main(int argc, char** argv)
     current_state->copyJointGroupPositions(joint_model_group, initial_joint_positions);
 
     first_pose = initial_joint_positions;
-    //first_pose[0] = first_pose[0] - tau/4; //a fourth of a rotation
+    first_pose[0] = first_pose[0] - tau/4; //a fourth of a rotation
     first_pose[1] = first_pose[1] - tau/4; 
     first_pose[2] = first_pose[2] + tau/4 - tau/12; 
     first_pose[3] = first_pose[3] - tau/4 + tau/12; 
     first_pose[4] = first_pose[4] + tau/4; 
 
     second_pose = initial_joint_positions;
-    //second_pose[0] = second_pose[0] + tau/4; 
+    second_pose[0] = second_pose[0] + tau/4; 
     second_pose[1] = second_pose[1] - tau/8; 
     second_pose[2] = second_pose[2] - tau/4; 
     second_pose[3] = second_pose[3] + tau/4; 
@@ -111,6 +112,15 @@ int main(int argc, char** argv)
     std_msgs::String filename_msg;
     filename_msg.data = "test_movimiento";
     filename_pub.publish(filename_msg);
+
+    double joint_goal_tolerance = 0.01;
+
+    std::string complete_filename = "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/testing_results/test_movimiento_" + std::to_string(joint_goal_tolerance) + ".csv";
+    std::ofstream outfile;
+    //std::ios::app es el modo "append" al abrir un archivo, me deja escribir al final del archivo
+    outfile.open(complete_filename);
+    outfile << "base;shoulder;elbow;pitch;roll;is end pose" << std::endl;
+    outfile.close();
 
     do{
       trajectory_index = 0;

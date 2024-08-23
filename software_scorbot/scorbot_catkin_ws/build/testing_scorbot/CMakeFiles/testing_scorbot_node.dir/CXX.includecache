@@ -17,6 +17,8 @@ iostream
 -
 fstream
 -
+string
+-
 moveit/move_group_interface/move_group_interface.h
 -
 moveit/planning_scene_interface/planning_scene_interface.h
