@@ -115,11 +115,11 @@ int main(int argc, char** argv)
 
     double joint_goal_tolerance = 0.01;
 
-    std::string complete_filename = "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/testing_results/test_movimiento_" + std::to_string(joint_goal_tolerance) + ".csv";
+    std::string complete_filename = "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/testing_results/test_movimiento_" + std::to_string(joint_goal_tolerance) + ".txt";
     std::ofstream outfile;
     //std::ios::app es el modo "append" al abrir un archivo, me deja escribir al final del archivo
     outfile.open(complete_filename);
-    outfile << "base;shoulder;elbow;pitch;roll;is end pose" << std::endl;
+    outfile << "base;shoulder;elbow;pitch;roll;is_end_pose" << std::endl;
     outfile.close();
 
     do{

@@ -3,8 +3,8 @@
 using namespace std;
 
 #define NUM_JUNTAS (5)
-#define MAX_TRAJECTORY_SIZE (50)
-#define JOINT_GOAL_TOLERANCE (0.005)
+#define MAX_TRAJECTORY_SIZE (100)
+#define JOINT_GOAL_TOLERANCE (0.01)
 
 /*
 #define RAD2ENC1(x) ((int32_t)(x / (double)0.000034142) + 7000)
@@ -245,7 +245,7 @@ void scorbot::Teleop::check_trajectory_progress(){
 
         if(filename != ""){
           std::cout << "escribiendo resultados \n" ;
-          string complete_filename = "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/testing_results/" + filename + "_" + std::to_string(joint_goal_tolerance) + ".csv";
+          string complete_filename = "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/testing_results/" + filename + "_" + std::to_string(joint_goal_tolerance) + ".txt";
           std::ofstream outfile;
           //std::ios::app es el modo "append" al abrir un archivo, me deja escribir al final del archivo
           outfile.open(complete_filename, std::ios::app);
