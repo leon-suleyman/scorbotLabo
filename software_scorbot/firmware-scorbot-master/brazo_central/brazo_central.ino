@@ -659,12 +659,12 @@ void setear_constantes(void)
   constants.kd_vel = 0.1;
   constants.vel_max = 3;
   constants.vel_min = 0;
-  constants.kp_pos = 0.003;
-  constants.ki_pos = 0.0005;
+  constants.kp_pos = 0.008;
+  constants.ki_pos = 0.001;
   constants.kd_pos = 0.001;
   //le pongo otras constantes aggresive para cuando estoy muy lejos  */
-  constants.agg_kp_pos = 0.0025;
-  constants.agg_ki_pos = 0.001;
+  constants.agg_kp_pos = 0.007;
+  constants.agg_ki_pos = 0.005;
   constants.agg_kd_pos = 0.001;  
   set_constants(1, constants);
   #endif  
