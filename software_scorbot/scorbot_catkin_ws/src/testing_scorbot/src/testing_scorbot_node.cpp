@@ -6,6 +6,7 @@
 #include <iostream>
 #include <fstream> 
 #include <string>
+#include <unistd.h>
 
 #include <moveit/move_group_interface/move_group_interface.h>
 #include <moveit/planning_scene_interface/planning_scene_interface.h>
@@ -96,63 +97,95 @@ int main(int argc, char** argv)
     current_state->copyJointGroupPositions(joint_model_group, initial_joint_positions);
 
     first_pose = initial_joint_positions;
-    first_pose[0] = first_pose[0] - tau/4; //a fourth of a rotation
+    //first_pose[0] = first_pose[0] - tau/4; //a fourth of a rotation
     first_pose[1] = first_pose[1] - tau/4; 
     first_pose[2] = first_pose[2] + tau/4 - tau/12; 
     first_pose[3] = first_pose[3] - tau/4 + tau/12; 
     first_pose[4] = first_pose[4] + tau/4; 
 
     second_pose = initial_joint_positions;
-    second_pose[0] = second_pose[0] + tau/4; 
+    //second_pose[0] = second_pose[0] + tau/4; 
     second_pose[1] = second_pose[1] - tau/8; 
-    second_pose[2] = second_pose[2] - tau/4; 
-    second_pose[3] = second_pose[3] + tau/4; 
+    second_pose[2] = second_pose[2] - tau/4 + tau/12; 
+    second_pose[3] = second_pose[3] + tau/4 - tau/12; 
     second_pose[4] = second_pose[4] - tau/4; 
 
+    std::string filename = "test_movimiento_sin_base";
     std_msgs::String filename_msg;
-    filename_msg.data = "test_movimiento";
+    filename_msg.data = filename;
     filename_pub.publish(filename_msg);
 
-    double joint_goal_tolerance = 0.01;
+    std::vector<double> tolerance_list = {0.05, 0.025, 0.01, 0.005};
 
-    std::string complete_filename = "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/testing_results/test_movimiento_" + std::to_string(joint_goal_tolerance) + ".txt";
-    std::ofstream outfile;
-    //std::ios::app es el modo "append" al abrir un archivo, me deja escribir al final del archivo
-    outfile.open(complete_filename);
-    outfile << "base;shoulder;elbow;pitch;roll;is_end_pose" << std::endl;
-    outfile.close();
+    for( double joint_goal_tolerance : tolerance_list){
 
-    do{
-      trajectory_index = 0;
-      move_group_interface.setJointValueTarget(first_pose);
+      std_msgs::Float64 tolerance_msg;
+      tolerance_msg.data = joint_goal_tolerance;
+      tolerance_pub.publish(tolerance_msg);
 
-      move_group_interface.setMaxVelocityScalingFactor(0.5);
-      move_group_interface.setMaxAccelerationScalingFactor(0.5);
+      std::string complete_filename = "/home/lovi/proyectos_robotica/scorbot/scorbotLabo/testing_results/" + filename + "_" + std::to_string(joint_goal_tolerance) + ".txt";
+      std::ofstream outfile;
+      //std::ios::app es el modo "append" al abrir un archivo, me deja escribir al final del archivo
+      outfile.open(complete_filename);
+      outfile << "base;shoulder;elbow;pitch;roll;is_end_pose;move_id" << std::endl;
+      outfile.close();
 
-      moveit::planning_interface::MoveGroupInterface::Plan my_plan;
-      move_group_interface.plan(my_plan);
+      std::cout << "testing con tolerancia " << joint_goal_tolerance << '\n';
 
-      move_group_interface.move();
+      do{
+        std::cout << "repetición número " << 11 - test_reps << '\n';
+        trajectory_index = 0;
+        move_group_interface.setJointValueTarget(first_pose);
 
-      //while(trajectory_index == 0){}
+        move_group_interface.setMaxVelocityScalingFactor(0.5);
+        move_group_interface.setMaxAccelerationScalingFactor(0.5);
 
-      move_group_interface.setJointValueTarget(second_pose);
-      move_group_interface.plan(my_plan);
+        moveit::planning_interface::MoveGroupInterface::Plan my_plan;
+        move_group_interface.plan(my_plan);
 
-      move_group_interface.move();
+        move_group_interface.move();
 
-      //while(trajectory_index == 1){}
+        outfile.open(complete_filename, std::ios::app);
+        outfile << "0.0;0.0;0.0;0.0;0.0;2;1" << std::endl;
+        outfile.close();
 
-      move_group_interface.setJointValueTarget(initial_joint_positions);
-      move_group_interface.plan(my_plan);
+        sleep(2);
 
-      move_group_interface.move();
+        //while(trajectory_index == 0){}
 
-      //while(trajectory_index == 2){}
+        move_group_interface.setJointValueTarget(second_pose);
+        move_group_interface.plan(my_plan);
 
-      //al completar una repetición, decrementamos y loopeamos de ser necesario
-      test_reps--;
-    }while(test_reps > 0);
+        move_group_interface.move();
+
+        outfile.open(complete_filename, std::ios::app);
+        outfile << "0.0;0.0;0.0;0.0;0.0;2;2" << std::endl;
+        outfile.close();
+
+        sleep(2);
+
+        //while(trajectory_index == 1){}
+
+        move_group_interface.setJointValueTarget(initial_joint_positions);
+        move_group_interface.plan(my_plan);
+
+        move_group_interface.move();
+
+        outfile.open(complete_filename, std::ios::app);
+        outfile << "0.0;0.0;0.0;0.0;0.0;2;3" << std::endl;
+        outfile.close();
+
+        sleep(2);
+
+        //while(trajectory_index == 2){}
+
+        //al completar una repetición, decrementamos y loopeamos de ser necesario
+        test_reps--;
+      }while(test_reps > 0);
+
+      test_reps = 10;
+    }
+
   
 
     std::cout << "saliendo del nodo de testing \n";    

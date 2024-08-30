@@ -1,0 +1,1 @@
+base;shoulder;elbow;pitch;roll;is_end_pose
