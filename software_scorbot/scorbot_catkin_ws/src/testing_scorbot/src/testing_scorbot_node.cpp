@@ -97,14 +97,14 @@ int main(int argc, char** argv)
     current_state->copyJointGroupPositions(joint_model_group, initial_joint_positions);
 
     first_pose = initial_joint_positions;
-    //first_pose[0] = first_pose[0] - tau/4; //a fourth of a rotation
+    first_pose[0] = first_pose[0] - tau/4; //a fourth of a rotation
     first_pose[1] = first_pose[1] - tau/4; 
     first_pose[2] = first_pose[2] + tau/4 - tau/12; 
     first_pose[3] = first_pose[3] - tau/4 + tau/12; 
     first_pose[4] = first_pose[4] + tau/4; 
 
     second_pose = initial_joint_positions;
-    //second_pose[0] = second_pose[0] + tau/4; 
+    second_pose[0] = second_pose[0] + tau/4; 
     second_pose[1] = second_pose[1] - tau/8; 
     second_pose[2] = second_pose[2] - tau/4 + tau/12; 
     second_pose[3] = second_pose[3] + tau/4 - tau/12; 
@@ -115,7 +115,7 @@ int main(int argc, char** argv)
     filename_msg.data = filename;
     filename_pub.publish(filename_msg);
 
-    std::vector<double> tolerance_list = {0.05, 0.025, 0.01, 0.005};
+    std::vector<double> tolerance_list = {0.05, 0.035, 0.025, 0.02};
 
     for( double joint_goal_tolerance : tolerance_list){
 
@@ -149,7 +149,7 @@ int main(int argc, char** argv)
         outfile << "0.0;0.0;0.0;0.0;0.0;2;1" << std::endl;
         outfile.close();
 
-        sleep(2);
+        sleep(1);
 
         //while(trajectory_index == 0){}
 
@@ -162,7 +162,7 @@ int main(int argc, char** argv)
         outfile << "0.0;0.0;0.0;0.0;0.0;2;2" << std::endl;
         outfile.close();
 
-        sleep(2);
+        sleep(1);
 
         //while(trajectory_index == 1){}
 
@@ -175,7 +175,7 @@ int main(int argc, char** argv)
         outfile << "0.0;0.0;0.0;0.0;0.0;2;3" << std::endl;
         outfile.close();
 
-        sleep(2);
+        sleep(1);
 
         //while(trajectory_index == 2){}
 
