@@ -251,8 +251,8 @@ void scorbot::Teleop::check_trajectory_progress(){
           outfile.open(complete_filename, std::ios::app);
 
           for(int i = 0; i < current_goal_length; i++){
-            string expected_positions = std::to_string(joint_trajectory_goals[i][0]) + ";" + std::to_string(joint_trajectory_goals[i][1]) + ";" + std::to_string(joint_trajectory_goals[i][2]) + ";" + std::to_string(joint_trajectory_goals[i][3]) + ";" + std::to_string(joint_trajectory_goals[i][4]) + ";" + std::to_string(i == current_goal_length-1) + ";0";
-            string actual_positions = std::to_string(joint_trajectory_actual_pos[i][0]) + ";" + std::to_string(joint_trajectory_actual_pos[i][1]) + ";" + std::to_string(joint_trajectory_actual_pos[i][2]) + ";" + std::to_string(joint_trajectory_actual_pos[i][3]) + ";" + std::to_string(joint_trajectory_actual_pos[i][4]) + ";" + std::to_string(i == current_goal_length-1) + ";0";
+            string expected_positions = std::to_string(joint_trajectory_goals[i][0]) + ";" + std::to_string(joint_trajectory_goals[i][1]) + ";" + std::to_string(joint_trajectory_goals[i][2]) + ";" + std::to_string(joint_trajectory_goals[i][3]) + ";" + std::to_string(joint_trajectory_goals[i][4]) + ";" + std::to_string(i == current_goal_length-1) + ";0;0";
+            string actual_positions = std::to_string(joint_trajectory_actual_pos[i][0]) + ";" + std::to_string(joint_trajectory_actual_pos[i][1]) + ";" + std::to_string(joint_trajectory_actual_pos[i][2]) + ";" + std::to_string(joint_trajectory_actual_pos[i][3]) + ";" + std::to_string(joint_trajectory_actual_pos[i][4]) + ";" + std::to_string(i == current_goal_length-1) + ";0;0";
             outfile << expected_positions + "\n" + actual_positions << std::endl;
           }
 

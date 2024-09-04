@@ -7,6 +7,7 @@
 #include <fstream> 
 #include <string>
 #include <unistd.h>
+#include <chrono>
 
 #include <moveit/move_group_interface/move_group_interface.h>
 #include <moveit/planning_scene_interface/planning_scene_interface.h>
@@ -110,7 +111,7 @@ int main(int argc, char** argv)
     second_pose[3] = second_pose[3] + tau/4 - tau/12; 
     second_pose[4] = second_pose[4] - tau/4; 
 
-    std::string filename = "test_movimiento_sin_base";
+    std::string filename = "test_movimiento";
     std_msgs::String filename_msg;
     filename_msg.data = filename;
     filename_pub.publish(filename_msg);
@@ -127,7 +128,7 @@ int main(int argc, char** argv)
       std::ofstream outfile;
       //std::ios::app es el modo "append" al abrir un archivo, me deja escribir al final del archivo
       outfile.open(complete_filename);
-      outfile << "base;shoulder;elbow;pitch;roll;is_end_pose;move_id" << std::endl;
+      outfile << "base;shoulder;elbow;pitch;roll;is_end_pose;move_id;time_elapsed" << std::endl;
       outfile.close();
 
       std::cout << "testing con tolerancia " << joint_goal_tolerance << '\n';
@@ -143,41 +144,54 @@ int main(int argc, char** argv)
         moveit::planning_interface::MoveGroupInterface::Plan my_plan;
         move_group_interface.plan(my_plan);
 
+
+        std::chrono::steady_clock::time_point time_start = std::chrono::steady_clock::now();
         move_group_interface.move();
+        std::chrono::steady_clock::time_point time_end = std::chrono::steady_clock::now();
+
+        double duration = std::chrono::duration_cast<std::chrono::seconds>(time_end - time_start).count();
 
         outfile.open(complete_filename, std::ios::app);
-        outfile << "0.0;0.0;0.0;0.0;0.0;2;1" << std::endl;
+        outfile << "0.0;0.0;0.0;0.0;0.0;2;1;" << duration << std::endl;
         outfile.close();
 
-        sleep(1);
+        std::cout << "movimiento 1 tomó " << duration << " segundos" << std::endl; 
 
-        //while(trajectory_index == 0){}
+        sleep(1);
 
         move_group_interface.setJointValueTarget(second_pose);
         move_group_interface.plan(my_plan);
 
+        time_start = std::chrono::steady_clock::now();
         move_group_interface.move();
+        time_end = std::chrono::steady_clock::now();
+
+        duration = std::chrono::duration_cast<std::chrono::seconds>(time_end - time_start).count();
 
         outfile.open(complete_filename, std::ios::app);
-        outfile << "0.0;0.0;0.0;0.0;0.0;2;2" << std::endl;
+        outfile << "0.0;0.0;0.0;0.0;0.0;2;2;" << duration << std::endl;
         outfile.close();
 
-        sleep(1);
+        std::cout << "movimiento 2 tomó " << duration << " segundos" << std::endl; 
 
-        //while(trajectory_index == 1){}
+        sleep(1);
 
         move_group_interface.setJointValueTarget(initial_joint_positions);
         move_group_interface.plan(my_plan);
 
+        time_start = std::chrono::steady_clock::now();
         move_group_interface.move();
+        time_end = std::chrono::steady_clock::now();
+
+        duration = std::chrono::duration_cast<std::chrono::seconds>(time_end - time_start).count();
 
         outfile.open(complete_filename, std::ios::app);
-        outfile << "0.0;0.0;0.0;0.0;0.0;2;3" << std::endl;
+        outfile << "0.0;0.0;0.0;0.0;0.0;2;3;" << duration << std::endl;
         outfile.close();
 
-        sleep(1);
+        std::cout << "movimiento 3 tomó " << duration << " segundos" << std::endl; 
 
-        //while(trajectory_index == 2){}
+        sleep(1);
 
         //al completar una repetición, decrementamos y loopeamos de ser necesario
         test_reps--;
