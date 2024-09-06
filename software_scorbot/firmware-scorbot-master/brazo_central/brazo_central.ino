@@ -227,6 +227,7 @@ void on_catch(const std_msgs::Empty& msg){
       stateClaw = closedClaw;
     }else if(clawIsHolding){
       stateClaw = holdingClaw;
+      claw_caught_pub.publish(&empty_msg);
     }
     digitalWrite(sendInterruptToClawPin, 0);
   }
@@ -637,7 +638,7 @@ void loop(void)
   publish_state();
   #endif
   int clawIsHolding = digitalRead(isHoldingClawPin);
-  if(clawIsHolding){
+  if(clawIsHolding && stateClaw == closedClaw){
     stateClaw = holdingClaw;
     claw_caught_pub.publish(&empty_msg);
   }

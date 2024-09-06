@@ -197,8 +197,8 @@ void effectiveCatchSensor1(){
   if(stateClaw == closingClaw){
     stateClaw = waitingForSecondSensorClaw;
   }else if (stateClaw == waitingForFirstSensorClaw){
-    pos -= 5;
-    servo.write(pos);
+    //pos -= 5;
+    //servo.write(pos);
 
     stateClaw = holdingClaw;
     reportState(0,1);
@@ -212,8 +212,8 @@ void effectiveCatchSensor2(){
   if(stateClaw == closingClaw){
     stateClaw = waitingForFirstSensorClaw;
   }else if (stateClaw == waitingForSecondSensorClaw){
-    pos -= 5;
-    servo.write(pos);
+    //pos -= 5;
+    //servo.write(pos);
 
     stateClaw = holdingClaw;
     reportState(0,1);

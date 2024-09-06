@@ -1013,6 +1013,19 @@ visualization_msgs_generate_messages_eus/fast:
 .PHONY : visualization_msgs_generate_messages_eus/fast
 
 #=============================================================================
+# Target rules for targets named testing_claw_node
+
+# Build rule for target.
+testing_claw_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testing_claw_node
+.PHONY : testing_claw_node
+
+# fast build rule for target.
+testing_claw_node/fast:
+	$(MAKE) -f testing_scorbot/CMakeFiles/testing_claw_node.dir/build.make testing_scorbot/CMakeFiles/testing_claw_node.dir/build
+.PHONY : testing_claw_node/fast
+
+#=============================================================================
 # Target rules for targets named graph_msgs_generate_messages_lisp
 
 # Build rule for target.
@@ -2312,6 +2325,7 @@ help:
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... object_recognition_msgs_generate_messages_lisp"
 	@echo "... visualization_msgs_generate_messages_eus"
+	@echo "... testing_claw_node"
 	@echo "... graph_msgs_generate_messages_lisp"
 	@echo "... moveit_msgs_generate_messages_nodejs"
 	@echo "... actionlib_msgs_generate_messages_cpp"

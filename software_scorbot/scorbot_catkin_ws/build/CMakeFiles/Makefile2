@@ -279,6 +279,7 @@ scorbot_vii_moveit/clean: scorbot_vii_moveit/CMakeFiles/_catkin_empty_exported_t
 # Recursive "all" directory target.
 testing_scorbot/all: testing_scorbot/CMakeFiles/testing_scorbot_generate_messages.dir/all
 testing_scorbot/all: testing_scorbot/CMakeFiles/testing_scorbot_node.dir/all
+testing_scorbot/all: testing_scorbot/CMakeFiles/testing_claw_node.dir/all
 
 .PHONY : testing_scorbot/all
 
@@ -327,6 +328,7 @@ testing_scorbot/clean: testing_scorbot/CMakeFiles/moveit_msgs_generate_messages_
 testing_scorbot/clean: testing_scorbot/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
 testing_scorbot/clean: testing_scorbot/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/clean
 testing_scorbot/clean: testing_scorbot/CMakeFiles/visualization_msgs_generate_messages_eus.dir/clean
+testing_scorbot/clean: testing_scorbot/CMakeFiles/testing_claw_node.dir/clean
 testing_scorbot/clean: testing_scorbot/CMakeFiles/graph_msgs_generate_messages_lisp.dir/clean
 testing_scorbot/clean: testing_scorbot/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/clean
 testing_scorbot/clean: testing_scorbot/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/clean
@@ -1118,7 +1120,7 @@ testing_scorbot/CMakeFiles/testing_scorbot_gennodejs.dir/clean:
 testing_scorbot/CMakeFiles/testing_scorbot_generate_messages_eus.dir/all: scorbot_conector_sim/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 	$(MAKE) -f testing_scorbot/CMakeFiles/testing_scorbot_generate_messages_eus.dir/build.make testing_scorbot/CMakeFiles/testing_scorbot_generate_messages_eus.dir/depend
 	$(MAKE) -f testing_scorbot/CMakeFiles/testing_scorbot_generate_messages_eus.dir/build.make testing_scorbot/CMakeFiles/testing_scorbot_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/build/CMakeFiles --progress-num=32 "Built target testing_scorbot_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/build/CMakeFiles --progress-num=34 "Built target testing_scorbot_generate_messages_eus"
 .PHONY : testing_scorbot/CMakeFiles/testing_scorbot_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1284,7 +1286,7 @@ testing_scorbot/CMakeFiles/graph_msgs_generate_messages_eus.dir/clean:
 testing_scorbot/CMakeFiles/testing_scorbot_node.dir/all:
 	$(MAKE) -f testing_scorbot/CMakeFiles/testing_scorbot_node.dir/build.make testing_scorbot/CMakeFiles/testing_scorbot_node.dir/depend
 	$(MAKE) -f testing_scorbot/CMakeFiles/testing_scorbot_node.dir/build.make testing_scorbot/CMakeFiles/testing_scorbot_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/build/CMakeFiles --progress-num=33,34 "Built target testing_scorbot_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/build/CMakeFiles --progress-num=35,36 "Built target testing_scorbot_node"
 .PHONY : testing_scorbot/CMakeFiles/testing_scorbot_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2140,6 +2142,33 @@ visualization_msgs_generate_messages_eus: testing_scorbot/CMakeFiles/visualizati
 testing_scorbot/CMakeFiles/visualization_msgs_generate_messages_eus.dir/clean:
 	$(MAKE) -f testing_scorbot/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make testing_scorbot/CMakeFiles/visualization_msgs_generate_messages_eus.dir/clean
 .PHONY : testing_scorbot/CMakeFiles/visualization_msgs_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target testing_scorbot/CMakeFiles/testing_claw_node.dir
+
+# All Build rule for target.
+testing_scorbot/CMakeFiles/testing_claw_node.dir/all:
+	$(MAKE) -f testing_scorbot/CMakeFiles/testing_claw_node.dir/build.make testing_scorbot/CMakeFiles/testing_claw_node.dir/depend
+	$(MAKE) -f testing_scorbot/CMakeFiles/testing_claw_node.dir/build.make testing_scorbot/CMakeFiles/testing_claw_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/build/CMakeFiles --progress-num=32,33 "Built target testing_claw_node"
+.PHONY : testing_scorbot/CMakeFiles/testing_claw_node.dir/all
+
+# Build rule for subdir invocation for target.
+testing_scorbot/CMakeFiles/testing_claw_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 testing_scorbot/CMakeFiles/testing_claw_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/build/CMakeFiles 0
+.PHONY : testing_scorbot/CMakeFiles/testing_claw_node.dir/rule
+
+# Convenience name for target.
+testing_claw_node: testing_scorbot/CMakeFiles/testing_claw_node.dir/rule
+
+.PHONY : testing_claw_node
+
+# clean rule for target.
+testing_scorbot/CMakeFiles/testing_claw_node.dir/clean:
+	$(MAKE) -f testing_scorbot/CMakeFiles/testing_claw_node.dir/build.make testing_scorbot/CMakeFiles/testing_claw_node.dir/clean
+.PHONY : testing_scorbot/CMakeFiles/testing_claw_node.dir/clean
 
 #=============================================================================
 # Target rules for target testing_scorbot/CMakeFiles/graph_msgs_generate_messages_lisp.dir

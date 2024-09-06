@@ -455,6 +455,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "testing_scorbot/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/DependInfo.cmake"
   "testing_scorbot/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/DependInfo.cmake"
   "testing_scorbot/CMakeFiles/visualization_msgs_generate_messages_eus.dir/DependInfo.cmake"
+  "testing_scorbot/CMakeFiles/testing_claw_node.dir/DependInfo.cmake"
   "testing_scorbot/CMakeFiles/graph_msgs_generate_messages_lisp.dir/DependInfo.cmake"
   "testing_scorbot/CMakeFiles/moveit_msgs_generate_messages_nodejs.dir/DependInfo.cmake"
   "testing_scorbot/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/DependInfo.cmake"

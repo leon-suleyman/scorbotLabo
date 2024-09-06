@@ -753,6 +753,21 @@ visualization_msgs_generate_messages_eus/fast:
 .PHONY : visualization_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
+testing_scorbot/CMakeFiles/testing_claw_node.dir/rule:
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 testing_scorbot/CMakeFiles/testing_claw_node.dir/rule
+.PHONY : testing_scorbot/CMakeFiles/testing_claw_node.dir/rule
+
+# Convenience name for target.
+testing_claw_node: testing_scorbot/CMakeFiles/testing_claw_node.dir/rule
+
+.PHONY : testing_claw_node
+
+# fast build rule for target.
+testing_claw_node/fast:
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/build && $(MAKE) -f testing_scorbot/CMakeFiles/testing_claw_node.dir/build.make testing_scorbot/CMakeFiles/testing_claw_node.dir/build
+.PHONY : testing_claw_node/fast
+
+# Convenience name for target.
 testing_scorbot/CMakeFiles/graph_msgs_generate_messages_lisp.dir/rule:
 	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 testing_scorbot/CMakeFiles/graph_msgs_generate_messages_lisp.dir/rule
 .PHONY : testing_scorbot/CMakeFiles/graph_msgs_generate_messages_lisp.dir/rule
@@ -1517,6 +1532,33 @@ tf2_msgs_generate_messages_eus/fast:
 	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/build && $(MAKE) -f testing_scorbot/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make testing_scorbot/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
 .PHONY : tf2_msgs_generate_messages_eus/fast
 
+src/testing_claw_node.o: src/testing_claw_node.cpp.o
+
+.PHONY : src/testing_claw_node.o
+
+# target to build an object file
+src/testing_claw_node.cpp.o:
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/build && $(MAKE) -f testing_scorbot/CMakeFiles/testing_claw_node.dir/build.make testing_scorbot/CMakeFiles/testing_claw_node.dir/src/testing_claw_node.cpp.o
+.PHONY : src/testing_claw_node.cpp.o
+
+src/testing_claw_node.i: src/testing_claw_node.cpp.i
+
+.PHONY : src/testing_claw_node.i
+
+# target to preprocess a source file
+src/testing_claw_node.cpp.i:
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/build && $(MAKE) -f testing_scorbot/CMakeFiles/testing_claw_node.dir/build.make testing_scorbot/CMakeFiles/testing_claw_node.dir/src/testing_claw_node.cpp.i
+.PHONY : src/testing_claw_node.cpp.i
+
+src/testing_claw_node.s: src/testing_claw_node.cpp.s
+
+.PHONY : src/testing_claw_node.s
+
+# target to generate assembly for a file
+src/testing_claw_node.cpp.s:
+	cd /home/lovi/proyectos_robotica/scorbot/scorbotLabo/software_scorbot/scorbot_catkin_ws/build && $(MAKE) -f testing_scorbot/CMakeFiles/testing_claw_node.dir/build.make testing_scorbot/CMakeFiles/testing_claw_node.dir/src/testing_claw_node.cpp.s
+.PHONY : src/testing_claw_node.cpp.s
+
 src/testing_scorbot_node.o: src/testing_scorbot_node.cpp.o
 
 .PHONY : src/testing_scorbot_node.o
@@ -1595,6 +1637,7 @@ help:
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... object_recognition_msgs_generate_messages_lisp"
 	@echo "... visualization_msgs_generate_messages_eus"
+	@echo "... testing_claw_node"
 	@echo "... graph_msgs_generate_messages_lisp"
 	@echo "... moveit_msgs_generate_messages_nodejs"
 	@echo "... actionlib_msgs_generate_messages_cpp"
@@ -1647,6 +1690,9 @@ help:
 	@echo "... tf2_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... tf2_msgs_generate_messages_eus"
+	@echo "... src/testing_claw_node.o"
+	@echo "... src/testing_claw_node.i"
+	@echo "... src/testing_claw_node.s"
 	@echo "... src/testing_scorbot_node.o"
 	@echo "... src/testing_scorbot_node.i"
 	@echo "... src/testing_scorbot_node.s"
