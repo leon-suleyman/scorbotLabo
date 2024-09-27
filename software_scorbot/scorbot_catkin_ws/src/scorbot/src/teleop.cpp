@@ -4,7 +4,7 @@ using namespace std;
 
 #define NUM_JUNTAS (5)
 #define MAX_TRAJECTORY_SIZE (100)
-#define JOINT_GOAL_TOLERANCE (0.01)
+#define JOINT_GOAL_TOLERANCE (0.03)
 
 /*
 #define RAD2ENC1(x) ((int32_t)(x / (double)0.000034142) + 7000)
