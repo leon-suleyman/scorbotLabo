@@ -111,7 +111,7 @@ int main(int argc, char** argv)
     second_pose[3] = second_pose[3] + tau/4 - tau/12; 
     second_pose[4] = second_pose[4] - tau/4; 
 
-    std::string filename = "test_movimiento";
+    std::string filename = "demo_a_grabar";
     std_msgs::String filename_msg;
     filename_msg.data = filename;
     filename_pub.publish(filename_msg);
@@ -195,7 +195,7 @@ int main(int argc, char** argv)
 
         //al completar una repetición, decrementamos y loopeamos de ser necesario
         test_reps--;
-      }while(test_reps > 0);
+      }while(test_reps > 11);
 
       test_reps = 10;
     }

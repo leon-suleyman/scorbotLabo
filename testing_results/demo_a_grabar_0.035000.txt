@@ -1,0 +1,4 @@
+base;shoulder;elbow;pitch;roll;is_end_pose;move_id;time_elapsed
+0.0;0.0;0.0;0.0;0.0;2;1;0
+0.0;0.0;0.0;0.0;0.0;2;2;0
+0.0;0.0;0.0;0.0;0.0;2;3;0
