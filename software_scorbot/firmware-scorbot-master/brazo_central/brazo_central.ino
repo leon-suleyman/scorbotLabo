@@ -627,6 +627,9 @@ void check_trajectory_goal(void)
 /******************** main loop ***********************/
 void loop(void)
 {
+  #if SERIAL_DEBUG
+  Serial.println("checkeando posiciones");
+  #endif
   get_pos_juntas();
   //check_trajectory_goal();
   
