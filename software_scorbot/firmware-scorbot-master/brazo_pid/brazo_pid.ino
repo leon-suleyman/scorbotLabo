@@ -400,7 +400,7 @@ void update_position(void)
   }
   
   pid_pos.Compute();
-  SERIAL_DBG(Serial.println("PID pos: "); Serial.println(pid_pos_status.output()));
+  SERIAL_DBG(Serial.print("pos;"); Serial.println(pid_pos_status.output()));
   if (pid_pos_status.enable) set_pid_speed(pid_pos_status.output);
   pid_pos_status.time_delta = 0;
   //pid_pos_status.pos_delta = 0;
@@ -421,7 +421,7 @@ void update_vel(void)
   //Serial.print((double)pid_vel_status.pos_delta); Serial.print(" "); Serial.println((double)pid_vel_status.time_delta);
   pid_vel_status.input = (double)pid_vel_status.pos_delta / (double)pid_vel_status.time_delta; // cuenta encoder por ms
   pid_vel.Compute();
-  SERIAL_DBG(Serial.println("PID vel: "); Serial.println(pid_vel_status.output()));  
+  SERIAL_DBG(Serial.print("vel;"); Serial.println(pid_vel_status.output()));  
   if (pid_vel_status.enable) set_speed((pid_vel_status.output < 0 ? -1 : 1), (int)abs(pid_vel_status.output) + pid_constants.pwm_min);
   
   pid_vel_status.time_delta = 0;
