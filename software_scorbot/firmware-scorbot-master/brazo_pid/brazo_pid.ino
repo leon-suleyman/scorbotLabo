@@ -22,7 +22,7 @@
 #define EEPROM_JOINT_ADDRESS 0
 #define EEPROM_CONSTANTS 1
 
-#define SERIAL_DEBUG 0
+#define SERIAL_DEBUG 1
 
 #if (SERIAL_DEBUG)
 #define SERIAL_DBG(x) x
@@ -61,6 +61,19 @@ PID pid_vel(&pid_vel_status.input, &pid_vel_status.output, &pid_vel_status.setpo
 PID pid_pos(&pid_pos_status.input, &pid_pos_status.output, &pid_pos_status.setpoint, 0, 0, 0, DIRECT);
 int home_status, prev_home_status;
 bool homing = false;
+
+/*variables del testing de PID*/
+enum : byte {VEL, POS, NONE} testing_pid = NONE;
+enum : byte {BACK, HOME, FORTH, HOME_AGAIN, NO} testing_direction = NO;
+bool testing_pid_vel_init = false;
+bool testing_pid_pos_init = false;
+int reps = 0;
+long timeOld = 0;
+int test_objective_pos = 0;
+int prev_pos_error = 0;
+int test_home_pos = 0;
+int home_objective_error_pos = 0;
+
 
 
 void setup() {  
@@ -281,6 +294,7 @@ void process_serial(void) {
   
   else if (c == 'h') buscar_home();
   else if (c == 't'){
+    SERIAL_DBG(Serial.println("comienzo test de PID: "));
     int reps = 10;
     while(reps > 0){
       set_pid_pos(10000);
@@ -298,6 +312,7 @@ void process_serial(void) {
       delay(5000);
       reps--;
     }
+    SERIAL_DBG(Serial.println("termino test de PID"));
   }
 }
 
@@ -400,7 +415,7 @@ void update_position(void)
   }
   
   pid_pos.Compute();
-  SERIAL_DBG(Serial.print("pos;"); Serial.println(pid_pos_status.output()));
+  SERIAL_DBG(Serial.print("pos;"); Serial.println(pid_pos_status.output));
   if (pid_pos_status.enable) set_pid_speed(pid_pos_status.output);
   pid_pos_status.time_delta = 0;
   //pid_pos_status.pos_delta = 0;
@@ -421,7 +436,7 @@ void update_vel(void)
   //Serial.print((double)pid_vel_status.pos_delta); Serial.print(" "); Serial.println((double)pid_vel_status.time_delta);
   pid_vel_status.input = (double)pid_vel_status.pos_delta / (double)pid_vel_status.time_delta; // cuenta encoder por ms
   pid_vel.Compute();
-  SERIAL_DBG(Serial.print("vel;"); Serial.println(pid_vel_status.output()));  
+  SERIAL_DBG(Serial.print("vel;"); Serial.println(pid_vel_status.output));  
   if (pid_vel_status.enable) set_speed((pid_vel_status.output < 0 ? -1 : 1), (int)abs(pid_vel_status.output) + pid_constants.pwm_min);
   
   pid_vel_status.time_delta = 0;
@@ -503,10 +518,102 @@ void loop() {
   if (homing) {
     if (check_home()) Serial.println("iupi");
   }
+
+  //PID testing routines
+  if(testing_pid == VEL){
+    if(five_seconds_from(timeOld)){
+      int speed = 100;
+      int dir;
+      switch(testing_direction){
+        case HOME_AGAIN:
+          if(reps >  0){
+            dir = -1;
+            testing_direction = FORTH;
+            reps--;
+          }else{
+            dir = 1;
+            speed = 0;
+            testing_direction = NO;
+            testing_pid = NONE;
+          }
+          break;
+        case BACK:
+          dir = -1;
+          testing_direction = HOME_AGAIN;
+        case HOME:
+          dir = 1;
+          testing_direction = BACK;
+          break;
+        case FORTH:
+          dir = 1;
+          testing_direction = HOME;
+          break;
+      }
+      timeOld = millis();
+      set_speed(dir,speed);
+    }
+
+  }
   
+  if(testing_pid_vel_init){
+    reps = 10;
+    testing_pid = VEL;
+    testing_direction = FORTH;
+    timeOld = millis();
+    set_speed(-1, 100);
+    testing_pid_vel_init = false;
+  }
+
+  if(testing_pid == POS){
+    int current_pos_error = abs(abs(pid_pos_status.input) - abs(test_objective_pos));
+    if(current_pos_error == prev_pos_error){
+      switch(testing_direction){
+        case HOME_AGAIN:
+          if(reps >  0){
+            test_objective_pos = -1000;
+            testing_direction = FORTH;
+            reps--;
+          }else{
+            test_objective_pos = test_home_pos;
+            testing_direction = NO;
+            testing_pid = NONE;
+          }
+          break;
+        case BACK:
+          test_objective_pos = test_home_pos;
+          testing_direction = HOME_AGAIN;
+        case HOME:
+          test_objective_pos = 1000;
+          testing_direction = BACK;
+          break;
+        case FORTH:
+          test_objective_pos = test_home_pos;
+          testing_direction = HOME;
+          break; 
+      }
+      prev_pos_error = home_objective_error_pos;
+      set_pid_pos(test_objective_pos);
+    }else{
+      prev_pos_error = current_pos_error;
+    }
+  }
+
+  if(testing_pid_pos_init){
+    reps = 10;
+    testing_pid = POS;
+    testing_direction = FORTH;
+    test_home_pos = pid_pos_status.input;
+    test_objective_pos = -1000;
+    home_objective_error_pos = abs(abs(test_home_pos) - abs(test_objective_pos));
+    prev_pos_error = home_objective_error_pos;
+    set_pid_pos(test_objective_pos);
+  }
+
   /* procesar comandos */
   process_serial();
   //  set_speed(1, 64);
 }
 
-
+bool five_seconds_from(long time){
+  return (millis() > (time + 5000));
+}
