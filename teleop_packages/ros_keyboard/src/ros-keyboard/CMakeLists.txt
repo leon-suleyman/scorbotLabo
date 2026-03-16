@@ -1,13 +1,22 @@
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.14.4)
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 17)
+endif()
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
 project(keyboard)
 
-find_package(catkin REQUIRED COMPONENTS roscpp std_msgs message_generation)
-find_package(SDL REQUIRED)
-set(LIBS ${SDL_LIBRARY})
+find_package(rosidl_default_generator REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(message_generation REQUIRED)
+find_package(sdl2_vendor REQUIRED)
+find_package(sdl2_custom REQUIRED)
 
-include_directories(include
- ${catkin_INCLUDE_DIRS}
-)
+target_include_directories(keyboard 
+  "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>"
+   "$<INSTALL_INTERFACE:include/${PROJECT_NAME}>")
 
 #######################################
 ## Declare ROS messages and services ##
@@ -18,33 +27,27 @@ add_message_files(
   Key.msg
 )
 
-generate_messages(
+rosidl_generate_interfaces(
   DEPENDENCIES
   std_msgs
-)
-
-###################################
-## catkin specific configuration ##
-###################################
-
-catkin_package(
-  # INCLUDE_DIRS include
-  # LIBRARIES keyboard
-  CATKIN_DEPENDS roscpp std_msgs message_runtime
-  DEPENDS SDL
 )
 
 ###########
 ## Build ##
 ###########
 
-include_directories(${catkin_INCLUDE_DIRS} ${SDL_INCLUDE_DIR})
+
 
 add_executable(keyboard src/main.cpp src/keyboard.cpp)
 
+target_include_directories(keyboard 
+"$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>"
+  "$<INSTALL_INTERFACE:include/${PROJECT_NAME}>")
+
 target_link_libraries(keyboard
-  ${LIBS}
-  ${catkin_LIBRARIES}
+  rclcpp::rclcpp
+  ${std_msgs_TARGETS}
+  SDL2::SDL2
 )
 
 add_dependencies(keyboard keyboard_gencpp)
@@ -55,7 +58,15 @@ add_dependencies(keyboard keyboard_gencpp)
 
 
 install(TARGETS keyboard
-  ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-  LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-)
+  LIBRARY DESTINATION "lib/${PROJECT_NAME}"
+  ARCHIVE DESTINATION "lib/${PROJECT_NAME}"
+  RUNTIME DESTINATION "bin/${PROJECT_NAME}")
+
+ament_export_targets(keyboard)
+ament_export_dependencies(
+  "rclcpp"
+  "std_msgs"
+  "sdl2_vendor"
+  "sdl2_custom")
+
+ament_package();
