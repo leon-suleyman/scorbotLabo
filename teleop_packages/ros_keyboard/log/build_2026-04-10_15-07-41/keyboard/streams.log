@@ -1,0 +1,59 @@
+[0.016s] Invoking command in '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard -- -j8 -l8
+[0.067s] [35m[1mConsolidate compiler generated dependencies of target keyboard[0m
+[0.093s] [ 66%] [32mBuilding CXX object CMakeFiles/keyboard.dir/src/keyboard.cpp.o[0m
+[0.093s] [ 66%] [32mBuilding CXX object CMakeFiles/keyboard.dir/src/main.cpp.o[0m
+[1.196s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/keyboard.cpp:[m[K In constructor ‘[01m[Kkeyboard::Keyboard::Keyboard(int, int)[m[K’:
+[1.196s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/keyboard.cpp:6:3:[m[K [01;31m[Kerror: [m[K‘[01m[KSDL_EnableKeyRepeat[m[K’ was not declared in this scope
+[1.196s]     6 |   [01;31m[KSDL_EnableKeyRepeat[m[K( repeat_delay, repeat_interval );
+[1.196s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.228s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/keyboard.cpp:7:3:[m[K [01;31m[Kerror: [m[K‘[01m[KSDL_WM_SetCaption[m[K’ was not declared in this scope
+[1.228s]     7 |   [01;31m[KSDL_WM_SetCaption[m[K("ROS keyboard input", NULL);
+[1.228s]       |   [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.263s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/keyboard.cpp:8:12:[m[K [01;31m[Kerror: [m[K‘[01m[KSDL_SetVideoMode[m[K’ was not declared in this scope; did you mean ‘[01m[KSDL_ScaleMode[m[K’?
+[1.263s]     8 |   window = [01;31m[KSDL_SetVideoMode[m[K(100, 100, 0, 0);
+[1.263s]       |            [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[1.263s]       |            [32m[KSDL_ScaleMode[m[K
+[1.279s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/keyboard.cpp:[m[K In member function ‘[01m[Kbool keyboard::Keyboard::get_key(bool&, bool&, uint16_t&, uint16_t&)[m[K’:
+[1.279s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/keyboard.cpp:32:9:[m[K [01;31m[Kerror: [m[K‘[01m[KSDL_Flip[m[K’ was not declared in this scope; did you mean ‘[01m[KSDL_blit[m[K’?
+[1.279s]    32 |         [01;31m[KSDL_Flip[m[K(window);
+[1.279s]       |         [01;31m[K^~~~~~~~[m[K
+[1.279s]       |         [32m[KSDL_blit[m[K
+[1.384s] gmake[2]: *** [CMakeFiles/keyboard.dir/build.make:90: CMakeFiles/keyboard.dir/src/keyboard.cpp.o] Error 1
+[1.384s] gmake[2]: *** Waiting for unfinished jobs....
+[3.132s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[3.132s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/main.cpp:17:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<rclcpp::Node>[m[K’ has no member named ‘[01m[Kparam[m[K’
+[3.133s]    17 |   n.[01;31m[Kparam[m[K<bool>("allow_repeat", allow_repeat, false); // disable by default
+[3.133s]       |     [01;31m[K^~~~~[m[K
+[3.133s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/main.cpp:17:11:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kbool[m[K’
+[3.133s]    17 |   n.param<[01;31m[Kbool[m[K>("allow_repeat", allow_repeat, false); // disable by default
+[3.133s]       |           [01;31m[K^~~~[m[K
+[3.133s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/main.cpp:18:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<rclcpp::Node>[m[K’ has no member named ‘[01m[Kparam[m[K’
+[3.133s]    18 |   n.[01;31m[Kparam[m[K<int>("repeat_delay", repeat_delay, SDL_DEFAULT_REPEAT_DELAY);
+[3.133s]       |     [01;31m[K^~~~~[m[K
+[3.133s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/main.cpp:18:11:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kint[m[K’
+[3.133s]    18 |   n.param<[01;31m[Kint[m[K>("repeat_delay", repeat_delay, SDL_DEFAULT_REPEAT_DELAY);
+[3.133s]       |           [01;31m[K^~~[m[K
+[3.133s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/main.cpp:19:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<rclcpp::Node>[m[K’ has no member named ‘[01m[Kparam[m[K’
+[3.133s]    19 |   n.[01;31m[Kparam[m[K<int>("repeat_interval", repeat_interval, SDL_DEFAULT_REPEAT_INTERVAL);
+[3.133s]       |     [01;31m[K^~~~~[m[K
+[3.134s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/main.cpp:19:11:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kint[m[K’
+[3.134s]    19 |   n.param<[01;31m[Kint[m[K>("repeat_interval", repeat_interval, SDL_DEFAULT_REPEAT_INTERVAL);
+[3.134s]       |           [01;31m[K^~~[m[K
+[3.134s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/main.cpp:33:38:[m[K [01;31m[Kerror: [m[K‘[01m[Know[m[K’ is not a member of ‘[01m[Krclcpp::Time[m[K’
+[3.134s]    33 |       k.header.stamp = rclcpp::Time::[01;31m[Know[m[K();
+[3.134s]       |                                      [01;31m[K^~~[m[K
+[3.142s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/main.cpp:35:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_down[m[K’ was not declared in this scope; did you mean ‘[01m[Kpub_dowm[m[K’?
+[3.142s]    35 |         [01;31m[Kpub_down[m[K->publish(k);
+[3.143s]       |         [01;31m[K^~~~~~~~[m[K
+[3.143s]       |         [32m[Kpub_dowm[m[K
+[3.144s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/main.cpp:40:13:[m[K [01;31m[Kerror: [m[K‘[01m[KspinAll[m[K’ is not a member of ‘[01m[Krclcpp[m[K’; did you mean ‘[01m[Kspin[m[K’?
+[3.144s]    40 |     rclcpp::[01;31m[KspinAll[m[K(n, 0s);
+[3.144s]       |             [01;31m[K^~~~~~~[m[K
+[3.145s]       |             [32m[Kspin[m[K
+[3.145s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/main.cpp:44:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[3.145s]    44 |   [01;31m[Kros[m[K::waitForShutdown();
+[3.145s]       |   [01;31m[K^~~[m[K
+[4.049s] gmake[2]: *** [CMakeFiles/keyboard.dir/build.make:76: CMakeFiles/keyboard.dir/src/main.cpp.o] Error 1
+[4.049s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/keyboard.dir/all] Error 2
+[4.049s] gmake: *** [Makefile:146: all] Error 2
+[4.053s] Invoked command in '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard -- -j8 -l8

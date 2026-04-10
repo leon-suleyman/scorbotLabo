@@ -1,0 +1,30 @@
+[0.014s] Invoking command in '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard -- -j8 -l8
+[0.066s] [35m[1mConsolidate compiler generated dependencies of target keyboard[0m
+[0.086s] [ 66%] [32mBuilding CXX object CMakeFiles/keyboard.dir/src/main.cpp.o[0m
+[0.086s] [ 66%] [32mBuilding CXX object CMakeFiles/keyboard.dir/src/keyboard.cpp.o[0m
+[0.097s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/main.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kros/ros.hpp: No such file or directory
+[0.097s]     1 | #include [01;31m[K<ros/ros.hpp>[m[K
+[0.097s]       |          [01;31m[K^~~~~~~~~~~~~[m[K
+[0.097s] compilation terminated.
+[0.098s] gmake[2]: *** [CMakeFiles/keyboard.dir/build.make:76: CMakeFiles/keyboard.dir/src/main.cpp.o] Error 1
+[0.098s] gmake[2]: *** Waiting for unfinished jobs....
+[1.107s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/keyboard.cpp:[m[K In constructor ‘[01m[Kkeyboard::Keyboard::Keyboard(int, int)[m[K’:
+[1.107s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/keyboard.cpp:6:3:[m[K [01;31m[Kerror: [m[K‘[01m[KSDL_EnableKeyRepeat[m[K’ was not declared in this scope
+[1.107s]     6 |   [01;31m[KSDL_EnableKeyRepeat[m[K( repeat_delay, repeat_interval );
+[1.107s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.137s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/keyboard.cpp:7:3:[m[K [01;31m[Kerror: [m[K‘[01m[KSDL_WM_SetCaption[m[K’ was not declared in this scope
+[1.137s]     7 |   [01;31m[KSDL_WM_SetCaption[m[K("ROS keyboard input", NULL);
+[1.137s]       |   [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.165s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/keyboard.cpp:8:12:[m[K [01;31m[Kerror: [m[K‘[01m[KSDL_SetVideoMode[m[K’ was not declared in this scope; did you mean ‘[01m[KSDL_ScaleMode[m[K’?
+[1.166s]     8 |   window = [01;31m[KSDL_SetVideoMode[m[K(100, 100, 0, 0);
+[1.166s]       |            [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[1.166s]       |            [32m[KSDL_ScaleMode[m[K
+[1.181s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/keyboard.cpp:[m[K In member function ‘[01m[Kbool keyboard::Keyboard::get_key(bool&, bool&, uint16_t&, uint16_t&)[m[K’:
+[1.181s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/keyboard.cpp:32:9:[m[K [01;31m[Kerror: [m[K‘[01m[KSDL_Flip[m[K’ was not declared in this scope; did you mean ‘[01m[KSDL_blit[m[K’?
+[1.181s]    32 |         [01;31m[KSDL_Flip[m[K(window);
+[1.181s]       |         [01;31m[K^~~~~~~~[m[K
+[1.181s]       |         [32m[KSDL_blit[m[K
+[1.276s] gmake[2]: *** [CMakeFiles/keyboard.dir/build.make:90: CMakeFiles/keyboard.dir/src/keyboard.cpp.o] Error 1
+[1.276s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/keyboard.dir/all] Error 2
+[1.276s] gmake: *** [Makefile:146: all] Error 2
+[1.280s] Invoked command in '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard -- -j8 -l8

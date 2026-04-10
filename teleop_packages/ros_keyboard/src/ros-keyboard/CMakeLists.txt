@@ -7,66 +7,67 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 endif()
 project(keyboard)
 
-find_package(rosidl_default_generator REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
-find_package(message_generation REQUIRED)
 find_package(sdl2_vendor REQUIRED)
 find_package(sdl2_custom REQUIRED)
 
-target_include_directories(keyboard 
-  "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>"
-   "$<INSTALL_INTERFACE:include/${PROJECT_NAME}>")
+find_package(keyboard_msgs REQUIRED)
 
 #######################################
 ## Declare ROS messages and services ##
 #######################################
 
-add_message_files(
-  FILES
-  Key.msg
-)
-
-rosidl_generate_interfaces(
-  DEPENDENCIES
-  std_msgs
-)
 
 ###########
 ## Build ##
 ###########
 
-
-
 add_executable(keyboard src/main.cpp src/keyboard.cpp)
 
-target_include_directories(keyboard 
+#set(msg_files "msg/Key.msg")
+#
+#rosidl_generate_interfaces(${PROJECT_NAME}
+#  ${msg_files}
+#  DEPENDENCIES
+#  std_msgs
+#)
+#
+#rosidl_target_interfaces(keyboard
+#  ${PROJECT_NAME} "rosidl_typesupport_cpp")
+
+
+target_include_directories(keyboard PUBLIC
 "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>"
-  "$<INSTALL_INTERFACE:include/${PROJECT_NAME}>")
+"$<INSTALL_INTERFACE:include/${PROJECT_NAME}>")
 
 target_link_libraries(keyboard
-  rclcpp::rclcpp
-  ${std_msgs_TARGETS}
-  SDL2::SDL2
+rclcpp::rclcpp
+${std_msgs_TARGETS}
+SDL2::SDL2
+${keyboard_msgs_TARGETS}
 )
 
-add_dependencies(keyboard keyboard_gencpp)
+
+#add_dependencies(keyboard keyboard_gencpp)
 
 #############
 ## Install ##
 #############
 
 
-install(TARGETS keyboard
+install(TARGETS keyboard EXPORT export_keyboard
   LIBRARY DESTINATION "lib/${PROJECT_NAME}"
   ARCHIVE DESTINATION "lib/${PROJECT_NAME}"
   RUNTIME DESTINATION "bin/${PROJECT_NAME}")
 
-ament_export_targets(keyboard)
-ament_export_dependencies(
-  "rclcpp"
-  "std_msgs"
-  "sdl2_vendor"
-  "sdl2_custom")
-
-ament_package();
+  ament_export_dependencies(
+    "rclcpp"
+    "std_msgs"
+    "sdl2_vendor"
+    "sdl2_custom"
+    "ros_keyboard_msgs")
+    
+  ament_export_targets(export_keyboard)
+ament_package()

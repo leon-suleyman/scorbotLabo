@@ -1,0 +1,6 @@
+{
+  "package_name": "keyboard_msgs",
+  "non_idl_tuples": [
+    "/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros_keyboard_msgs:msg/Key.msg"
+  ]
+}
