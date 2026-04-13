@@ -18,6 +18,8 @@ namespace keyboard {
       bool get_key(bool& new_event, bool& pressed, uint16_t& code, uint16_t& modifiers);
 
     private:
+      //SDL_Window* window;
+      SDL_Window* TrueWindow;
       SDL_Surface* window;
   };    
 }

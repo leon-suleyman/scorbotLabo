@@ -1,0 +1,241 @@
+[0.010s] Invoking command in '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros_keyboard_msgs -DCMAKE_INSTALL_PREFIX=/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs
+[0.119s] -- The C compiler identification is GNU 11.4.0
+[0.184s] -- The CXX compiler identification is GNU 11.4.0
+[0.193s] -- Detecting C compiler ABI info
+[0.274s] -- Detecting C compiler ABI info - done
+[0.283s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.283s] -- Detecting C compile features
+[0.284s] -- Detecting C compile features - done
+[0.287s] -- Detecting CXX compiler ABI info
+[0.382s] -- Detecting CXX compiler ABI info - done
+[0.390s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.391s] -- Detecting CXX compile features
+[0.391s] -- Detecting CXX compile features - done
+[0.403s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.571s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.676s] -- Found std_msgs: 4.9.1 (/opt/ros/humble/share/std_msgs/cmake)
+[0.720s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.727s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.737s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.756s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.775s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.809s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.127s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.529s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.685s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.709s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.712s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.741s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.741s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.742s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.742s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.764s] -- Found PythonExtra: .so  
+[1.887s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.912s] -- Added test 'lint_cmake' to check CMake code style
+[1.914s] -- Added test 'xmllint' to check XML markup files
+[1.917s] -- Configuring done
+[1.952s] -- Generating done
+[1.965s] -- Build files have been written to: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard_msgs
+[1.972s] Invoked command in '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros_keyboard_msgs -DCMAKE_INSTALL_PREFIX=/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs
+[1.974s] Invoking command in '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard_msgs -- -j8 -l8
+[2.015s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.026s] [  9%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[2.026s] [  9%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.037s] [  9%] Built target ament_cmake_python_copy_keyboard_msgs
+[2.366s] running egg_info
+[2.367s] creating keyboard_msgs.egg-info
+[2.367s] writing keyboard_msgs.egg-info/PKG-INFO
+[2.367s] writing dependency_links to keyboard_msgs.egg-info/dependency_links.txt
+[2.367s] writing top-level names to keyboard_msgs.egg-info/top_level.txt
+[2.367s] writing manifest file 'keyboard_msgs.egg-info/SOURCES.txt'
+[2.369s] reading manifest file 'keyboard_msgs.egg-info/SOURCES.txt'
+[2.370s] writing manifest file 'keyboard_msgs.egg-info/SOURCES.txt'
+[2.396s] [  9%] Built target ament_cmake_python_build_keyboard_msgs_egg
+[3.924s] [  9%] Built target keyboard_msgs__rs
+[3.929s] [ 12%] [32mBuilding C object CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c.o[0m
+[3.953s] [ 12%] Built target keyboard_msgs__cpp
+[3.966s] [ 21%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.966s] [ 21%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.966s] [ 21%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[4.006s] [ 25%] [32m[1mLinking C shared library libkeyboard_msgs__rosidl_generator_c.so[0m
+[4.052s] [ 25%] Built target keyboard_msgs__rosidl_generator_c
+[4.065s] [ 28%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.068s] [ 34%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.068s] [ 34%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[5.803s] [ 37%] [32mBuilding CXX object CMakeFiles/keyboard_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/keyboard_msgs/msg/key__type_support.cpp.o[0m
+[5.970s] [ 40%] [32mBuilding CXX object CMakeFiles/keyboard_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/keyboard_msgs/msg/key__type_support.cpp.o[0m
+[6.004s] [ 43%] [32m[1mLinking CXX shared library libkeyboard_msgs__rosidl_typesupport_c.so[0m
+[6.053s] [ 43%] Built target keyboard_msgs__rosidl_typesupport_c
+[6.102s] [ 46%] [32m[1mLinking CXX shared library libkeyboard_msgs__rosidl_typesupport_cpp.so[0m
+[6.145s] [ 46%] Built target keyboard_msgs__rosidl_typesupport_cpp
+[6.781s] [ 50%] [32mBuilding CXX object CMakeFiles/keyboard_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/keyboard_msgs/msg/detail/key__type_support.cpp.o[0m
+[6.787s] [ 53%] [32mBuilding CXX object CMakeFiles/keyboard_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/keyboard_msgs/msg/detail/dds_fastrtps/key__type_support.cpp.o[0m
+[6.855s] [ 56%] [32mBuilding C object CMakeFiles/keyboard_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/keyboard_msgs/msg/detail/key__type_support.c.o[0m
+[6.877s] [ 59%] [32mBuilding CXX object CMakeFiles/keyboard_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/keyboard_msgs/msg/detail/key__type_support_c.cpp.o[0m
+[6.910s] [ 62%] [32m[1mLinking C shared library libkeyboard_msgs__rosidl_typesupport_introspection_c.so[0m
+[6.951s] [ 62%] Built target keyboard_msgs__rosidl_typesupport_introspection_c
+[7.222s] [ 65%] [32m[1mLinking CXX shared library libkeyboard_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[7.284s] [ 71%] [32m[1mLinking CXX shared library libkeyboard_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[7.284s] [ 71%] [32m[1mLinking CXX shared library libkeyboard_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[7.304s] [ 71%] Built target keyboard_msgs__rosidl_typesupport_introspection_cpp
+[7.409s] [ 71%] Built target keyboard_msgs__rosidl_typesupport_fastrtps_cpp
+[7.409s] [ 71%] Built target keyboard_msgs__rosidl_typesupport_fastrtps_c
+[7.440s] [ 71%] Built target keyboard_msgs
+[7.471s] [ 75%] [34m[1mGenerating Python code for ROS interfaces[0m
+[10.501s] [ 75%] Built target keyboard_msgs__py
+[10.525s] [ 78%] [32mBuilding C object CMakeFiles/keyboard_msgs__rosidl_generator_py.dir/rosidl_generator_py/keyboard_msgs/msg/_key_s.c.o[0m
+[10.688s] [ 81%] [32m[1mLinking C shared library rosidl_generator_py/keyboard_msgs/libkeyboard_msgs__rosidl_generator_py.so[0m
+[10.741s] [ 81%] Built target keyboard_msgs__rosidl_generator_py
+[10.765s] [ 90%] [32mBuilding C object CMakeFiles/keyboard_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/keyboard_msgs/_keyboard_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[10.765s] [ 90%] [32mBuilding C object CMakeFiles/keyboard_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/keyboard_msgs/_keyboard_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[10.766s] [ 90%] [32mBuilding C object CMakeFiles/keyboard_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/keyboard_msgs/_keyboard_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[10.877s] [100%] [32m[1mLinking C shared library rosidl_generator_py/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[10.877s] [100%] [32m[1mLinking C shared library rosidl_generator_py/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[10.877s] [100%] [32m[1mLinking C shared library rosidl_generator_py/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[10.921s] [100%] Built target keyboard_msgs__rosidl_typesupport_fastrtps_c__pyext
+[10.921s] [100%] Built target keyboard_msgs__rosidl_typesupport_introspection_c__pyext
+[10.921s] [100%] Built target keyboard_msgs__rosidl_typesupport_c__pyext
+[10.934s] Invoked command in '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard_msgs -- -j8 -l8
+[10.946s] Invoking command in '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard_msgs
+[10.954s] -- Install configuration: ""
+[10.954s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/ament_index/resource_index/rosidl_interfaces/keyboard_msgs
+[10.954s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs
+[10.955s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg
+[10.955s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/key.h
+[10.955s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/rosidl_generator_c__visibility_control.h
+[10.955s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail
+[10.955s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__type_support.h
+[10.955s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__struct.h
+[10.955s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__functions.c
+[10.956s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__functions.h
+[10.956s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/environment/library_path.sh
+[10.956s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/environment/library_path.dsv
+[10.956s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_generator_c.so
+[10.957s] -- Set runtime path of "/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_generator_c.so" to ""
+[10.957s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs
+[10.957s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg
+[10.957s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail
+[10.957s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__rosidl_typesupport_fastrtps_c.h
+[10.957s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[10.958s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_fastrtps_c.so
+[10.958s] -- Set runtime path of "/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[10.958s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs
+[10.958s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg
+[10.958s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[10.958s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/key.hpp
+[10.958s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail
+[10.958s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__type_support.hpp
+[10.959s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__builder.hpp
+[10.959s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__traits.hpp
+[10.959s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__struct.hpp
+[10.959s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs
+[10.959s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg
+[10.959s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[10.959s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail
+[10.959s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__rosidl_typesupport_fastrtps_cpp.hpp
+[10.960s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/dds_fastrtps
+[10.960s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_fastrtps_cpp.so
+[10.960s] -- Set runtime path of "/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[10.960s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs
+[10.960s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg
+[10.961s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[10.961s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail
+[10.961s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__type_support.c
+[10.961s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__rosidl_typesupport_introspection_c.h
+[10.961s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_introspection_c.so
+[10.962s] -- Set runtime path of "/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_introspection_c.so" to ""
+[10.962s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_c.so
+[10.962s] -- Set runtime path of "/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_c.so" to ""
+[10.962s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs
+[10.962s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg
+[10.962s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail
+[10.963s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__type_support.cpp
+[10.963s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__rosidl_typesupport_introspection_cpp.hpp
+[10.963s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_introspection_cpp.so
+[10.963s] -- Set runtime path of "/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[10.963s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_cpp.so
+[10.964s] -- Set runtime path of "/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_cpp.so" to ""
+[10.964s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/environment/pythonpath.sh
+[10.964s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/environment/pythonpath.dsv
+[10.964s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs-0.0.0-py3.10.egg-info
+[10.964s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[10.964s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[10.964s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[10.964s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[10.965s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs
+[10.965s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[10.965s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/_keyboard_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[10.965s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/_keyboard_msgs_s.ep.rosidl_typesupport_c.c
+[10.965s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/msg
+[10.965s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/msg/_key.py
+[10.965s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/msg/__init__.py
+[10.966s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/msg/_key_s.c
+[10.966s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[10.966s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[10.966s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/__init__.py
+[10.966s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/_keyboard_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[10.966s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/libkeyboard_msgs__rosidl_generator_py.so
+[11.010s] Listing '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs'...
+[11.010s] Compiling '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/__init__.py'...
+[11.010s] Listing '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/msg'...
+[11.010s] Compiling '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/msg/__init__.py'...
+[11.010s] Compiling '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/msg/_key.py'...
+[11.015s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[11.015s] -- Set runtime path of "/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[11.015s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[11.016s] -- Set runtime path of "/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[11.016s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[11.016s] -- Set runtime path of "/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[11.016s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_generator_py.so
+[11.017s] -- Set runtime path of "/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_generator_py.so" to ""
+[11.017s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/ament_index/resource_index/rust_packages/keyboard_msgs
+[11.017s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/rust
+[11.017s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/rust/Cargo.toml
+[11.017s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/rust/src
+[11.018s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/rust/src/msg.rs
+[11.018s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/rust/src/lib.rs
+[11.018s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/rust/src/msg
+[11.018s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/rust/src/msg/rmw.rs
+[11.018s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/rust/build.rs
+[11.018s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/msg/Key.idl
+[11.018s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/msg/Key.msg
+[11.019s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/ament_index/resource_index/package_run_dependencies/keyboard_msgs
+[11.019s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/ament_index/resource_index/parent_prefix_path/keyboard_msgs
+[11.019s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/environment/ament_prefix_path.sh
+[11.019s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/environment/ament_prefix_path.dsv
+[11.019s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/environment/path.sh
+[11.019s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/environment/path.dsv
+[11.019s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/local_setup.bash
+[11.020s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/local_setup.sh
+[11.020s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/local_setup.zsh
+[11.020s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/local_setup.dsv
+[11.020s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/package.dsv
+[11.020s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/ament_index/resource_index/packages/keyboard_msgs
+[11.020s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/export_keyboard_msgs__rosidl_generator_cExport.cmake
+[11.021s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/export_keyboard_msgs__rosidl_generator_cExport-noconfig.cmake
+[11.021s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/export_keyboard_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[11.021s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/export_keyboard_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[11.021s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/export_keyboard_msgs__rosidl_generator_cppExport.cmake
+[11.021s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/export_keyboard_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[11.021s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/export_keyboard_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[11.022s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgs__rosidl_typesupport_introspection_cExport.cmake
+[11.022s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[11.022s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgs__rosidl_typesupport_cExport.cmake
+[11.022s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[11.022s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[11.022s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[11.023s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgs__rosidl_typesupport_cppExport.cmake
+[11.023s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[11.023s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/export_keyboard_msgs__rosidl_generator_pyExport.cmake
+[11.023s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/export_keyboard_msgs__rosidl_generator_pyExport-noconfig.cmake
+[11.023s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/rosidl_cmake-extras.cmake
+[11.023s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[11.024s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[11.024s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[11.024s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[11.024s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[11.024s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[11.024s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgsConfig.cmake
+[11.024s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgsConfig-version.cmake
+[11.025s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/package.xml
+[11.028s] Invoked command in '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard_msgs

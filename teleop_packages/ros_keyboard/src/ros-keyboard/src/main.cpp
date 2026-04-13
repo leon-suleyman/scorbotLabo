@@ -14,9 +14,9 @@ int main(int argc, char **argv)
   bool allow_repeat = false;
   int repeat_delay, repeat_interval;
 
-  n->param<bool>("allow_repeat", allow_repeat, false); // disable by default
-  n->param<int>("repeat_delay", repeat_delay, SDL_DEFAULT_REPEAT_DELAY);
-  n->param<int>("repeat_interval", repeat_interval, SDL_DEFAULT_REPEAT_INTERVAL);
+  n->get_parameter_or("allow_repeat", allow_repeat, false);
+  n->get_parameter_or("repeat_delay", repeat_delay, 0);
+  n->get_parameter_or("repeat_interval", repeat_interval, 0);
 
   if (!allow_repeat)
     repeat_delay = 0; // disable

@@ -1,0 +1,39 @@
+-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Found ament_cmake_core: 1.3.14 (/opt/ros/humble/share/ament_cmake_core/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found keyboard_msgs: 0.0.0 (/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard
+[ 66%] [32mBuilding CXX object CMakeFiles/keyboard.dir/src/keyboard.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/keyboard.dir/src/main.cpp.o[0m
+[100%] [32m[1mLinking CXX executable keyboard[0m
+[100%] Built target keyboard
+-- Install configuration: ""
+-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/bin/keyboard/keyboard
+-- Set runtime path of "/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/bin/keyboard/keyboard" to ""
+-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/ament_index/resource_index/package_run_dependencies/keyboard
+-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/ament_index/resource_index/parent_prefix_path/keyboard
+-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/keyboard/environment/ament_prefix_path.sh
+-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/keyboard/environment/ament_prefix_path.dsv
+-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/keyboard/environment/path.sh
+-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/keyboard/environment/path.dsv
+-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/keyboard/local_setup.bash
+-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/keyboard/local_setup.sh
+-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/keyboard/local_setup.zsh
+-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/keyboard/local_setup.dsv
+-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/keyboard/package.dsv
+-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/ament_index/resource_index/packages/keyboard
+-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/keyboard/cmake/export_keyboardExport.cmake
+-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/keyboard/cmake/export_keyboardExport-noconfig.cmake
+-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/keyboard/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/keyboard/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/keyboard/cmake/keyboardConfig.cmake
+-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/keyboard/cmake/keyboardConfig-version.cmake
+-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/keyboard/package.xml

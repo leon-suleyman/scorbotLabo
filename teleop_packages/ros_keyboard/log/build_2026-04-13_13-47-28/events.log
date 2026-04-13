@@ -1,0 +1,417 @@
+[0.000000] (-) TimerEvent: {}
+[0.000529] (keyboard_msgs) JobQueued: {'identifier': 'keyboard_msgs', 'dependencies': OrderedDict()}
+[0.000559] (keyboard) JobQueued: {'identifier': 'keyboard', 'dependencies': OrderedDict([('keyboard_msgs', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs')])}
+[0.000581] (keyboard_msgs) JobStarted: {'identifier': 'keyboard_msgs'}
+[0.008079] (keyboard_msgs) JobProgress: {'identifier': 'keyboard_msgs', 'progress': 'cmake'}
+[0.008830] (keyboard_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros_keyboard_msgs', '-DCMAKE_INSTALL_PREFIX=/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs'], 'cwd': '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'leon'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/leon'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2046'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=2ae3610b79efd68473263cb469dcbe46'), ('COLORTERM', 'truecolor'), ('LIBVIRT_DEFAULT_URI', 'qemu:///system'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'leon'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'leon'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/bin:/opt/ros/humble/bin:/home/leon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/leon-Latitude-7490:@/tmp/.ICE-unix/2046,unix/leon-Latitude-7490:/tmp/.ICE-unix/2046'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/935159ae_8e6c_4856_beda_c3eae188a8cd'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OTLTN3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=2ae3610b79efd68473263cb469dcbe46'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs:/opt/ros/humble')]), 'shell': False}
+[0.099757] (-) TimerEvent: {}
+[0.119773] (keyboard_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.184145] (keyboard_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.193884] (keyboard_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199862] (-) TimerEvent: {}
+[0.274362] (keyboard_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.283038] (keyboard_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.283484] (keyboard_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.284117] (keyboard_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.287843] (keyboard_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300050] (-) TimerEvent: {}
+[0.382235] (keyboard_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.390885] (keyboard_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.391176] (keyboard_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.391688] (keyboard_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.400096] (-) TimerEvent: {}
+[0.403840] (keyboard_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.500237] (-) TimerEvent: {}
+[0.571293] (keyboard_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.600359] (-) TimerEvent: {}
+[0.676546] (keyboard_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.9.1 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[0.700482] (-) TimerEvent: {}
+[0.720042] (keyboard_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.727261] (keyboard_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.737630] (keyboard_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.756874] (keyboard_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.775277] (keyboard_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.800628] (-) TimerEvent: {}
+[0.809527] (keyboard_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.900752] (-) TimerEvent: {}
+[1.001018] (-) TimerEvent: {}
+[1.101264] (-) TimerEvent: {}
+[1.127166] (keyboard_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.201368] (-) TimerEvent: {}
+[1.301672] (-) TimerEvent: {}
+[1.401922] (-) TimerEvent: {}
+[1.502210] (-) TimerEvent: {}
+[1.529371] (keyboard_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.602304] (-) TimerEvent: {}
+[1.685777] (keyboard_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.702402] (-) TimerEvent: {}
+[1.709842] (keyboard_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.712335] (keyboard_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.741723] (keyboard_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.741942] (keyboard_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.742058] (keyboard_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.742131] (keyboard_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.764655] (keyboard_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.802538] (-) TimerEvent: {}
+[1.887487] (keyboard_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.902646] (-) TimerEvent: {}
+[1.912905] (keyboard_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.914486] (keyboard_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.917373] (keyboard_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.952685] (keyboard_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.965333] (keyboard_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard_msgs\n'}
+[1.971939] (keyboard_msgs) CommandEnded: {'returncode': 0}
+[1.973852] (keyboard_msgs) JobProgress: {'identifier': 'keyboard_msgs', 'progress': 'build'}
+[1.973885] (keyboard_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard_msgs', '--', '-j8', '-l8'], 'cwd': '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'leon'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/leon'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2046'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=2ae3610b79efd68473263cb469dcbe46'), ('COLORTERM', 'truecolor'), ('LIBVIRT_DEFAULT_URI', 'qemu:///system'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'leon'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'leon'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/bin:/opt/ros/humble/bin:/home/leon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/leon-Latitude-7490:@/tmp/.ICE-unix/2046,unix/leon-Latitude-7490:/tmp/.ICE-unix/2046'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/935159ae_8e6c_4856_beda_c3eae188a8cd'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OTLTN3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=2ae3610b79efd68473263cb469dcbe46'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs:/opt/ros/humble')]), 'shell': False}
+[2.002800] (-) TimerEvent: {}
+[2.015616] (keyboard_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.026678] (keyboard_msgs) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[2.026923] (keyboard_msgs) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.037094] (keyboard_msgs) StdoutLine: {'line': b'[  9%] Built target ament_cmake_python_copy_keyboard_msgs\n'}
+[2.102895] (-) TimerEvent: {}
+[2.203579] (-) TimerEvent: {}
+[2.303863] (-) TimerEvent: {}
+[2.366358] (keyboard_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[2.367026] (keyboard_msgs) StdoutLine: {'line': b'creating keyboard_msgs.egg-info\n'}
+[2.367274] (keyboard_msgs) StdoutLine: {'line': b'writing keyboard_msgs.egg-info/PKG-INFO\n'}
+[2.367427] (keyboard_msgs) StdoutLine: {'line': b'writing dependency_links to keyboard_msgs.egg-info/dependency_links.txt\n'}
+[2.367562] (keyboard_msgs) StdoutLine: {'line': b'writing top-level names to keyboard_msgs.egg-info/top_level.txt\n'}
+[2.367814] (keyboard_msgs) StdoutLine: {'line': b"writing manifest file 'keyboard_msgs.egg-info/SOURCES.txt'\n"}
+[2.369856] (keyboard_msgs) StdoutLine: {'line': b"reading manifest file 'keyboard_msgs.egg-info/SOURCES.txt'\n"}
+[2.370335] (keyboard_msgs) StdoutLine: {'line': b"writing manifest file 'keyboard_msgs.egg-info/SOURCES.txt'\n"}
+[2.395991] (keyboard_msgs) StdoutLine: {'line': b'[  9%] Built target ament_cmake_python_build_keyboard_msgs_egg\n'}
+[2.403994] (-) TimerEvent: {}
+[2.504320] (-) TimerEvent: {}
+[2.604666] (-) TimerEvent: {}
+[2.704941] (-) TimerEvent: {}
+[2.805288] (-) TimerEvent: {}
+[2.905665] (-) TimerEvent: {}
+[3.005987] (-) TimerEvent: {}
+[3.106439] (-) TimerEvent: {}
+[3.207032] (-) TimerEvent: {}
+[3.307320] (-) TimerEvent: {}
+[3.407611] (-) TimerEvent: {}
+[3.507922] (-) TimerEvent: {}
+[3.608263] (-) TimerEvent: {}
+[3.708584] (-) TimerEvent: {}
+[3.808884] (-) TimerEvent: {}
+[3.909231] (-) TimerEvent: {}
+[3.923906] (keyboard_msgs) StdoutLine: {'line': b'[  9%] Built target keyboard_msgs__rs\n'}
+[3.929461] (keyboard_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c.o\x1b[0m\n'}
+[3.953790] (keyboard_msgs) StdoutLine: {'line': b'[ 12%] Built target keyboard_msgs__cpp\n'}
+[3.966304] (keyboard_msgs) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.966620] (keyboard_msgs) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.966793] (keyboard_msgs) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[4.006677] (keyboard_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking C shared library libkeyboard_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[4.009317] (-) TimerEvent: {}
+[4.052304] (keyboard_msgs) StdoutLine: {'line': b'[ 25%] Built target keyboard_msgs__rosidl_generator_c\n'}
+[4.065535] (keyboard_msgs) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.067948] (keyboard_msgs) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.068389] (keyboard_msgs) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[4.109435] (-) TimerEvent: {}
+[4.209766] (-) TimerEvent: {}
+[4.310052] (-) TimerEvent: {}
+[4.410342] (-) TimerEvent: {}
+[4.510642] (-) TimerEvent: {}
+[4.610932] (-) TimerEvent: {}
+[4.711252] (-) TimerEvent: {}
+[4.811609] (-) TimerEvent: {}
+[4.911915] (-) TimerEvent: {}
+[5.012201] (-) TimerEvent: {}
+[5.112491] (-) TimerEvent: {}
+[5.212789] (-) TimerEvent: {}
+[5.313085] (-) TimerEvent: {}
+[5.413392] (-) TimerEvent: {}
+[5.513705] (-) TimerEvent: {}
+[5.614087] (-) TimerEvent: {}
+[5.714393] (-) TimerEvent: {}
+[5.803685] (keyboard_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/keyboard_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/keyboard_msgs/msg/key__type_support.cpp.o\x1b[0m\n'}
+[5.814497] (-) TimerEvent: {}
+[5.914829] (-) TimerEvent: {}
+[5.970109] (keyboard_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/keyboard_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/keyboard_msgs/msg/key__type_support.cpp.o\x1b[0m\n'}
+[6.004849] (keyboard_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32m\x1b[1mLinking CXX shared library libkeyboard_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[6.014930] (-) TimerEvent: {}
+[6.053584] (keyboard_msgs) StdoutLine: {'line': b'[ 43%] Built target keyboard_msgs__rosidl_typesupport_c\n'}
+[6.101998] (keyboard_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX shared library libkeyboard_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[6.115056] (-) TimerEvent: {}
+[6.145494] (keyboard_msgs) StdoutLine: {'line': b'[ 46%] Built target keyboard_msgs__rosidl_typesupport_cpp\n'}
+[6.215162] (-) TimerEvent: {}
+[6.315458] (-) TimerEvent: {}
+[6.415748] (-) TimerEvent: {}
+[6.516062] (-) TimerEvent: {}
+[6.616383] (-) TimerEvent: {}
+[6.716730] (-) TimerEvent: {}
+[6.781086] (keyboard_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/keyboard_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/keyboard_msgs/msg/detail/key__type_support.cpp.o\x1b[0m\n'}
+[6.787578] (keyboard_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/keyboard_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/keyboard_msgs/msg/detail/dds_fastrtps/key__type_support.cpp.o\x1b[0m\n'}
+[6.816854] (-) TimerEvent: {}
+[6.855231] (keyboard_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/keyboard_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/keyboard_msgs/msg/detail/key__type_support.c.o\x1b[0m\n'}
+[6.876974] (keyboard_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/keyboard_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/keyboard_msgs/msg/detail/key__type_support_c.cpp.o\x1b[0m\n'}
+[6.910820] (keyboard_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking C shared library libkeyboard_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[6.916941] (-) TimerEvent: {}
+[6.951921] (keyboard_msgs) StdoutLine: {'line': b'[ 62%] Built target keyboard_msgs__rosidl_typesupport_introspection_c\n'}
+[7.017121] (-) TimerEvent: {}
+[7.117455] (-) TimerEvent: {}
+[7.217793] (-) TimerEvent: {}
+[7.222091] (keyboard_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libkeyboard_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[7.284083] (keyboard_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libkeyboard_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[7.284363] (keyboard_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libkeyboard_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[7.304488] (keyboard_msgs) StdoutLine: {'line': b'[ 71%] Built target keyboard_msgs__rosidl_typesupport_introspection_cpp\n'}
+[7.317938] (-) TimerEvent: {}
+[7.409148] (keyboard_msgs) StdoutLine: {'line': b'[ 71%] Built target keyboard_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[7.409794] (keyboard_msgs) StdoutLine: {'line': b'[ 71%] Built target keyboard_msgs__rosidl_typesupport_fastrtps_c\n'}
+[7.418069] (-) TimerEvent: {}
+[7.440749] (keyboard_msgs) StdoutLine: {'line': b'[ 71%] Built target keyboard_msgs\n'}
+[7.471821] (keyboard_msgs) StdoutLine: {'line': b'[ 75%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[7.518175] (-) TimerEvent: {}
+[7.618444] (-) TimerEvent: {}
+[7.718713] (-) TimerEvent: {}
+[7.818986] (-) TimerEvent: {}
+[7.919279] (-) TimerEvent: {}
+[8.019546] (-) TimerEvent: {}
+[8.119838] (-) TimerEvent: {}
+[8.220126] (-) TimerEvent: {}
+[8.320420] (-) TimerEvent: {}
+[8.420689] (-) TimerEvent: {}
+[8.520965] (-) TimerEvent: {}
+[8.621263] (-) TimerEvent: {}
+[8.721560] (-) TimerEvent: {}
+[8.821837] (-) TimerEvent: {}
+[8.922110] (-) TimerEvent: {}
+[9.022376] (-) TimerEvent: {}
+[9.122634] (-) TimerEvent: {}
+[9.222924] (-) TimerEvent: {}
+[9.323282] (-) TimerEvent: {}
+[9.423552] (-) TimerEvent: {}
+[9.523824] (-) TimerEvent: {}
+[9.624090] (-) TimerEvent: {}
+[9.724372] (-) TimerEvent: {}
+[9.824672] (-) TimerEvent: {}
+[9.924946] (-) TimerEvent: {}
+[10.025235] (-) TimerEvent: {}
+[10.125552] (-) TimerEvent: {}
+[10.225825] (-) TimerEvent: {}
+[10.326111] (-) TimerEvent: {}
+[10.426443] (-) TimerEvent: {}
+[10.501903] (keyboard_msgs) StdoutLine: {'line': b'[ 75%] Built target keyboard_msgs__py\n'}
+[10.525689] (keyboard_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding C object CMakeFiles/keyboard_msgs__rosidl_generator_py.dir/rosidl_generator_py/keyboard_msgs/msg/_key_s.c.o\x1b[0m\n'}
+[10.526551] (-) TimerEvent: {}
+[10.626848] (-) TimerEvent: {}
+[10.688287] (keyboard_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/keyboard_msgs/libkeyboard_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[10.726992] (-) TimerEvent: {}
+[10.741068] (keyboard_msgs) StdoutLine: {'line': b'[ 81%] Built target keyboard_msgs__rosidl_generator_py\n'}
+[10.765575] (keyboard_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/keyboard_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/keyboard_msgs/_keyboard_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[10.765874] (keyboard_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/keyboard_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/keyboard_msgs/_keyboard_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[10.766050] (keyboard_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/keyboard_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/keyboard_msgs/_keyboard_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[10.827091] (-) TimerEvent: {}
+[10.876911] (keyboard_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[10.877184] (keyboard_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[10.877362] (keyboard_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[10.921533] (keyboard_msgs) StdoutLine: {'line': b'[100%] Built target keyboard_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[10.921778] (keyboard_msgs) StdoutLine: {'line': b'[100%] Built target keyboard_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[10.921927] (keyboard_msgs) StdoutLine: {'line': b'[100%] Built target keyboard_msgs__rosidl_typesupport_c__pyext\n'}
+[10.927205] (-) TimerEvent: {}
+[10.934308] (keyboard_msgs) CommandEnded: {'returncode': 0}
+[10.934983] (keyboard_msgs) JobProgress: {'identifier': 'keyboard_msgs', 'progress': 'install'}
+[10.945893] (keyboard_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard_msgs'], 'cwd': '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'leon'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/leon'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2046'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=2ae3610b79efd68473263cb469dcbe46'), ('COLORTERM', 'truecolor'), ('LIBVIRT_DEFAULT_URI', 'qemu:///system'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'leon'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'leon'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/bin:/opt/ros/humble/bin:/home/leon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/leon-Latitude-7490:@/tmp/.ICE-unix/2046,unix/leon-Latitude-7490:/tmp/.ICE-unix/2046'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/935159ae_8e6c_4856_beda_c3eae188a8cd'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OTLTN3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=2ae3610b79efd68473263cb469dcbe46'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs:/opt/ros/humble')]), 'shell': False}
+[10.954300] (keyboard_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.954777] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/ament_index/resource_index/rosidl_interfaces/keyboard_msgs\n'}
+[10.954964] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs\n'}
+[10.955111] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg\n'}
+[10.955184] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/key.h\n'}
+[10.955496] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[10.955592] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail\n'}
+[10.955700] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__type_support.h\n'}
+[10.955831] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__struct.h\n'}
+[10.955928] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__functions.c\n'}
+[10.956035] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__functions.h\n'}
+[10.956211] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/environment/library_path.sh\n'}
+[10.956396] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/environment/library_path.dsv\n'}
+[10.956639] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_generator_c.so\n'}
+[10.957322] (keyboard_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_generator_c.so" to ""\n'}
+[10.957566] (keyboard_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs\n'}
+[10.957667] (keyboard_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg\n'}
+[10.957740] (keyboard_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail\n'}
+[10.957807] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__rosidl_typesupport_fastrtps_c.h\n'}
+[10.957918] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[10.958016] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[10.958418] (keyboard_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[10.958540] (keyboard_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs\n'}
+[10.958657] (keyboard_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg\n'}
+[10.958737] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[10.958836] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/key.hpp\n'}
+[10.958909] (keyboard_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail\n'}
+[10.959006] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__type_support.hpp\n'}
+[10.959097] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__builder.hpp\n'}
+[10.959187] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__traits.hpp\n'}
+[10.959292] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__struct.hpp\n'}
+[10.959598] (keyboard_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs\n'}
+[10.959662] (keyboard_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg\n'}
+[10.959771] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[10.959885] (keyboard_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail\n'}
+[10.959948] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.960045] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/dds_fastrtps\n'}
+[10.960141] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[10.960712] (keyboard_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[10.960821] (keyboard_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs\n'}
+[10.960925] (keyboard_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg\n'}
+[10.961018] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[10.961135] (keyboard_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail\n'}
+[10.961198] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__type_support.c\n'}
+[10.961283] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__rosidl_typesupport_introspection_c.h\n'}
+[10.961473] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_introspection_c.so\n'}
+[10.961992] (keyboard_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[10.962184] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_c.so\n'}
+[10.962566] (keyboard_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_c.so" to ""\n'}
+[10.962670] (keyboard_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs\n'}
+[10.962829] (keyboard_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg\n'}
+[10.962926] (keyboard_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail\n'}
+[10.962995] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__type_support.cpp\n'}
+[10.963117] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.963195] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[10.963606] (keyboard_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[10.963792] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_cpp.so\n'}
+[10.964153] (keyboard_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[10.964281] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/environment/pythonpath.sh\n'}
+[10.964387] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/environment/pythonpath.dsv\n'}
+[10.964472] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs-0.0.0-py3.10.egg-info\n'}
+[10.964617] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[10.964745] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[10.964876] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[10.965007] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[10.965232] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs\n'}
+[10.965354] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.965510] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/_keyboard_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[10.965640] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/_keyboard_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[10.965722] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/msg\n'}
+[10.965858] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/msg/_key.py\n'}
+[10.965992] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/msg/__init__.py\n'}
+[10.966172] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/msg/_key_s.c\n'}
+[10.966326] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.966462] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.966612] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/__init__.py\n'}
+[10.966731] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/_keyboard_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[10.966816] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/libkeyboard_msgs__rosidl_generator_py.so\n'}
+[11.010043] (keyboard_msgs) StdoutLine: {'line': b"Listing '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs'...\n"}
+[11.010258] (keyboard_msgs) StdoutLine: {'line': b"Compiling '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/__init__.py'...\n"}
+[11.010332] (keyboard_msgs) StdoutLine: {'line': b"Listing '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/msg'...\n"}
+[11.010386] (keyboard_msgs) StdoutLine: {'line': b"Compiling '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/msg/__init__.py'...\n"}
+[11.010451] (keyboard_msgs) StdoutLine: {'line': b"Compiling '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/msg/_key.py'...\n"}
+[11.015125] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[11.015542] (keyboard_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[11.015791] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[11.016201] (keyboard_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[11.016442] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[11.016850] (keyboard_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages/keyboard_msgs/keyboard_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[11.016992] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_generator_py.so\n'}
+[11.017390] (keyboard_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_generator_py.so" to ""\n'}
+[11.017620] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/ament_index/resource_index/rust_packages/keyboard_msgs\n'}
+[11.017718] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/rust\n'}
+[11.017874] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/rust/Cargo.toml\n'}
+[11.017983] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/rust/src\n'}
+[11.018060] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/rust/src/msg.rs\n'}
+[11.018146] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/rust/src/lib.rs\n'}
+[11.018297] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/rust/src/msg\n'}
+[11.018389] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/rust/src/msg/rmw.rs\n'}
+[11.018492] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/rust/build.rs\n'}
+[11.018690] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/msg/Key.idl\n'}
+[11.018846] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/msg/Key.msg\n'}
+[11.019045] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/ament_index/resource_index/package_run_dependencies/keyboard_msgs\n'}
+[11.019306] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/ament_index/resource_index/parent_prefix_path/keyboard_msgs\n'}
+[11.019528] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/environment/ament_prefix_path.sh\n'}
+[11.019740] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/environment/ament_prefix_path.dsv\n'}
+[11.019809] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/environment/path.sh\n'}
+[11.019934] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/environment/path.dsv\n'}
+[11.020019] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/local_setup.bash\n'}
+[11.020184] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/local_setup.sh\n'}
+[11.020338] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/local_setup.zsh\n'}
+[11.020525] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/local_setup.dsv\n'}
+[11.020689] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/package.dsv\n'}
+[11.020830] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/ament_index/resource_index/packages/keyboard_msgs\n'}
+[11.021036] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/export_keyboard_msgs__rosidl_generator_cExport.cmake\n'}
+[11.021227] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/export_keyboard_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[11.021404] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/export_keyboard_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[11.021581] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/export_keyboard_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[11.021739] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/export_keyboard_msgs__rosidl_generator_cppExport.cmake\n'}
+[11.021863] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/export_keyboard_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[11.022035] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/export_keyboard_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[11.022193] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[11.022342] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[11.022500] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgs__rosidl_typesupport_cExport.cmake\n'}
+[11.022666] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[11.022847] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[11.023009] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[11.023179] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[11.023327] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[11.023501] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/export_keyboard_msgs__rosidl_generator_pyExport.cmake\n'}
+[11.023664] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/export_keyboard_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[11.023820] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[11.023975] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[11.024139] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[11.024295] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[11.024446] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[11.024587] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[11.024729] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[11.024869] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgsConfig.cmake\n'}
+[11.024994] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake/keyboard_msgsConfig-version.cmake\n'}
+[11.025161] (keyboard_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/package.xml\n'}
+[11.027309] (-) TimerEvent: {}
+[11.027894] (keyboard_msgs) CommandEnded: {'returncode': 0}
+[11.055935] (keyboard_msgs) JobEnded: {'identifier': 'keyboard_msgs', 'rc': 0}
+[11.057088] (keyboard) JobStarted: {'identifier': 'keyboard'}
+[11.064457] (keyboard) JobProgress: {'identifier': 'keyboard', 'progress': 'cmake'}
+[11.064963] (keyboard) Command: {'cmd': ['/usr/bin/cmake', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard', '-DCMAKE_INSTALL_PREFIX=/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard'], 'cwd': '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'leon'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/leon'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2046'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=2ae3610b79efd68473263cb469dcbe46'), ('COLORTERM', 'truecolor'), ('LIBVIRT_DEFAULT_URI', 'qemu:///system'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'leon'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'leon'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/bin:/opt/ros/humble/bin:/home/leon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/leon-Latitude-7490:@/tmp/.ICE-unix/2046,unix/leon-Latitude-7490:/tmp/.ICE-unix/2046'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/935159ae_8e6c_4856_beda_c3eae188a8cd'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OTLTN3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=2ae3610b79efd68473263cb469dcbe46'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard:/opt/ros/humble')]), 'shell': False}
+[11.127457] (-) TimerEvent: {}
+[11.129811] (keyboard) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[11.196899] (keyboard) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[11.204716] (keyboard) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[11.227590] (-) TimerEvent: {}
+[11.282382] (keyboard) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[11.291207] (keyboard) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[11.291523] (keyboard) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[11.291965] (keyboard) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[11.295399] (keyboard) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[11.327746] (-) TimerEvent: {}
+[11.392612] (keyboard) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[11.401878] (keyboard) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[11.402151] (keyboard) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[11.402655] (keyboard) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[11.405066] (keyboard) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[11.406728] (keyboard) StdoutLine: {'line': b'-- Found ament_cmake_core: 1.3.14 (/opt/ros/humble/share/ament_cmake_core/cmake)\n'}
+[11.427865] (-) TimerEvent: {}
+[11.528111] (-) TimerEvent: {}
+[11.563976] (keyboard) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[11.628250] (-) TimerEvent: {}
+[11.640857] (keyboard) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[11.651438] (keyboard) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[11.726379] (keyboard) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[11.728313] (-) TimerEvent: {}
+[11.780323] (keyboard) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[11.828638] (-) TimerEvent: {}
+[11.850833] (keyboard) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[11.854303] (keyboard) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[11.928785] (-) TimerEvent: {}
+[11.950032] (keyboard) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[11.979827] (keyboard) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[12.020538] (keyboard) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[12.028888] (-) TimerEvent: {}
+[12.033844] (keyboard) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[12.114488] (keyboard) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[12.114776] (keyboard) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[12.129052] (-) TimerEvent: {}
+[12.202159] (keyboard) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[12.203998] (keyboard) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[12.229099] (-) TimerEvent: {}
+[12.273103] (keyboard) StdoutLine: {'line': b'-- Found sdl2_vendor: 3.3.0 (/opt/ros/humble/share/sdl2_vendor/cmake)\n'}
+[12.276423] (keyboard) StdoutLine: {'line': b'-- Found keyboard_msgs: 0.0.0 (/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/share/keyboard_msgs/cmake)\n'}
+[12.288916] (keyboard) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):\n'}
+[12.289097] (keyboard) StderrLine: {'line': b"  ament_target_dependencies() the passed package name 'sdl2_custom' was not\n"}
+[12.289194] (keyboard) StderrLine: {'line': b'  found before\n'}
+[12.289288] (keyboard) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[12.289391] (keyboard) StderrLine: {'line': b'  CMakeLists.txt:28 (ament_target_dependencies)\n'}
+[12.289501] (keyboard) StderrLine: {'line': b'\n'}
+[12.289619] (keyboard) StderrLine: {'line': b'\x1b[0m\n'}
+[12.289770] (keyboard) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[12.289869] (keyboard) StdoutLine: {'line': b'See also "/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard/CMakeFiles/CMakeOutput.log".\n'}
+[12.298756] (keyboard) CommandEnded: {'returncode': 1}
+[12.317145] (keyboard) JobEnded: {'identifier': 'keyboard', 'rc': 1}
+[12.327638] (-) EventReactorShutdown: {}

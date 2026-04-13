@@ -1,4 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000111] (-) JobUnselected: {'identifier': 'keyboard'}
-[0.000135] (-) JobUnselected: {'identifier': 'keyboard_msgs'}
-[0.000318] (-) EventReactorShutdown: {}

@@ -1,6 +1,6 @@
 # generated from ament_cmake_export_dependencies/cmake/ament_cmake_export_dependencies-extras.cmake.in
 
-set(_exported_dependencies "rclcpp;std_msgs;sdl2_vendor;sdl2_custom;ros_keyboard_msgs")
+set(_exported_dependencies "rclcpp;std_msgs;SDL2;ros_keyboard_msgs")
 
 find_package(ament_cmake_libraries QUIET REQUIRED)
 

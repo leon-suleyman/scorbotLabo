@@ -166,10 +166,10 @@ keyboard: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
 keyboard: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
 keyboard: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 keyboard: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
-keyboard: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
 keyboard: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_c.so
-keyboard: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
 keyboard: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_generator_c.so
+keyboard: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
+keyboard: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
 keyboard: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 keyboard: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
 keyboard: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
