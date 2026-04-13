@@ -57,7 +57,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Key_message_m
   },
   {
     "code",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT16,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array

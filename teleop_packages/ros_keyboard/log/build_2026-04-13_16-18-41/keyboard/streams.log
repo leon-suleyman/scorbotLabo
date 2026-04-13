@@ -1,0 +1,26 @@
+[0.010s] Invoking command in '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard': CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard:/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard -- -j8 -l8
+[0.067s] [35m[1mConsolidate compiler generated dependencies of target keyboard[0m
+[0.094s] [ 33%] [32mBuilding CXX object CMakeFiles/keyboard.dir/src/main.cpp.o[0m
+[4.970s] [ 66%] [32m[1mLinking CXX executable keyboard[0m
+[5.243s] [100%] Built target keyboard
+[5.258s] Invoked command in '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard' returned '0': CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard:/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard -- -j8 -l8
+[5.259s] Invoking command in '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard': CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard:/opt/ros/humble /usr/bin/cmake --install /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard
+[5.270s] -- Install configuration: ""
+[5.270s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/lib/keyboard/keyboard
+[5.272s] -- Set runtime path of "/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/lib/keyboard/keyboard" to ""
+[5.272s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/ament_index/resource_index/package_run_dependencies/keyboard
+[5.272s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/ament_index/resource_index/parent_prefix_path/keyboard
+[5.272s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/keyboard/environment/ament_prefix_path.sh
+[5.273s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/keyboard/environment/ament_prefix_path.dsv
+[5.273s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/keyboard/environment/path.sh
+[5.273s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/keyboard/environment/path.dsv
+[5.273s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/keyboard/local_setup.bash
+[5.273s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/keyboard/local_setup.sh
+[5.273s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/keyboard/local_setup.zsh
+[5.273s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/keyboard/local_setup.dsv
+[5.274s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/keyboard/package.dsv
+[5.274s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/ament_index/resource_index/packages/keyboard
+[5.274s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/keyboard/cmake/keyboardConfig.cmake
+[5.274s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/keyboard/cmake/keyboardConfig-version.cmake
+[5.274s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/share/keyboard/package.xml
+[5.278s] Invoked command in '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard' returned '0': CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard:/opt/ros/humble /usr/bin/cmake --install /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard

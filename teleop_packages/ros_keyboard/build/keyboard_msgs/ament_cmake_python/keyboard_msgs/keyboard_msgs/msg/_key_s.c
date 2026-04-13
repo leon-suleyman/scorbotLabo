@@ -71,7 +71,7 @@ bool keyboard_msgs__msg__key__convert_from_py(PyObject * _pymsg, void * _ros_mes
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->code = (uint16_t)PyLong_AsUnsignedLong(field);
+    ros_message->code = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
   {  // modifiers
@@ -121,7 +121,7 @@ PyObject * keyboard_msgs__msg__key__convert_to_py(void * raw_ros_message)
   }
   {  // code
     PyObject * field = NULL;
-    field = PyLong_FromUnsignedLong(ros_message->code);
+    field = PyLong_FromLong(ros_message->code);
     {
       int rc = PyObject_SetAttrString(_pymessage, "code", field);
       Py_DECREF(field);

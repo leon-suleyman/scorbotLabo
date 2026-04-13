@@ -1,0 +1,15 @@
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/main.cpp:14:25:[m[K [01;35m[Kwarning: [m[Kempty parentheses were disambiguated as a function declaration [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvexing-parse-Wvexing-parse]8;;[m[K]
+   14 |   keyboard::Keyboard kbd[01;35m[K()[m[K;
+      |                         [01;35m[K^~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/main.cpp:14:25:[m[K [01;36m[Knote: [m[Kremove parentheses to default-initialize a variable
+   14 |   keyboard::Keyboard kbd[01;36m[K()[m[K;
+      |                         [01;36m[K^~[m[K
+      |                         [31m[K--[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/main.cpp:14:25:[m[K [01;36m[Knote: [m[Kor replace parentheses with braces to value-initialize a variable
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/main.cpp:20:30:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kget_key[m[K’ in ‘[01m[Kkbd[m[K’, which is of non-class type ‘[01m[Kkeyboard::Keyboard()[m[K’
+   20 |   while (rclcpp::ok() && kbd.[01;31m[Kget_key[m[K(new_event, pressed, k.code, k.modifiers))
+      |                              [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/keyboard.dir/build.make:76: CMakeFiles/keyboard.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/keyboard.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

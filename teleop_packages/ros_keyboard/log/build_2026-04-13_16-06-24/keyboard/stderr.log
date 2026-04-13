@@ -1,0 +1,8 @@
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/keyboard.cpp:[m[K In constructor ‘[01m[Kkeyboard::Keyboard::Keyboard()[m[K’:
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/keyboard.cpp:6:16:[m[K [01;31m[Kerror: [m[K‘[01m[KSDL_INIT_EVENT[m[K’ was not declared in this scope; did you mean ‘[01m[KSDL_INIT_EVENTS[m[K’?
+    6 |   if (SDL_Init([01;31m[KSDL_INIT_EVENT[m[K) < 0) throw std::runtime_error("Could not init SDL");
+      |                [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                [32m[KSDL_INIT_EVENTS[m[K
+gmake[2]: *** [CMakeFiles/keyboard.dir/build.make:90: CMakeFiles/keyboard.dir/src/keyboard.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/keyboard.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

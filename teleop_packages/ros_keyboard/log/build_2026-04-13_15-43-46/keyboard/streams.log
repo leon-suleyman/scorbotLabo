@@ -1,0 +1,15 @@
+[0.010s] Invoking command in '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard': CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard:/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard -- -j8 -l8
+[0.059s] [35m[1mConsolidate compiler generated dependencies of target keyboard[0m
+[0.085s] [ 33%] [32mBuilding CXX object CMakeFiles/keyboard.dir/src/main.cpp.o[0m
+[3.001s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[3.001s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/main.cpp:29:60:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kint32_t&[m[K’ {aka ‘[01m[Kint&[m[K’} to a value of type ‘[01m[Kkeyboard_msgs::msg::Key_<std::allocator<void> >::_code_type[m[K’ {aka ‘[01m[Kshort unsigned int[m[K’}
+[3.001s]    29 |   while (rclcpp::ok() && kbd.get_key(new_event, pressed, [01;31m[Kk.code[m[K, k.modifiers))
+[3.001s]       |                                                          [01;31m[K~~^~~~[m[K
+[3.001s] In file included from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/main.cpp:3[m[K:
+[3.001s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/keyboard.h:18:61:[m[K [01;36m[Knote: [m[K  initializing argument 3 of ‘[01m[Kbool keyboard::Keyboard::get_key(bool&, bool&, int32_t&, uint16_t&)[m[K’
+[3.001s]    18 |       bool get_key(bool& new_event, bool& pressed, [01;36m[Kint32_t& code[m[K, uint16_t& modifiers);
+[3.001s]       |                                                    [01;36m[K~~~~~~~~~^~~~[m[K
+[3.885s] gmake[2]: *** [CMakeFiles/keyboard.dir/build.make:76: CMakeFiles/keyboard.dir/src/main.cpp.o] Error 1
+[3.885s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/keyboard.dir/all] Error 2
+[3.886s] gmake: *** [Makefile:146: all] Error 2
+[3.888s] Invoked command in '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard' returned '2': CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard:/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard -- -j8 -l8

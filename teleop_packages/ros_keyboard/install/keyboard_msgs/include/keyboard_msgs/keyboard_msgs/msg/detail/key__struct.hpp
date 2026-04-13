@@ -44,7 +44,7 @@ struct Key_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->code = 0;
+      this->code = 0l;
       this->modifiers = 0;
     }
   }
@@ -55,7 +55,7 @@ struct Key_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->code = 0;
+      this->code = 0l;
       this->modifiers = 0;
     }
   }
@@ -65,7 +65,7 @@ struct Key_
     std_msgs::msg::Header_<ContainerAllocator>;
   _header_type header;
   using _code_type =
-    uint16_t;
+    int32_t;
   _code_type code;
   using _modifiers_type =
     uint16_t;
@@ -79,7 +79,7 @@ struct Key_
     return *this;
   }
   Type & set__code(
-    const uint16_t & _arg)
+    const int32_t & _arg)
   {
     this->code = _arg;
     return *this;
@@ -92,472 +92,472 @@ struct Key_
   }
 
   // constant declarations
-  static constexpr uint16_t KEY_UNKNOWN =
-    0u;
-  static constexpr uint16_t KEY_FIRST =
-    0u;
-  static constexpr uint16_t KEY_BACKSPACE =
-    8u;
-  static constexpr uint16_t KEY_TAB =
-    9u;
-  static constexpr uint16_t KEY_CLEAR =
-    12u;
-  static constexpr uint16_t KEY_RETURN =
-    13u;
-  static constexpr uint16_t KEY_PAUSE =
-    19u;
-  static constexpr uint16_t KEY_ESCAPE =
-    27u;
-  static constexpr uint16_t KEY_SPACE =
-    32u;
-  static constexpr uint16_t KEY_EXCLAIM =
-    33u;
-  static constexpr uint16_t KEY_QUOTEDBL =
-    34u;
-  static constexpr uint16_t KEY_HASH =
-    35u;
-  static constexpr uint16_t KEY_DOLLAR =
-    36u;
-  static constexpr uint16_t KEY_AMPERSAND =
-    38u;
-  static constexpr uint16_t KEY_QUOTE =
-    39u;
-  static constexpr uint16_t KEY_LEFTPAREN =
-    40u;
-  static constexpr uint16_t KEY_RIGHTPAREN =
-    41u;
-  static constexpr uint16_t KEY_ASTERISK =
-    42u;
-  static constexpr uint16_t KEY_PLUS =
-    43u;
-  static constexpr uint16_t KEY_COMMA =
-    44u;
-  static constexpr uint16_t KEY_MINUS =
-    45u;
-  static constexpr uint16_t KEY_PERIOD =
-    46u;
-  static constexpr uint16_t KEY_SLASH =
-    47u;
-  static constexpr uint16_t KEY_0 =
-    48u;
-  static constexpr uint16_t KEY_1 =
-    49u;
-  static constexpr uint16_t KEY_2 =
-    50u;
-  static constexpr uint16_t KEY_3 =
-    51u;
-  static constexpr uint16_t KEY_4 =
-    52u;
-  static constexpr uint16_t KEY_5 =
-    53u;
-  static constexpr uint16_t KEY_6 =
-    54u;
-  static constexpr uint16_t KEY_7 =
-    55u;
-  static constexpr uint16_t KEY_8 =
-    56u;
-  static constexpr uint16_t KEY_9 =
-    57u;
-  static constexpr uint16_t KEY_COLON =
-    58u;
-  static constexpr uint16_t KEY_SEMICOLON =
-    59u;
-  static constexpr uint16_t KEY_LESS =
-    60u;
-  static constexpr uint16_t KEY_EQUALS =
-    61u;
-  static constexpr uint16_t KEY_GREATER =
-    62u;
-  static constexpr uint16_t KEY_QUESTION =
-    63u;
-  static constexpr uint16_t KEY_AT =
-    64u;
-  static constexpr uint16_t KEY_LEFTBRACKET =
-    91u;
-  static constexpr uint16_t KEY_BACKSLASH =
-    92u;
-  static constexpr uint16_t KEY_RIGHTBRACKET =
-    93u;
-  static constexpr uint16_t KEY_CARET =
-    94u;
-  static constexpr uint16_t KEY_UNDERSCORE =
-    95u;
-  static constexpr uint16_t KEY_BACKQUOTE =
-    96u;
-  static constexpr uint16_t KEY_A =
-    97u;
-  static constexpr uint16_t KEY_B =
-    98u;
-  static constexpr uint16_t KEY_C =
-    99u;
-  static constexpr uint16_t KEY_D =
-    100u;
-  static constexpr uint16_t KEY_E =
-    101u;
-  static constexpr uint16_t KEY_F =
-    102u;
-  static constexpr uint16_t KEY_G =
-    103u;
-  static constexpr uint16_t KEY_H =
-    104u;
-  static constexpr uint16_t KEY_I =
-    105u;
-  static constexpr uint16_t KEY_J =
-    106u;
-  static constexpr uint16_t KEY_K =
-    107u;
-  static constexpr uint16_t KEY_L =
-    108u;
-  static constexpr uint16_t KEY_M =
-    109u;
-  static constexpr uint16_t KEY_N =
-    110u;
-  static constexpr uint16_t KEY_O =
-    111u;
-  static constexpr uint16_t KEY_P =
-    112u;
-  static constexpr uint16_t KEY_Q =
-    113u;
-  static constexpr uint16_t KEY_R =
-    114u;
-  static constexpr uint16_t KEY_S =
-    115u;
-  static constexpr uint16_t KEY_T =
-    116u;
-  static constexpr uint16_t KEY_U =
-    117u;
-  static constexpr uint16_t KEY_V =
-    118u;
-  static constexpr uint16_t KEY_W =
-    119u;
-  static constexpr uint16_t KEY_X =
-    120u;
-  static constexpr uint16_t KEY_Y =
-    121u;
-  static constexpr uint16_t KEY_Z =
-    122u;
-  static constexpr uint16_t KEY_DELETE =
-    127u;
-  static constexpr uint16_t KEY_WORLD_0 =
-    160u;
-  static constexpr uint16_t KEY_WORLD_1 =
-    161u;
-  static constexpr uint16_t KEY_WORLD_2 =
-    162u;
-  static constexpr uint16_t KEY_WORLD_3 =
-    163u;
-  static constexpr uint16_t KEY_WORLD_4 =
-    164u;
-  static constexpr uint16_t KEY_WORLD_5 =
-    165u;
-  static constexpr uint16_t KEY_WORLD_6 =
-    166u;
-  static constexpr uint16_t KEY_WORLD_7 =
-    167u;
-  static constexpr uint16_t KEY_WORLD_8 =
-    168u;
-  static constexpr uint16_t KEY_WORLD_9 =
-    169u;
-  static constexpr uint16_t KEY_WORLD_10 =
-    170u;
-  static constexpr uint16_t KEY_WORLD_11 =
-    171u;
-  static constexpr uint16_t KEY_WORLD_12 =
-    172u;
-  static constexpr uint16_t KEY_WORLD_13 =
-    173u;
-  static constexpr uint16_t KEY_WORLD_14 =
-    174u;
-  static constexpr uint16_t KEY_WORLD_15 =
-    175u;
-  static constexpr uint16_t KEY_WORLD_16 =
-    176u;
-  static constexpr uint16_t KEY_WORLD_17 =
-    177u;
-  static constexpr uint16_t KEY_WORLD_18 =
-    178u;
-  static constexpr uint16_t KEY_WORLD_19 =
-    179u;
-  static constexpr uint16_t KEY_WORLD_20 =
-    180u;
-  static constexpr uint16_t KEY_WORLD_21 =
-    181u;
-  static constexpr uint16_t KEY_WORLD_22 =
-    182u;
-  static constexpr uint16_t KEY_WORLD_23 =
-    183u;
-  static constexpr uint16_t KEY_WORLD_24 =
-    184u;
-  static constexpr uint16_t KEY_WORLD_25 =
-    185u;
-  static constexpr uint16_t KEY_WORLD_26 =
-    186u;
-  static constexpr uint16_t KEY_WORLD_27 =
-    187u;
-  static constexpr uint16_t KEY_WORLD_28 =
-    188u;
-  static constexpr uint16_t KEY_WORLD_29 =
-    189u;
-  static constexpr uint16_t KEY_WORLD_30 =
-    190u;
-  static constexpr uint16_t KEY_WORLD_31 =
-    191u;
-  static constexpr uint16_t KEY_WORLD_32 =
-    192u;
-  static constexpr uint16_t KEY_WORLD_33 =
-    193u;
-  static constexpr uint16_t KEY_WORLD_34 =
-    194u;
-  static constexpr uint16_t KEY_WORLD_35 =
-    195u;
-  static constexpr uint16_t KEY_WORLD_36 =
-    196u;
-  static constexpr uint16_t KEY_WORLD_37 =
-    197u;
-  static constexpr uint16_t KEY_WORLD_38 =
-    198u;
-  static constexpr uint16_t KEY_WORLD_39 =
-    199u;
-  static constexpr uint16_t KEY_WORLD_40 =
-    200u;
-  static constexpr uint16_t KEY_WORLD_41 =
-    201u;
-  static constexpr uint16_t KEY_WORLD_42 =
-    202u;
-  static constexpr uint16_t KEY_WORLD_43 =
-    203u;
-  static constexpr uint16_t KEY_WORLD_44 =
-    204u;
-  static constexpr uint16_t KEY_WORLD_45 =
-    205u;
-  static constexpr uint16_t KEY_WORLD_46 =
-    206u;
-  static constexpr uint16_t KEY_WORLD_47 =
-    207u;
-  static constexpr uint16_t KEY_WORLD_48 =
-    208u;
-  static constexpr uint16_t KEY_WORLD_49 =
-    209u;
-  static constexpr uint16_t KEY_WORLD_50 =
-    210u;
-  static constexpr uint16_t KEY_WORLD_51 =
-    211u;
-  static constexpr uint16_t KEY_WORLD_52 =
-    212u;
-  static constexpr uint16_t KEY_WORLD_53 =
-    213u;
-  static constexpr uint16_t KEY_WORLD_54 =
-    214u;
-  static constexpr uint16_t KEY_WORLD_55 =
-    215u;
-  static constexpr uint16_t KEY_WORLD_56 =
-    216u;
-  static constexpr uint16_t KEY_WORLD_57 =
-    217u;
-  static constexpr uint16_t KEY_WORLD_58 =
-    218u;
-  static constexpr uint16_t KEY_WORLD_59 =
-    219u;
-  static constexpr uint16_t KEY_WORLD_60 =
-    220u;
-  static constexpr uint16_t KEY_WORLD_61 =
-    221u;
-  static constexpr uint16_t KEY_WORLD_62 =
-    222u;
-  static constexpr uint16_t KEY_WORLD_63 =
-    223u;
-  static constexpr uint16_t KEY_WORLD_64 =
-    224u;
-  static constexpr uint16_t KEY_WORLD_65 =
-    225u;
-  static constexpr uint16_t KEY_WORLD_66 =
-    226u;
-  static constexpr uint16_t KEY_WORLD_67 =
-    227u;
-  static constexpr uint16_t KEY_WORLD_68 =
-    228u;
-  static constexpr uint16_t KEY_WORLD_69 =
-    229u;
-  static constexpr uint16_t KEY_WORLD_70 =
-    230u;
-  static constexpr uint16_t KEY_WORLD_71 =
-    231u;
-  static constexpr uint16_t KEY_WORLD_72 =
-    232u;
-  static constexpr uint16_t KEY_WORLD_73 =
-    233u;
-  static constexpr uint16_t KEY_WORLD_74 =
-    234u;
-  static constexpr uint16_t KEY_WORLD_75 =
-    235u;
-  static constexpr uint16_t KEY_WORLD_76 =
-    236u;
-  static constexpr uint16_t KEY_WORLD_77 =
-    237u;
-  static constexpr uint16_t KEY_WORLD_78 =
-    238u;
-  static constexpr uint16_t KEY_WORLD_79 =
-    239u;
-  static constexpr uint16_t KEY_WORLD_80 =
-    240u;
-  static constexpr uint16_t KEY_WORLD_81 =
-    241u;
-  static constexpr uint16_t KEY_WORLD_82 =
-    242u;
-  static constexpr uint16_t KEY_WORLD_83 =
-    243u;
-  static constexpr uint16_t KEY_WORLD_84 =
-    244u;
-  static constexpr uint16_t KEY_WORLD_85 =
-    245u;
-  static constexpr uint16_t KEY_WORLD_86 =
-    246u;
-  static constexpr uint16_t KEY_WORLD_87 =
-    247u;
-  static constexpr uint16_t KEY_WORLD_88 =
-    248u;
-  static constexpr uint16_t KEY_WORLD_89 =
-    249u;
-  static constexpr uint16_t KEY_WORLD_90 =
-    250u;
-  static constexpr uint16_t KEY_WORLD_91 =
-    251u;
-  static constexpr uint16_t KEY_WORLD_92 =
-    252u;
-  static constexpr uint16_t KEY_WORLD_93 =
-    253u;
-  static constexpr uint16_t KEY_WORLD_94 =
-    254u;
-  static constexpr uint16_t KEY_WORLD_95 =
-    255u;
-  static constexpr uint16_t KEY_KP0 =
-    256u;
-  static constexpr uint16_t KEY_KP1 =
-    257u;
-  static constexpr uint16_t KEY_KP2 =
-    258u;
-  static constexpr uint16_t KEY_KP3 =
-    259u;
-  static constexpr uint16_t KEY_KP4 =
-    260u;
-  static constexpr uint16_t KEY_KP5 =
-    261u;
-  static constexpr uint16_t KEY_KP6 =
-    262u;
-  static constexpr uint16_t KEY_KP7 =
-    263u;
-  static constexpr uint16_t KEY_KP8 =
-    264u;
-  static constexpr uint16_t KEY_KP9 =
-    265u;
-  static constexpr uint16_t KEY_KP_PERIOD =
-    266u;
-  static constexpr uint16_t KEY_KP_DIVIDE =
-    267u;
-  static constexpr uint16_t KEY_KP_MULTIPLY =
-    268u;
-  static constexpr uint16_t KEY_KP_MINUS =
-    269u;
-  static constexpr uint16_t KEY_KP_PLUS =
-    270u;
-  static constexpr uint16_t KEY_KP_ENTER =
-    271u;
-  static constexpr uint16_t KEY_KP_EQUALS =
-    272u;
-  static constexpr uint16_t KEY_UP =
-    273u;
-  static constexpr uint16_t KEY_DOWN =
-    274u;
-  static constexpr uint16_t KEY_RIGHT =
-    275u;
-  static constexpr uint16_t KEY_LEFT =
-    276u;
-  static constexpr uint16_t KEY_INSERT =
-    277u;
-  static constexpr uint16_t KEY_HOME =
-    278u;
-  static constexpr uint16_t KEY_END =
-    279u;
-  static constexpr uint16_t KEY_PAGEUP =
-    280u;
-  static constexpr uint16_t KEY_PAGEDOWN =
-    281u;
-  static constexpr uint16_t KEY_F1 =
-    282u;
-  static constexpr uint16_t KEY_F2 =
-    283u;
-  static constexpr uint16_t KEY_F3 =
-    284u;
-  static constexpr uint16_t KEY_F4 =
-    285u;
-  static constexpr uint16_t KEY_F5 =
-    286u;
-  static constexpr uint16_t KEY_F6 =
-    287u;
-  static constexpr uint16_t KEY_F7 =
-    288u;
-  static constexpr uint16_t KEY_F8 =
-    289u;
-  static constexpr uint16_t KEY_F9 =
-    290u;
-  static constexpr uint16_t KEY_F10 =
-    291u;
-  static constexpr uint16_t KEY_F11 =
-    292u;
-  static constexpr uint16_t KEY_F12 =
-    293u;
-  static constexpr uint16_t KEY_F13 =
-    294u;
-  static constexpr uint16_t KEY_F14 =
-    295u;
-  static constexpr uint16_t KEY_F15 =
-    296u;
-  static constexpr uint16_t KEY_NUMLOCK =
-    300u;
-  static constexpr uint16_t KEY_CAPSLOCK =
-    301u;
-  static constexpr uint16_t KEY_SCROLLOCK =
-    302u;
-  static constexpr uint16_t KEY_RSHIFT =
-    303u;
-  static constexpr uint16_t KEY_LSHIFT =
-    304u;
-  static constexpr uint16_t KEY_RCTRL =
-    305u;
-  static constexpr uint16_t KEY_LCTRL =
-    306u;
-  static constexpr uint16_t KEY_RALT =
-    307u;
-  static constexpr uint16_t KEY_LALT =
-    308u;
-  static constexpr uint16_t KEY_RMETA =
-    309u;
-  static constexpr uint16_t KEY_LMETA =
-    310u;
-  static constexpr uint16_t KEY_LSUPER =
-    311u;
-  static constexpr uint16_t KEY_RSUPER =
-    312u;
-  static constexpr uint16_t KEY_MODE =
-    313u;
-  static constexpr uint16_t KEY_COMPOSE =
-    314u;
-  static constexpr uint16_t KEY_HELP =
-    315u;
-  static constexpr uint16_t KEY_PRINT =
-    316u;
-  static constexpr uint16_t KEY_SYSREQ =
-    317u;
-  static constexpr uint16_t KEY_BREAK =
-    318u;
-  static constexpr uint16_t KEY_MENU =
-    319u;
-  static constexpr uint16_t KEY_POWER =
-    320u;
-  static constexpr uint16_t KEY_EURO =
-    321u;
-  static constexpr uint16_t KEY_UNDO =
-    322u;
+  static constexpr int32_t KEY_UNKNOWN =
+    0;
+  static constexpr int32_t KEY_FIRST =
+    0;
+  static constexpr int32_t KEY_BACKSPACE =
+    8;
+  static constexpr int32_t KEY_TAB =
+    9;
+  static constexpr int32_t KEY_CLEAR =
+    12;
+  static constexpr int32_t KEY_RETURN =
+    13;
+  static constexpr int32_t KEY_PAUSE =
+    19;
+  static constexpr int32_t KEY_ESCAPE =
+    27;
+  static constexpr int32_t KEY_SPACE =
+    32;
+  static constexpr int32_t KEY_EXCLAIM =
+    33;
+  static constexpr int32_t KEY_QUOTEDBL =
+    34;
+  static constexpr int32_t KEY_HASH =
+    35;
+  static constexpr int32_t KEY_DOLLAR =
+    36;
+  static constexpr int32_t KEY_AMPERSAND =
+    38;
+  static constexpr int32_t KEY_QUOTE =
+    39;
+  static constexpr int32_t KEY_LEFTPAREN =
+    40;
+  static constexpr int32_t KEY_RIGHTPAREN =
+    41;
+  static constexpr int32_t KEY_ASTERISK =
+    42;
+  static constexpr int32_t KEY_PLUS =
+    43;
+  static constexpr int32_t KEY_COMMA =
+    44;
+  static constexpr int32_t KEY_MINUS =
+    45;
+  static constexpr int32_t KEY_PERIOD =
+    46;
+  static constexpr int32_t KEY_SLASH =
+    47;
+  static constexpr int32_t KEY_0 =
+    48;
+  static constexpr int32_t KEY_1 =
+    49;
+  static constexpr int32_t KEY_2 =
+    50;
+  static constexpr int32_t KEY_3 =
+    51;
+  static constexpr int32_t KEY_4 =
+    52;
+  static constexpr int32_t KEY_5 =
+    53;
+  static constexpr int32_t KEY_6 =
+    54;
+  static constexpr int32_t KEY_7 =
+    55;
+  static constexpr int32_t KEY_8 =
+    56;
+  static constexpr int32_t KEY_9 =
+    57;
+  static constexpr int32_t KEY_COLON =
+    58;
+  static constexpr int32_t KEY_SEMICOLON =
+    59;
+  static constexpr int32_t KEY_LESS =
+    60;
+  static constexpr int32_t KEY_EQUALS =
+    61;
+  static constexpr int32_t KEY_GREATER =
+    62;
+  static constexpr int32_t KEY_QUESTION =
+    63;
+  static constexpr int32_t KEY_AT =
+    64;
+  static constexpr int32_t KEY_LEFTBRACKET =
+    91;
+  static constexpr int32_t KEY_BACKSLASH =
+    92;
+  static constexpr int32_t KEY_RIGHTBRACKET =
+    93;
+  static constexpr int32_t KEY_CARET =
+    94;
+  static constexpr int32_t KEY_UNDERSCORE =
+    95;
+  static constexpr int32_t KEY_BACKQUOTE =
+    96;
+  static constexpr int32_t KEY_A =
+    97;
+  static constexpr int32_t KEY_B =
+    98;
+  static constexpr int32_t KEY_C =
+    99;
+  static constexpr int32_t KEY_D =
+    100;
+  static constexpr int32_t KEY_E =
+    101;
+  static constexpr int32_t KEY_F =
+    102;
+  static constexpr int32_t KEY_G =
+    103;
+  static constexpr int32_t KEY_H =
+    104;
+  static constexpr int32_t KEY_I =
+    105;
+  static constexpr int32_t KEY_J =
+    106;
+  static constexpr int32_t KEY_K =
+    107;
+  static constexpr int32_t KEY_L =
+    108;
+  static constexpr int32_t KEY_M =
+    109;
+  static constexpr int32_t KEY_N =
+    110;
+  static constexpr int32_t KEY_O =
+    111;
+  static constexpr int32_t KEY_P =
+    112;
+  static constexpr int32_t KEY_Q =
+    113;
+  static constexpr int32_t KEY_R =
+    114;
+  static constexpr int32_t KEY_S =
+    115;
+  static constexpr int32_t KEY_T =
+    116;
+  static constexpr int32_t KEY_U =
+    117;
+  static constexpr int32_t KEY_V =
+    118;
+  static constexpr int32_t KEY_W =
+    119;
+  static constexpr int32_t KEY_X =
+    120;
+  static constexpr int32_t KEY_Y =
+    121;
+  static constexpr int32_t KEY_Z =
+    122;
+  static constexpr int32_t KEY_DELETE =
+    127;
+  static constexpr int32_t KEY_WORLD_0 =
+    160;
+  static constexpr int32_t KEY_WORLD_1 =
+    161;
+  static constexpr int32_t KEY_WORLD_2 =
+    162;
+  static constexpr int32_t KEY_WORLD_3 =
+    163;
+  static constexpr int32_t KEY_WORLD_4 =
+    164;
+  static constexpr int32_t KEY_WORLD_5 =
+    165;
+  static constexpr int32_t KEY_WORLD_6 =
+    166;
+  static constexpr int32_t KEY_WORLD_7 =
+    167;
+  static constexpr int32_t KEY_WORLD_8 =
+    168;
+  static constexpr int32_t KEY_WORLD_9 =
+    169;
+  static constexpr int32_t KEY_WORLD_10 =
+    170;
+  static constexpr int32_t KEY_WORLD_11 =
+    171;
+  static constexpr int32_t KEY_WORLD_12 =
+    172;
+  static constexpr int32_t KEY_WORLD_13 =
+    173;
+  static constexpr int32_t KEY_WORLD_14 =
+    174;
+  static constexpr int32_t KEY_WORLD_15 =
+    175;
+  static constexpr int32_t KEY_WORLD_16 =
+    176;
+  static constexpr int32_t KEY_WORLD_17 =
+    177;
+  static constexpr int32_t KEY_WORLD_18 =
+    178;
+  static constexpr int32_t KEY_WORLD_19 =
+    179;
+  static constexpr int32_t KEY_WORLD_20 =
+    180;
+  static constexpr int32_t KEY_WORLD_21 =
+    181;
+  static constexpr int32_t KEY_WORLD_22 =
+    182;
+  static constexpr int32_t KEY_WORLD_23 =
+    183;
+  static constexpr int32_t KEY_WORLD_24 =
+    184;
+  static constexpr int32_t KEY_WORLD_25 =
+    185;
+  static constexpr int32_t KEY_WORLD_26 =
+    186;
+  static constexpr int32_t KEY_WORLD_27 =
+    187;
+  static constexpr int32_t KEY_WORLD_28 =
+    188;
+  static constexpr int32_t KEY_WORLD_29 =
+    189;
+  static constexpr int32_t KEY_WORLD_30 =
+    190;
+  static constexpr int32_t KEY_WORLD_31 =
+    191;
+  static constexpr int32_t KEY_WORLD_32 =
+    192;
+  static constexpr int32_t KEY_WORLD_33 =
+    193;
+  static constexpr int32_t KEY_WORLD_34 =
+    194;
+  static constexpr int32_t KEY_WORLD_35 =
+    195;
+  static constexpr int32_t KEY_WORLD_36 =
+    196;
+  static constexpr int32_t KEY_WORLD_37 =
+    197;
+  static constexpr int32_t KEY_WORLD_38 =
+    198;
+  static constexpr int32_t KEY_WORLD_39 =
+    199;
+  static constexpr int32_t KEY_WORLD_40 =
+    200;
+  static constexpr int32_t KEY_WORLD_41 =
+    201;
+  static constexpr int32_t KEY_WORLD_42 =
+    202;
+  static constexpr int32_t KEY_WORLD_43 =
+    203;
+  static constexpr int32_t KEY_WORLD_44 =
+    204;
+  static constexpr int32_t KEY_WORLD_45 =
+    205;
+  static constexpr int32_t KEY_WORLD_46 =
+    206;
+  static constexpr int32_t KEY_WORLD_47 =
+    207;
+  static constexpr int32_t KEY_WORLD_48 =
+    208;
+  static constexpr int32_t KEY_WORLD_49 =
+    209;
+  static constexpr int32_t KEY_WORLD_50 =
+    210;
+  static constexpr int32_t KEY_WORLD_51 =
+    211;
+  static constexpr int32_t KEY_WORLD_52 =
+    212;
+  static constexpr int32_t KEY_WORLD_53 =
+    213;
+  static constexpr int32_t KEY_WORLD_54 =
+    214;
+  static constexpr int32_t KEY_WORLD_55 =
+    215;
+  static constexpr int32_t KEY_WORLD_56 =
+    216;
+  static constexpr int32_t KEY_WORLD_57 =
+    217;
+  static constexpr int32_t KEY_WORLD_58 =
+    218;
+  static constexpr int32_t KEY_WORLD_59 =
+    219;
+  static constexpr int32_t KEY_WORLD_60 =
+    220;
+  static constexpr int32_t KEY_WORLD_61 =
+    221;
+  static constexpr int32_t KEY_WORLD_62 =
+    222;
+  static constexpr int32_t KEY_WORLD_63 =
+    223;
+  static constexpr int32_t KEY_WORLD_64 =
+    224;
+  static constexpr int32_t KEY_WORLD_65 =
+    225;
+  static constexpr int32_t KEY_WORLD_66 =
+    226;
+  static constexpr int32_t KEY_WORLD_67 =
+    227;
+  static constexpr int32_t KEY_WORLD_68 =
+    228;
+  static constexpr int32_t KEY_WORLD_69 =
+    229;
+  static constexpr int32_t KEY_WORLD_70 =
+    230;
+  static constexpr int32_t KEY_WORLD_71 =
+    231;
+  static constexpr int32_t KEY_WORLD_72 =
+    232;
+  static constexpr int32_t KEY_WORLD_73 =
+    233;
+  static constexpr int32_t KEY_WORLD_74 =
+    234;
+  static constexpr int32_t KEY_WORLD_75 =
+    235;
+  static constexpr int32_t KEY_WORLD_76 =
+    236;
+  static constexpr int32_t KEY_WORLD_77 =
+    237;
+  static constexpr int32_t KEY_WORLD_78 =
+    238;
+  static constexpr int32_t KEY_WORLD_79 =
+    239;
+  static constexpr int32_t KEY_WORLD_80 =
+    240;
+  static constexpr int32_t KEY_WORLD_81 =
+    241;
+  static constexpr int32_t KEY_WORLD_82 =
+    242;
+  static constexpr int32_t KEY_WORLD_83 =
+    243;
+  static constexpr int32_t KEY_WORLD_84 =
+    244;
+  static constexpr int32_t KEY_WORLD_85 =
+    245;
+  static constexpr int32_t KEY_WORLD_86 =
+    246;
+  static constexpr int32_t KEY_WORLD_87 =
+    247;
+  static constexpr int32_t KEY_WORLD_88 =
+    248;
+  static constexpr int32_t KEY_WORLD_89 =
+    249;
+  static constexpr int32_t KEY_WORLD_90 =
+    250;
+  static constexpr int32_t KEY_WORLD_91 =
+    251;
+  static constexpr int32_t KEY_WORLD_92 =
+    252;
+  static constexpr int32_t KEY_WORLD_93 =
+    253;
+  static constexpr int32_t KEY_WORLD_94 =
+    254;
+  static constexpr int32_t KEY_WORLD_95 =
+    255;
+  static constexpr int32_t KEY_KP0 =
+    256;
+  static constexpr int32_t KEY_KP1 =
+    257;
+  static constexpr int32_t KEY_KP2 =
+    258;
+  static constexpr int32_t KEY_KP3 =
+    259;
+  static constexpr int32_t KEY_KP4 =
+    260;
+  static constexpr int32_t KEY_KP5 =
+    261;
+  static constexpr int32_t KEY_KP6 =
+    262;
+  static constexpr int32_t KEY_KP7 =
+    263;
+  static constexpr int32_t KEY_KP8 =
+    264;
+  static constexpr int32_t KEY_KP9 =
+    265;
+  static constexpr int32_t KEY_KP_PERIOD =
+    266;
+  static constexpr int32_t KEY_KP_DIVIDE =
+    267;
+  static constexpr int32_t KEY_KP_MULTIPLY =
+    268;
+  static constexpr int32_t KEY_KP_MINUS =
+    269;
+  static constexpr int32_t KEY_KP_PLUS =
+    270;
+  static constexpr int32_t KEY_KP_ENTER =
+    271;
+  static constexpr int32_t KEY_KP_EQUALS =
+    272;
+  static constexpr int32_t KEY_UP =
+    273;
+  static constexpr int32_t KEY_DOWN =
+    274;
+  static constexpr int32_t KEY_RIGHT =
+    275;
+  static constexpr int32_t KEY_LEFT =
+    276;
+  static constexpr int32_t KEY_INSERT =
+    277;
+  static constexpr int32_t KEY_HOME =
+    278;
+  static constexpr int32_t KEY_END =
+    279;
+  static constexpr int32_t KEY_PAGEUP =
+    280;
+  static constexpr int32_t KEY_PAGEDOWN =
+    281;
+  static constexpr int32_t KEY_F1 =
+    282;
+  static constexpr int32_t KEY_F2 =
+    283;
+  static constexpr int32_t KEY_F3 =
+    284;
+  static constexpr int32_t KEY_F4 =
+    285;
+  static constexpr int32_t KEY_F5 =
+    286;
+  static constexpr int32_t KEY_F6 =
+    287;
+  static constexpr int32_t KEY_F7 =
+    288;
+  static constexpr int32_t KEY_F8 =
+    289;
+  static constexpr int32_t KEY_F9 =
+    290;
+  static constexpr int32_t KEY_F10 =
+    291;
+  static constexpr int32_t KEY_F11 =
+    292;
+  static constexpr int32_t KEY_F12 =
+    293;
+  static constexpr int32_t KEY_F13 =
+    294;
+  static constexpr int32_t KEY_F14 =
+    295;
+  static constexpr int32_t KEY_F15 =
+    296;
+  static constexpr int32_t KEY_NUMLOCK =
+    300;
+  static constexpr int32_t KEY_CAPSLOCK =
+    301;
+  static constexpr int32_t KEY_SCROLLOCK =
+    302;
+  static constexpr int32_t KEY_RSHIFT =
+    303;
+  static constexpr int32_t KEY_LSHIFT =
+    304;
+  static constexpr int32_t KEY_RCTRL =
+    305;
+  static constexpr int32_t KEY_LCTRL =
+    306;
+  static constexpr int32_t KEY_RALT =
+    307;
+  static constexpr int32_t KEY_LALT =
+    308;
+  static constexpr int32_t KEY_RMETA =
+    309;
+  static constexpr int32_t KEY_LMETA =
+    310;
+  static constexpr int32_t KEY_LSUPER =
+    311;
+  static constexpr int32_t KEY_RSUPER =
+    312;
+  static constexpr int32_t KEY_MODE =
+    313;
+  static constexpr int32_t KEY_COMPOSE =
+    314;
+  static constexpr int32_t KEY_HELP =
+    315;
+  static constexpr int32_t KEY_PRINT =
+    316;
+  static constexpr int32_t KEY_SYSREQ =
+    317;
+  static constexpr int32_t KEY_BREAK =
+    318;
+  static constexpr int32_t KEY_MENU =
+    319;
+  static constexpr int32_t KEY_POWER =
+    320;
+  static constexpr int32_t KEY_EURO =
+    321;
+  static constexpr int32_t KEY_UNDO =
+    322;
   static constexpr uint16_t MODIFIER_NONE =
     0u;
   static constexpr uint16_t MODIFIER_LSHIFT =
@@ -650,1167 +650,1167 @@ using Key =
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_UNKNOWN;
+constexpr int32_t Key_<ContainerAllocator>::KEY_UNKNOWN;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_FIRST;
+constexpr int32_t Key_<ContainerAllocator>::KEY_FIRST;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_BACKSPACE;
+constexpr int32_t Key_<ContainerAllocator>::KEY_BACKSPACE;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_TAB;
+constexpr int32_t Key_<ContainerAllocator>::KEY_TAB;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_CLEAR;
+constexpr int32_t Key_<ContainerAllocator>::KEY_CLEAR;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_RETURN;
+constexpr int32_t Key_<ContainerAllocator>::KEY_RETURN;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_PAUSE;
+constexpr int32_t Key_<ContainerAllocator>::KEY_PAUSE;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_ESCAPE;
+constexpr int32_t Key_<ContainerAllocator>::KEY_ESCAPE;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_SPACE;
+constexpr int32_t Key_<ContainerAllocator>::KEY_SPACE;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_EXCLAIM;
+constexpr int32_t Key_<ContainerAllocator>::KEY_EXCLAIM;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_QUOTEDBL;
+constexpr int32_t Key_<ContainerAllocator>::KEY_QUOTEDBL;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_HASH;
+constexpr int32_t Key_<ContainerAllocator>::KEY_HASH;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_DOLLAR;
+constexpr int32_t Key_<ContainerAllocator>::KEY_DOLLAR;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_AMPERSAND;
+constexpr int32_t Key_<ContainerAllocator>::KEY_AMPERSAND;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_QUOTE;
+constexpr int32_t Key_<ContainerAllocator>::KEY_QUOTE;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_LEFTPAREN;
+constexpr int32_t Key_<ContainerAllocator>::KEY_LEFTPAREN;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_RIGHTPAREN;
+constexpr int32_t Key_<ContainerAllocator>::KEY_RIGHTPAREN;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_ASTERISK;
+constexpr int32_t Key_<ContainerAllocator>::KEY_ASTERISK;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_PLUS;
+constexpr int32_t Key_<ContainerAllocator>::KEY_PLUS;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_COMMA;
+constexpr int32_t Key_<ContainerAllocator>::KEY_COMMA;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_MINUS;
+constexpr int32_t Key_<ContainerAllocator>::KEY_MINUS;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_PERIOD;
+constexpr int32_t Key_<ContainerAllocator>::KEY_PERIOD;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_SLASH;
+constexpr int32_t Key_<ContainerAllocator>::KEY_SLASH;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_0;
+constexpr int32_t Key_<ContainerAllocator>::KEY_0;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_1;
+constexpr int32_t Key_<ContainerAllocator>::KEY_1;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_2;
+constexpr int32_t Key_<ContainerAllocator>::KEY_2;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_3;
+constexpr int32_t Key_<ContainerAllocator>::KEY_3;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_4;
+constexpr int32_t Key_<ContainerAllocator>::KEY_4;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_5;
+constexpr int32_t Key_<ContainerAllocator>::KEY_5;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_6;
+constexpr int32_t Key_<ContainerAllocator>::KEY_6;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_7;
+constexpr int32_t Key_<ContainerAllocator>::KEY_7;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_8;
+constexpr int32_t Key_<ContainerAllocator>::KEY_8;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_9;
+constexpr int32_t Key_<ContainerAllocator>::KEY_9;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_COLON;
+constexpr int32_t Key_<ContainerAllocator>::KEY_COLON;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_SEMICOLON;
+constexpr int32_t Key_<ContainerAllocator>::KEY_SEMICOLON;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_LESS;
+constexpr int32_t Key_<ContainerAllocator>::KEY_LESS;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_EQUALS;
+constexpr int32_t Key_<ContainerAllocator>::KEY_EQUALS;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_GREATER;
+constexpr int32_t Key_<ContainerAllocator>::KEY_GREATER;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_QUESTION;
+constexpr int32_t Key_<ContainerAllocator>::KEY_QUESTION;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_AT;
+constexpr int32_t Key_<ContainerAllocator>::KEY_AT;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_LEFTBRACKET;
+constexpr int32_t Key_<ContainerAllocator>::KEY_LEFTBRACKET;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_BACKSLASH;
+constexpr int32_t Key_<ContainerAllocator>::KEY_BACKSLASH;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_RIGHTBRACKET;
+constexpr int32_t Key_<ContainerAllocator>::KEY_RIGHTBRACKET;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_CARET;
+constexpr int32_t Key_<ContainerAllocator>::KEY_CARET;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_UNDERSCORE;
+constexpr int32_t Key_<ContainerAllocator>::KEY_UNDERSCORE;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_BACKQUOTE;
+constexpr int32_t Key_<ContainerAllocator>::KEY_BACKQUOTE;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_A;
+constexpr int32_t Key_<ContainerAllocator>::KEY_A;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_B;
+constexpr int32_t Key_<ContainerAllocator>::KEY_B;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_C;
+constexpr int32_t Key_<ContainerAllocator>::KEY_C;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_D;
+constexpr int32_t Key_<ContainerAllocator>::KEY_D;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_E;
+constexpr int32_t Key_<ContainerAllocator>::KEY_E;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_F;
+constexpr int32_t Key_<ContainerAllocator>::KEY_F;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_G;
+constexpr int32_t Key_<ContainerAllocator>::KEY_G;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_H;
+constexpr int32_t Key_<ContainerAllocator>::KEY_H;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_I;
+constexpr int32_t Key_<ContainerAllocator>::KEY_I;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_J;
+constexpr int32_t Key_<ContainerAllocator>::KEY_J;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_K;
+constexpr int32_t Key_<ContainerAllocator>::KEY_K;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_L;
+constexpr int32_t Key_<ContainerAllocator>::KEY_L;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_M;
+constexpr int32_t Key_<ContainerAllocator>::KEY_M;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_N;
+constexpr int32_t Key_<ContainerAllocator>::KEY_N;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_O;
+constexpr int32_t Key_<ContainerAllocator>::KEY_O;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_P;
+constexpr int32_t Key_<ContainerAllocator>::KEY_P;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_Q;
+constexpr int32_t Key_<ContainerAllocator>::KEY_Q;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_R;
+constexpr int32_t Key_<ContainerAllocator>::KEY_R;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_S;
+constexpr int32_t Key_<ContainerAllocator>::KEY_S;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_T;
+constexpr int32_t Key_<ContainerAllocator>::KEY_T;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_U;
+constexpr int32_t Key_<ContainerAllocator>::KEY_U;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_V;
+constexpr int32_t Key_<ContainerAllocator>::KEY_V;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_W;
+constexpr int32_t Key_<ContainerAllocator>::KEY_W;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_X;
+constexpr int32_t Key_<ContainerAllocator>::KEY_X;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_Y;
+constexpr int32_t Key_<ContainerAllocator>::KEY_Y;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_Z;
+constexpr int32_t Key_<ContainerAllocator>::KEY_Z;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_DELETE;
+constexpr int32_t Key_<ContainerAllocator>::KEY_DELETE;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_0;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_0;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_1;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_1;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_2;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_2;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_3;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_3;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_4;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_4;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_5;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_5;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_6;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_6;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_7;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_7;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_8;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_8;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_9;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_9;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_10;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_10;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_11;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_11;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_12;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_12;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_13;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_13;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_14;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_14;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_15;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_15;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_16;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_16;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_17;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_17;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_18;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_18;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_19;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_19;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_20;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_20;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_21;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_21;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_22;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_22;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_23;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_23;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_24;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_24;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_25;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_25;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_26;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_26;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_27;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_27;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_28;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_28;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_29;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_29;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_30;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_30;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_31;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_31;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_32;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_32;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_33;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_33;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_34;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_34;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_35;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_35;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_36;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_36;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_37;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_37;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_38;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_38;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_39;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_39;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_40;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_40;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_41;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_41;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_42;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_42;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_43;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_43;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_44;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_44;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_45;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_45;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_46;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_46;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_47;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_47;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_48;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_48;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_49;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_49;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_50;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_50;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_51;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_51;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_52;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_52;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_53;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_53;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_54;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_54;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_55;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_55;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_56;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_56;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_57;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_57;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_58;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_58;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_59;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_59;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_60;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_60;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_61;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_61;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_62;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_62;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_63;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_63;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_64;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_64;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_65;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_65;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_66;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_66;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_67;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_67;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_68;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_68;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_69;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_69;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_70;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_70;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_71;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_71;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_72;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_72;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_73;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_73;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_74;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_74;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_75;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_75;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_76;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_76;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_77;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_77;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_78;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_78;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_79;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_79;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_80;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_80;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_81;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_81;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_82;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_82;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_83;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_83;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_84;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_84;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_85;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_85;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_86;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_86;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_87;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_87;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_88;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_88;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_89;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_89;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_90;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_90;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_91;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_91;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_92;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_92;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_93;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_93;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_94;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_94;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_WORLD_95;
+constexpr int32_t Key_<ContainerAllocator>::KEY_WORLD_95;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_KP0;
+constexpr int32_t Key_<ContainerAllocator>::KEY_KP0;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_KP1;
+constexpr int32_t Key_<ContainerAllocator>::KEY_KP1;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_KP2;
+constexpr int32_t Key_<ContainerAllocator>::KEY_KP2;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_KP3;
+constexpr int32_t Key_<ContainerAllocator>::KEY_KP3;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_KP4;
+constexpr int32_t Key_<ContainerAllocator>::KEY_KP4;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_KP5;
+constexpr int32_t Key_<ContainerAllocator>::KEY_KP5;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_KP6;
+constexpr int32_t Key_<ContainerAllocator>::KEY_KP6;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_KP7;
+constexpr int32_t Key_<ContainerAllocator>::KEY_KP7;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_KP8;
+constexpr int32_t Key_<ContainerAllocator>::KEY_KP8;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_KP9;
+constexpr int32_t Key_<ContainerAllocator>::KEY_KP9;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_KP_PERIOD;
+constexpr int32_t Key_<ContainerAllocator>::KEY_KP_PERIOD;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_KP_DIVIDE;
+constexpr int32_t Key_<ContainerAllocator>::KEY_KP_DIVIDE;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_KP_MULTIPLY;
+constexpr int32_t Key_<ContainerAllocator>::KEY_KP_MULTIPLY;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_KP_MINUS;
+constexpr int32_t Key_<ContainerAllocator>::KEY_KP_MINUS;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_KP_PLUS;
+constexpr int32_t Key_<ContainerAllocator>::KEY_KP_PLUS;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_KP_ENTER;
+constexpr int32_t Key_<ContainerAllocator>::KEY_KP_ENTER;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_KP_EQUALS;
+constexpr int32_t Key_<ContainerAllocator>::KEY_KP_EQUALS;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_UP;
+constexpr int32_t Key_<ContainerAllocator>::KEY_UP;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_DOWN;
+constexpr int32_t Key_<ContainerAllocator>::KEY_DOWN;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_RIGHT;
+constexpr int32_t Key_<ContainerAllocator>::KEY_RIGHT;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_LEFT;
+constexpr int32_t Key_<ContainerAllocator>::KEY_LEFT;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_INSERT;
+constexpr int32_t Key_<ContainerAllocator>::KEY_INSERT;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_HOME;
+constexpr int32_t Key_<ContainerAllocator>::KEY_HOME;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_END;
+constexpr int32_t Key_<ContainerAllocator>::KEY_END;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_PAGEUP;
+constexpr int32_t Key_<ContainerAllocator>::KEY_PAGEUP;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_PAGEDOWN;
+constexpr int32_t Key_<ContainerAllocator>::KEY_PAGEDOWN;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_F1;
+constexpr int32_t Key_<ContainerAllocator>::KEY_F1;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_F2;
+constexpr int32_t Key_<ContainerAllocator>::KEY_F2;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_F3;
+constexpr int32_t Key_<ContainerAllocator>::KEY_F3;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_F4;
+constexpr int32_t Key_<ContainerAllocator>::KEY_F4;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_F5;
+constexpr int32_t Key_<ContainerAllocator>::KEY_F5;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_F6;
+constexpr int32_t Key_<ContainerAllocator>::KEY_F6;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_F7;
+constexpr int32_t Key_<ContainerAllocator>::KEY_F7;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_F8;
+constexpr int32_t Key_<ContainerAllocator>::KEY_F8;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_F9;
+constexpr int32_t Key_<ContainerAllocator>::KEY_F9;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_F10;
+constexpr int32_t Key_<ContainerAllocator>::KEY_F10;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_F11;
+constexpr int32_t Key_<ContainerAllocator>::KEY_F11;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_F12;
+constexpr int32_t Key_<ContainerAllocator>::KEY_F12;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_F13;
+constexpr int32_t Key_<ContainerAllocator>::KEY_F13;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_F14;
+constexpr int32_t Key_<ContainerAllocator>::KEY_F14;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_F15;
+constexpr int32_t Key_<ContainerAllocator>::KEY_F15;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_NUMLOCK;
+constexpr int32_t Key_<ContainerAllocator>::KEY_NUMLOCK;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_CAPSLOCK;
+constexpr int32_t Key_<ContainerAllocator>::KEY_CAPSLOCK;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_SCROLLOCK;
+constexpr int32_t Key_<ContainerAllocator>::KEY_SCROLLOCK;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_RSHIFT;
+constexpr int32_t Key_<ContainerAllocator>::KEY_RSHIFT;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_LSHIFT;
+constexpr int32_t Key_<ContainerAllocator>::KEY_LSHIFT;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_RCTRL;
+constexpr int32_t Key_<ContainerAllocator>::KEY_RCTRL;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_LCTRL;
+constexpr int32_t Key_<ContainerAllocator>::KEY_LCTRL;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_RALT;
+constexpr int32_t Key_<ContainerAllocator>::KEY_RALT;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_LALT;
+constexpr int32_t Key_<ContainerAllocator>::KEY_LALT;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_RMETA;
+constexpr int32_t Key_<ContainerAllocator>::KEY_RMETA;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_LMETA;
+constexpr int32_t Key_<ContainerAllocator>::KEY_LMETA;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_LSUPER;
+constexpr int32_t Key_<ContainerAllocator>::KEY_LSUPER;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_RSUPER;
+constexpr int32_t Key_<ContainerAllocator>::KEY_RSUPER;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_MODE;
+constexpr int32_t Key_<ContainerAllocator>::KEY_MODE;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_COMPOSE;
+constexpr int32_t Key_<ContainerAllocator>::KEY_COMPOSE;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_HELP;
+constexpr int32_t Key_<ContainerAllocator>::KEY_HELP;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_PRINT;
+constexpr int32_t Key_<ContainerAllocator>::KEY_PRINT;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_SYSREQ;
+constexpr int32_t Key_<ContainerAllocator>::KEY_SYSREQ;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_BREAK;
+constexpr int32_t Key_<ContainerAllocator>::KEY_BREAK;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_MENU;
+constexpr int32_t Key_<ContainerAllocator>::KEY_MENU;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_POWER;
+constexpr int32_t Key_<ContainerAllocator>::KEY_POWER;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_EURO;
+constexpr int32_t Key_<ContainerAllocator>::KEY_EURO;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17
 template<typename ContainerAllocator>
-constexpr uint16_t Key_<ContainerAllocator>::KEY_UNDO;
+constexpr int32_t Key_<ContainerAllocator>::KEY_UNDO;
 #endif  // __cplusplus < 201703L
 #if __cplusplus < 201703L
 // static constexpr member variable definitions are only needed in C++14 and below, deprecated in C++17

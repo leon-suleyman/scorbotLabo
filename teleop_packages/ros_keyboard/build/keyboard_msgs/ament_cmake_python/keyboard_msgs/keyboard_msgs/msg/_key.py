@@ -2038,13 +2038,13 @@ class Key(metaclass=Metaclass_Key):
 
     _fields_and_field_types = {
         'header': 'std_msgs/Header',
-        'code': 'uint16',
+        'code': 'int32',
         'modifiers': 'uint16',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.NamespacedType(['std_msgs', 'msg'], 'Header'),  # noqa: E501
-        rosidl_parser.definition.BasicType('uint16'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint16'),  # noqa: E501
     )
 
@@ -2124,8 +2124,8 @@ class Key(metaclass=Metaclass_Key):
             assert \
                 isinstance(value, int), \
                 "The 'code' field must be of type 'int'"
-            assert value >= 0 and value < 65536, \
-                "The 'code' field must be an unsigned integer in [0, 65535]"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'code' field must be an integer in [-2147483648, 2147483647]"
         self._code = value
 
     @builtins.property

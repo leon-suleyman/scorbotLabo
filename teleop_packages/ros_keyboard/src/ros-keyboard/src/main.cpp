@@ -11,16 +11,7 @@ int main(int argc, char **argv)
   auto pub_down = n->create_publisher<keyboard_msgs::msg::Key>("keydown", 10);
   auto pub_up = n->create_publisher<keyboard_msgs::msg::Key>("keyup", 10);
 
-  bool allow_repeat = false;
-  int repeat_delay, repeat_interval;
-
-  n->get_parameter_or("allow_repeat", allow_repeat, false);
-  n->get_parameter_or("repeat_delay", repeat_delay, 0);
-  n->get_parameter_or("repeat_interval", repeat_interval, 0);
-
-  if (!allow_repeat)
-    repeat_delay = 0; // disable
-  keyboard::Keyboard kbd(repeat_delay, repeat_interval);
+  keyboard::Keyboard kbd;
 
   rclcpp::Rate r(50);
 
@@ -37,7 +28,7 @@ int main(int argc, char **argv)
         pub_up->publish(k);
       }
     }
-    rclcpp::spin(n);
+    rclcpp::spin_some(n);
     r.sleep();
   }
 

@@ -1,0 +1,12 @@
+[0.011s] Invoking command in '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard': CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard:/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard -- -j8 -l8
+[0.061s] [35m[1mConsolidate compiler generated dependencies of target keyboard[0m
+[0.086s] [ 33%] [32mBuilding CXX object CMakeFiles/keyboard.dir/src/keyboard.cpp.o[0m
+[1.092s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/keyboard.cpp:[m[K In constructor ‘[01m[Kkeyboard::Keyboard::Keyboard()[m[K’:
+[1.092s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/src/ros-keyboard/src/keyboard.cpp:6:16:[m[K [01;31m[Kerror: [m[K‘[01m[KSDL_INIT_EVENT[m[K’ was not declared in this scope; did you mean ‘[01m[KSDL_INIT_EVENTS[m[K’?
+[1.092s]     6 |   if (SDL_Init([01;31m[KSDL_INIT_EVENT[m[K) < 0) throw std::runtime_error("Could not init SDL");
+[1.092s]       |                [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.092s]       |                [32m[KSDL_INIT_EVENTS[m[K
+[1.188s] gmake[2]: *** [CMakeFiles/keyboard.dir/build.make:90: CMakeFiles/keyboard.dir/src/keyboard.cpp.o] Error 1
+[1.188s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/keyboard.dir/all] Error 2
+[1.188s] gmake: *** [Makefile:146: all] Error 2
+[1.191s] Invoked command in '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard' returned '2': CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard:/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/build/keyboard -- -j8 -l8
