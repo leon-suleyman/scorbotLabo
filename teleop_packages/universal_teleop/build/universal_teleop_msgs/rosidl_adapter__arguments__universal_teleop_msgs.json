@@ -1,0 +1,7 @@
+{
+  "package_name": "universal_teleop_msgs",
+  "non_idl_tuples": [
+    "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop-msgs:msg/Control.msg",
+    "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop-msgs:msg/Event.msg"
+  ]
+}

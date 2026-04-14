@@ -1,134 +1,73 @@
-cmake_minimum_required(VERSION 2.8.3)
+
+#find_package(catkin REQUIRED COMPONENTS roscpp std_msgs geometry_msgs nav_msgs keyboard joy message_generation)
+
+
+
+
+
+cmake_minimum_required(VERSION 3.14.4)
+if(NOT CMAKE_CXX_STANDARD)
+set(CMAKE_CXX_STANDARD 17)
+endif()
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
 project(universal_teleop)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
-
-## Find catkin macros and libraries
-## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
-## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS roscpp std_msgs geometry_msgs nav_msgs keyboard joy message_generation)
-
-## System dependencies are found with CMake's conventions
-# find_package(Boost REQUIRED COMPONENTS system)
-
-
-## Uncomment this if the package has a setup.py. This macro ensures
-## modules and global scripts declared therein get installed
-## See http://ros.org/doc/groovy/api/catkin/html/user_guide/setup_dot_py.html
-# catkin_python_setup()
-
-include_directories(include
- ${catkin_INCLUDE_DIRS}
-)
+find_package(rosidl_default_generators REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(keyboard_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(universal_teleop_msgs REQUIRED)
 
 #######################################
 ## Declare ROS messages and services ##
 #######################################
 
-## Generate messages in the 'msg' folder
-add_message_files(
-  FILES
-  Event.msg
-  Control.msg
-)
-
-## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
-#   Service1.srv
-#   Service2.srv
-# )
-
-## Generate added messages and services with any dependencies listed here
-generate_messages(
-   DEPENDENCIES
-   std_msgs
-)
-
-###################################
-## catkin specific configuration ##
-###################################
-## The catkin_package macro generates cmake config files for your package
-## Declare things to be passed to dependent projects
-## LIBRARIES: libraries you create in this project that dependent projects also need
-## CATKIN_DEPENDS: catkin_packages dependent projects also need
-## DEPENDS: system dependencies of this project that dependent projects also need
-catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES universal_teleop
-  CATKIN_DEPENDS roscpp geometry_msgs nav_msgs std_msgs message_runtime 
-#  DEPENDS system_lib
-)
 
 ###########
 ## Build ##
 ###########
+set(msg_dependencies "std_msgs" "nav_msgs" "geometry_msgs" "keyboard_msgs" "sensor_msgs" "universal_teleop_msgs")
 
-## Specify additional locations of header files
-## Your package locations should be listed before other locations
-include_directories(${catkin_INCLUDE_DIRS})
-
-## Declare a cpp library
-# add_library(universal_teleop
-#   src/${PROJECT_NAME}/universal_teleop.cpp
-# )
-
-## Declare a cpp executable
 add_executable(universal_teleop src/main.cpp src/teleop.cpp)
+ament_target_dependencies(universal_teleop rclcpp ${msg_dependencies})
 
-## Add cmake target dependencies of the executable/library
-## as an example, message headers may need to be generated before nodes
-add_dependencies(universal_teleop universal_teleop_generate_messages_cpp)
 
-## Specify libraries to link a library or executable target against
+target_include_directories(universal_teleop PUBLIC
+"$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>"
+"$<INSTALL_INTERFACE:include/${PROJECT_NAME}>")
+
 target_link_libraries(universal_teleop
-  ${catkin_LIBRARIES}
+rclcpp::rclcpp
+${std_msgs_TARGETS}
+${nav_msgs_TARGETS}
+${geometry_msgs_TARGETS}
+${keyboard_msgs_TARGETS}
+${sensor_msgs_TARGETS}
+${universal_teleop_msgs_TARGETS}
 )
+
+
+#add_dependencies(keyboard keyboard_gencpp)
 
 #############
 ## Install ##
 #############
 
-# all install targets should use catkin DESTINATION variables
-# See http://ros.org/doc/groovy/api/catkin/html/adv_user_guide/variables.html
 
-## Mark executable scripts (Python etc.) for installation
-## in contrast to setup.py, you can choose the destination
-# install(PROGRAMS
-#   scripts/my_python_script
-#   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-# )
+install(TARGETS universal_teleop
+  DESTINATION "lib/${PROJECT_NAME}")
 
-# Mark executables and/or libraries for installation
-install(TARGETS universal_teleop universal_teleop
-  ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-  LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-)
-
-## Mark cpp header files for installation
-# install(DIRECTORY include/${PROJECT_NAME}/
-#   DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
-#   FILES_MATCHING PATTERN "*.h"
-#   PATTERN ".svn" EXCLUDE
-# )
-
-## Mark other files for installation (e.g. launch and bag files, etc.)
-# install(FILES
-#   # myfile1
-#   # myfile2
-#   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-# )
-
-#############
-## Testing ##
-#############
-
-## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_universal_teleop.cpp)
-# if(TARGET ${PROJECT_NAME}-test)
-#   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
-# endif()
-
-## Add folders to be run by python nosetests
-# catkin_add_nosetests(test)
+  #ament_export_dependencies(
+  #  "rclcpp"
+  #  "std_msgs"
+  #  "SDL2"
+  #  #"sdl2_custom"
+  #  "ros_keyboard_msgs")
+  #  
+  #ament_export_targets(export_keyboard)
+ament_package()

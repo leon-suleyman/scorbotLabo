@@ -1,0 +1,4 @@
+source;share/universal_teleop_msgs/local_setup.bash
+source;share/universal_teleop_msgs/local_setup.dsv
+source;share/universal_teleop_msgs/local_setup.sh
+source;share/universal_teleop_msgs/local_setup.zsh

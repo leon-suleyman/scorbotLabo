@@ -26,16 +26,6 @@ find_package(keyboard_msgs REQUIRED)
 
 add_executable(keyboard src/main.cpp src/keyboard.cpp)
 ament_target_dependencies(keyboard rclcpp SDL2 keyboard_msgs)
-#set(msg_files "msg/Key.msg")
-#
-#rosidl_generate_interfaces(${PROJECT_NAME}
-#  ${msg_files}
-#  DEPENDENCIES
-#  std_msgs
-#)
-#
-#rosidl_target_interfaces(keyboard
-#  ${PROJECT_NAME} "rosidl_typesupport_cpp")
 
 
 target_include_directories(keyboard PUBLIC

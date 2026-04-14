@@ -1,15 +1,16 @@
-#include <ros/ros.h>
+#include <rclcpp/rclcpp.hpp>
 #include "teleop.h"
 
 int main(int argc, char** argv)
 {
-  ros::init(argc, argv, "universal_teleop");
+  rclcpp::init(argc, argv);
+  auto n = rclcpp::Node::make_shared("universal_teleop");
 
   universal_teleop::Teleop t;
 
-  ros::Rate r(20);
-  while(ros::ok()) {
-    ros::spinOnce();
+  rclcpp::Rate r(20);
+  while(rclcpp::ok()) {
+    rclcpp::spin_some(n);
     t.control();
     r.sleep();
   }

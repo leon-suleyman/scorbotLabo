@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-7a4ded5a055d4392e85c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "universal_teleop",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-efc86cd6774b484188d2.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "universal_teleop::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-universal_teleop-a72f19d5c3a94340cef9.json",
+					"name" : "universal_teleop",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "universal_teleop_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-universal_teleop_uninstall-fc18c38515feca5511c2.json",
+					"name" : "universal_teleop_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop",
+		"source" : "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

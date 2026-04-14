@@ -1,0 +1,291 @@
+[35m[1mConsolidate compiler generated dependencies of target universal_teleop[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/universal_teleop.dir/src/teleop.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/universal_teleop.dir/src/main.cpp.o[0m
+In file included from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:5[m[K:
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:16:33:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_[m[K’ does not name a type
+   16 |       void joystick_event(const [01;31m[Ksensor_[m[K/msg::msg::Joy::ConstPtr& joy);
+      |                                 [01;31m[K^~~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:16:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K/[m[K’ token
+   16 |       void joystick_event(const sensor_[01;31m[K/[m[Kmsg::msg::Joy::ConstPtr& joy);
+      |                                        [01;31m[K^[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:17:74:[m[K [01;35m[Kwarning: [m[K‘[01m[Kkeyboard_msgs::msg::Key_<std::allocator<void> >::ConstPtr[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   17 |       void keyboard_up_event(const keyboard_msgs::msg::Key::ConstPtr& key[01;35m[K)[m[K;
+      |                                                                          [01;35m[K^[m[K
+In file included from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/key.hpp:7[m[K,
+                 from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:6[m[K,
+                 from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:5[m[K:
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__struct.hpp:623:5:[m[K [01;36m[Knote: [m[Kdeclared here
+  623 |     [01;36m[KConstPtr[m[K;
+      |     [01;36m[K^~~~~~~~[m[K
+In file included from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:5[m[K:
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:18:76:[m[K [01;35m[Kwarning: [m[K‘[01m[Kkeyboard_msgs::msg::Key_<std::allocator<void> >::ConstPtr[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   18 |       void keyboard_down_event(const keyboard_msgs::msg::Key::ConstPtr& key[01;35m[K)[m[K;
+      |                                                                            [01;35m[K^[m[K
+In file included from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/key.hpp:7[m[K,
+                 from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:6[m[K,
+                 from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:5[m[K:
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__struct.hpp:623:5:[m[K [01;36m[Knote: [m[Kdeclared here
+  623 |     [01;36m[KConstPtr[m[K;
+      |     [01;36m[K^~~~~~~~[m[K
+In file included from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/main.cpp:2[m[K:
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:16:33:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_[m[K’ does not name a type
+   16 |       void joystick_event(const [01;31m[Ksensor_[m[K/msg::msg::Joy::ConstPtr& joy);
+      |                                 [01;31m[K^~~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:16:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K/[m[K’ token
+   16 |       void joystick_event(const sensor_[01;31m[K/[m[Kmsg::msg::Joy::ConstPtr& joy);
+      |                                        [01;31m[K^[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:17:74:[m[K [01;35m[Kwarning: [m[K‘[01m[Kkeyboard_msgs::msg::Key_<std::allocator<void> >::ConstPtr[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   17 |       void keyboard_up_event(const keyboard_msgs::msg::Key::ConstPtr& key[01;35m[K)[m[K;
+      |                                                                          [01;35m[K^[m[K
+In file included from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/key.hpp:7[m[K,
+                 from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:6[m[K,
+                 from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/main.cpp:2[m[K:
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__struct.hpp:623:5:[m[K [01;36m[Knote: [m[Kdeclared here
+  623 |     [01;36m[KConstPtr[m[K;
+      |     [01;36m[K^~~~~~~~[m[K
+In file included from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/main.cpp:2[m[K:
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:18:76:[m[K [01;35m[Kwarning: [m[K‘[01m[Kkeyboard_msgs::msg::Key_<std::allocator<void> >::ConstPtr[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   18 |       void keyboard_down_event(const keyboard_msgs::msg::Key::ConstPtr& key[01;35m[K)[m[K;
+      |                                                                            [01;35m[K^[m[K
+In file included from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/key.hpp:7[m[K,
+                 from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:6[m[K,
+                 from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/main.cpp:2[m[K:
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__struct.hpp:623:5:[m[K [01;36m[Knote: [m[Kdeclared here
+  623 |     [01;36m[KConstPtr[m[K;
+      |     [01;36m[K^~~~~~~~[m[K
+In file included from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:5[m[K:
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:20:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kuniversal_teleop_msg[m[K’ does not name a type
+   20 |       void process_event(const [01;31m[Kuniversal_teleop_msg[m[K::msg::Event& e);
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:20:57:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+   20 |       void process_event(const universal_teleop_msg::msg[01;31m[K::[m[KEvent& e);
+      |                                                         [01;31m[K^~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:20:57:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+   20 |       void process_event[34m[K([m[Kconst universal_teleop_msg::msg[01;31m[K:[m[K[32m[K:[m[KEvent& e);
+      |                         [34m[K~[m[K                               [01;31m[K^[m[K[32m[K~[m[K
+      |                                                         [32m[K)[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:20:54:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   20 |       void process_event(const universal_teleop_msg::[01;31m[Kmsg[m[K::Event& e);
+      |                                                      [01;31m[K^~~[m[K
+      |                                                         [32m[K;[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:20:59:[m[K [01;31m[Kerror: [m[K‘[01m[KEvent[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+   20 |       void process_event(const universal_teleop_msg::msg::[01;31m[KEvent[m[K& e);
+      |                                                           [01;31m[K^~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:24:15:[m[K [01;31m[Kerror: [m[K‘[01m[KSubscriber[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type
+   24 |       rclcpp::[01;31m[KSubscriber[m[K joy_sub, keyup_sub, keydown_sub;
+      |               [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:25:7:[m[K [01;31m[Kerror: [m[Kinvalid use of template-name ‘[01m[Krclcpp::Publisher[m[K’ without an argument list
+   25 |       [01;31m[Krclcpp[m[K::Publisher pub_vel, pub_event, pub_control;
+      |       [01;31m[K^~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:25:7:[m[K [01;31m[Kerror: [m[Kinvalid use of template-name ‘[01m[Krclcpp::Publisher[m[K’ without an argument list
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:25:7:[m[K [01;31m[Kerror: [m[Kinvalid use of template-name ‘[01m[Krclcpp::Publisher[m[K’ without an argument list
+In file included from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/main.cpp:2[m[K:
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:20:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kuniversal_teleop_msg[m[K’ does not name a type
+   20 |       void process_event(const [01;31m[Kuniversal_teleop_msg[m[K::msg::Event& e);
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:20:57:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+   20 |       void process_event(const universal_teleop_msg::msg[01;31m[K::[m[KEvent& e);
+      |                                                         [01;31m[K^~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:20:57:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+   20 |       void process_event[34m[K([m[Kconst universal_teleop_msg::msg[01;31m[K:[m[K[32m[K:[m[KEvent& e);
+      |                         [34m[K~[m[K                               [01;31m[K^[m[K[32m[K~[m[K
+      |                                                         [32m[K)[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:20:54:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   20 |       void process_event(const universal_teleop_msg::[01;31m[Kmsg[m[K::Event& e);
+      |                                                      [01;31m[K^~~[m[K
+      |                                                         [32m[K;[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:20:59:[m[K [01;31m[Kerror: [m[K‘[01m[KEvent[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+   20 |       void process_event(const universal_teleop_msg::msg::[01;31m[KEvent[m[K& e);
+      |                                                           [01;31m[K^~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:24:15:[m[K [01;31m[Kerror: [m[K‘[01m[KSubscriber[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type
+   24 |       rclcpp::[01;31m[KSubscriber[m[K joy_sub, keyup_sub, keydown_sub;
+      |               [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:25:7:[m[K [01;31m[Kerror: [m[Kinvalid use of template-name ‘[01m[Krclcpp::Publisher[m[K’ without an argument list
+   25 |       [01;31m[Krclcpp[m[K::Publisher pub_vel, pub_event, pub_control;
+      |       [01;31m[K^~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:25:7:[m[K [01;31m[Kerror: [m[Kinvalid use of template-name ‘[01m[Krclcpp::Publisher[m[K’ without an argument list
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:25:7:[m[K [01;31m[Kerror: [m[Kinvalid use of template-name ‘[01m[Krclcpp::Publisher[m[K’ without an argument list
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:[m[K In constructor ‘[01m[Kuniversal_teleop::Teleop::Teleop()[m[K’:
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:13:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[KhasParam[m[K’
+   13 |   if (n.[01;31m[KhasParam[m[K("joy_axes")) n.getParam("joy_axes", joy_axes);
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:13:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[KgetParam[m[K’
+   13 |   if (n.hasParam("joy_axes")) n.[01;31m[KgetParam[m[K("joy_axes", joy_axes);
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:18:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[KhasParam[m[K’
+   18 |   if (n.[01;31m[KhasParam[m[K("joy_buttons")) n.getParam("joy_buttons", joy_buttons);
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:18:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[KgetParam[m[K’
+   18 |   if (n.hasParam("joy_buttons")) n.[01;31m[KgetParam[m[K("joy_buttons", joy_buttons);
+      |                                    [01;31m[K^~~~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:23:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Kparam[m[K’
+   23 |   n.[01;31m[Kparam[m[K("joy_deadzones", joy_deadzones, joy_deadzones);
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:27:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[KhasParam[m[K’
+   27 |   if (n.[01;31m[KhasParam[m[K("keys")) n.getParam("keys", keys);
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:27:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[KgetParam[m[K’
+   27 |   if (n.hasParam("keys")) n.[01;31m[KgetParam[m[K("keys", keys);
+      |                             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:32:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[KhasParam[m[K’
+   32 |   if (n.[01;31m[KhasParam[m[K("key_axes")) n.getParam("key_axes", key_axes);
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:32:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[KgetParam[m[K’
+   32 |   if (n.hasParam("key_axes")) n.[01;31m[KgetParam[m[K("key_axes", key_axes);
+      |                                 [01;31m[K^~~~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:38:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Kparam[m[K’
+   38 |   n.[01;31m[Kparam[m[K("scales", axis_scales, axis_scales);
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:41:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Kparam[m[K’
+   41 |   n.[01;31m[Kparam[m[K("send_velocity", send_velocity, true);
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:44:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoy_sub[m[K’ was not declared in this scope
+   44 |   [01;31m[Kjoy_sub[m[K = n.subscribe("/joy", 1, &Teleop::joystick_event, this);
+      |   [01;31m[K^~~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:44:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Ksubscribe[m[K’
+   44 |   joy_sub = n.[01;31m[Ksubscribe[m[K("/joy", 1, &Teleop::joystick_event, this);
+      |               [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:45:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kkeyup_sub[m[K’ was not declared in this scope
+   45 |   [01;31m[Kkeyup_sub[m[K = n.subscribe("/keyboard/keyup", 1, &Teleop::keyboard_up_event, this);
+      |   [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:45:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Ksubscribe[m[K’
+   45 |   keyup_sub = n.[01;31m[Ksubscribe[m[K("/keyboard/keyup", 1, &Teleop::keyboard_up_event, this);
+      |                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:46:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kkeydown_sub[m[K’ was not declared in this scope
+   46 |   [01;31m[Kkeydown_sub[m[K = n.subscribe("/keyboard/keydown", 1, &Teleop::keyboard_down_event, this);
+      |   [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:46:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Ksubscribe[m[K’
+   46 |   keydown_sub = n.[01;31m[Ksubscribe[m[K("/keyboard/keydown", 1, &Teleop::keyboard_down_event, this);
+      |                   [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:49:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Kadvertise[m[K’
+   49 |   pub_vel = n.[01;31m[Kadvertise[m[K<geometry_msgs::Twist>("/robot/cmd_vel", 5);
+      |               [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:49:40:[m[K [01;31m[Kerror: [m[K‘[01m[KTwist[m[K’ is not a member of ‘[01m[Kgeometry_msgs[m[K’; did you mean ‘[01m[Kgeometry_msgs::msg::Twist[m[K’?
+   49 |   pub_vel = n.advertise<geometry_msgs::[01;31m[KTwist[m[K>("/robot/cmd_vel", 5);
+      |                                        [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp:7[m[K,
+                 from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:135:7:[m[K [01;36m[Knote: [m[K‘[01m[Kgeometry_msgs::msg::Twist[m[K’ declared here
+  135 | using [01;36m[KTwist[m[K =
+      |       [01;36m[K^~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:51:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Kadvertise[m[K’
+   51 |   pub_event = n.[01;31m[Kadvertise[m[K<teleop::Event>("events", 5);
+      |                 [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:51:35:[m[K [01;31m[Kerror: [m[K‘[01m[KEvent[m[K’ is not a member of ‘[01m[Kteleop[m[K’
+   51 |   pub_event = n.advertise<teleop::[01;31m[KEvent[m[K>("events", 5);
+      |                                   [01;31m[K^~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:51:35:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:30[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+                 from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/event.hpp:27:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Krclcpp::Event[m[K’
+   27 | class [01;36m[KEvent[m[K
+      |       [01;36m[K^~~~~[m[K
+In file included from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/event.hpp:7[m[K,
+                 from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:7[m[K,
+                 from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:5[m[K:
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__struct.hpp:155:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Kuniversal_teleop_msgs::msg::Event[m[K’
+  155 | using [01;36m[KEvent[m[K =
+      |       [01;36m[K^~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:52:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Node[m[K’ has no member named ‘[01m[Kadvertise[m[K’
+   52 |   pub_control = n.[01;31m[Kadvertise[m[K<teleop::Control>("controls", 1);
+      |                   [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:52:37:[m[K [01;31m[Kerror: [m[K‘[01m[KControl[m[K’ is not a member of ‘[01m[Kteleop[m[K’; did you mean ‘[01m[Kuniversal_teleop_msgs::msg::Control[m[K’?
+   52 |   pub_control = n.advertise<teleop::[01;31m[KControl[m[K>("controls", 1);
+      |                                     [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/control.hpp:7[m[K,
+                 from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:4[m[K:
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__struct.hpp:155:7:[m[K [01;36m[Knote: [m[K‘[01m[Kuniversal_teleop_msgs::msg::Control[m[K’ declared here
+  155 | using [01;36m[KControl[m[K =
+      |       [01;36m[K^~~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:[m[K At global scope:
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:61:50:[m[K [01;31m[Kerror: [m[K‘[01m[KEvent[m[K’ in namespace ‘[01m[Kteleop[m[K’ does not name a type
+   61 | void teleop::Teleop::process_event(const teleop::[01;31m[KEvent[m[K& e)
+      |                                                  [01;31m[K^~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:61:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid universal_teleop::Teleop::process_event(const int&)[m[K’
+   61 | void [01;31m[Kteleop[m[K::Teleop::process_event(const teleop::Event& e)
+      |      [01;31m[K^~~~~~[m[K
+In file included from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:5[m[K:
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:20:12:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid universal_teleop::Teleop::process_event(...)[m[K’
+   20 |       void [01;36m[Kprocess_event[m[K(const universal_teleop_msg::msg::Event& e);
+      |            [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:10:9:[m[K [01;36m[Knote: [m[K‘[01m[Kclass universal_teleop::Teleop[m[K’ defined here
+   10 |   class [01;36m[KTeleop[m[K {
+      |         [01;36m[K^~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:84:56:[m[K [01;31m[Kerror: [m[K‘[01m[KJoy[m[K’ in namespace ‘[01m[Ksensor_msgs[m[K’ does not name a type
+   84 | void teleop::Teleop::joystick_event(const sensor_msgs::[01;31m[KJoy[m[K::ConstPtr& joy)
+      |                                                        [01;31m[K^~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:84:69:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+   84 | void teleop::Teleop::joystick_event(const sensor_msgs::Joy::ConstPtr[01;31m[K&[m[K joy)
+      |                                                                     [01;31m[K^[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:84:69:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+   84 | void teleop::Teleop::joystick_event[34m[K([m[Kconst sensor_msgs::Joy::ConstPtr[01;31m[K&[m[K joy)
+      |                                    [34m[K~[m[K                                [01;31m[K^[m[K
+      |                                                                     [32m[K)[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:84:71:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kjoy[m[K’
+   84 | void teleop::Teleop::joystick_event(const sensor_msgs::Joy::ConstPtr& [01;31m[Kjoy[m[K)
+      |                                                                       [01;31m[K^~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:127:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kkeyboard[m[K’ does not name a type
+  127 | void teleop::Teleop::keyboard_up_event(const [01;31m[Kkeyboard[m[K::Key::ConstPtr& key)
+      |                                              [01;31m[K^~~~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:127:59:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+  127 | void teleop::Teleop::keyboard_up_event(const keyboard::Key[01;31m[K::[m[KConstPtr& key)
+      |                                                           [01;31m[K^~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:127:59:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+  127 | void teleop::Teleop::keyboard_up_event[34m[K([m[Kconst keyboard::Key[01;31m[K:[m[K[32m[K:[m[KConstPtr& key)
+      |                                       [34m[K~[m[K                   [01;31m[K^[m[K[32m[K~[m[K
+      |                                                           [32m[K)[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:127:59:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
+  127 | void teleop::Teleop::keyboard_up_event(const keyboard::Key[01;31m[K::[m[KConstPtr& key)
+      |                                                           [01;31m[K^~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:145:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kkeyboard[m[K’ does not name a type
+  145 | void teleop::Teleop::keyboard_down_event(const [01;31m[Kkeyboard[m[K::Key::ConstPtr& key)
+      |                                                [01;31m[K^~~~~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:145:61:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+  145 | void teleop::Teleop::keyboard_down_event(const keyboard::Key[01;31m[K::[m[KConstPtr& key)
+      |                                                             [01;31m[K^~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:145:61:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+  145 | void teleop::Teleop::keyboard_down_event[34m[K([m[Kconst keyboard::Key[01;31m[K:[m[K[32m[K:[m[KConstPtr& key)
+      |                                         [34m[K~[m[K                   [01;31m[K^[m[K[32m[K~[m[K
+      |                                                             [32m[K)[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:145:61:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
+  145 | void teleop::Teleop::keyboard_down_event(const keyboard::Key[01;31m[K::[m[KConstPtr& key)
+      |                                                             [01;31m[K^~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:[m[K In member function ‘[01m[Kvoid universal_teleop::Teleop::control()[m[K’:
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:181:20:[m[K [01;31m[Kerror: [m[K‘[01m[KTwist[m[K’ is not a member of ‘[01m[Kgeometry_msgs[m[K’; did you mean ‘[01m[Kgeometry_msgs::msg::Twist[m[K’?
+  181 |     geometry_msgs::[01;31m[KTwist[m[K vel;
+      |                    [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp:7[m[K,
+                 from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:135:7:[m[K [01;36m[Knote: [m[K‘[01m[Kgeometry_msgs::msg::Twist[m[K’ declared here
+  135 | using [01;36m[KTwist[m[K =
+      |       [01;36m[K^~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:182:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kvel[m[K’ was not declared in this scope
+  182 |     [01;31m[Kvel[m[K.linear.x = pitch * axis_scales["pitch"];
+      |     [01;31m[K^~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:190:20:[m[K [01;31m[Kerror: [m[K‘[01m[KTwist[m[K’ is not a member of ‘[01m[Kgeometry_msgs[m[K’; did you mean ‘[01m[Kgeometry_msgs::msg::Twist[m[K’?
+  190 |     geometry_msgs::[01;31m[KTwist[m[K vel;
+      |                    [01;31m[K^~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp:7[m[K,
+                 from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:135:7:[m[K [01;36m[Knote: [m[K‘[01m[Kgeometry_msgs::msg::Twist[m[K’ declared here
+  135 | using [01;36m[KTwist[m[K =
+      |       [01;36m[K^~~~~[m[K
+[01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:191:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kvel[m[K’ was not declared in this scope
+  191 |     [01;31m[Kvel[m[K.linear.x = key_axes_state["pitch"] * axis_scales["pitch"];
+      |     [01;31m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/universal_teleop.dir/build.make:76: CMakeFiles/universal_teleop.dir/src/main.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/universal_teleop.dir/build.make:90: CMakeFiles/universal_teleop.dir/src/teleop.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/universal_teleop.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

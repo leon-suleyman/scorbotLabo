@@ -1,6 +1,6 @@
 * Mover todo a ROS2:
     * Mover Los Teleops:
-        * Migrar Keyboard a ROS2
+        ° Migrar Keyboard a ROS2 
         * Migrar a usar Joy de Humble
         * Migrar Universal_Teleop a ROS2
     * Migrar Scorbot:
@@ -9,6 +9,7 @@
 
 
 Consideraciones:
-    * Armar nuevas carpetas para que vaya todo en paralelo hasta que quede todo bien migrado
+    X Armar nuevas carpetas para que vaya todo en paralelo hasta que quede todo bien migrado
+        ° branch en vez de carpetas
     * ir de a poco, más chiquito a más grande
     * ¿Probar las herramientas automáticas en los teleops?
