@@ -1,61 +1,58 @@
-#include <geometry_msgs/msg/twist.hpp>
 #include <std_msgs/msg/empty.hpp>
 #include <iostream>
-#include "universal_teleop_msgs/msg/control.hpp"
 #include "teleop.h"
 
 using namespace std;
 namespace teleop = universal_teleop;
 
-teleop::Teleop::Teleop(void) : n("~"), key_override_enabled(false), joy_override_enabled(false)
+teleop::Teleop::Teleop(std::shared_ptr<rclcpp::Node> node)
 {
+  /* variables preliminares*/
+  n = node;
+  key_override_enabled = false;
+  joy_override_enabled = false;
   /* load mappings */
-  if (n.hasParam("joy_axes")) n.getParam("joy_axes", joy_axes);
+  if (n->has_parameter("joy_axes")) n->get_parameter("joy_axes", joy_axes);
   else joy_axes = { {"pitch", 1}, {"roll", 0}, {"yaw", 3}, {"vertical",2} };
   for (auto& j : joy_axes) joy_axis_map[j.second] = j.first;
 
   map<string, int> joy_buttons;
-  if (n.hasParam("joy_buttons")) n.getParam("joy_buttons", joy_buttons);
+  if (n->has_parameter("joy_buttons")) n->get_parameter("joy_buttons", joy_buttons);
   else joy_buttons = { {"override", 4}, {"start", 2}, {"stop", 1}, {"takeoff", 10}, {"land", 11} };
   for (auto& j : joy_buttons) joy_button_map[j.second] = j.first;
 
   joy_deadzones = { { "pitch", 0.000001f }, { "roll", 0.000001f }, { "yaw", 0.000001f }, { "vertical", 0.000001f } };
-  n.param("joy_deadzones", joy_deadzones, joy_deadzones);
+  n->get_parameter_or("joy_deadzones", joy_deadzones, joy_deadzones);
   for (auto& k: joy_deadzones) cout << k.first << " " << k.second << endl;
 
   std::map<std::string, int> keys;
-  if (n.hasParam("keys")) n.getParam("keys", keys);
+  if (n->has_parameter("keys")) n->get_parameter("keys", keys);
   else keys = { {"override", 32}, {"start", 113}, {"stop", 97}, {"takeoff", 121}, {"land", 104} };
   for (auto& k : keys) key_map[k.second] = k.first;
 
   std::map<std::string, int> key_axes;
-  if (n.hasParam("key_axes")) n.getParam("key_axes", key_axes);
+  if (n->has_parameter("key_axes")) n->get_parameter("key_axes", key_axes);
   else key_axes = { { "pitch+", 273 }, { "pitch-", 274 }, { "yaw+", 276 }, { "yaw-", 275 } };
   for (auto& k : key_axes) key_axes_map[k.second] = k.first;
   key_axes_state = { { "pitch", 0 }, { "yaw", 0 } };
 
   axis_scales = { { "pitch", 1.0f }, { "roll", 1.0f }, { "yaw", 1.0f }, { "vertical", 1.0f } };
-  n.param("scales", axis_scales, axis_scales);
+  n->get_parameter_or("scales", axis_scales, axis_scales);
   //for (auto& k: axis_scales) cout << k.first << " " << k.second << endl;
 
-  n.param("send_velocity", send_velocity, true);
+  //n->get_parameter_or("send_velocity", send_velocity, true);
+  n->get_parameter_or("send_velocity", send_velocity, true);
 
   /* subscribe to input sources */
-  joy_sub = n.subscribe("/joy", 1, &Teleop::joystick_event, this);
-  keyup_sub = n.subscribe("/keyboard/keyup", 1, &Teleop::keyboard_up_event, this);
-  keydown_sub = n.subscribe("/keyboard/keydown", 1, &Teleop::keyboard_down_event, this);
+  joy_sub = n->create_subscription<sensor_msgs::msg::Joy>("/joy", 1, std::bind(&Teleop::joystick_event, this), _1);
+  keyup_sub = n->create_subscription<keyboard_msgs::msg::Key>("/keyboard/keyup", 1, std::bind(&Teleop::keyboard_up_event, this, _1));
+  keydown_sub = n->create_subscription<keyboard_msgs::msg::Key>("/keyboard/keydown", 1, std::bind(&Teleop::keyboard_down_event, this, _1));
 
   /* publish events and control commands */  
-  pub_vel = n.advertise<geometry_msgs::Twist>("/robot/cmd_vel", 5);
+  pub_vel = n->create_publisher<geometry_msgs::msg::Twist>("/robot/cmd_vel", 5);
   
-  pub_event = n.advertise<teleop::Event>("events", 5);
-  pub_control = n.advertise<teleop::Control>("controls", 1);
-
-  /* special events for UAV commands 
-  pub_takeoff = n.advertise<std_msgs::Empty>("/robot/takeoff", 5);
-  pub_land = n.advertise<std_msgs::Empty>("/robot/land", 5);
-  pub_emergency = n.advertise<std_msgs::Empty>("/robot/reset", 5);
-  */
+  pub_event = n->create_publisher<universal_teleop_msgs::msg::Event>("events", 5);
+  pub_control = n->create_publisher<universal_teleop_msgs::msg::Control>("controls", 1);
 }
 
 void teleop::Teleop::process_event(const teleop::Event& e)
@@ -81,7 +78,7 @@ void teleop::Teleop::process_event(const teleop::Event& e)
   pub_event.publish(e);
 }
 
-void teleop::Teleop::joystick_event(const sensor_msgs::Joy::ConstPtr& joy)
+void teleop::Teleop::joystick_event(const sensor_msgs::Joy& joy)
 {
   if (last_joy_msg.axes.empty()) {
     last_joy_msg = *joy;
@@ -124,7 +121,7 @@ void teleop::Teleop::joystick_event(const sensor_msgs::Joy::ConstPtr& joy)
   last_joy_msg = *joy;
 }
 
-void teleop::Teleop::keyboard_up_event(const keyboard::Key::ConstPtr& key)
+void teleop::Teleop::keyboard_up_event(const keyboard::Key& key)
 {
   ROS_DEBUG_STREAM("keyup: " << key->code);
   if (key_axes_map.find(key->code) != key_axes_map.end()) {
@@ -142,7 +139,7 @@ void teleop::Teleop::keyboard_up_event(const keyboard::Key::ConstPtr& key)
   }
 }
 
-void teleop::Teleop::keyboard_down_event(const keyboard::Key::ConstPtr& key)
+void teleop::Teleop::keyboard_down_event(const keyboard::Key& key)
 {
   ROS_DEBUG_STREAM("keydown: " << key->code);
 

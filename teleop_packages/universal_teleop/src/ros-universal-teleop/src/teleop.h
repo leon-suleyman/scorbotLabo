@@ -3,27 +3,32 @@
 
 #include <rclcpp/rclcpp.hpp>
 #include <sensor_msgs/msg/joy.hpp>
+#include <geometry_msgs/msg/twist.hpp>
 #include <keyboard_msgs/msg/key.hpp>
 #include "universal_teleop_msgs/msg/event.hpp"
+#include "universal_teleop_msgs/msg/control.hpp"
 
 namespace universal_teleop {
   class Teleop {
     public:
-      Teleop(void);
+      Teleop(std::shared_ptr<rclcpp::Node> node);
       void control(void);
 
     private:
-      void joystick_event(const sensor_/msg::msg::Joy::ConstPtr& joy);
-      void keyboard_up_event(const keyboard_msgs::msg::Key::ConstPtr& key);
-      void keyboard_down_event(const keyboard_msgs::msg::Key::ConstPtr& key);
+      void joystick_event(const sensor_msgs::msg::Joy& joy);
+      void keyboard_up_event(const keyboard_msgs::msg::Key& key);
+      void keyboard_down_event(const keyboard_msgs::msg::Key& key);
 
-      void process_event(const universal_teleop_msg::msg::Event& e);
+      void process_event(const universal_teleop_msgs::msg::Event& e);
 
-      rclcpp::Node n;
+      std::shared_ptr<rclcpp::Node> n;
       
-      rclcpp::Subscriber joy_sub, keyup_sub, keydown_sub;
-      rclcpp::Publisher pub_vel, pub_event, pub_control;
-      //rclcpp::Publisher pub_takeoff, pub_land, pub_emergency;
+      rclcpp::Subscription<sensor_msgs::msg::Joy>::SharedPtr joy_sub;
+      rclcpp::Subscription<keyboard_msgs::msg::Key>::SharedPtr keyup_sub, keydown_sub;
+
+      rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr pub_vel;
+      rclcpp::Publisher<universal_teleop_msgs::msg::Event>::SharedPtr pub_event;
+      rclcpp::Publisher<universal_teleop_msgs::msg::Control>::SharedPtr pub_control;
     
 
       sensor_msgs::msg::Joy last_joy_msg;
