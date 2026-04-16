@@ -5,7 +5,7 @@ set(universal_teleop_BUILD_DEPENDS "keyboard_msgs" "sensor_msgs" "nav_msgs" "geo
 set(universal_teleop_BUILDTOOL_DEPENDS "rosidl_default_generators" "ament_cmake")
 set(universal_teleop_BUILD_EXPORT_DEPENDS "keyboard_msgs" "sensor_msgs" "nav_msgs" "geometry_msgs" "universal_teleop_msgs" "std_msgs" "rclcpp")
 set(universal_teleop_BUILDTOOL_EXPORT_DEPENDS )
-set(universal_teleop_EXEC_DEPENDS "rosidl_default_runtime" "keyboard_msgs" "sensor_msgs" "nav_msgs" "geometry_msgs" "universal_teleop_msgs" "std_msgs" "rclcpp")
+set(universal_teleop_EXEC_DEPENDS "rosidl_default_runtime" "ros2launch" "keyboard_msgs" "sensor_msgs" "nav_msgs" "geometry_msgs" "universal_teleop_msgs" "std_msgs" "rclcpp")
 set(universal_teleop_TEST_DEPENDS )
 set(universal_teleop_GROUP_DEPENDS )
 set(universal_teleop_MEMBER_OF_GROUPS "rosidl_interface_packages")

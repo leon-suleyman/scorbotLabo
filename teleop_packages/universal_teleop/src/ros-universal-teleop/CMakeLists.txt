@@ -52,6 +52,7 @@ ${universal_teleop_msgs_TARGETS}
 )
 
 
+
 #add_dependencies(keyboard keyboard_gencpp)
 
 #############
@@ -61,13 +62,9 @@ ${universal_teleop_msgs_TARGETS}
 
 install(TARGETS universal_teleop
   DESTINATION "lib/${PROJECT_NAME}")
-
-  #ament_export_dependencies(
-  #  "rclcpp"
-  #  "std_msgs"
-  #  "SDL2"
-  #  #"sdl2_custom"
-  #  "ros_keyboard_msgs")
-  #  
-  #ament_export_targets(export_keyboard)
+  
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}/
+)
 ament_package()

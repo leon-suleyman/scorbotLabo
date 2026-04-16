@@ -63,6 +63,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/universal_teleop/" TYPE DIRECTORY FILES "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/launch")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/universal_teleop")
 endif()
 
