@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>universal_teleop</name>
+  <version>2.0.0</version>
+  <description>Takes messages from keyboard and joy and translates them into Events and Controls for robotic manipulators</description>
+  <license>GPLv2</license>
+
+  <maintainer email="leon.suleyman.herrera@gmail.com">v01d</maintainer>
+  <author email="leon.suleyman.herrera@gmail.com">v01d</author>
+
+  <!-- custom dependencies -->
+  <depend>keyboard_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>universal_teleop_msgs</depend>
+
+
+  <!-- standard dependencies -->
+  <buildtool_depend>rosidl_default_generators</buildtool_depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+  <depend>std_msgs</depend>
+  <depend>rclcpp</depend>
+  
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <export>
+   <build_type>ament_cmake</build_type>
+ </export>
+</package>

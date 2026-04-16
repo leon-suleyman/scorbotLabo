@@ -1,0 +1,1213 @@
+[0.083s] Invoking command in '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop': AMENT_PREFIX_PATH=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop -- -j4 -l4
+[0.347s] [35m[1mConsolidate compiler generated dependencies of target universal_teleop[0m
+[0.469s] [ 33%] [32mBuilding CXX object CMakeFiles/universal_teleop.dir/src/teleop.cpp.o[0m
+[6.995s] In file included from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[6.995s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[6.995s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__struct.hpp:8[m[K,
+[6.995s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/empty.hpp:7[m[K,
+[6.995s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:1[m[K:
+[6.996s] /usr/include/c++/11/functional: In instantiation of ‘[01m[Kstruct std::_Bind_check_arity<void (universal_teleop::Teleop::*)(const sensor_msgs::msg::Joy_<std::allocator<void> >&), universal_teleop::Teleop*>[m[K’:
+[6.996s] [01m[K/usr/include/c++/11/functional:768:12:[m[K   required from ‘[01m[Kstruct std::_Bind_helper<false, void (universal_teleop::Teleop::*)(const sensor_msgs::msg::Joy_<std::allocator<void> >&), universal_teleop::Teleop*>[m[K’
+[6.996s] [01m[K/usr/include/c++/11/functional:789:5:[m[K   required by substitution of ‘[01m[Ktemplate<class _Func, class ... _BoundArgs> typename std::_Bind_helper<std::__is_socketlike<_Func>::value, _Func, _BoundArgs ...>::type std::bind(_Func&&, _BoundArgs&& ...) [with _Func = void (universal_teleop::Teleop::*)(const sensor_msgs::msg::Joy_<std::allocator<void> >&); _BoundArgs = {universal_teleop::Teleop*}][m[K’
+[6.996s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:47:79:[m[K   required from here
+[6.996s] [01m[K/usr/include/c++/11/functional:756:21:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: Wrong number of arguments for pointer-to-member
+[6.996s]   755 |       static_assert(_Varargs::[01;31m[Kvalue[m[K
+[6.996s]       |                               [01;31m[K~~~~~[m[K
+[6.996s]   756 | [01;31m[K                    ? sizeof...(_BoundArgs) >= _Arity::value + 1[m[K
+[6.996s]       |                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.997s]   757 | [01;31m[K                    : sizeof...(_BoundArgs) == _Arity::value + 1[m[K,
+[6.997s]       |                     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.997s] [01m[K/usr/include/c++/11/functional:756:21:[m[K [01;36m[Knote: [m[K‘[01m[K(false ? (1 >= (((long unsigned int)std::integral_constant<long unsigned int, 1>::value) + 1)) : (1 == (((long unsigned int)std::integral_constant<long unsigned int, 1>::value) + 1)))[m[K’ evaluates to false
+[6.999s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:[m[K In constructor ‘[01m[Kuniversal_teleop::Teleop::Teleop(std::shared_ptr<rclcpp::Node>)[m[K’:
+[6.999s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:47:112:[m[K [01;31m[Kerror: [m[K‘[01m[K_1[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::placeholders::_1[m[K’?
+[6.999s]    47 | gs::msg::Joy>("/joy", 1, std::bind(&Teleop::joystick_event, this), [01;31m[K_1[m[K);
+[6.999s]       |                                                                    [01;31m[K^~[m[K
+[7.000s]       |                                                                    [32m[Kstd::placeholders::_1[m[K
+[7.000s] In file included from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[7.000s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[7.001s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__struct.hpp:8[m[K,
+[7.001s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/empty.hpp:7[m[K,
+[7.001s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:1[m[K:
+[7.001s] [01m[K/usr/include/c++/11/functional:225:34:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::placeholders::_1[m[K’ declared here
+[7.002s]   225 |     extern const _Placeholder<1> [01;36m[K_1[m[K;
+[7.002s]       |                                  [01;36m[K^~[m[K
+[7.031s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:[m[K In member function ‘[01m[Kvoid universal_teleop::Teleop::process_event(const Event&)[m[K’:
+[7.032s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:60:30:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator<<[m[K’ (operand types are ‘[01m[Kconst char [8][m[K’ and ‘[01m[Kconst _event_type[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>[m[K’})
+[7.033s]    60 |   ROS_DEBUG_STREAM([32m[K"event: "[m[K [01;31m[K<<[m[K [34m[Ke.event[m[K << " state: " << e.state);
+[7.034s]       |                    [32m[K~~~~~~~~~[m[K [01;31m[K^~[m[K [34m[K~~~~~~~[m[K
+[7.034s]       |                    [32m[K|[m[K              [34m[K|[m[K
+[7.034s]       |                    [32m[Kconst char [8][m[K [34m[Kconst _event_type {aka const std::__cxx11::basic_string<char>}[m[K
+[7.034s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[7.034s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__struct.hpp:11[m[K,
+[7.034s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/empty.hpp:7[m[K,
+[7.035s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:1[m[K:
+[7.035s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:70:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Ch, class _Tr, class _Tp, __gnu_cxx::_Lock_policy _Lp> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, const std::__shared_ptr<_Tp, _Lp>&)[m[K’
+[7.035s]    70 |     [01;36m[Koperator[m[K<<(std::basic_ostream<_Ch, _Tr>& __os,
+[7.035s]       |     [01;36m[K^~~~~~~~[m[K
+[7.035s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:70:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.035s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:60:35:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’ and ‘[01m[Kconst char [8][m[K’
+[7.035s]    60 |   ROS_DEBUG_STREAM("event: " << e.[01;36m[Kevent[m[K << " state: " << e.state);
+[7.035s]       |                                   [01;36m[K^~~~~[m[K
+[7.036s] In file included from [01m[K/usr/include/c++/11/bits/basic_string.h:48[m[K,
+[7.036s]                  from [01m[K/usr/include/c++/11/string:55[m[K,
+[7.036s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__struct.hpp:12[m[K,
+[7.036s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/empty.hpp:7[m[K,
+[7.036s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:1[m[K:
+[7.036s] [01m[K/usr/include/c++/11/string_view:667:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::basic_string_view<_CharT, _Traits>)[m[K’
+[7.036s]   667 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os,
+[7.036s]       |     [01;36m[K^~~~~~~~[m[K
+[7.037s] [01m[K/usr/include/c++/11/string_view:667:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.037s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:60:35:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’ and ‘[01m[Kconst char [8][m[K’
+[7.037s]    60 |   ROS_DEBUG_STREAM("event: " << e.[01;36m[Kevent[m[K << " state: " << e.state);
+[7.037s]       |                                   [01;36m[K^~~~~[m[K
+[7.037s] In file included from [01m[K/usr/include/c++/11/string:55[m[K,
+[7.037s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__struct.hpp:12[m[K,
+[7.037s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/empty.hpp:7[m[K,
+[7.037s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:1[m[K:
+[7.037s] [01m[K/usr/include/c++/11/bits/basic_string.h:6531:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)[m[K’
+[7.038s]  6531 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os,
+[7.038s]       |     [01;36m[K^~~~~~~~[m[K
+[7.038s] [01m[K/usr/include/c++/11/bits/basic_string.h:6531:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.038s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:60:35:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’ and ‘[01m[Kconst char [8][m[K’
+[7.038s]    60 |   ROS_DEBUG_STREAM("event: " << e.[01;36m[Kevent[m[K << " state: " << e.state);
+[7.038s]       |                                   [01;36m[K^~~~~[m[K
+[7.038s] In file included from [01m[K/usr/include/c++/11/bits/ios_base.h:46[m[K,
+[7.038s]                  from [01m[K/usr/include/c++/11/ios:42[m[K,
+[7.038s]                  from [01m[K/usr/include/c++/11/istream:38[m[K,
+[7.039s]                  from [01m[K/usr/include/c++/11/sstream:38[m[K,
+[7.039s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__traits.hpp:10[m[K,
+[7.039s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/empty.hpp:9[m[K,
+[7.039s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:1[m[K:
+[7.039s] [01m[K/usr/include/c++/11/system_error:279:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, const std::error_code&)[m[K’
+[7.039s]   279 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+[7.039s]       |     [01;36m[K^~~~~~~~[m[K
+[7.039s] [01m[K/usr/include/c++/11/system_error:279:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.040s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:60:35:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’ and ‘[01m[Kconst char [8][m[K’
+[7.040s]    60 |   ROS_DEBUG_STREAM("event: " << e.[01;36m[Kevent[m[K << " state: " << e.state);
+[7.040s]       |                                   [01;36m[K^~~~~[m[K
+[7.040s] In file included from [01m[K/usr/include/c++/11/istream:39[m[K,
+[7.040s]                  from [01m[K/usr/include/c++/11/sstream:38[m[K,
+[7.040s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__traits.hpp:10[m[K,
+[7.040s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/empty.hpp:9[m[K,
+[7.040s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:1[m[K:
+[7.040s] [01m[K/usr/include/c++/11/ostream:513:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, _CharT)[m[K’
+[7.041s]   513 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+[7.041s]       |     [01;36m[K^~~~~~~~[m[K
+[7.041s] [01m[K/usr/include/c++/11/ostream:513:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.041s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:60:35:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’ and ‘[01m[Kconst char [8][m[K’
+[7.041s]    60 |   ROS_DEBUG_STREAM("event: " << e.[01;36m[Kevent[m[K << " state: " << e.state);
+[7.041s]       |                                   [01;36m[K^~~~~[m[K
+[7.041s] In file included from [01m[K/usr/include/c++/11/istream:39[m[K,
+[7.041s]                  from [01m[K/usr/include/c++/11/sstream:38[m[K,
+[7.042s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__traits.hpp:10[m[K,
+[7.042s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/empty.hpp:9[m[K,
+[7.042s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:1[m[K:
+[7.042s] [01m[K/usr/include/c++/11/ostream:518:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, char)[m[K’
+[7.042s]   518 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+[7.042s]       |     [01;36m[K^~~~~~~~[m[K
+[7.042s] [01m[K/usr/include/c++/11/ostream:518:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.042s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:60:35:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’ and ‘[01m[Kconst char [8][m[K’
+[7.042s]    60 |   ROS_DEBUG_STREAM("event: " << e.[01;36m[Kevent[m[K << " state: " << e.state);
+[7.042s]       |                                   [01;36m[K^~~~~[m[K
+[7.043s] In file included from [01m[K/usr/include/c++/11/istream:39[m[K,
+[7.043s]                  from [01m[K/usr/include/c++/11/sstream:38[m[K,
+[7.043s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__traits.hpp:10[m[K,
+[7.043s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/empty.hpp:9[m[K,
+[7.043s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:1[m[K:
+[7.043s] [01m[K/usr/include/c++/11/ostream:524:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)[m[K’
+[7.043s]   524 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, char __c)
+[7.043s]       |     [01;36m[K^~~~~~~~[m[K
+[7.044s] [01m[K/usr/include/c++/11/ostream:524:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.044s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:60:35:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’ and ‘[01m[Kconst char [8][m[K’
+[7.044s]    60 |   ROS_DEBUG_STREAM("event: " << e.[01;36m[Kevent[m[K << " state: " << e.state);
+[7.044s]       |                                   [01;36m[K^~~~~[m[K
+[7.044s] In file included from [01m[K/usr/include/c++/11/istream:39[m[K,
+[7.044s]                  from [01m[K/usr/include/c++/11/sstream:38[m[K,
+[7.045s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__traits.hpp:10[m[K,
+[7.045s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/empty.hpp:9[m[K,
+[7.045s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:1[m[K:
+[7.045s] [01m[K/usr/include/c++/11/ostream:530:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)[m[K’
+[7.045s]   530 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, signed char __c)
+[7.045s]       |     [01;36m[K^~~~~~~~[m[K
+[7.045s] [01m[K/usr/include/c++/11/ostream:530:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.045s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:60:35:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’ and ‘[01m[Kconst char [8][m[K’
+[7.046s]    60 |   ROS_DEBUG_STREAM("event: " << e.[01;36m[Kevent[m[K << " state: " << e.state);
+[7.046s]       |                                   [01;36m[K^~~~~[m[K
+[7.046s] In file included from [01m[K/usr/include/c++/11/istream:39[m[K,
+[7.046s]                  from [01m[K/usr/include/c++/11/sstream:38[m[K,
+[7.046s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__traits.hpp:10[m[K,
+[7.046s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/empty.hpp:9[m[K,
+[7.046s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:1[m[K:
+[7.046s] [01m[K/usr/include/c++/11/ostream:535:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)[m[K’
+[7.046s]   535 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+[7.047s]       |     [01;36m[K^~~~~~~~[m[K
+[7.047s] [01m[K/usr/include/c++/11/ostream:535:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.047s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:60:35:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’ and ‘[01m[Kconst char [8][m[K’
+[7.047s]    60 |   ROS_DEBUG_STREAM("event: " << e.[01;36m[Kevent[m[K << " state: " << e.state);
+[7.047s]       |                                   [01;36m[K^~~~~[m[K
+[7.047s] In file included from [01m[K/usr/include/c++/11/istream:39[m[K,
+[7.047s]                  from [01m[K/usr/include/c++/11/sstream:38[m[K,
+[7.047s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__traits.hpp:10[m[K,
+[7.047s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/empty.hpp:9[m[K,
+[7.048s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:1[m[K:
+[7.048s] [01m[K/usr/include/c++/11/ostream:594:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, const _CharT*)[m[K’
+[7.048s]   594 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+[7.048s]       |     [01;36m[K^~~~~~~~[m[K
+[7.048s] [01m[K/usr/include/c++/11/ostream:594:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.048s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:60:35:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’ and ‘[01m[Kconst char [8][m[K’
+[7.048s]    60 |   ROS_DEBUG_STREAM("event: " << e.[01;36m[Kevent[m[K << " state: " << e.state);
+[7.048s]       |                                   [01;36m[K^~~~~[m[K
+[7.049s] In file included from [01m[K/usr/include/c++/11/ostream:829[m[K,
+[7.049s]                  from [01m[K/usr/include/c++/11/istream:39[m[K,
+[7.049s]                  from [01m[K/usr/include/c++/11/sstream:38[m[K,
+[7.049s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__traits.hpp:10[m[K,
+[7.049s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/empty.hpp:9[m[K,
+[7.049s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:1[m[K:
+[7.049s] [01m[K/usr/include/c++/11/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, const char*)[m[K’
+[7.049s]   321 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+[7.049s]       |     [01;36m[K^~~~~~~~[m[K
+[7.050s] [01m[K/usr/include/c++/11/bits/ostream.tcc:321:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.050s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:60:35:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’ and ‘[01m[Kconst char [8][m[K’
+[7.050s]    60 |   ROS_DEBUG_STREAM("event: " << e.[01;36m[Kevent[m[K << " state: " << e.state);
+[7.050s]       |                                   [01;36m[K^~~~~[m[K
+[7.050s] In file included from [01m[K/usr/include/c++/11/istream:39[m[K,
+[7.050s]                  from [01m[K/usr/include/c++/11/sstream:38[m[K,
+[7.050s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__traits.hpp:10[m[K,
+[7.050s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/empty.hpp:9[m[K,
+[7.050s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:1[m[K:
+[7.051s] [01m[K/usr/include/c++/11/ostream:611:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)[m[K’
+[7.051s]   611 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const char* __s)
+[7.051s]       |     [01;36m[K^~~~~~~~[m[K
+[7.051s] [01m[K/usr/include/c++/11/ostream:611:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.051s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:60:35:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’ and ‘[01m[Kconst char [8][m[K’
+[7.051s]    60 |   ROS_DEBUG_STREAM("event: " << e.[01;36m[Kevent[m[K << " state: " << e.state);
+[7.051s]       |                                   [01;36m[K^~~~~[m[K
+[7.051s] In file included from [01m[K/usr/include/c++/11/istream:39[m[K,
+[7.051s]                  from [01m[K/usr/include/c++/11/sstream:38[m[K,
+[7.052s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__traits.hpp:10[m[K,
+[7.052s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/empty.hpp:9[m[K,
+[7.052s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:1[m[K:
+[7.052s] [01m[K/usr/include/c++/11/ostream:624:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)[m[K’
+[7.052s]   624 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+[7.052s]       |     [01;36m[K^~~~~~~~[m[K
+[7.052s] [01m[K/usr/include/c++/11/ostream:624:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.052s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:60:35:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’ and ‘[01m[Kconst char [8][m[K’
+[7.053s]    60 |   ROS_DEBUG_STREAM("event: " << e.[01;36m[Kevent[m[K << " state: " << e.state);
+[7.053s]       |                                   [01;36m[K^~~~~[m[K
+[7.053s] In file included from [01m[K/usr/include/c++/11/istream:39[m[K,
+[7.053s]                  from [01m[K/usr/include/c++/11/sstream:38[m[K,
+[7.053s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__traits.hpp:10[m[K,
+[7.053s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/empty.hpp:9[m[K,
+[7.053s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:1[m[K:
+[7.053s] [01m[K/usr/include/c++/11/ostream:629:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)[m[K’
+[7.053s]   629 |     [01;36m[Koperator[m[K<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+[7.054s]       |     [01;36m[K^~~~~~~~[m[K
+[7.054s] [01m[K/usr/include/c++/11/ostream:629:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.054s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:60:35:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::basic_ostream<char, _Traits>[m[K’ and ‘[01m[Kconst char [8][m[K’
+[7.054s]    60 |   ROS_DEBUG_STREAM("event: " << e.[01;36m[Kevent[m[K << " state: " << e.state);
+[7.054s]       |                                   [01;36m[K^~~~~[m[K
+[7.054s] In file included from [01m[K/usr/include/c++/11/istream:39[m[K,
+[7.054s]                  from [01m[K/usr/include/c++/11/sstream:38[m[K,
+[7.054s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__traits.hpp:10[m[K,
+[7.054s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/empty.hpp:9[m[K,
+[7.055s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:1[m[K:
+[7.055s] [01m[K/usr/include/c++/11/ostream:750:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&)[m[K’
+[7.055s]   750 |     [01;36m[Koperator[m[K<<(_Ostream&& __os, const _Tp& __x)
+[7.055s]       |     [01;36m[K^~~~~~~~[m[K
+[7.055s] [01m[K/usr/include/c++/11/ostream:750:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.055s] /usr/include/c++/11/ostream: In substitution of ‘[01m[Ktemplate<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = const char (&)[8]; _Tp = std::__cxx11::basic_string<char>][m[K’:
+[7.055s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:60:35:[m[K   required from here
+[7.055s] [01m[K/usr/include/c++/11/ostream:750:5:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+[7.056s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:20[m[K,
+[7.056s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__traits.hpp:15[m[K,
+[7.056s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/empty.hpp:9[m[K,
+[7.056s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:1[m[K:
+[7.056s] [01m[K/usr/include/c++/11/iomanip:79:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Resetiosflags)[m[K’
+[7.056s]    79 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Resetiosflags __f)
+[7.056s]       |     [01;36m[K^~~~~~~~[m[K
+[7.056s] [01m[K/usr/include/c++/11/iomanip:79:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.056s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:60:35:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’ and ‘[01m[Kconst char [8][m[K’
+[7.056s]    60 |   ROS_DEBUG_STREAM("event: " << e.[01;36m[Kevent[m[K << " state: " << e.state);
+[7.057s]       |                                   [01;36m[K^~~~~[m[K
+[7.057s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:20[m[K,
+[7.057s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__traits.hpp:15[m[K,
+[7.057s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/empty.hpp:9[m[K,
+[7.057s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:1[m[K:
+[7.057s] [01m[K/usr/include/c++/11/iomanip:109:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Setiosflags)[m[K’
+[7.057s]   109 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Setiosflags __f)
+[7.057s]       |     [01;36m[K^~~~~~~~[m[K
+[7.058s] [01m[K/usr/include/c++/11/iomanip:109:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.058s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:60:35:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’ and ‘[01m[Kconst char [8][m[K’
+[7.058s]    60 |   ROS_DEBUG_STREAM("event: " << e.[01;36m[Kevent[m[K << " state: " << e.state);
+[7.058s]       |                                   [01;36m[K^~~~~[m[K
+[7.058s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:20[m[K,
+[7.058s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__traits.hpp:15[m[K,
+[7.058s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/empty.hpp:9[m[K,
+[7.058s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:1[m[K:
+[7.058s] [01m[K/usr/include/c++/11/iomanip:143:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Setbase)[m[K’
+[7.059s]   143 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Setbase __f)
+[7.059s]       |     [01;36m[K^~~~~~~~[m[K
+[7.059s] [01m[K/usr/include/c++/11/iomanip:143:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.059s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:60:35:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’ and ‘[01m[Kconst char [8][m[K’
+[7.059s]    60 |   ROS_DEBUG_STREAM("event: " << e.[01;36m[Kevent[m[K << " state: " << e.state);
+[7.059s]       |                                   [01;36m[K^~~~~[m[K
+[7.060s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:20[m[K,
+[7.060s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__traits.hpp:15[m[K,
+[7.060s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/empty.hpp:9[m[K,
+[7.060s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:1[m[K:
+[7.060s] [01m[K/usr/include/c++/11/iomanip:178:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Setfill<_CharT>)[m[K’
+[7.060s]   178 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Setfill<_CharT> __f)
+[7.060s]       |     [01;36m[K^~~~~~~~[m[K
+[7.060s] [01m[K/usr/include/c++/11/iomanip:178:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.060s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:60:35:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’ and ‘[01m[Kconst char [8][m[K’
+[7.061s]    60 |   ROS_DEBUG_STREAM("event: " << e.[01;36m[Kevent[m[K << " state: " << e.state);
+[7.061s]       |                                   [01;36m[K^~~~~[m[K
+[7.061s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:20[m[K,
+[7.061s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__traits.hpp:15[m[K,
+[7.061s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/empty.hpp:9[m[K,
+[7.061s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:1[m[K:
+[7.061s] [01m[K/usr/include/c++/11/iomanip:208:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Setprecision)[m[K’
+[7.061s]   208 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Setprecision __f)
+[7.061s]       |     [01;36m[K^~~~~~~~[m[K
+[7.062s] [01m[K/usr/include/c++/11/iomanip:208:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.062s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:60:35:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’ and ‘[01m[Kconst char [8][m[K’
+[7.062s]    60 |   ROS_DEBUG_STREAM("event: " << e.[01;36m[Kevent[m[K << " state: " << e.state);
+[7.062s]       |                                   [01;36m[K^~~~~[m[K
+[7.062s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:20[m[K,
+[7.062s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__traits.hpp:15[m[K,
+[7.062s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/empty.hpp:9[m[K,
+[7.062s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:1[m[K:
+[7.063s] [01m[K/usr/include/c++/11/iomanip:238:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Setw)[m[K’
+[7.063s]   238 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Setw __f)
+[7.063s]       |     [01;36m[K^~~~~~~~[m[K
+[7.063s] [01m[K/usr/include/c++/11/iomanip:238:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.063s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:60:35:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’ and ‘[01m[Kconst char [8][m[K’
+[7.063s]    60 |   ROS_DEBUG_STREAM("event: " << e.[01;36m[Kevent[m[K << " state: " << e.state);
+[7.063s]       |                                   [01;36m[K^~~~~[m[K
+[7.063s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:20[m[K,
+[7.063s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__traits.hpp:15[m[K,
+[7.064s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/empty.hpp:9[m[K,
+[7.064s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:1[m[K:
+[7.064s] [01m[K/usr/include/c++/11/iomanip:311:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits, class _MoneyT> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Put_money<_MoneyT>)[m[K’
+[7.064s]   311 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Put_money<_MoneyT> __f)
+[7.064s]       |     [01;36m[K^~~~~~~~[m[K
+[7.064s] [01m[K/usr/include/c++/11/iomanip:311:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.064s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:60:35:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’ and ‘[01m[Kconst char [8][m[K’
+[7.064s]    60 |   ROS_DEBUG_STREAM("event: " << e.[01;36m[Kevent[m[K << " state: " << e.state);
+[7.064s]       |                                   [01;36m[K^~~~~[m[K
+[7.065s] In file included from [01m[K/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:20[m[K,
+[7.065s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__traits.hpp:15[m[K,
+[7.065s]                  from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/empty.hpp:9[m[K,
+[7.065s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:1[m[K:
+[7.065s] [01m[K/usr/include/c++/11/iomanip:363:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::_Put_time<_CharT>)[m[K’
+[7.065s]   363 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __os, _Put_time<_CharT> __f)
+[7.065s]       |     [01;36m[K^~~~~~~~[m[K
+[7.065s] [01m[K/usr/include/c++/11/iomanip:363:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.065s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:60:35:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’ and ‘[01m[Kconst char [8][m[K’
+[7.066s]    60 |   ROS_DEBUG_STREAM("event: " << e.[01;36m[Kevent[m[K << " state: " << e.state);
+[7.066s]       |                                   [01;36m[K^~~~~[m[K
+[7.066s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:22[m[K,
+[7.066s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[7.066s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.066s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.066s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.066s] [01m[K/usr/include/c++/11/thread:92:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _CharT, class _Traits> std::basic_ostream<_Ch, _Tr>& std::operator<<(std::basic_ostream<_Ch, _Tr>&, std::thread::id)[m[K’
+[7.066s]    92 |     [01;36m[Koperator[m[K<<(basic_ostream<_CharT, _Traits>& __out, thread::id __id)
+[7.066s]       |     [01;36m[K^~~~~~~~[m[K
+[7.067s] [01m[K/usr/include/c++/11/thread:92:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.067s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:60:35:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::basic_ostream<_Ch, _Tr>[m[K’ and ‘[01m[Kconst char [8][m[K’
+[7.067s]    60 |   ROS_DEBUG_STREAM("event: " << e.[01;36m[Kevent[m[K << " state: " << e.state);
+[7.067s]       |                                   [01;36m[K^~~~~[m[K
+[7.070s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:60:3:[m[K [01;31m[Kerror: [m[K‘[01m[KROS_DEBUG_STREAM[m[K’ was not declared in this scope; did you mean ‘[01m[KRCLCPP_DEBUG_STREAM[m[K’?
+[7.071s]    60 |   [01;31m[KROS_DEBUG_STREAM[m[K("event: " << e.event << " state: " << e.state);
+[7.071s]       |   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[7.071s]       |   [32m[KRCLCPP_DEBUG_STREAM[m[K
+[7.071s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:68:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::Twist_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::Twist_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpublish[m[K’
+[7.072s]    68 |       pub_vel.[01;31m[Kpublish[m[K(vel);
+[7.072s]       |               [01;31m[K^~~~~~~[m[K
+[7.072s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:78:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<rclcpp::Publisher<universal_teleop_msgs::msg::Event_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<rclcpp::Publisher<universal_teleop_msgs::msg::Event_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpublish[m[K’
+[7.072s]    78 |   pub_event.[01;31m[Kpublish[m[K(e);
+[7.072s]       |             [01;31m[K^~~~~~~[m[K
+[7.072s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:[m[K In member function ‘[01m[Kvoid universal_teleop::Teleop::joystick_event(const Joy&)[m[K’:
+[7.072s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:84:20:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator*[m[K’ (operand type is ‘[01m[Kconst Joy[m[K’ {aka ‘[01m[Kconst sensor_msgs::msg::Joy_<std::allocator<void> >[m[K’})
+[7.073s]    84 |     last_joy_msg = [01;31m[K*joy[m[K;
+[7.073s]       |                    [01;31m[K^~~~[m[K
+[7.073s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:90:31:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst Joy[m[K’ {aka ‘[01m[Kconst sensor_msgs::msg::Joy_<std::allocator<void> >[m[K’}
+[7.073s]    90 |   for (uint32_t b = 0; b < joy[01;31m[K->[m[Kbuttons.size(); b++) {
+[7.073s]       |                               [01;31m[K^~[m[K
+[7.073s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:91:12:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst Joy[m[K’ {aka ‘[01m[Kconst sensor_msgs::msg::Joy_<std::allocator<void> >[m[K’}
+[7.073s]    91 |     if (joy[01;31m[K->[m[Kbuttons[b] != last_joy_msg.buttons[b]) {
+[7.073s]       |            [01;31m[K^~[m[K
+[7.076s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:98:20:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst Joy[m[K’ {aka ‘[01m[Kconst sensor_msgs::msg::Joy_<std::allocator<void> >[m[K’}
+[7.076s]    98 |       e.state = joy[01;31m[K->[m[Kbuttons[b];
+[7.076s]       |                    [01;31m[K^~[m[K
+[7.076s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:105:31:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst Joy[m[K’ {aka ‘[01m[Kconst sensor_msgs::msg::Joy_<std::allocator<void> >[m[K’}
+[7.077s]   105 |   for (uint32_t a = 0; a < joy[01;31m[K->[m[Kaxes.size(); a++) {
+[7.077s]       |                               [01;31m[K^~[m[K
+[7.077s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:106:12:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst Joy[m[K’ {aka ‘[01m[Kconst sensor_msgs::msg::Joy_<std::allocator<void> >[m[K’}
+[7.077s]   106 |     if (joy[01;31m[K->[m[Kaxes[a] != last_joy_msg.axes[a]) {
+[7.077s]       |            [01;31m[K^~[m[K
+[7.077s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:107:15:[m[K [01;31m[Kerror: [m[K‘[01m[KControl[m[K’ is not a member of ‘[01m[Kteleop[m[K’; did you mean ‘[01m[Kuniversal_teleop_msgs::msg::Control[m[K’?
+[7.077s]   107 |       teleop::[01;31m[KControl[m[K c;
+[7.077s]       |               [01;31m[K^~~~~~~[m[K
+[7.078s] In file included from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/control.hpp:7[m[K,
+[7.078s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:9[m[K,
+[7.078s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.078s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__struct.hpp:155:7:[m[K [01;36m[Knote: [m[K‘[01m[Kuniversal_teleop_msgs::msg::Control[m[K’ declared here
+[7.078s]   155 | using [01;36m[KControl[m[K =
+[7.078s]       |       [01;36m[K^~~~~~~[m[K
+[7.085s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:108:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kc[m[K’ was not declared in this scope
+[7.085s]   108 |       if (joy_axis_map.find(a) == joy_axis_map.end()) [01;31m[Kc[m[K.control = "unknown";
+[7.085s]       |                                                       [01;31m[K^[m[K
+[7.092s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:109:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kc[m[K’ was not declared in this scope
+[7.092s]   109 |       else [01;31m[Kc[m[K.control = joy_axis_map[a];
+[7.092s]       |            [01;31m[K^[m[K
+[7.098s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:111:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kc[m[K’ was not declared in this scope
+[7.099s]   111 |       if ([01;31m[Kc[m[K.control != "unknown" && std::abs(joy->axes[a]) < joy_deadzones[joy_axis_map[a]])
+[7.099s]       |           [01;31m[K^[m[K
+[7.099s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:111:49:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst Joy[m[K’ {aka ‘[01m[Kconst sensor_msgs::msg::Joy_<std::allocator<void> >[m[K’}
+[7.099s]   111 |       if (c.control != "unknown" && std::abs(joy[01;31m[K->[m[Kaxes[a]) < joy_deadzones[joy_axis_map[a]])
+[7.099s]       |                                                 [01;31m[K^~[m[K
+[7.099s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:114:22:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst Joy[m[K’ {aka ‘[01m[Kconst sensor_msgs::msg::Joy_<std::allocator<void> >[m[K’}
+[7.099s]   114 |         c.value = joy[01;31m[K->[m[Kaxes[a];
+[7.099s]       |                      [01;31m[K^~[m[K
+[7.100s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:117:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<rclcpp::Publisher<universal_teleop_msgs::msg::Control_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<rclcpp::Publisher<universal_teleop_msgs::msg::Control_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpublish[m[K’
+[7.100s]   117 |       pub_control.[01;31m[Kpublish[m[K(c);
+[7.100s]       |                   [01;31m[K^~~~~~~[m[K
+[7.105s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:117:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kc[m[K’ was not declared in this scope
+[7.105s]   117 |       pub_control.publish([01;31m[Kc[m[K);
+[7.106s]       |                           [01;31m[K^[m[K
+[7.106s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:121:18:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator*[m[K’ (operand type is ‘[01m[Kconst Joy[m[K’ {aka ‘[01m[Kconst sensor_msgs::msg::Joy_<std::allocator<void> >[m[K’})
+[7.106s]   121 |   last_joy_msg = [01;31m[K*joy[m[K;
+[7.106s]       |                  [01;31m[K^~~~[m[K
+[7.106s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:[m[K In member function ‘[01m[Kvoid universal_teleop::Teleop::keyboard_up_event(const Key&)[m[K’:
+[7.106s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:126:36:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst Key[m[K’ {aka ‘[01m[Kconst keyboard_msgs::msg::Key_<std::allocator<void> >[m[K’}
+[7.106s]   126 |   ROS_DEBUG_STREAM("keyup: " << key[01;31m[K->[m[Kcode);
+[7.106s]       |                                    [01;31m[K^~[m[K
+[7.119s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:126:3:[m[K [01;31m[Kerror: [m[K‘[01m[KROS_DEBUG_STREAM[m[K’ was not declared in this scope; did you mean ‘[01m[KRCLCPP_DEBUG_STREAM[m[K’?
+[7.119s]   126 |   [01;31m[KROS_DEBUG_STREAM[m[K("keyup: " << key->code);
+[7.119s]       |   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[7.120s]       |   [32m[KRCLCPP_DEBUG_STREAM[m[K
+[7.120s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:127:28:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst Key[m[K’ {aka ‘[01m[Kconst keyboard_msgs::msg::Key_<std::allocator<void> >[m[K’}
+[7.120s]   127 |   if (key_axes_map.find(key[01;31m[K->[m[Kcode) != key_axes_map.end()) {
+[7.121s]       |                            [01;31m[K^~[m[K
+[7.121s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:128:40:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst Key[m[K’ {aka ‘[01m[Kconst keyboard_msgs::msg::Key_<std::allocator<void> >[m[K’}
+[7.121s]   128 |     std::string& cmd = key_axes_map[key[01;31m[K->[m[Kcode];
+[7.121s]       |                                        [01;31m[K^~[m[K
+[7.121s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:133:25:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst Key[m[K’ {aka ‘[01m[Kconst keyboard_msgs::msg::Key_<std::allocator<void> >[m[K’}
+[7.121s]   133 |     if (key_map.find(key[01;31m[K->[m[Kcode) == key_map.end()) e.event = "unknown";
+[7.121s]       |                         [01;31m[K^~[m[K
+[7.122s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:134:31:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst Key[m[K’ {aka ‘[01m[Kconst keyboard_msgs::msg::Key_<std::allocator<void> >[m[K’}
+[7.122s]   134 |     else e.event = key_map[key[01;31m[K->[m[Kcode];
+[7.122s]       |                               [01;31m[K^~[m[K
+[7.122s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:[m[K In member function ‘[01m[Kvoid universal_teleop::Teleop::keyboard_down_event(const Key&)[m[K’:
+[7.122s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:144:38:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst Key[m[K’ {aka ‘[01m[Kconst keyboard_msgs::msg::Key_<std::allocator<void> >[m[K’}
+[7.122s]   144 |   ROS_DEBUG_STREAM("keydown: " << key[01;31m[K->[m[Kcode);
+[7.122s]       |                                      [01;31m[K^~[m[K
+[7.134s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:144:3:[m[K [01;31m[Kerror: [m[K‘[01m[KROS_DEBUG_STREAM[m[K’ was not declared in this scope; did you mean ‘[01m[KRCLCPP_DEBUG_STREAM[m[K’?
+[7.135s]   144 |   [01;31m[KROS_DEBUG_STREAM[m[K("keydown: " << key->code);
+[7.135s]       |   [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[7.135s]       |   [32m[KRCLCPP_DEBUG_STREAM[m[K
+[7.135s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:146:28:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst Key[m[K’ {aka ‘[01m[Kconst keyboard_msgs::msg::Key_<std::allocator<void> >[m[K’}
+[7.135s]   146 |   if (key_axes_map.find(key[01;31m[K->[m[Kcode) != key_axes_map.end()) {
+[7.135s]       |                            [01;31m[K^~[m[K
+[7.135s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:147:40:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst Key[m[K’ {aka ‘[01m[Kconst keyboard_msgs::msg::Key_<std::allocator<void> >[m[K’}
+[7.136s]   147 |     std::string& cmd = key_axes_map[key[01;31m[K->[m[Kcode];
+[7.136s]       |                                        [01;31m[K^~[m[K
+[7.136s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:152:25:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst Key[m[K’ {aka ‘[01m[Kconst keyboard_msgs::msg::Key_<std::allocator<void> >[m[K’}
+[7.136s]   152 |     if (key_map.find(key[01;31m[K->[m[Kcode) == key_map.end()) e.event = "unknown";
+[7.136s]       |                         [01;31m[K^~[m[K
+[7.136s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:153:31:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst Key[m[K’ {aka ‘[01m[Kconst keyboard_msgs::msg::Key_<std::allocator<void> >[m[K’}
+[7.136s]   153 |     else e.event = key_map[key[01;31m[K->[m[Kcode];
+[7.137s]       |                               [01;31m[K^~[m[K
+[7.137s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:[m[K In member function ‘[01m[Kvoid universal_teleop::Teleop::control()[m[K’:
+[7.137s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:184:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::Twist_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::Twist_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpublish[m[K’
+[7.137s]   184 |     pub_vel.[01;31m[Kpublish[m[K(vel);
+[7.137s]       |             [01;31m[K^~~~~~~[m[K
+[7.137s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:193:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::Twist_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::Twist_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpublish[m[K’
+[7.138s]   193 |     pub_vel.[01;31m[Kpublish[m[K(vel);
+[7.138s]       |             [01;31m[K^~~~~~~[m[K
+[7.279s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.279s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.280s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.280s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.280s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.280s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.280s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.280s] /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’:
+[7.280s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.280s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, int>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.280s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:15:53:[m[K   required from here
+[7.281s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::ParameterValue::get<std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int> > > >() const[m[K’
+[7.281s]   239 |   return [01;31m[Kparameter->get_parameter_value().get<T>()[m[K;
+[7.281s]       |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[7.283s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:26[m[K,
+[7.285s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.286s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.286s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.287s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.287s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.287s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.287s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.287s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:148:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_BOOL), const bool&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.287s]   148 |   [01;36m[Kget[m[K() const
+[7.287s]       |   [01;36m[K^~~[m[K
+[7.289s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:148:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.289s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.289s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.290s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.290s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.290s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.290s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.290s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.290s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_BOOL), const bool&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.290s]   239 |   return [01;31m[Kparameter->get_parameter_value().get<T>()[m[K;
+[7.290s]       |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[7.290s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;36m[Knote: [m[K  expected a constant of type ‘[01m[Krclcpp::ParameterType[m[K’, got ‘[01m[Kstd::map<std::__cxx11::basic_string<char>, int>[m[K’
+[7.291s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:26[m[K,
+[7.291s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.291s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.291s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.291s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.291s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.291s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.291s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.291s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:159:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_INTEGER), const long int&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.292s]   159 |   [01;36m[Kget[m[K() const
+[7.292s]       |   [01;36m[K^~~[m[K
+[7.292s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:159:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.292s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.292s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.292s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.292s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.292s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.293s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.293s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.293s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_INTEGER), const long int&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.293s]   239 |   return [01;31m[Kparameter->get_parameter_value().get<T>()[m[K;
+[7.293s]       |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[7.293s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;36m[Knote: [m[K  expected a constant of type ‘[01m[Krclcpp::ParameterType[m[K’, got ‘[01m[Kstd::map<std::__cxx11::basic_string<char>, int>[m[K’
+[7.293s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:26[m[K,
+[7.293s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.293s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.294s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.294s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.294s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.294s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.294s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.294s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:170:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_DOUBLE), const double&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.294s]   170 |   [01;36m[Kget[m[K() const
+[7.294s]       |   [01;36m[K^~~[m[K
+[7.294s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:170:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.295s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.295s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.295s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.295s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.295s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.295s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.295s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.295s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_DOUBLE), const double&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.295s]   239 |   return [01;31m[Kparameter->get_parameter_value().get<T>()[m[K;
+[7.296s]       |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[7.296s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;36m[Knote: [m[K  expected a constant of type ‘[01m[Krclcpp::ParameterType[m[K’, got ‘[01m[Kstd::map<std::__cxx11::basic_string<char>, int>[m[K’
+[7.296s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:26[m[K,
+[7.296s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.296s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.296s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.296s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.296s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.296s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.297s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.297s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:181:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_STRING), const std::__cxx11::basic_string<char>&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.297s]   181 |   [01;36m[Kget[m[K() const
+[7.297s]       |   [01;36m[K^~~[m[K
+[7.297s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:181:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.297s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.297s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.297s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.297s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.298s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.298s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.298s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.298s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_STRING), const std::__cxx11::basic_string<char>&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.298s]   239 |   return [01;31m[Kparameter->get_parameter_value().get<T>()[m[K;
+[7.298s]       |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[7.298s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;36m[Knote: [m[K  expected a constant of type ‘[01m[Krclcpp::ParameterType[m[K’, got ‘[01m[Kstd::map<std::__cxx11::basic_string<char>, int>[m[K’
+[7.298s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:26[m[K,
+[7.299s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.299s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.299s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.299s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.299s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.299s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.299s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.299s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:193:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_BYTE_ARRAY), const std::vector<unsigned char, std::allocator<unsigned char> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.299s]   193 |   [01;36m[Kget[m[K() const
+[7.300s]       |   [01;36m[K^~~[m[K
+[7.300s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:193:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.300s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.300s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.300s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.300s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.300s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.300s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.300s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.301s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_BYTE_ARRAY), const std::vector<unsigned char, std::allocator<unsigned char> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.301s]   239 |   return [01;31m[Kparameter->get_parameter_value().get<T>()[m[K;
+[7.301s]       |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[7.301s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;36m[Knote: [m[K  expected a constant of type ‘[01m[Krclcpp::ParameterType[m[K’, got ‘[01m[Kstd::map<std::__cxx11::basic_string<char>, int>[m[K’
+[7.301s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:26[m[K,
+[7.301s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.301s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.301s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.301s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.302s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.302s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.302s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.302s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:205:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_BOOL_ARRAY), const std::vector<bool, std::allocator<bool> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.302s]   205 |   [01;36m[Kget[m[K() const
+[7.302s]       |   [01;36m[K^~~[m[K
+[7.302s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:205:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.302s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.303s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.303s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.303s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.303s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.303s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.303s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.303s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_BOOL_ARRAY), const std::vector<bool, std::allocator<bool> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.303s]   239 |   return [01;31m[Kparameter->get_parameter_value().get<T>()[m[K;
+[7.303s]       |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[7.303s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;36m[Knote: [m[K  expected a constant of type ‘[01m[Krclcpp::ParameterType[m[K’, got ‘[01m[Kstd::map<std::__cxx11::basic_string<char>, int>[m[K’
+[7.304s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:26[m[K,
+[7.304s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.304s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.304s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.304s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.304s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.304s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.304s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.304s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:217:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_INTEGER_ARRAY), const std::vector<long int, std::allocator<long int> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.304s]   217 |   [01;36m[Kget[m[K() const
+[7.305s]       |   [01;36m[K^~~[m[K
+[7.305s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:217:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.305s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.305s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.305s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.305s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.305s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.305s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.305s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.306s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_INTEGER_ARRAY), const std::vector<long int, std::allocator<long int> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.306s]   239 |   return [01;31m[Kparameter->get_parameter_value().get<T>()[m[K;
+[7.306s]       |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[7.306s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;36m[Knote: [m[K  expected a constant of type ‘[01m[Krclcpp::ParameterType[m[K’, got ‘[01m[Kstd::map<std::__cxx11::basic_string<char>, int>[m[K’
+[7.306s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:26[m[K,
+[7.306s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.306s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.306s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.306s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.307s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.307s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.307s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.307s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:229:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_DOUBLE_ARRAY), const std::vector<double, std::allocator<double> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.307s]   229 |   [01;36m[Kget[m[K() const
+[7.307s]       |   [01;36m[K^~~[m[K
+[7.307s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:229:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.307s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.307s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.308s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.308s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.308s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.308s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.308s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.308s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_DOUBLE_ARRAY), const std::vector<double, std::allocator<double> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.308s]   239 |   return [01;31m[Kparameter->get_parameter_value().get<T>()[m[K;
+[7.308s]       |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[7.308s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;36m[Knote: [m[K  expected a constant of type ‘[01m[Krclcpp::ParameterType[m[K’, got ‘[01m[Kstd::map<std::__cxx11::basic_string<char>, int>[m[K’
+[7.309s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:26[m[K,
+[7.309s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.309s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.309s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.309s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.309s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.309s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.309s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.309s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:241:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_STRING_ARRAY), const std::vector<std::__cxx11::basic_string<char> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.310s]   241 |   [01;36m[Kget[m[K() const
+[7.310s]       |   [01;36m[K^~~[m[K
+[7.310s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:241:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.310s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.310s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.310s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.310s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.310s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.310s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.311s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.311s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_STRING_ARRAY), const std::vector<std::__cxx11::basic_string<char> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.311s]   239 |   return [01;31m[Kparameter->get_parameter_value().get<T>()[m[K;
+[7.311s]       |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[7.311s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;36m[Knote: [m[K  expected a constant of type ‘[01m[Krclcpp::ParameterType[m[K’, got ‘[01m[Kstd::map<std::__cxx11::basic_string<char>, int>[m[K’
+[7.311s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:26[m[K,
+[7.311s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.311s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.311s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.312s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.312s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.312s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.312s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.312s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:254:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_same<T, bool>::value, const bool&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.312s]   254 |   [01;36m[Kget[m[K() const
+[7.312s]       |   [01;36m[K^~~[m[K
+[7.312s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:254:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.312s] /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_same<T, bool>::value, const bool&>::type rclcpp::ParameterValue::get() const [with type = std::map<std::__cxx11::basic_string<char>, int>][m[K’:
+[7.313s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.313s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.313s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, int>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.313s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:15:53:[m[K   required from here
+[7.313s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:254:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const bool&>[m[K’
+[7.313s] /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’:
+[7.313s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.313s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, int>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.314s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:15:53:[m[K   required from here
+[7.314s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:263:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<(std::is_integral<_Tp>::value && (! std::is_same<T, bool>::value)), const long int&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.314s]   263 |   [01;36m[Kget[m[K() const
+[7.314s]       |   [01;36m[K^~~[m[K
+[7.314s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:263:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.314s] /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<(std::is_integral<_Tp>::value && (! std::is_same<T, bool>::value)), const long int&>::type rclcpp::ParameterValue::get() const [with type = std::map<std::__cxx11::basic_string<char>, int>][m[K’:
+[7.314s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.314s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.314s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, int>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.315s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:15:53:[m[K   required from here
+[7.315s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:263:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const long int&>[m[K’
+[7.315s] /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’:
+[7.315s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.315s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, int>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.315s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:15:53:[m[K   required from here
+[7.315s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:271:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_floating_point<_Tp>::value, const double&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.315s]   271 |   [01;36m[Kget[m[K() const
+[7.315s]       |   [01;36m[K^~~[m[K
+[7.316s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:271:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.316s] /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_floating_point<_Tp>::value, const double&>::type rclcpp::ParameterValue::get() const [with type = std::map<std::__cxx11::basic_string<char>, int>][m[K’:
+[7.316s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.316s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.316s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, int>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.316s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:15:53:[m[K   required from here
+[7.316s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:271:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const double&>[m[K’
+[7.316s] /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’:
+[7.317s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.317s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, int>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.317s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:15:53:[m[K   required from here
+[7.317s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:279:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, std::__cxx11::basic_string<char> >::value, const std::__cxx11::basic_string<char>&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.317s]   279 |   [01;36m[Kget[m[K() const
+[7.317s]       |   [01;36m[K^~~[m[K
+[7.317s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:279:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.317s] /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, std::__cxx11::basic_string<char> >::value, const std::__cxx11::basic_string<char>&>::type rclcpp::ParameterValue::get() const [with type = std::map<std::__cxx11::basic_string<char>, int>][m[K’:
+[7.317s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.318s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.318s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, int>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.318s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:15:53:[m[K   required from here
+[7.318s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:279:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const std::__cxx11::basic_string<char>&>[m[K’
+[7.318s] /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’:
+[7.318s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.318s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, int>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.318s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:15:53:[m[K   required from here
+[7.318s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:289:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<unsigned char, std::allocator<unsigned char> >&>::value, const std::vector<unsigned char, std::allocator<unsigned char> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.319s]   289 |   [01;36m[Kget[m[K() const
+[7.319s]       |   [01;36m[K^~~[m[K
+[7.319s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:289:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.319s] /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<unsigned char, std::allocator<unsigned char> >&>::value, const std::vector<unsigned char, std::allocator<unsigned char> >&>::type rclcpp::ParameterValue::get() const [with type = std::map<std::__cxx11::basic_string<char>, int>][m[K’:
+[7.319s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.319s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.319s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, int>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.319s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:15:53:[m[K   required from here
+[7.319s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:289:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const std::vector<unsigned char, std::allocator<unsigned char> >&>[m[K’
+[7.319s] /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’:
+[7.320s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.320s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, int>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.320s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:15:53:[m[K   required from here
+[7.320s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:299:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<bool, std::allocator<bool> >&>::value, const std::vector<bool, std::allocator<bool> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.320s]   299 |   [01;36m[Kget[m[K() const
+[7.320s]       |   [01;36m[K^~~[m[K
+[7.320s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:299:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.320s] /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<bool, std::allocator<bool> >&>::value, const std::vector<bool, std::allocator<bool> >&>::type rclcpp::ParameterValue::get() const [with type = std::map<std::__cxx11::basic_string<char>, int>][m[K’:
+[7.320s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.321s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.321s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, int>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.321s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:15:53:[m[K   required from here
+[7.321s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:299:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const std::vector<bool, std::allocator<bool> >&>[m[K’
+[7.321s] /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’:
+[7.321s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.321s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, int>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.321s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:15:53:[m[K   required from here
+[7.321s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:309:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<int>&>::value, const std::vector<long int, std::allocator<long int> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.321s]   309 |   [01;36m[Kget[m[K() const
+[7.322s]       |   [01;36m[K^~~[m[K
+[7.322s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:309:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.322s] /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<int>&>::value, const std::vector<long int, std::allocator<long int> >&>::type rclcpp::ParameterValue::get() const [with type = std::map<std::__cxx11::basic_string<char>, int>][m[K’:
+[7.322s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.322s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.322s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, int>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.322s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:15:53:[m[K   required from here
+[7.322s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:309:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const std::vector<long int, std::allocator<long int> >&>[m[K’
+[7.322s] /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’:
+[7.323s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.323s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, int>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.323s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:15:53:[m[K   required from here
+[7.323s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:319:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<long int, std::allocator<long int> >&>::value, const std::vector<long int, std::allocator<long int> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.323s]   319 |   [01;36m[Kget[m[K() const
+[7.323s]       |   [01;36m[K^~~[m[K
+[7.323s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:319:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.323s] /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<long int, std::allocator<long int> >&>::value, const std::vector<long int, std::allocator<long int> >&>::type rclcpp::ParameterValue::get() const [with type = std::map<std::__cxx11::basic_string<char>, int>][m[K’:
+[7.323s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.323s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.324s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, int>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.324s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:15:53:[m[K   required from here
+[7.324s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:319:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const std::vector<long int, std::allocator<long int> >&>[m[K’
+[7.324s] /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’:
+[7.324s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.324s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, int>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.324s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:15:53:[m[K   required from here
+[7.324s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:329:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<float>&>::value, const std::vector<double, std::allocator<double> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.324s]   329 |   [01;36m[Kget[m[K() const
+[7.324s]       |   [01;36m[K^~~[m[K
+[7.325s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:329:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.325s] /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<float>&>::value, const std::vector<double, std::allocator<double> >&>::type rclcpp::ParameterValue::get() const [with type = std::map<std::__cxx11::basic_string<char>, int>][m[K’:
+[7.325s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.325s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.325s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, int>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.325s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:15:53:[m[K   required from here
+[7.325s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:329:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const std::vector<double, std::allocator<double> >&>[m[K’
+[7.325s] /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’:
+[7.325s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.326s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, int>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.326s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:15:53:[m[K   required from here
+[7.326s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:339:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<double, std::allocator<double> >&>::value, const std::vector<double, std::allocator<double> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.326s]   339 |   [01;36m[Kget[m[K() const
+[7.326s]       |   [01;36m[K^~~[m[K
+[7.326s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:339:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.326s] /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<double, std::allocator<double> >&>::value, const std::vector<double, std::allocator<double> >&>::type rclcpp::ParameterValue::get() const [with type = std::map<std::__cxx11::basic_string<char>, int>][m[K’:
+[7.326s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.326s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.326s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, int>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.326s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:15:53:[m[K   required from here
+[7.327s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:339:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const std::vector<double, std::allocator<double> >&>[m[K’
+[7.327s] /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’:
+[7.327s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.327s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, int>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.327s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:15:53:[m[K   required from here
+[7.327s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:349:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<std::__cxx11::basic_string<char> >&>::value, const std::vector<std::__cxx11::basic_string<char> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.327s]   349 |   [01;36m[Kget[m[K() const
+[7.327s]       |   [01;36m[K^~~[m[K
+[7.327s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:349:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.328s] /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<std::__cxx11::basic_string<char> >&>::value, const std::vector<std::__cxx11::basic_string<char> >&>::type rclcpp::ParameterValue::get() const [with type = std::map<std::__cxx11::basic_string<char>, int>][m[K’:
+[7.328s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.328s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, int>][m[K’
+[7.328s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, int>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.328s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:15:53:[m[K   required from here
+[7.328s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:349:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const std::vector<std::__cxx11::basic_string<char> >&>[m[K’
+[7.492s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.494s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.494s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.495s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.495s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.495s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.495s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.495s] /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’:
+[7.495s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.495s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.495s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:309:37:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter_or(const string&, ParameterT&, const ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.495s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:25:22:[m[K   required from here
+[7.496s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::ParameterValue::get<std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, float, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, float> > > >() const[m[K’
+[7.496s]   239 |   return [01;31m[Kparameter->get_parameter_value().get<T>()[m[K;
+[7.496s]       |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[7.496s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:26[m[K,
+[7.496s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.496s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.496s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.496s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.496s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.496s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.496s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.497s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:148:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_BOOL), const bool&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.497s]   148 |   [01;36m[Kget[m[K() const
+[7.497s]       |   [01;36m[K^~~[m[K
+[7.497s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:148:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.497s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.497s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.497s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.497s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.497s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.497s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.497s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.498s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_BOOL), const bool&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.498s]   239 |   return [01;31m[Kparameter->get_parameter_value().get<T>()[m[K;
+[7.498s]       |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[7.498s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;36m[Knote: [m[K  expected a constant of type ‘[01m[Krclcpp::ParameterType[m[K’, got ‘[01m[Kstd::map<std::__cxx11::basic_string<char>, float>[m[K’
+[7.498s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:26[m[K,
+[7.498s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.498s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.498s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.498s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.498s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.498s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.499s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.499s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:159:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_INTEGER), const long int&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.499s]   159 |   [01;36m[Kget[m[K() const
+[7.499s]       |   [01;36m[K^~~[m[K
+[7.499s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:159:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.499s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.499s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.499s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.499s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.499s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.499s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.500s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.500s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_INTEGER), const long int&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.500s]   239 |   return [01;31m[Kparameter->get_parameter_value().get<T>()[m[K;
+[7.500s]       |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[7.500s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;36m[Knote: [m[K  expected a constant of type ‘[01m[Krclcpp::ParameterType[m[K’, got ‘[01m[Kstd::map<std::__cxx11::basic_string<char>, float>[m[K’
+[7.500s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:26[m[K,
+[7.500s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.500s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.500s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.500s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.501s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.501s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.501s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.501s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:170:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_DOUBLE), const double&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.501s]   170 |   [01;36m[Kget[m[K() const
+[7.501s]       |   [01;36m[K^~~[m[K
+[7.501s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:170:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.501s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.501s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.501s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.501s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.502s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.502s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.502s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.502s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_DOUBLE), const double&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.502s]   239 |   return [01;31m[Kparameter->get_parameter_value().get<T>()[m[K;
+[7.502s]       |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[7.502s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;36m[Knote: [m[K  expected a constant of type ‘[01m[Krclcpp::ParameterType[m[K’, got ‘[01m[Kstd::map<std::__cxx11::basic_string<char>, float>[m[K’
+[7.502s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:26[m[K,
+[7.502s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.502s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.502s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.503s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.503s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.503s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.503s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.503s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:181:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_STRING), const std::__cxx11::basic_string<char>&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.503s]   181 |   [01;36m[Kget[m[K() const
+[7.503s]       |   [01;36m[K^~~[m[K
+[7.503s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:181:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.503s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.503s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.503s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.504s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.504s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.504s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.504s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.504s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_STRING), const std::__cxx11::basic_string<char>&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.504s]   239 |   return [01;31m[Kparameter->get_parameter_value().get<T>()[m[K;
+[7.504s]       |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[7.504s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;36m[Knote: [m[K  expected a constant of type ‘[01m[Krclcpp::ParameterType[m[K’, got ‘[01m[Kstd::map<std::__cxx11::basic_string<char>, float>[m[K’
+[7.504s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:26[m[K,
+[7.505s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.505s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.505s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.505s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.505s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.505s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.505s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.505s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:193:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_BYTE_ARRAY), const std::vector<unsigned char, std::allocator<unsigned char> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.505s]   193 |   [01;36m[Kget[m[K() const
+[7.505s]       |   [01;36m[K^~~[m[K
+[7.506s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:193:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.506s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.506s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.506s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.506s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.506s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.506s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.506s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.506s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_BYTE_ARRAY), const std::vector<unsigned char, std::allocator<unsigned char> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.506s]   239 |   return [01;31m[Kparameter->get_parameter_value().get<T>()[m[K;
+[7.506s]       |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[7.507s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;36m[Knote: [m[K  expected a constant of type ‘[01m[Krclcpp::ParameterType[m[K’, got ‘[01m[Kstd::map<std::__cxx11::basic_string<char>, float>[m[K’
+[7.507s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:26[m[K,
+[7.507s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.507s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.507s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.507s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.507s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.507s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.507s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.507s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:205:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_BOOL_ARRAY), const std::vector<bool, std::allocator<bool> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.508s]   205 |   [01;36m[Kget[m[K() const
+[7.508s]       |   [01;36m[K^~~[m[K
+[7.508s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:205:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.508s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.508s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.508s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.508s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.508s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.508s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.508s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.508s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_BOOL_ARRAY), const std::vector<bool, std::allocator<bool> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.509s]   239 |   return [01;31m[Kparameter->get_parameter_value().get<T>()[m[K;
+[7.509s]       |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[7.509s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;36m[Knote: [m[K  expected a constant of type ‘[01m[Krclcpp::ParameterType[m[K’, got ‘[01m[Kstd::map<std::__cxx11::basic_string<char>, float>[m[K’
+[7.509s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:26[m[K,
+[7.509s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.509s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.509s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.509s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.509s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.509s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.509s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.510s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:217:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_INTEGER_ARRAY), const std::vector<long int, std::allocator<long int> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.510s]   217 |   [01;36m[Kget[m[K() const
+[7.510s]       |   [01;36m[K^~~[m[K
+[7.510s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:217:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.510s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.510s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.510s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.510s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.510s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.510s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.511s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.511s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_INTEGER_ARRAY), const std::vector<long int, std::allocator<long int> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.511s]   239 |   return [01;31m[Kparameter->get_parameter_value().get<T>()[m[K;
+[7.511s]       |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[7.511s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;36m[Knote: [m[K  expected a constant of type ‘[01m[Krclcpp::ParameterType[m[K’, got ‘[01m[Kstd::map<std::__cxx11::basic_string<char>, float>[m[K’
+[7.511s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:26[m[K,
+[7.511s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.511s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.511s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.511s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.511s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.512s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.512s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.512s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:229:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_DOUBLE_ARRAY), const std::vector<double, std::allocator<double> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.512s]   229 |   [01;36m[Kget[m[K() const
+[7.512s]       |   [01;36m[K^~~[m[K
+[7.512s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:229:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.512s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.512s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.512s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.512s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.513s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.513s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.513s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.513s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_DOUBLE_ARRAY), const std::vector<double, std::allocator<double> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.513s]   239 |   return [01;31m[Kparameter->get_parameter_value().get<T>()[m[K;
+[7.513s]       |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[7.513s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;36m[Knote: [m[K  expected a constant of type ‘[01m[Krclcpp::ParameterType[m[K’, got ‘[01m[Kstd::map<std::__cxx11::basic_string<char>, float>[m[K’
+[7.513s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:26[m[K,
+[7.513s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.513s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.513s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.514s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.514s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.514s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.514s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.514s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:241:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_STRING_ARRAY), const std::vector<std::__cxx11::basic_string<char> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.514s]   241 |   [01;36m[Kget[m[K() const
+[7.514s]       |   [01;36m[K^~~[m[K
+[7.514s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:241:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.514s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.514s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.514s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.515s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.515s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.515s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.515s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.515s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;31m[Kerror: [m[Ktype/value mismatch at argument 1 in template parameter list for ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_STRING_ARRAY), const std::vector<std::__cxx11::basic_string<char> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.515s]   239 |   return [01;31m[Kparameter->get_parameter_value().get<T>()[m[K;
+[7.515s]       |          [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[7.515s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K [01;36m[Knote: [m[K  expected a constant of type ‘[01m[Krclcpp::ParameterType[m[K’, got ‘[01m[Kstd::map<std::__cxx11::basic_string<char>, float>[m[K’
+[7.515s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:26[m[K,
+[7.515s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:29[m[K,
+[7.515s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:54[m[K,
+[7.516s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.516s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.516s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.516s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h:4[m[K,
+[7.516s]                  from [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:3[m[K:
+[7.516s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:254:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_same<T, bool>::value, const bool&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.516s]   254 |   [01;36m[Kget[m[K() const
+[7.516s]       |   [01;36m[K^~~[m[K
+[7.516s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:254:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.516s] /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_same<T, bool>::value, const bool&>::type rclcpp::ParameterValue::get() const [with type = std::map<std::__cxx11::basic_string<char>, float>][m[K’:
+[7.517s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.517s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.517s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.517s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:309:37:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter_or(const string&, ParameterT&, const ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.517s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:25:22:[m[K   required from here
+[7.517s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:254:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const bool&>[m[K’
+[7.517s] /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’:
+[7.517s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.517s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.518s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:309:37:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter_or(const string&, ParameterT&, const ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.518s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:25:22:[m[K   required from here
+[7.518s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:263:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<(std::is_integral<_Tp>::value && (! std::is_same<T, bool>::value)), const long int&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.518s]   263 |   [01;36m[Kget[m[K() const
+[7.518s]       |   [01;36m[K^~~[m[K
+[7.518s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:263:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.518s] /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<(std::is_integral<_Tp>::value && (! std::is_same<T, bool>::value)), const long int&>::type rclcpp::ParameterValue::get() const [with type = std::map<std::__cxx11::basic_string<char>, float>][m[K’:
+[7.518s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.518s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.518s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.518s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:309:37:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter_or(const string&, ParameterT&, const ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.519s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:25:22:[m[K   required from here
+[7.519s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:263:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const long int&>[m[K’
+[7.519s] /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’:
+[7.519s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.519s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.519s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:309:37:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter_or(const string&, ParameterT&, const ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.519s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:25:22:[m[K   required from here
+[7.519s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:271:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_floating_point<_Tp>::value, const double&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.519s]   271 |   [01;36m[Kget[m[K() const
+[7.519s]       |   [01;36m[K^~~[m[K
+[7.520s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:271:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.520s] /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_floating_point<_Tp>::value, const double&>::type rclcpp::ParameterValue::get() const [with type = std::map<std::__cxx11::basic_string<char>, float>][m[K’:
+[7.520s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.520s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.520s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.520s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:309:37:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter_or(const string&, ParameterT&, const ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.520s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:25:22:[m[K   required from here
+[7.520s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:271:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const double&>[m[K’
+[7.520s] /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’:
+[7.521s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.521s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.521s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:309:37:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter_or(const string&, ParameterT&, const ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.521s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:25:22:[m[K   required from here
+[7.521s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:279:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, std::__cxx11::basic_string<char> >::value, const std::__cxx11::basic_string<char>&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.521s]   279 |   [01;36m[Kget[m[K() const
+[7.521s]       |   [01;36m[K^~~[m[K
+[7.521s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:279:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.521s] /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, std::__cxx11::basic_string<char> >::value, const std::__cxx11::basic_string<char>&>::type rclcpp::ParameterValue::get() const [with type = std::map<std::__cxx11::basic_string<char>, float>][m[K’:
+[7.521s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.522s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.522s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.522s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:309:37:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter_or(const string&, ParameterT&, const ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.522s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:25:22:[m[K   required from here
+[7.522s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:279:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const std::__cxx11::basic_string<char>&>[m[K’
+[7.522s] /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’:
+[7.522s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.522s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.522s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:309:37:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter_or(const string&, ParameterT&, const ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.522s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:25:22:[m[K   required from here
+[7.523s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:289:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<unsigned char, std::allocator<unsigned char> >&>::value, const std::vector<unsigned char, std::allocator<unsigned char> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.523s]   289 |   [01;36m[Kget[m[K() const
+[7.523s]       |   [01;36m[K^~~[m[K
+[7.523s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:289:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.523s] /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<unsigned char, std::allocator<unsigned char> >&>::value, const std::vector<unsigned char, std::allocator<unsigned char> >&>::type rclcpp::ParameterValue::get() const [with type = std::map<std::__cxx11::basic_string<char>, float>][m[K’:
+[7.523s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.523s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.523s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.523s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:309:37:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter_or(const string&, ParameterT&, const ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.523s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:25:22:[m[K   required from here
+[7.524s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:289:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const std::vector<unsigned char, std::allocator<unsigned char> >&>[m[K’
+[7.524s] /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’:
+[7.524s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.524s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.524s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:309:37:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter_or(const string&, ParameterT&, const ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.524s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:25:22:[m[K   required from here
+[7.524s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:299:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<bool, std::allocator<bool> >&>::value, const std::vector<bool, std::allocator<bool> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.524s]   299 |   [01;36m[Kget[m[K() const
+[7.524s]       |   [01;36m[K^~~[m[K
+[7.524s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:299:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.524s] /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<bool, std::allocator<bool> >&>::value, const std::vector<bool, std::allocator<bool> >&>::type rclcpp::ParameterValue::get() const [with type = std::map<std::__cxx11::basic_string<char>, float>][m[K’:
+[7.525s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.525s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.525s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.525s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:309:37:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter_or(const string&, ParameterT&, const ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.525s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:25:22:[m[K   required from here
+[7.525s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:299:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const std::vector<bool, std::allocator<bool> >&>[m[K’
+[7.525s] /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’:
+[7.525s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.525s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.525s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:309:37:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter_or(const string&, ParameterT&, const ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.526s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:25:22:[m[K   required from here
+[7.526s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:309:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<int>&>::value, const std::vector<long int, std::allocator<long int> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.526s]   309 |   [01;36m[Kget[m[K() const
+[7.526s]       |   [01;36m[K^~~[m[K
+[7.526s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:309:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.526s] /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<int>&>::value, const std::vector<long int, std::allocator<long int> >&>::type rclcpp::ParameterValue::get() const [with type = std::map<std::__cxx11::basic_string<char>, float>][m[K’:
+[7.526s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.526s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.526s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.526s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:309:37:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter_or(const string&, ParameterT&, const ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.526s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:25:22:[m[K   required from here
+[7.527s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:309:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const std::vector<long int, std::allocator<long int> >&>[m[K’
+[7.527s] /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’:
+[7.527s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.527s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.527s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:309:37:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter_or(const string&, ParameterT&, const ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.527s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:25:22:[m[K   required from here
+[7.527s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:319:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<long int, std::allocator<long int> >&>::value, const std::vector<long int, std::allocator<long int> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.527s]   319 |   [01;36m[Kget[m[K() const
+[7.527s]       |   [01;36m[K^~~[m[K
+[7.528s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:319:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.528s] /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<long int, std::allocator<long int> >&>::value, const std::vector<long int, std::allocator<long int> >&>::type rclcpp::ParameterValue::get() const [with type = std::map<std::__cxx11::basic_string<char>, float>][m[K’:
+[7.528s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.528s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.528s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.528s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:309:37:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter_or(const string&, ParameterT&, const ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.528s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:25:22:[m[K   required from here
+[7.528s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:319:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const std::vector<long int, std::allocator<long int> >&>[m[K’
+[7.528s] /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’:
+[7.528s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.529s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.529s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:309:37:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter_or(const string&, ParameterT&, const ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.529s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:25:22:[m[K   required from here
+[7.529s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:329:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<float>&>::value, const std::vector<double, std::allocator<double> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.529s]   329 |   [01;36m[Kget[m[K() const
+[7.529s]       |   [01;36m[K^~~[m[K
+[7.529s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:329:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.529s] /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<float>&>::value, const std::vector<double, std::allocator<double> >&>::type rclcpp::ParameterValue::get() const [with type = std::map<std::__cxx11::basic_string<char>, float>][m[K’:
+[7.529s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.529s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.530s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.530s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:309:37:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter_or(const string&, ParameterT&, const ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.530s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:25:22:[m[K   required from here
+[7.530s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:329:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const std::vector<double, std::allocator<double> >&>[m[K’
+[7.530s] /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’:
+[7.530s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.530s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.530s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:309:37:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter_or(const string&, ParameterT&, const ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.530s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:25:22:[m[K   required from here
+[7.530s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:339:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<double, std::allocator<double> >&>::value, const std::vector<double, std::allocator<double> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.530s]   339 |   [01;36m[Kget[m[K() const
+[7.531s]       |   [01;36m[K^~~[m[K
+[7.531s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:339:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.531s] /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<double, std::allocator<double> >&>::value, const std::vector<double, std::allocator<double> >&>::type rclcpp::ParameterValue::get() const [with type = std::map<std::__cxx11::basic_string<char>, float>][m[K’:
+[7.531s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.531s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.531s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.531s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:309:37:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter_or(const string&, ParameterT&, const ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.531s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:25:22:[m[K   required from here
+[7.531s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:339:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const std::vector<double, std::allocator<double> >&>[m[K’
+[7.531s] /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’:
+[7.532s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.532s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.532s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:309:37:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter_or(const string&, ParameterT&, const ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.532s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:25:22:[m[K   required from here
+[7.532s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:349:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<std::__cxx11::basic_string<char> >&>::value, const std::vector<std::__cxx11::basic_string<char> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[7.532s]   349 |   [01;36m[Kget[m[K() const
+[7.532s]       |   [01;36m[K^~~[m[K
+[7.532s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:349:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.532s] /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<std::__cxx11::basic_string<char> >&>::value, const std::vector<std::__cxx11::basic_string<char> >&>::type rclcpp::ParameterValue::get() const [with type = std::map<std::__cxx11::basic_string<char>, float>][m[K’:
+[7.532s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:239:49:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.533s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:274:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::map<std::__cxx11::basic_string<char>, float>][m[K’
+[7.533s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:294:80:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.533s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:309:37:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter_or(const string&, ParameterT&, const ParameterT&) const [with ParameterT = std::map<std::__cxx11::basic_string<char>, float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[7.533s] [01m[K/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp:25:22:[m[K   required from here
+[7.533s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:349:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const std::vector<std::__cxx11::basic_string<char> >&>[m[K’
+[8.500s] gmake[2]: *** [CMakeFiles/universal_teleop.dir/build.make:90: CMakeFiles/universal_teleop.dir/src/teleop.cpp.o] Error 1
+[8.501s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/universal_teleop.dir/all] Error 2
+[8.501s] gmake: *** [Makefile:146: all] Error 2
+[8.504s] Invoked command in '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop' returned '2': AMENT_PREFIX_PATH=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop -- -j4 -l4

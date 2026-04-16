@@ -1,0 +1,188 @@
+[2.461s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[2.461s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f5e5feab220>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f5e5feaacb0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f5e5feaacb0>>)
+[6.100s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[6.100s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[6.101s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[6.101s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[6.101s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[6.101s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[6.101s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop'
+[6.101s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[6.102s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[6.102s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[6.102s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[6.102s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[6.102s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[6.102s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[6.102s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[6.103s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[6.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[6.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[6.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[6.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[6.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[6.171s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[6.171s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[6.171s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[6.171s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[6.172s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[6.172s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[6.172s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[6.172s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[6.173s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[6.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[6.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[6.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[6.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[6.173s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[6.174s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[6.174s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[6.174s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[6.174s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[6.174s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[6.174s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[6.175s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[6.175s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[6.175s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[6.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop) by extensions ['ignore', 'ignore_ament_install']
+[6.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop) by extension 'ignore'
+[6.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop) by extension 'ignore_ament_install'
+[6.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop) by extensions ['colcon_pkg']
+[6.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop) by extension 'colcon_pkg'
+[6.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop) by extensions ['colcon_meta']
+[6.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop) by extension 'colcon_meta'
+[6.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop) by extensions ['ros']
+[6.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop) by extension 'ros'
+[6.217s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros-universal-teleop' with type 'ros.ament_cmake' and name 'universal_teleop'
+[6.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop-msgs) by extensions ['ignore', 'ignore_ament_install']
+[6.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop-msgs) by extension 'ignore'
+[6.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop-msgs) by extension 'ignore_ament_install'
+[6.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop-msgs) by extensions ['colcon_pkg']
+[6.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop-msgs) by extension 'colcon_pkg'
+[6.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop-msgs) by extensions ['colcon_meta']
+[6.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop-msgs) by extension 'colcon_meta'
+[6.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop-msgs) by extensions ['ros']
+[6.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop-msgs) by extension 'ros'
+[6.221s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros-universal-teleop-msgs' with type 'ros.ament_cmake' and name 'universal_teleop_msgs'
+[6.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[6.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[6.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[6.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[6.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[6.598s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[6.599s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[6.708s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install
+[6.711s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 273 installed packages in /opt/ros/humble
+[6.719s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[6.919s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop_msgs' build argument 'cmake_args' from command line to 'None'
+[6.919s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop_msgs' build argument 'cmake_target' from command line to 'None'
+[6.919s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[6.920s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[6.920s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[6.920s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[6.920s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[6.920s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[6.920s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[6.920s] DEBUG:colcon.colcon_core.verb:Building package 'universal_teleop_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs', 'merge_install': False, 'path': '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop-msgs', 'symlink_install': False, 'test_result_base': None}
+[6.921s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop' build argument 'cmake_args' from command line to 'None'
+[6.921s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop' build argument 'cmake_target' from command line to 'None'
+[6.921s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[6.921s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[6.921s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop' build argument 'cmake_clean_first' from command line to 'False'
+[6.921s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop' build argument 'cmake_force_configure' from command line to 'False'
+[6.921s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop' build argument 'ament_cmake_args' from command line to 'None'
+[6.921s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[6.921s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[6.921s] DEBUG:colcon.colcon_core.verb:Building package 'universal_teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop', 'merge_install': False, 'path': '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop', 'symlink_install': False, 'test_result_base': None}
+[6.921s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[6.924s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[6.924s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop-msgs' with build type 'ament_cmake'
+[6.924s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop-msgs'
+[6.953s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[6.954s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.954s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.034s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs -- -j4 -l4
+[8.367s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs -- -j4 -l4
+[8.410s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs
+[8.688s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(universal_teleop_msgs)
+[8.688s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs
+[8.740s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs' for CMake module files
+[8.741s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs' for CMake config files
+[8.741s] Level 1:colcon.colcon_core.shell:create_environment_hook('universal_teleop_msgs', 'cmake_prefix_path')
+[8.742s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/hook/cmake_prefix_path.ps1'
+[8.750s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/hook/cmake_prefix_path.dsv'
+[8.794s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/hook/cmake_prefix_path.sh'
+[8.829s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib'
+[8.830s] Level 1:colcon.colcon_core.shell:create_environment_hook('universal_teleop_msgs', 'ld_library_path_lib')
+[8.830s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/hook/ld_library_path_lib.ps1'
+[8.831s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/hook/ld_library_path_lib.dsv'
+[8.832s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/hook/ld_library_path_lib.sh'
+[8.833s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/bin'
+[8.833s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib/pkgconfig/universal_teleop_msgs.pc'
+[8.833s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib/python3.10/site-packages'
+[8.834s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/bin'
+[8.835s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/package.ps1'
+[8.837s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/package.dsv'
+[8.869s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/package.sh'
+[8.871s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/package.bash'
+[8.874s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/package.zsh'
+[8.892s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/colcon-core/packages/universal_teleop_msgs)
+[8.893s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(universal_teleop_msgs)
+[8.894s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs' for CMake module files
+[8.895s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs' for CMake config files
+[8.895s] Level 1:colcon.colcon_core.shell:create_environment_hook('universal_teleop_msgs', 'cmake_prefix_path')
+[8.896s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/hook/cmake_prefix_path.ps1'
+[8.896s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/hook/cmake_prefix_path.dsv'
+[8.897s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/hook/cmake_prefix_path.sh'
+[8.898s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib'
+[8.898s] Level 1:colcon.colcon_core.shell:create_environment_hook('universal_teleop_msgs', 'ld_library_path_lib')
+[8.898s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/hook/ld_library_path_lib.ps1'
+[8.899s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/hook/ld_library_path_lib.dsv'
+[8.899s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/hook/ld_library_path_lib.sh'
+[8.900s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/bin'
+[8.900s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib/pkgconfig/universal_teleop_msgs.pc'
+[8.900s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib/python3.10/site-packages'
+[8.901s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/bin'
+[8.901s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/package.ps1'
+[8.903s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/package.dsv'
+[8.903s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/package.sh'
+[8.904s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/package.bash'
+[8.905s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/package.zsh'
+[8.905s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/colcon-core/packages/universal_teleop_msgs)
+[8.906s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop' with build type 'ament_cmake'
+[8.906s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop'
+[8.906s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.907s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.991s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop': AMENT_PREFIX_PATH=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop -- -j4 -l4
+[17.412s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop' returned '2': AMENT_PREFIX_PATH=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop -- -j4 -l4
+[17.446s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(universal_teleop)
+[17.446s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop' for CMake module files
+[17.447s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop' for CMake config files
+[17.447s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/bin'
+[17.447s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/lib/pkgconfig/universal_teleop.pc'
+[17.448s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/lib/python3.10/site-packages'
+[17.448s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/bin'
+[17.449s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop/package.ps1'
+[17.450s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop/package.dsv'
+[17.450s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop/package.sh'
+[17.451s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop/package.bash'
+[17.452s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop/package.zsh'
+[17.452s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/colcon-core/packages/universal_teleop)
+[17.463s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[17.463s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[17.463s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[17.463s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[17.507s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[17.507s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[17.507s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[17.549s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[17.550s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/local_setup.ps1'
+[17.584s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/_local_setup_util_ps1.py'
+[17.620s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/setup.ps1'
+[17.625s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/local_setup.sh'
+[17.627s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/_local_setup_util_sh.py'
+[17.628s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/setup.sh'
+[17.631s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/local_setup.bash'
+[17.632s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/setup.bash'
+[17.634s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/local_setup.zsh'
+[17.650s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/setup.zsh'
