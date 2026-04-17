@@ -1,0 +1,174 @@
+[0.164s] Invoking command in '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs -- -j4 -l4
+[1.228s] [  2%] Built target universal_teleop_msgs__rs
+[1.244s] [  5%] Built target universal_teleop_msgs__cpp
+[1.411s] [  5%] Built target ament_cmake_python_copy_universal_teleop_msgs
+[1.911s] [ 15%] Built target universal_teleop_msgs__rosidl_generator_c
+[2.143s] [ 25%] Built target universal_teleop_msgs__rosidl_typesupport_fastrtps_cpp
+[2.143s] [ 35%] Built target universal_teleop_msgs__rosidl_typesupport_cpp
+[2.154s] [ 45%] Built target universal_teleop_msgs__rosidl_typesupport_introspection_cpp
+[2.303s] [ 55%] Built target universal_teleop_msgs__rosidl_typesupport_c
+[2.347s] [ 65%] Built target universal_teleop_msgs__rosidl_typesupport_fastrtps_c
+[2.433s] [ 75%] Built target universal_teleop_msgs__rosidl_typesupport_introspection_c
+[2.546s] [ 75%] Built target universal_teleop_msgs
+[2.734s] running egg_info
+[2.736s] writing universal_teleop_msgs.egg-info/PKG-INFO
+[2.736s] writing dependency_links to universal_teleop_msgs.egg-info/dependency_links.txt
+[2.736s] writing top-level names to universal_teleop_msgs.egg-info/top_level.txt
+[2.790s] reading manifest file 'universal_teleop_msgs.egg-info/SOURCES.txt'
+[2.821s] [ 77%] Built target universal_teleop_msgs__py
+[2.843s] writing manifest file 'universal_teleop_msgs.egg-info/SOURCES.txt'
+[2.909s] [ 77%] Built target ament_cmake_python_build_universal_teleop_msgs_egg
+[3.240s] [ 85%] Built target universal_teleop_msgs__rosidl_generator_py
+[3.440s] [ 95%] Built target universal_teleop_msgs__rosidl_typesupport_fastrtps_c__pyext
+[3.441s] [ 95%] Built target universal_teleop_msgs__rosidl_typesupport_c__pyext
+[3.451s] [100%] Built target universal_teleop_msgs__rosidl_typesupport_introspection_c__pyext
+[3.470s] Invoked command in '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs -- -j4 -l4
+[3.595s] Invoking command in '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs
+[3.635s] -- Install configuration: ""
+[3.648s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/ament_index/resource_index/rosidl_interfaces/universal_teleop_msgs
+[3.672s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs
+[3.675s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg
+[3.697s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/control.h
+[3.697s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail
+[3.697s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__functions.h
+[3.698s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__type_support.h
+[3.698s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__functions.c
+[3.698s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__struct.h
+[3.699s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__functions.c
+[3.699s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__struct.h
+[3.699s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__type_support.h
+[3.699s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__functions.h
+[3.699s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/event.h
+[3.700s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/rosidl_generator_c__visibility_control.h
+[3.739s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/environment/library_path.sh
+[3.739s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/environment/library_path.dsv
+[3.788s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_generator_c.so
+[3.788s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs
+[3.789s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg
+[3.789s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.789s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail
+[3.789s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__rosidl_typesupport_fastrtps_c.h
+[3.790s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__rosidl_typesupport_fastrtps_c.h
+[3.790s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_typesupport_fastrtps_c.so
+[3.791s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs
+[3.791s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg
+[3.792s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/control.hpp
+[3.792s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[3.792s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail
+[3.793s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__traits.hpp
+[3.793s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__traits.hpp
+[3.793s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__type_support.hpp
+[3.794s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__type_support.hpp
+[3.794s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__builder.hpp
+[3.794s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__struct.hpp
+[3.795s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__builder.hpp
+[3.795s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__struct.hpp
+[3.795s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/event.hpp
+[3.795s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs
+[3.796s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg
+[3.796s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.796s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail
+[3.797s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__rosidl_typesupport_fastrtps_cpp.hpp
+[3.797s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__rosidl_typesupport_fastrtps_cpp.hpp
+[3.797s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/dds_fastrtps
+[3.797s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_typesupport_fastrtps_cpp.so
+[3.798s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs
+[3.798s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg
+[3.798s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.798s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail
+[3.799s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__type_support.c
+[3.799s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__rosidl_typesupport_introspection_c.h
+[3.799s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__type_support.c
+[3.799s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__rosidl_typesupport_introspection_c.h
+[3.800s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_typesupport_introspection_c.so
+[3.800s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_typesupport_c.so
+[3.801s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs
+[3.801s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg
+[3.801s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail
+[3.801s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__type_support.cpp
+[3.802s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__rosidl_typesupport_introspection_cpp.hpp
+[3.802s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__rosidl_typesupport_introspection_cpp.hpp
+[3.802s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__type_support.cpp
+[3.803s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_typesupport_introspection_cpp.so
+[3.803s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_typesupport_cpp.so
+[3.804s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/environment/pythonpath.sh
+[3.804s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/environment/pythonpath.dsv
+[3.806s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs-2.0.0-py3.10.egg-info
+[3.806s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs-2.0.0-py3.10.egg-info/dependency_links.txt
+[3.807s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs-2.0.0-py3.10.egg-info/top_level.txt
+[3.807s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs-2.0.0-py3.10.egg-info/PKG-INFO
+[3.807s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs-2.0.0-py3.10.egg-info/SOURCES.txt
+[3.807s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs
+[3.808s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/universal_teleop_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.808s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/libuniversal_teleop_msgs__rosidl_generator_py.so
+[3.808s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/_universal_teleop_msgs_s.ep.rosidl_typesupport_c.c
+[3.809s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/_universal_teleop_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[3.809s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/_universal_teleop_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.809s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/__init__.py
+[3.809s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/universal_teleop_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.809s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/universal_teleop_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.810s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/msg
+[3.810s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/msg/_event.py
+[3.810s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/msg/_control.py
+[3.810s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/msg/_event_s.c
+[3.810s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/msg/__init__.py
+[3.811s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/msg/_control_s.c
+[4.018s] Listing '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs'...
+[4.018s] Listing '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/msg'...
+[4.048s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/universal_teleop_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.069s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/universal_teleop_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.108s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/universal_teleop_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.139s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_generator_py.so
+[4.214s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/ament_index/resource_index/rust_packages/universal_teleop_msgs
+[4.214s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/rust
+[4.217s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/rust/Cargo.toml
+[4.218s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/rust/src
+[4.236s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/rust/src/lib.rs
+[4.236s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/rust/src/msg
+[4.288s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/rust/src/msg/rmw.rs
+[4.289s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/rust/src/msg.rs
+[4.289s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/rust/build.rs
+[4.289s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/msg/Control.idl
+[4.290s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/msg/Event.idl
+[4.290s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/msg/Control.msg
+[4.290s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/msg/Event.msg
+[4.309s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/ament_index/resource_index/package_run_dependencies/universal_teleop_msgs
+[4.310s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/ament_index/resource_index/parent_prefix_path/universal_teleop_msgs
+[4.310s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/environment/ament_prefix_path.sh
+[4.310s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/environment/ament_prefix_path.dsv
+[4.310s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/environment/path.sh
+[4.311s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/environment/path.dsv
+[4.311s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/local_setup.bash
+[4.311s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/local_setup.sh
+[4.312s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/local_setup.zsh
+[4.312s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/local_setup.dsv
+[4.312s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/package.dsv
+[4.363s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/ament_index/resource_index/packages/universal_teleop_msgs
+[4.503s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/export_universal_teleop_msgs__rosidl_generator_cExport.cmake
+[4.504s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/export_universal_teleop_msgs__rosidl_generator_cExport-noconfig.cmake
+[4.523s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/export_universal_teleop_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[4.523s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/export_universal_teleop_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[4.524s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/export_universal_teleop_msgs__rosidl_generator_cppExport.cmake
+[4.529s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/export_universal_teleop_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[4.530s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/export_universal_teleop_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[4.533s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/universal_teleop_msgs__rosidl_typesupport_introspection_cExport.cmake
+[4.534s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/universal_teleop_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[4.539s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/universal_teleop_msgs__rosidl_typesupport_cExport.cmake
+[4.539s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/universal_teleop_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[4.543s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/universal_teleop_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[4.543s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/universal_teleop_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[4.547s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/universal_teleop_msgs__rosidl_typesupport_cppExport.cmake
+[4.547s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/universal_teleop_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[4.551s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/export_universal_teleop_msgs__rosidl_generator_pyExport.cmake
+[4.551s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/export_universal_teleop_msgs__rosidl_generator_pyExport-noconfig.cmake
+[4.552s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/rosidl_cmake-extras.cmake
+[4.552s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.552s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.553s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[4.553s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[4.553s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.553s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.554s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/universal_teleop_msgsConfig.cmake
+[4.554s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/universal_teleop_msgsConfig-version.cmake
+[4.554s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/package.xml
+[4.645s] Invoked command in '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs

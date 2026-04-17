@@ -1,0 +1,46 @@
+[0.031s] Invoking command in '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop': CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs:/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/keyboard_msgs:/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop:/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/keyboard:/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop -- -j4 -l4
+[0.095s] [35m[1mConsolidate compiler generated dependencies of target universal_teleop[0m
+[0.126s] [ 33%] [32mBuilding CXX object CMakeFiles/universal_teleop.dir/src/teleop.cpp.o[0m
+[18.385s] [ 66%] [32m[1mLinking CXX executable universal_teleop[0m
+[19.828s] [100%] Built target universal_teleop
+[19.843s] Invoked command in '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop' returned '0': CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs:/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/keyboard_msgs:/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop:/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/keyboard:/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop -- -j4 -l4
+[19.845s] Invoking command in '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop': CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs:/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/keyboard_msgs:/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop:/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/keyboard:/opt/ros/humble /usr/bin/cmake --install /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop
+[19.856s] -- Install configuration: ""
+[19.856s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/lib/universal_teleop/universal_teleop
+[19.870s] -- Set runtime path of "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/lib/universal_teleop/universal_teleop" to ""
+[19.870s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop//launch
+[19.870s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop//launch/chameleon_input_map.yml
+[19.871s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop//launch/pioneer_input_map.yml
+[19.872s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop//launch/keyboard.yml
+[19.872s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop//launch/exabot.launch
+[19.872s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop//launch/example.launch
+[19.872s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop//launch/chameleon.launch
+[19.873s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop//launch/ardrone_input_map.yml
+[19.873s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop//launch/pioneer_input_map-joy2.yml
+[19.873s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop//launch/joy_noganet.yml
+[19.874s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop//launch/ardrone.launch
+[19.874s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop//launch/ardrone-settings.xml
+[19.874s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop//launch/scorbot.launch
+[19.874s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop//launch/joy_foxconn.yml
+[19.874s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop//launch/scorbot_input_map.yml
+[19.874s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop//launch/pioneer_scales.yml
+[19.874s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop//launch/ardrone_scales.yml
+[19.875s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop//launch/dummy.launch
+[19.875s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop//launch/example_input_map.yml
+[19.875s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop//launch/pioneer.launch
+[19.875s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/ament_index/resource_index/package_run_dependencies/universal_teleop
+[19.875s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/ament_index/resource_index/parent_prefix_path/universal_teleop
+[19.876s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop/environment/ament_prefix_path.sh
+[19.877s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop/environment/ament_prefix_path.dsv
+[19.877s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop/environment/path.sh
+[19.877s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop/environment/path.dsv
+[19.877s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop/local_setup.bash
+[19.877s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop/local_setup.sh
+[19.877s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop/local_setup.zsh
+[19.878s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop/local_setup.dsv
+[19.878s] -- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop/package.dsv
+[19.878s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/ament_index/resource_index/packages/universal_teleop
+[19.878s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop/cmake/universal_teleopConfig.cmake
+[19.878s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop/cmake/universal_teleopConfig-version.cmake
+[19.878s] -- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop/package.xml
+[19.879s] Invoked command in '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop' returned '0': CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs:/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/keyboard_msgs:/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop:/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/keyboard:/opt/ros/humble /usr/bin/cmake --install /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop

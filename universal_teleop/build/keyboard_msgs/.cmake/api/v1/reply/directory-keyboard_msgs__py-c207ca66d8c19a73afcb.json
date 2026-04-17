@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "keyboard_msgs__py",
+		"source" : "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard_msgs/keyboard_msgs__py"
+	}
+}

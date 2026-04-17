@@ -1,8 +1,9 @@
 * Mover todo a ROS2:
-    * Mover Los Teleops:
+    ° Mover Los Teleops:
         ° Migrar Keyboard a ROS2 
-        * Migrar a usar Joy de Humble
-        * Migrar Universal_Teleop a ROS2
+        ° Migrar a usar Joy de Humble
+        ° Migrar Universal_Teleop a ROS2
+        - Quedó todo en un solo workspace, para que sea fácil de armar. Probs haga lo mismo en scorbot. get_parameters no sobreescribe las entradas previsa del map. Si queremos tener defaults, hay que usar un "If"
     * Migrar Scorbot:
         * Migrar el uso principal de Scorbot, sin MoveIt!
         * Integrar/Migrar al MoveIt! de ROS2

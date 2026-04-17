@@ -1,0 +1,10 @@
+/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard/CMakeFiles/uninstall.dir
+/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard/CMakeFiles/keyboard_uninstall.dir
+/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard/CMakeFiles/keyboard.dir
+/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard/CMakeFiles/test.dir
+/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard/CMakeFiles/edit_cache.dir
+/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard/CMakeFiles/rebuild_cache.dir
+/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard/CMakeFiles/list_install_components.dir
+/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard/CMakeFiles/install.dir
+/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard/CMakeFiles/install/local.dir
+/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard/CMakeFiles/install/strip.dir

@@ -1,0 +1,440 @@
+[0.000000] (-) TimerEvent: {}
+[0.001045] (universal_teleop_msgs) JobQueued: {'identifier': 'universal_teleop_msgs', 'dependencies': OrderedDict()}
+[0.001341] (universal_teleop) JobQueued: {'identifier': 'universal_teleop', 'dependencies': OrderedDict([('universal_teleop_msgs', '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs')])}
+[0.001537] (universal_teleop_msgs) JobStarted: {'identifier': 'universal_teleop_msgs'}
+[0.013161] (universal_teleop_msgs) JobProgress: {'identifier': 'universal_teleop_msgs', 'progress': 'cmake'}
+[0.013978] (universal_teleop_msgs) JobProgress: {'identifier': 'universal_teleop_msgs', 'progress': 'build'}
+[0.015235] (universal_teleop_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs', '--', '-j4', '-l4'], 'cwd': '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'leon'), ('LC_TIME', 'es_AR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/leon'), ('OLDPWD', '/home/leon/robotica/scorbotLabo/teleop_packages'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_AR.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1547'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a37622944b23c275539da0df69e0e508'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'leon'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'leon'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/leon-labo:@/tmp/.ICE-unix/1547,unix/leon-labo:/tmp/.ICE-unix/1547'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_AR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9fc44eb9_a6c2_40be_b75f_94ae3a3fa124'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_AR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.A7LAO3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.107'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_AR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_AR.UTF-8'), ('LC_IDENTIFICATION', 'es_AR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a37622944b23c275539da0df69e0e508'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_AR.UTF-8'), ('LC_PAPER', 'es_AR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs:/opt/ros/humble')]), 'shell': False}
+[0.100074] (universal_teleop_msgs) StdoutLine: {'line': b'[  2%] Built target universal_teleop_msgs__rs\n'}
+[0.100990] (-) TimerEvent: {}
+[0.101289] (universal_teleop_msgs) StdoutLine: {'line': b'[  5%] Built target universal_teleop_msgs__cpp\n'}
+[0.101665] (universal_teleop_msgs) StdoutLine: {'line': b'[ 15%] Built target universal_teleop_msgs__rosidl_generator_c\n'}
+[0.113628] (universal_teleop_msgs) StdoutLine: {'line': b'[ 15%] Built target ament_cmake_python_copy_universal_teleop_msgs\n'}
+[0.139299] (universal_teleop_msgs) StdoutLine: {'line': b'[ 25%] Built target universal_teleop_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.144577] (universal_teleop_msgs) StdoutLine: {'line': b'[ 35%] Built target universal_teleop_msgs__rosidl_typesupport_cpp\n'}
+[0.153532] (universal_teleop_msgs) StdoutLine: {'line': b'[ 45%] Built target universal_teleop_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.181179] (universal_teleop_msgs) StdoutLine: {'line': b'[ 55%] Built target universal_teleop_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.187305] (universal_teleop_msgs) StdoutLine: {'line': b'[ 65%] Built target universal_teleop_msgs__rosidl_typesupport_c\n'}
+[0.189799] (universal_teleop_msgs) StdoutLine: {'line': b'[ 75%] Built target universal_teleop_msgs__rosidl_typesupport_introspection_c\n'}
+[0.202699] (-) TimerEvent: {}
+[0.223813] (universal_teleop_msgs) StdoutLine: {'line': b'[ 75%] Built target universal_teleop_msgs\n'}
+[0.257601] (universal_teleop_msgs) StdoutLine: {'line': b'[ 77%] Built target universal_teleop_msgs__py\n'}
+[0.288395] (universal_teleop_msgs) StdoutLine: {'line': b'[ 85%] Built target universal_teleop_msgs__rosidl_generator_py\n'}
+[0.306181] (-) TimerEvent: {}
+[0.325644] (universal_teleop_msgs) StdoutLine: {'line': b'[ 90%] Built target universal_teleop_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.328623] (universal_teleop_msgs) StdoutLine: {'line': b'[ 95%] Built target universal_teleop_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[0.329166] (universal_teleop_msgs) StdoutLine: {'line': b'[100%] Built target universal_teleop_msgs__rosidl_typesupport_c__pyext\n'}
+[0.406403] (-) TimerEvent: {}
+[0.507030] (-) TimerEvent: {}
+[0.554118] (universal_teleop_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.555556] (universal_teleop_msgs) StdoutLine: {'line': b'writing universal_teleop_msgs.egg-info/PKG-INFO\n'}
+[0.555937] (universal_teleop_msgs) StdoutLine: {'line': b'writing dependency_links to universal_teleop_msgs.egg-info/dependency_links.txt\n'}
+[0.556301] (universal_teleop_msgs) StdoutLine: {'line': b'writing top-level names to universal_teleop_msgs.egg-info/top_level.txt\n'}
+[0.559559] (universal_teleop_msgs) StdoutLine: {'line': b"reading manifest file 'universal_teleop_msgs.egg-info/SOURCES.txt'\n"}
+[0.560494] (universal_teleop_msgs) StdoutLine: {'line': b"writing manifest file 'universal_teleop_msgs.egg-info/SOURCES.txt'\n"}
+[0.607173] (-) TimerEvent: {}
+[0.610428] (universal_teleop_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_universal_teleop_msgs_egg\n'}
+[0.627529] (universal_teleop_msgs) CommandEnded: {'returncode': 0}
+[0.628725] (universal_teleop_msgs) JobProgress: {'identifier': 'universal_teleop_msgs', 'progress': 'install'}
+[0.642364] (universal_teleop_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs'], 'cwd': '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'leon'), ('LC_TIME', 'es_AR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/leon'), ('OLDPWD', '/home/leon/robotica/scorbotLabo/teleop_packages'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_AR.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1547'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a37622944b23c275539da0df69e0e508'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'leon'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'leon'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/leon-labo:@/tmp/.ICE-unix/1547,unix/leon-labo:/tmp/.ICE-unix/1547'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_AR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9fc44eb9_a6c2_40be_b75f_94ae3a3fa124'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_AR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.A7LAO3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.107'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_AR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_AR.UTF-8'), ('LC_IDENTIFICATION', 'es_AR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a37622944b23c275539da0df69e0e508'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_AR.UTF-8'), ('LC_PAPER', 'es_AR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs:/opt/ros/humble')]), 'shell': False}
+[0.654518] (universal_teleop_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.654976] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/ament_index/resource_index/rosidl_interfaces/universal_teleop_msgs\n'}
+[0.655795] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs\n'}
+[0.655989] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg\n'}
+[0.656124] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/control.h\n'}
+[0.656249] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail\n'}
+[0.656377] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__functions.h\n'}
+[0.656504] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__type_support.h\n'}
+[0.656652] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__functions.c\n'}
+[0.656830] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__struct.h\n'}
+[0.656954] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__functions.c\n'}
+[0.657077] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__struct.h\n'}
+[0.657204] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__type_support.h\n'}
+[0.657328] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__functions.h\n'}
+[0.657456] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/event.h\n'}
+[0.657585] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.657751] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/environment/library_path.sh\n'}
+[0.657888] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/environment/library_path.dsv\n'}
+[0.658011] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_generator_c.so\n'}
+[0.658470] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs\n'}
+[0.658614] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg\n'}
+[0.658758] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.658911] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail\n'}
+[0.659056] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__rosidl_typesupport_fastrtps_c.h\n'}
+[0.659185] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__rosidl_typesupport_fastrtps_c.h\n'}
+[0.659325] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.659449] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs\n'}
+[0.659571] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg\n'}
+[0.659701] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/control.hpp\n'}
+[0.659832] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.659966] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail\n'}
+[0.660086] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__traits.hpp\n'}
+[0.660212] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__traits.hpp\n'}
+[0.660336] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__type_support.hpp\n'}
+[0.660462] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__type_support.hpp\n'}
+[0.660586] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__builder.hpp\n'}
+[0.660921] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__struct.hpp\n'}
+[0.661099] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__builder.hpp\n'}
+[0.661394] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__struct.hpp\n'}
+[0.661745] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/event.hpp\n'}
+[0.661896] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs\n'}
+[0.662021] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg\n'}
+[0.662158] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.662287] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail\n'}
+[0.662414] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.662542] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.662669] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/dds_fastrtps\n'}
+[0.662818] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.662945] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs\n'}
+[0.663065] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg\n'}
+[0.663191] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.663335] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail\n'}
+[0.663468] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__type_support.c\n'}
+[0.663593] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__rosidl_typesupport_introspection_c.h\n'}
+[0.663747] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__type_support.c\n'}
+[0.663875] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__rosidl_typesupport_introspection_c.h\n'}
+[0.664000] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.664123] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_typesupport_c.so\n'}
+[0.664257] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs\n'}
+[0.664379] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg\n'}
+[0.664521] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail\n'}
+[0.664645] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__type_support.cpp\n'}
+[0.664784] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.664912] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.665035] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__type_support.cpp\n'}
+[0.665157] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.665282] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_typesupport_cpp.so\n'}
+[0.665404] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/environment/pythonpath.sh\n'}
+[0.665526] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/environment/pythonpath.dsv\n'}
+[0.665647] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs-2.0.0-py3.10.egg-info\n'}
+[0.665788] (universal_teleop_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs-2.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.665915] (universal_teleop_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs-2.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.666055] (universal_teleop_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs-2.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.666176] (universal_teleop_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs-2.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.666294] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs\n'}
+[0.666411] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/universal_teleop_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.666532] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/libuniversal_teleop_msgs__rosidl_generator_py.so\n'}
+[0.666651] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/_universal_teleop_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[0.666795] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/_universal_teleop_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.666917] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/_universal_teleop_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.667050] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/__init__.py\n'}
+[0.667169] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/universal_teleop_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.667292] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/universal_teleop_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.667421] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/msg\n'}
+[0.667547] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/msg/_event.py\n'}
+[0.667694] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/msg/_control.py\n'}
+[0.667840] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/msg/_event_s.c\n'}
+[0.667965] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/msg/__init__.py\n'}
+[0.668091] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/msg/_control_s.c\n'}
+[0.706182] (universal_teleop_msgs) StdoutLine: {'line': b"Listing '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs'...\n"}
+[0.706487] (universal_teleop_msgs) StdoutLine: {'line': b"Listing '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/msg'...\n"}
+[0.707295] (-) TimerEvent: {}
+[0.714929] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/universal_teleop_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.715333] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/universal_teleop_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.715716] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages/universal_teleop_msgs/universal_teleop_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.716146] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_generator_py.so\n'}
+[0.716390] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/ament_index/resource_index/rust_packages/universal_teleop_msgs\n'}
+[0.716806] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/rust\n'}
+[0.716970] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/rust/Cargo.toml\n'}
+[0.717100] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/rust/src\n'}
+[0.717227] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/rust/src/lib.rs\n'}
+[0.717352] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/rust/src/msg\n'}
+[0.717477] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/rust/src/msg/rmw.rs\n'}
+[0.717632] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/rust/src/msg.rs\n'}
+[0.717795] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/rust/build.rs\n'}
+[0.718249] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/msg/Control.idl\n'}
+[0.718470] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/msg/Event.idl\n'}
+[0.718661] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/msg/Control.msg\n'}
+[0.718857] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/msg/Event.msg\n'}
+[0.719065] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/ament_index/resource_index/package_run_dependencies/universal_teleop_msgs\n'}
+[0.719231] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/ament_index/resource_index/parent_prefix_path/universal_teleop_msgs\n'}
+[0.719424] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/environment/ament_prefix_path.sh\n'}
+[0.719629] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/environment/ament_prefix_path.dsv\n'}
+[0.719864] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/environment/path.sh\n'}
+[0.720025] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/environment/path.dsv\n'}
+[0.720208] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/local_setup.bash\n'}
+[0.720427] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/local_setup.sh\n'}
+[0.720553] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/local_setup.zsh\n'}
+[0.720686] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/local_setup.dsv\n'}
+[0.721016] (universal_teleop_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/package.dsv\n'}
+[0.721148] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/ament_index/resource_index/packages/universal_teleop_msgs\n'}
+[0.721277] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/export_universal_teleop_msgs__rosidl_generator_cExport.cmake\n'}
+[0.721415] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/export_universal_teleop_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.721545] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/export_universal_teleop_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.721730] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/export_universal_teleop_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.721884] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/export_universal_teleop_msgs__rosidl_generator_cppExport.cmake\n'}
+[0.722013] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/export_universal_teleop_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.722156] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/export_universal_teleop_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.722284] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/universal_teleop_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.722413] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/universal_teleop_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.722544] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/universal_teleop_msgs__rosidl_typesupport_cExport.cmake\n'}
+[0.722672] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/universal_teleop_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.722819] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/universal_teleop_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.722946] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/universal_teleop_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.723075] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/universal_teleop_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[0.723421] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/universal_teleop_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.724117] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/export_universal_teleop_msgs__rosidl_generator_pyExport.cmake\n'}
+[0.724498] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/export_universal_teleop_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.724632] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[0.725377] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.725542] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.725665] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.725910] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.726035] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.726165] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.726295] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/universal_teleop_msgsConfig.cmake\n'}
+[0.726425] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake/universal_teleop_msgsConfig-version.cmake\n'}
+[0.726704] (universal_teleop_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/package.xml\n'}
+[0.727378] (universal_teleop_msgs) CommandEnded: {'returncode': 0}
+[0.764885] (universal_teleop_msgs) JobEnded: {'identifier': 'universal_teleop_msgs', 'rc': 0}
+[0.766726] (universal_teleop) JobStarted: {'identifier': 'universal_teleop'}
+[0.777213] (universal_teleop) JobProgress: {'identifier': 'universal_teleop', 'progress': 'cmake'}
+[0.778429] (universal_teleop) JobProgress: {'identifier': 'universal_teleop', 'progress': 'build'}
+[0.778990] (universal_teleop) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop', '--', '-j4', '-l4'], 'cwd': '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'leon'), ('LC_TIME', 'es_AR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/leon'), ('OLDPWD', '/home/leon/robotica/scorbotLabo/teleop_packages'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_AR.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1547'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a37622944b23c275539da0df69e0e508'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'leon'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'leon'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/leon-labo:@/tmp/.ICE-unix/1547,unix/leon-labo:/tmp/.ICE-unix/1547'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_AR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9fc44eb9_a6c2_40be_b75f_94ae3a3fa124'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_AR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.A7LAO3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.107'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_AR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_AR.UTF-8'), ('LC_IDENTIFICATION', 'es_AR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a37622944b23c275539da0df69e0e508'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_AR.UTF-8'), ('LC_PAPER', 'es_AR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs:/opt/ros/humble')]), 'shell': False}
+[0.807413] (-) TimerEvent: {}
+[0.844839] (universal_teleop) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target universal_teleop\x1b[0m\n'}
+[0.874243] (universal_teleop) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/universal_teleop.dir/src/teleop.cpp.o\x1b[0m\n'}
+[0.907538] (-) TimerEvent: {}
+[1.007958] (-) TimerEvent: {}
+[1.108363] (-) TimerEvent: {}
+[1.208765] (-) TimerEvent: {}
+[1.309146] (-) TimerEvent: {}
+[1.409534] (-) TimerEvent: {}
+[1.509934] (-) TimerEvent: {}
+[1.610334] (-) TimerEvent: {}
+[1.710727] (-) TimerEvent: {}
+[1.811124] (-) TimerEvent: {}
+[1.911536] (-) TimerEvent: {}
+[2.011956] (-) TimerEvent: {}
+[2.112355] (-) TimerEvent: {}
+[2.212767] (-) TimerEvent: {}
+[2.313166] (-) TimerEvent: {}
+[2.413570] (-) TimerEvent: {}
+[2.513978] (-) TimerEvent: {}
+[2.614359] (-) TimerEvent: {}
+[2.714765] (-) TimerEvent: {}
+[2.815174] (-) TimerEvent: {}
+[2.915571] (-) TimerEvent: {}
+[3.015989] (-) TimerEvent: {}
+[3.116395] (-) TimerEvent: {}
+[3.216799] (-) TimerEvent: {}
+[3.317204] (-) TimerEvent: {}
+[3.417599] (-) TimerEvent: {}
+[3.518096] (-) TimerEvent: {}
+[3.618627] (-) TimerEvent: {}
+[3.719247] (-) TimerEvent: {}
+[3.819698] (-) TimerEvent: {}
+[3.920306] (-) TimerEvent: {}
+[4.020888] (-) TimerEvent: {}
+[4.121275] (-) TimerEvent: {}
+[4.221659] (-) TimerEvent: {}
+[4.322085] (-) TimerEvent: {}
+[4.422480] (-) TimerEvent: {}
+[4.522903] (-) TimerEvent: {}
+[4.623305] (-) TimerEvent: {}
+[4.723726] (-) TimerEvent: {}
+[4.824131] (-) TimerEvent: {}
+[4.924537] (-) TimerEvent: {}
+[5.024963] (-) TimerEvent: {}
+[5.125364] (-) TimerEvent: {}
+[5.225772] (-) TimerEvent: {}
+[5.326307] (-) TimerEvent: {}
+[5.426830] (-) TimerEvent: {}
+[5.527466] (-) TimerEvent: {}
+[5.628073] (-) TimerEvent: {}
+[5.728673] (-) TimerEvent: {}
+[5.829334] (-) TimerEvent: {}
+[5.929992] (-) TimerEvent: {}
+[6.030566] (-) TimerEvent: {}
+[6.131149] (-) TimerEvent: {}
+[6.231773] (-) TimerEvent: {}
+[6.332410] (-) TimerEvent: {}
+[6.433076] (-) TimerEvent: {}
+[6.533745] (-) TimerEvent: {}
+[6.634303] (-) TimerEvent: {}
+[6.734858] (-) TimerEvent: {}
+[6.835511] (-) TimerEvent: {}
+[6.936119] (-) TimerEvent: {}
+[7.036797] (-) TimerEvent: {}
+[7.137443] (-) TimerEvent: {}
+[7.238099] (-) TimerEvent: {}
+[7.338777] (-) TimerEvent: {}
+[7.439414] (-) TimerEvent: {}
+[7.540088] (-) TimerEvent: {}
+[7.640754] (-) TimerEvent: {}
+[7.741373] (-) TimerEvent: {}
+[7.842040] (-) TimerEvent: {}
+[7.942721] (-) TimerEvent: {}
+[8.043358] (-) TimerEvent: {}
+[8.144020] (-) TimerEvent: {}
+[8.244646] (-) TimerEvent: {}
+[8.345313] (-) TimerEvent: {}
+[8.445967] (-) TimerEvent: {}
+[8.546603] (-) TimerEvent: {}
+[8.647272] (-) TimerEvent: {}
+[8.747902] (-) TimerEvent: {}
+[8.848547] (-) TimerEvent: {}
+[8.949209] (-) TimerEvent: {}
+[9.049850] (-) TimerEvent: {}
+[9.150504] (-) TimerEvent: {}
+[9.251141] (-) TimerEvent: {}
+[9.351795] (-) TimerEvent: {}
+[9.452414] (-) TimerEvent: {}
+[9.553076] (-) TimerEvent: {}
+[9.653748] (-) TimerEvent: {}
+[9.754366] (-) TimerEvent: {}
+[9.855033] (-) TimerEvent: {}
+[9.955745] (-) TimerEvent: {}
+[10.056414] (-) TimerEvent: {}
+[10.157077] (-) TimerEvent: {}
+[10.257745] (-) TimerEvent: {}
+[10.358381] (-) TimerEvent: {}
+[10.459042] (-) TimerEvent: {}
+[10.559712] (-) TimerEvent: {}
+[10.660412] (-) TimerEvent: {}
+[10.761061] (-) TimerEvent: {}
+[10.861715] (-) TimerEvent: {}
+[10.962335] (-) TimerEvent: {}
+[11.062941] (-) TimerEvent: {}
+[11.163567] (-) TimerEvent: {}
+[11.264223] (-) TimerEvent: {}
+[11.364854] (-) TimerEvent: {}
+[11.465493] (-) TimerEvent: {}
+[11.566156] (-) TimerEvent: {}
+[11.666806] (-) TimerEvent: {}
+[11.767422] (-) TimerEvent: {}
+[11.868094] (-) TimerEvent: {}
+[11.968766] (-) TimerEvent: {}
+[12.069336] (-) TimerEvent: {}
+[12.170005] (-) TimerEvent: {}
+[12.270628] (-) TimerEvent: {}
+[12.371282] (-) TimerEvent: {}
+[12.471938] (-) TimerEvent: {}
+[12.572568] (-) TimerEvent: {}
+[12.673233] (-) TimerEvent: {}
+[12.773871] (-) TimerEvent: {}
+[12.874507] (-) TimerEvent: {}
+[12.975169] (-) TimerEvent: {}
+[13.077774] (-) TimerEvent: {}
+[13.178187] (-) TimerEvent: {}
+[13.278799] (-) TimerEvent: {}
+[13.379342] (-) TimerEvent: {}
+[13.480010] (-) TimerEvent: {}
+[13.580659] (-) TimerEvent: {}
+[13.681227] (-) TimerEvent: {}
+[13.781752] (-) TimerEvent: {}
+[13.882368] (-) TimerEvent: {}
+[13.983035] (-) TimerEvent: {}
+[14.083671] (-) TimerEvent: {}
+[14.184252] (-) TimerEvent: {}
+[14.284839] (-) TimerEvent: {}
+[14.385475] (-) TimerEvent: {}
+[14.486139] (-) TimerEvent: {}
+[14.586800] (-) TimerEvent: {}
+[14.687361] (-) TimerEvent: {}
+[14.788060] (-) TimerEvent: {}
+[14.888724] (-) TimerEvent: {}
+[14.989353] (-) TimerEvent: {}
+[15.090017] (-) TimerEvent: {}
+[15.190595] (-) TimerEvent: {}
+[15.291358] (-) TimerEvent: {}
+[15.392014] (-) TimerEvent: {}
+[15.492655] (-) TimerEvent: {}
+[15.593308] (-) TimerEvent: {}
+[15.693966] (-) TimerEvent: {}
+[15.794591] (-) TimerEvent: {}
+[15.895249] (-) TimerEvent: {}
+[15.995884] (-) TimerEvent: {}
+[16.096525] (-) TimerEvent: {}
+[16.197121] (-) TimerEvent: {}
+[16.297776] (-) TimerEvent: {}
+[16.398400] (-) TimerEvent: {}
+[16.499055] (-) TimerEvent: {}
+[16.599734] (-) TimerEvent: {}
+[16.700348] (-) TimerEvent: {}
+[16.801006] (-) TimerEvent: {}
+[16.901648] (-) TimerEvent: {}
+[17.002254] (-) TimerEvent: {}
+[17.102891] (-) TimerEvent: {}
+[17.203531] (-) TimerEvent: {}
+[17.304183] (-) TimerEvent: {}
+[17.404818] (-) TimerEvent: {}
+[17.505455] (-) TimerEvent: {}
+[17.606125] (-) TimerEvent: {}
+[17.706795] (-) TimerEvent: {}
+[17.807423] (-) TimerEvent: {}
+[17.908116] (-) TimerEvent: {}
+[18.008859] (-) TimerEvent: {}
+[18.109526] (-) TimerEvent: {}
+[18.210252] (-) TimerEvent: {}
+[18.310785] (-) TimerEvent: {}
+[18.411326] (-) TimerEvent: {}
+[18.511978] (-) TimerEvent: {}
+[18.612605] (-) TimerEvent: {}
+[18.713262] (-) TimerEvent: {}
+[18.813896] (-) TimerEvent: {}
+[18.914419] (-) TimerEvent: {}
+[19.014903] (-) TimerEvent: {}
+[19.115548] (-) TimerEvent: {}
+[19.216232] (-) TimerEvent: {}
+[19.316855] (-) TimerEvent: {}
+[19.417490] (-) TimerEvent: {}
+[19.518147] (-) TimerEvent: {}
+[19.618828] (-) TimerEvent: {}
+[19.641147] (universal_teleop) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable universal_teleop\x1b[0m\n'}
+[19.718990] (-) TimerEvent: {}
+[19.819612] (-) TimerEvent: {}
+[19.920343] (-) TimerEvent: {}
+[20.021043] (-) TimerEvent: {}
+[20.122786] (-) TimerEvent: {}
+[20.223325] (-) TimerEvent: {}
+[20.323788] (-) TimerEvent: {}
+[20.424298] (-) TimerEvent: {}
+[20.525023] (-) TimerEvent: {}
+[20.625588] (-) TimerEvent: {}
+[20.726293] (-) TimerEvent: {}
+[20.826821] (-) TimerEvent: {}
+[20.927450] (-) TimerEvent: {}
+[21.028023] (-) TimerEvent: {}
+[21.128598] (-) TimerEvent: {}
+[21.229103] (-) TimerEvent: {}
+[21.329651] (-) TimerEvent: {}
+[21.430405] (-) TimerEvent: {}
+[21.531116] (-) TimerEvent: {}
+[21.631803] (-) TimerEvent: {}
+[21.732523] (-) TimerEvent: {}
+[21.833111] (-) TimerEvent: {}
+[21.933817] (-) TimerEvent: {}
+[22.034363] (-) TimerEvent: {}
+[22.135046] (-) TimerEvent: {}
+[22.235670] (-) TimerEvent: {}
+[22.336311] (-) TimerEvent: {}
+[22.436989] (-) TimerEvent: {}
+[22.537629] (-) TimerEvent: {}
+[22.638305] (-) TimerEvent: {}
+[22.709744] (universal_teleop) StdoutLine: {'line': b'[100%] Built target universal_teleop\n'}
+[22.727669] (universal_teleop) CommandEnded: {'returncode': 0}
+[22.728800] (universal_teleop) JobProgress: {'identifier': 'universal_teleop', 'progress': 'install'}
+[22.729413] (universal_teleop) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop'], 'cwd': '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'leon'), ('LC_TIME', 'es_AR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/leon'), ('OLDPWD', '/home/leon/robotica/scorbotLabo/teleop_packages'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_AR.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1547'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a37622944b23c275539da0df69e0e508'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'leon'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'leon'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/leon-labo:@/tmp/.ICE-unix/1547,unix/leon-labo:/tmp/.ICE-unix/1547'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_AR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9fc44eb9_a6c2_40be_b75f_94ae3a3fa124'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_AR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.A7LAO3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.107'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_AR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_AR.UTF-8'), ('LC_IDENTIFICATION', 'es_AR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a37622944b23c275539da0df69e0e508'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/local/lib/python3.10/dist-packages:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_AR.UTF-8'), ('LC_PAPER', 'es_AR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs:/opt/ros/humble')]), 'shell': False}
+[22.738512] (-) TimerEvent: {}
+[22.753482] (universal_teleop) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.754245] (universal_teleop) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/lib/universal_teleop/universal_teleop\n'}
+[22.761556] (universal_teleop) StdoutLine: {'line': b'-- Set runtime path of "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/lib/universal_teleop/universal_teleop" to ""\n'}
+[22.761986] (universal_teleop) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/ament_index/resource_index/package_run_dependencies/universal_teleop\n'}
+[22.762319] (universal_teleop) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/ament_index/resource_index/parent_prefix_path/universal_teleop\n'}
+[22.769937] (universal_teleop) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop/environment/ament_prefix_path.sh\n'}
+[22.788105] (universal_teleop) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop/environment/ament_prefix_path.dsv\n'}
+[22.788504] (universal_teleop) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop/environment/path.sh\n'}
+[22.788988] (universal_teleop) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop/environment/path.dsv\n'}
+[22.789477] (universal_teleop) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop/local_setup.bash\n'}
+[22.789822] (universal_teleop) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop/local_setup.sh\n'}
+[22.790221] (universal_teleop) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop/local_setup.zsh\n'}
+[22.790589] (universal_teleop) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop/local_setup.dsv\n'}
+[22.790960] (universal_teleop) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop/package.dsv\n'}
+[22.803304] (universal_teleop) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/ament_index/resource_index/packages/universal_teleop\n'}
+[22.803647] (universal_teleop) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop/cmake/universal_teleopConfig.cmake\n'}
+[22.803998] (universal_teleop) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop/cmake/universal_teleopConfig-version.cmake\n'}
+[22.804523] (universal_teleop) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop/share/universal_teleop/package.xml\n'}
+[22.807067] (universal_teleop) CommandEnded: {'returncode': 0}
+[22.826889] (universal_teleop) JobEnded: {'identifier': 'universal_teleop', 'rc': 0}
+[22.827807] (-) EventReactorShutdown: {}
