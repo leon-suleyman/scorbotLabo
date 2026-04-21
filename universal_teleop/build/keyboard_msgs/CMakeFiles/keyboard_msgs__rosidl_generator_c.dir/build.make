@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros_keyboard_msgs
+CMAKE_SOURCE_DIR = /home/leon/robotica/scorbotLabo/universal_teleop/src/ros_keyboard_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard_msgs
+CMAKE_BINARY_DIR = /home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs
 
 # Include any dependencies generated for this target.
 include CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/depend.make
@@ -115,8 +115,8 @@ rosidl_generator_c/keyboard_msgs/msg/key.h: /opt/ros/humble/share/std_msgs/msg/U
 rosidl_generator_c/keyboard_msgs/msg/key.h: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
 rosidl_generator_c/keyboard_msgs/msg/key.h: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_c/keyboard_msgs/msg/key.h: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard_msgs/rosidl_generator_c__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs/rosidl_generator_c__arguments.json
 
 rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.h: rosidl_generator_c/keyboard_msgs/msg/key.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.h
@@ -133,16 +133,16 @@ rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c: rosidl_generator_c
 CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c.o: CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c.o: rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c
 CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c.o: CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c.o -MF CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c.o.d -o CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c.o -c /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard_msgs/rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c.o -MF CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c.o.d -o CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c.o -c /home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs/rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c
 
 CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard_msgs/rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c > CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs/rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c > CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c.i
 
 CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard_msgs/rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c -o CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs/rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c -o CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/rosidl_generator_c/keyboard_msgs/msg/detail/key__functions.c.s
 
 # Object files for target keyboard_msgs__rosidl_generator_c
 keyboard_msgs__rosidl_generator_c_OBJECTS = \
@@ -158,7 +158,7 @@ libkeyboard_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_interfac
 libkeyboard_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libkeyboard_msgs__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libkeyboard_msgs__rosidl_generator_c.so: CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libkeyboard_msgs__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libkeyboard_msgs__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -174,6 +174,6 @@ CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/keyb
 CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/keyboard_msgs/msg/detail/key__struct.h
 CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/keyboard_msgs/msg/detail/key__type_support.h
 CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/keyboard_msgs/msg/key.h
-	cd /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros_keyboard_msgs /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros_keyboard_msgs /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard_msgs /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard_msgs /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard_msgs/CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/leon/robotica/scorbotLabo/universal_teleop/src/ros_keyboard_msgs /home/leon/robotica/scorbotLabo/universal_teleop/src/ros_keyboard_msgs /home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs /home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs /home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs/CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/keyboard_msgs__rosidl_generator_c.dir/depend
 

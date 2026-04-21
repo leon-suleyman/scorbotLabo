@@ -1,0 +1,258 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-fb09f43b553e5fa1ff51.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						18
+					]
+				},
+				{
+					"build" : "universal_teleop_msgs__py",
+					"jsonFile" : "directory-universal_teleop_msgs__py-a89aff7598af37caf9aa.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs/universal_teleop_msgs__py",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "universal_teleop_msgs__rs",
+					"jsonFile" : "directory-universal_teleop_msgs__rs-f65cd8d9b37dc576df6f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs/universal_teleop_msgs__rs",
+					"targetIndexes" : 
+					[
+						17
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "universal_teleop_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_universal_teleop_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_universal_teleop_msgs_egg-93bbd97d902fb94ffbc5.json",
+					"name" : "ament_cmake_python_build_universal_teleop_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_universal_teleop_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_universal_teleop_msgs-93388caccaebcf019e32.json",
+					"name" : "ament_cmake_python_copy_universal_teleop_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-ac882699e096c7cf8d7e.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "universal_teleop_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-universal_teleop_msgs-5edc97e6023117a9a3fa.json",
+					"name" : "universal_teleop_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "universal_teleop_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-universal_teleop_msgs__cpp-f062f37c08dc98c92a4a.json",
+					"name" : "universal_teleop_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "universal_teleop_msgs__py::@62786d0a37bda7e40e4f",
+					"jsonFile" : "target-universal_teleop_msgs__py-08e7443e65668208c260.json",
+					"name" : "universal_teleop_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "universal_teleop_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-universal_teleop_msgs__rosidl_generator_c-91a28b24b825332508d0.json",
+					"name" : "universal_teleop_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "universal_teleop_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-universal_teleop_msgs__rosidl_generator_py-b23e394871f777ecf687.json",
+					"name" : "universal_teleop_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "universal_teleop_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-universal_teleop_msgs__rosidl_typesupport_c-0cf81a580b26d1740753.json",
+					"name" : "universal_teleop_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "universal_teleop_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-universal_teleop_msgs__rosidl_typesupport_c__pyext-0365af1180e57f60fc01.json",
+					"name" : "universal_teleop_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "universal_teleop_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-universal_teleop_msgs__rosidl_typesupport_cpp-03beaab1132ddc4168a5.json",
+					"name" : "universal_teleop_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "universal_teleop_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-universal_teleop_msgs__rosidl_typesupport_fastrtps_c-1fff2ac027e9da9e894b.json",
+					"name" : "universal_teleop_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "universal_teleop_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-universal_teleop_msgs__rosidl_typesupport_fastrtps_c__pyext-628f4fc5bc7cb59795e5.json",
+					"name" : "universal_teleop_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "universal_teleop_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-universal_teleop_msgs__rosidl_typesupport_fastrtps_cpp-46fa211f7cd7795503a0.json",
+					"name" : "universal_teleop_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "universal_teleop_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-universal_teleop_msgs__rosidl_typesupport_introspection_c-995eed7538119d4c82f4.json",
+					"name" : "universal_teleop_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "universal_teleop_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-universal_teleop_msgs__rosidl_typesupport_introspection_c__pyext-40176ebff0c76a92880c.json",
+					"name" : "universal_teleop_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "universal_teleop_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-universal_teleop_msgs__rosidl_typesupport_introspection_cpp-edfccf4ca338233a4983.json",
+					"name" : "universal_teleop_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "universal_teleop_msgs__rs::@4b13a43fc7f5d5392735",
+					"jsonFile" : "target-universal_teleop_msgs__rs-acdef551d1cba12cf3da.json",
+					"name" : "universal_teleop_msgs__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "universal_teleop_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-universal_teleop_msgs_uninstall-ac93377f04d5e98297ff.json",
+					"name" : "universal_teleop_msgs_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs",
+		"source" : "/home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop-msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

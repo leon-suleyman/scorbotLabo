@@ -1,0 +1,258 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-453aa4002354ba2d713a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "keyboard_msgs__py",
+					"jsonFile" : "directory-keyboard_msgs__py-759eaaf3be4579b9ae00.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs/keyboard_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "keyboard_msgs__rs",
+					"jsonFile" : "directory-keyboard_msgs__rs-d08593ccc8c765ecba30.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs/keyboard_msgs__rs",
+					"targetIndexes" : 
+					[
+						16
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "keyboard_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_keyboard_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_keyboard_msgs_egg-38c13ba72121487a3a52.json",
+					"name" : "ament_cmake_python_build_keyboard_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_keyboard_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_keyboard_msgs-e3cb5d22d38b5c662b08.json",
+					"name" : "ament_cmake_python_copy_keyboard_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "keyboard_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-keyboard_msgs-5106d37d257db319ecc3.json",
+					"name" : "keyboard_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "keyboard_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-keyboard_msgs__cpp-a92b51756c62a1e4a558.json",
+					"name" : "keyboard_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "keyboard_msgs__py::@a68ffb485ced668c6cf6",
+					"jsonFile" : "target-keyboard_msgs__py-8a3b921b066499f7929d.json",
+					"name" : "keyboard_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "keyboard_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-keyboard_msgs__rosidl_generator_c-c1a0dbb5926523740b41.json",
+					"name" : "keyboard_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "keyboard_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-keyboard_msgs__rosidl_generator_py-8555df40e8f65b018485.json",
+					"name" : "keyboard_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "keyboard_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-keyboard_msgs__rosidl_typesupport_c-cf7e88e3a19599aa96fe.json",
+					"name" : "keyboard_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "keyboard_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-keyboard_msgs__rosidl_typesupport_c__pyext-cc04ad660ff88f5bcabd.json",
+					"name" : "keyboard_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "keyboard_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-keyboard_msgs__rosidl_typesupport_cpp-fbc9860c6265b0bafe79.json",
+					"name" : "keyboard_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "keyboard_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-keyboard_msgs__rosidl_typesupport_fastrtps_c-c0d023727ab1797e79c0.json",
+					"name" : "keyboard_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "keyboard_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-keyboard_msgs__rosidl_typesupport_fastrtps_c__pyext-9ab18efb4ed505ba1e82.json",
+					"name" : "keyboard_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "keyboard_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-keyboard_msgs__rosidl_typesupport_fastrtps_cpp-aac45133c90e75709c57.json",
+					"name" : "keyboard_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "keyboard_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-keyboard_msgs__rosidl_typesupport_introspection_c-7b89b086f18d07fe7fa1.json",
+					"name" : "keyboard_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "keyboard_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-keyboard_msgs__rosidl_typesupport_introspection_c__pyext-7f9ce6d3e62e783e6b90.json",
+					"name" : "keyboard_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "keyboard_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-keyboard_msgs__rosidl_typesupport_introspection_cpp-948f7bf925ad52afcf9d.json",
+					"name" : "keyboard_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "keyboard_msgs__rs::@c32aa2fd2871e3908695",
+					"jsonFile" : "target-keyboard_msgs__rs-aa972cb90e00b047fe3d.json",
+					"name" : "keyboard_msgs__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "keyboard_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-keyboard_msgs_uninstall-6dac969d0e2b6e4a1704.json",
+					"name" : "keyboard_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-4ea88638ec3ef7daac09.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs",
+		"source" : "/home/leon/robotica/scorbotLabo/universal_teleop/src/ros_keyboard_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

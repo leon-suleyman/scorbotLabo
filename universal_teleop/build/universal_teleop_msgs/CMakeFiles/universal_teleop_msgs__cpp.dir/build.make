@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop-msgs
+CMAKE_SOURCE_DIR = /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop-msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs
+CMAKE_BINARY_DIR = /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs
 
 # Utility rule file for universal_teleop_msgs__cpp.
 
@@ -127,8 +127,8 @@ rosidl_generator_cpp/universal_teleop_msgs/msg/control.hpp: /opt/ros/humble/shar
 rosidl_generator_cpp/universal_teleop_msgs/msg/control.hpp: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
 rosidl_generator_cpp/universal_teleop_msgs/msg/control.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_cpp/universal_teleop_msgs/msg/control.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/universal_teleop_msgs/msg/detail/control__builder.hpp: rosidl_generator_cpp/universal_teleop_msgs/msg/control.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/universal_teleop_msgs/msg/detail/control__builder.hpp
@@ -180,6 +180,6 @@ CMakeFiles/universal_teleop_msgs__cpp.dir/clean:
 .PHONY : CMakeFiles/universal_teleop_msgs__cpp.dir/clean
 
 CMakeFiles/universal_teleop_msgs__cpp.dir/depend:
-	cd /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop-msgs /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop-msgs /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs/CMakeFiles/universal_teleop_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop-msgs /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop-msgs /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs/CMakeFiles/universal_teleop_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/universal_teleop_msgs__cpp.dir/depend
 

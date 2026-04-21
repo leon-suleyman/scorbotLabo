@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop-msgs
+CMAKE_SOURCE_DIR = /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop-msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs
+CMAKE_BINARY_DIR = /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs
 
 # Utility rule file for universal_teleop_msgs__py.
 
@@ -122,8 +122,8 @@ rosidl_generator_py/universal_teleop_msgs/_universal_teleop_msgs_s.ep.rosidl_typ
 rosidl_generator_py/universal_teleop_msgs/_universal_teleop_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
 rosidl_generator_py/universal_teleop_msgs/_universal_teleop_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_py/universal_teleop_msgs/_universal_teleop_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
-	cd /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs/universal_teleop_msgs__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
+	cd /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs/universal_teleop_msgs__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_py/universal_teleop_msgs/_universal_teleop_msgs_s.ep.rosidl_typesupport_introspection_c.c: rosidl_generator_py/universal_teleop_msgs/_universal_teleop_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/universal_teleop_msgs/_universal_teleop_msgs_s.ep.rosidl_typesupport_introspection_c.c
@@ -163,10 +163,10 @@ universal_teleop_msgs__py/CMakeFiles/universal_teleop_msgs__py.dir/build: univer
 .PHONY : universal_teleop_msgs__py/CMakeFiles/universal_teleop_msgs__py.dir/build
 
 universal_teleop_msgs__py/CMakeFiles/universal_teleop_msgs__py.dir/clean:
-	cd /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs/universal_teleop_msgs__py && $(CMAKE_COMMAND) -P CMakeFiles/universal_teleop_msgs__py.dir/cmake_clean.cmake
+	cd /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs/universal_teleop_msgs__py && $(CMAKE_COMMAND) -P CMakeFiles/universal_teleop_msgs__py.dir/cmake_clean.cmake
 .PHONY : universal_teleop_msgs__py/CMakeFiles/universal_teleop_msgs__py.dir/clean
 
 universal_teleop_msgs__py/CMakeFiles/universal_teleop_msgs__py.dir/depend:
-	cd /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop-msgs /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs/universal_teleop_msgs__py /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs/universal_teleop_msgs__py /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs/universal_teleop_msgs__py/CMakeFiles/universal_teleop_msgs__py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop-msgs /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs/universal_teleop_msgs__py /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs/universal_teleop_msgs__py /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs/universal_teleop_msgs__py/CMakeFiles/universal_teleop_msgs__py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : universal_teleop_msgs__py/CMakeFiles/universal_teleop_msgs__py.dir/depend
 

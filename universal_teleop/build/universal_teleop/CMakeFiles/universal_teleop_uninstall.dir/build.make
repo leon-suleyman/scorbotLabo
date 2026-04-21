@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop
+CMAKE_SOURCE_DIR = /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop
+CMAKE_BINARY_DIR = /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop
 
 # Utility rule file for universal_teleop_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/universal_teleop_uninstall.dir/compiler_depend.make
 include CMakeFiles/universal_teleop_uninstall.dir/progress.make
 
 CMakeFiles/universal_teleop_uninstall:
-	/usr/bin/cmake -P /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 universal_teleop_uninstall: CMakeFiles/universal_teleop_uninstall
 universal_teleop_uninstall: CMakeFiles/universal_teleop_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/universal_teleop_uninstall.dir/clean:
 .PHONY : CMakeFiles/universal_teleop_uninstall.dir/clean
 
 CMakeFiles/universal_teleop_uninstall.dir/depend:
-	cd /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop/CMakeFiles/universal_teleop_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop/CMakeFiles/universal_teleop_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/universal_teleop_uninstall.dir/depend
 

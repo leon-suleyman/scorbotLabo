@@ -1,9 +1,9 @@
 {
   "package_name": "keyboard_msgs",
-  "output_dir": "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard_msgs/rosidl_generator_cpp/keyboard_msgs",
+  "output_dir": "/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs/rosidl_generator_cpp/keyboard_msgs",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource",
   "idl_tuples": [
-    "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard_msgs/rosidl_adapter/keyboard_msgs:msg/Key.idl"
+    "/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs/rosidl_adapter/keyboard_msgs:msg/Key.idl"
   ],
   "ros_interface_dependencies": [
     "std_msgs:/opt/ros/humble/share/std_msgs/msg/Bool.idl",
@@ -55,7 +55,7 @@
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__builder.hpp.em",
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__struct.hpp.em",
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
-    "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard_msgs/rosidl_adapter/keyboard_msgs/msg/Key.idl",
+    "/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs/rosidl_adapter/keyboard_msgs/msg/Key.idl",
     "/opt/ros/humble/share/std_msgs/msg/Bool.idl",
     "/opt/ros/humble/share/std_msgs/msg/Byte.idl",
     "/opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl",

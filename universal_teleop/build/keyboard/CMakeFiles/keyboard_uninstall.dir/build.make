@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-keyboard
+CMAKE_SOURCE_DIR = /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-keyboard
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard
+CMAKE_BINARY_DIR = /home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard
 
 # Utility rule file for keyboard_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/keyboard_uninstall.dir/compiler_depend.make
 include CMakeFiles/keyboard_uninstall.dir/progress.make
 
 CMakeFiles/keyboard_uninstall:
-	/usr/bin/cmake -P /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 keyboard_uninstall: CMakeFiles/keyboard_uninstall
 keyboard_uninstall: CMakeFiles/keyboard_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/keyboard_uninstall.dir/clean:
 .PHONY : CMakeFiles/keyboard_uninstall.dir/clean
 
 CMakeFiles/keyboard_uninstall.dir/depend:
-	cd /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-keyboard /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-keyboard /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard/CMakeFiles/keyboard_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-keyboard /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-keyboard /home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard /home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard /home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard/CMakeFiles/keyboard_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/keyboard_uninstall.dir/depend
 

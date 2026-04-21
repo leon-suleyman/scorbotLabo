@@ -1,8 +1,8 @@
-# Install script for directory: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard_msgs/keyboard_msgs__rs
+# Install script for directory: /home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs/keyboard_msgs__rs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/keyboard_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

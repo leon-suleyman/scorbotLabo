@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop
+CMAKE_SOURCE_DIR = /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop
+CMAKE_BINARY_DIR = /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop
 
 # Include any dependencies generated for this target.
 include CMakeFiles/universal_teleop.dir/depend.make
@@ -70,32 +70,32 @@ include CMakeFiles/universal_teleop.dir/progress.make
 include CMakeFiles/universal_teleop.dir/flags.make
 
 CMakeFiles/universal_teleop.dir/src/main.cpp.o: CMakeFiles/universal_teleop.dir/flags.make
-CMakeFiles/universal_teleop.dir/src/main.cpp.o: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/main.cpp
+CMakeFiles/universal_teleop.dir/src/main.cpp.o: /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop/src/main.cpp
 CMakeFiles/universal_teleop.dir/src/main.cpp.o: CMakeFiles/universal_teleop.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/universal_teleop.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/universal_teleop.dir/src/main.cpp.o -MF CMakeFiles/universal_teleop.dir/src/main.cpp.o.d -o CMakeFiles/universal_teleop.dir/src/main.cpp.o -c /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/universal_teleop.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/universal_teleop.dir/src/main.cpp.o -MF CMakeFiles/universal_teleop.dir/src/main.cpp.o.d -o CMakeFiles/universal_teleop.dir/src/main.cpp.o -c /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop/src/main.cpp
 
 CMakeFiles/universal_teleop.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/universal_teleop.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/main.cpp > CMakeFiles/universal_teleop.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop/src/main.cpp > CMakeFiles/universal_teleop.dir/src/main.cpp.i
 
 CMakeFiles/universal_teleop.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/universal_teleop.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/main.cpp -o CMakeFiles/universal_teleop.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop/src/main.cpp -o CMakeFiles/universal_teleop.dir/src/main.cpp.s
 
 CMakeFiles/universal_teleop.dir/src/teleop.cpp.o: CMakeFiles/universal_teleop.dir/flags.make
-CMakeFiles/universal_teleop.dir/src/teleop.cpp.o: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp
+CMakeFiles/universal_teleop.dir/src/teleop.cpp.o: /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop/src/teleop.cpp
 CMakeFiles/universal_teleop.dir/src/teleop.cpp.o: CMakeFiles/universal_teleop.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/universal_teleop.dir/src/teleop.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/universal_teleop.dir/src/teleop.cpp.o -MF CMakeFiles/universal_teleop.dir/src/teleop.cpp.o.d -o CMakeFiles/universal_teleop.dir/src/teleop.cpp.o -c /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/universal_teleop.dir/src/teleop.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/universal_teleop.dir/src/teleop.cpp.o -MF CMakeFiles/universal_teleop.dir/src/teleop.cpp.o.d -o CMakeFiles/universal_teleop.dir/src/teleop.cpp.o -c /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop/src/teleop.cpp
 
 CMakeFiles/universal_teleop.dir/src/teleop.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/universal_teleop.dir/src/teleop.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp > CMakeFiles/universal_teleop.dir/src/teleop.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop/src/teleop.cpp > CMakeFiles/universal_teleop.dir/src/teleop.cpp.i
 
 CMakeFiles/universal_teleop.dir/src/teleop.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/universal_teleop.dir/src/teleop.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.cpp -o CMakeFiles/universal_teleop.dir/src/teleop.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop/src/teleop.cpp -o CMakeFiles/universal_teleop.dir/src/teleop.cpp.s
 
 # Object files for target universal_teleop
 universal_teleop_OBJECTS = \
@@ -115,23 +115,23 @@ universal_teleop: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_introspect
 universal_teleop: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_introspection_cpp.so
 universal_teleop: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_cpp.so
 universal_teleop: /opt/ros/humble/lib/libnav_msgs__rosidl_generator_py.so
-universal_teleop: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_fastrtps_c.so
-universal_teleop: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_fastrtps_cpp.so
-universal_teleop: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_introspection_c.so
-universal_teleop: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_introspection_cpp.so
-universal_teleop: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_cpp.so
-universal_teleop: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_generator_py.so
+universal_teleop: /home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_fastrtps_c.so
+universal_teleop: /home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_fastrtps_cpp.so
+universal_teleop: /home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_introspection_c.so
+universal_teleop: /home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_introspection_cpp.so
+universal_teleop: /home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_cpp.so
+universal_teleop: /home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_generator_py.so
 universal_teleop: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
 universal_teleop: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
 universal_teleop: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
 universal_teleop: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
 universal_teleop: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_py.so
-universal_teleop: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_typesupport_fastrtps_c.so
-universal_teleop: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_typesupport_fastrtps_cpp.so
-universal_teleop: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_typesupport_introspection_c.so
-universal_teleop: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_typesupport_introspection_cpp.so
-universal_teleop: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_typesupport_cpp.so
-universal_teleop: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_generator_py.so
+universal_teleop: /home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_typesupport_fastrtps_c.so
+universal_teleop: /home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_typesupport_fastrtps_cpp.so
+universal_teleop: /home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_typesupport_introspection_c.so
+universal_teleop: /home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_typesupport_introspection_cpp.so
+universal_teleop: /home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_typesupport_cpp.so
+universal_teleop: /home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_generator_py.so
 universal_teleop: /opt/ros/humble/lib/liblibstatistics_collector.so
 universal_teleop: /opt/ros/humble/lib/librcl.so
 universal_teleop: /opt/ros/humble/lib/librmw_implementation.so
@@ -167,8 +167,8 @@ universal_teleop: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_c.so
 universal_teleop: /opt/ros/humble/lib/libtracetools.so
 universal_teleop: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_c.so
 universal_teleop: /opt/ros/humble/lib/libnav_msgs__rosidl_generator_c.so
-universal_teleop: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_c.so
-universal_teleop: /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_generator_c.so
+universal_teleop: /home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_typesupport_c.so
+universal_teleop: /home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/lib/libkeyboard_msgs__rosidl_generator_c.so
 universal_teleop: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
 universal_teleop: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
 universal_teleop: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
@@ -198,9 +198,9 @@ universal_teleop: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
 universal_teleop: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 universal_teleop: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
 universal_teleop: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
-universal_teleop: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_typesupport_c.so
+universal_teleop: /home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_typesupport_c.so
 universal_teleop: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
-universal_teleop: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_generator_c.so
+universal_teleop: /home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/lib/libuniversal_teleop_msgs__rosidl_generator_c.so
 universal_teleop: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 universal_teleop: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
 universal_teleop: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
@@ -211,7 +211,7 @@ universal_teleop: /opt/ros/humble/lib/librosidl_runtime_c.so
 universal_teleop: /opt/ros/humble/lib/librcutils.so
 universal_teleop: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 universal_teleop: CMakeFiles/universal_teleop.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable universal_teleop"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable universal_teleop"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/universal_teleop.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -223,6 +223,6 @@ CMakeFiles/universal_teleop.dir/clean:
 .PHONY : CMakeFiles/universal_teleop.dir/clean
 
 CMakeFiles/universal_teleop.dir/depend:
-	cd /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop/CMakeFiles/universal_teleop.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop/CMakeFiles/universal_teleop.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/universal_teleop.dir/depend
 

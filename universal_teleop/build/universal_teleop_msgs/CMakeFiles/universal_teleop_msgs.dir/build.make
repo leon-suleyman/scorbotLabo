@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop-msgs
+CMAKE_SOURCE_DIR = /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop-msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs
+CMAKE_BINARY_DIR = /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs
 
 # Utility rule file for universal_teleop_msgs.
 
@@ -66,8 +66,8 @@ include CMakeFiles/universal_teleop_msgs.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/universal_teleop_msgs.dir/progress.make
 
-CMakeFiles/universal_teleop_msgs: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop-msgs/msg/Control.msg
-CMakeFiles/universal_teleop_msgs: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop-msgs/msg/Event.msg
+CMakeFiles/universal_teleop_msgs: /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop-msgs/msg/Control.msg
+CMakeFiles/universal_teleop_msgs: /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop-msgs/msg/Event.msg
 CMakeFiles/universal_teleop_msgs: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 CMakeFiles/universal_teleop_msgs: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 CMakeFiles/universal_teleop_msgs: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -112,6 +112,6 @@ CMakeFiles/universal_teleop_msgs.dir/clean:
 .PHONY : CMakeFiles/universal_teleop_msgs.dir/clean
 
 CMakeFiles/universal_teleop_msgs.dir/depend:
-	cd /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop-msgs /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop-msgs /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs/CMakeFiles/universal_teleop_msgs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop-msgs /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop-msgs /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs/CMakeFiles/universal_teleop_msgs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/universal_teleop_msgs.dir/depend
 

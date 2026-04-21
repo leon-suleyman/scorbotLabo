@@ -1,8 +1,8 @@
-# Install script for directory: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop
+# Install script for directory: /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop")
+  set(CMAKE_INSTALL_PREFIX "/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,12 +49,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/universal_teleop/universal_teleop"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/universal_teleop" TYPE EXECUTABLE FILES "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop/universal_teleop")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/universal_teleop" TYPE EXECUTABLE FILES "/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop/universal_teleop")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/universal_teleop/universal_teleop" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/universal_teleop/universal_teleop")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/universal_teleop/universal_teleop"
-         OLD_RPATH "/opt/ros/humble/lib:/home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/lib:/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/lib:"
+         OLD_RPATH "/opt/ros/humble/lib:/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/lib:/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/universal_teleop/universal_teleop")
@@ -63,15 +63,15 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/universal_teleop/" TYPE DIRECTORY FILES "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/universal_teleop/" TYPE DIRECTORY FILES "/home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop/launch")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/universal_teleop")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/universal_teleop")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/universal_teleop")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/universal_teleop")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -79,7 +79,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/universal_teleop/environment" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/universal_teleop/environment" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -87,42 +87,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/universal_teleop/environment" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/universal_teleop/environment" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/universal_teleop" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/universal_teleop" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/universal_teleop" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/universal_teleop" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/universal_teleop" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/universal_teleop" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/universal_teleop" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/universal_teleop" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/universal_teleop" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/universal_teleop" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop/ament_cmake_index/share/ament_index/resource_index/packages/universal_teleop")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop/ament_cmake_index/share/ament_index/resource_index/packages/universal_teleop")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/universal_teleop/cmake" TYPE FILE FILES
-    "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop/ament_cmake_core/universal_teleopConfig.cmake"
-    "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop/ament_cmake_core/universal_teleopConfig-version.cmake"
+    "/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop/ament_cmake_core/universal_teleopConfig.cmake"
+    "/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop/ament_cmake_core/universal_teleopConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/universal_teleop" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/universal_teleop" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -133,5 +133,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

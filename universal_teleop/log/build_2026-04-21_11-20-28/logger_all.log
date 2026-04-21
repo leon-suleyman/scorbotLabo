@@ -1,0 +1,365 @@
+[0.182s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.183s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x73be0be3b610>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x73be0be3b0a0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x73be0be3b0a0>>)
+[0.477s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.477s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.477s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.477s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.477s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.477s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.477s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/leon/robotica/scorbotLabo/universal_teleop'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-keyboard) by extensions ['ignore', 'ignore_ament_install']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-keyboard) by extension 'ignore'
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-keyboard) by extension 'ignore_ament_install'
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-keyboard) by extensions ['colcon_pkg']
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-keyboard) by extension 'colcon_pkg'
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-keyboard) by extensions ['colcon_meta']
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-keyboard) by extension 'colcon_meta'
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-keyboard) by extensions ['ros']
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-keyboard) by extension 'ros'
+[0.503s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros-keyboard' with type 'ros.ament_cmake' and name 'keyboard'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop) by extensions ['ignore', 'ignore_ament_install']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop) by extension 'ignore'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop) by extension 'ignore_ament_install'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop) by extensions ['colcon_pkg']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop) by extension 'colcon_pkg'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop) by extensions ['colcon_meta']
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop) by extension 'colcon_meta'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop) by extensions ['ros']
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop) by extension 'ros'
+[0.506s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros-universal-teleop' with type 'ros.ament_cmake' and name 'universal_teleop'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop-msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop-msgs) by extension 'ignore'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop-msgs) by extension 'ignore_ament_install'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop-msgs) by extensions ['colcon_pkg']
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop-msgs) by extension 'colcon_pkg'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop-msgs) by extensions ['colcon_meta']
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop-msgs) by extension 'colcon_meta'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop-msgs) by extensions ['ros']
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros-universal-teleop-msgs) by extension 'ros'
+[0.507s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros-universal-teleop-msgs' with type 'ros.ament_cmake' and name 'universal_teleop_msgs'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_keyboard_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_keyboard_msgs) by extension 'ignore'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_keyboard_msgs) by extension 'ignore_ament_install'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_keyboard_msgs) by extensions ['colcon_pkg']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_keyboard_msgs) by extension 'colcon_pkg'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_keyboard_msgs) by extensions ['colcon_meta']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_keyboard_msgs) by extension 'colcon_meta'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_keyboard_msgs) by extensions ['ros']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros_keyboard_msgs) by extension 'ros'
+[0.509s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros_keyboard_msgs' with type 'ros.ament_cmake' and name 'keyboard_msgs'
+[0.509s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.509s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.509s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.509s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.509s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.539s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.539s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.540s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.540s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.540s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.540s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.540s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.540s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.540s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.540s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.541s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/leon/robotica/scorbotLabo/universal_teleop/install
+[0.543s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 273 installed packages in /opt/ros/humble
+[0.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.630s] Level 5:colcon.colcon_core.verb:set package 'keyboard_msgs' build argument 'cmake_args' from command line to 'None'
+[0.630s] Level 5:colcon.colcon_core.verb:set package 'keyboard_msgs' build argument 'cmake_target' from command line to 'None'
+[0.630s] Level 5:colcon.colcon_core.verb:set package 'keyboard_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.630s] Level 5:colcon.colcon_core.verb:set package 'keyboard_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.630s] Level 5:colcon.colcon_core.verb:set package 'keyboard_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.630s] Level 5:colcon.colcon_core.verb:set package 'keyboard_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.630s] Level 5:colcon.colcon_core.verb:set package 'keyboard_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.630s] Level 5:colcon.colcon_core.verb:set package 'keyboard_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.630s] Level 5:colcon.colcon_core.verb:set package 'keyboard_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.630s] DEBUG:colcon.colcon_core.verb:Building package 'keyboard_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs', 'merge_install': False, 'path': '/home/leon/robotica/scorbotLabo/universal_teleop/src/ros_keyboard_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.631s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop_msgs' build argument 'cmake_args' from command line to 'None'
+[0.631s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop_msgs' build argument 'cmake_target' from command line to 'None'
+[0.631s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.631s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.631s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.631s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.631s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.631s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.631s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.631s] DEBUG:colcon.colcon_core.verb:Building package 'universal_teleop_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs', 'merge_install': False, 'path': '/home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop-msgs', 'symlink_install': False, 'test_result_base': None}
+[0.632s] Level 5:colcon.colcon_core.verb:set package 'keyboard' build argument 'cmake_args' from command line to 'None'
+[0.632s] Level 5:colcon.colcon_core.verb:set package 'keyboard' build argument 'cmake_target' from command line to 'None'
+[0.632s] Level 5:colcon.colcon_core.verb:set package 'keyboard' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.632s] Level 5:colcon.colcon_core.verb:set package 'keyboard' build argument 'cmake_clean_cache' from command line to 'False'
+[0.632s] Level 5:colcon.colcon_core.verb:set package 'keyboard' build argument 'cmake_clean_first' from command line to 'False'
+[0.632s] Level 5:colcon.colcon_core.verb:set package 'keyboard' build argument 'cmake_force_configure' from command line to 'False'
+[0.632s] Level 5:colcon.colcon_core.verb:set package 'keyboard' build argument 'ament_cmake_args' from command line to 'None'
+[0.632s] Level 5:colcon.colcon_core.verb:set package 'keyboard' build argument 'catkin_cmake_args' from command line to 'None'
+[0.632s] Level 5:colcon.colcon_core.verb:set package 'keyboard' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.632s] DEBUG:colcon.colcon_core.verb:Building package 'keyboard' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard', 'merge_install': False, 'path': '/home/leon/robotica/scorbotLabo/universal_teleop/src/ros-keyboard', 'symlink_install': False, 'test_result_base': None}
+[0.633s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop' build argument 'cmake_args' from command line to 'None'
+[0.633s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop' build argument 'cmake_target' from command line to 'None'
+[0.633s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.633s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[0.633s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop' build argument 'cmake_clean_first' from command line to 'False'
+[0.633s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop' build argument 'cmake_force_configure' from command line to 'False'
+[0.633s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop' build argument 'ament_cmake_args' from command line to 'None'
+[0.633s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[0.633s] Level 5:colcon.colcon_core.verb:set package 'universal_teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.633s] DEBUG:colcon.colcon_core.verb:Building package 'universal_teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop', 'merge_install': False, 'path': '/home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop', 'symlink_install': False, 'test_result_base': None}
+[0.633s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.635s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.635s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/leon/robotica/scorbotLabo/universal_teleop/src/ros_keyboard_msgs' with build type 'ament_cmake'
+[0.635s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/leon/robotica/scorbotLabo/universal_teleop/src/ros_keyboard_msgs'
+[0.639s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.639s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.639s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.644s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop-msgs' with build type 'ament_cmake'
+[0.644s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop-msgs'
+[0.645s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.645s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.658s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leon/robotica/scorbotLabo/universal_teleop/src/ros_keyboard_msgs -DCMAKE_INSTALL_PREFIX=/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs
+[0.662s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop-msgs -DCMAKE_INSTALL_PREFIX=/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs
+[8.190s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop-msgs -DCMAKE_INSTALL_PREFIX=/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs
+[8.194s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs -- -j4 -l4
+[8.196s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leon/robotica/scorbotLabo/universal_teleop/src/ros_keyboard_msgs -DCMAKE_INSTALL_PREFIX=/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs
+[8.199s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs -- -j4 -l4
+[19.917s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs -- -j4 -l4
+[19.948s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs
+[20.230s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(universal_teleop_msgs)
+[20.231s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs
+[20.239s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs' for CMake module files
+[20.244s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs' for CMake config files
+[20.244s] Level 1:colcon.colcon_core.shell:create_environment_hook('universal_teleop_msgs', 'cmake_prefix_path')
+[20.245s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/hook/cmake_prefix_path.ps1'
+[20.246s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/hook/cmake_prefix_path.dsv'
+[20.247s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/hook/cmake_prefix_path.sh'
+[20.252s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/lib'
+[20.252s] Level 1:colcon.colcon_core.shell:create_environment_hook('universal_teleop_msgs', 'ld_library_path_lib')
+[20.252s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/hook/ld_library_path_lib.ps1'
+[20.257s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/hook/ld_library_path_lib.dsv'
+[20.258s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/hook/ld_library_path_lib.sh'
+[20.262s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/bin'
+[20.262s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/lib/pkgconfig/universal_teleop_msgs.pc'
+[20.262s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/lib/python3.10/site-packages'
+[20.263s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/bin'
+[20.264s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/package.ps1'
+[20.270s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/package.dsv'
+[20.271s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/package.sh'
+[20.276s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/package.bash'
+[20.280s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/package.zsh'
+[20.282s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/share/colcon-core/packages/universal_teleop_msgs)
+[20.286s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(universal_teleop_msgs)
+[20.287s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs' for CMake module files
+[20.290s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs' for CMake config files
+[20.290s] Level 1:colcon.colcon_core.shell:create_environment_hook('universal_teleop_msgs', 'cmake_prefix_path')
+[20.291s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/hook/cmake_prefix_path.ps1'
+[20.292s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/hook/cmake_prefix_path.dsv'
+[20.296s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/hook/cmake_prefix_path.sh'
+[20.298s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/lib'
+[20.298s] Level 1:colcon.colcon_core.shell:create_environment_hook('universal_teleop_msgs', 'ld_library_path_lib')
+[20.298s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/hook/ld_library_path_lib.ps1'
+[20.302s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/hook/ld_library_path_lib.dsv'
+[20.303s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/hook/ld_library_path_lib.sh'
+[20.304s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/bin'
+[20.304s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/lib/pkgconfig/universal_teleop_msgs.pc'
+[20.304s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/lib/python3.10/site-packages'
+[20.308s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/bin'
+[20.309s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/package.ps1'
+[20.310s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/package.dsv'
+[20.318s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/package.sh'
+[20.319s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/package.bash'
+[20.320s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/package.zsh'
+[20.330s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/share/colcon-core/packages/universal_teleop_msgs)
+[32.295s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs -- -j4 -l4
+[32.298s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs
+[32.414s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(keyboard_msgs)
+[32.415s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs' for CMake module files
+[32.416s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard_msgs
+[32.417s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs' for CMake config files
+[32.418s] Level 1:colcon.colcon_core.shell:create_environment_hook('keyboard_msgs', 'cmake_prefix_path')
+[32.418s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/share/keyboard_msgs/hook/cmake_prefix_path.ps1'
+[32.419s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/share/keyboard_msgs/hook/cmake_prefix_path.dsv'
+[32.420s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/share/keyboard_msgs/hook/cmake_prefix_path.sh'
+[32.420s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/lib'
+[32.421s] Level 1:colcon.colcon_core.shell:create_environment_hook('keyboard_msgs', 'ld_library_path_lib')
+[32.421s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/share/keyboard_msgs/hook/ld_library_path_lib.ps1'
+[32.422s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/share/keyboard_msgs/hook/ld_library_path_lib.dsv'
+[32.422s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/share/keyboard_msgs/hook/ld_library_path_lib.sh'
+[32.423s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/bin'
+[32.423s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/lib/pkgconfig/keyboard_msgs.pc'
+[32.423s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/lib/python3.10/site-packages'
+[32.424s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/bin'
+[32.425s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/share/keyboard_msgs/package.ps1'
+[32.426s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/share/keyboard_msgs/package.dsv'
+[32.426s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/share/keyboard_msgs/package.sh'
+[32.427s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/share/keyboard_msgs/package.bash'
+[32.428s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/share/keyboard_msgs/package.zsh'
+[32.429s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/share/colcon-core/packages/keyboard_msgs)
+[32.431s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(keyboard_msgs)
+[32.431s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs' for CMake module files
+[32.434s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs' for CMake config files
+[32.435s] Level 1:colcon.colcon_core.shell:create_environment_hook('keyboard_msgs', 'cmake_prefix_path')
+[32.435s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/share/keyboard_msgs/hook/cmake_prefix_path.ps1'
+[32.437s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/share/keyboard_msgs/hook/cmake_prefix_path.dsv'
+[32.437s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/share/keyboard_msgs/hook/cmake_prefix_path.sh'
+[32.439s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/lib'
+[32.439s] Level 1:colcon.colcon_core.shell:create_environment_hook('keyboard_msgs', 'ld_library_path_lib')
+[32.440s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/share/keyboard_msgs/hook/ld_library_path_lib.ps1'
+[32.441s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/share/keyboard_msgs/hook/ld_library_path_lib.dsv'
+[32.441s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/share/keyboard_msgs/hook/ld_library_path_lib.sh'
+[32.443s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/bin'
+[32.444s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/lib/pkgconfig/keyboard_msgs.pc'
+[32.444s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/lib/python3.10/site-packages'
+[32.445s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/bin'
+[32.446s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/share/keyboard_msgs/package.ps1'
+[32.448s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/share/keyboard_msgs/package.dsv'
+[32.450s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/share/keyboard_msgs/package.sh'
+[32.451s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/share/keyboard_msgs/package.bash'
+[32.452s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/share/keyboard_msgs/package.zsh'
+[32.454s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/share/colcon-core/packages/keyboard_msgs)
+[32.455s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/leon/robotica/scorbotLabo/universal_teleop/src/ros-keyboard' with build type 'ament_cmake'
+[32.455s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/leon/robotica/scorbotLabo/universal_teleop/src/ros-keyboard'
+[32.456s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[32.456s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[32.465s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop' with build type 'ament_cmake'
+[32.465s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop'
+[32.466s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[32.466s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[32.479s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard': CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs:/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop:/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs:/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard:/opt/ros/humble LD_LIBRARY_PATH=/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/lib:/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-keyboard -DCMAKE_INSTALL_PREFIX=/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard
+[32.486s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop': CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs:/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs:/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop:/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard:/opt/ros/humble /usr/bin/cmake /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop -DCMAKE_INSTALL_PREFIX=/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop
+[35.288s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard' returned '0': CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs:/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop:/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs:/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard:/opt/ros/humble LD_LIBRARY_PATH=/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/lib:/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-keyboard -DCMAKE_INSTALL_PREFIX=/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard
+[35.291s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard': CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs:/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop:/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs:/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard:/opt/ros/humble LD_LIBRARY_PATH=/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/lib:/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard -- -j4 -l4
+[35.510s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop' returned '0': CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs:/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs:/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop:/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard:/opt/ros/humble /usr/bin/cmake /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop -DCMAKE_INSTALL_PREFIX=/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop
+[35.513s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop': CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs:/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs:/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop:/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard:/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop -- -j4 -l4
+[46.292s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard' returned '0': CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs:/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop:/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs:/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard:/opt/ros/humble LD_LIBRARY_PATH=/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/lib:/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard -- -j4 -l4
+[46.295s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard': CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs:/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop:/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs:/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard:/opt/ros/humble LD_LIBRARY_PATH=/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/lib:/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard
+[46.314s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(keyboard)
+[46.315s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard' for CMake module files
+[46.316s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard' returned '0': CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs:/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop:/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs:/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard:/opt/ros/humble LD_LIBRARY_PATH=/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/lib:/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard
+[46.316s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard' for CMake config files
+[46.317s] Level 1:colcon.colcon_core.shell:create_environment_hook('keyboard', 'cmake_prefix_path')
+[46.317s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard/share/keyboard/hook/cmake_prefix_path.ps1'
+[46.318s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard/share/keyboard/hook/cmake_prefix_path.dsv'
+[46.319s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard/share/keyboard/hook/cmake_prefix_path.sh'
+[46.320s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard/lib'
+[46.320s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard/bin'
+[46.320s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard/lib/pkgconfig/keyboard.pc'
+[46.320s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard/lib/python3.10/site-packages'
+[46.321s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard/bin'
+[46.322s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard/share/keyboard/package.ps1'
+[46.323s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard/share/keyboard/package.dsv'
+[46.324s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard/share/keyboard/package.sh'
+[46.325s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard/share/keyboard/package.bash'
+[46.325s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard/share/keyboard/package.zsh'
+[46.326s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard/share/colcon-core/packages/keyboard)
+[46.327s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(keyboard)
+[46.328s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard' for CMake module files
+[46.329s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard' for CMake config files
+[46.329s] Level 1:colcon.colcon_core.shell:create_environment_hook('keyboard', 'cmake_prefix_path')
+[46.330s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard/share/keyboard/hook/cmake_prefix_path.ps1'
+[46.331s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard/share/keyboard/hook/cmake_prefix_path.dsv'
+[46.331s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard/share/keyboard/hook/cmake_prefix_path.sh'
+[46.332s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard/lib'
+[46.332s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard/bin'
+[46.333s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard/lib/pkgconfig/keyboard.pc'
+[46.333s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard/lib/python3.10/site-packages'
+[46.334s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard/bin'
+[46.335s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard/share/keyboard/package.ps1'
+[46.337s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard/share/keyboard/package.dsv'
+[46.338s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard/share/keyboard/package.sh'
+[46.340s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard/share/keyboard/package.bash'
+[46.341s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard/share/keyboard/package.zsh'
+[46.342s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard/share/colcon-core/packages/keyboard)
+[58.787s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop' returned '0': CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs:/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs:/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop:/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard:/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop -- -j4 -l4
+[58.790s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop': CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs:/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs:/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop:/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard:/opt/ros/humble /usr/bin/cmake --install /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop
+[58.953s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(universal_teleop)
+[58.954s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop' for CMake module files
+[58.955s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop' returned '0': CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs:/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs:/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop:/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard:/opt/ros/humble /usr/bin/cmake --install /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop
+[58.956s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop' for CMake config files
+[58.957s] Level 1:colcon.colcon_core.shell:create_environment_hook('universal_teleop', 'cmake_prefix_path')
+[58.958s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop/share/universal_teleop/hook/cmake_prefix_path.ps1'
+[58.959s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop/share/universal_teleop/hook/cmake_prefix_path.dsv'
+[58.960s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop/share/universal_teleop/hook/cmake_prefix_path.sh'
+[58.961s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop/lib'
+[58.961s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop/bin'
+[58.961s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop/lib/pkgconfig/universal_teleop.pc'
+[58.962s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop/lib/python3.10/site-packages'
+[58.963s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop/bin'
+[58.964s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop/share/universal_teleop/package.ps1'
+[58.966s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop/share/universal_teleop/package.dsv'
+[58.967s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop/share/universal_teleop/package.sh'
+[58.968s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop/share/universal_teleop/package.bash'
+[58.969s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop/share/universal_teleop/package.zsh'
+[58.969s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop/share/colcon-core/packages/universal_teleop)
+[58.971s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(universal_teleop)
+[58.972s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop' for CMake module files
+[58.973s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop' for CMake config files
+[58.974s] Level 1:colcon.colcon_core.shell:create_environment_hook('universal_teleop', 'cmake_prefix_path')
+[58.975s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop/share/universal_teleop/hook/cmake_prefix_path.ps1'
+[58.976s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop/share/universal_teleop/hook/cmake_prefix_path.dsv'
+[58.977s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop/share/universal_teleop/hook/cmake_prefix_path.sh'
+[58.978s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop/lib'
+[58.978s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop/bin'
+[58.978s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop/lib/pkgconfig/universal_teleop.pc'
+[58.979s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop/lib/python3.10/site-packages'
+[58.980s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop/bin'
+[58.981s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop/share/universal_teleop/package.ps1'
+[58.983s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop/share/universal_teleop/package.dsv'
+[58.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop/share/universal_teleop/package.sh'
+[58.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop/share/universal_teleop/package.bash'
+[58.988s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop/share/universal_teleop/package.zsh'
+[58.989s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop/share/colcon-core/packages/universal_teleop)
+[58.990s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[58.991s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[58.991s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[58.991s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[59.004s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[59.004s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[59.004s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[59.036s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[59.037s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/leon/robotica/scorbotLabo/universal_teleop/install/local_setup.ps1'
+[59.039s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/leon/robotica/scorbotLabo/universal_teleop/install/_local_setup_util_ps1.py'
+[59.043s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/leon/robotica/scorbotLabo/universal_teleop/install/setup.ps1'
+[59.046s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/leon/robotica/scorbotLabo/universal_teleop/install/local_setup.sh'
+[59.047s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/leon/robotica/scorbotLabo/universal_teleop/install/_local_setup_util_sh.py'
+[59.048s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/leon/robotica/scorbotLabo/universal_teleop/install/setup.sh'
+[59.051s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/leon/robotica/scorbotLabo/universal_teleop/install/local_setup.bash'
+[59.052s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/leon/robotica/scorbotLabo/universal_teleop/install/setup.bash'
+[59.055s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/leon/robotica/scorbotLabo/universal_teleop/install/local_setup.zsh'
+[59.057s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/leon/robotica/scorbotLabo/universal_teleop/install/setup.zsh'

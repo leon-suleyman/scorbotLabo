@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-keyboard/src/keyboard.cpp" "CMakeFiles/keyboard.dir/src/keyboard.cpp.o" "gcc" "CMakeFiles/keyboard.dir/src/keyboard.cpp.o.d"
-  "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-keyboard/src/main.cpp" "CMakeFiles/keyboard.dir/src/main.cpp.o" "gcc" "CMakeFiles/keyboard.dir/src/main.cpp.o.d"
+  "/home/leon/robotica/scorbotLabo/universal_teleop/src/ros-keyboard/src/keyboard.cpp" "CMakeFiles/keyboard.dir/src/keyboard.cpp.o" "gcc" "CMakeFiles/keyboard.dir/src/keyboard.cpp.o.d"
+  "/home/leon/robotica/scorbotLabo/universal_teleop/src/ros-keyboard/src/main.cpp" "CMakeFiles/keyboard.dir/src/main.cpp.o" "gcc" "CMakeFiles/keyboard.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links.

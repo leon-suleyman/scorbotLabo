@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop-msgs
+CMAKE_SOURCE_DIR = /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop-msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs
+CMAKE_BINARY_DIR = /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs
 
 # Include any dependencies generated for this target.
 include CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/depend.make
@@ -72,30 +72,30 @@ include CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/flags.make
 CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_control_s.c.o: CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/flags.make
 CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_control_s.c.o: rosidl_generator_py/universal_teleop_msgs/msg/_control_s.c
 CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_control_s.c.o: CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_control_s.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_control_s.c.o -MF CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_control_s.c.o.d -o CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_control_s.c.o -c /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs/rosidl_generator_py/universal_teleop_msgs/msg/_control_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_control_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_control_s.c.o -MF CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_control_s.c.o.d -o CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_control_s.c.o -c /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs/rosidl_generator_py/universal_teleop_msgs/msg/_control_s.c
 
 CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_control_s.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_control_s.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs/rosidl_generator_py/universal_teleop_msgs/msg/_control_s.c > CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_control_s.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs/rosidl_generator_py/universal_teleop_msgs/msg/_control_s.c > CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_control_s.c.i
 
 CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_control_s.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_control_s.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs/rosidl_generator_py/universal_teleop_msgs/msg/_control_s.c -o CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_control_s.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs/rosidl_generator_py/universal_teleop_msgs/msg/_control_s.c -o CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_control_s.c.s
 
 CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_event_s.c.o: CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/flags.make
 CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_event_s.c.o: rosidl_generator_py/universal_teleop_msgs/msg/_event_s.c
 CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_event_s.c.o: CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_event_s.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_event_s.c.o -MF CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_event_s.c.o.d -o CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_event_s.c.o -c /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs/rosidl_generator_py/universal_teleop_msgs/msg/_event_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_event_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_event_s.c.o -MF CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_event_s.c.o.d -o CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_event_s.c.o -c /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs/rosidl_generator_py/universal_teleop_msgs/msg/_event_s.c
 
 CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_event_s.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_event_s.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs/rosidl_generator_py/universal_teleop_msgs/msg/_event_s.c > CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_event_s.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs/rosidl_generator_py/universal_teleop_msgs/msg/_event_s.c > CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_event_s.c.i
 
 CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_event_s.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_event_s.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs/rosidl_generator_py/universal_teleop_msgs/msg/_event_s.c -o CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_event_s.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs/rosidl_generator_py/universal_teleop_msgs/msg/_event_s.c -o CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/rosidl_generator_py/universal_teleop_msgs/msg/_event_s.c.s
 
 # Object files for target universal_teleop_msgs__rosidl_generator_py
 universal_teleop_msgs__rosidl_generator_py_OBJECTS = \
@@ -121,7 +121,7 @@ rosidl_generator_py/universal_teleop_msgs/libuniversal_teleop_msgs__rosidl_gener
 rosidl_generator_py/universal_teleop_msgs/libuniversal_teleop_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 rosidl_generator_py/universal_teleop_msgs/libuniversal_teleop_msgs__rosidl_generator_py.so: /opt/ros/humble/lib/librcutils.so
 rosidl_generator_py/universal_teleop_msgs/libuniversal_teleop_msgs__rosidl_generator_py.so: CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library rosidl_generator_py/universal_teleop_msgs/libuniversal_teleop_msgs__rosidl_generator_py.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library rosidl_generator_py/universal_teleop_msgs/libuniversal_teleop_msgs__rosidl_generator_py.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -133,6 +133,6 @@ CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/clean:
 .PHONY : CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/clean
 
 CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/depend:
-	cd /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop-msgs /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop-msgs /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/universal_teleop_msgs/CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop-msgs /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop-msgs /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs /home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs/CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/universal_teleop_msgs__rosidl_generator_py.dir/depend
 

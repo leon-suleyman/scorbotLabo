@@ -1,8 +1,8 @@
-# Install script for directory: /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-keyboard
+# Install script for directory: /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-keyboard
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/keyboard")
+  set(CMAKE_INSTALL_PREFIX "/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,12 +49,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/keyboard/keyboard"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/keyboard" TYPE EXECUTABLE FILES "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard/keyboard")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/keyboard" TYPE EXECUTABLE FILES "/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard/keyboard")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/keyboard/keyboard" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/keyboard/keyboard")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/keyboard/keyboard"
-         OLD_RPATH "/opt/ros/humble/lib:/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/keyboard_msgs/lib:"
+         OLD_RPATH "/opt/ros/humble/lib:/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/keyboard/keyboard")
@@ -63,11 +63,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/keyboard")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/keyboard")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/keyboard")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/keyboard")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -75,7 +75,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/keyboard/environment" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/keyboard/environment" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -83,42 +83,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/keyboard/environment" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/keyboard/environment" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/keyboard" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/keyboard" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/keyboard" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/keyboard" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/keyboard" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/keyboard" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/keyboard" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/keyboard" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/keyboard" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/keyboard" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard/ament_cmake_index/share/ament_index/resource_index/packages/keyboard")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard/ament_cmake_index/share/ament_index/resource_index/packages/keyboard")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/keyboard/cmake" TYPE FILE FILES
-    "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard/ament_cmake_core/keyboardConfig.cmake"
-    "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard/ament_cmake_core/keyboardConfig-version.cmake"
+    "/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard/ament_cmake_core/keyboardConfig.cmake"
+    "/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard/ament_cmake_core/keyboardConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/keyboard" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-keyboard/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/keyboard" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/universal_teleop/src/ros-keyboard/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -129,5 +129,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/build/keyboard/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/leon/robotica/scorbotLabo/universal_teleop/build/keyboard/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,5 +1,5 @@
 CMakeFiles/universal_teleop.dir/src/main.cpp.o: \
- /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/main.cpp \
+ /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop/src/main.cpp \
  /usr/include/stdc-predef.h \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal \
@@ -619,7 +619,7 @@ CMakeFiles/universal_teleop.dir/src/main.cpp.o: \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
- /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/src/ros-universal-teleop/src/teleop.h \
+ /home/leon/robotica/scorbotLabo/universal_teleop/src/ros-universal-teleop/src/teleop.h \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/joy.hpp \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joy__struct.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
@@ -636,20 +636,20 @@ CMakeFiles/universal_teleop.dir/src/main.cpp.o: \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
- /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/key.hpp \
- /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__struct.hpp \
- /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__builder.hpp \
- /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__traits.hpp \
- /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__type_support.hpp \
- /home/leon/robotica/scorbotLabo/teleop_packages/ros_keyboard/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
- /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/event.hpp \
- /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__struct.hpp \
- /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__builder.hpp \
- /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__traits.hpp \
- /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__type_support.hpp \
- /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
- /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/control.hpp \
- /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__struct.hpp \
- /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__builder.hpp \
- /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__traits.hpp \
- /home/leon/robotica/scorbotLabo/teleop_packages/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__type_support.hpp
+ /home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/key.hpp \
+ /home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__struct.hpp \
+ /home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__builder.hpp \
+ /home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__traits.hpp \
+ /home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/detail/key__type_support.hpp \
+ /home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs/include/keyboard_msgs/keyboard_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/event.hpp \
+ /home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__struct.hpp \
+ /home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__builder.hpp \
+ /home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__traits.hpp \
+ /home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/event__type_support.hpp \
+ /home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/control.hpp \
+ /home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__struct.hpp \
+ /home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__builder.hpp \
+ /home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__traits.hpp \
+ /home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/include/universal_teleop_msgs/universal_teleop_msgs/msg/detail/control__type_support.hpp

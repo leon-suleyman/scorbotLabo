@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "universal_teleop_msgs__rs",
+		"source" : "/home/leon/robotica/scorbotLabo/universal_teleop/build/universal_teleop_msgs/universal_teleop_msgs__rs"
+	}
+}

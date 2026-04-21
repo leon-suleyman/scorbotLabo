@@ -4,6 +4,3 @@ universal_teleop_msgs.egg-info/PKG-INFO
 universal_teleop_msgs.egg-info/SOURCES.txt
 universal_teleop_msgs.egg-info/dependency_links.txt
 universal_teleop_msgs.egg-info/top_level.txt
-universal_teleop_msgs/msg/__init__.py
-universal_teleop_msgs/msg/_control.py
-universal_teleop_msgs/msg/_event.py
