@@ -1,0 +1,258 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-ebeed053c1104e67cc8e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "scorbot_msgs__py",
+					"jsonFile" : "directory-scorbot_msgs__py-887d5482efa153df9a3b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs/scorbot_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "scorbot_msgs__rs",
+					"jsonFile" : "directory-scorbot_msgs__rs-ba5c57fa40bc6d050752.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs/scorbot_msgs__rs",
+					"targetIndexes" : 
+					[
+						16
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "scorbot_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_scorbot_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_scorbot_msgs_egg-5711253a087b98660d46.json",
+					"name" : "ament_cmake_python_build_scorbot_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_scorbot_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_scorbot_msgs-2149d31ffec5dbe25d72.json",
+					"name" : "ament_cmake_python_copy_scorbot_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scorbot_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scorbot_msgs-141d89372da0567808da.json",
+					"name" : "scorbot_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scorbot_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scorbot_msgs__cpp-dadc663f84345a67905a.json",
+					"name" : "scorbot_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "scorbot_msgs__py::@fdc33891c170ed04147a",
+					"jsonFile" : "target-scorbot_msgs__py-db07072eb3291cabfed0.json",
+					"name" : "scorbot_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scorbot_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scorbot_msgs__rosidl_generator_c-6a833fd24ed0b1fb1b91.json",
+					"name" : "scorbot_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scorbot_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scorbot_msgs__rosidl_generator_py-c213e1a83947dddf640c.json",
+					"name" : "scorbot_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scorbot_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scorbot_msgs__rosidl_typesupport_c-c243a87c004bc92672ed.json",
+					"name" : "scorbot_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scorbot_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scorbot_msgs__rosidl_typesupport_c__pyext-d30c54b8edb26464aef7.json",
+					"name" : "scorbot_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scorbot_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scorbot_msgs__rosidl_typesupport_cpp-de798270a33306305614.json",
+					"name" : "scorbot_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scorbot_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scorbot_msgs__rosidl_typesupport_fastrtps_c-8d161fc2abf4afd8efb1.json",
+					"name" : "scorbot_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scorbot_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scorbot_msgs__rosidl_typesupport_fastrtps_c__pyext-b2c2806ef689f4c8fe43.json",
+					"name" : "scorbot_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scorbot_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scorbot_msgs__rosidl_typesupport_fastrtps_cpp-5e39ab6cd9dd4f357796.json",
+					"name" : "scorbot_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scorbot_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scorbot_msgs__rosidl_typesupport_introspection_c-6a9180ba8bf5ea643508.json",
+					"name" : "scorbot_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scorbot_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scorbot_msgs__rosidl_typesupport_introspection_c__pyext-6fa36b1a4fdf07583e0f.json",
+					"name" : "scorbot_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scorbot_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scorbot_msgs__rosidl_typesupport_introspection_cpp-50bf17c9e7967c7f3b66.json",
+					"name" : "scorbot_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "scorbot_msgs__rs::@da5dd078532a7296abaf",
+					"jsonFile" : "target-scorbot_msgs__rs-0c1810afd51c595ddfdc.json",
+					"name" : "scorbot_msgs__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "scorbot_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-scorbot_msgs_uninstall-c97c7a09a67aa6a7622a.json",
+					"name" : "scorbot_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-bc0de120575a39eba959.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs",
+		"source" : "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,23 @@
+[0.023s] Invoking command in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot -- -j4 -l4
+[0.081s] [35m[1mConsolidate compiler generated dependencies of target scorbot[0m
+[0.096s] [100%] Built target scorbot
+[0.113s] Invoked command in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot -- -j4 -l4
+[0.129s] Invoking command in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot
+[0.141s] -- Install configuration: ""
+[0.141s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/lib/scorbot/scorbot
+[0.142s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/ament_index/resource_index/package_run_dependencies/scorbot
+[0.143s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/ament_index/resource_index/parent_prefix_path/scorbot
+[0.144s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/environment/ament_prefix_path.sh
+[0.145s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/environment/ament_prefix_path.dsv
+[0.147s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/environment/path.sh
+[0.148s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/environment/path.dsv
+[0.148s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/local_setup.bash
+[0.148s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/local_setup.sh
+[0.148s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/local_setup.zsh
+[0.148s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/local_setup.dsv
+[0.148s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/package.dsv
+[0.148s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/ament_index/resource_index/packages/scorbot
+[0.149s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/cmake/scorbotConfig.cmake
+[0.149s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/cmake/scorbotConfig-version.cmake
+[0.149s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/package.xml
+[0.151s] Invoked command in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot

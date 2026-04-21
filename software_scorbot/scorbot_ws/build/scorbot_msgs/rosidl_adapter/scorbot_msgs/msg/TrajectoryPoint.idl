@@ -1,0 +1,12 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from scorbot_msgs/msg/TrajectoryPoint.msg
+// generated code does not contain a copyright notice
+
+
+module scorbot_msgs {
+  module msg {
+    struct TrajectoryPoint {
+      sequence<int32> positions;
+    };
+  };
+};

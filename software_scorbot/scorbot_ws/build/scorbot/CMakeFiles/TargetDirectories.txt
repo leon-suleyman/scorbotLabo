@@ -1,0 +1,10 @@
+/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot/CMakeFiles/uninstall.dir
+/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot/CMakeFiles/scorbot_uninstall.dir
+/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot/CMakeFiles/scorbot.dir
+/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot/CMakeFiles/test.dir
+/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot/CMakeFiles/edit_cache.dir
+/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot/CMakeFiles/rebuild_cache.dir
+/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot/CMakeFiles/list_install_components.dir
+/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot/CMakeFiles/install.dir
+/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot/CMakeFiles/install/local.dir
+/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot/CMakeFiles/install/strip.dir

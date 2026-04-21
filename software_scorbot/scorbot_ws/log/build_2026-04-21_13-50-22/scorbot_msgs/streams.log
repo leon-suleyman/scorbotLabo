@@ -1,0 +1,31 @@
+[0.035s] Invoking command in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot_msgs -DCMAKE_INSTALL_PREFIX=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs
+[0.189s] -- The C compiler identification is GNU 11.4.0
+[0.303s] -- The CXX compiler identification is GNU 11.4.0
+[0.317s] -- Detecting C compiler ABI info
+[0.443s] -- Detecting C compiler ABI info - done
+[0.461s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.461s] -- Detecting C compile features
+[0.462s] -- Detecting C compile features - done
+[0.469s] -- Detecting CXX compiler ABI info
+[0.616s] -- Detecting CXX compiler ABI info - done
+[0.636s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.636s] -- Detecting CXX compile features
+[0.636s] -- Detecting CXX compile features - done
+[0.806s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.082s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.253s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.267s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.284s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.424s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.595s] -- Found std_msgs: 4.9.1 (/opt/ros/humble/share/std_msgs/cmake)
+[1.639s] [31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+[1.639s]   rosidl_generate_interfaces() the passed file 'msg/TrajectoryPoint.srv'
+[1.639s]   doesn't exist relative to the CMAKE_CURRENT_SOURCE_DIR
+[1.639s]   '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot_msgs'
+[1.639s] Call Stack (most recent call first):
+[1.639s]   CMakeLists.txt:17 (rosidl_generate_interfaces)
+[1.639s] 
+[1.639s] [0m
+[1.640s] -- Configuring incomplete, errors occurred!
+[1.640s] See also "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs/CMakeFiles/CMakeOutput.log".
+[1.648s] Invoked command in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot_msgs -DCMAKE_INSTALL_PREFIX=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs

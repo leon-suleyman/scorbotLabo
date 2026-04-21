@@ -1,0 +1,31 @@
+[0.070s] Invoking command in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot -DCMAKE_INSTALL_PREFIX=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot
+[0.245s] -- The C compiler identification is GNU 11.4.0
+[0.348s] -- The CXX compiler identification is GNU 11.4.0
+[0.375s] -- Detecting C compiler ABI info
+[0.502s] -- Detecting C compiler ABI info - done
+[0.523s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.524s] -- Detecting C compile features
+[0.525s] -- Detecting C compile features - done
+[0.536s] -- Detecting CXX compiler ABI info
+[0.681s] -- Detecting CXX compiler ABI info - done
+[0.700s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.700s] -- Detecting CXX compile features
+[0.701s] -- Detecting CXX compile features - done
+[0.864s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.142s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.310s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.546s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.546s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/include>
+[1.546s] -- Configured cppcheck exclude dirs and/or files: 
+[1.549s] -- Added test 'lint_cmake' to check CMake code style
+[1.552s] -- Added test 'uncrustify' to check C / C++ code style
+[1.552s] -- Configured uncrustify additional arguments: 
+[1.553s] -- Added test 'xmllint' to check XML markup files
+[1.555s] -- Configuring done
+[1.562s] -- Generating done
+[1.565s] -- Build files have been written to: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot
+[1.571s] Invoked command in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot -DCMAKE_INSTALL_PREFIX=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot
+[1.574s] Invoking command in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot -- -j4 -l4
+[1.644s] [ 50%] [32mBuilding CXX object CMakeFiles/scorbot.dir/src/scorbot.cpp.o[0m
+[1.684s] [100%] [32m[1mLinking CXX executable scorbot[0m
+[1.759s] [100%] Built target scorbot

@@ -1,0 +1,16 @@
+/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/lib/scorbot/scorbot
+/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/ament_index/resource_index/package_run_dependencies/scorbot
+/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/ament_index/resource_index/parent_prefix_path/scorbot
+/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/environment/ament_prefix_path.sh
+/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/environment/ament_prefix_path.dsv
+/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/environment/path.sh
+/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/environment/path.dsv
+/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/local_setup.bash
+/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/local_setup.sh
+/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/local_setup.zsh
+/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/local_setup.dsv
+/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/package.dsv
+/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/ament_index/resource_index/packages/scorbot
+/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/cmake/scorbotConfig.cmake
+/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/cmake/scorbotConfig-version.cmake
+/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/package.xml

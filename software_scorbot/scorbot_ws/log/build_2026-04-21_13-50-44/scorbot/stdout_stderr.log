@@ -1,0 +1,19 @@
+[35m[1mConsolidate compiler generated dependencies of target scorbot[0m
+[100%] Built target scorbot
+-- Install configuration: ""
+-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/lib/scorbot/scorbot
+-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/ament_index/resource_index/package_run_dependencies/scorbot
+-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/ament_index/resource_index/parent_prefix_path/scorbot
+-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/environment/ament_prefix_path.sh
+-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/environment/ament_prefix_path.dsv
+-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/environment/path.sh
+-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/environment/path.dsv
+-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/local_setup.bash
+-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/local_setup.sh
+-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/local_setup.zsh
+-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/local_setup.dsv
+-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/package.dsv
+-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/ament_index/resource_index/packages/scorbot
+-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/cmake/scorbotConfig.cmake
+-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/cmake/scorbotConfig-version.cmake
+-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/package.xml

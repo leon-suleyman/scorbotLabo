@@ -1,0 +1,284 @@
+[0.019s] Invoking command in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot_msgs -DCMAKE_INSTALL_PREFIX=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs
+[0.038s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.253s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.258s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.265s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.314s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.359s] -- Found std_msgs: 4.9.1 (/opt/ros/humble/share/std_msgs/cmake)
+[1.300s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.757s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.313s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.356s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.365s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.462s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.462s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.462s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.463s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.506s] -- Found PythonExtra: .so  
+[2.757s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.846s] -- Added test 'lint_cmake' to check CMake code style
+[2.850s] -- Added test 'xmllint' to check XML markup files
+[2.858s] -- Configuring done
+[2.921s] -- Generating done
+[2.939s] -- Build files have been written to: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs
+[2.952s] Invoked command in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot_msgs -DCMAKE_INSTALL_PREFIX=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs
+[2.954s] Invoking command in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs -- -j4 -l4
+[3.018s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.040s] [  4%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[3.041s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.054s] [  6%] Built target ament_cmake_python_copy_scorbot_msgs
+[3.678s] running egg_info
+[3.679s] creating scorbot_msgs.egg-info
+[3.680s] writing scorbot_msgs.egg-info/PKG-INFO
+[3.680s] writing dependency_links to scorbot_msgs.egg-info/dependency_links.txt
+[3.682s] writing top-level names to scorbot_msgs.egg-info/top_level.txt
+[3.683s] writing manifest file 'scorbot_msgs.egg-info/SOURCES.txt'
+[3.687s] reading manifest file 'scorbot_msgs.egg-info/SOURCES.txt'
+[3.687s] writing manifest file 'scorbot_msgs.egg-info/SOURCES.txt'
+[3.761s] [  6%] Built target ament_cmake_python_build_scorbot_msgs_egg
+[3.797s] [  6%] Built target scorbot_msgs__rs
+[3.941s] [  8%] [32mBuilding C object CMakeFiles/scorbot_msgs__rosidl_generator_c.dir/rosidl_generator_c/scorbot_msgs/msg/detail/joint_trajectory__functions.c.o[0m
+[3.941s] [ 10%] [32mBuilding C object CMakeFiles/scorbot_msgs__rosidl_generator_c.dir/rosidl_generator_c/scorbot_msgs/msg/detail/trajectory_point__functions.c.o[0m
+[3.946s] [ 12%] [32mBuilding C object CMakeFiles/scorbot_msgs__rosidl_generator_c.dir/rosidl_generator_c/scorbot_msgs/msg/detail/joint_velocities__functions.c.o[0m
+[4.065s] [ 14%] [32m[1mLinking C shared library libscorbot_msgs__rosidl_generator_c.so[0m
+[4.099s] [ 14%] Built target scorbot_msgs__cpp
+[4.118s] [ 18%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[4.118s] [ 18%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[4.118s] [ 20%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[4.138s] [ 20%] Built target scorbot_msgs__rosidl_generator_c
+[4.156s] [ 22%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.815s] [ 25%] [32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/scorbot_msgs/msg/joint_trajectory__type_support.cpp.o[0m
+[4.996s] [ 27%] [32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/scorbot_msgs/msg/detail/joint_trajectory__type_support_c.cpp.o[0m
+[4.998s] [ 29%] [32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/scorbot_msgs/msg/detail/joint_trajectory__type_support.cpp.o[0m
+[5.071s] [ 31%] [32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/scorbot_msgs/msg/detail/dds_fastrtps/joint_trajectory__type_support.cpp.o[0m
+[5.679s] [ 33%] [32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/scorbot_msgs/msg/joint_velocities__type_support.cpp.o[0m
+[6.006s] [ 35%] [32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/scorbot_msgs/msg/detail/joint_velocities__type_support_c.cpp.o[0m
+[6.047s] [ 37%] [32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/scorbot_msgs/msg/detail/joint_velocities__type_support.cpp.o[0m
+[6.147s] [ 39%] [32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/scorbot_msgs/msg/trajectory_point__type_support.cpp.o[0m
+[6.228s] [ 41%] [32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/scorbot_msgs/msg/detail/dds_fastrtps/joint_velocities__type_support.cpp.o[0m
+[6.596s] [ 43%] [32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/scorbot_msgs/msg/detail/trajectory_point__type_support_c.cpp.o[0m
+[6.616s] [ 45%] [32m[1mLinking CXX shared library libscorbot_msgs__rosidl_typesupport_cpp.so[0m
+[6.724s] [ 45%] Built target scorbot_msgs__rosidl_typesupport_cpp
+[6.743s] [ 47%] [32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/scorbot_msgs/msg/detail/trajectory_point__type_support.cpp.o[0m
+[6.779s] [ 50%] [32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/scorbot_msgs/msg/detail/dds_fastrtps/trajectory_point__type_support.cpp.o[0m
+[7.000s] [ 52%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[7.180s] [ 54%] [32m[1mLinking CXX shared library libscorbot_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[7.470s] [ 56%] [32m[1mLinking CXX shared library libscorbot_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[7.503s] [ 56%] Built target scorbot_msgs__rosidl_typesupport_fastrtps_c
+[7.518s] [ 58%] [32m[1mLinking CXX shared library libscorbot_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[7.525s] [ 60%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[7.662s] [ 60%] Built target scorbot_msgs__rosidl_typesupport_introspection_cpp
+[7.718s] [ 60%] Built target scorbot_msgs__rosidl_typesupport_fastrtps_cpp
+[7.740s] [ 64%] [32mBuilding C object CMakeFiles/scorbot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/scorbot_msgs/msg/detail/trajectory_point__type_support.c.o[0m
+[7.743s] [ 66%] [32mBuilding C object CMakeFiles/scorbot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/scorbot_msgs/msg/detail/joint_trajectory__type_support.c.o[0m
+[7.743s] [ 66%] [32mBuilding C object CMakeFiles/scorbot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/scorbot_msgs/msg/detail/joint_velocities__type_support.c.o[0m
+[7.836s] [ 68%] [32m[1mLinking C shared library libscorbot_msgs__rosidl_typesupport_introspection_c.so[0m
+[7.884s] [ 68%] Built target scorbot_msgs__rosidl_typesupport_introspection_c
+[8.075s] [ 70%] [32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/scorbot_msgs/msg/trajectory_point__type_support.cpp.o[0m
+[8.077s] [ 72%] [32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/scorbot_msgs/msg/joint_trajectory__type_support.cpp.o[0m
+[8.078s] [ 75%] [32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/scorbot_msgs/msg/joint_velocities__type_support.cpp.o[0m
+[8.126s] [ 77%] [32m[1mLinking CXX shared library libscorbot_msgs__rosidl_typesupport_c.so[0m
+[8.195s] [ 77%] Built target scorbot_msgs__rosidl_typesupport_c
+[8.227s] [ 77%] Built target scorbot_msgs
+[8.257s] [ 79%] [34m[1mGenerating Python code for ROS interfaces[0m
+[9.160s] [ 79%] Built target scorbot_msgs__py
+[9.192s] [ 81%] [32mBuilding C object CMakeFiles/scorbot_msgs__rosidl_generator_py.dir/rosidl_generator_py/scorbot_msgs/msg/_joint_velocities_s.c.o[0m
+[9.193s] [ 85%] [32mBuilding C object CMakeFiles/scorbot_msgs__rosidl_generator_py.dir/rosidl_generator_py/scorbot_msgs/msg/_joint_trajectory_s.c.o[0m
+[9.194s] [ 85%] [32mBuilding C object CMakeFiles/scorbot_msgs__rosidl_generator_py.dir/rosidl_generator_py/scorbot_msgs/msg/_trajectory_point_s.c.o[0m
+[9.735s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/scorbot_msgs/libscorbot_msgs__rosidl_generator_py.so[0m
+[9.883s] [ 87%] Built target scorbot_msgs__rosidl_generator_py
+[9.918s] [ 89%] [32mBuilding C object CMakeFiles/scorbot_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[9.923s] [ 93%] [32mBuilding C object CMakeFiles/scorbot_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[9.923s] [ 93%] [32mBuilding C object CMakeFiles/scorbot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[10.140s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[10.141s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[10.148s] [100%] [32m[1mLinking C shared library rosidl_generator_py/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[10.211s] [100%] Built target scorbot_msgs__rosidl_typesupport_c__pyext
+[10.223s] [100%] Built target scorbot_msgs__rosidl_typesupport_introspection_c__pyext
+[10.227s] [100%] Built target scorbot_msgs__rosidl_typesupport_fastrtps_c__pyext
+[10.245s] Invoked command in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs -- -j4 -l4
+[10.247s] Invoking command in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs
+[10.259s] -- Install configuration: ""
+[10.259s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/ament_index/resource_index/rosidl_interfaces/scorbot_msgs
+[10.260s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs
+[10.260s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg
+[10.260s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/joint_trajectory.h
+[10.260s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail
+[10.260s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__functions.h
+[10.260s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__type_support.h
+[10.261s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__struct.h
+[10.261s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__functions.h
+[10.261s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__type_support.h
+[10.261s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__struct.h
+[10.261s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__functions.h
+[10.262s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__functions.c
+[10.262s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__struct.h
+[10.262s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__functions.c
+[10.263s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__functions.c
+[10.263s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__type_support.h
+[10.263s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/joint_velocities.h
+[10.264s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/trajectory_point.h
+[10.264s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/rosidl_generator_c__visibility_control.h
+[10.264s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/environment/library_path.sh
+[10.264s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/environment/library_path.dsv
+[10.264s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_generator_c.so
+[10.265s] -- Set runtime path of "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_generator_c.so" to ""
+[10.265s] -- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs
+[10.265s] -- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg
+[10.265s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[10.265s] -- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail
+[10.265s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__rosidl_typesupport_fastrtps_c.h
+[10.265s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__rosidl_typesupport_fastrtps_c.h
+[10.266s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__rosidl_typesupport_fastrtps_c.h
+[10.266s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_typesupport_fastrtps_c.so
+[10.266s] -- Set runtime path of "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[10.266s] -- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs
+[10.266s] -- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg
+[10.266s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[10.266s] -- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail
+[10.267s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__type_support.c
+[10.267s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__rosidl_typesupport_introspection_c.h
+[10.267s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__type_support.c
+[10.267s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__type_support.c
+[10.267s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__rosidl_typesupport_introspection_c.h
+[10.267s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__rosidl_typesupport_introspection_c.h
+[10.268s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_typesupport_introspection_c.so
+[10.268s] -- Set runtime path of "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_typesupport_introspection_c.so" to ""
+[10.268s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_typesupport_c.so
+[10.268s] -- Set runtime path of "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_typesupport_c.so" to ""
+[10.268s] -- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs
+[10.269s] -- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg
+[10.269s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[10.269s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/trajectory_point.hpp
+[10.269s] -- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail
+[10.269s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__builder.hpp
+[10.270s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__builder.hpp
+[10.270s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__struct.hpp
+[10.270s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__traits.hpp
+[10.270s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__traits.hpp
+[10.271s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__struct.hpp
+[10.271s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__type_support.hpp
+[10.271s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__type_support.hpp
+[10.271s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__traits.hpp
+[10.272s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__builder.hpp
+[10.272s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__type_support.hpp
+[10.272s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__struct.hpp
+[10.272s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/joint_trajectory.hpp
+[10.272s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/joint_velocities.hpp
+[10.273s] -- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs
+[10.273s] -- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg
+[10.273s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[10.273s] -- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail
+[10.273s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__rosidl_typesupport_fastrtps_cpp.hpp
+[10.273s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__rosidl_typesupport_fastrtps_cpp.hpp
+[10.274s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__rosidl_typesupport_fastrtps_cpp.hpp
+[10.274s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/dds_fastrtps
+[10.274s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_typesupport_fastrtps_cpp.so
+[10.274s] -- Set runtime path of "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[10.274s] -- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs
+[10.274s] -- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg
+[10.275s] -- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail
+[10.275s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__rosidl_typesupport_introspection_cpp.hpp
+[10.275s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__rosidl_typesupport_introspection_cpp.hpp
+[10.275s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__type_support.cpp
+[10.275s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__rosidl_typesupport_introspection_cpp.hpp
+[10.275s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__type_support.cpp
+[10.276s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__type_support.cpp
+[10.278s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_typesupport_introspection_cpp.so
+[10.278s] -- Set runtime path of "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[10.278s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_typesupport_cpp.so
+[10.278s] -- Set runtime path of "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_typesupport_cpp.so" to ""
+[10.278s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/environment/pythonpath.sh
+[10.278s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/environment/pythonpath.dsv
+[10.278s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs-0.0.0-py3.10.egg-info
+[10.279s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[10.279s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[10.279s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[10.279s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[10.279s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs
+[10.279s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/libscorbot_msgs__rosidl_generator_py.so
+[10.279s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_c.c
+[10.280s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[10.280s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[10.280s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/__init__.py
+[10.280s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[10.280s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[10.280s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[10.280s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/msg
+[10.281s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/msg/_joint_trajectory_s.c
+[10.281s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/msg/_joint_velocities_s.c
+[10.281s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/msg/__init__.py
+[10.281s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/msg/_trajectory_point_s.c
+[10.281s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/msg/_joint_velocities.py
+[10.281s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/msg/_joint_trajectory.py
+[10.282s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/msg/_trajectory_point.py
+[10.377s] Listing '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs'...
+[10.378s] Compiling '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/__init__.py'...
+[10.378s] Listing '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/msg'...
+[10.378s] Compiling '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/msg/__init__.py'...
+[10.378s] Compiling '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/msg/_joint_trajectory.py'...
+[10.379s] Compiling '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/msg/_joint_velocities.py'...
+[10.379s] Compiling '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/msg/_trajectory_point.py'...
+[10.387s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[10.388s] -- Set runtime path of "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[10.388s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[10.390s] -- Set runtime path of "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[10.390s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[10.391s] -- Set runtime path of "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[10.391s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_generator_py.so
+[10.393s] -- Set runtime path of "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_generator_py.so" to ""
+[10.393s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/ament_index/resource_index/rust_packages/scorbot_msgs
+[10.393s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/rust
+[10.393s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/rust/Cargo.toml
+[10.394s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/rust/src
+[10.394s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/rust/src/lib.rs
+[10.394s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/rust/src/msg
+[10.394s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/rust/src/msg/rmw.rs
+[10.395s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/rust/src/msg.rs
+[10.395s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/rust/build.rs
+[10.396s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/msg/JointTrajectory.idl
+[10.396s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/msg/JointVelocities.idl
+[10.396s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/msg/TrajectoryPoint.idl
+[10.397s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/msg/JointTrajectory.msg
+[10.397s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/msg/JointVelocities.msg
+[10.398s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/msg/TrajectoryPoint.msg
+[10.398s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/ament_index/resource_index/package_run_dependencies/scorbot_msgs
+[10.399s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/ament_index/resource_index/parent_prefix_path/scorbot_msgs
+[10.399s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/environment/ament_prefix_path.sh
+[10.400s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/environment/ament_prefix_path.dsv
+[10.400s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/environment/path.sh
+[10.401s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/environment/path.dsv
+[10.401s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/local_setup.bash
+[10.401s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/local_setup.sh
+[10.402s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/local_setup.zsh
+[10.402s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/local_setup.dsv
+[10.403s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/package.dsv
+[10.403s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/ament_index/resource_index/packages/scorbot_msgs
+[10.404s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/export_scorbot_msgs__rosidl_generator_cExport.cmake
+[10.404s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/export_scorbot_msgs__rosidl_generator_cExport-noconfig.cmake
+[10.404s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/export_scorbot_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[10.405s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/export_scorbot_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[10.405s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/scorbot_msgs__rosidl_typesupport_introspection_cExport.cmake
+[10.406s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/scorbot_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[10.406s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/scorbot_msgs__rosidl_typesupport_cExport.cmake
+[10.407s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/scorbot_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[10.407s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/export_scorbot_msgs__rosidl_generator_cppExport.cmake
+[10.407s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/export_scorbot_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[10.408s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/export_scorbot_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[10.408s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/scorbot_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[10.409s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/scorbot_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[10.410s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/scorbot_msgs__rosidl_typesupport_cppExport.cmake
+[10.410s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/scorbot_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[10.411s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/export_scorbot_msgs__rosidl_generator_pyExport.cmake
+[10.411s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/export_scorbot_msgs__rosidl_generator_pyExport-noconfig.cmake
+[10.411s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/rosidl_cmake-extras.cmake
+[10.412s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[10.412s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[10.413s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[10.413s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[10.413s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[10.414s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[10.414s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/scorbot_msgsConfig.cmake
+[10.415s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/scorbot_msgsConfig-version.cmake
+[10.415s] -- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/package.xml
+[10.419s] Invoked command in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs

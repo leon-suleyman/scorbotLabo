@@ -9,16 +9,47 @@ endif()
 find_package(ament_cmake REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
-# find_package(<dependency> REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(scorbot_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(universal_teleop_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
+#find_package(trajectory_msgs REQUIRED)
+#find_package(control_msgs REQUIRED)
+#find_package(actionlib_msgs REQUIRED)
 
-add_executable(scorbot src/scorbot.cpp)
+set(msg_dependencies "scorbot_msgs" "std_msgs" "universal_teleop_msgs" "geometry_msgs" "sensor_msgs")#"trajectory_msgs" "control_msgs" "actionlib_msgs")
+
+
+add_executable(scorbot src/scorbot.cpp src/scorbot_node.cpp)
+ament_target_dependencies(scorbot rclcpp ${msg_dependencies})
+
 target_include_directories(scorbot PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
 target_compile_features(scorbot PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
 
+
+target_link_libraries(scorbot
+rclcpp::rclcpp
+${scorbot_msgs_TARGETS}
+${std_msgs_TARGETS}
+${universal_teleop_msgs_TARGETS}
+${geometry_msgs_TARGETS}
+${sensor_msgs_TARGETS}
+#${trajectory_msgs_TARGETS}
+#${control_msgs_TARGETS}
+#${actionlib_teleop_msgs_TARGETS}
+)
+
 install(TARGETS scorbot
   DESTINATION lib/${PROJECT_NAME})
+
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}/
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

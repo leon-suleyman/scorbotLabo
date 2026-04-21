@@ -1,0 +1,21 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/scorbot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/scorbot_msgs/msg/detail/joint_trajectory__type_support.c.o"
+  "CMakeFiles/scorbot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/scorbot_msgs/msg/detail/joint_trajectory__type_support.c.o.d"
+  "CMakeFiles/scorbot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/scorbot_msgs/msg/detail/joint_velocities__type_support.c.o"
+  "CMakeFiles/scorbot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/scorbot_msgs/msg/detail/joint_velocities__type_support.c.o.d"
+  "CMakeFiles/scorbot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/scorbot_msgs/msg/detail/trajectory_point__type_support.c.o"
+  "CMakeFiles/scorbot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/scorbot_msgs/msg/detail/trajectory_point__type_support.c.o.d"
+  "libscorbot_msgs__rosidl_typesupport_introspection_c.pdb"
+  "libscorbot_msgs__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/scorbot_msgs/msg/detail/joint_trajectory__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/scorbot_msgs/msg/detail/joint_trajectory__type_support.c"
+  "rosidl_typesupport_introspection_c/scorbot_msgs/msg/detail/joint_velocities__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/scorbot_msgs/msg/detail/joint_velocities__type_support.c"
+  "rosidl_typesupport_introspection_c/scorbot_msgs/msg/detail/trajectory_point__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/scorbot_msgs/msg/detail/trajectory_point__type_support.c"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/scorbot_msgs__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

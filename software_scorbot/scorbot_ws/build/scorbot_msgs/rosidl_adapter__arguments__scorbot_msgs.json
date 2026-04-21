@@ -1,0 +1,8 @@
+{
+  "package_name": "scorbot_msgs",
+  "non_idl_tuples": [
+    "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot_msgs:msg/JointTrajectory.msg",
+    "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot_msgs:msg/JointVelocities.msg",
+    "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot_msgs:msg/TrajectoryPoint.msg"
+  ]
+}

@@ -12,6 +12,19 @@
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 
+  <depend>scorbot_msgs</depend>
+  <depend>universal_teleop_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <!--
+  <depend>trajectory_msgs</depend>
+  <depend>control_msgs</depend>
+  <depend>actionlib_msgs</depend>
+  -->
+
+  <depend>rclcpp</depend>
+  <depend>universal_teleop</depend>
+
   <export>
     <build_type>ament_cmake</build_type>
   </export>

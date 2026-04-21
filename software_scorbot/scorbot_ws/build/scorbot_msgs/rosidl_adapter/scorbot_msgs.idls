@@ -1,0 +1,3 @@
+/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs/rosidl_adapter/scorbot_msgs:msg/JointTrajectory.idl
+/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs/rosidl_adapter/scorbot_msgs:msg/JointVelocities.idl
+/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs/rosidl_adapter/scorbot_msgs:msg/TrajectoryPoint.idl

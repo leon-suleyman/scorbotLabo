@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "scorbot_msgs__rs",
+		"source" : "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs/scorbot_msgs__rs"
+	}
+}

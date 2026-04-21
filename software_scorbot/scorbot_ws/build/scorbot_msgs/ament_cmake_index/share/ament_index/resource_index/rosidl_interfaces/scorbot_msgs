@@ -1,0 +1,6 @@
+msg/JointTrajectory.idl
+msg/JointTrajectory.msg
+msg/JointVelocities.idl
+msg/JointVelocities.msg
+msg/TrajectoryPoint.idl
+msg/TrajectoryPoint.msg
