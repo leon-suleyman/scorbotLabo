@@ -1,1 +1,1 @@
-scorbot_msgs;universal_teleop_msgs;geometry_msgs;rclcpp;universal_teleop;ament_lint_auto;ament_lint_common
+scorbot_msgs;universal_teleop_msgs;geometry_msgs;sensor_msgs;rclcpp;universal_teleop;ament_lint_auto;ament_lint_common

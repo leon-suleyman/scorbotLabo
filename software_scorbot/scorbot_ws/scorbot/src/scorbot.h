@@ -1,30 +1,30 @@
 #ifndef SCORBOT_H
 #define SCORBOT_H
 
-#include <rclcpp/rclcpp.h>
+#include <rclcpp/rclcpp.hpp>
 #include <math.h>
 #include <string>
 #include <vector>
 #include <iostream>
 #include <fstream> 
 
-#include <universal_teleop/Control.h>
-#include <universal_teleop/Event.h>
-#include <std_msgs/Empty.h>
-#include <std_msgs/Int32.h>
-#include <std_msgs/Float64.h>
-#include <std_msgs/Int32MultiArray.h>
-#include <std_msgs/String.h>
-#include <scorbot/JointVelocities.h>
-#include <scorbot/JointTrajectory.h>
-#include <sensor_msgs/JointState.h>
+#include <universal_teleop_msgs/msg/control.hpp>
+#include <universal_teleop_msgs/msg/event.hpp>
+#include <std_msgs/msg/empty.hpp>
+#include <std_msgs/msg/int32.hpp>
+#include <std_msgs/msg/float64.hpp>
+#include <std_msgs/msg/int32_multi_array.hpp>
+#include <std_msgs/msg/string.hpp>
+#include <scorbot_msgs/msg/joint_velocities.hpp>
+#include <scorbot_msgs/msg/joint_trajectory.hpp>
+#include <sensor_msgs/msg/joint_state.hpp>
 /*
-#include <trajectory_msgs/JointTrajectory.h>
-#include <control_msgs/FollowJointTrajectoryActionGoal.h>
-#include <control_msgs/FollowJointTrajectoryActionResult.h>
-#include <control_msgs/FollowJointTrajectoryFeedback.h>
-#include <actionlib_msgs/GoalID.h>
-#include <actionlib_msgs/GoalStatus.h>
+#include <trajectory_msgs/msg/joint_trajectory.hpp>
+#include <control_msgs/msg/follow_joint_trajectory_action_goal.hpp>
+#include <control_msgs/msg/follow_joint_trajectory_action_result.hpp>
+#include <control_msgs/msg/follow_joint_trajectory_feedback.hpp>
+#include <actionlib_msgs/msg/goalID.hpp>
+#include <actionlib_msgs/msg/goal_status.hpp>
 */
 
 
@@ -34,27 +34,27 @@ namespace scorbot {
     public:
       Teleop(rclcpp::Node& n);
 
-      rclcpp::Subscriber joint_trajectory_sub;
-      rclcpp::Subscriber joint_states_sub;
-      //void on_trajectory(const control_msgs::FollowJointTrajectoryActionGoalConstPtr& msg);
-      void on_joint_states(const sensor_msgs::JointStateConstPtr& msg);
-      rclcpp::Publisher joint_pos_array_pub;
-      rclcpp::Publisher trajectory_finished_pub;
+      std::shared_ptr<scorbot_msgs::msg::JointTrajectory> joint_trajectory_sub;
+      std::shared_ptr<scorbot_msgs::msg::JointState> joint_states_sub;
+      //void on_trajectory(const control_msgs::msg::FollowJointTrajectoryActionGoal& msg);
+      void on_joint_states(const sensor_msgs::msg::JointState& msg);
+      std::shared_ptr<std_msgs::msg::Int32MultiArray> joint_pos_array_pub;
+      //std::shared_ptr<control_msgs::msg::FollowJointTrajectoryActionResult> trajectory_finished_pub;
 
 
-      rclcpp::Subscriber tolerance_param_sub;
-      rclcpp::Subscriber feedback_filename_sub;
-      void on_tolerance(const std_msgs::Float64ConstPtr& msg);
-      void on_filename(const std_msgs::StringConstPtr& msg);
+      std::shared_ptr<std_msgs::msg::Float64> tolerance_param_sub;
+      std::shared_ptr<std_msgs::msg::String> feedback_filename_sub;
+      void on_tolerance(const std_msgs::msg::Float64& msg);
+      void on_filename(const std_msgs::msg::String& msg);
 
-      rclcpp::Subscriber sub_events, sub_control;
-      rclcpp::Publisher vel_pub, home_pub;
-      void on_controls(const universal_teleop::ControlConstPtr& msg);
-      void on_events(const universal_teleop::EventConstPtr& msg);
+      std::shared_ptr<universal_teleop_msgs::msg::Event> sub_events;
+      std::shared_ptr<universal_teleop_msgs::msg::Control> sub_control;
+      std::shared_ptr<scorbot_msgs::msg::JointVelocities> vel_pub;
+      std::shared_ptr<std_msgs::msg::Empty> home_pub;
+      void on_controls(const universal_teleop_msgs::msg::Control& msg);
+      void on_events(const universal_teleop_msgs::msg::Event& msg);
 
-      rclcpp::Publisher claw_catch_pub, claw_release_pub;
-      
-      rclcpp::Publisher debug_pub;
+      std::shared_ptr<std_msgs::msg::Empty> claw_catch_pub, claw_release_pub;
 
       void on_control_cycle(const rclcpp::TimerEvent& ev);
       void check_trajectory_progress();
@@ -76,14 +76,14 @@ namespace scorbot {
       std::vector<bool> reached_current_goal;
       int current_goal_index;
       int current_goal_length;
-      actionlib_msgs::GoalID trajectory_goal_id;
+      actionlib_msgs::msg::GoalID trajectory_goal_id;
 
-      scorbot::JointVelocities velocities;
+      scorbot_msgs::msg::JointVelocities velocities;
       std::vector<int> joint_states;
 
-      std_msgs::Empty empty_msg;
-      std_msgs::Int32MultiArray joint_pos_msg;
-      control_msgs::FollowJointTrajectoryActionResult result_msg;
+      std_msgs::msg::Empty empty_msg;
+      std_msgs::msg::Int32MultiArray joint_pos_msg;
+      control_msgs::msg::FollowJointTrajectoryActionResult result_msg;
   };
 }
 

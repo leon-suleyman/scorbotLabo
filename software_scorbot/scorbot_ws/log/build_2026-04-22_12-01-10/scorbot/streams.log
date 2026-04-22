@@ -1,0 +1,19 @@
+[0.018s] Invoking command in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot': AMENT_PREFIX_PATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs:/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop:/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs:/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard:/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot -- -j4 -l4
+[0.093s] [ 66%] [32mBuilding CXX object CMakeFiles/scorbot.dir/src/scorbot.cpp.o[0m
+[0.093s] [ 66%] [32mBuilding CXX object CMakeFiles/scorbot.dir/src/scorbot_node.cpp.o[0m
+[0.513s] In file included from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[0.513s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:16:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/int32MultiArray.hpp: No such file or directory
+[0.513s]    16 | #include [01;31m[K<std_msgs/msg/int32MultiArray.hpp>[m[K
+[0.513s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.515s] In file included from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot_node.cpp:2[m[K:
+[0.516s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:16:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/int32MultiArray.hpp: No such file or directory
+[0.516s]    16 | #include [01;31m[K<std_msgs/msg/int32MultiArray.hpp>[m[K
+[0.516s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.516s] compilation terminated.
+[0.516s] compilation terminated.
+[0.517s] gmake[2]: *** [CMakeFiles/scorbot.dir/build.make:76: CMakeFiles/scorbot.dir/src/scorbot.cpp.o] Error 1
+[0.517s] gmake[2]: *** Waiting for unfinished jobs....
+[0.519s] gmake[2]: *** [CMakeFiles/scorbot.dir/build.make:90: CMakeFiles/scorbot.dir/src/scorbot_node.cpp.o] Error 1
+[0.519s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/scorbot.dir/all] Error 2
+[0.519s] gmake: *** [Makefile:146: all] Error 2
+[0.523s] Invoked command in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot' returned '2': AMENT_PREFIX_PATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs:/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop:/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs:/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard:/home/leon/robotica/scorbotLabo/universal_teleop/install/keyboard_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot -- -j4 -l4

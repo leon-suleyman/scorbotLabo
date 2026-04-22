@@ -1,1 +1,1 @@
-geometry_msgs:rclcpp:scorbot_msgs:universal_teleop:universal_teleop_msgs
+geometry_msgs:rclcpp:scorbot_msgs:sensor_msgs:universal_teleop:universal_teleop_msgs

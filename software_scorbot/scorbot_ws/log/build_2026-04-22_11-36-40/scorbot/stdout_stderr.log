@@ -1,0 +1,17 @@
+[ 66%] [32mBuilding CXX object CMakeFiles/scorbot.dir/src/scorbot_node.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/scorbot.dir/src/scorbot.cpp.o[0m
+In file included from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot_node.cpp:2[m[K:
+[01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:11:10:[m[K [01;31m[Kfatal error: [m[Kuniversal_teleop_msgs/msg/Control.h: No such file or directory
+   11 | #include [01;31m[K<universal_teleop_msgs/msg/Control.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:11:10:[m[K [01;31m[Kfatal error: [m[Kuniversal_teleop_msgs/msg/Control.h: No such file or directory
+   11 | #include [01;31m[K<universal_teleop_msgs/msg/Control.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+compilation terminated.
+gmake[2]: *** [CMakeFiles/scorbot.dir/build.make:90: CMakeFiles/scorbot.dir/src/scorbot_node.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/scorbot.dir/build.make:76: CMakeFiles/scorbot.dir/src/scorbot.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/scorbot.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
