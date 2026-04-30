@@ -32,10 +32,10 @@ namespace scorbot {
   class Teleop
   {
     public:
-      Teleop(rclcpp::Node& n);
+      Teleop(std::shared_ptr<rclcpp::Node> n);
 
       std::shared_ptr<scorbot_msgs::msg::JointTrajectory> joint_trajectory_sub;
-      std::shared_ptr<scorbot_msgs::msg::JointState> joint_states_sub;
+      std::shared_ptr<sensor_msgs::msg::JointState> joint_states_sub;
       //void on_trajectory(const control_msgs::msg::FollowJointTrajectoryActionGoal& msg);
       void on_joint_states(const sensor_msgs::msg::JointState& msg);
       std::shared_ptr<std_msgs::msg::Int32MultiArray> joint_pos_array_pub;
@@ -56,12 +56,13 @@ namespace scorbot {
 
       std::shared_ptr<std_msgs::msg::Empty> claw_catch_pub, claw_release_pub;
 
-      void on_control_cycle(const rclcpp::TimerEvent& ev);
+      void on_control_cycle();
       void check_trajectory_progress();
 
     private:
+      std::shared_ptr<rclcpp::Node> node;
       int control_frequency;
-      rclcpp::Timer control_timer;
+      std::shared_ptr<rclcpp::timer::WallTimer<>> control_timer;
       bool override_enabled, slow_mode_enabled;
       double joint_goal_tolerance;
       std::string filename;

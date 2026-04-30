@@ -20,29 +20,30 @@ using namespace std;
 #define RAD2ENC4(x) ((int32_t)(x / (double)0.000054786))
 #define RAD2ENC5(x) ((int32_t)(x / (double)0.000163399))
 
-scorbot::Teleop::Teleop(ros::NodeHandle& n)
+scorbot::Teleop::Teleop(std::shared_ptr<rclcpp::Node> n)
 {
-  n.param("control_frequency", control_frequency, 5);
+  node = n;
+  node->param("control_frequency", control_frequency, 5);
 
-  sub_control = n.subscribe("/universal_teleop/controls", 1, &Teleop::on_controls, this);
-  sub_events = n.subscribe("/universal_teleop/events", 1, &Teleop::on_events, this);
-  vel_pub = n.advertise<scorbot::JointVelocities>("/scorbot/joint_velocities", 1);
-  home_pub = n.advertise<std_msgs::Empty>("/scorbot/home", 1);
+  sub_control = node->subscribe("/universal_teleop/controls", 1, &Teleop::on_controls, this);
+  sub_events = node->subscribe("/universal_teleop/events", 1, &Teleop::on_events, this);
+  vel_pub = node->advertise<scorbot::JointVelocities>("/scorbot/joint_velocities", 1);
+  home_pub = node->advertise<std_msgs::Empty>("/scorbot/home", 1);
   
-  joint_trajectory_sub = n.subscribe<control_msgs::FollowJointTrajectoryActionGoal>("/scorbot/arm_position_controller/follow_joint_trajectory/goal", 1, &Teleop::on_trajectory, this);
-  //joint_trajectory_pub = n.advertise<scorbot::JointTrajectory>("/scorbot/joint_path_command_enc", 1);
-  joint_pos_array_pub = n.advertise<std_msgs::Int32MultiArray>("/scorbot/joint_path_command_enc", 1);
-  //goal_reached_sub = n.subscribe<std_msgs::Empty>("/scorbot/goal_reached", 1, &Teleop::on_goal_reached, this);
-  trajectory_finished_pub = n.advertise<control_msgs::FollowJointTrajectoryActionResult>("/arm_position_controller/follow_joint_trajectory/result", 1);
+  joint_trajectory_sub = node->subscribe<control_msgs::FollowJointTrajectoryActionGoal>("/scorbot/arm_position_controller/follow_joint_trajectory/goal", 1, &Teleop::on_trajectory, this);
+  //joint_trajectory_pub = node->advertise<scorbot::JointTrajectory>("/scorbot/joint_path_command_enc", 1);
+  joint_pos_array_pub = node->advertise<std_msgs::Int32MultiArray>("/scorbot/joint_path_command_enc", 1);
+  //goal_reached_sub = node->subscribe<std_msgs::Empty>("/scorbot/goal_reached", 1, &Teleop::on_goal_reached, this);
+  trajectory_finished_pub = node->advertise<control_msgs::FollowJointTrajectoryActionResult>("/arm_position_controller/follow_joint_trajectory/result", 1);
 
 
-  tolerance_param_sub = n.subscribe<std_msgs::Float64>("/scorbot/params/tolerance", 1, &Teleop::on_tolerance, this);
-  feedback_filename_sub = n.subscribe<std_msgs::String>("/scorbot/params/filename", 1, &Teleop::on_filename, this);
+  tolerance_param_sub = node->subscribe<std_msgs::Float64>("/scorbot/params/tolerance", 1, &Teleop::on_tolerance, this);
+  feedback_filename_sub = node->subscribe<std_msgs::String>("/scorbot/params/filename", 1, &Teleop::on_filename, this);
 
-  claw_catch_pub = n.advertise<std_msgs::Empty>("/scorbot/claw_catch", 1);
-  claw_release_pub = n.advertise<std_msgs::Empty>("/scorbot/claw_release", 1);
+  claw_catch_pub = node->advertise<std_msgs::Empty>("/scorbot/claw_catch", 1);
+  claw_release_pub = node->advertise<std_msgs::Empty>("/scorbot/claw_release", 1);
 
-  joint_states_sub = n.subscribe<sensor_msgs::JointState>("/joint_states", 1, &Teleop::on_joint_states, this);
+  joint_states_sub = node->subscribe<sensor_msgs::JointState>("/joint_states", 1, &Teleop::on_joint_states, this);
 
   override_enabled = slow_mode_enabled = false;
   
@@ -71,7 +72,7 @@ scorbot::Teleop::Teleop(ros::NodeHandle& n)
   velocities.joint_velocities.resize(5, 0);
   velocities.scaled_flag = false;
 
-  control_timer = n.createTimer(ros::Duration(ros::Rate(control_frequency)), &Teleop::on_control_cycle, this);
+  control_timer = n->create_wall_timer(rclcpp::Rate(control_frequency).expected_cycle_time(), std::bind(&Teleop::on_control_cycle, n));
 
 
   }
@@ -501,10 +502,10 @@ void scorbot::Teleop::on_events(const universal_teleop::EventConstPtr& msg)
   }
 }
 
-void scorbot::Teleop::on_control_cycle(const ros::TimerEvent& ev)
+void scorbot::Teleop::on_control_cycle()
 {
   if (override_enabled) {
-    velocities.header.stamp = ev.current_real;
+    velocities.header.stamp = node->now();
     for (int i = 0; i < velocities.joint_velocities.size(); i++) {
 	  velocities.joint_velocities[i] = joint_states[i] * (slow_mode_enabled ? 0.5 : 1);
 	}
