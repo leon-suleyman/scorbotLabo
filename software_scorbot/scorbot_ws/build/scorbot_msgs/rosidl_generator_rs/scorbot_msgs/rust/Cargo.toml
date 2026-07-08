@@ -15,5 +15,5 @@ std_msgs = "*"
 [features]
 serde = ['dep:serde', 'dep:serde-big-array', 'rosidl_runtime_rs/serde', 'builtin_interfaces/serde', 'std_msgs/serde']
 
-[package.metadata.rclrs]
-reexport = true
+[package.metadata.ros-env]
+include = true

@@ -1,0 +1,773 @@
+[0.026s] Invoking command in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot': AMENT_PREFIX_PATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs:/home/leon/microros_ws/install/micro_ros_demos_rclc:/home/leon/microros_ws/install/common_interfaces:/home/leon/microros_ws/install/visualization_msgs:/home/leon/microros_ws/install/test_msgs:/home/leon/microros_ws/install/example_interfaces:/home/leon/microros_ws/install/action_msgs:/home/leon/microros_ws/install/unique_identifier_msgs:/home/leon/microros_ws/install/trajectory_msgs:/home/leon/microros_ws/install/stereo_msgs:/home/leon/microros_ws/install/std_srvs:/home/leon/microros_ws/install/shape_msgs:/home/leon/microros_ws/install/sensor_msgs:/home/leon/microros_ws/install/nav_msgs:/home/leon/microros_ws/install/diagnostic_msgs:/home/leon/microros_ws/install/geometry_msgs:/home/leon/microros_ws/install/actionlib_msgs:/home/leon/microros_ws/install/std_msgs:/home/leon/microros_ws/install/statistics_msgs:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_test_msg:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp_tests:/home/leon/microros_ws/install/rmw_microxrcedds:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c_tests:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/leon/microros_ws/install/rosgraph_msgs:/home/leon/microros_ws/install/rclc_parameter:/home/leon/microros_ws/install/rclc:/home/leon/microros_ws/install/composition_interfaces:/home/leon/microros_ws/install/rcl_interfaces:/home/leon/microros_ws/install/microxrcedds_client:/home/leon/microros_ws/install/microcdr:/home/leon/microros_ws/install/micro_ros_utilities:/home/leon/microros_ws/install/micro_ros_setup:/home/leon/microros_ws/install/micro_ros_agent:/home/leon/microros_ws/install/micro_ros_msgs:/home/leon/microros_ws/install/lifecycle_msgs:/home/leon/microros_ws/install/complex_msgs:/home/leon/microros_ws/install/builtin_interfaces:/home/leon/microros_ws/install/sensor_msgs_py:/opt/ros/humble LD_LIBRARY_PATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot -- -j4 -l4
+[0.110s] [35m[1mConsolidate compiler generated dependencies of target scorbot[0m
+[0.147s] [ 33%] [32mBuilding CXX object CMakeFiles/scorbot.dir/src/scorbot.cpp.o[0m
+[0.150s] [ 66%] [32mBuilding CXX object CMakeFiles/scorbot.dir/src/scorbot_node.cpp.o[0m
+[0.536s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:379:9:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcomment-Wcomment]8;;[m[K]
+[0.536s]   379 |         /*
+[0.536s]       |          
+[4.386s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[4.386s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot_node.cpp:11:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kscorbot[m[K’ is not a member of ‘[01m[Kscorbot[m[K’; did you mean ‘[01m[Kscorbot[m[K’?
+[4.387s]    11 |   scorbot::Teleop t = scorbot::[01;31m[Kscorbot[m[K(n);
+[4.387s]       |                                [01;31m[K^~~~~~~[m[K
+[4.387s] In file included from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot_node.cpp:2[m[K:
+[4.388s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:31:11:[m[K [01;36m[Knote: [m[K‘[01m[Kscorbot[m[K’ declared here
+[4.388s]    31 | namespace [01;36m[Kscorbot[m[K {
+[4.389s]       |           [01;36m[K^~~~~~~[m[K
+[4.754s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:[m[K In constructor ‘[01m[Kscorbot::Teleop::Teleop(std::shared_ptr<rclcpp::Node>)[m[K’:
+[4.754s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:29:154:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd::shared_ptr<universal_teleop_msgs::msg::Control_<std::allocator<void> > >[m[K’ and ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<universal_teleop_msgs::msg::Control_<std::allocator<void> >, std::allocator<void>, universal_teleop_msgs::msg::Control_<std::allocator<void> >, universal_teleop_msgs::msg::Control_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<universal_teleop_msgs::msg::Control_<std::allocator<void> >, std::allocator<void> > > >[m[K’)
+[4.754s]    29 |   sub_control = node->create_subscription<universal_teleop_msgs::msg::Control>("/universal_teleop/controls", 1, std::bind(&Teleop::on_controls, this, _1)[01;31m[K)[m[K;
+[4.754s]       |                                                                                                                                                          [01;31m[K^[m[K
+[4.767s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[4.767s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[4.767s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[4.768s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[4.768s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Yp>&) [with _Yp = _Yp; _Tp = universal_teleop_msgs::msg::Control_<std::allocator<void> >][m[K’
+[4.768s]   363 |         [01;36m[Koperator[m[K=(const shared_ptr<_Yp>& __r) noexcept
+[4.769s]       |         [01;36m[K^~~~~~~~[m[K
+[4.769s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.769s] /usr/include/c++/11/bits/shared_ptr.h: In substitution of ‘[01m[Ktemplate<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = const std::shared_ptr<rclcpp::Subscription<universal_teleop_msgs::msg::Control_<std::allocator<void> >, std::allocator<void>, universal_teleop_msgs::msg::Control_<std::allocator<void> >, universal_teleop_msgs::msg::Control_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<universal_teleop_msgs::msg::Control_<std::allocator<void> >, std::allocator<void> > > >&; _Tp = universal_teleop_msgs::msg::Control_<std::allocator<void> >][m[K’:
+[4.769s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:2:[m[K   required by substitution of ‘[01m[Ktemplate<class _Yp> std::shared_ptr<universal_teleop_msgs::msg::Control_<std::allocator<void> > >::_Assignable<const std::shared_ptr<_Tp>&> std::shared_ptr<universal_teleop_msgs::msg::Control_<std::allocator<void> > >::operator=<_Yp>(const std::shared_ptr<_Tp>&) [with _Yp = rclcpp::Subscription<universal_teleop_msgs::msg::Control_<std::allocator<void> >, std::allocator<void>, universal_teleop_msgs::msg::Control_<std::allocator<void> >, universal_teleop_msgs::msg::Control_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<universal_teleop_msgs::msg::Control_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[4.769s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:29:154:[m[K   required from here
+[4.769s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:130:15:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, std::shared_ptr<universal_teleop_msgs::msg::Control_<std::allocator<void> > >&>[m[K’
+[4.770s]   130 |         using [01;31m[K_Assignable[m[K = typename enable_if<
+[4.771s]       |               [01;31m[K^~~~~~~~~~~[m[K
+[4.771s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:374:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Yp = _Yp; _Tp = universal_teleop_msgs::msg::Control_<std::allocator<void> >][m[K’
+[4.772s]   374 |         [01;36m[Koperator[m[K=(auto_ptr<_Yp>&& __r)
+[4.772s]       |         [01;36m[K^~~~~~~~[m[K
+[4.772s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:374:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.773s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:29:154:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<universal_teleop_msgs::msg::Control_<std::allocator<void> >, std::allocator<void>, universal_teleop_msgs::msg::Control_<std::allocator<void> >, universal_teleop_msgs::msg::Control_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<universal_teleop_msgs::msg::Control_<std::allocator<void> >, std::allocator<void> > > >[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<_Up>[m[K’
+[4.773s]    29 |   sub_control = node->create_subscription<universal_teleop_msgs::msg::Control>("/universal_teleop/controls", 1, std::bind(&Teleop::on_controls, this, _1)[01;36m[K)[m[K;
+[4.773s]       |                                                                                                                                                          [01;36m[K^[m[K
+[4.773s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[4.773s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[4.773s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[4.773s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[4.774s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Yp>&&) [with _Yp = _Yp; _Tp = universal_teleop_msgs::msg::Control_<std::allocator<void> >][m[K’
+[4.775s]   391 |         [01;36m[Koperator[m[K=(shared_ptr<_Yp>&& __r) noexcept
+[4.775s]       |         [01;36m[K^~~~~~~~[m[K
+[4.775s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.775s] /usr/include/c++/11/bits/shared_ptr.h: In substitution of ‘[01m[Ktemplate<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = std::shared_ptr<rclcpp::Subscription<universal_teleop_msgs::msg::Control_<std::allocator<void> >, std::allocator<void>, universal_teleop_msgs::msg::Control_<std::allocator<void> >, universal_teleop_msgs::msg::Control_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<universal_teleop_msgs::msg::Control_<std::allocator<void> >, std::allocator<void> > > >; _Tp = universal_teleop_msgs::msg::Control_<std::allocator<void> >][m[K’:
+[4.776s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:2:[m[K   required by substitution of ‘[01m[Ktemplate<class _Yp> std::shared_ptr<universal_teleop_msgs::msg::Control_<std::allocator<void> > >::_Assignable<std::shared_ptr<_Tp> > std::shared_ptr<universal_teleop_msgs::msg::Control_<std::allocator<void> > >::operator=<_Yp>(std::shared_ptr<_Tp>&&) [with _Yp = rclcpp::Subscription<universal_teleop_msgs::msg::Control_<std::allocator<void> >, std::allocator<void>, universal_teleop_msgs::msg::Control_<std::allocator<void> >, universal_teleop_msgs::msg::Control_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<universal_teleop_msgs::msg::Control_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[4.776s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:29:154:[m[K   required from here
+[4.776s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:130:15:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, std::shared_ptr<universal_teleop_msgs::msg::Control_<std::allocator<void> > >&>[m[K’
+[4.776s]   130 |         using [01;31m[K_Assignable[m[K = typename enable_if<
+[4.776s]       |               [01;31m[K^~~~~~~~~~~[m[K
+[4.776s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:399:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Yp = _Yp; _Del = _Del; _Tp = universal_teleop_msgs::msg::Control_<std::allocator<void> >][m[K’
+[4.776s]   399 |         [01;36m[Koperator[m[K=(unique_ptr<_Yp, _Del>&& __r)
+[4.777s]       |         [01;36m[K^~~~~~~~[m[K
+[4.777s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:399:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.777s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:29:154:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<universal_teleop_msgs::msg::Control_<std::allocator<void> >, std::allocator<void>, universal_teleop_msgs::msg::Control_<std::allocator<void> >, universal_teleop_msgs::msg::Control_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<universal_teleop_msgs::msg::Control_<std::allocator<void> >, std::allocator<void> > > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<_Tp, _Dp>[m[K’
+[4.777s]    29 |   sub_control = node->create_subscription<universal_teleop_msgs::msg::Control>("/universal_teleop/controls", 1, std::bind(&Teleop::on_controls, this, _1)[01;36m[K)[m[K;
+[4.777s]       |                                                                                                                                                          [01;36m[K^[m[K
+[4.777s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[4.777s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[4.777s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[4.780s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[4.780s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:359:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = universal_teleop_msgs::msg::Control_<std::allocator<void> >][m[K’
+[4.780s]   359 |       shared_ptr& [01;36m[Koperator[m[K=(const shared_ptr&) noexcept = default;
+[4.781s]       |                   [01;36m[K^~~~~~~~[m[K
+[4.781s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:359:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<universal_teleop_msgs::msg::Control_<std::allocator<void> >, std::allocator<void>, universal_teleop_msgs::msg::Control_<std::allocator<void> >, universal_teleop_msgs::msg::Control_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<universal_teleop_msgs::msg::Control_<std::allocator<void> >, std::allocator<void> > > >[m[K’ to ‘[01m[Kconst std::shared_ptr<universal_teleop_msgs::msg::Control_<std::allocator<void> > >&[m[K’
+[4.781s]   359 |       shared_ptr& operator=([01;36m[Kconst shared_ptr&[m[K) noexcept = default;
+[4.782s]       |                             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[4.782s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:383:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = universal_teleop_msgs::msg::Control_<std::allocator<void> >][m[K’
+[4.783s]   383 |       [01;36m[Koperator[m[K=(shared_ptr&& __r) noexcept
+[4.783s]       |       [01;36m[K^~~~~~~~[m[K
+[4.783s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:383:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<universal_teleop_msgs::msg::Control_<std::allocator<void> >, std::allocator<void>, universal_teleop_msgs::msg::Control_<std::allocator<void> >, universal_teleop_msgs::msg::Control_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<universal_teleop_msgs::msg::Control_<std::allocator<void> >, std::allocator<void> > > >[m[K’ to ‘[01m[Kstd::shared_ptr<universal_teleop_msgs::msg::Control_<std::allocator<void> > >&&[m[K’
+[4.783s]   383 |       operator=([01;36m[Kshared_ptr&& __r[m[K) noexcept
+[4.783s]       |                 [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[4.861s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:30:147:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd::shared_ptr<universal_teleop_msgs::msg::Event_<std::allocator<void> > >[m[K’ and ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<universal_teleop_msgs::msg::Event_<std::allocator<void> >, std::allocator<void>, universal_teleop_msgs::msg::Event_<std::allocator<void> >, universal_teleop_msgs::msg::Event_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<universal_teleop_msgs::msg::Event_<std::allocator<void> >, std::allocator<void> > > >[m[K’)
+[4.861s]    30 |   sub_events = node->create_subscription<universal_teleop_msgs::msg::Event>("/universal_teleop/events", 1, std::bind(&Teleop::on_events, this, _1)[01;31m[K)[m[K;
+[4.862s]       |                                                                                                                                                   [01;31m[K^[m[K
+[4.862s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[4.862s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[4.862s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[4.862s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[4.862s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Yp>&) [with _Yp = _Yp; _Tp = universal_teleop_msgs::msg::Event_<std::allocator<void> >][m[K’
+[4.862s]   363 |         [01;36m[Koperator[m[K=(const shared_ptr<_Yp>& __r) noexcept
+[4.862s]       |         [01;36m[K^~~~~~~~[m[K
+[4.863s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.865s] /usr/include/c++/11/bits/shared_ptr.h: In substitution of ‘[01m[Ktemplate<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = const std::shared_ptr<rclcpp::Subscription<universal_teleop_msgs::msg::Event_<std::allocator<void> >, std::allocator<void>, universal_teleop_msgs::msg::Event_<std::allocator<void> >, universal_teleop_msgs::msg::Event_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<universal_teleop_msgs::msg::Event_<std::allocator<void> >, std::allocator<void> > > >&; _Tp = universal_teleop_msgs::msg::Event_<std::allocator<void> >][m[K’:
+[4.865s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:2:[m[K   required by substitution of ‘[01m[Ktemplate<class _Yp> std::shared_ptr<universal_teleop_msgs::msg::Event_<std::allocator<void> > >::_Assignable<const std::shared_ptr<_Tp>&> std::shared_ptr<universal_teleop_msgs::msg::Event_<std::allocator<void> > >::operator=<_Yp>(const std::shared_ptr<_Tp>&) [with _Yp = rclcpp::Subscription<universal_teleop_msgs::msg::Event_<std::allocator<void> >, std::allocator<void>, universal_teleop_msgs::msg::Event_<std::allocator<void> >, universal_teleop_msgs::msg::Event_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<universal_teleop_msgs::msg::Event_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[4.866s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:30:147:[m[K   required from here
+[4.866s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:130:15:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, std::shared_ptr<universal_teleop_msgs::msg::Event_<std::allocator<void> > >&>[m[K’
+[4.867s]   130 |         using [01;31m[K_Assignable[m[K = typename enable_if<
+[4.867s]       |               [01;31m[K^~~~~~~~~~~[m[K
+[4.867s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:374:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Yp = _Yp; _Tp = universal_teleop_msgs::msg::Event_<std::allocator<void> >][m[K’
+[4.867s]   374 |         [01;36m[Koperator[m[K=(auto_ptr<_Yp>&& __r)
+[4.867s]       |         [01;36m[K^~~~~~~~[m[K
+[4.867s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:374:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.869s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:30:147:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<universal_teleop_msgs::msg::Event_<std::allocator<void> >, std::allocator<void>, universal_teleop_msgs::msg::Event_<std::allocator<void> >, universal_teleop_msgs::msg::Event_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<universal_teleop_msgs::msg::Event_<std::allocator<void> >, std::allocator<void> > > >[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<_Up>[m[K’
+[4.869s]    30 |   sub_events = node->create_subscription<universal_teleop_msgs::msg::Event>("/universal_teleop/events", 1, std::bind(&Teleop::on_events, this, _1)[01;36m[K)[m[K;
+[4.869s]       |                                                                                                                                                   [01;36m[K^[m[K
+[4.870s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[4.870s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[4.870s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[4.871s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[4.871s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Yp>&&) [with _Yp = _Yp; _Tp = universal_teleop_msgs::msg::Event_<std::allocator<void> >][m[K’
+[4.871s]   391 |         [01;36m[Koperator[m[K=(shared_ptr<_Yp>&& __r) noexcept
+[4.872s]       |         [01;36m[K^~~~~~~~[m[K
+[4.872s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.872s] /usr/include/c++/11/bits/shared_ptr.h: In substitution of ‘[01m[Ktemplate<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = std::shared_ptr<rclcpp::Subscription<universal_teleop_msgs::msg::Event_<std::allocator<void> >, std::allocator<void>, universal_teleop_msgs::msg::Event_<std::allocator<void> >, universal_teleop_msgs::msg::Event_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<universal_teleop_msgs::msg::Event_<std::allocator<void> >, std::allocator<void> > > >; _Tp = universal_teleop_msgs::msg::Event_<std::allocator<void> >][m[K’:
+[4.873s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:2:[m[K   required by substitution of ‘[01m[Ktemplate<class _Yp> std::shared_ptr<universal_teleop_msgs::msg::Event_<std::allocator<void> > >::_Assignable<std::shared_ptr<_Tp> > std::shared_ptr<universal_teleop_msgs::msg::Event_<std::allocator<void> > >::operator=<_Yp>(std::shared_ptr<_Tp>&&) [with _Yp = rclcpp::Subscription<universal_teleop_msgs::msg::Event_<std::allocator<void> >, std::allocator<void>, universal_teleop_msgs::msg::Event_<std::allocator<void> >, universal_teleop_msgs::msg::Event_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<universal_teleop_msgs::msg::Event_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[4.873s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:30:147:[m[K   required from here
+[4.873s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:130:15:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, std::shared_ptr<universal_teleop_msgs::msg::Event_<std::allocator<void> > >&>[m[K’
+[4.874s]   130 |         using [01;31m[K_Assignable[m[K = typename enable_if<
+[4.874s]       |               [01;31m[K^~~~~~~~~~~[m[K
+[4.874s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:399:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Yp = _Yp; _Del = _Del; _Tp = universal_teleop_msgs::msg::Event_<std::allocator<void> >][m[K’
+[4.874s]   399 |         [01;36m[Koperator[m[K=(unique_ptr<_Yp, _Del>&& __r)
+[4.874s]       |         [01;36m[K^~~~~~~~[m[K
+[4.874s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:399:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.874s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:30:147:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<universal_teleop_msgs::msg::Event_<std::allocator<void> >, std::allocator<void>, universal_teleop_msgs::msg::Event_<std::allocator<void> >, universal_teleop_msgs::msg::Event_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<universal_teleop_msgs::msg::Event_<std::allocator<void> >, std::allocator<void> > > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<_Tp, _Dp>[m[K’
+[4.875s]    30 |   sub_events = node->create_subscription<universal_teleop_msgs::msg::Event>("/universal_teleop/events", 1, std::bind(&Teleop::on_events, this, _1)[01;36m[K)[m[K;
+[4.875s]       |                                                                                                                                                   [01;36m[K^[m[K
+[4.875s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[4.875s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[4.875s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[4.875s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[4.875s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:359:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = universal_teleop_msgs::msg::Event_<std::allocator<void> >][m[K’
+[4.877s]   359 |       shared_ptr& [01;36m[Koperator[m[K=(const shared_ptr&) noexcept = default;
+[4.877s]       |                   [01;36m[K^~~~~~~~[m[K
+[4.878s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:359:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<universal_teleop_msgs::msg::Event_<std::allocator<void> >, std::allocator<void>, universal_teleop_msgs::msg::Event_<std::allocator<void> >, universal_teleop_msgs::msg::Event_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<universal_teleop_msgs::msg::Event_<std::allocator<void> >, std::allocator<void> > > >[m[K’ to ‘[01m[Kconst std::shared_ptr<universal_teleop_msgs::msg::Event_<std::allocator<void> > >&[m[K’
+[4.878s]   359 |       shared_ptr& operator=([01;36m[Kconst shared_ptr&[m[K) noexcept = default;
+[4.879s]       |                             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[4.879s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:383:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = universal_teleop_msgs::msg::Event_<std::allocator<void> >][m[K’
+[4.879s]   383 |       [01;36m[Koperator[m[K=(shared_ptr&& __r) noexcept
+[4.880s]       |       [01;36m[K^~~~~~~~[m[K
+[4.880s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:383:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<universal_teleop_msgs::msg::Event_<std::allocator<void> >, std::allocator<void>, universal_teleop_msgs::msg::Event_<std::allocator<void> >, universal_teleop_msgs::msg::Event_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<universal_teleop_msgs::msg::Event_<std::allocator<void> >, std::allocator<void> > > >[m[K’ to ‘[01m[Kstd::shared_ptr<universal_teleop_msgs::msg::Event_<std::allocator<void> > >&&[m[K’
+[4.880s]   383 |       operator=([01;36m[Kshared_ptr&& __r[m[K) noexcept
+[4.882s]       |                 [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[4.882s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:31:102:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd::shared_ptr<scorbot_msgs::msg::JointVelocities_<std::allocator<void> > >[m[K’ and ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<scorbot_msgs::msg::JointVelocities_<std::allocator<void> >, std::allocator<void> > >[m[K’)
+[4.882s]    31 |   vel_pub = node->create_publisher<scorbot_msgs::msg::JointVelocities>("/scorbot/joint_velocities", 1[01;31m[K)[m[K;
+[4.883s]       |                                                                                                      [01;31m[K^[m[K
+[4.883s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[4.883s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[4.884s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[4.884s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[4.884s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Yp>&) [with _Yp = _Yp; _Tp = scorbot_msgs::msg::JointVelocities_<std::allocator<void> >][m[K’
+[4.885s]   363 |         [01;36m[Koperator[m[K=(const shared_ptr<_Yp>& __r) noexcept
+[4.885s]       |         [01;36m[K^~~~~~~~[m[K
+[4.885s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.886s] /usr/include/c++/11/bits/shared_ptr.h: In substitution of ‘[01m[Ktemplate<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = const std::shared_ptr<rclcpp::Publisher<scorbot_msgs::msg::JointVelocities_<std::allocator<void> >, std::allocator<void> > >&; _Tp = scorbot_msgs::msg::JointVelocities_<std::allocator<void> >][m[K’:
+[4.886s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:2:[m[K   required by substitution of ‘[01m[Ktemplate<class _Yp> std::shared_ptr<scorbot_msgs::msg::JointVelocities_<std::allocator<void> > >::_Assignable<const std::shared_ptr<_Tp>&> std::shared_ptr<scorbot_msgs::msg::JointVelocities_<std::allocator<void> > >::operator=<_Yp>(const std::shared_ptr<_Tp>&) [with _Yp = rclcpp::Publisher<scorbot_msgs::msg::JointVelocities_<std::allocator<void> >, std::allocator<void> >][m[K’
+[4.886s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:31:102:[m[K   required from here
+[4.886s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:130:15:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, std::shared_ptr<scorbot_msgs::msg::JointVelocities_<std::allocator<void> > >&>[m[K’
+[4.886s]   130 |         using [01;31m[K_Assignable[m[K = typename enable_if<
+[4.886s]       |               [01;31m[K^~~~~~~~~~~[m[K
+[4.886s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:374:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Yp = _Yp; _Tp = scorbot_msgs::msg::JointVelocities_<std::allocator<void> >][m[K’
+[4.886s]   374 |         [01;36m[Koperator[m[K=(auto_ptr<_Yp>&& __r)
+[4.887s]       |         [01;36m[K^~~~~~~~[m[K
+[4.887s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:374:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.887s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:31:102:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<scorbot_msgs::msg::JointVelocities_<std::allocator<void> >, std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<_Up>[m[K’
+[4.887s]    31 |   vel_pub = node->create_publisher<scorbot_msgs::msg::JointVelocities>("/scorbot/joint_velocities", 1[01;36m[K)[m[K;
+[4.887s]       |                                                                                                      [01;36m[K^[m[K
+[4.887s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[4.887s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[4.889s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[4.890s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[4.890s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Yp>&&) [with _Yp = _Yp; _Tp = scorbot_msgs::msg::JointVelocities_<std::allocator<void> >][m[K’
+[4.891s]   391 |         [01;36m[Koperator[m[K=(shared_ptr<_Yp>&& __r) noexcept
+[4.891s]       |         [01;36m[K^~~~~~~~[m[K
+[4.891s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.893s] /usr/include/c++/11/bits/shared_ptr.h: In substitution of ‘[01m[Ktemplate<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = std::shared_ptr<rclcpp::Publisher<scorbot_msgs::msg::JointVelocities_<std::allocator<void> >, std::allocator<void> > >; _Tp = scorbot_msgs::msg::JointVelocities_<std::allocator<void> >][m[K’:
+[4.893s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:2:[m[K   required by substitution of ‘[01m[Ktemplate<class _Yp> std::shared_ptr<scorbot_msgs::msg::JointVelocities_<std::allocator<void> > >::_Assignable<std::shared_ptr<_Tp> > std::shared_ptr<scorbot_msgs::msg::JointVelocities_<std::allocator<void> > >::operator=<_Yp>(std::shared_ptr<_Tp>&&) [with _Yp = rclcpp::Publisher<scorbot_msgs::msg::JointVelocities_<std::allocator<void> >, std::allocator<void> >][m[K’
+[4.893s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:31:102:[m[K   required from here
+[4.894s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:130:15:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, std::shared_ptr<scorbot_msgs::msg::JointVelocities_<std::allocator<void> > >&>[m[K’
+[4.894s]   130 |         using [01;31m[K_Assignable[m[K = typename enable_if<
+[4.894s]       |               [01;31m[K^~~~~~~~~~~[m[K
+[4.894s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:399:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Yp = _Yp; _Del = _Del; _Tp = scorbot_msgs::msg::JointVelocities_<std::allocator<void> >][m[K’
+[4.894s]   399 |         [01;36m[Koperator[m[K=(unique_ptr<_Yp, _Del>&& __r)
+[4.895s]       |         [01;36m[K^~~~~~~~[m[K
+[4.895s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:399:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.895s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:31:102:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<scorbot_msgs::msg::JointVelocities_<std::allocator<void> >, std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<_Tp, _Dp>[m[K’
+[4.895s]    31 |   vel_pub = node->create_publisher<scorbot_msgs::msg::JointVelocities>("/scorbot/joint_velocities", 1[01;36m[K)[m[K;
+[4.895s]       |                                                                                                      [01;36m[K^[m[K
+[4.895s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[4.895s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[4.895s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[4.897s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[4.897s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:359:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = scorbot_msgs::msg::JointVelocities_<std::allocator<void> >][m[K’
+[4.898s]   359 |       shared_ptr& [01;36m[Koperator[m[K=(const shared_ptr&) noexcept = default;
+[4.898s]       |                   [01;36m[K^~~~~~~~[m[K
+[4.898s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:359:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<scorbot_msgs::msg::JointVelocities_<std::allocator<void> >, std::allocator<void> > >[m[K’ to ‘[01m[Kconst std::shared_ptr<scorbot_msgs::msg::JointVelocities_<std::allocator<void> > >&[m[K’
+[4.899s]   359 |       shared_ptr& operator=([01;36m[Kconst shared_ptr&[m[K) noexcept = default;
+[4.899s]       |                             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[4.899s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:383:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = scorbot_msgs::msg::JointVelocities_<std::allocator<void> >][m[K’
+[4.900s]   383 |       [01;36m[Koperator[m[K=(shared_ptr&& __r) noexcept
+[4.900s]       |       [01;36m[K^~~~~~~~[m[K
+[4.901s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:383:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<scorbot_msgs::msg::JointVelocities_<std::allocator<void> >, std::allocator<void> > >[m[K’ to ‘[01m[Kstd::shared_ptr<scorbot_msgs::msg::JointVelocities_<std::allocator<void> > >&&[m[K’
+[4.901s]   383 |       operator=([01;36m[Kshared_ptr&& __r[m[K) noexcept
+[4.901s]       |                 [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[4.901s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:32:77:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd::shared_ptr<std_msgs::msg::Empty_<std::allocator<void> > >[m[K’ and ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<std_msgs::msg::Empty_<std::allocator<void> >, std::allocator<void> > >[m[K’)
+[4.901s]    32 |   home_pub = node->create_publisher<std_msgs::msg::Empty>("/scorbot/home", 1[01;31m[K)[m[K;
+[4.901s]       |                                                                             [01;31m[K^[m[K
+[4.903s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[4.904s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[4.904s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[4.904s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[4.905s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Yp>&) [with _Yp = _Yp; _Tp = std_msgs::msg::Empty_<std::allocator<void> >][m[K’
+[4.905s]   363 |         [01;36m[Koperator[m[K=(const shared_ptr<_Yp>& __r) noexcept
+[4.905s]       |         [01;36m[K^~~~~~~~[m[K
+[4.905s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.905s] /usr/include/c++/11/bits/shared_ptr.h: In substitution of ‘[01m[Ktemplate<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = const std::shared_ptr<rclcpp::Publisher<std_msgs::msg::Empty_<std::allocator<void> >, std::allocator<void> > >&; _Tp = std_msgs::msg::Empty_<std::allocator<void> >][m[K’:
+[4.905s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:2:[m[K   required by substitution of ‘[01m[Ktemplate<class _Yp> std::shared_ptr<std_msgs::msg::Empty_<std::allocator<void> > >::_Assignable<const std::shared_ptr<_Tp>&> std::shared_ptr<std_msgs::msg::Empty_<std::allocator<void> > >::operator=<_Yp>(const std::shared_ptr<_Tp>&) [with _Yp = rclcpp::Publisher<std_msgs::msg::Empty_<std::allocator<void> >, std::allocator<void> >][m[K’
+[4.906s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:32:77:[m[K   required from here
+[4.906s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:130:15:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, std::shared_ptr<std_msgs::msg::Empty_<std::allocator<void> > >&>[m[K’
+[4.907s]   130 |         using [01;31m[K_Assignable[m[K = typename enable_if<
+[4.907s]       |               [01;31m[K^~~~~~~~~~~[m[K
+[4.907s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:374:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Yp = _Yp; _Tp = std_msgs::msg::Empty_<std::allocator<void> >][m[K’
+[4.908s]   374 |         [01;36m[Koperator[m[K=(auto_ptr<_Yp>&& __r)
+[4.908s]       |         [01;36m[K^~~~~~~~[m[K
+[4.908s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:374:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.908s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:32:77:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<std_msgs::msg::Empty_<std::allocator<void> >, std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<_Up>[m[K’
+[4.908s]    32 |   home_pub = node->create_publisher<std_msgs::msg::Empty>("/scorbot/home", 1[01;36m[K)[m[K;
+[4.908s]       |                                                                             [01;36m[K^[m[K
+[4.908s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[4.908s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[4.909s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[4.909s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[4.909s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Yp>&&) [with _Yp = _Yp; _Tp = std_msgs::msg::Empty_<std::allocator<void> >][m[K’
+[4.909s]   391 |         [01;36m[Koperator[m[K=(shared_ptr<_Yp>&& __r) noexcept
+[4.909s]       |         [01;36m[K^~~~~~~~[m[K
+[4.909s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.909s] /usr/include/c++/11/bits/shared_ptr.h: In substitution of ‘[01m[Ktemplate<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = std::shared_ptr<rclcpp::Publisher<std_msgs::msg::Empty_<std::allocator<void> >, std::allocator<void> > >; _Tp = std_msgs::msg::Empty_<std::allocator<void> >][m[K’:
+[4.911s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:2:[m[K   required by substitution of ‘[01m[Ktemplate<class _Yp> std::shared_ptr<std_msgs::msg::Empty_<std::allocator<void> > >::_Assignable<std::shared_ptr<_Tp> > std::shared_ptr<std_msgs::msg::Empty_<std::allocator<void> > >::operator=<_Yp>(std::shared_ptr<_Tp>&&) [with _Yp = rclcpp::Publisher<std_msgs::msg::Empty_<std::allocator<void> >, std::allocator<void> >][m[K’
+[4.912s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:32:77:[m[K   required from here
+[4.912s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:130:15:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, std::shared_ptr<std_msgs::msg::Empty_<std::allocator<void> > >&>[m[K’
+[4.912s]   130 |         using [01;31m[K_Assignable[m[K = typename enable_if<
+[4.913s]       |               [01;31m[K^~~~~~~~~~~[m[K
+[4.913s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:399:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Yp = _Yp; _Del = _Del; _Tp = std_msgs::msg::Empty_<std::allocator<void> >][m[K’
+[4.913s]   399 |         [01;36m[Koperator[m[K=(unique_ptr<_Yp, _Del>&& __r)
+[4.914s]       |         [01;36m[K^~~~~~~~[m[K
+[4.914s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:399:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.914s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:32:77:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<std_msgs::msg::Empty_<std::allocator<void> >, std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<_Tp, _Dp>[m[K’
+[4.915s]    32 |   home_pub = node->create_publisher<std_msgs::msg::Empty>("/scorbot/home", 1[01;36m[K)[m[K;
+[4.915s]       |                                                                             [01;36m[K^[m[K
+[4.915s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[4.923s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[4.923s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[4.923s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[4.924s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:359:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = std_msgs::msg::Empty_<std::allocator<void> >][m[K’
+[4.924s]   359 |       shared_ptr& [01;36m[Koperator[m[K=(const shared_ptr&) noexcept = default;
+[4.924s]       |                   [01;36m[K^~~~~~~~[m[K
+[4.924s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:359:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<std_msgs::msg::Empty_<std::allocator<void> >, std::allocator<void> > >[m[K’ to ‘[01m[Kconst std::shared_ptr<std_msgs::msg::Empty_<std::allocator<void> > >&[m[K’
+[4.924s]   359 |       shared_ptr& operator=([01;36m[Kconst shared_ptr&[m[K) noexcept = default;
+[4.924s]       |                             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[4.924s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:383:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = std_msgs::msg::Empty_<std::allocator<void> >][m[K’
+[4.924s]   383 |       [01;36m[Koperator[m[K=(shared_ptr&& __r) noexcept
+[4.925s]       |       [01;36m[K^~~~~~~~[m[K
+[4.925s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:383:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<std_msgs::msg::Empty_<std::allocator<void> >, std::allocator<void> > >[m[K’ to ‘[01m[Kstd::shared_ptr<std_msgs::msg::Empty_<std::allocator<void> > >&&[m[K’
+[4.925s]   383 |       operator=([01;36m[Kshared_ptr&& __r[m[K) noexcept
+[4.925s]       |                 [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[4.925s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:36:116:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd::shared_ptr<std_msgs::msg::Int32MultiArray_<std::allocator<void> > >[m[K’ and ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<std_msgs::msg::Int32MultiArray_<std::allocator<void> >, std::allocator<void> > >[m[K’)
+[4.925s]    36 |   joint_pos_array_pub = node->create_publisher<std_msgs::msg::Int32MultiArray>("/scorbot/joint_path_command_enc", 1[01;31m[K)[m[K;
+[4.925s]       |                                                                                                                    [01;31m[K^[m[K
+[4.929s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[4.929s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[4.929s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[4.930s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[4.930s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Yp>&) [with _Yp = _Yp; _Tp = std_msgs::msg::Int32MultiArray_<std::allocator<void> >][m[K’
+[4.930s]   363 |         [01;36m[Koperator[m[K=(const shared_ptr<_Yp>& __r) noexcept
+[4.930s]       |         [01;36m[K^~~~~~~~[m[K
+[4.930s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.930s] /usr/include/c++/11/bits/shared_ptr.h: In substitution of ‘[01m[Ktemplate<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = const std::shared_ptr<rclcpp::Publisher<std_msgs::msg::Int32MultiArray_<std::allocator<void> >, std::allocator<void> > >&; _Tp = std_msgs::msg::Int32MultiArray_<std::allocator<void> >][m[K’:
+[4.930s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:2:[m[K   required by substitution of ‘[01m[Ktemplate<class _Yp> std::shared_ptr<std_msgs::msg::Int32MultiArray_<std::allocator<void> > >::_Assignable<const std::shared_ptr<_Tp>&> std::shared_ptr<std_msgs::msg::Int32MultiArray_<std::allocator<void> > >::operator=<_Yp>(const std::shared_ptr<_Tp>&) [with _Yp = rclcpp::Publisher<std_msgs::msg::Int32MultiArray_<std::allocator<void> >, std::allocator<void> >][m[K’
+[4.931s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:36:116:[m[K   required from here
+[4.931s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:130:15:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, std::shared_ptr<std_msgs::msg::Int32MultiArray_<std::allocator<void> > >&>[m[K’
+[4.931s]   130 |         using [01;31m[K_Assignable[m[K = typename enable_if<
+[4.931s]       |               [01;31m[K^~~~~~~~~~~[m[K
+[4.931s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:374:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Yp = _Yp; _Tp = std_msgs::msg::Int32MultiArray_<std::allocator<void> >][m[K’
+[4.931s]   374 |         [01;36m[Koperator[m[K=(auto_ptr<_Yp>&& __r)
+[4.931s]       |         [01;36m[K^~~~~~~~[m[K
+[4.934s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:374:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.935s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:36:116:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<std_msgs::msg::Int32MultiArray_<std::allocator<void> >, std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<_Up>[m[K’
+[4.935s]    36 |   joint_pos_array_pub = node->create_publisher<std_msgs::msg::Int32MultiArray>("/scorbot/joint_path_command_enc", 1[01;36m[K)[m[K;
+[4.935s]       |                                                                                                                    [01;36m[K^[m[K
+[4.936s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[4.936s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[4.936s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[4.936s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[4.936s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Yp>&&) [with _Yp = _Yp; _Tp = std_msgs::msg::Int32MultiArray_<std::allocator<void> >][m[K’
+[4.936s]   391 |         [01;36m[Koperator[m[K=(shared_ptr<_Yp>&& __r) noexcept
+[4.936s]       |         [01;36m[K^~~~~~~~[m[K
+[4.937s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.937s] /usr/include/c++/11/bits/shared_ptr.h: In substitution of ‘[01m[Ktemplate<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = std::shared_ptr<rclcpp::Publisher<std_msgs::msg::Int32MultiArray_<std::allocator<void> >, std::allocator<void> > >; _Tp = std_msgs::msg::Int32MultiArray_<std::allocator<void> >][m[K’:
+[4.937s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:2:[m[K   required by substitution of ‘[01m[Ktemplate<class _Yp> std::shared_ptr<std_msgs::msg::Int32MultiArray_<std::allocator<void> > >::_Assignable<std::shared_ptr<_Tp> > std::shared_ptr<std_msgs::msg::Int32MultiArray_<std::allocator<void> > >::operator=<_Yp>(std::shared_ptr<_Tp>&&) [with _Yp = rclcpp::Publisher<std_msgs::msg::Int32MultiArray_<std::allocator<void> >, std::allocator<void> >][m[K’
+[4.937s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:36:116:[m[K   required from here
+[4.937s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:130:15:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, std::shared_ptr<std_msgs::msg::Int32MultiArray_<std::allocator<void> > >&>[m[K’
+[4.937s]   130 |         using [01;31m[K_Assignable[m[K = typename enable_if<
+[4.937s]       |               [01;31m[K^~~~~~~~~~~[m[K
+[4.937s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:399:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Yp = _Yp; _Del = _Del; _Tp = std_msgs::msg::Int32MultiArray_<std::allocator<void> >][m[K’
+[4.938s]   399 |         [01;36m[Koperator[m[K=(unique_ptr<_Yp, _Del>&& __r)
+[4.938s]       |         [01;36m[K^~~~~~~~[m[K
+[4.938s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:399:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.938s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:36:116:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<std_msgs::msg::Int32MultiArray_<std::allocator<void> >, std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<_Tp, _Dp>[m[K’
+[4.938s]    36 |   joint_pos_array_pub = node->create_publisher<std_msgs::msg::Int32MultiArray>("/scorbot/joint_path_command_enc", 1[01;36m[K)[m[K;
+[4.938s]       |                                                                                                                    [01;36m[K^[m[K
+[4.938s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[4.938s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[4.940s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[4.940s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[4.940s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:359:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = std_msgs::msg::Int32MultiArray_<std::allocator<void> >][m[K’
+[4.940s]   359 |       shared_ptr& [01;36m[Koperator[m[K=(const shared_ptr&) noexcept = default;
+[4.940s]       |                   [01;36m[K^~~~~~~~[m[K
+[4.940s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:359:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<std_msgs::msg::Int32MultiArray_<std::allocator<void> >, std::allocator<void> > >[m[K’ to ‘[01m[Kconst std::shared_ptr<std_msgs::msg::Int32MultiArray_<std::allocator<void> > >&[m[K’
+[4.940s]   359 |       shared_ptr& operator=([01;36m[Kconst shared_ptr&[m[K) noexcept = default;
+[4.941s]       |                             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[4.941s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:383:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = std_msgs::msg::Int32MultiArray_<std::allocator<void> >][m[K’
+[4.941s]   383 |       [01;36m[Koperator[m[K=(shared_ptr&& __r) noexcept
+[4.941s]       |       [01;36m[K^~~~~~~~[m[K
+[4.941s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:383:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<std_msgs::msg::Int32MultiArray_<std::allocator<void> >, std::allocator<void> > >[m[K’ to ‘[01m[Kstd::shared_ptr<std_msgs::msg::Int32MultiArray_<std::allocator<void> > >&&[m[K’
+[4.941s]   383 |       operator=([01;36m[Kshared_ptr&& __r[m[K) noexcept
+[4.941s]       |                 [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[4.942s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:38:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrajectory_finished_pub[m[K’ was not declared in this scope
+[4.942s]    38 |   [01;31m[Ktrajectory_finished_pub[m[K = node->create_publisher<control_msgs::msg::FollowJointTrajectoryActionResult>("/arm_position_controller/follow_joint_trajectory/result", 1);
+[4.942s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.942s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:38:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_msgs[m[K’ was not declared in this scope
+[4.942s]    38 |   trajectory_finished_pub = node->create_publisher<[01;31m[Kcontrol_msgs[m[K::msg::FollowJointTrajectoryActionResult>("/arm_position_controller/follow_joint_trajectory/result", 1);
+[4.942s]       |                                                    [01;31m[K^~~~~~~~~~~~[m[K
+[4.942s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:38:35:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[4.944s]    38 |   trajectory_finished_pub = node->[01;31m[Kcreate_publisher<control_msgs::msg::FollowJointTrajectoryActionResult>[m[K("/arm_position_controller/follow_joint_trajectory/result", 1);
+[4.945s]       |                                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.945s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:38:105:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::create_publisher<<expression error> >(const char [56], int)[m[K’
+[4.946s]    38 |   trajectory_finished_pub = [01;31m[Knode->create_publisher<control_msgs::msg::FollowJointTrajectoryActionResult>("/arm_position_controller/follow_joint_trajectory/result", 1)[m[K;
+[4.946s]       |                             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.946s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+[4.947s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[4.947s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[4.948s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.948s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[4.948s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[4.948s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[4.949s]    73 | [01;36m[KNode[m[K::create_publisher(
+[4.949s]       | [01;36m[K^~~~[m[K
+[4.950s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.950s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:38:105:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[4.950s]    38 |   trajectory_finished_pub = [01;31m[Knode->create_publisher<control_msgs::msg::FollowJointTrajectoryActionResult>("/arm_position_controller/follow_joint_trajectory/result", 1)[m[K;
+[4.950s]       |                             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.033s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:41:149:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd::shared_ptr<std_msgs::msg::Float64_<std::allocator<void> > >[m[K’ and ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::Float64_<std::allocator<void> >, std_msgs::msg::Float64_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void> > > >[m[K’)
+[5.033s]    41 |   tolerance_param_sub = node->create_subscription<std_msgs::msg::Float64>("/scorbot/params/tolerance", 1, std::bind(&Teleop::on_tolerance, this, _1)[01;31m[K)[m[K;
+[5.033s]       |                                                                                                                                                     [01;31m[K^[m[K
+[5.034s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[5.035s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[5.035s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[5.035s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[5.035s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Yp>&) [with _Yp = _Yp; _Tp = std_msgs::msg::Float64_<std::allocator<void> >][m[K’
+[5.035s]   363 |         [01;36m[Koperator[m[K=(const shared_ptr<_Yp>& __r) noexcept
+[5.035s]       |         [01;36m[K^~~~~~~~[m[K
+[5.035s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.037s] /usr/include/c++/11/bits/shared_ptr.h: In substitution of ‘[01m[Ktemplate<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = const std::shared_ptr<rclcpp::Subscription<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::Float64_<std::allocator<void> >, std_msgs::msg::Float64_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void> > > >&; _Tp = std_msgs::msg::Float64_<std::allocator<void> >][m[K’:
+[5.038s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:2:[m[K   required by substitution of ‘[01m[Ktemplate<class _Yp> std::shared_ptr<std_msgs::msg::Float64_<std::allocator<void> > >::_Assignable<const std::shared_ptr<_Tp>&> std::shared_ptr<std_msgs::msg::Float64_<std::allocator<void> > >::operator=<_Yp>(const std::shared_ptr<_Tp>&) [with _Yp = rclcpp::Subscription<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::Float64_<std::allocator<void> >, std_msgs::msg::Float64_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[5.040s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:41:149:[m[K   required from here
+[5.040s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:130:15:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, std::shared_ptr<std_msgs::msg::Float64_<std::allocator<void> > >&>[m[K’
+[5.040s]   130 |         using [01;31m[K_Assignable[m[K = typename enable_if<
+[5.040s]       |               [01;31m[K^~~~~~~~~~~[m[K
+[5.040s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:374:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Yp = _Yp; _Tp = std_msgs::msg::Float64_<std::allocator<void> >][m[K’
+[5.040s]   374 |         [01;36m[Koperator[m[K=(auto_ptr<_Yp>&& __r)
+[5.040s]       |         [01;36m[K^~~~~~~~[m[K
+[5.041s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:374:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.041s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:41:149:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::Float64_<std::allocator<void> >, std_msgs::msg::Float64_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void> > > >[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<_Up>[m[K’
+[5.041s]    41 |   tolerance_param_sub = node->create_subscription<std_msgs::msg::Float64>("/scorbot/params/tolerance", 1, std::bind(&Teleop::on_tolerance, this, _1)[01;36m[K)[m[K;
+[5.041s]       |                                                                                                                                                     [01;36m[K^[m[K
+[5.041s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[5.041s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[5.041s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[5.041s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[5.042s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Yp>&&) [with _Yp = _Yp; _Tp = std_msgs::msg::Float64_<std::allocator<void> >][m[K’
+[5.042s]   391 |         [01;36m[Koperator[m[K=(shared_ptr<_Yp>&& __r) noexcept
+[5.042s]       |         [01;36m[K^~~~~~~~[m[K
+[5.042s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.042s] /usr/include/c++/11/bits/shared_ptr.h: In substitution of ‘[01m[Ktemplate<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = std::shared_ptr<rclcpp::Subscription<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::Float64_<std::allocator<void> >, std_msgs::msg::Float64_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void> > > >; _Tp = std_msgs::msg::Float64_<std::allocator<void> >][m[K’:
+[5.042s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:2:[m[K   required by substitution of ‘[01m[Ktemplate<class _Yp> std::shared_ptr<std_msgs::msg::Float64_<std::allocator<void> > >::_Assignable<std::shared_ptr<_Tp> > std::shared_ptr<std_msgs::msg::Float64_<std::allocator<void> > >::operator=<_Yp>(std::shared_ptr<_Tp>&&) [with _Yp = rclcpp::Subscription<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::Float64_<std::allocator<void> >, std_msgs::msg::Float64_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[5.042s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:41:149:[m[K   required from here
+[5.042s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:130:15:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, std::shared_ptr<std_msgs::msg::Float64_<std::allocator<void> > >&>[m[K’
+[5.045s]   130 |         using [01;31m[K_Assignable[m[K = typename enable_if<
+[5.045s]       |               [01;31m[K^~~~~~~~~~~[m[K
+[5.045s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:399:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Yp = _Yp; _Del = _Del; _Tp = std_msgs::msg::Float64_<std::allocator<void> >][m[K’
+[5.045s]   399 |         [01;36m[Koperator[m[K=(unique_ptr<_Yp, _Del>&& __r)
+[5.046s]       |         [01;36m[K^~~~~~~~[m[K
+[5.046s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:399:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.046s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:41:149:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::Float64_<std::allocator<void> >, std_msgs::msg::Float64_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void> > > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<_Tp, _Dp>[m[K’
+[5.046s]    41 |   tolerance_param_sub = node->create_subscription<std_msgs::msg::Float64>("/scorbot/params/tolerance", 1, std::bind(&Teleop::on_tolerance, this, _1)[01;36m[K)[m[K;
+[5.046s]       |                                                                                                                                                     [01;36m[K^[m[K
+[5.046s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[5.046s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[5.046s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[5.047s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[5.047s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:359:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = std_msgs::msg::Float64_<std::allocator<void> >][m[K’
+[5.047s]   359 |       shared_ptr& [01;36m[Koperator[m[K=(const shared_ptr&) noexcept = default;
+[5.047s]       |                   [01;36m[K^~~~~~~~[m[K
+[5.047s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:359:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::Float64_<std::allocator<void> >, std_msgs::msg::Float64_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void> > > >[m[K’ to ‘[01m[Kconst std::shared_ptr<std_msgs::msg::Float64_<std::allocator<void> > >&[m[K’
+[5.047s]   359 |       shared_ptr& operator=([01;36m[Kconst shared_ptr&[m[K) noexcept = default;
+[5.047s]       |                             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[5.047s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:383:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = std_msgs::msg::Float64_<std::allocator<void> >][m[K’
+[5.049s]   383 |       [01;36m[Koperator[m[K=(shared_ptr&& __r) noexcept
+[5.050s]       |       [01;36m[K^~~~~~~~[m[K
+[5.050s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:383:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::Float64_<std::allocator<void> >, std_msgs::msg::Float64_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Float64_<std::allocator<void> >, std::allocator<void> > > >[m[K’ to ‘[01m[Kstd::shared_ptr<std_msgs::msg::Float64_<std::allocator<void> > >&&[m[K’
+[5.050s]   383 |       operator=([01;36m[Kshared_ptr&& __r[m[K) noexcept
+[5.050s]       |                 [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[5.099s] gmake[2]: *** [CMakeFiles/scorbot.dir/build.make:90: CMakeFiles/scorbot.dir/src/scorbot_node.cpp.o] Error 1
+[5.099s] gmake[2]: *** Waiting for unfinished jobs....
+[5.140s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:42:148:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd::shared_ptr<std_msgs::msg::String_<std::allocator<void> > >[m[K’ and ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<std_msgs::msg::String_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::String_<std::allocator<void> >, std_msgs::msg::String_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::String_<std::allocator<void> >, std::allocator<void> > > >[m[K’)
+[5.140s]    42 |   feedback_filename_sub = node->create_subscription<std_msgs::msg::String>("/scorbot/params/filename", 1, std::bind(&Teleop::on_filename, this, _1)[01;31m[K)[m[K;
+[5.141s]       |                                                                                                                                                    [01;31m[K^[m[K
+[5.141s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[5.141s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[5.141s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[5.142s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[5.142s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Yp>&) [with _Yp = _Yp; _Tp = std_msgs::msg::String_<std::allocator<void> >][m[K’
+[5.142s]   363 |         [01;36m[Koperator[m[K=(const shared_ptr<_Yp>& __r) noexcept
+[5.143s]       |         [01;36m[K^~~~~~~~[m[K
+[5.144s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.145s] /usr/include/c++/11/bits/shared_ptr.h: In substitution of ‘[01m[Ktemplate<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = const std::shared_ptr<rclcpp::Subscription<std_msgs::msg::String_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::String_<std::allocator<void> >, std_msgs::msg::String_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::String_<std::allocator<void> >, std::allocator<void> > > >&; _Tp = std_msgs::msg::String_<std::allocator<void> >][m[K’:
+[5.145s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:2:[m[K   required by substitution of ‘[01m[Ktemplate<class _Yp> std::shared_ptr<std_msgs::msg::String_<std::allocator<void> > >::_Assignable<const std::shared_ptr<_Tp>&> std::shared_ptr<std_msgs::msg::String_<std::allocator<void> > >::operator=<_Yp>(const std::shared_ptr<_Tp>&) [with _Yp = rclcpp::Subscription<std_msgs::msg::String_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::String_<std::allocator<void> >, std_msgs::msg::String_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::String_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[5.146s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:42:148:[m[K   required from here
+[5.146s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:130:15:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, std::shared_ptr<std_msgs::msg::String_<std::allocator<void> > >&>[m[K’
+[5.146s]   130 |         using [01;31m[K_Assignable[m[K = typename enable_if<
+[5.147s]       |               [01;31m[K^~~~~~~~~~~[m[K
+[5.147s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:374:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Yp = _Yp; _Tp = std_msgs::msg::String_<std::allocator<void> >][m[K’
+[5.147s]   374 |         [01;36m[Koperator[m[K=(auto_ptr<_Yp>&& __r)
+[5.148s]       |         [01;36m[K^~~~~~~~[m[K
+[5.148s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:374:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.148s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:42:148:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<std_msgs::msg::String_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::String_<std::allocator<void> >, std_msgs::msg::String_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::String_<std::allocator<void> >, std::allocator<void> > > >[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<_Up>[m[K’
+[5.148s]    42 |   feedback_filename_sub = node->create_subscription<std_msgs::msg::String>("/scorbot/params/filename", 1, std::bind(&Teleop::on_filename, this, _1)[01;36m[K)[m[K;
+[5.149s]       |                                                                                                                                                    [01;36m[K^[m[K
+[5.149s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[5.149s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[5.149s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[5.150s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[5.150s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Yp>&&) [with _Yp = _Yp; _Tp = std_msgs::msg::String_<std::allocator<void> >][m[K’
+[5.150s]   391 |         [01;36m[Koperator[m[K=(shared_ptr<_Yp>&& __r) noexcept
+[5.150s]       |         [01;36m[K^~~~~~~~[m[K
+[5.151s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.151s] /usr/include/c++/11/bits/shared_ptr.h: In substitution of ‘[01m[Ktemplate<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = std::shared_ptr<rclcpp::Subscription<std_msgs::msg::String_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::String_<std::allocator<void> >, std_msgs::msg::String_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::String_<std::allocator<void> >, std::allocator<void> > > >; _Tp = std_msgs::msg::String_<std::allocator<void> >][m[K’:
+[5.151s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:2:[m[K   required by substitution of ‘[01m[Ktemplate<class _Yp> std::shared_ptr<std_msgs::msg::String_<std::allocator<void> > >::_Assignable<std::shared_ptr<_Tp> > std::shared_ptr<std_msgs::msg::String_<std::allocator<void> > >::operator=<_Yp>(std::shared_ptr<_Tp>&&) [with _Yp = rclcpp::Subscription<std_msgs::msg::String_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::String_<std::allocator<void> >, std_msgs::msg::String_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::String_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[5.152s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:42:148:[m[K   required from here
+[5.152s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:130:15:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, std::shared_ptr<std_msgs::msg::String_<std::allocator<void> > >&>[m[K’
+[5.152s]   130 |         using [01;31m[K_Assignable[m[K = typename enable_if<
+[5.152s]       |               [01;31m[K^~~~~~~~~~~[m[K
+[5.153s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:399:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Yp = _Yp; _Del = _Del; _Tp = std_msgs::msg::String_<std::allocator<void> >][m[K’
+[5.153s]   399 |         [01;36m[Koperator[m[K=(unique_ptr<_Yp, _Del>&& __r)
+[5.153s]       |         [01;36m[K^~~~~~~~[m[K
+[5.153s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:399:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.154s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:42:148:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<std_msgs::msg::String_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::String_<std::allocator<void> >, std_msgs::msg::String_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::String_<std::allocator<void> >, std::allocator<void> > > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<_Tp, _Dp>[m[K’
+[5.154s]    42 |   feedback_filename_sub = node->create_subscription<std_msgs::msg::String>("/scorbot/params/filename", 1, std::bind(&Teleop::on_filename, this, _1)[01;36m[K)[m[K;
+[5.154s]       |                                                                                                                                                    [01;36m[K^[m[K
+[5.155s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[5.155s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[5.155s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[5.155s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[5.156s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:359:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = std_msgs::msg::String_<std::allocator<void> >][m[K’
+[5.156s]   359 |       shared_ptr& [01;36m[Koperator[m[K=(const shared_ptr&) noexcept = default;
+[5.156s]       |                   [01;36m[K^~~~~~~~[m[K
+[5.156s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:359:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<std_msgs::msg::String_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::String_<std::allocator<void> >, std_msgs::msg::String_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::String_<std::allocator<void> >, std::allocator<void> > > >[m[K’ to ‘[01m[Kconst std::shared_ptr<std_msgs::msg::String_<std::allocator<void> > >&[m[K’
+[5.157s]   359 |       shared_ptr& operator=([01;36m[Kconst shared_ptr&[m[K) noexcept = default;
+[5.157s]       |                             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[5.157s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:383:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = std_msgs::msg::String_<std::allocator<void> >][m[K’
+[5.158s]   383 |       [01;36m[Koperator[m[K=(shared_ptr&& __r) noexcept
+[5.158s]       |       [01;36m[K^~~~~~~~[m[K
+[5.158s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:383:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<std_msgs::msg::String_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::String_<std::allocator<void> >, std_msgs::msg::String_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::String_<std::allocator<void> >, std::allocator<void> > > >[m[K’ to ‘[01m[Kstd::shared_ptr<std_msgs::msg::String_<std::allocator<void> > >&&[m[K’
+[5.158s]   383 |       operator=([01;36m[Kshared_ptr&& __r[m[K) noexcept
+[5.159s]       |                 [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[5.159s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:44:89:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd::shared_ptr<std_msgs::msg::Empty_<std::allocator<void> > >[m[K’ and ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<std_msgs::msg::Empty_<std::allocator<void> >, std::allocator<void> > >[m[K’)
+[5.159s]    44 |   claw_catch_pub = node->create_publisher<std_msgs::msg::Empty>("/scorbot/claw_catch", 1[01;31m[K)[m[K;
+[5.159s]       |                                                                                         [01;31m[K^[m[K
+[5.160s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[5.160s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[5.160s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[5.160s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[5.161s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Yp>&) [with _Yp = _Yp; _Tp = std_msgs::msg::Empty_<std::allocator<void> >][m[K’
+[5.161s]   363 |         [01;36m[Koperator[m[K=(const shared_ptr<_Yp>& __r) noexcept
+[5.161s]       |         [01;36m[K^~~~~~~~[m[K
+[5.162s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.162s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:374:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Yp = _Yp; _Tp = std_msgs::msg::Empty_<std::allocator<void> >][m[K’
+[5.162s]   374 |         [01;36m[Koperator[m[K=(auto_ptr<_Yp>&& __r)
+[5.162s]       |         [01;36m[K^~~~~~~~[m[K
+[5.163s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:374:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.163s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:44:89:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<std_msgs::msg::Empty_<std::allocator<void> >, std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<_Up>[m[K’
+[5.163s]    44 |   claw_catch_pub = node->create_publisher<std_msgs::msg::Empty>("/scorbot/claw_catch", 1[01;36m[K)[m[K;
+[5.163s]       |                                                                                         [01;36m[K^[m[K
+[5.164s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[5.164s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[5.164s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[5.164s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[5.165s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Yp>&&) [with _Yp = _Yp; _Tp = std_msgs::msg::Empty_<std::allocator<void> >][m[K’
+[5.165s]   391 |         [01;36m[Koperator[m[K=(shared_ptr<_Yp>&& __r) noexcept
+[5.165s]       |         [01;36m[K^~~~~~~~[m[K
+[5.165s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.166s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:399:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Yp = _Yp; _Del = _Del; _Tp = std_msgs::msg::Empty_<std::allocator<void> >][m[K’
+[5.166s]   399 |         [01;36m[Koperator[m[K=(unique_ptr<_Yp, _Del>&& __r)
+[5.166s]       |         [01;36m[K^~~~~~~~[m[K
+[5.167s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:399:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.167s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:44:89:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<std_msgs::msg::Empty_<std::allocator<void> >, std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<_Tp, _Dp>[m[K’
+[5.167s]    44 |   claw_catch_pub = node->create_publisher<std_msgs::msg::Empty>("/scorbot/claw_catch", 1[01;36m[K)[m[K;
+[5.167s]       |                                                                                         [01;36m[K^[m[K
+[5.168s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[5.168s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[5.168s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[5.168s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[5.168s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:359:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = std_msgs::msg::Empty_<std::allocator<void> >][m[K’
+[5.169s]   359 |       shared_ptr& [01;36m[Koperator[m[K=(const shared_ptr&) noexcept = default;
+[5.169s]       |                   [01;36m[K^~~~~~~~[m[K
+[5.169s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:359:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<std_msgs::msg::Empty_<std::allocator<void> >, std::allocator<void> > >[m[K’ to ‘[01m[Kconst std::shared_ptr<std_msgs::msg::Empty_<std::allocator<void> > >&[m[K’
+[5.169s]   359 |       shared_ptr& operator=([01;36m[Kconst shared_ptr&[m[K) noexcept = default;
+[5.169s]       |                             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[5.170s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:383:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = std_msgs::msg::Empty_<std::allocator<void> >][m[K’
+[5.170s]   383 |       [01;36m[Koperator[m[K=(shared_ptr&& __r) noexcept
+[5.170s]       |       [01;36m[K^~~~~~~~[m[K
+[5.170s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:383:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<std_msgs::msg::Empty_<std::allocator<void> >, std::allocator<void> > >[m[K’ to ‘[01m[Kstd::shared_ptr<std_msgs::msg::Empty_<std::allocator<void> > >&&[m[K’
+[5.170s]   383 |       operator=([01;36m[Kshared_ptr&& __r[m[K) noexcept
+[5.171s]       |                 [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[5.171s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:45:93:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd::shared_ptr<std_msgs::msg::Empty_<std::allocator<void> > >[m[K’ and ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<std_msgs::msg::Empty_<std::allocator<void> >, std::allocator<void> > >[m[K’)
+[5.172s]    45 |   claw_release_pub = node->create_publisher<std_msgs::msg::Empty>("/scorbot/claw_release", 1[01;31m[K)[m[K;
+[5.172s]       |                                                                                             [01;31m[K^[m[K
+[5.172s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[5.172s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[5.172s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[5.172s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[5.173s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Yp>&) [with _Yp = _Yp; _Tp = std_msgs::msg::Empty_<std::allocator<void> >][m[K’
+[5.173s]   363 |         [01;36m[Koperator[m[K=(const shared_ptr<_Yp>& __r) noexcept
+[5.173s]       |         [01;36m[K^~~~~~~~[m[K
+[5.173s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.173s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:374:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Yp = _Yp; _Tp = std_msgs::msg::Empty_<std::allocator<void> >][m[K’
+[5.173s]   374 |         [01;36m[Koperator[m[K=(auto_ptr<_Yp>&& __r)
+[5.173s]       |         [01;36m[K^~~~~~~~[m[K
+[5.174s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:374:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.174s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:45:93:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<std_msgs::msg::Empty_<std::allocator<void> >, std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<_Up>[m[K’
+[5.174s]    45 |   claw_release_pub = node->create_publisher<std_msgs::msg::Empty>("/scorbot/claw_release", 1[01;36m[K)[m[K;
+[5.174s]       |                                                                                             [01;36m[K^[m[K
+[5.174s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[5.174s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[5.175s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[5.175s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[5.175s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Yp>&&) [with _Yp = _Yp; _Tp = std_msgs::msg::Empty_<std::allocator<void> >][m[K’
+[5.175s]   391 |         [01;36m[Koperator[m[K=(shared_ptr<_Yp>&& __r) noexcept
+[5.175s]       |         [01;36m[K^~~~~~~~[m[K
+[5.175s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.175s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:399:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Yp = _Yp; _Del = _Del; _Tp = std_msgs::msg::Empty_<std::allocator<void> >][m[K’
+[5.176s]   399 |         [01;36m[Koperator[m[K=(unique_ptr<_Yp, _Del>&& __r)
+[5.176s]       |         [01;36m[K^~~~~~~~[m[K
+[5.176s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:399:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.176s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:45:93:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<std_msgs::msg::Empty_<std::allocator<void> >, std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<_Tp, _Dp>[m[K’
+[5.176s]    45 |   claw_release_pub = node->create_publisher<std_msgs::msg::Empty>("/scorbot/claw_release", 1[01;36m[K)[m[K;
+[5.176s]       |                                                                                             [01;36m[K^[m[K
+[5.176s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[5.177s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[5.177s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[5.177s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[5.177s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:359:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = std_msgs::msg::Empty_<std::allocator<void> >][m[K’
+[5.177s]   359 |       shared_ptr& [01;36m[Koperator[m[K=(const shared_ptr&) noexcept = default;
+[5.177s]       |                   [01;36m[K^~~~~~~~[m[K
+[5.177s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:359:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<std_msgs::msg::Empty_<std::allocator<void> >, std::allocator<void> > >[m[K’ to ‘[01m[Kconst std::shared_ptr<std_msgs::msg::Empty_<std::allocator<void> > >&[m[K’
+[5.178s]   359 |       shared_ptr& operator=([01;36m[Kconst shared_ptr&[m[K) noexcept = default;
+[5.179s]       |                             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[5.179s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:383:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = std_msgs::msg::Empty_<std::allocator<void> >][m[K’
+[5.179s]   383 |       [01;36m[Koperator[m[K=(shared_ptr&& __r) noexcept
+[5.179s]       |       [01;36m[K^~~~~~~~[m[K
+[5.179s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:383:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<std_msgs::msg::Empty_<std::allocator<void> >, std::allocator<void> > >[m[K’ to ‘[01m[Kstd::shared_ptr<std_msgs::msg::Empty_<std::allocator<void> > >&&[m[K’
+[5.179s]   383 |       operator=([01;36m[Kshared_ptr&& __r[m[K) noexcept
+[5.180s]       |                 [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[5.230s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:47:143:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::JointState_<std::allocator<void> > >[m[K’ and ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<sensor_msgs::msg::JointState_<std::allocator<void> >, std::allocator<void>, sensor_msgs::msg::JointState_<std::allocator<void> >, sensor_msgs::msg::JointState_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::JointState_<std::allocator<void> >, std::allocator<void> > > >[m[K’)
+[5.230s]    47 |   joint_states_sub = node->create_subscription<sensor_msgs::msg::JointState>("/joint_states", 1, std::bind(&Teleop::on_joint_states, this, _1)[01;31m[K)[m[K;
+[5.230s]       |                                                                                                                                               [01;31m[K^[m[K
+[5.231s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[5.231s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[5.231s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[5.231s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[5.231s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Yp>&) [with _Yp = _Yp; _Tp = sensor_msgs::msg::JointState_<std::allocator<void> >][m[K’
+[5.231s]   363 |         [01;36m[Koperator[m[K=(const shared_ptr<_Yp>& __r) noexcept
+[5.231s]       |         [01;36m[K^~~~~~~~[m[K
+[5.231s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.232s] /usr/include/c++/11/bits/shared_ptr.h: In substitution of ‘[01m[Ktemplate<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = const std::shared_ptr<rclcpp::Subscription<sensor_msgs::msg::JointState_<std::allocator<void> >, std::allocator<void>, sensor_msgs::msg::JointState_<std::allocator<void> >, sensor_msgs::msg::JointState_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::JointState_<std::allocator<void> >, std::allocator<void> > > >&; _Tp = sensor_msgs::msg::JointState_<std::allocator<void> >][m[K’:
+[5.232s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:363:2:[m[K   required by substitution of ‘[01m[Ktemplate<class _Yp> std::shared_ptr<sensor_msgs::msg::JointState_<std::allocator<void> > >::_Assignable<const std::shared_ptr<_Tp>&> std::shared_ptr<sensor_msgs::msg::JointState_<std::allocator<void> > >::operator=<_Yp>(const std::shared_ptr<_Tp>&) [with _Yp = rclcpp::Subscription<sensor_msgs::msg::JointState_<std::allocator<void> >, std::allocator<void>, sensor_msgs::msg::JointState_<std::allocator<void> >, sensor_msgs::msg::JointState_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::JointState_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[5.232s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:47:143:[m[K   required from here
+[5.232s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:130:15:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, std::shared_ptr<sensor_msgs::msg::JointState_<std::allocator<void> > >&>[m[K’
+[5.233s]   130 |         using [01;31m[K_Assignable[m[K = typename enable_if<
+[5.233s]       |               [01;31m[K^~~~~~~~~~~[m[K
+[5.233s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:374:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Yp = _Yp; _Tp = sensor_msgs::msg::JointState_<std::allocator<void> >][m[K’
+[5.233s]   374 |         [01;36m[Koperator[m[K=(auto_ptr<_Yp>&& __r)
+[5.233s]       |         [01;36m[K^~~~~~~~[m[K
+[5.233s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:374:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.233s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:47:143:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<sensor_msgs::msg::JointState_<std::allocator<void> >, std::allocator<void>, sensor_msgs::msg::JointState_<std::allocator<void> >, sensor_msgs::msg::JointState_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::JointState_<std::allocator<void> >, std::allocator<void> > > >[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<_Up>[m[K’
+[5.234s]    47 |   joint_states_sub = node->create_subscription<sensor_msgs::msg::JointState>("/joint_states", 1, std::bind(&Teleop::on_joint_states, this, _1)[01;36m[K)[m[K;
+[5.234s]       |                                                                                                                                               [01;36m[K^[m[K
+[5.234s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[5.234s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[5.234s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[5.234s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[5.234s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Yp>&&) [with _Yp = _Yp; _Tp = sensor_msgs::msg::JointState_<std::allocator<void> >][m[K’
+[5.234s]   391 |         [01;36m[Koperator[m[K=(shared_ptr<_Yp>&& __r) noexcept
+[5.235s]       |         [01;36m[K^~~~~~~~[m[K
+[5.235s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.235s] /usr/include/c++/11/bits/shared_ptr.h: In substitution of ‘[01m[Ktemplate<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = std::shared_ptr<rclcpp::Subscription<sensor_msgs::msg::JointState_<std::allocator<void> >, std::allocator<void>, sensor_msgs::msg::JointState_<std::allocator<void> >, sensor_msgs::msg::JointState_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::JointState_<std::allocator<void> >, std::allocator<void> > > >; _Tp = sensor_msgs::msg::JointState_<std::allocator<void> >][m[K’:
+[5.235s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:391:2:[m[K   required by substitution of ‘[01m[Ktemplate<class _Yp> std::shared_ptr<sensor_msgs::msg::JointState_<std::allocator<void> > >::_Assignable<std::shared_ptr<_Tp> > std::shared_ptr<sensor_msgs::msg::JointState_<std::allocator<void> > >::operator=<_Yp>(std::shared_ptr<_Tp>&&) [with _Yp = rclcpp::Subscription<sensor_msgs::msg::JointState_<std::allocator<void> >, std::allocator<void>, sensor_msgs::msg::JointState_<std::allocator<void> >, sensor_msgs::msg::JointState_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::JointState_<std::allocator<void> >, std::allocator<void> > >][m[K’
+[5.235s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:47:143:[m[K   required from here
+[5.235s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:130:15:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, std::shared_ptr<sensor_msgs::msg::JointState_<std::allocator<void> > >&>[m[K’
+[5.235s]   130 |         using [01;31m[K_Assignable[m[K = typename enable_if<
+[5.235s]       |               [01;31m[K^~~~~~~~~~~[m[K
+[5.236s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:399:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Yp = _Yp; _Del = _Del; _Tp = sensor_msgs::msg::JointState_<std::allocator<void> >][m[K’
+[5.236s]   399 |         [01;36m[Koperator[m[K=(unique_ptr<_Yp, _Del>&& __r)
+[5.236s]       |         [01;36m[K^~~~~~~~[m[K
+[5.236s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:399:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.236s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:47:143:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<sensor_msgs::msg::JointState_<std::allocator<void> >, std::allocator<void>, sensor_msgs::msg::JointState_<std::allocator<void> >, sensor_msgs::msg::JointState_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::JointState_<std::allocator<void> >, std::allocator<void> > > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<_Tp, _Dp>[m[K’
+[5.236s]    47 |   joint_states_sub = node->create_subscription<sensor_msgs::msg::JointState>("/joint_states", 1, std::bind(&Teleop::on_joint_states, this, _1)[01;36m[K)[m[K;
+[5.236s]       |                                                                                                                                               [01;36m[K^[m[K
+[5.237s] In file included from [01m[K/usr/include/c++/11/memory:77[m[K,
+[5.237s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[5.237s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[5.237s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[5.237s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:359:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = sensor_msgs::msg::JointState_<std::allocator<void> >][m[K’
+[5.237s]   359 |       shared_ptr& [01;36m[Koperator[m[K=(const shared_ptr&) noexcept = default;
+[5.237s]       |                   [01;36m[K^~~~~~~~[m[K
+[5.237s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:359:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<sensor_msgs::msg::JointState_<std::allocator<void> >, std::allocator<void>, sensor_msgs::msg::JointState_<std::allocator<void> >, sensor_msgs::msg::JointState_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::JointState_<std::allocator<void> >, std::allocator<void> > > >[m[K’ to ‘[01m[Kconst std::shared_ptr<sensor_msgs::msg::JointState_<std::allocator<void> > >&[m[K’
+[5.238s]   359 |       shared_ptr& operator=([01;36m[Kconst shared_ptr&[m[K) noexcept = default;
+[5.238s]       |                             [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[5.238s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:383:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = sensor_msgs::msg::JointState_<std::allocator<void> >][m[K’
+[5.238s]   383 |       [01;36m[Koperator[m[K=(shared_ptr&& __r) noexcept
+[5.238s]       |       [01;36m[K^~~~~~~~[m[K
+[5.238s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:383:30:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<sensor_msgs::msg::JointState_<std::allocator<void> >, std::allocator<void>, sensor_msgs::msg::JointState_<std::allocator<void> >, sensor_msgs::msg::JointState_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<sensor_msgs::msg::JointState_<std::allocator<void> >, std::allocator<void> > > >[m[K’ to ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::JointState_<std::allocator<void> > >&&[m[K’
+[5.238s]   383 |       operator=([01;36m[Kshared_ptr&& __r[m[K) noexcept
+[5.238s]       |                 [01;36m[K~~~~~~~~~~~~~^~~[m[K
+[5.239s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:76:72:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing Rate = class rclcpp::GenericRate<std::chrono::_V2::system_clock>[m[K’ {aka ‘[01m[Kclass rclcpp::GenericRate<std::chrono::_V2::system_clock>[m[K’} has no member named ‘[01m[Kexpected_cycle_time[m[K’
+[5.239s]    76 |   control_timer = n->create_wall_timer(rclcpp::Rate(control_frequency).[01;31m[Kexpected_cycle_time[m[K(), std::bind(&Teleop::on_control_cycle, n));
+[5.239s]       |                                                                        [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[5.244s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:[m[K At global scope:
+[5.245s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:137:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_msgs[m[K’ does not name a type
+[5.245s]   137 | void scorbot::Teleop::on_trajectory(const [01;31m[Kcontrol_msgs[m[K::FollowJointTrajectoryActionGoalConstPtr& msg)
+[5.245s]       |                                           [01;31m[K^~~~~~~~~~~~[m[K
+[5.245s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:137:96:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+[5.245s]   137 | void scorbot::Teleop::on_trajectory(const control_msgs::FollowJointTrajectoryActionGoalConstPtr[01;31m[K&[m[K msg)
+[5.245s]       |                                                                                                [01;31m[K^[m[K
+[5.245s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:137:96:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[5.245s]   137 | void scorbot::Teleop::on_trajectory[34m[K([m[Kconst control_msgs::FollowJointTrajectoryActionGoalConstPtr[01;31m[K&[m[K msg)
+[5.246s]       |                                    [34m[K~[m[K                                                           [01;31m[K^[m[K
+[5.246s]       |                                                                                                [32m[K)[m[K
+[5.246s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:137:98:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kmsg[m[K’
+[5.246s]   137 | void scorbot::Teleop::on_trajectory(const control_msgs::FollowJointTrajectoryActionGoalConstPtr& [01;31m[Kmsg[m[K)
+[5.246s]       |                                                                                                  [01;31m[K^~~[m[K
+[5.249s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:[m[K In member function ‘[01m[Kvoid scorbot::Teleop::check_trajectory_progress()[m[K’:
+[5.249s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:265:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_msgs[m[K’ has not been declared
+[5.249s]   265 |         [01;31m[Kcontrol_msgs[m[K::FollowJointTrajectoryResult result;
+[5.249s]       |         [01;31m[K^~~~~~~~~~~~[m[K
+[5.257s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:266:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kresult[m[K’ was not declared in this scope
+[5.257s]   266 |         [01;31m[Kresult[m[K.error_code = result.SUCCESSFUL;
+[5.257s]       |         [01;31m[K^~~~~~[m[K
+[5.257s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:267:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_msgs[m[K’ has not been declared
+[5.258s]   267 |         [01;31m[Kcontrol_msgs[m[K::FollowJointTrajectoryActionResult result_msg;
+[5.258s]       |         [01;31m[K^~~~~~~~~~~~[m[K
+[5.267s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:268:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kresult_msg[m[K’ was not declared in this scope
+[5.267s]   268 |         [01;31m[Kresult_msg[m[K.result = result;
+[5.267s]       |         [01;31m[K^~~~~~~~~~[m[K
+[5.267s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:270:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kactionlib_msgs[m[K’ has not been declared
+[5.267s]   270 |         [01;31m[Kactionlib_msgs[m[K::GoalStatus goal_status;
+[5.267s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[5.277s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:271:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_status[m[K’ was not declared in this scope; did you mean ‘[01m[Ksi_status[m[K’?
+[5.277s]   271 |         [01;31m[Kgoal_status[m[K.status = goal_status.SUCCEEDED;
+[5.277s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[5.277s]       |         [32m[Ksi_status[m[K
+[5.291s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:272:31:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrajectory_goal_id[m[K’ was not declared in this scope
+[5.291s]   272 |         goal_status.goal_id = [01;31m[Ktrajectory_goal_id[m[K;
+[5.291s]       |                               [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[5.309s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:275:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrajectory_finished_pub[m[K’ was not declared in this scope
+[5.309s]   275 |         [01;31m[Ktrajectory_finished_pub[m[K.publish(result_msg);
+[5.309s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.310s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:279:19:[m[K [01;31m[Kerror: [m[K‘[01m[KInt32MultiArray[m[K’ is not a member of ‘[01m[Kstd_msgs[m[K’; did you mean ‘[01m[Kstd_msgs::msg::Int32MultiArray[m[K’?
+[5.310s]   279 |         std_msgs::[01;31m[KInt32MultiArray[m[K joint_pos_msg;
+[5.310s]       |                   [01;31m[K^~~~~~~~~~~~~~~[m[K
+[5.311s] In file included from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/int32_multi_array.hpp:7[m[K,
+[5.311s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:16[m[K,
+[5.311s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[5.312s] [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32_multi_array__struct.hpp:132:7:[m[K [01;36m[Knote: [m[K‘[01m[Kstd_msgs::msg::Int32MultiArray[m[K’ declared here
+[5.312s]   132 | using [01;36m[KInt32MultiArray[m[K =
+[5.312s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[5.313s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:288:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<std_msgs::msg::Int32MultiArray_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Kpublish[m[K’
+[5.313s]   288 |         joint_pos_array_pub.[01;31m[Kpublish[m[K(joint_pos_msg);
+[5.314s]       |                             [01;31m[K^~~~~~~[m[K
+[5.314s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:303:17:[m[K [01;31m[Kerror: [m[K‘[01m[KInt32MultiArray[m[K’ is not a member of ‘[01m[Kstd_msgs[m[K’; did you mean ‘[01m[Kstd_msgs::msg::Int32MultiArray[m[K’?
+[5.314s]   303 |       std_msgs::[01;31m[KInt32MultiArray[m[K joint_pos_msg;
+[5.314s]       |                 [01;31m[K^~~~~~~~~~~~~~~[m[K
+[5.314s] In file included from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/int32_multi_array.hpp:7[m[K,
+[5.314s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:16[m[K,
+[5.314s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[5.314s] [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32_multi_array__struct.hpp:132:7:[m[K [01;36m[Knote: [m[K‘[01m[Kstd_msgs::msg::Int32MultiArray[m[K’ declared here
+[5.315s]   132 | using [01;36m[KInt32MultiArray[m[K =
+[5.315s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[5.315s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:312:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<std_msgs::msg::Int32MultiArray_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Kpublish[m[K’
+[5.315s]   312 |       joint_pos_array_pub.[01;31m[Kpublish[m[K(joint_pos_msg);
+[5.315s]       |                           [01;31m[K^~~~~~~[m[K
+[5.315s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:[m[K At global scope:
+[5.315s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:317:58:[m[K [01;31m[Kerror: [m[K‘[01m[KJointStateConstPtr[m[K’ in namespace ‘[01m[Ksensor_msgs[m[K’ does not name a type
+[5.315s]   317 | void scorbot::Teleop::on_joint_states(const sensor_msgs::[01;31m[KJointStateConstPtr[m[K& msg){
+[5.315s]       |                                                          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[5.316s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:317:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid scorbot::Teleop::on_joint_states(const int&)[m[K’
+[5.316s]   317 | void [01;31m[Kscorbot[m[K::Teleop::on_joint_states(const sensor_msgs::JointStateConstPtr& msg){
+[5.316s]       |      [01;31m[K^~~~~~~[m[K
+[5.319s] In file included from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[5.319s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:40:12:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid scorbot::Teleop::on_joint_states(const JointState&)[m[K’
+[5.319s]    40 |       void [01;36m[Kon_joint_states[m[K(const sensor_msgs::msg::JointState& msg);
+[5.319s]       |            [01;36m[K^~~~~~~~~~~~~~~[m[K
+[5.319s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:32:9:[m[K [01;36m[Knote: [m[K‘[01m[Kclass scorbot::Teleop[m[K’ defined here
+[5.320s]    32 |   class [01;36m[KTeleop[m[K
+[5.320s]       |         [01;36m[K^~~~~~[m[K
+[5.320s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:413:52:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat64ConstPtr[m[K’ in namespace ‘[01m[Kstd_msgs[m[K’ does not name a type
+[5.320s]   413 | void scorbot::Teleop::on_tolerance(const std_msgs::[01;31m[KFloat64ConstPtr[m[K& msg){
+[5.322s]       |                                                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+[5.322s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:413:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid scorbot::Teleop::on_tolerance(const int&)[m[K’
+[5.322s]   413 | void [01;31m[Kscorbot[m[K::Teleop::on_tolerance(const std_msgs::Float64ConstPtr& msg){
+[5.322s]       |      [01;31m[K^~~~~~~[m[K
+[5.322s] In file included from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[5.322s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:47:12:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid scorbot::Teleop::on_tolerance(const Float64&)[m[K’
+[5.323s]    47 |       void [01;36m[Kon_tolerance[m[K(const std_msgs::msg::Float64& msg);
+[5.323s]       |            [01;36m[K^~~~~~~~~~~~[m[K
+[5.323s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:32:9:[m[K [01;36m[Knote: [m[K‘[01m[Kclass scorbot::Teleop[m[K’ defined here
+[5.323s]    32 |   class [01;36m[KTeleop[m[K
+[5.323s]       |         [01;36m[K^~~~~~[m[K
+[5.323s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:417:51:[m[K [01;31m[Kerror: [m[K‘[01m[KStringConstPtr[m[K’ in namespace ‘[01m[Kstd_msgs[m[K’ does not name a type
+[5.323s]   417 | void scorbot::Teleop::on_filename(const std_msgs::[01;31m[KStringConstPtr[m[K& msg){
+[5.323s]       |                                                   [01;31m[K^~~~~~~~~~~~~~[m[K
+[5.323s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:417:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid scorbot::Teleop::on_filename(const int&)[m[K’
+[5.324s]   417 | void [01;31m[Kscorbot[m[K::Teleop::on_filename(const std_msgs::StringConstPtr& msg){
+[5.324s]       |      [01;31m[K^~~~~~~[m[K
+[5.324s] In file included from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[5.324s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:48:12:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid scorbot::Teleop::on_filename(const String&)[m[K’
+[5.324s]    48 |       void [01;36m[Kon_filename[m[K(const std_msgs::msg::String& msg);
+[5.324s]       |            [01;36m[K^~~~~~~~~~~[m[K
+[5.324s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:32:9:[m[K [01;36m[Knote: [m[K‘[01m[Kclass scorbot::Teleop[m[K’ defined here
+[5.325s]    32 |   class [01;36m[KTeleop[m[K
+[5.325s]       |         [01;36m[K^~~~~~[m[K
+[5.325s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:421:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kuniversal_teleop[m[K’ does not name a type
+[5.325s]   421 | void scorbot::Teleop::on_controls(const [01;31m[Kuniversal_teleop[m[K::ControlConstPtr& msg)
+[5.325s]       |                                         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[5.325s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:421:74:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+[5.325s]   421 | void scorbot::Teleop::on_controls(const universal_teleop::ControlConstPtr[01;31m[K&[m[K msg)
+[5.325s]       |                                                                          [01;31m[K^[m[K
+[5.325s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:421:74:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[5.326s]   421 | void scorbot::Teleop::on_controls[34m[K([m[Kconst universal_teleop::ControlConstPtr[01;31m[K&[m[K msg)
+[5.326s]       |                                  [34m[K~[m[K                                       [01;31m[K^[m[K
+[5.326s]       |                                                                          [32m[K)[m[K
+[5.326s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:421:76:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kmsg[m[K’
+[5.326s]   421 | void scorbot::Teleop::on_controls(const universal_teleop::ControlConstPtr& [01;31m[Kmsg[m[K)
+[5.326s]       |                                                                            [01;31m[K^~~[m[K
+[5.326s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:446:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kuniversal_teleop[m[K’ does not name a type
+[5.327s]   446 | void scorbot::Teleop::on_events(const [01;31m[Kuniversal_teleop[m[K::EventConstPtr& msg)
+[5.327s]       |                                       [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[5.327s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:446:70:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+[5.327s]   446 | void scorbot::Teleop::on_events(const universal_teleop::EventConstPtr[01;31m[K&[m[K msg)
+[5.327s]       |                                                                      [01;31m[K^[m[K
+[5.327s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:446:70:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[5.327s]   446 | void scorbot::Teleop::on_events[34m[K([m[Kconst universal_teleop::EventConstPtr[01;31m[K&[m[K msg)
+[5.327s]       |                                [34m[K~[m[K                                     [01;31m[K^[m[K
+[5.328s]       |                                                                      [32m[K)[m[K
+[5.328s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:446:72:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kmsg[m[K’
+[5.328s]   446 | void scorbot::Teleop::on_events(const universal_teleop::EventConstPtr& [01;31m[Kmsg[m[K)
+[5.328s]       |                                                                        [01;31m[K^~~[m[K
+[5.328s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:[m[K In member function ‘[01m[Kvoid scorbot::Teleop::on_control_cycle()[m[K’:
+[5.329s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:510:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<float>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[5.329s]   510 |     for (int i = 0; [01;35m[Ki < velocities.joint_velocities.size()[m[K; i++) {
+[5.329s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.329s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:513:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<scorbot_msgs::msg::JointVelocities_<std::allocator<void> > >[m[K’ has no member named ‘[01m[Kpublish[m[K’
+[5.329s]   513 |     vel_pub.[01;31m[Kpublish[m[K(velocities);
+[5.329s]       |             [01;31m[K^~~~~~~[m[K
+[14.453s] gmake[2]: *** [CMakeFiles/scorbot.dir/build.make:76: CMakeFiles/scorbot.dir/src/scorbot.cpp.o] Error 1
+[14.453s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/scorbot.dir/all] Error 2
+[14.453s] gmake: *** [Makefile:146: all] Error 2
+[14.457s] Invoked command in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot' returned '2': AMENT_PREFIX_PATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs:/home/leon/microros_ws/install/micro_ros_demos_rclc:/home/leon/microros_ws/install/common_interfaces:/home/leon/microros_ws/install/visualization_msgs:/home/leon/microros_ws/install/test_msgs:/home/leon/microros_ws/install/example_interfaces:/home/leon/microros_ws/install/action_msgs:/home/leon/microros_ws/install/unique_identifier_msgs:/home/leon/microros_ws/install/trajectory_msgs:/home/leon/microros_ws/install/stereo_msgs:/home/leon/microros_ws/install/std_srvs:/home/leon/microros_ws/install/shape_msgs:/home/leon/microros_ws/install/sensor_msgs:/home/leon/microros_ws/install/nav_msgs:/home/leon/microros_ws/install/diagnostic_msgs:/home/leon/microros_ws/install/geometry_msgs:/home/leon/microros_ws/install/actionlib_msgs:/home/leon/microros_ws/install/std_msgs:/home/leon/microros_ws/install/statistics_msgs:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_test_msg:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp_tests:/home/leon/microros_ws/install/rmw_microxrcedds:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c_tests:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/leon/microros_ws/install/rosgraph_msgs:/home/leon/microros_ws/install/rclc_parameter:/home/leon/microros_ws/install/rclc:/home/leon/microros_ws/install/composition_interfaces:/home/leon/microros_ws/install/rcl_interfaces:/home/leon/microros_ws/install/microxrcedds_client:/home/leon/microros_ws/install/microcdr:/home/leon/microros_ws/install/micro_ros_utilities:/home/leon/microros_ws/install/micro_ros_setup:/home/leon/microros_ws/install/micro_ros_agent:/home/leon/microros_ws/install/micro_ros_msgs:/home/leon/microros_ws/install/lifecycle_msgs:/home/leon/microros_ws/install/complex_msgs:/home/leon/microros_ws/install/builtin_interfaces:/home/leon/microros_ws/install/sensor_msgs_py:/opt/ros/humble LD_LIBRARY_PATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot -- -j4 -l4

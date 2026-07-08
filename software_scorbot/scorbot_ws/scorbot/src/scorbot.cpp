@@ -1,6 +1,7 @@
 #include "scorbot.h"
 
 using namespace std;
+using std::placeholders::_1;
 
 #define NUM_JUNTAS (5)
 #define MAX_TRAJECTORY_SIZE (100)
@@ -23,27 +24,27 @@ using namespace std;
 scorbot::Teleop::Teleop(std::shared_ptr<rclcpp::Node> n)
 {
   node = n;
-  node->param("control_frequency", control_frequency, 5);
+  node->get_parameter_or("control_frequency", control_frequency, 5);
 
-  sub_control = node->subscribe("/universal_teleop/controls", 1, &Teleop::on_controls, this);
-  sub_events = node->subscribe("/universal_teleop/events", 1, &Teleop::on_events, this);
-  vel_pub = node->advertise<scorbot::JointVelocities>("/scorbot/joint_velocities", 1);
-  home_pub = node->advertise<std_msgs::Empty>("/scorbot/home", 1);
+  sub_control = node->create_subscription<universal_teleop_msgs::msg::Control>("/universal_teleop/controls", 1, std::bind(&Teleop::on_controls, this, _1));
+  sub_events = node->create_subscription<universal_teleop_msgs::msg::Event>("/universal_teleop/events", 1, std::bind(&Teleop::on_events, this, _1));
+  vel_pub = node->create_publisher<scorbot_msgs::msg::JointVelocities>("/scorbot/joint_velocities", 1);
+  home_pub = node->create_publisher<std_msgs::msg::Empty>("/scorbot/home", 1);
   
-  joint_trajectory_sub = node->subscribe<control_msgs::FollowJointTrajectoryActionGoal>("/scorbot/arm_position_controller/follow_joint_trajectory/goal", 1, &Teleop::on_trajectory, this);
-  //joint_trajectory_pub = node->advertise<scorbot::JointTrajectory>("/scorbot/joint_path_command_enc", 1);
-  joint_pos_array_pub = node->advertise<std_msgs::Int32MultiArray>("/scorbot/joint_path_command_enc", 1);
-  //goal_reached_sub = node->subscribe<std_msgs::Empty>("/scorbot/goal_reached", 1, &Teleop::on_goal_reached, this);
-  trajectory_finished_pub = node->advertise<control_msgs::FollowJointTrajectoryActionResult>("/arm_position_controller/follow_joint_trajectory/result", 1);
+  //joint_trajectory_sub = node->create_subscription<control_msgs::msg::FollowJointTrajectoryActionGoal>("/scorbot/arm_position_controller/follow_joint_trajectory/goal", 1, std::bind(&Teleop::on_trajectory, this, _1));
+  //joint_trajectory_pub = node->create_publisher<scorbot::JointTrajectory>("/scorbot/joint_path_command_enc", 1);
+  joint_pos_array_pub = node->create_publisher<std_msgs::msg::Int32MultiArray>("/scorbot/joint_path_command_enc", 1);
+  //goal_reached_sub = node->create_subscription<std_msgs::Empty>("/scorbot/goal_reached", 1, &Teleop::on_goal_reached, this);
+  trajectory_finished_pub = node->create_publisher<control_msgs::msg::FollowJointTrajectoryActionResult>("/arm_position_controller/follow_joint_trajectory/result", 1);
 
 
-  tolerance_param_sub = node->subscribe<std_msgs::Float64>("/scorbot/params/tolerance", 1, &Teleop::on_tolerance, this);
-  feedback_filename_sub = node->subscribe<std_msgs::String>("/scorbot/params/filename", 1, &Teleop::on_filename, this);
+  tolerance_param_sub = node->create_subscription<std_msgs::msg::Float64>("/scorbot/params/tolerance", 1, std::bind(&Teleop::on_tolerance, this, _1));
+  feedback_filename_sub = node->create_subscription<std_msgs::msg::String>("/scorbot/params/filename", 1, std::bind(&Teleop::on_filename, this, _1));
 
-  claw_catch_pub = node->advertise<std_msgs::Empty>("/scorbot/claw_catch", 1);
-  claw_release_pub = node->advertise<std_msgs::Empty>("/scorbot/claw_release", 1);
+  claw_catch_pub = node->create_publisher<std_msgs::msg::Empty>("/scorbot/claw_catch", 1);
+  claw_release_pub = node->create_publisher<std_msgs::msg::Empty>("/scorbot/claw_release", 1);
 
-  joint_states_sub = node->subscribe<sensor_msgs::JointState>("/joint_states", 1, &Teleop::on_joint_states, this);
+  joint_states_sub = node->create_subscription<sensor_msgs::msg::JointState>("/joint_states", 1, std::bind(&Teleop::on_joint_states, this, _1));
 
   override_enabled = slow_mode_enabled = false;
   

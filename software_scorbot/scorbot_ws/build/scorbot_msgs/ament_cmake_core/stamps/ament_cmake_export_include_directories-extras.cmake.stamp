@@ -1,6 +1,6 @@
 # generated from ament_cmake_export_include_directories/cmake/ament_cmake_export_include_directories-extras.cmake.in
 
-set(_exported_include_dirs "${scorbot_msgs_DIR}/../../../include/scorbot_msgs")
+set(_exported_include_dirs "${scorbot_msgs_DIR}/../../../include/scorbot_msgs;${scorbot_msgs_DIR}/../../../include")
 
 # append include directories to scorbot_msgs_INCLUDE_DIRS
 # warn about not existing paths

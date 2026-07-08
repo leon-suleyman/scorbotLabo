@@ -123,7 +123,7 @@ rosidl_generator_rs/scorbot_msgs/rust/src/lib.rs: /opt/ros/humble/share/std_msgs
 rosidl_generator_rs/scorbot_msgs/rust/src/lib.rs: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_rs/scorbot_msgs/rust/src/lib.rs: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Rust code for ROS interfaces"
-	cd /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs/scorbot_msgs__rs && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_rs/cmake/../../../lib/rosidl_generator_rs/rosidl_generator_rs --generator-arguments-file /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs/rosidl_generator_rs__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	cd /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs/scorbot_msgs__rs && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_rs/cmake/../../../lib/rosidl_generator_rs/rosidl_generator_rs --generator-arguments-file /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs/rosidl_generator_rs__arguments.json --typesupport-impls "rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_rs/scorbot_msgs/rust/build.rs: rosidl_generator_rs/scorbot_msgs/rust/src/lib.rs
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_rs/scorbot_msgs/rust/build.rs

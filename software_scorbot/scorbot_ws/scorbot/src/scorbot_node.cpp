@@ -8,6 +8,6 @@ int main(int argc, char** argv)
     .allow_undeclared_parameters(true)
     .automatically_declare_parameters_from_overrides(true));
 
-  scorbot t = scorbot::scorbot(n);
+  scorbot::Teleop t = scorbot::Teleop(n);
   rclcpp::spin_some(n);
 }

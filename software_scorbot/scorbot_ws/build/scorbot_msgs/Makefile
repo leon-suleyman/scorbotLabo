@@ -224,6 +224,19 @@ scorbot_msgs__rosidl_generator_c/fast:
 .PHONY : scorbot_msgs__rosidl_generator_c/fast
 
 #=============================================================================
+# Target rules for targets named scorbot_msgs__rosidl_typesupport_microxrcedds_c
+
+# Build rule for target.
+scorbot_msgs__rosidl_typesupport_microxrcedds_c: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 scorbot_msgs__rosidl_typesupport_microxrcedds_c
+.PHONY : scorbot_msgs__rosidl_typesupport_microxrcedds_c
+
+# fast build rule for target.
+scorbot_msgs__rosidl_typesupport_microxrcedds_c/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/build.make CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/build
+.PHONY : scorbot_msgs__rosidl_typesupport_microxrcedds_c/fast
+
+#=============================================================================
 # Target rules for targets named scorbot_msgs__rosidl_typesupport_fastrtps_c
 
 # Build rule for target.
@@ -274,6 +287,19 @@ scorbot_msgs__cpp: cmake_check_build_system
 scorbot_msgs__cpp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scorbot_msgs__cpp.dir/build.make CMakeFiles/scorbot_msgs__cpp.dir/build
 .PHONY : scorbot_msgs__cpp/fast
+
+#=============================================================================
+# Target rules for targets named scorbot_msgs__rosidl_typesupport_microxrcedds_cpp
+
+# Build rule for target.
+scorbot_msgs__rosidl_typesupport_microxrcedds_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 scorbot_msgs__rosidl_typesupport_microxrcedds_cpp
+.PHONY : scorbot_msgs__rosidl_typesupport_microxrcedds_cpp
+
+# fast build rule for target.
+scorbot_msgs__rosidl_typesupport_microxrcedds_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_cpp.dir/build.make CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_cpp.dir/build
+.PHONY : scorbot_msgs__rosidl_typesupport_microxrcedds_cpp/fast
 
 #=============================================================================
 # Target rules for targets named scorbot_msgs__rosidl_typesupport_fastrtps_cpp
@@ -352,6 +378,19 @@ scorbot_msgs__rosidl_generator_py: cmake_check_build_system
 scorbot_msgs__rosidl_generator_py/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scorbot_msgs__rosidl_generator_py.dir/build.make CMakeFiles/scorbot_msgs__rosidl_generator_py.dir/build
 .PHONY : scorbot_msgs__rosidl_generator_py/fast
+
+#=============================================================================
+# Target rules for targets named scorbot_msgs__rosidl_typesupport_microxrcedds_c__pyext
+
+# Build rule for target.
+scorbot_msgs__rosidl_typesupport_microxrcedds_c__pyext: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 scorbot_msgs__rosidl_typesupport_microxrcedds_c__pyext
+.PHONY : scorbot_msgs__rosidl_typesupport_microxrcedds_c__pyext
+
+# fast build rule for target.
+scorbot_msgs__rosidl_typesupport_microxrcedds_c__pyext/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c__pyext.dir/build.make CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c__pyext.dir/build
+.PHONY : scorbot_msgs__rosidl_typesupport_microxrcedds_c__pyext/fast
 
 #=============================================================================
 # Target rules for targets named scorbot_msgs__rosidl_typesupport_fastrtps_c__pyext
@@ -561,6 +600,30 @@ rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_introspec
 rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_introspection_c.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scorbot_msgs__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/scorbot_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_introspection_c.c.s
 .PHONY : rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_introspection_c.c.s
+
+rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_microxrcedds_c.o: rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_microxrcedds_c.c.o
+.PHONY : rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_microxrcedds_c.o
+
+# target to build an object file
+rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_microxrcedds_c.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c__pyext.dir/build.make CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c__pyext.dir/rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_microxrcedds_c.c.o
+.PHONY : rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_microxrcedds_c.c.o
+
+rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_microxrcedds_c.i: rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_microxrcedds_c.c.i
+.PHONY : rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_microxrcedds_c.i
+
+# target to preprocess a source file
+rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_microxrcedds_c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c__pyext.dir/build.make CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c__pyext.dir/rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_microxrcedds_c.c.i
+.PHONY : rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_microxrcedds_c.c.i
+
+rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_microxrcedds_c.s: rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_microxrcedds_c.c.s
+.PHONY : rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_microxrcedds_c.s
+
+# target to generate assembly for a file
+rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_microxrcedds_c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c__pyext.dir/build.make CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c__pyext.dir/rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_microxrcedds_c.c.s
+.PHONY : rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_microxrcedds_c.c.s
 
 rosidl_generator_py/scorbot_msgs/msg/_joint_trajectory_s.o: rosidl_generator_py/scorbot_msgs/msg/_joint_trajectory_s.c.o
 .PHONY : rosidl_generator_py/scorbot_msgs/msg/_joint_trajectory_s.o
@@ -1066,6 +1129,150 @@ rosidl_typesupport_introspection_cpp/scorbot_msgs/msg/detail/trajectory_point__t
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scorbot_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/scorbot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/scorbot_msgs/msg/detail/trajectory_point__type_support.cpp.s
 .PHONY : rosidl_typesupport_introspection_cpp/scorbot_msgs/msg/detail/trajectory_point__type_support.cpp.s
 
+rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_c.o: rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_c.c.o
+.PHONY : rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_c.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/build.make CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_c.c.o
+.PHONY : rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_c.c.o
+
+rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_c.i: rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_c.c.i
+.PHONY : rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/build.make CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_c.c.i
+.PHONY : rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_c.c.i
+
+rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_c.s: rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_c.c.s
+.PHONY : rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/build.make CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_c.c.s
+.PHONY : rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_c.c.s
+
+rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_c.o: rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_c.c.o
+.PHONY : rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_c.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/build.make CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_c.c.o
+.PHONY : rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_c.c.o
+
+rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_c.i: rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_c.c.i
+.PHONY : rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/build.make CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_c.c.i
+.PHONY : rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_c.c.i
+
+rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_c.s: rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_c.c.s
+.PHONY : rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/build.make CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_c.c.s
+.PHONY : rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_c.c.s
+
+rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_c.o: rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_c.c.o
+.PHONY : rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_c.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/build.make CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_c.c.o
+.PHONY : rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_c.c.o
+
+rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_c.i: rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_c.c.i
+.PHONY : rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/build.make CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_c.c.i
+.PHONY : rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_c.c.i
+
+rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_c.s: rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_c.c.s
+.PHONY : rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/build.make CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_c.c.s
+.PHONY : rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_c.c.s
+
+rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_cpp.o: rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_cpp.cpp.o
+.PHONY : rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_cpp.o
+
+# target to build an object file
+rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_cpp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_cpp.dir/build.make CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_cpp.cpp.o
+.PHONY : rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_cpp.cpp.o
+
+rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_cpp.i: rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_cpp.cpp.i
+.PHONY : rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_cpp.i
+
+# target to preprocess a source file
+rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_cpp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_cpp.dir/build.make CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_cpp.cpp.i
+.PHONY : rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_cpp.cpp.i
+
+rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_cpp.s: rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_cpp.cpp.s
+.PHONY : rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_cpp.s
+
+# target to generate assembly for a file
+rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_cpp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_cpp.dir/build.make CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_cpp.cpp.s
+.PHONY : rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_cpp.cpp.s
+
+rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_cpp.o: rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_cpp.cpp.o
+.PHONY : rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_cpp.o
+
+# target to build an object file
+rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_cpp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_cpp.dir/build.make CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_cpp.cpp.o
+.PHONY : rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_cpp.cpp.o
+
+rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_cpp.i: rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_cpp.cpp.i
+.PHONY : rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_cpp.i
+
+# target to preprocess a source file
+rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_cpp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_cpp.dir/build.make CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_cpp.cpp.i
+.PHONY : rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_cpp.cpp.i
+
+rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_cpp.s: rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_cpp.cpp.s
+.PHONY : rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_cpp.s
+
+# target to generate assembly for a file
+rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_cpp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_cpp.dir/build.make CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_cpp.cpp.s
+.PHONY : rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_cpp.cpp.s
+
+rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_cpp.o: rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_cpp.cpp.o
+.PHONY : rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_cpp.o
+
+# target to build an object file
+rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_cpp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_cpp.dir/build.make CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_cpp.cpp.o
+.PHONY : rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_cpp.cpp.o
+
+rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_cpp.i: rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_cpp.cpp.i
+.PHONY : rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_cpp.i
+
+# target to preprocess a source file
+rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_cpp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_cpp.dir/build.make CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_cpp.cpp.i
+.PHONY : rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_cpp.cpp.i
+
+rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_cpp.s: rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_cpp.cpp.s
+.PHONY : rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_cpp.s
+
+# target to generate assembly for a file
+rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_cpp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_cpp.dir/build.make CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_cpp.cpp.s
+.PHONY : rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_cpp.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1098,6 +1305,9 @@ help:
 	@echo "... scorbot_msgs__rosidl_typesupport_introspection_c"
 	@echo "... scorbot_msgs__rosidl_typesupport_introspection_c__pyext"
 	@echo "... scorbot_msgs__rosidl_typesupport_introspection_cpp"
+	@echo "... scorbot_msgs__rosidl_typesupport_microxrcedds_c"
+	@echo "... scorbot_msgs__rosidl_typesupport_microxrcedds_c__pyext"
+	@echo "... scorbot_msgs__rosidl_typesupport_microxrcedds_cpp"
 	@echo "... rosidl_generator_c/scorbot_msgs/msg/detail/joint_trajectory__functions.o"
 	@echo "... rosidl_generator_c/scorbot_msgs/msg/detail/joint_trajectory__functions.i"
 	@echo "... rosidl_generator_c/scorbot_msgs/msg/detail/joint_trajectory__functions.s"
@@ -1116,6 +1326,9 @@ help:
 	@echo "... rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_introspection_c.o"
 	@echo "... rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_introspection_c.i"
 	@echo "... rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_introspection_c.s"
+	@echo "... rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_microxrcedds_c.o"
+	@echo "... rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_microxrcedds_c.i"
+	@echo "... rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_microxrcedds_c.s"
 	@echo "... rosidl_generator_py/scorbot_msgs/msg/_joint_trajectory_s.o"
 	@echo "... rosidl_generator_py/scorbot_msgs/msg/_joint_trajectory_s.i"
 	@echo "... rosidl_generator_py/scorbot_msgs/msg/_joint_trajectory_s.s"
@@ -1179,6 +1392,24 @@ help:
 	@echo "... rosidl_typesupport_introspection_cpp/scorbot_msgs/msg/detail/trajectory_point__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/scorbot_msgs/msg/detail/trajectory_point__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/scorbot_msgs/msg/detail/trajectory_point__type_support.s"
+	@echo "... rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_c.o"
+	@echo "... rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_c.i"
+	@echo "... rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_c.s"
+	@echo "... rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_c.o"
+	@echo "... rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_c.i"
+	@echo "... rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_c.s"
+	@echo "... rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_c.o"
+	@echo "... rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_c.i"
+	@echo "... rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_c.s"
+	@echo "... rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_cpp.o"
+	@echo "... rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_cpp.i"
+	@echo "... rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_cpp.s"
+	@echo "... rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_cpp.o"
+	@echo "... rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_cpp.i"
+	@echo "... rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_cpp.s"
+	@echo "... rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_cpp.o"
+	@echo "... rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_cpp.i"
+	@echo "... rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_cpp.s"
 .PHONY : help
 
 

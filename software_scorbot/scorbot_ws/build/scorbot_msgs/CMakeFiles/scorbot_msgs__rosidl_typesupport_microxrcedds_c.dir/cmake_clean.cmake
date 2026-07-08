@@ -1,0 +1,21 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_c.c.o"
+  "CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_c.c.o.d"
+  "CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_c.c.o"
+  "CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_c.c.o.d"
+  "CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_c.c.o"
+  "CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_c.c.o.d"
+  "libscorbot_msgs__rosidl_typesupport_microxrcedds_c.pdb"
+  "libscorbot_msgs__rosidl_typesupport_microxrcedds_c.so"
+  "rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/joint_trajectory__rosidl_typesupport_microxrcedds_c.h"
+  "rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/joint_velocities__rosidl_typesupport_microxrcedds_c.h"
+  "rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_c.c"
+  "rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_c.c"
+  "rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_c.c"
+  "rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/trajectory_point__rosidl_typesupport_microxrcedds_c.h"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

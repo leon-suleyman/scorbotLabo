@@ -82,6 +82,33 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/scorbot_msgs/scorbot_msgs" TYPE DIRECTORY FILES "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs/rosidl_typesupport_microxrcedds_c/scorbot_msgs/" REGEX "/[^/]*\\.c$" EXCLUDE)
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libscorbot_msgs__rosidl_typesupport_microxrcedds_c.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libscorbot_msgs__rosidl_typesupport_microxrcedds_c.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libscorbot_msgs__rosidl_typesupport_microxrcedds_c.so"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs/libscorbot_msgs__rosidl_typesupport_microxrcedds_c.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libscorbot_msgs__rosidl_typesupport_microxrcedds_c.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libscorbot_msgs__rosidl_typesupport_microxrcedds_c.so")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libscorbot_msgs__rosidl_typesupport_microxrcedds_c.so"
+         OLD_RPATH "/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c/lib:/opt/ros/humble/lib:/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs:/home/leon/microros_ws/install/microcdr/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libscorbot_msgs__rosidl_typesupport_microxrcedds_c.so")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/scorbot_msgs/scorbot_msgs" TYPE DIRECTORY FILES "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs/rosidl_typesupport_fastrtps_c/scorbot_msgs/" REGEX "/[^/]*\\.cpp$" EXCLUDE)
 endif()
 
@@ -160,6 +187,33 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/scorbot_msgs/scorbot_msgs" TYPE DIRECTORY FILES "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs/rosidl_generator_cpp/scorbot_msgs/" REGEX "/[^/]*\\.hpp$")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/scorbot_msgs/scorbot_msgs" TYPE DIRECTORY FILES "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs/rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/" REGEX "/[^/]*\\.cpp$" EXCLUDE)
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libscorbot_msgs__rosidl_typesupport_microxrcedds_cpp.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libscorbot_msgs__rosidl_typesupport_microxrcedds_cpp.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libscorbot_msgs__rosidl_typesupport_microxrcedds_cpp.so"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs/libscorbot_msgs__rosidl_typesupport_microxrcedds_cpp.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libscorbot_msgs__rosidl_typesupport_microxrcedds_cpp.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libscorbot_msgs__rosidl_typesupport_microxrcedds_cpp.so")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libscorbot_msgs__rosidl_typesupport_microxrcedds_cpp.so"
+         OLD_RPATH "/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp/lib:/opt/ros/humble/lib:/home/leon/microros_ws/install/microcdr/lib:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libscorbot_msgs__rosidl_typesupport_microxrcedds_cpp.so")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -261,6 +315,29 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
         "/usr/bin/python3" "-m" "compileall"
         "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs"
       )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/scorbot_msgs" TYPE SHARED_LIBRARY FILES "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs/rosidl_generator_py/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so"
+         OLD_RPATH "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs/rosidl_generator_py/scorbot_msgs:/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs:/opt/ros/humble/lib:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c/lib:/home/leon/microros_ws/install/microcdr/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -629,6 +706,10 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scorbot_msgs/cmake" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/scorbot_msgs/cmake" TYPE FILE FILES "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs/rosidl_cmake/rosidl_cmake_aggregate_target-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

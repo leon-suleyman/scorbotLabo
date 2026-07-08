@@ -1,0 +1,1014 @@
+[0.000000] (-) TimerEvent: {}
+[0.000956] (scorbot_msgs) JobQueued: {'identifier': 'scorbot_msgs', 'dependencies': OrderedDict()}
+[0.001446] (scorbot) JobQueued: {'identifier': 'scorbot', 'dependencies': OrderedDict([('scorbot_msgs', '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs')])}
+[0.002366] (scorbot_msgs) JobStarted: {'identifier': 'scorbot_msgs'}
+[0.099445] (-) TimerEvent: {}
+[0.107177] (scorbot_msgs) JobProgress: {'identifier': 'scorbot_msgs', 'progress': 'cmake'}
+[0.108237] (scorbot_msgs) JobProgress: {'identifier': 'scorbot_msgs', 'progress': 'build'}
+[0.109597] (scorbot_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs', '--', '-j4', '-l4'], 'cwd': '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'leon'), ('LC_TIME', 'es_AR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/leon/microros_ws/install/visualization_msgs/lib:/home/leon/microros_ws/install/test_msgs/lib:/home/leon/microros_ws/install/example_interfaces/lib:/home/leon/microros_ws/install/action_msgs/lib:/home/leon/microros_ws/install/unique_identifier_msgs/lib:/home/leon/microros_ws/install/trajectory_msgs/lib:/home/leon/microros_ws/install/stereo_msgs/lib:/home/leon/microros_ws/install/std_srvs/lib:/home/leon/microros_ws/install/shape_msgs/lib:/home/leon/microros_ws/install/sensor_msgs/lib:/home/leon/microros_ws/install/nav_msgs/lib:/home/leon/microros_ws/install/diagnostic_msgs/lib:/home/leon/microros_ws/install/geometry_msgs/lib:/home/leon/microros_ws/install/actionlib_msgs/lib:/home/leon/microros_ws/install/std_msgs/lib:/home/leon/microros_ws/install/statistics_msgs/lib:/home/leon/microros_ws/install/rmw_microxrcedds/lib:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp/lib:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c/lib:/home/leon/microros_ws/install/rosgraph_msgs/lib:/home/leon/microros_ws/install/rclc_parameter/lib:/home/leon/microros_ws/install/rclc/lib:/home/leon/microros_ws/install/composition_interfaces/lib:/home/leon/microros_ws/install/rcl_interfaces/lib:/home/leon/microros_ws/install/microxrcedds_client/lib:/home/leon/microros_ws/install/microcdr/lib:/home/leon/microros_ws/install/micro_ros_utilities/lib:/home/leon/microros_ws/install/micro_ros_agent/lib:/home/leon/microros_ws/install/micro_ros_msgs/lib:/home/leon/microros_ws/install/lifecycle_msgs/lib:/home/leon/microros_ws/install/complex_msgs/lib:/home/leon/microros_ws/install/builtin_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/leon'), ('OLDPWD', '/home/leon/robotica/scorbotLabo/software_scorbot'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_AR.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1551'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=189e8256ff48f00033909f9c6a4e74a7'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/leon/microros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'leon'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'leon'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/leon-labo:@/tmp/.ICE-unix/1551,unix/leon-labo:/tmp/.ICE-unix/1551'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_AR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9fcc8ef0_aed4_407f_b57e_a2486dcf852c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_AR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.27RQR3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/leon/microros_ws/install/micro_ros_demos_rclc:/home/leon/microros_ws/install/common_interfaces:/home/leon/microros_ws/install/visualization_msgs:/home/leon/microros_ws/install/test_msgs:/home/leon/microros_ws/install/example_interfaces:/home/leon/microros_ws/install/action_msgs:/home/leon/microros_ws/install/unique_identifier_msgs:/home/leon/microros_ws/install/trajectory_msgs:/home/leon/microros_ws/install/stereo_msgs:/home/leon/microros_ws/install/std_srvs:/home/leon/microros_ws/install/shape_msgs:/home/leon/microros_ws/install/sensor_msgs_py:/home/leon/microros_ws/install/sensor_msgs:/home/leon/microros_ws/install/nav_msgs:/home/leon/microros_ws/install/diagnostic_msgs:/home/leon/microros_ws/install/geometry_msgs:/home/leon/microros_ws/install/actionlib_msgs:/home/leon/microros_ws/install/std_msgs:/home/leon/microros_ws/install/statistics_msgs:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_test_msg:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp_tests:/home/leon/microros_ws/install/rmw_microxrcedds:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c_tests:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/leon/microros_ws/install/rosgraph_msgs:/home/leon/microros_ws/install/rclc_parameter:/home/leon/microros_ws/install/rclc:/home/leon/microros_ws/install/composition_interfaces:/home/leon/microros_ws/install/rcl_interfaces:/home/leon/microros_ws/install/micro_ros_utilities:/home/leon/microros_ws/install/micro_ros_setup:/home/leon/microros_ws/install/micro_ros_agent:/home/leon/microros_ws/install/micro_ros_msgs:/home/leon/microros_ws/install/lifecycle_msgs:/home/leon/microros_ws/install/complex_msgs:/home/leon/microros_ws/install/builtin_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_AR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_AR.UTF-8'), ('LC_IDENTIFICATION', 'es_AR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=189e8256ff48f00033909f9c6a4e74a7'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/leon/microros_ws/install/visualization_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/test_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/example_interfaces/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/action_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/trajectory_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/stereo_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/std_srvs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/shape_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/sensor_msgs_py/lib/python3.10/site-packages:/home/leon/microros_ws/install/sensor_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/nav_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/geometry_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/actionlib_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/std_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/statistics_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/rosgraph_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/rcl_interfaces/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/complex_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_AR.UTF-8'), ('LC_PAPER', 'es_AR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/leon/microros_ws/install/micro_ros_demos_rclc:/home/leon/microros_ws/install/common_interfaces:/home/leon/microros_ws/install/visualization_msgs:/home/leon/microros_ws/install/test_msgs:/home/leon/microros_ws/install/example_interfaces:/home/leon/microros_ws/install/action_msgs:/home/leon/microros_ws/install/unique_identifier_msgs:/home/leon/microros_ws/install/trajectory_msgs:/home/leon/microros_ws/install/stereo_msgs:/home/leon/microros_ws/install/std_srvs:/home/leon/microros_ws/install/shape_msgs:/home/leon/microros_ws/install/sensor_msgs:/home/leon/microros_ws/install/nav_msgs:/home/leon/microros_ws/install/diagnostic_msgs:/home/leon/microros_ws/install/geometry_msgs:/home/leon/microros_ws/install/actionlib_msgs:/home/leon/microros_ws/install/std_msgs:/home/leon/microros_ws/install/statistics_msgs:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_test_msg:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp_tests:/home/leon/microros_ws/install/rmw_microxrcedds:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c_tests:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/leon/microros_ws/install/rosgraph_msgs:/home/leon/microros_ws/install/rclc_parameter:/home/leon/microros_ws/install/rclc:/home/leon/microros_ws/install/composition_interfaces:/home/leon/microros_ws/install/rcl_interfaces:/home/leon/microros_ws/install/microxrcedds_client:/home/leon/microros_ws/install/microcdr:/home/leon/microros_ws/install/micro_ros_utilities:/home/leon/microros_ws/install/micro_ros_setup:/home/leon/microros_ws/install/micro_ros_agent:/home/leon/microros_ws/install/micro_ros_msgs:/home/leon/microros_ws/install/lifecycle_msgs:/home/leon/microros_ws/install/complex_msgs:/home/leon/microros_ws/install/builtin_interfaces:/home/leon/microros_ws/install/sensor_msgs_py:/opt/ros/humble')]), 'shell': False}
+[0.199696] (-) TimerEvent: {}
+[0.300249] (-) TimerEvent: {}
+[0.400927] (-) TimerEvent: {}
+[0.445503] (scorbot_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.501205] (-) TimerEvent: {}
+[0.601744] (-) TimerEvent: {}
+[0.702181] (-) TimerEvent: {}
+[0.802713] (-) TimerEvent: {}
+[0.903174] (-) TimerEvent: {}
+[0.947415] (scorbot_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.003456] (-) TimerEvent: {}
+[1.020000] (scorbot_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.061219] (scorbot_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.103625] (-) TimerEvent: {}
+[1.204176] (-) TimerEvent: {}
+[1.304777] (-) TimerEvent: {}
+[1.405448] (-) TimerEvent: {}
+[1.506023] (-) TimerEvent: {}
+[1.583618] (scorbot_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.606178] (-) TimerEvent: {}
+[1.706852] (-) TimerEvent: {}
+[1.735654] (scorbot_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.9.1 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[1.807021] (-) TimerEvent: {}
+[1.907642] (-) TimerEvent: {}
+[2.008299] (-) TimerEvent: {}
+[2.108884] (-) TimerEvent: {}
+[2.209515] (-) TimerEvent: {}
+[2.310172] (-) TimerEvent: {}
+[2.410911] (-) TimerEvent: {}
+[2.511391] (-) TimerEvent: {}
+[2.598350] (scorbot_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[2.611676] (-) TimerEvent: {}
+[2.712215] (-) TimerEvent: {}
+[2.812704] (-) TimerEvent: {}
+[2.913479] (-) TimerEvent: {}
+[3.013979] (-) TimerEvent: {}
+[3.114395] (-) TimerEvent: {}
+[3.214876] (-) TimerEvent: {}
+[3.315398] (-) TimerEvent: {}
+[3.407374] (scorbot_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.415621] (-) TimerEvent: {}
+[3.516264] (-) TimerEvent: {}
+[3.616834] (-) TimerEvent: {}
+[3.717452] (-) TimerEvent: {}
+[3.818108] (-) TimerEvent: {}
+[3.918751] (-) TimerEvent: {}
+[4.019409] (-) TimerEvent: {}
+[4.120028] (-) TimerEvent: {}
+[4.220685] (-) TimerEvent: {}
+[4.321273] (-) TimerEvent: {}
+[4.321842] (scorbot_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.412581] (scorbot_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[4.421444] (-) TimerEvent: {}
+[4.511079] (scorbot_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.511540] (scorbot_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[4.511841] (scorbot_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[4.521619] (-) TimerEvent: {}
+[4.622272] (-) TimerEvent: {}
+[4.722986] (-) TimerEvent: {}
+[4.823615] (-) TimerEvent: {}
+[4.892312] (scorbot_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[4.923915] (-) TimerEvent: {}
+[5.016830] (scorbot_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.020470] (scorbot_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.024012] (-) TimerEvent: {}
+[5.027953] (scorbot_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.124188] (-) TimerEvent: {}
+[5.224742] (-) TimerEvent: {}
+[5.236786] (scorbot_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[5.267337] (scorbot_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs\n'}
+[5.325006] (-) TimerEvent: {}
+[5.333076] (scorbot_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[5.358810] (scorbot_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[5.362886] (scorbot_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[5.387161] (scorbot_msgs) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_scorbot_msgs\n'}
+[5.425134] (-) TimerEvent: {}
+[5.529820] (-) TimerEvent: {}
+[5.632802] (-) TimerEvent: {}
+[5.733277] (-) TimerEvent: {}
+[5.833764] (-) TimerEvent: {}
+[5.934110] (-) TimerEvent: {}
+[6.034529] (-) TimerEvent: {}
+[6.121472] (scorbot_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[6.126424] (scorbot_msgs) StdoutLine: {'line': b'writing scorbot_msgs.egg-info/PKG-INFO\n'}
+[6.127187] (scorbot_msgs) StdoutLine: {'line': b'writing dependency_links to scorbot_msgs.egg-info/dependency_links.txt\n'}
+[6.128044] (scorbot_msgs) StdoutLine: {'line': b'writing top-level names to scorbot_msgs.egg-info/top_level.txt\n'}
+[6.134639] (-) TimerEvent: {}
+[6.137372] (scorbot_msgs) StdoutLine: {'line': b"reading manifest file 'scorbot_msgs.egg-info/SOURCES.txt'\n"}
+[6.144765] (scorbot_msgs) StdoutLine: {'line': b"writing manifest file 'scorbot_msgs.egg-info/SOURCES.txt'\n"}
+[6.234806] (-) TimerEvent: {}
+[6.274833] (scorbot_msgs) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_scorbot_msgs_egg\n'}
+[6.334931] (-) TimerEvent: {}
+[6.346223] (scorbot_msgs) StdoutLine: {'line': b'[  5%] Built target scorbot_msgs__rs\n'}
+[6.436958] (-) TimerEvent: {}
+[6.507013] (scorbot_msgs) StdoutLine: {'line': b'[  5%] Built target scorbot_msgs__cpp\n'}
+[6.538838] (-) TimerEvent: {}
+[6.550628] (scorbot_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Micro XRCE-DDS\x1b[0m\n'}
+[6.576045] (scorbot_msgs) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.586378] (scorbot_msgs) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[6.638777] (scorbot_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scorbot_msgs__rosidl_generator_c\x1b[0m\n'}
+[6.639068] (-) TimerEvent: {}
+[6.739389] (-) TimerEvent: {}
+[6.759174] (scorbot_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/scorbot_msgs__rosidl_generator_c.dir/rosidl_generator_c/scorbot_msgs/msg/detail/joint_trajectory__functions.c.o\x1b[0m\n'}
+[6.839499] (-) TimerEvent: {}
+[6.939965] (-) TimerEvent: {}
+[7.040563] (-) TimerEvent: {}
+[7.142019] (-) TimerEvent: {}
+[7.242480] (-) TimerEvent: {}
+[7.342795] (-) TimerEvent: {}
+[7.354277] (scorbot_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/scorbot_msgs__rosidl_generator_c.dir/rosidl_generator_c/scorbot_msgs/msg/detail/joint_velocities__functions.c.o\x1b[0m\n'}
+[7.442913] (-) TimerEvent: {}
+[7.526873] (scorbot_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/scorbot_msgs__rosidl_generator_c.dir/rosidl_generator_c/scorbot_msgs/msg/detail/trajectory_point__functions.c.o\x1b[0m\n'}
+[7.543049] (-) TimerEvent: {}
+[7.557984] (scorbot_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scorbot_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[7.621322] (scorbot_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32m\x1b[1mLinking C shared library libscorbot_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[7.640263] (scorbot_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/scorbot_msgs/msg/detail/dds_fastrtps/joint_trajectory__type_support.cpp.o\x1b[0m\n'}
+[7.643173] (-) TimerEvent: {}
+[7.650166] (scorbot_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scorbot_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[7.689390] (scorbot_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_cpp.cpp.o\x1b[0m\n'}
+[7.690683] (scorbot_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/scorbot_msgs/msg/detail/joint_trajectory__type_support.cpp.o\x1b[0m\n'}
+[7.743286] (-) TimerEvent: {}
+[7.843792] (-) TimerEvent: {}
+[7.944358] (-) TimerEvent: {}
+[8.044915] (-) TimerEvent: {}
+[8.057552] (scorbot_msgs) StdoutLine: {'line': b'[ 21%] Built target scorbot_msgs__rosidl_generator_c\n'}
+[8.074538] (scorbot_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/scorbot_msgs/msg/detail/joint_velocities__type_support.cpp.o\x1b[0m\n'}
+[8.145131] (-) TimerEvent: {}
+[8.245675] (-) TimerEvent: {}
+[8.346278] (-) TimerEvent: {}
+[8.449822] (-) TimerEvent: {}
+[8.550353] (-) TimerEvent: {}
+[8.651205] (-) TimerEvent: {}
+[8.751744] (-) TimerEvent: {}
+[8.852283] (-) TimerEvent: {}
+[8.955822] (-) TimerEvent: {}
+[9.057820] (-) TimerEvent: {}
+[9.158235] (-) TimerEvent: {}
+[9.258655] (-) TimerEvent: {}
+[9.359100] (-) TimerEvent: {}
+[9.461826] (-) TimerEvent: {}
+[9.562239] (-) TimerEvent: {}
+[9.599919] (scorbot_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_cpp.cpp.o\x1b[0m\n'}
+[9.662369] (-) TimerEvent: {}
+[9.666011] (scorbot_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/scorbot_msgs/msg/detail/trajectory_point__type_support.cpp.o\x1b[0m\n'}
+[9.762495] (-) TimerEvent: {}
+[9.769284] (scorbot_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_cpp.dir/rosidl_typesupport_microxrcedds_cpp/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_cpp.cpp.o\x1b[0m\n'}
+[9.778246] (scorbot_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/scorbot_msgs/msg/detail/dds_fastrtps/joint_velocities__type_support.cpp.o\x1b[0m\n'}
+[9.862631] (-) TimerEvent: {}
+[9.965045] (-) TimerEvent: {}
+[10.065665] (-) TimerEvent: {}
+[10.166324] (-) TimerEvent: {}
+[10.267830] (-) TimerEvent: {}
+[10.372829] (-) TimerEvent: {}
+[10.383907] (scorbot_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/scorbot_msgs/msg/detail/dds_fastrtps/trajectory_point__type_support.cpp.o\x1b[0m\n'}
+[10.472959] (-) TimerEvent: {}
+[10.561028] (scorbot_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32m\x1b[1mLinking CXX shared library libscorbot_msgs__rosidl_typesupport_microxrcedds_cpp.so\x1b[0m\n'}
+[10.573097] (-) TimerEvent: {}
+[10.616931] (scorbot_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32m\x1b[1mLinking CXX shared library libscorbot_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[10.673226] (-) TimerEvent: {}
+[10.774842] (-) TimerEvent: {}
+[10.839058] (scorbot_msgs) StdoutLine: {'line': b'[ 36%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[10.874943] (-) TimerEvent: {}
+[10.916965] (scorbot_msgs) StdoutLine: {'line': b'[ 36%] Built target scorbot_msgs__rosidl_typesupport_introspection_cpp\n'}
+[10.964697] (scorbot_msgs) StdoutLine: {'line': b'[ 38%] \x1b[34m\x1b[1mGenerating C type support for eProsima Micro XRCE-DDS\x1b[0m\n'}
+[10.975087] (-) TimerEvent: {}
+[11.051019] (scorbot_msgs) StdoutLine: {'line': b'[ 38%] Built target scorbot_msgs__rosidl_typesupport_microxrcedds_cpp\n'}
+[11.075206] (-) TimerEvent: {}
+[11.078987] (scorbot_msgs) StdoutLine: {'line': b'[ 40%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[11.175342] (-) TimerEvent: {}
+[11.275987] (-) TimerEvent: {}
+[11.360548] (scorbot_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking CXX shared library libscorbot_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[11.376100] (-) TimerEvent: {}
+[11.476696] (-) TimerEvent: {}
+[11.577321] (-) TimerEvent: {}
+[11.631113] (scorbot_msgs) StdoutLine: {'line': b'[ 41%] Built target scorbot_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[11.673567] (scorbot_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scorbot_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[11.677508] (-) TimerEvent: {}
+[11.687920] (scorbot_msgs) StdoutLine: {'line': b'[ 43%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[11.728065] (scorbot_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/scorbot_msgs/msg/joint_trajectory__type_support.cpp.o\x1b[0m\n'}
+[11.779740] (-) TimerEvent: {}
+[11.880100] (-) TimerEvent: {}
+[11.982810] (-) TimerEvent: {}
+[12.083317] (-) TimerEvent: {}
+[12.120130] (scorbot_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_trajectory__type_support_c.c.o\x1b[0m\n'}
+[12.183439] (-) TimerEvent: {}
+[12.286823] (scorbot_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/joint_velocities__type_support_c.c.o\x1b[0m\n'}
+[12.287135] (-) TimerEvent: {}
+[12.357530] (scorbot_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/scorbot_msgs/msg/joint_velocities__type_support.cpp.o\x1b[0m\n'}
+[12.362209] (scorbot_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scorbot_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[12.387288] (-) TimerEvent: {}
+[12.389207] (scorbot_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c.dir/rosidl_typesupport_microxrcedds_c/scorbot_msgs/msg/detail/microxrcedds/trajectory_point__type_support_c.c.o\x1b[0m\n'}
+[12.437896] (scorbot_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/scorbot_msgs/msg/detail/joint_trajectory__type_support_c.cpp.o\x1b[0m\n'}
+[12.487429] (-) TimerEvent: {}
+[12.492679] (scorbot_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking C shared library libscorbot_msgs__rosidl_typesupport_microxrcedds_c.so\x1b[0m\n'}
+[12.587576] (-) TimerEvent: {}
+[12.660014] (scorbot_msgs) StdoutLine: {'line': b'[ 55%] Built target scorbot_msgs__rosidl_typesupport_microxrcedds_c\n'}
+[12.680173] (scorbot_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/scorbot_msgs/msg/trajectory_point__type_support.cpp.o\x1b[0m\n'}
+[12.687709] (-) TimerEvent: {}
+[12.718731] (scorbot_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scorbot_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[12.789825] (-) TimerEvent: {}
+[12.793694] (scorbot_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/scorbot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/scorbot_msgs/msg/detail/joint_trajectory__type_support.c.o\x1b[0m\n'}
+[12.889962] (-) TimerEvent: {}
+[12.926370] (scorbot_msgs) StdoutLine: {'line': b'[ 60%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[12.970905] (scorbot_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/scorbot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/scorbot_msgs/msg/detail/joint_velocities__type_support.c.o\x1b[0m\n'}
+[12.991828] (-) TimerEvent: {}
+[13.092270] (-) TimerEvent: {}
+[13.136948] (scorbot_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/scorbot_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/scorbot_msgs/msg/detail/trajectory_point__type_support.c.o\x1b[0m\n'}
+[13.185882] (scorbot_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/scorbot_msgs/msg/detail/joint_velocities__type_support_c.cpp.o\x1b[0m\n'}
+[13.192396] (-) TimerEvent: {}
+[13.272632] (scorbot_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking C shared library libscorbot_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[13.292529] (-) TimerEvent: {}
+[13.308856] (scorbot_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libscorbot_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[13.371489] (scorbot_msgs) StdoutLine: {'line': b'[ 68%] Built target scorbot_msgs__rosidl_typesupport_introspection_c\n'}
+[13.393894] (scorbot_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/scorbot_msgs/msg/detail/trajectory_point__type_support_c.cpp.o\x1b[0m\n'}
+[13.394438] (-) TimerEvent: {}
+[13.454863] (scorbot_msgs) StdoutLine: {'line': b'[ 70%] Built target scorbot_msgs__rosidl_typesupport_cpp\n'}
+[13.494563] (-) TimerEvent: {}
+[13.597205] (-) TimerEvent: {}
+[13.649291] (scorbot_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scorbot_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[13.675405] (scorbot_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/scorbot_msgs/msg/joint_velocities__type_support.cpp.o\x1b[0m\n'}
+[13.690967] (scorbot_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/scorbot_msgs/msg/joint_trajectory__type_support.cpp.o\x1b[0m\n'}
+[13.697330] (-) TimerEvent: {}
+[13.768040] (scorbot_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/scorbot_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/scorbot_msgs/msg/trajectory_point__type_support.cpp.o\x1b[0m\n'}
+[13.797455] (-) TimerEvent: {}
+[13.830140] (scorbot_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libscorbot_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[13.897583] (-) TimerEvent: {}
+[13.908347] (scorbot_msgs) StdoutLine: {'line': b'[ 76%] Built target scorbot_msgs__rosidl_typesupport_c\n'}
+[13.945224] (scorbot_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library libscorbot_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[13.997736] (-) TimerEvent: {}
+[14.098155] (-) TimerEvent: {}
+[14.110827] (scorbot_msgs) StdoutLine: {'line': b'[ 78%] Built target scorbot_msgs__rosidl_typesupport_fastrtps_c\n'}
+[14.152924] (scorbot_msgs) StdoutLine: {'line': b'[ 78%] Built target scorbot_msgs\n'}
+[14.190234] (scorbot_msgs) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[14.198271] (-) TimerEvent: {}
+[14.298649] (-) TimerEvent: {}
+[14.399015] (-) TimerEvent: {}
+[14.499408] (-) TimerEvent: {}
+[14.599803] (-) TimerEvent: {}
+[14.700325] (-) TimerEvent: {}
+[14.800850] (-) TimerEvent: {}
+[14.901265] (-) TimerEvent: {}
+[15.001657] (-) TimerEvent: {}
+[15.102057] (-) TimerEvent: {}
+[15.175226] (scorbot_msgs) StdoutLine: {'line': b'[ 80%] Built target scorbot_msgs__py\n'}
+[15.194564] (scorbot_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scorbot_msgs__rosidl_generator_py\x1b[0m\n'}
+[15.202187] (-) TimerEvent: {}
+[15.220964] (scorbot_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/scorbot_msgs__rosidl_generator_py.dir/rosidl_generator_py/scorbot_msgs/msg/_trajectory_point_s.c.o\x1b[0m\n'}
+[15.221256] (scorbot_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/scorbot_msgs__rosidl_generator_py.dir/rosidl_generator_py/scorbot_msgs/msg/_joint_trajectory_s.c.o\x1b[0m\n'}
+[15.223838] (scorbot_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/scorbot_msgs__rosidl_generator_py.dir/rosidl_generator_py/scorbot_msgs/msg/_joint_velocities_s.c.o\x1b[0m\n'}
+[15.302321] (-) TimerEvent: {}
+[15.402711] (-) TimerEvent: {}
+[15.503238] (-) TimerEvent: {}
+[15.605817] (-) TimerEvent: {}
+[15.700367] (scorbot_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/scorbot_msgs/libscorbot_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[15.705948] (-) TimerEvent: {}
+[15.779961] (scorbot_msgs) StdoutLine: {'line': b'[ 86%] Built target scorbot_msgs__rosidl_generator_py\n'}
+[15.805461] (scorbot_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scorbot_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[15.808598] (-) TimerEvent: {}
+[15.811294] (scorbot_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scorbot_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[15.826444] (scorbot_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scorbot_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[15.846918] (scorbot_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/scorbot_msgs__rosidl_typesupport_microxrcedds_c__pyext.dir/rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_microxrcedds_c.c.o\x1b[0m\n'}
+[15.851360] (scorbot_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/scorbot_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[15.857388] (scorbot_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/scorbot_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[15.858347] (scorbot_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/scorbot_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[15.908751] (-) TimerEvent: {}
+[16.009165] (-) TimerEvent: {}
+[16.090968] (scorbot_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[16.111822] (-) TimerEvent: {}
+[16.116032] (scorbot_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[16.140914] (scorbot_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[16.168029] (scorbot_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[16.206336] (scorbot_msgs) StdoutLine: {'line': b'[100%] Built target scorbot_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[16.211949] (-) TimerEvent: {}
+[16.226215] (scorbot_msgs) StdoutLine: {'line': b'[100%] Built target scorbot_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[16.230867] (scorbot_msgs) StdoutLine: {'line': b'[100%] Built target scorbot_msgs__rosidl_typesupport_microxrcedds_c__pyext\n'}
+[16.261553] (scorbot_msgs) StdoutLine: {'line': b'[100%] Built target scorbot_msgs__rosidl_typesupport_c__pyext\n'}
+[16.282289] (scorbot_msgs) CommandEnded: {'returncode': 0}
+[16.283371] (scorbot_msgs) JobProgress: {'identifier': 'scorbot_msgs', 'progress': 'install'}
+[16.298771] (scorbot_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs'], 'cwd': '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'leon'), ('LC_TIME', 'es_AR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/leon/microros_ws/install/visualization_msgs/lib:/home/leon/microros_ws/install/test_msgs/lib:/home/leon/microros_ws/install/example_interfaces/lib:/home/leon/microros_ws/install/action_msgs/lib:/home/leon/microros_ws/install/unique_identifier_msgs/lib:/home/leon/microros_ws/install/trajectory_msgs/lib:/home/leon/microros_ws/install/stereo_msgs/lib:/home/leon/microros_ws/install/std_srvs/lib:/home/leon/microros_ws/install/shape_msgs/lib:/home/leon/microros_ws/install/sensor_msgs/lib:/home/leon/microros_ws/install/nav_msgs/lib:/home/leon/microros_ws/install/diagnostic_msgs/lib:/home/leon/microros_ws/install/geometry_msgs/lib:/home/leon/microros_ws/install/actionlib_msgs/lib:/home/leon/microros_ws/install/std_msgs/lib:/home/leon/microros_ws/install/statistics_msgs/lib:/home/leon/microros_ws/install/rmw_microxrcedds/lib:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp/lib:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c/lib:/home/leon/microros_ws/install/rosgraph_msgs/lib:/home/leon/microros_ws/install/rclc_parameter/lib:/home/leon/microros_ws/install/rclc/lib:/home/leon/microros_ws/install/composition_interfaces/lib:/home/leon/microros_ws/install/rcl_interfaces/lib:/home/leon/microros_ws/install/microxrcedds_client/lib:/home/leon/microros_ws/install/microcdr/lib:/home/leon/microros_ws/install/micro_ros_utilities/lib:/home/leon/microros_ws/install/micro_ros_agent/lib:/home/leon/microros_ws/install/micro_ros_msgs/lib:/home/leon/microros_ws/install/lifecycle_msgs/lib:/home/leon/microros_ws/install/complex_msgs/lib:/home/leon/microros_ws/install/builtin_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/leon'), ('OLDPWD', '/home/leon/robotica/scorbotLabo/software_scorbot'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_AR.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1551'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=189e8256ff48f00033909f9c6a4e74a7'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/leon/microros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'leon'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'leon'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/leon-labo:@/tmp/.ICE-unix/1551,unix/leon-labo:/tmp/.ICE-unix/1551'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_AR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9fcc8ef0_aed4_407f_b57e_a2486dcf852c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_AR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.27RQR3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/leon/microros_ws/install/micro_ros_demos_rclc:/home/leon/microros_ws/install/common_interfaces:/home/leon/microros_ws/install/visualization_msgs:/home/leon/microros_ws/install/test_msgs:/home/leon/microros_ws/install/example_interfaces:/home/leon/microros_ws/install/action_msgs:/home/leon/microros_ws/install/unique_identifier_msgs:/home/leon/microros_ws/install/trajectory_msgs:/home/leon/microros_ws/install/stereo_msgs:/home/leon/microros_ws/install/std_srvs:/home/leon/microros_ws/install/shape_msgs:/home/leon/microros_ws/install/sensor_msgs_py:/home/leon/microros_ws/install/sensor_msgs:/home/leon/microros_ws/install/nav_msgs:/home/leon/microros_ws/install/diagnostic_msgs:/home/leon/microros_ws/install/geometry_msgs:/home/leon/microros_ws/install/actionlib_msgs:/home/leon/microros_ws/install/std_msgs:/home/leon/microros_ws/install/statistics_msgs:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_test_msg:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp_tests:/home/leon/microros_ws/install/rmw_microxrcedds:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c_tests:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/leon/microros_ws/install/rosgraph_msgs:/home/leon/microros_ws/install/rclc_parameter:/home/leon/microros_ws/install/rclc:/home/leon/microros_ws/install/composition_interfaces:/home/leon/microros_ws/install/rcl_interfaces:/home/leon/microros_ws/install/micro_ros_utilities:/home/leon/microros_ws/install/micro_ros_setup:/home/leon/microros_ws/install/micro_ros_agent:/home/leon/microros_ws/install/micro_ros_msgs:/home/leon/microros_ws/install/lifecycle_msgs:/home/leon/microros_ws/install/complex_msgs:/home/leon/microros_ws/install/builtin_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_AR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_AR.UTF-8'), ('LC_IDENTIFICATION', 'es_AR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=189e8256ff48f00033909f9c6a4e74a7'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/leon/microros_ws/install/visualization_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/test_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/example_interfaces/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/action_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/trajectory_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/stereo_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/std_srvs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/shape_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/sensor_msgs_py/lib/python3.10/site-packages:/home/leon/microros_ws/install/sensor_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/nav_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/geometry_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/actionlib_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/std_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/statistics_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/rosgraph_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/rcl_interfaces/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/complex_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_AR.UTF-8'), ('LC_PAPER', 'es_AR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/leon/microros_ws/install/micro_ros_demos_rclc:/home/leon/microros_ws/install/common_interfaces:/home/leon/microros_ws/install/visualization_msgs:/home/leon/microros_ws/install/test_msgs:/home/leon/microros_ws/install/example_interfaces:/home/leon/microros_ws/install/action_msgs:/home/leon/microros_ws/install/unique_identifier_msgs:/home/leon/microros_ws/install/trajectory_msgs:/home/leon/microros_ws/install/stereo_msgs:/home/leon/microros_ws/install/std_srvs:/home/leon/microros_ws/install/shape_msgs:/home/leon/microros_ws/install/sensor_msgs:/home/leon/microros_ws/install/nav_msgs:/home/leon/microros_ws/install/diagnostic_msgs:/home/leon/microros_ws/install/geometry_msgs:/home/leon/microros_ws/install/actionlib_msgs:/home/leon/microros_ws/install/std_msgs:/home/leon/microros_ws/install/statistics_msgs:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_test_msg:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp_tests:/home/leon/microros_ws/install/rmw_microxrcedds:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c_tests:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/leon/microros_ws/install/rosgraph_msgs:/home/leon/microros_ws/install/rclc_parameter:/home/leon/microros_ws/install/rclc:/home/leon/microros_ws/install/composition_interfaces:/home/leon/microros_ws/install/rcl_interfaces:/home/leon/microros_ws/install/microxrcedds_client:/home/leon/microros_ws/install/microcdr:/home/leon/microros_ws/install/micro_ros_utilities:/home/leon/microros_ws/install/micro_ros_setup:/home/leon/microros_ws/install/micro_ros_agent:/home/leon/microros_ws/install/micro_ros_msgs:/home/leon/microros_ws/install/lifecycle_msgs:/home/leon/microros_ws/install/complex_msgs:/home/leon/microros_ws/install/builtin_interfaces:/home/leon/microros_ws/install/sensor_msgs_py:/opt/ros/humble')]), 'shell': False}
+[16.312076] (-) TimerEvent: {}
+[16.315819] (scorbot_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.316308] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/ament_index/resource_index/rosidl_interfaces/scorbot_msgs\n'}
+[16.316519] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs\n'}
+[16.316851] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg\n'}
+[16.317023] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/joint_trajectory.h\n'}
+[16.317238] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail\n'}
+[16.317448] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__functions.h\n'}
+[16.317655] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__type_support.h\n'}
+[16.317873] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__struct.h\n'}
+[16.318035] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__functions.h\n'}
+[16.318252] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__type_support.h\n'}
+[16.318467] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__struct.h\n'}
+[16.318677] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__functions.h\n'}
+[16.318866] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__functions.c\n'}
+[16.319061] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__struct.h\n'}
+[16.319269] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__functions.c\n'}
+[16.319484] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__functions.c\n'}
+[16.319690] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__type_support.h\n'}
+[16.319901] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/joint_velocities.h\n'}
+[16.320123] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/trajectory_point.h\n'}
+[16.320369] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[16.320599] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/environment/library_path.sh\n'}
+[16.320789] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/environment/library_path.dsv\n'}
+[16.321187] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_generator_c.so\n'}
+[16.321863] (scorbot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_generator_c.so" to ""\n'}
+[16.322149] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs\n'}
+[16.322372] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg\n'}
+[16.322553] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail\n'}
+[16.322697] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/microxrcedds\n'}
+[16.322855] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__rosidl_typesupport_microxrcedds_c.h\n'}
+[16.323032] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__rosidl_typesupport_microxrcedds_c.h\n'}
+[16.323216] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__rosidl_typesupport_microxrcedds_c.h\n'}
+[16.323353] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/rosidl_typesupport_microxrcedds_c__visibility_control.h\n'}
+[16.323489] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_typesupport_microxrcedds_c.so\n'}
+[16.323682] (scorbot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_typesupport_microxrcedds_c.so" to ""\n'}
+[16.323926] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs\n'}
+[16.324115] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg\n'}
+[16.324267] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[16.324400] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail\n'}
+[16.324572] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__rosidl_typesupport_fastrtps_c.h\n'}
+[16.324705] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__rosidl_typesupport_fastrtps_c.h\n'}
+[16.324847] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__rosidl_typesupport_fastrtps_c.h\n'}
+[16.325035] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[16.325537] (scorbot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[16.325775] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs\n'}
+[16.325983] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg\n'}
+[16.326128] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[16.326262] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail\n'}
+[16.326468] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__type_support.c\n'}
+[16.326652] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__rosidl_typesupport_introspection_c.h\n'}
+[16.326851] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__type_support.c\n'}
+[16.327024] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__type_support.c\n'}
+[16.327153] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__rosidl_typesupport_introspection_c.h\n'}
+[16.327277] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__rosidl_typesupport_introspection_c.h\n'}
+[16.327457] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_typesupport_introspection_c.so\n'}
+[16.327978] (scorbot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[16.328185] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_typesupport_c.so\n'}
+[16.328659] (scorbot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_typesupport_c.so" to ""\n'}
+[16.328896] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs\n'}
+[16.329033] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg\n'}
+[16.329166] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[16.329329] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/trajectory_point.hpp\n'}
+[16.329501] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail\n'}
+[16.329669] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__builder.hpp\n'}
+[16.329819] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__builder.hpp\n'}
+[16.329951] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__struct.hpp\n'}
+[16.330127] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__traits.hpp\n'}
+[16.330294] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__traits.hpp\n'}
+[16.330434] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__struct.hpp\n'}
+[16.330591] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__type_support.hpp\n'}
+[16.330766] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__type_support.hpp\n'}
+[16.330945] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__traits.hpp\n'}
+[16.331114] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__builder.hpp\n'}
+[16.331287] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__type_support.hpp\n'}
+[16.331472] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__struct.hpp\n'}
+[16.331643] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/joint_trajectory.hpp\n'}
+[16.331861] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/joint_velocities.hpp\n'}
+[16.332138] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs\n'}
+[16.332324] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg\n'}
+[16.332475] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/rosidl_typesupport_microxrcedds_cpp__visibility_control.h\n'}
+[16.332673] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail\n'}
+[16.332826] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__rosidl_typesupport_microxrcedds_cpp.hpp\n'}
+[16.333007] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/microxrcedds\n'}
+[16.333131] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__rosidl_typesupport_microxrcedds_cpp.hpp\n'}
+[16.333309] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__rosidl_typesupport_microxrcedds_cpp.hpp\n'}
+[16.333436] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_typesupport_microxrcedds_cpp.so\n'}
+[16.333866] (scorbot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_typesupport_microxrcedds_cpp.so" to ""\n'}
+[16.334097] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs\n'}
+[16.334257] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg\n'}
+[16.334393] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[16.334521] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail\n'}
+[16.334700] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.334869] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.335005] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.335175] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/dds_fastrtps\n'}
+[16.335307] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[16.335821] (scorbot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[16.336067] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs\n'}
+[16.336201] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg\n'}
+[16.336335] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail\n'}
+[16.336474] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.336643] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.336834] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/trajectory_point__type_support.cpp\n'}
+[16.337017] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.337186] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__type_support.cpp\n'}
+[16.337314] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_trajectory__type_support.cpp\n'}
+[16.337595] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[16.338286] (scorbot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[16.338499] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_typesupport_cpp.so\n'}
+[16.339010] (scorbot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[16.339215] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/environment/pythonpath.sh\n'}
+[16.339400] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/environment/pythonpath.dsv\n'}
+[16.339581] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs-0.0.0-py3.10.egg-info\n'}
+[16.339742] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[16.339914] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[16.340058] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[16.340216] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[16.340403] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs\n'}
+[16.340562] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/libscorbot_msgs__rosidl_generator_py.so\n'}
+[16.340755] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[16.341003] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.341204] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[16.343782] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.344005] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/__init__.py\n'}
+[16.344142] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.344319] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[16.344437] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.344552] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/msg\n'}
+[16.344665] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/msg/_joint_trajectory_s.c\n'}
+[16.344810] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/msg/_joint_velocities_s.c\n'}
+[16.344930] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/msg/__init__.py\n'}
+[16.345046] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/msg/_trajectory_point_s.c\n'}
+[16.345161] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/msg/_joint_velocities.py\n'}
+[16.345273] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/msg/_joint_trajectory.py\n'}
+[16.345384] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/msg/_trajectory_point.py\n'}
+[16.345496] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/_scorbot_msgs_s.ep.rosidl_typesupport_microxrcedds_c.c\n'}
+[16.412196] (-) TimerEvent: {}
+[16.494838] (scorbot_msgs) StdoutLine: {'line': b"Listing '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs'...\n"}
+[16.495155] (scorbot_msgs) StdoutLine: {'line': b"Compiling '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/__init__.py'...\n"}
+[16.495290] (scorbot_msgs) StdoutLine: {'line': b"Listing '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/msg'...\n"}
+[16.495413] (scorbot_msgs) StdoutLine: {'line': b"Compiling '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/msg/__init__.py'...\n"}
+[16.495539] (scorbot_msgs) StdoutLine: {'line': b"Compiling '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/msg/_joint_trajectory.py'...\n"}
+[16.495664] (scorbot_msgs) StdoutLine: {'line': b"Compiling '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/msg/_joint_velocities.py'...\n"}
+[16.495812] (scorbot_msgs) StdoutLine: {'line': b"Compiling '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/msg/_trajectory_point.py'...\n"}
+[16.502428] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.502874] (scorbot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_microxrcedds_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[16.503198] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.503624] (scorbot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[16.503905] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.504353] (scorbot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[16.504890] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[16.505144] (scorbot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages/scorbot_msgs/scorbot_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[16.505400] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_generator_py.so\n'}
+[16.506169] (scorbot_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/libscorbot_msgs__rosidl_generator_py.so" to ""\n'}
+[16.506407] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/ament_index/resource_index/rust_packages/scorbot_msgs\n'}
+[16.506551] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/rust\n'}
+[16.506737] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/rust/Cargo.toml\n'}
+[16.506927] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/rust/src\n'}
+[16.507054] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/rust/src/lib.rs\n'}
+[16.507225] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/rust/src/msg\n'}
+[16.507359] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/rust/src/msg/rmw.rs\n'}
+[16.507484] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/rust/src/msg.rs\n'}
+[16.507715] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/rust/build.rs\n'}
+[16.507977] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/msg/JointTrajectory.idl\n'}
+[16.508207] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/msg/JointVelocities.idl\n'}
+[16.508339] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/msg/TrajectoryPoint.idl\n'}
+[16.508543] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/msg/JointTrajectory.msg\n'}
+[16.508671] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/msg/JointVelocities.msg\n'}
+[16.508902] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/msg/TrajectoryPoint.msg\n'}
+[16.509031] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/ament_index/resource_index/package_run_dependencies/scorbot_msgs\n'}
+[16.509261] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/ament_index/resource_index/parent_prefix_path/scorbot_msgs\n'}
+[16.509474] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/environment/ament_prefix_path.sh\n'}
+[16.509646] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/environment/ament_prefix_path.dsv\n'}
+[16.509806] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/environment/path.sh\n'}
+[16.509935] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/environment/path.dsv\n'}
+[16.510059] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/local_setup.bash\n'}
+[16.510183] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/local_setup.sh\n'}
+[16.510305] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/local_setup.zsh\n'}
+[16.510427] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/local_setup.dsv\n'}
+[16.510550] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/package.dsv\n'}
+[16.510808] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/ament_index/resource_index/packages/scorbot_msgs\n'}
+[16.510966] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/export_scorbot_msgs__rosidl_generator_cExport.cmake\n'}
+[16.511186] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/export_scorbot_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[16.511359] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/export_scorbot_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[16.511522] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/export_scorbot_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[16.511747] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/scorbot_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[16.512005] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/scorbot_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[16.512179] (-) TimerEvent: {}
+[16.512361] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/scorbot_msgs__rosidl_typesupport_cExport.cmake\n'}
+[16.512551] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/scorbot_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[16.512800] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/export_scorbot_msgs__rosidl_generator_cppExport.cmake\n'}
+[16.512934] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/export_scorbot_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[16.513113] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/export_scorbot_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[16.513266] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/scorbot_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[16.513395] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/scorbot_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[16.513544] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/scorbot_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[16.513715] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/scorbot_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[16.513878] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/export_scorbot_msgs__rosidl_generator_pyExport.cmake\n'}
+[16.514000] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/export_scorbot_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[16.514132] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[16.514254] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[16.514368] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[16.514527] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[16.514642] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[16.514775] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[16.514913] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[16.515026] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake\n'}
+[16.515136] (scorbot_msgs) StdoutLine: {'line': b'-- Installing: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/scorbot_msgsConfig.cmake\n'}
+[16.515248] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake/scorbot_msgsConfig-version.cmake\n'}
+[16.515365] (scorbot_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/package.xml\n'}
+[16.516865] (scorbot_msgs) CommandEnded: {'returncode': 0}
+[16.612311] (-) TimerEvent: {}
+[16.670365] (scorbot_msgs) JobEnded: {'identifier': 'scorbot_msgs', 'rc': 0}
+[16.673074] (scorbot) JobStarted: {'identifier': 'scorbot'}
+[16.693403] (scorbot) JobProgress: {'identifier': 'scorbot', 'progress': 'cmake'}
+[16.694182] (scorbot) JobProgress: {'identifier': 'scorbot', 'progress': 'build'}
+[16.694959] (scorbot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot', '--', '-j4', '-l4'], 'cwd': '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'leon'), ('LC_TIME', 'es_AR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib:/home/leon/microros_ws/install/visualization_msgs/lib:/home/leon/microros_ws/install/test_msgs/lib:/home/leon/microros_ws/install/example_interfaces/lib:/home/leon/microros_ws/install/action_msgs/lib:/home/leon/microros_ws/install/unique_identifier_msgs/lib:/home/leon/microros_ws/install/trajectory_msgs/lib:/home/leon/microros_ws/install/stereo_msgs/lib:/home/leon/microros_ws/install/std_srvs/lib:/home/leon/microros_ws/install/shape_msgs/lib:/home/leon/microros_ws/install/sensor_msgs/lib:/home/leon/microros_ws/install/nav_msgs/lib:/home/leon/microros_ws/install/diagnostic_msgs/lib:/home/leon/microros_ws/install/geometry_msgs/lib:/home/leon/microros_ws/install/actionlib_msgs/lib:/home/leon/microros_ws/install/std_msgs/lib:/home/leon/microros_ws/install/statistics_msgs/lib:/home/leon/microros_ws/install/rmw_microxrcedds/lib:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp/lib:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c/lib:/home/leon/microros_ws/install/rosgraph_msgs/lib:/home/leon/microros_ws/install/rclc_parameter/lib:/home/leon/microros_ws/install/rclc/lib:/home/leon/microros_ws/install/composition_interfaces/lib:/home/leon/microros_ws/install/rcl_interfaces/lib:/home/leon/microros_ws/install/microxrcedds_client/lib:/home/leon/microros_ws/install/microcdr/lib:/home/leon/microros_ws/install/micro_ros_utilities/lib:/home/leon/microros_ws/install/micro_ros_agent/lib:/home/leon/microros_ws/install/micro_ros_msgs/lib:/home/leon/microros_ws/install/lifecycle_msgs/lib:/home/leon/microros_ws/install/complex_msgs/lib:/home/leon/microros_ws/install/builtin_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/leon'), ('OLDPWD', '/home/leon/robotica/scorbotLabo/software_scorbot'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_AR.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1551'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=189e8256ff48f00033909f9c6a4e74a7'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/leon/microros_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'leon'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'leon'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/leon-labo:@/tmp/.ICE-unix/1551,unix/leon-labo:/tmp/.ICE-unix/1551'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_AR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9fcc8ef0_aed4_407f_b57e_a2486dcf852c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_AR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.27RQR3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs:/home/leon/microros_ws/install/micro_ros_demos_rclc:/home/leon/microros_ws/install/common_interfaces:/home/leon/microros_ws/install/visualization_msgs:/home/leon/microros_ws/install/test_msgs:/home/leon/microros_ws/install/example_interfaces:/home/leon/microros_ws/install/action_msgs:/home/leon/microros_ws/install/unique_identifier_msgs:/home/leon/microros_ws/install/trajectory_msgs:/home/leon/microros_ws/install/stereo_msgs:/home/leon/microros_ws/install/std_srvs:/home/leon/microros_ws/install/shape_msgs:/home/leon/microros_ws/install/sensor_msgs_py:/home/leon/microros_ws/install/sensor_msgs:/home/leon/microros_ws/install/nav_msgs:/home/leon/microros_ws/install/diagnostic_msgs:/home/leon/microros_ws/install/geometry_msgs:/home/leon/microros_ws/install/actionlib_msgs:/home/leon/microros_ws/install/std_msgs:/home/leon/microros_ws/install/statistics_msgs:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_test_msg:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp_tests:/home/leon/microros_ws/install/rmw_microxrcedds:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c_tests:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/leon/microros_ws/install/rosgraph_msgs:/home/leon/microros_ws/install/rclc_parameter:/home/leon/microros_ws/install/rclc:/home/leon/microros_ws/install/composition_interfaces:/home/leon/microros_ws/install/rcl_interfaces:/home/leon/microros_ws/install/micro_ros_utilities:/home/leon/microros_ws/install/micro_ros_setup:/home/leon/microros_ws/install/micro_ros_agent:/home/leon/microros_ws/install/micro_ros_msgs:/home/leon/microros_ws/install/lifecycle_msgs:/home/leon/microros_ws/install/complex_msgs:/home/leon/microros_ws/install/builtin_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_AR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_AR.UTF-8'), ('LC_IDENTIFICATION', 'es_AR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=189e8256ff48f00033909f9c6a4e74a7'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/visualization_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/test_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/example_interfaces/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/action_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/trajectory_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/stereo_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/std_srvs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/shape_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/sensor_msgs_py/lib/python3.10/site-packages:/home/leon/microros_ws/install/sensor_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/nav_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/geometry_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/actionlib_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/std_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/statistics_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/rosgraph_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/rcl_interfaces/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/complex_msgs/local/lib/python3.10/dist-packages:/home/leon/microros_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_AR.UTF-8'), ('LC_PAPER', 'es_AR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs:/home/leon/microros_ws/install/micro_ros_demos_rclc:/home/leon/microros_ws/install/common_interfaces:/home/leon/microros_ws/install/visualization_msgs:/home/leon/microros_ws/install/test_msgs:/home/leon/microros_ws/install/example_interfaces:/home/leon/microros_ws/install/action_msgs:/home/leon/microros_ws/install/unique_identifier_msgs:/home/leon/microros_ws/install/trajectory_msgs:/home/leon/microros_ws/install/stereo_msgs:/home/leon/microros_ws/install/std_srvs:/home/leon/microros_ws/install/shape_msgs:/home/leon/microros_ws/install/sensor_msgs:/home/leon/microros_ws/install/nav_msgs:/home/leon/microros_ws/install/diagnostic_msgs:/home/leon/microros_ws/install/geometry_msgs:/home/leon/microros_ws/install/actionlib_msgs:/home/leon/microros_ws/install/std_msgs:/home/leon/microros_ws/install/statistics_msgs:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_test_msg:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp_tests:/home/leon/microros_ws/install/rmw_microxrcedds:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c_tests:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/leon/microros_ws/install/rosgraph_msgs:/home/leon/microros_ws/install/rclc_parameter:/home/leon/microros_ws/install/rclc:/home/leon/microros_ws/install/composition_interfaces:/home/leon/microros_ws/install/rcl_interfaces:/home/leon/microros_ws/install/microxrcedds_client:/home/leon/microros_ws/install/microcdr:/home/leon/microros_ws/install/micro_ros_utilities:/home/leon/microros_ws/install/micro_ros_setup:/home/leon/microros_ws/install/micro_ros_agent:/home/leon/microros_ws/install/micro_ros_msgs:/home/leon/microros_ws/install/lifecycle_msgs:/home/leon/microros_ws/install/complex_msgs:/home/leon/microros_ws/install/builtin_interfaces:/home/leon/microros_ws/install/sensor_msgs_py:/opt/ros/humble')]), 'shell': False}
+[16.712439] (-) TimerEvent: {}
+[16.812899] (-) TimerEvent: {}
+[16.825475] (scorbot) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[16.913003] (-) TimerEvent: {}
+[17.013454] (-) TimerEvent: {}
+[17.114019] (-) TimerEvent: {}
+[17.119288] (scorbot) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[17.214148] (-) TimerEvent: {}
+[17.217451] (scorbot) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[17.221374] (scorbot) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[17.230531] (scorbot) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[17.249240] (scorbot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[17.285972] (scorbot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[17.314281] (-) TimerEvent: {}
+[17.392531] (scorbot) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[17.414436] (-) TimerEvent: {}
+[17.415152] (scorbot) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[17.514559] (-) TimerEvent: {}
+[17.614987] (-) TimerEvent: {}
+[17.715380] (-) TimerEvent: {}
+[17.756265] (scorbot) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[17.815601] (-) TimerEvent: {}
+[17.916194] (-) TimerEvent: {}
+[17.998822] (scorbot) StdoutLine: {'line': b'-- Found scorbot_msgs: 0.0.0 (/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/cmake)\n'}
+[18.016317] (-) TimerEvent: {}
+[18.019069] (scorbot) StdoutLine: {'line': b'-- Found universal_teleop_msgs: 2.0.0 (/home/leon/robotica/scorbotLabo/universal_teleop/install/universal_teleop_msgs/share/universal_teleop_msgs/cmake)\n'}
+[18.043762] (scorbot) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[18.088296] (scorbot) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[18.116465] (-) TimerEvent: {}
+[18.134100] (scorbot) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[18.216611] (-) TimerEvent: {}
+[18.267779] (scorbot) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[18.268106] (scorbot) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/include>\n'}
+[18.268242] (scorbot) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[18.268920] (scorbot) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[18.270078] (scorbot) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[18.270264] (scorbot) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[18.270635] (scorbot) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[18.271839] (scorbot) StdoutLine: {'line': b'-- Configuring done\n'}
+[18.307483] (scorbot) StdoutLine: {'line': b'-- Generating done\n'}
+[18.316629] (scorbot) StdoutLine: {'line': b'-- Build files have been written to: /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot\n'}
+[18.317134] (-) TimerEvent: {}
+[18.373816] (scorbot) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target scorbot\x1b[0m\n'}
+[18.417294] (-) TimerEvent: {}
+[18.479022] (scorbot) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/scorbot.dir/src/scorbot_node.cpp.o\x1b[0m\n'}
+[18.479301] (scorbot) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/scorbot.dir/src/scorbot.cpp.o\x1b[0m\n'}
+[18.517510] (-) TimerEvent: {}
+[18.618031] (-) TimerEvent: {}
+[18.718516] (-) TimerEvent: {}
+[18.819091] (-) TimerEvent: {}
+[18.919553] (-) TimerEvent: {}
+[19.020389] (-) TimerEvent: {}
+[19.121000] (-) TimerEvent: {}
+[19.221607] (-) TimerEvent: {}
+[19.322251] (-) TimerEvent: {}
+[19.422895] (-) TimerEvent: {}
+[19.524855] (-) TimerEvent: {}
+[19.625383] (-) TimerEvent: {}
+[19.726014] (-) TimerEvent: {}
+[19.741126] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:378:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K"/*" within comment [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcomment\x07-Wcomment\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[19.741642] (scorbot) StderrLine: {'line': b'  378 |         /*\n'}
+[19.741984] (scorbot) StderrLine: {'line': b'      |          \n'}
+[19.826156] (-) TimerEvent: {}
+[19.926575] (-) TimerEvent: {}
+[20.027019] (-) TimerEvent: {}
+[20.127442] (-) TimerEvent: {}
+[20.227866] (-) TimerEvent: {}
+[20.328522] (-) TimerEvent: {}
+[20.429189] (-) TimerEvent: {}
+[20.529848] (-) TimerEvent: {}
+[20.630506] (-) TimerEvent: {}
+[20.731644] (-) TimerEvent: {}
+[20.832058] (-) TimerEvent: {}
+[20.932714] (-) TimerEvent: {}
+[21.033126] (-) TimerEvent: {}
+[21.133719] (-) TimerEvent: {}
+[21.234137] (-) TimerEvent: {}
+[21.334779] (-) TimerEvent: {}
+[21.435421] (-) TimerEvent: {}
+[21.537193] (-) TimerEvent: {}
+[21.637844] (-) TimerEvent: {}
+[21.738470] (-) TimerEvent: {}
+[21.839119] (-) TimerEvent: {}
+[21.939767] (-) TimerEvent: {}
+[22.040379] (-) TimerEvent: {}
+[22.141050] (-) TimerEvent: {}
+[22.241696] (-) TimerEvent: {}
+[22.342138] (-) TimerEvent: {}
+[22.442707] (-) TimerEvent: {}
+[22.543119] (-) TimerEvent: {}
+[22.643772] (-) TimerEvent: {}
+[22.744394] (-) TimerEvent: {}
+[22.845020] (-) TimerEvent: {}
+[22.945663] (-) TimerEvent: {}
+[23.046309] (-) TimerEvent: {}
+[23.123828] (scorbot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot_node.cpp:2\x1b[m\x1b[K:\n'}
+[23.124104] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:65:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktimer\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Krclcpp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.124243] (scorbot) StderrLine: {'line': b'   65 |       std::shared_ptr<rclcpp::\x1b[01;31m\x1b[Ktimer\x1b[m\x1b[K::WallTimer<>> control_timer;\n'}
+[23.124364] (scorbot) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[23.125053] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:65:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[23.125471] (scorbot) StderrLine: {'line': b'   65 |       std::shared_ptr<rclcpp::timer::WallTimer<\x1b[01;31m\x1b[K>>\x1b[m\x1b[K control_timer;\n'}
+[23.125825] (scorbot) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[23.132688] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:80:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kactionlib_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[23.133203] (scorbot) StderrLine: {'line': b'   80 |       \x1b[01;31m\x1b[Kactionlib_msgs\x1b[m\x1b[K::msg::GoalID trajectory_goal_id;\n'}
+[23.133450] (scorbot) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.136706] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:87:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcontrol_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[23.136978] (scorbot) StderrLine: {'line': b'   87 |       \x1b[01;31m\x1b[Kcontrol_msgs\x1b[m\x1b[K::msg::FollowJointTrajectoryActionResult result_msg;\n'}
+[23.137101] (scorbot) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.137730] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[23.138041] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot_node.cpp:11:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kt\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.138169] (scorbot) StderrLine: {'line': b'   11 |   scorbot \x1b[01;31m\x1b[Kt\x1b[m\x1b[K = scorbot::scorbot(n);\n'}
+[23.138292] (scorbot) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[23.146434] (-) TimerEvent: {}
+[23.247078] (-) TimerEvent: {}
+[23.347751] (-) TimerEvent: {}
+[23.448359] (-) TimerEvent: {}
+[23.548996] (-) TimerEvent: {}
+[23.650820] (-) TimerEvent: {}
+[23.751222] (-) TimerEvent: {}
+[23.851628] (-) TimerEvent: {}
+[23.853868] (scorbot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1\x1b[m\x1b[K:\n'}
+[23.854126] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:65:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktimer\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Krclcpp\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.854253] (scorbot) StderrLine: {'line': b'   65 |       std::shared_ptr<rclcpp::\x1b[01;31m\x1b[Ktimer\x1b[m\x1b[K::WallTimer<>> control_timer;\n'}
+[23.854370] (scorbot) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[23.854485] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:65:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[23.854624] (scorbot) StderrLine: {'line': b'   65 |       std::shared_ptr<rclcpp::timer::WallTimer<\x1b[01;31m\x1b[K>>\x1b[m\x1b[K control_timer;\n'}
+[23.854765] (scorbot) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[23.862644] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:80:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kactionlib_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[23.863011] (scorbot) StderrLine: {'line': b'   80 |       \x1b[01;31m\x1b[Kactionlib_msgs\x1b[m\x1b[K::msg::GoalID trajectory_goal_id;\n'}
+[23.863141] (scorbot) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.866945] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:87:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcontrol_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[23.867196] (scorbot) StderrLine: {'line': b'   87 |       \x1b[01;31m\x1b[Kcontrol_msgs\x1b[m\x1b[K::msg::FollowJointTrajectoryActionResult result_msg;\n'}
+[23.867320] (scorbot) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.873930] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kscorbot::Teleop::Teleop(std::shared_ptr<rclcpp::Node>)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[23.874199] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:26:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = class rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kparam\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.874330] (scorbot) StderrLine: {'line': b'   26 |   node->\x1b[01;31m\x1b[Kparam\x1b[m\x1b[K("control_frequency", control_frequency, 5);\n'}
+[23.874480] (scorbot) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[23.875243] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:28:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = class rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Ksubscribe\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.875862] (scorbot) StderrLine: {'line': b'   28 |   sub_control = node->\x1b[01;31m\x1b[Ksubscribe\x1b[m\x1b[K("/universal_teleop/controls", 1, &Teleop::on_controls, this);\n'}
+[23.876050] (scorbot) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[23.876166] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:29:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = class rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Ksubscribe\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.876286] (scorbot) StderrLine: {'line': b'   29 |   sub_events = node->\x1b[01;31m\x1b[Ksubscribe\x1b[m\x1b[K("/universal_teleop/events", 1, &Teleop::on_events, this);\n'}
+[23.876403] (scorbot) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[23.877497] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:30:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = class rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kadvertise\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.878742] (scorbot) StderrLine: {'line': b'   30 |   vel_pub = node->\x1b[01;31m\x1b[Kadvertise\x1b[m\x1b[K<scorbot::JointVelocities>("/scorbot/joint_velocities", 1);\n'}
+[23.878887] (scorbot) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[23.879009] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:30:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KJointVelocities\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kscorbot\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kscorbot_msgs::msg::JointVelocities\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[23.881897] (scorbot) StderrLine: {'line': b'   30 |   vel_pub = node->advertise<scorbot::\x1b[01;31m\x1b[KJointVelocities\x1b[m\x1b[K>("/scorbot/joint_velocities", 1);\n'}
+[23.882162] (scorbot) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.882287] (scorbot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/joint_velocities.hpp:7\x1b[m\x1b[K,\n'}
+[23.882408] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:18\x1b[m\x1b[K,\n'}
+[23.882524] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1\x1b[m\x1b[K:\n'}
+[23.882637] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/include/scorbot_msgs/scorbot_msgs/msg/detail/joint_velocities__struct.hpp:152:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kscorbot_msgs::msg::JointVelocities\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[23.884713] (scorbot) StderrLine: {'line': b'  152 | using \x1b[01;36m\x1b[KJointVelocities\x1b[m\x1b[K =\n'}
+[23.884940] (scorbot) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.885065] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:30:55:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kleft operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.885191] (scorbot) StderrLine: {'line': b'   30 |   vel_pub = node->advertise<scorbot::JointVelocities>(\x1b[01;35m\x1b[K"/scorbot/joint_velocities"\x1b[m\x1b[K, 1);\n'}
+[23.885307] (scorbot) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.885420] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:31:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = class rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kadvertise\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.885545] (scorbot) StderrLine: {'line': b'   31 |   home_pub = node->\x1b[01;31m\x1b[Kadvertise\x1b[m\x1b[K<std_msgs::Empty>("/scorbot/home", 1);\n'}
+[23.885660] (scorbot) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[23.885792] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:31:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEmpty\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.885933] (scorbot) StderrLine: {'line': b'   31 |   home_pub = node->advertise<std_msgs::\x1b[01;31m\x1b[KEmpty\x1b[m\x1b[K>("/scorbot/home", 1);\n'}
+[23.886044] (scorbot) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[23.886159] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:31:40:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternatives:\n'}
+[23.886288] (scorbot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/wait_result.hpp:25\x1b[m\x1b[K,\n'}
+[23.886408] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/sequential_synchronization.hpp:32\x1b[m\x1b[K,\n'}
+[23.886525] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/wait_set.hpp:26\x1b[m\x1b[K,\n'}
+[23.886636] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:168\x1b[m\x1b[K,\n'}
+[23.889689] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4\x1b[m\x1b[K,\n'}
+[23.890139] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1\x1b[m\x1b[K:\n'}
+[23.890487] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/wait_result_kind.hpp:28:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Empty\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.890841] (scorbot) StderrLine: {'line': b'   28 |   \x1b[01;36m\x1b[KEmpty\x1b[m\x1b[K,  //<! Kind used when trying to wait on an empty wait set.\n'}
+[23.891186] (scorbot) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[23.891498] (scorbot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/empty.hpp:7\x1b[m\x1b[K,\n'}
+[23.892146] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:13\x1b[m\x1b[K,\n'}
+[23.892463] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1\x1b[m\x1b[K:\n'}
+[23.892800] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__struct.hpp:116:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Empty\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.893132] (scorbot) StderrLine: {'line': b'  116 | using \x1b[01;36m\x1b[KEmpty\x1b[m\x1b[K =\n'}
+[23.893449] (scorbot) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[23.893578] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:31:47:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kleft operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.893949] (scorbot) StderrLine: {'line': b'   31 |   home_pub = node->advertise<std_msgs::Empty>(\x1b[01;35m\x1b[K"/scorbot/home"\x1b[m\x1b[K, 1);\n'}
+[23.894292] (scorbot) StderrLine: {'line': b'      |                                               \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.894616] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:33:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = class rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Ksubscribe\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.894982] (scorbot) StderrLine: {'line': b'   33 |   joint_trajectory_sub = node->\x1b[01;31m\x1b[Ksubscribe\x1b[m\x1b[K<control_msgs::FollowJointTrajectoryActionGoal>("/scorbot/arm_position_controller/follow_joint_trajectory/goal", 1, &Teleop::on_trajectory, this);\n'}
+[23.895310] (scorbot) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[23.895627] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:33:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcontrol_msgs\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[23.895958] (scorbot) StderrLine: {'line': b'   33 |   joint_trajectory_sub = node->subscribe<\x1b[01;31m\x1b[Kcontrol_msgs\x1b[m\x1b[K::FollowJointTrajectoryActionGoal>("/scorbot/arm_position_controller/follow_joint_trajectory/goal", 1, &Teleop::on_trajectory, this);\n'}
+[23.896194] (scorbot) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.896322] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:33:89:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kleft operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.896451] (scorbot) StderrLine: {'line': b'   33 | e->subscribe<control_msgs::FollowJointTrajectoryActionGoal>(\x1b[01;35m\x1b[K"/scorbot/arm_position_controller/follow_joint_trajectory/goal"\x1b[m\x1b[K, 1, &Teleop::on_trajectory, this);\n'}
+[23.896576] (scorbot) StderrLine: {'line': b'      |                                                             \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.896698] (scorbot) StderrLine: {'line': b'\n'}
+[23.897459] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:33:166:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kon_trajectory\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kscorbot::Teleop\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.897794] (scorbot) StderrLine: {'line': b'   33 | ition_controller/follow_joint_trajectory/goal", 1, &Teleop::\x1b[01;31m\x1b[Kon_trajectory\x1b[m\x1b[K, this);\n'}
+[23.898107] (scorbot) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.898395] (scorbot) StderrLine: {'line': b'\n'}
+[23.898515] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:35:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = class rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kadvertise\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.898638] (scorbot) StderrLine: {'line': b'   35 |   joint_pos_array_pub = node->\x1b[01;31m\x1b[Kadvertise\x1b[m\x1b[K<std_msgs::Int32MultiArray>("/scorbot/joint_path_command_enc", 1);\n'}
+[23.898768] (scorbot) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[23.898889] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:35:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KInt32MultiArray\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int32MultiArray\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[23.899031] (scorbot) StderrLine: {'line': b'   35 |   joint_pos_array_pub = node->advertise<std_msgs::\x1b[01;31m\x1b[KInt32MultiArray\x1b[m\x1b[K>("/scorbot/joint_path_command_enc", 1);\n'}
+[23.899151] (scorbot) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.899272] (scorbot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/int32_multi_array.hpp:7\x1b[m\x1b[K,\n'}
+[23.899392] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:16\x1b[m\x1b[K,\n'}
+[23.899515] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1\x1b[m\x1b[K:\n'}
+[23.899635] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32_multi_array__struct.hpp:132:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int32MultiArray\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[23.899766] (scorbot) StderrLine: {'line': b'  132 | using \x1b[01;36m\x1b[KInt32MultiArray\x1b[m\x1b[K =\n'}
+[23.899893] (scorbot) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.900017] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:35:68:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kleft operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.901626] (scorbot) StderrLine: {'line': b'   35 | _pos_array_pub = node->advertise<std_msgs::Int32MultiArray>(\x1b[01;35m\x1b[K"/scorbot/joint_path_command_enc"\x1b[m\x1b[K, 1);\n'}
+[23.902013] (scorbot) StderrLine: {'line': b'      |                                                             \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.902445] (scorbot) StderrLine: {'line': b'\n'}
+[23.902888] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:37:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktrajectory_finished_pub\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[23.903263] (scorbot) StderrLine: {'line': b'   37 |   \x1b[01;31m\x1b[Ktrajectory_finished_pub\x1b[m\x1b[K = node->advertise<control_msgs::FollowJointTrajectoryActionResult>("/arm_position_controller/follow_joint_trajectory/result", 1);\n'}
+[23.903582] (scorbot) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.903914] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:37:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = class rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kadvertise\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.904295] (scorbot) StderrLine: {'line': b'   37 |   trajectory_finished_pub = node->\x1b[01;31m\x1b[Kadvertise\x1b[m\x1b[K<control_msgs::FollowJointTrajectoryActionResult>("/arm_position_controller/follow_joint_trajectory/result", 1);\n'}
+[23.904618] (scorbot) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[23.904756] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:37:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcontrol_msgs\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[23.905439] (scorbot) StderrLine: {'line': b'   37 |   trajectory_finished_pub = node->advertise<\x1b[01;31m\x1b[Kcontrol_msgs\x1b[m\x1b[K::FollowJointTrajectoryActionResult>("/arm_position_controller/follow_joint_trajectory/result", 1);\n'}
+[23.905817] (scorbot) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.906041] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:37:94:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kleft operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.906194] (scorbot) StderrLine: {'line': b'   37 | >advertise<control_msgs::FollowJointTrajectoryActionResult>(\x1b[01;35m\x1b[K"/arm_position_controller/follow_joint_trajectory/result"\x1b[m\x1b[K, 1);\n'}
+[23.906333] (scorbot) StderrLine: {'line': b'      |                                                             \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.906474] (scorbot) StderrLine: {'line': b'\n'}
+[23.906613] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:40:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = class rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Ksubscribe\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.907436] (scorbot) StderrLine: {'line': b'   40 |   tolerance_param_sub = node->\x1b[01;31m\x1b[Ksubscribe\x1b[m\x1b[K<std_msgs::Float64>("/scorbot/params/tolerance", 1, &Teleop::on_tolerance, this);\n'}
+[23.907766] (scorbot) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[23.908298] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:40:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KFloat64\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Float64\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[23.908560] (scorbot) StderrLine: {'line': b'   40 |   tolerance_param_sub = node->subscribe<std_msgs::\x1b[01;31m\x1b[KFloat64\x1b[m\x1b[K>("/scorbot/params/tolerance", 1, &Teleop::on_tolerance, this);\n'}
+[23.908685] (scorbot) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[23.908829] (scorbot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/float64.hpp:7\x1b[m\x1b[K,\n'}
+[23.908955] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:15\x1b[m\x1b[K,\n'}
+[23.909076] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1\x1b[m\x1b[K:\n'}
+[23.909197] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64__struct.hpp:123:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Float64\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[23.909315] (scorbot) StderrLine: {'line': b'  123 | using \x1b[01;36m\x1b[KFloat64\x1b[m\x1b[K =\n'}
+[23.909461] (scorbot) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[23.909594] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:40:60:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kleft operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.910832] (scorbot) StderrLine: {'line': b'   40 |   tolerance_param_sub = node->subscribe<std_msgs::Float64>(\x1b[01;35m\x1b[K"/scorbot/params/tolerance"\x1b[m\x1b[K, 1, &Teleop::on_tolerance, this);\n'}
+[23.911173] (scorbot) StderrLine: {'line': b'      |                                                            \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.911495] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:40:101:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kright operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.911942] (scorbot) StderrLine: {'line': b'   40 | std_msgs::Float64>("/scorbot/params/tolerance", 1, &Teleop::\x1b[01;35m\x1b[Kon_tolerance\x1b[m\x1b[K, this);\n'}
+[23.912271] (scorbot) StderrLine: {'line': b'      |                                                             \x1b[01;35m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.912588] (scorbot) StderrLine: {'line': b'\n'}
+[23.912902] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:40:115:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kright operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.913139] (scorbot) StderrLine: {'line': b'   40 | :Float64>("/scorbot/params/tolerance", 1, &Teleop::on_tolerance, \x1b[01;35m\x1b[Kthis\x1b[m\x1b[K);\n'}
+[23.913261] (scorbot) StderrLine: {'line': b'      |                                                                  \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[23.913383] (scorbot) StderrLine: {'line': b'\n'}
+[23.913505] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:41:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = class rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Ksubscribe\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.913630] (scorbot) StderrLine: {'line': b'   41 |   feedback_filename_sub = node->\x1b[01;31m\x1b[Ksubscribe\x1b[m\x1b[K<std_msgs::String>("/scorbot/params/filename", 1, &Teleop::on_filename, this);\n'}
+[23.913766] (scorbot) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[23.913893] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:41:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KString\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::String\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[23.914013] (scorbot) StderrLine: {'line': b'   41 |   feedback_filename_sub = node->subscribe<std_msgs::\x1b[01;31m\x1b[KString\x1b[m\x1b[K>("/scorbot/params/filename", 1, &Teleop::on_filename, this);\n'}
+[23.914158] (scorbot) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[23.914278] (scorbot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp:7\x1b[m\x1b[K,\n'}
+[23.914399] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:17\x1b[m\x1b[K,\n'}
+[23.914519] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1\x1b[m\x1b[K:\n'}
+[23.914640] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:123:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::String\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[23.914791] (scorbot) StderrLine: {'line': b'  123 | using \x1b[01;36m\x1b[KString\x1b[m\x1b[K =\n'}
+[23.914910] (scorbot) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[23.915020] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:41:61:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kleft operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.915138] (scorbot) StderrLine: {'line': b'   41 |   feedback_filename_sub = node->subscribe<std_msgs::String>(\x1b[01;35m\x1b[K"/scorbot/params/filename"\x1b[m\x1b[K, 1, &Teleop::on_filename, this);\n'}
+[23.915258] (scorbot) StderrLine: {'line': b'      |                                                             \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.915374] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:41:101:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kright operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.915515] (scorbot) StderrLine: {'line': b'   41 | e<std_msgs::String>("/scorbot/params/filename", 1, &Teleop::\x1b[01;35m\x1b[Kon_filename\x1b[m\x1b[K, this);\n'}
+[23.915636] (scorbot) StderrLine: {'line': b'      |                                                             \x1b[01;35m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.915774] (scorbot) StderrLine: {'line': b'\n'}
+[23.915903] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:41:114:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kright operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.916036] (scorbot) StderrLine: {'line': b'   41 | gs::String>("/scorbot/params/filename", 1, &Teleop::on_filename, \x1b[01;35m\x1b[Kthis\x1b[m\x1b[K);\n'}
+[23.916238] (scorbot) StderrLine: {'line': b'      |                                                                  \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[23.916381] (scorbot) StderrLine: {'line': b'\n'}
+[23.916518] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:43:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = class rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kadvertise\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.916657] (scorbot) StderrLine: {'line': b'   43 |   claw_catch_pub = node->\x1b[01;31m\x1b[Kadvertise\x1b[m\x1b[K<std_msgs::Empty>("/scorbot/claw_catch", 1);\n'}
+[23.916903] (scorbot) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[23.917027] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:43:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEmpty\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.917151] (scorbot) StderrLine: {'line': b'   43 |   claw_catch_pub = node->advertise<std_msgs::\x1b[01;31m\x1b[KEmpty\x1b[m\x1b[K>("/scorbot/claw_catch", 1);\n'}
+[23.917268] (scorbot) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[23.917383] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:43:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternatives:\n'}
+[23.917530] (scorbot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/wait_result.hpp:25\x1b[m\x1b[K,\n'}
+[23.917649] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/sequential_synchronization.hpp:32\x1b[m\x1b[K,\n'}
+[23.917793] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/wait_set.hpp:26\x1b[m\x1b[K,\n'}
+[23.917919] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:168\x1b[m\x1b[K,\n'}
+[23.918039] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4\x1b[m\x1b[K,\n'}
+[23.918157] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1\x1b[m\x1b[K:\n'}
+[23.918278] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/wait_result_kind.hpp:28:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Empty\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.918401] (scorbot) StderrLine: {'line': b'   28 |   \x1b[01;36m\x1b[KEmpty\x1b[m\x1b[K,  //<! Kind used when trying to wait on an empty wait set.\n'}
+[23.918536] (scorbot) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[23.918654] (scorbot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/empty.hpp:7\x1b[m\x1b[K,\n'}
+[23.918843] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:13\x1b[m\x1b[K,\n'}
+[23.918972] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1\x1b[m\x1b[K:\n'}
+[23.919090] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__struct.hpp:116:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Empty\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.919210] (scorbot) StderrLine: {'line': b'  116 | using \x1b[01;36m\x1b[KEmpty\x1b[m\x1b[K =\n'}
+[23.919329] (scorbot) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[23.919447] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:43:53:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kleft operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.919572] (scorbot) StderrLine: {'line': b'   43 |   claw_catch_pub = node->advertise<std_msgs::Empty>(\x1b[01;35m\x1b[K"/scorbot/claw_catch"\x1b[m\x1b[K, 1);\n'}
+[23.919693] (scorbot) StderrLine: {'line': b'      |                                                     \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.919836] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:44:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = class rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kadvertise\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.919988] (scorbot) StderrLine: {'line': b'   44 |   claw_release_pub = node->\x1b[01;31m\x1b[Kadvertise\x1b[m\x1b[K<std_msgs::Empty>("/scorbot/claw_release", 1);\n'}
+[23.920110] (scorbot) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[23.920241] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:44:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEmpty\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.920371] (scorbot) StderrLine: {'line': b'   44 |   claw_release_pub = node->advertise<std_msgs::\x1b[01;31m\x1b[KEmpty\x1b[m\x1b[K>("/scorbot/claw_release", 1);\n'}
+[23.920507] (scorbot) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[23.920624] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:44:48:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternatives:\n'}
+[23.920746] (scorbot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/wait_result.hpp:25\x1b[m\x1b[K,\n'}
+[23.920872] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/sequential_synchronization.hpp:32\x1b[m\x1b[K,\n'}
+[23.920987] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/wait_set.hpp:26\x1b[m\x1b[K,\n'}
+[23.921106] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:168\x1b[m\x1b[K,\n'}
+[23.921220] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4\x1b[m\x1b[K,\n'}
+[23.921334] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1\x1b[m\x1b[K:\n'}
+[23.921449] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/wait_result_kind.hpp:28:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Empty\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.921571] (scorbot) StderrLine: {'line': b'   28 |   \x1b[01;36m\x1b[KEmpty\x1b[m\x1b[K,  //<! Kind used when trying to wait on an empty wait set.\n'}
+[23.921688] (scorbot) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[23.921820] (scorbot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/empty.hpp:7\x1b[m\x1b[K,\n'}
+[23.921937] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:13\x1b[m\x1b[K,\n'}
+[23.922056] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1\x1b[m\x1b[K:\n'}
+[23.922180] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__struct.hpp:116:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Empty\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.922296] (scorbot) StderrLine: {'line': b'  116 | using \x1b[01;36m\x1b[KEmpty\x1b[m\x1b[K =\n'}
+[23.922410] (scorbot) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[23.922523] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:44:55:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kleft operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.922654] (scorbot) StderrLine: {'line': b'   44 |   claw_release_pub = node->advertise<std_msgs::Empty>(\x1b[01;35m\x1b[K"/scorbot/claw_release"\x1b[m\x1b[K, 1);\n'}
+[23.922796] (scorbot) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.922949] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:46:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = class rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::Node\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Ksubscribe\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.923073] (scorbot) StderrLine: {'line': b'   46 |   joint_states_sub = node->\x1b[01;31m\x1b[Ksubscribe\x1b[m\x1b[K<sensor_msgs::JointState>("/joint_states", 1, &Teleop::on_joint_states, this);\n'}
+[23.923189] (scorbot) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[23.923308] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:46:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KJointState\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::JointState\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[23.923434] (scorbot) StderrLine: {'line': b'   46 |   joint_states_sub = node->subscribe<sensor_msgs::\x1b[01;31m\x1b[KJointState\x1b[m\x1b[K>("/joint_states", 1, &Teleop::on_joint_states, this);\n'}
+[23.923563] (scorbot) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.923694] (scorbot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/joint_state.hpp:7\x1b[m\x1b[K,\n'}
+[23.923840] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:20\x1b[m\x1b[K,\n'}
+[23.923959] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1\x1b[m\x1b[K:\n'}
+[23.924071] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__struct.hpp:168:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::JointState\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[23.924187] (scorbot) StderrLine: {'line': b'  168 | using \x1b[01;36m\x1b[KJointState\x1b[m\x1b[K =\n'}
+[23.924306] (scorbot) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.924448] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:46:63:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kleft operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.924819] (scorbot) StderrLine: {'line': b'   46 | joint_states_sub = node->subscribe<sensor_msgs::JointState>(\x1b[01;35m\x1b[K"/joint_states"\x1b[m\x1b[K, 1, &Teleop::on_joint_states, this);\n'}
+[23.924958] (scorbot) StderrLine: {'line': b'      |                                                             \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.925073] (scorbot) StderrLine: {'line': b'\n'}
+[23.925189] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:46:92:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kright operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.925316] (scorbot) StderrLine: {'line': b'   46 | cribe<sensor_msgs::JointState>("/joint_states", 1, &Teleop::\x1b[01;35m\x1b[Kon_joint_states\x1b[m\x1b[K, this);\n'}
+[23.925439] (scorbot) StderrLine: {'line': b'      |                                                             \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.925575] (scorbot) StderrLine: {'line': b'\n'}
+[23.925694] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:46:109:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kright operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[23.925839] (scorbot) StderrLine: {'line': b'   46 | _msgs::JointState>("/joint_states", 1, &Teleop::on_joint_states, \x1b[01;35m\x1b[Kthis\x1b[m\x1b[K);\n'}
+[23.925957] (scorbot) StderrLine: {'line': b'      |                                                                  \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[23.926068] (scorbot) StderrLine: {'line': b'\n'}
+[23.926179] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:75:72:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing Rate = class rclcpp::GenericRate<std::chrono::_V2::system_clock>\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kclass rclcpp::GenericRate<std::chrono::_V2::system_clock>\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kexpected_cycle_time\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.926304] (scorbot) StderrLine: {'line': b'   75 | imer = n->create_wall_timer(rclcpp::Rate(control_frequency).\x1b[01;31m\x1b[Kexpected_cycle_time\x1b[m\x1b[K(), std::bind(&Teleop::on_control_cycle, n));\n'}
+[23.926426] (scorbot) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.926545] (scorbot) StderrLine: {'line': b'\n'}
+[23.926657] (scorbot) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/scorbot.dir/build.make:90: CMakeFiles/scorbot.dir/src/scorbot_node.cpp.o] Error 1\n'}
+[23.926788] (scorbot) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[23.926905] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:\x1b[m\x1b[K At global scope:\n'}
+[23.927028] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:136:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcontrol_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[23.927173] (scorbot) StderrLine: {'line': b'  136 | void scorbot::Teleop::on_trajectory(const \x1b[01;31m\x1b[Kcontrol_msgs\x1b[m\x1b[K::FollowJointTrajectoryActionGoalConstPtr& msg)\n'}
+[23.927290] (scorbot) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.927405] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:136:96:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[23.927520] (scorbot) StderrLine: {'line': b'  136 | ctory(const control_msgs::FollowJointTrajectoryActionGoalConstPtr\x1b[01;31m\x1b[K&\x1b[m\x1b[K msg)\n'}
+[23.927637] (scorbot) StderrLine: {'line': b'      |                                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[23.927783] (scorbot) StderrLine: {'line': b'\n'}
+[23.927910] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:136:96:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[23.928035] (scorbot) StderrLine: {'line': b'  136 | ctory\x1b[34m\x1b[K(\x1b[m\x1b[Kconst control_msgs::FollowJointTrajectoryActionGoalConstPtr\x1b[01;31m\x1b[K&\x1b[m\x1b[K msg)\n'}
+[23.928157] (scorbot) StderrLine: {'line': b'      |      \x1b[34m\x1b[K~\x1b[m\x1b[K                                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[23.928290] (scorbot) StderrLine: {'line': b'      |                                                                  \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[23.928413] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:136:98:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.928533] (scorbot) StderrLine: {'line': b'  136 | ctory(const control_msgs::FollowJointTrajectoryActionGoalConstPtr& \x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K)\n'}
+[23.928653] (scorbot) StderrLine: {'line': b'      |                                                                    \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[23.928797] (scorbot) StderrLine: {'line': b'\n'}
+[23.929308] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid scorbot::Teleop::check_trajectory_progress()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[23.929454] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:264:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcontrol_msgs\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[23.929603] (scorbot) StderrLine: {'line': b'  264 |         \x1b[01;31m\x1b[Kcontrol_msgs\x1b[m\x1b[K::FollowJointTrajectoryResult result;\n'}
+[23.929733] (scorbot) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.937228] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:265:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kresult\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[23.937543] (scorbot) StderrLine: {'line': b'  265 |         \x1b[01;31m\x1b[Kresult\x1b[m\x1b[K.error_code = result.SUCCESSFUL;\n'}
+[23.937674] (scorbot) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[23.937806] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:266:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcontrol_msgs\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[23.937935] (scorbot) StderrLine: {'line': b'  266 |         \x1b[01;31m\x1b[Kcontrol_msgs\x1b[m\x1b[K::FollowJointTrajectoryActionResult result_msg;\n'}
+[23.938052] (scorbot) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.946610] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:267:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kresult_msg\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[23.946912] (scorbot) StderrLine: {'line': b'  267 |         \x1b[01;31m\x1b[Kresult_msg\x1b[m\x1b[K.result = result;\n'}
+[23.947040] (scorbot) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.947157] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:269:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kactionlib_msgs\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[23.947278] (scorbot) StderrLine: {'line': b'  269 |         \x1b[01;31m\x1b[Kactionlib_msgs\x1b[m\x1b[K::GoalStatus goal_status;\n'}
+[23.947400] (scorbot) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.951751] (-) TimerEvent: {}
+[23.956472] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:270:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgoal_status\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksi_status\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[23.956794] (scorbot) StderrLine: {'line': b'  270 |         \x1b[01;31m\x1b[Kgoal_status\x1b[m\x1b[K.status = goal_status.SUCCEEDED;\n'}
+[23.956929] (scorbot) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.957050] (scorbot) StderrLine: {'line': b'      |         \x1b[32m\x1b[Ksi_status\x1b[m\x1b[K\n'}
+[23.971075] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:271:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktrajectory_goal_id\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[23.971365] (scorbot) StderrLine: {'line': b'  271 |         goal_status.goal_id = \x1b[01;31m\x1b[Ktrajectory_goal_id\x1b[m\x1b[K;\n'}
+[23.971495] (scorbot) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.989383] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:274:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktrajectory_finished_pub\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[23.989674] (scorbot) StderrLine: {'line': b'  274 |         \x1b[01;31m\x1b[Ktrajectory_finished_pub\x1b[m\x1b[K.publish(result_msg);\n'}
+[23.989821] (scorbot) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.990170] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:278:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KInt32MultiArray\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int32MultiArray\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[23.990409] (scorbot) StderrLine: {'line': b'  278 |         std_msgs::\x1b[01;31m\x1b[KInt32MultiArray\x1b[m\x1b[K joint_pos_msg;\n'}
+[23.990538] (scorbot) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.990663] (scorbot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/int32_multi_array.hpp:7\x1b[m\x1b[K,\n'}
+[23.990878] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:16\x1b[m\x1b[K,\n'}
+[23.991005] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1\x1b[m\x1b[K:\n'}
+[23.991122] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32_multi_array__struct.hpp:132:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int32MultiArray\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[23.991239] (scorbot) StderrLine: {'line': b'  132 | using \x1b[01;36m\x1b[KInt32MultiArray\x1b[m\x1b[K =\n'}
+[23.991354] (scorbot) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.991474] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:287:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass std::shared_ptr<std_msgs::msg::Int32MultiArray_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kpublish\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.992056] (scorbot) StderrLine: {'line': b'  287 |         joint_pos_array_pub.\x1b[01;31m\x1b[Kpublish\x1b[m\x1b[K(joint_pos_msg);\n'}
+[23.992204] (scorbot) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[23.992332] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:302:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KInt32MultiArray\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int32MultiArray\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[23.992568] (scorbot) StderrLine: {'line': b'  302 |       std_msgs::\x1b[01;31m\x1b[KInt32MultiArray\x1b[m\x1b[K joint_pos_msg;\n'}
+[23.992691] (scorbot) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.993540] (scorbot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/int32_multi_array.hpp:7\x1b[m\x1b[K,\n'}
+[23.993690] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:16\x1b[m\x1b[K,\n'}
+[23.993844] (scorbot) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1\x1b[m\x1b[K:\n'}
+[23.993968] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32_multi_array__struct.hpp:132:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg::Int32MultiArray\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[23.994096] (scorbot) StderrLine: {'line': b'  132 | using \x1b[01;36m\x1b[KInt32MultiArray\x1b[m\x1b[K =\n'}
+[23.994218] (scorbot) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.994339] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:311:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass std::shared_ptr<std_msgs::msg::Int32MultiArray_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kpublish\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.994467] (scorbot) StderrLine: {'line': b'  311 |       joint_pos_array_pub.\x1b[01;31m\x1b[Kpublish\x1b[m\x1b[K(joint_pos_msg);\n'}
+[23.994590] (scorbot) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[23.994705] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:\x1b[m\x1b[K At global scope:\n'}
+[23.994836] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:316:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KJointStateConstPtr\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[23.994962] (scorbot) StderrLine: {'line': b'  316 | void scorbot::Teleop::on_joint_states(const sensor_msgs::\x1b[01;31m\x1b[KJointStateConstPtr\x1b[m\x1b[K& msg){\n'}
+[23.995078] (scorbot) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.995198] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:316:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kvoid scorbot::Teleop::on_joint_states(const int&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.995330] (scorbot) StderrLine: {'line': b'  316 | void \x1b[01;31m\x1b[Kscorbot\x1b[m\x1b[K::Teleop::on_joint_states(const sensor_msgs::JointStateConstPtr& msg){\n'}
+[23.995477] (scorbot) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[23.995602] (scorbot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1\x1b[m\x1b[K:\n'}
+[23.995737] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:40:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate is: \xe2\x80\x98\x1b[01m\x1b[Kvoid scorbot::Teleop::on_joint_states(const JointState&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.995884] (scorbot) StderrLine: {'line': b'   40 |       void \x1b[01;36m\x1b[Kon_joint_states\x1b[m\x1b[K(const sensor_msgs::msg::JointState& msg);\n'}
+[23.996007] (scorbot) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.996125] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:32:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass scorbot::Teleop\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[23.996251] (scorbot) StderrLine: {'line': b'   32 |   class \x1b[01;36m\x1b[KTeleop\x1b[m\x1b[K\n'}
+[23.996365] (scorbot) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[23.996477] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:412:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KFloat64ConstPtr\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[23.996593] (scorbot) StderrLine: {'line': b'  412 | void scorbot::Teleop::on_tolerance(const std_msgs::\x1b[01;31m\x1b[KFloat64ConstPtr\x1b[m\x1b[K& msg){\n'}
+[23.996711] (scorbot) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.996850] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:412:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kvoid scorbot::Teleop::on_tolerance(const int&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.996979] (scorbot) StderrLine: {'line': b'  412 | void \x1b[01;31m\x1b[Kscorbot\x1b[m\x1b[K::Teleop::on_tolerance(const std_msgs::Float64ConstPtr& msg){\n'}
+[23.997110] (scorbot) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[23.997233] (scorbot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1\x1b[m\x1b[K:\n'}
+[23.997353] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:47:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate is: \xe2\x80\x98\x1b[01m\x1b[Kvoid scorbot::Teleop::on_tolerance(const Float64&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.997494] (scorbot) StderrLine: {'line': b'   47 |       void \x1b[01;36m\x1b[Kon_tolerance\x1b[m\x1b[K(const std_msgs::msg::Float64& msg);\n'}
+[23.997609] (scorbot) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.997734] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:32:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass scorbot::Teleop\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[23.997868] (scorbot) StderrLine: {'line': b'   32 |   class \x1b[01;36m\x1b[KTeleop\x1b[m\x1b[K\n'}
+[23.997995] (scorbot) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[23.998114] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:416:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KStringConstPtr\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[23.998243] (scorbot) StderrLine: {'line': b'  416 | void scorbot::Teleop::on_filename(const std_msgs::\x1b[01;31m\x1b[KStringConstPtr\x1b[m\x1b[K& msg){\n'}
+[23.998367] (scorbot) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.998795] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:416:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kvoid scorbot::Teleop::on_filename(const int&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.998926] (scorbot) StderrLine: {'line': b'  416 | void \x1b[01;31m\x1b[Kscorbot\x1b[m\x1b[K::Teleop::on_filename(const std_msgs::StringConstPtr& msg){\n'}
+[23.999053] (scorbot) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[23.999175] (scorbot) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1\x1b[m\x1b[K:\n'}
+[23.999300] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:48:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate is: \xe2\x80\x98\x1b[01m\x1b[Kvoid scorbot::Teleop::on_filename(const String&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[23.999425] (scorbot) StderrLine: {'line': b'   48 |       void \x1b[01;36m\x1b[Kon_filename\x1b[m\x1b[K(const std_msgs::msg::String& msg);\n'}
+[23.999555] (scorbot) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[23.999680] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:32:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass scorbot::Teleop\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[23.999824] (scorbot) StderrLine: {'line': b'   32 |   class \x1b[01;36m\x1b[KTeleop\x1b[m\x1b[K\n'}
+[23.999950] (scorbot) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[24.000070] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:420:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kuniversal_teleop\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[24.000219] (scorbot) StderrLine: {'line': b'  420 | void scorbot::Teleop::on_controls(const \x1b[01;31m\x1b[Kuniversal_teleop\x1b[m\x1b[K::ControlConstPtr& msg)\n'}
+[24.000353] (scorbot) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.000477] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:420:74:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[24.000601] (scorbot) StderrLine: {'line': b'  420 | rbot::Teleop::on_controls(const universal_teleop::ControlConstPtr\x1b[01;31m\x1b[K&\x1b[m\x1b[K msg)\n'}
+[24.000735] (scorbot) StderrLine: {'line': b'      |                                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[24.000866] (scorbot) StderrLine: {'line': b'\n'}
+[24.000991] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:420:74:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[24.001119] (scorbot) StderrLine: {'line': b'  420 | rbot::Teleop::on_controls\x1b[34m\x1b[K(\x1b[m\x1b[Kconst universal_teleop::ControlConstPtr\x1b[01;31m\x1b[K&\x1b[m\x1b[K msg)\n'}
+[24.001243] (scorbot) StderrLine: {'line': b'      |                          \x1b[34m\x1b[K~\x1b[m\x1b[K                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[24.001358] (scorbot) StderrLine: {'line': b'      |                                                                  \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[24.001470] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:420:76:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.001603] (scorbot) StderrLine: {'line': b'  420 | rbot::Teleop::on_controls(const universal_teleop::ControlConstPtr& \x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K)\n'}
+[24.001730] (scorbot) StderrLine: {'line': b'      |                                                                    \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[24.001864] (scorbot) StderrLine: {'line': b'\n'}
+[24.003683] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:445:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kuniversal_teleop\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[24.004005] (scorbot) StderrLine: {'line': b'  445 | void scorbot::Teleop::on_events(const \x1b[01;31m\x1b[Kuniversal_teleop\x1b[m\x1b[K::EventConstPtr& msg)\n'}
+[24.004243] (scorbot) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.004370] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:445:70:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[24.004566] (scorbot) StderrLine: {'line': b'  445 |  scorbot::Teleop::on_events(const universal_teleop::EventConstPtr\x1b[01;31m\x1b[K&\x1b[m\x1b[K msg)\n'}
+[24.004690] (scorbot) StderrLine: {'line': b'      |                                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[24.004826] (scorbot) StderrLine: {'line': b'\n'}
+[24.004949] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:445:70:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[24.005065] (scorbot) StderrLine: {'line': b'  445 |  scorbot::Teleop::on_events\x1b[34m\x1b[K(\x1b[m\x1b[Kconst universal_teleop::EventConstPtr\x1b[01;31m\x1b[K&\x1b[m\x1b[K msg)\n'}
+[24.005188] (scorbot) StderrLine: {'line': b'      |                            \x1b[34m\x1b[K~\x1b[m\x1b[K                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[24.005310] (scorbot) StderrLine: {'line': b'      |                                                                  \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[24.005430] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:445:72:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.005544] (scorbot) StderrLine: {'line': b'  445 |  scorbot::Teleop::on_events(const universal_teleop::EventConstPtr& \x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K)\n'}
+[24.005667] (scorbot) StderrLine: {'line': b'      |                                                                    \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[24.005802] (scorbot) StderrLine: {'line': b'\n'}
+[24.005933] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid scorbot::Teleop::on_control_cycle()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[24.006058] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:509:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<float>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[24.006209] (scorbot) StderrLine: {'line': b'  509 |     for (int i = 0; \x1b[01;35m\x1b[Ki < velocities.joint_velocities.size()\x1b[m\x1b[K; i++) {\n'}
+[24.006339] (scorbot) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.006460] (scorbot) StderrLine: {'line': b'\x1b[01m\x1b[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:512:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass std::shared_ptr<scorbot_msgs::msg::JointVelocities_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kpublish\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.006584] (scorbot) StderrLine: {'line': b'  512 |     vel_pub.\x1b[01;31m\x1b[Kpublish\x1b[m\x1b[K(velocities);\n'}
+[24.006710] (scorbot) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[24.051868] (-) TimerEvent: {}
+[24.152264] (-) TimerEvent: {}
+[24.252663] (-) TimerEvent: {}
+[24.353074] (-) TimerEvent: {}
+[24.453471] (-) TimerEvent: {}
+[24.553878] (-) TimerEvent: {}
+[24.654284] (-) TimerEvent: {}
+[24.699883] (scorbot) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/scorbot.dir/build.make:76: CMakeFiles/scorbot.dir/src/scorbot.cpp.o] Error 1\n'}
+[24.700227] (scorbot) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/scorbot.dir/all] Error 2\n'}
+[24.700528] (scorbot) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[24.703082] (scorbot) CommandEnded: {'returncode': 2}
+[24.718778] (scorbot) JobEnded: {'identifier': 'scorbot', 'rc': 2}
+[24.729968] (-) EventReactorShutdown: {}

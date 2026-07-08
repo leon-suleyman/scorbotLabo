@@ -1,0 +1,179 @@
+[0.528s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.528s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7ddbc2099390>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ddbc2098e80>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ddbc2098e80>>)
+[0.934s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.934s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.934s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.934s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.934s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.934s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.934s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws'
+[0.935s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.935s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.935s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.935s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.935s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.935s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.935s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.935s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.935s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.953s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.953s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.953s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.953s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.953s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.953s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.954s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.954s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.954s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.954s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.954s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.954s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.954s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.954s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.954s] Level 1:colcon.colcon_core.package_identification:_identify(scorbot) by extensions ['ignore', 'ignore_ament_install']
+[0.954s] Level 1:colcon.colcon_core.package_identification:_identify(scorbot) by extension 'ignore'
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(scorbot) by extension 'ignore_ament_install'
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(scorbot) by extensions ['colcon_pkg']
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(scorbot) by extension 'colcon_pkg'
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(scorbot) by extensions ['colcon_meta']
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(scorbot) by extension 'colcon_meta'
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(scorbot) by extensions ['ros']
+[0.955s] Level 1:colcon.colcon_core.package_identification:_identify(scorbot) by extension 'ros'
+[0.959s] DEBUG:colcon.colcon_core.package_identification:Package 'scorbot' with type 'ros.ament_cmake' and name 'scorbot'
+[0.959s] Level 1:colcon.colcon_core.package_identification:_identify(scorbot_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.959s] Level 1:colcon.colcon_core.package_identification:_identify(scorbot_msgs) by extension 'ignore'
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(scorbot_msgs) by extension 'ignore_ament_install'
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(scorbot_msgs) by extensions ['colcon_pkg']
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(scorbot_msgs) by extension 'colcon_pkg'
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(scorbot_msgs) by extensions ['colcon_meta']
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(scorbot_msgs) by extension 'colcon_meta'
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(scorbot_msgs) by extensions ['ros']
+[0.960s] Level 1:colcon.colcon_core.package_identification:_identify(scorbot_msgs) by extension 'ros'
+[0.961s] DEBUG:colcon.colcon_core.package_identification:Package 'scorbot_msgs' with type 'ros.ament_cmake' and name 'scorbot_msgs'
+[0.961s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.961s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.961s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.961s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.961s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.105s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.105s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.128s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 39 installed packages in /home/leon/microros_ws/install
+[1.150s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 443 installed packages in /opt/ros/humble
+[1.163s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.632s] Level 5:colcon.colcon_core.verb:set package 'scorbot_msgs' build argument 'cmake_args' from command line to 'None'
+[1.633s] Level 5:colcon.colcon_core.verb:set package 'scorbot_msgs' build argument 'cmake_target' from command line to 'None'
+[1.633s] Level 5:colcon.colcon_core.verb:set package 'scorbot_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.633s] Level 5:colcon.colcon_core.verb:set package 'scorbot_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[1.633s] Level 5:colcon.colcon_core.verb:set package 'scorbot_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[1.633s] Level 5:colcon.colcon_core.verb:set package 'scorbot_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[1.633s] Level 5:colcon.colcon_core.verb:set package 'scorbot_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[1.633s] Level 5:colcon.colcon_core.verb:set package 'scorbot_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[1.633s] Level 5:colcon.colcon_core.verb:set package 'scorbot_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.633s] DEBUG:colcon.colcon_core.verb:Building package 'scorbot_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs', 'merge_install': False, 'path': '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot_msgs', 'symlink_install': False, 'test_result_base': None}
+[1.634s] Level 5:colcon.colcon_core.verb:set package 'scorbot' build argument 'cmake_args' from command line to 'None'
+[1.634s] Level 5:colcon.colcon_core.verb:set package 'scorbot' build argument 'cmake_target' from command line to 'None'
+[1.634s] Level 5:colcon.colcon_core.verb:set package 'scorbot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.634s] Level 5:colcon.colcon_core.verb:set package 'scorbot' build argument 'cmake_clean_cache' from command line to 'False'
+[1.634s] Level 5:colcon.colcon_core.verb:set package 'scorbot' build argument 'cmake_clean_first' from command line to 'False'
+[1.634s] Level 5:colcon.colcon_core.verb:set package 'scorbot' build argument 'cmake_force_configure' from command line to 'False'
+[1.634s] Level 5:colcon.colcon_core.verb:set package 'scorbot' build argument 'ament_cmake_args' from command line to 'None'
+[1.634s] Level 5:colcon.colcon_core.verb:set package 'scorbot' build argument 'catkin_cmake_args' from command line to 'None'
+[1.634s] Level 5:colcon.colcon_core.verb:set package 'scorbot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.634s] DEBUG:colcon.colcon_core.verb:Building package 'scorbot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot', 'merge_install': False, 'path': '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot', 'symlink_install': False, 'test_result_base': None}
+[1.634s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.637s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.637s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot_msgs' with build type 'ament_cmake'
+[1.637s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot_msgs'
+[1.673s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.673s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.674s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.696s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/leon/microros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs -- -j4 -l4
+[2.618s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/leon/microros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs -- -j4 -l4
+[2.637s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/leon/microros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --install /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs
+[2.775s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scorbot_msgs)
+[2.778s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/leon/microros_ws/install/sensor_msgs_py:/opt/ros/humble /usr/bin/cmake --install /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot_msgs
+[2.783s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs' for CMake module files
+[2.785s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs' for CMake config files
+[2.785s] Level 1:colcon.colcon_core.shell:create_environment_hook('scorbot_msgs', 'cmake_prefix_path')
+[2.786s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/hook/cmake_prefix_path.ps1'
+[2.787s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/hook/cmake_prefix_path.dsv'
+[2.787s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/hook/cmake_prefix_path.sh'
+[2.789s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib'
+[2.789s] Level 1:colcon.colcon_core.shell:create_environment_hook('scorbot_msgs', 'ld_library_path_lib')
+[2.790s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/hook/ld_library_path_lib.ps1'
+[2.790s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/hook/ld_library_path_lib.dsv'
+[2.791s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/hook/ld_library_path_lib.sh'
+[2.792s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/bin'
+[2.792s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/pkgconfig/scorbot_msgs.pc'
+[2.792s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/python3.10/site-packages'
+[2.793s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/bin'
+[2.793s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/package.ps1'
+[2.796s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/package.dsv'
+[2.797s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/package.sh'
+[2.798s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/package.bash'
+[2.800s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/package.zsh'
+[2.801s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/colcon-core/packages/scorbot_msgs)
+[2.802s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scorbot_msgs)
+[2.802s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs' for CMake module files
+[2.804s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs' for CMake config files
+[2.804s] Level 1:colcon.colcon_core.shell:create_environment_hook('scorbot_msgs', 'cmake_prefix_path')
+[2.805s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/hook/cmake_prefix_path.ps1'
+[2.806s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/hook/cmake_prefix_path.dsv'
+[2.806s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/hook/cmake_prefix_path.sh'
+[2.807s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib'
+[2.808s] Level 1:colcon.colcon_core.shell:create_environment_hook('scorbot_msgs', 'ld_library_path_lib')
+[2.808s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/hook/ld_library_path_lib.ps1'
+[2.809s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/hook/ld_library_path_lib.dsv'
+[2.809s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/hook/ld_library_path_lib.sh'
+[2.810s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/bin'
+[2.810s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/pkgconfig/scorbot_msgs.pc'
+[2.811s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib/python3.10/site-packages'
+[2.811s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/bin'
+[2.812s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/package.ps1'
+[2.813s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/package.dsv'
+[2.814s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/package.sh'
+[2.816s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/package.bash'
+[2.817s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/scorbot_msgs/package.zsh'
+[2.817s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/share/colcon-core/packages/scorbot_msgs)
+[2.818s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot' with build type 'ament_cmake'
+[2.818s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot'
+[2.819s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.819s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.861s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot': AMENT_PREFIX_PATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs:/home/leon/microros_ws/install/micro_ros_demos_rclc:/home/leon/microros_ws/install/common_interfaces:/home/leon/microros_ws/install/visualization_msgs:/home/leon/microros_ws/install/test_msgs:/home/leon/microros_ws/install/example_interfaces:/home/leon/microros_ws/install/action_msgs:/home/leon/microros_ws/install/unique_identifier_msgs:/home/leon/microros_ws/install/trajectory_msgs:/home/leon/microros_ws/install/stereo_msgs:/home/leon/microros_ws/install/std_srvs:/home/leon/microros_ws/install/shape_msgs:/home/leon/microros_ws/install/sensor_msgs:/home/leon/microros_ws/install/nav_msgs:/home/leon/microros_ws/install/diagnostic_msgs:/home/leon/microros_ws/install/geometry_msgs:/home/leon/microros_ws/install/actionlib_msgs:/home/leon/microros_ws/install/std_msgs:/home/leon/microros_ws/install/statistics_msgs:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_test_msg:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp_tests:/home/leon/microros_ws/install/rmw_microxrcedds:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c_tests:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/leon/microros_ws/install/rosgraph_msgs:/home/leon/microros_ws/install/rclc_parameter:/home/leon/microros_ws/install/rclc:/home/leon/microros_ws/install/composition_interfaces:/home/leon/microros_ws/install/rcl_interfaces:/home/leon/microros_ws/install/microxrcedds_client:/home/leon/microros_ws/install/microcdr:/home/leon/microros_ws/install/micro_ros_utilities:/home/leon/microros_ws/install/micro_ros_setup:/home/leon/microros_ws/install/micro_ros_agent:/home/leon/microros_ws/install/micro_ros_msgs:/home/leon/microros_ws/install/lifecycle_msgs:/home/leon/microros_ws/install/complex_msgs:/home/leon/microros_ws/install/builtin_interfaces:/home/leon/microros_ws/install/sensor_msgs_py:/opt/ros/humble LD_LIBRARY_PATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot -- -j4 -l4
+[8.536s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot' returned '2': AMENT_PREFIX_PATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs:/home/leon/microros_ws/install/micro_ros_demos_rclc:/home/leon/microros_ws/install/common_interfaces:/home/leon/microros_ws/install/visualization_msgs:/home/leon/microros_ws/install/test_msgs:/home/leon/microros_ws/install/example_interfaces:/home/leon/microros_ws/install/action_msgs:/home/leon/microros_ws/install/unique_identifier_msgs:/home/leon/microros_ws/install/trajectory_msgs:/home/leon/microros_ws/install/stereo_msgs:/home/leon/microros_ws/install/std_srvs:/home/leon/microros_ws/install/shape_msgs:/home/leon/microros_ws/install/sensor_msgs:/home/leon/microros_ws/install/nav_msgs:/home/leon/microros_ws/install/diagnostic_msgs:/home/leon/microros_ws/install/geometry_msgs:/home/leon/microros_ws/install/actionlib_msgs:/home/leon/microros_ws/install/std_msgs:/home/leon/microros_ws/install/statistics_msgs:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_test_msg:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp_tests:/home/leon/microros_ws/install/rmw_microxrcedds:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c_tests:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/leon/microros_ws/install/rosgraph_msgs:/home/leon/microros_ws/install/rclc_parameter:/home/leon/microros_ws/install/rclc:/home/leon/microros_ws/install/composition_interfaces:/home/leon/microros_ws/install/rcl_interfaces:/home/leon/microros_ws/install/microxrcedds_client:/home/leon/microros_ws/install/microcdr:/home/leon/microros_ws/install/micro_ros_utilities:/home/leon/microros_ws/install/micro_ros_setup:/home/leon/microros_ws/install/micro_ros_agent:/home/leon/microros_ws/install/micro_ros_msgs:/home/leon/microros_ws/install/lifecycle_msgs:/home/leon/microros_ws/install/complex_msgs:/home/leon/microros_ws/install/builtin_interfaces:/home/leon/microros_ws/install/sensor_msgs_py:/opt/ros/humble LD_LIBRARY_PATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot -- -j4 -l4
+[8.537s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(scorbot)
+[8.537s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot' for CMake module files
+[8.538s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot' for CMake config files
+[8.538s] Level 1:colcon.colcon_core.shell:create_environment_hook('scorbot', 'cmake_prefix_path')
+[8.539s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/hook/cmake_prefix_path.ps1'
+[8.540s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/hook/cmake_prefix_path.dsv'
+[8.540s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/hook/cmake_prefix_path.sh'
+[8.541s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/lib'
+[8.541s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/bin'
+[8.541s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/lib/pkgconfig/scorbot.pc'
+[8.542s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/lib/python3.10/site-packages'
+[8.542s] Level 1:colcon.colcon_core.environment:checking '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/bin'
+[8.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/package.ps1'
+[8.544s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/package.dsv'
+[8.545s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/package.sh'
+[8.545s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/package.bash'
+[8.546s] INFO:colcon.colcon_core.shell:Creating package script '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/scorbot/package.zsh'
+[8.547s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot/share/colcon-core/packages/scorbot)
+[8.557s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.558s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.558s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[8.558s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.567s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.568s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.568s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.588s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.588s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/local_setup.ps1'
+[8.590s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/_local_setup_util_ps1.py'
+[8.593s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/setup.ps1'
+[8.598s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/local_setup.sh'
+[8.599s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/_local_setup_util_sh.py'
+[8.601s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/setup.sh'
+[8.606s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/local_setup.bash'
+[8.607s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/setup.bash'
+[8.611s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/local_setup.zsh'
+[8.612s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/setup.zsh'
