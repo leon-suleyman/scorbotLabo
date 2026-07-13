@@ -36,23 +36,23 @@ namespace scorbot {
 
       //rclcpp::Subscription<control_msgs_msgs::msg::FollowJointTrajectoryActionGoal>::SharedPtr joint_trajectory_sub;
       rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr joint_states_sub;
-      //void on_trajectory(const control_msgs::msg::FollowJointTrajectoryActionGoal& msg);
-      void on_joint_states(const sensor_msgs::msg::JointState& msg);
+      //void on_trajectory(const control_msgs::msg::FollowJointTrajectoryActionGoal::SharedPtr& msg);
+      void on_joint_states(const sensor_msgs::msg::JointState::SharedPtr& msg);
       rclcpp::Publisher<std_msgs::msg::Int32MultiArray>::SharedPtr joint_pos_array_pub;
       //rclcpp::Publisher<control_msgs::msg::FollowJointTrajectoryActionResult>::SharedPtr trajectory_finished_pub;
 
 
       rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr tolerance_param_sub;
       rclcpp::Subscription<std_msgs::msg::String>::SharedPtr feedback_filename_sub;
-      void on_tolerance(const std_msgs::msg::Float64& msg);
-      void on_filename(const std_msgs::msg::String& msg);
+      void on_tolerance(const std_msgs::msg::Float64::SharedPtr& msg);
+      void on_filename(const std_msgs::msg::String::SharedPtr& msg);
 
       rclcpp::Subscription<universal_teleop_msgs::msg::Event>::SharedPtr sub_events;
       rclcpp::Subscription<universal_teleop_msgs::msg::Control>::SharedPtr sub_control;
       rclcpp::Publisher<scorbot_msgs::msg::JointVelocities>::SharedPtr vel_pub;
       rclcpp::Publisher<std_msgs::msg::Empty>::SharedPtr home_pub;
-      void on_controls(const universal_teleop_msgs::msg::Control& msg);
-      void on_events(const universal_teleop_msgs::msg::Event& msg);
+      void on_controls(const universal_teleop_msgs::msg::Control::SharedPtr& msg);
+      void on_events(const universal_teleop_msgs::msg::Event::SharedPtr& msg);
 
       rclcpp::Publisher<std_msgs::msg::Empty>::SharedPtr claw_catch_pub, claw_release_pub;
 
@@ -62,7 +62,8 @@ namespace scorbot {
     private:
       std::shared_ptr<rclcpp::Node> node;
       int control_frequency;
-      std::shared_ptr<rclcpp::WallTimer<std::function<void()>>> control_timer;
+      //std::shared_ptr<rclcpp::WallTimer<std::_Bind<void (scorbot::Teleop::*(std::shared_ptr<rclcpp::Node>))()> > >
+      rclcpp::TimerBase::SharedPtr control_timer;
       bool override_enabled, slow_mode_enabled;
       double joint_goal_tolerance;
       std::string filename;

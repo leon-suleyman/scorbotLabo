@@ -1,0 +1,185 @@
+[0.073s] Invoking command in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot': AMENT_PREFIX_PATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs:/home/leon/microros_ws/install/micro_ros_demos_rclc:/home/leon/microros_ws/install/common_interfaces:/home/leon/microros_ws/install/visualization_msgs:/home/leon/microros_ws/install/test_msgs:/home/leon/microros_ws/install/example_interfaces:/home/leon/microros_ws/install/action_msgs:/home/leon/microros_ws/install/unique_identifier_msgs:/home/leon/microros_ws/install/trajectory_msgs:/home/leon/microros_ws/install/stereo_msgs:/home/leon/microros_ws/install/std_srvs:/home/leon/microros_ws/install/shape_msgs:/home/leon/microros_ws/install/sensor_msgs:/home/leon/microros_ws/install/nav_msgs:/home/leon/microros_ws/install/diagnostic_msgs:/home/leon/microros_ws/install/geometry_msgs:/home/leon/microros_ws/install/actionlib_msgs:/home/leon/microros_ws/install/std_msgs:/home/leon/microros_ws/install/statistics_msgs:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_test_msg:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp_tests:/home/leon/microros_ws/install/rmw_microxrcedds:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c_tests:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/leon/microros_ws/install/rosgraph_msgs:/home/leon/microros_ws/install/rclc_parameter:/home/leon/microros_ws/install/rclc:/home/leon/microros_ws/install/composition_interfaces:/home/leon/microros_ws/install/rcl_interfaces:/home/leon/microros_ws/install/microxrcedds_client:/home/leon/microros_ws/install/microcdr:/home/leon/microros_ws/install/micro_ros_utilities:/home/leon/microros_ws/install/micro_ros_setup:/home/leon/microros_ws/install/micro_ros_agent:/home/leon/microros_ws/install/micro_ros_msgs:/home/leon/microros_ws/install/lifecycle_msgs:/home/leon/microros_ws/install/complex_msgs:/home/leon/microros_ws/install/builtin_interfaces:/home/leon/microros_ws/install/sensor_msgs_py:/opt/ros/humble LD_LIBRARY_PATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot -- -j4 -l4
+[0.446s] [35m[1mConsolidate compiler generated dependencies of target scorbot[0m
+[0.545s] [ 33%] [32mBuilding CXX object CMakeFiles/scorbot.dir/src/scorbot.cpp.o[0m
+[2.962s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:379:9:[m[K [01;35m[Kwarning: [m[K"/*" within comment [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcomment-Wcomment]8;;[m[K]
+[2.962s]   379 |         /*
+[2.962s]       |          
+[7.286s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:[m[K In constructor ‘[01m[Kscorbot::Teleop::Teleop(std::shared_ptr<rclcpp::Node>)[m[K’:
+[7.286s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:38:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrajectory_finished_pub[m[K’ was not declared in this scope
+[7.286s]    38 |   [01;31m[Ktrajectory_finished_pub[m[K = node->create_publisher<control_msgs::msg::FollowJointTrajectoryActionResult>("/arm_position_controller/follow_joint_trajectory/result", 1);
+[7.286s]       |   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.315s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:38:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_msgs[m[K’ was not declared in this scope
+[7.315s]    38 |   trajectory_finished_pub = node->create_publisher<[01;31m[Kcontrol_msgs[m[K::msg::FollowJointTrajectoryActionResult>("/arm_position_controller/follow_joint_trajectory/result", 1);
+[7.315s]       |                                                    [01;31m[K^~~~~~~~~~~~[m[K
+[7.315s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:38:35:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[7.315s]    38 |   trajectory_finished_pub = node->[01;31m[Kcreate_publisher<control_msgs::msg::FollowJointTrajectoryActionResult>[m[K("/arm_position_controller/follow_joint_trajectory/result", 1);
+[7.316s]       |                                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.316s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:38:105:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::create_publisher<<expression error> >(const char [56], int)[m[K’
+[7.316s]    38 | [01;31m[Klisher<control_msgs::msg::FollowJointTrajectoryActionResult>("/arm_position_controller/follow_joint_trajectory/result", 1)[m[K;
+[7.316s]       | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.316s] 
+[7.349s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+[7.349s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[7.349s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[7.349s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[7.349s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:4[m[K,
+[7.349s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[7.349s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[7.350s]    73 | [01;36m[KNode[m[K::create_publisher(
+[7.350s]       | [01;36m[K^~~~[m[K
+[7.350s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.350s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:38:105:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[7.350s]    38 | [01;31m[Klisher<control_msgs::msg::FollowJointTrajectoryActionResult>("/arm_position_controller/follow_joint_trajectory/result", 1)[m[K;
+[7.350s]       | [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.350s] 
+[7.365s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:76:72:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing Rate = class rclcpp::GenericRate<std::chrono::_V2::system_clock>[m[K’ {aka ‘[01m[Kclass rclcpp::GenericRate<std::chrono::_V2::system_clock>[m[K’} has no member named ‘[01m[Kexpected_cycle_time[m[K’
+[7.365s]    76 | imer = n->create_wall_timer(rclcpp::Rate(control_frequency).[01;31m[Kexpected_cycle_time[m[K(), std::bind(&Teleop::on_control_cycle, n));
+[7.365s]       |                                                             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[7.365s] 
+[7.377s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:[m[K At global scope:
+[7.377s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:137:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_msgs[m[K’ does not name a type
+[7.377s]   137 | void scorbot::Teleop::on_trajectory(const [01;31m[Kcontrol_msgs[m[K::FollowJointTrajectoryActionGoalConstPtr& msg)
+[7.378s]       |                                           [01;31m[K^~~~~~~~~~~~[m[K
+[7.378s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:137:96:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+[7.378s]   137 | ctory(const control_msgs::FollowJointTrajectoryActionGoalConstPtr[01;31m[K&[m[K msg)
+[7.378s]       |                                                                  [01;31m[K^[m[K
+[7.378s] 
+[7.378s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:137:96:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[7.378s]   137 | ctory[34m[K([m[Kconst control_msgs::FollowJointTrajectoryActionGoalConstPtr[01;31m[K&[m[K msg)
+[7.379s]       |      [34m[K~[m[K                                                           [01;31m[K^[m[K
+[7.379s]       |                                                                  [32m[K)[m[K
+[7.379s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:137:98:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kmsg[m[K’
+[7.379s]   137 | ctory(const control_msgs::FollowJointTrajectoryActionGoalConstPtr& [01;31m[Kmsg[m[K)
+[7.379s]       |                                                                    [01;31m[K^~~[m[K
+[7.379s] 
+[7.382s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:[m[K In member function ‘[01m[Kvoid scorbot::Teleop::check_trajectory_progress()[m[K’:
+[7.383s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:265:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_msgs[m[K’ has not been declared
+[7.383s]   265 |         [01;31m[Kcontrol_msgs[m[K::FollowJointTrajectoryResult result;
+[7.384s]       |         [01;31m[K^~~~~~~~~~~~[m[K
+[7.392s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:266:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kresult[m[K’ was not declared in this scope
+[7.392s]   266 |         [01;31m[Kresult[m[K.error_code = result.SUCCESSFUL;
+[7.392s]       |         [01;31m[K^~~~~~[m[K
+[7.392s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:267:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_msgs[m[K’ has not been declared
+[7.393s]   267 |         [01;31m[Kcontrol_msgs[m[K::FollowJointTrajectoryActionResult result_msg;
+[7.393s]       |         [01;31m[K^~~~~~~~~~~~[m[K
+[7.402s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:268:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kresult_msg[m[K’ was not declared in this scope
+[7.403s]   268 |         [01;31m[Kresult_msg[m[K.result = result;
+[7.403s]       |         [01;31m[K^~~~~~~~~~[m[K
+[7.404s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:270:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kactionlib_msgs[m[K’ has not been declared
+[7.404s]   270 |         [01;31m[Kactionlib_msgs[m[K::GoalStatus goal_status;
+[7.404s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[7.414s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:271:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_status[m[K’ was not declared in this scope; did you mean ‘[01m[Ksi_status[m[K’?
+[7.414s]   271 |         [01;31m[Kgoal_status[m[K.status = goal_status.SUCCEEDED;
+[7.415s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[7.415s]       |         [32m[Ksi_status[m[K
+[7.431s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:272:31:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrajectory_goal_id[m[K’ was not declared in this scope
+[7.431s]   272 |         goal_status.goal_id = [01;31m[Ktrajectory_goal_id[m[K;
+[7.431s]       |                               [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[7.450s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:275:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktrajectory_finished_pub[m[K’ was not declared in this scope
+[7.450s]   275 |         [01;31m[Ktrajectory_finished_pub[m[K.publish(result_msg);
+[7.450s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.451s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:279:19:[m[K [01;31m[Kerror: [m[K‘[01m[KInt32MultiArray[m[K’ is not a member of ‘[01m[Kstd_msgs[m[K’; did you mean ‘[01m[Kstd_msgs::msg::Int32MultiArray[m[K’?
+[7.451s]   279 |         std_msgs::[01;31m[KInt32MultiArray[m[K joint_pos_msg;
+[7.451s]       |                   [01;31m[K^~~~~~~~~~~~~~~[m[K
+[7.451s] In file included from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/int32_multi_array.hpp:7[m[K,
+[7.451s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:16[m[K,
+[7.451s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[7.451s] [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32_multi_array__struct.hpp:132:7:[m[K [01;36m[Knote: [m[K‘[01m[Kstd_msgs::msg::Int32MultiArray[m[K’ declared here
+[7.451s]   132 | using [01;36m[KInt32MultiArray[m[K =
+[7.451s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[7.452s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:288:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<rclcpp::Publisher<std_msgs::msg::Int32MultiArray_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<rclcpp::Publisher<std_msgs::msg::Int32MultiArray_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpublish[m[K’
+[7.452s]   288 |         joint_pos_array_pub.[01;31m[Kpublish[m[K(joint_pos_msg);
+[7.452s]       |                             [01;31m[K^~~~~~~[m[K
+[7.452s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:303:17:[m[K [01;31m[Kerror: [m[K‘[01m[KInt32MultiArray[m[K’ is not a member of ‘[01m[Kstd_msgs[m[K’; did you mean ‘[01m[Kstd_msgs::msg::Int32MultiArray[m[K’?
+[7.452s]   303 |       std_msgs::[01;31m[KInt32MultiArray[m[K joint_pos_msg;
+[7.452s]       |                 [01;31m[K^~~~~~~~~~~~~~~[m[K
+[7.452s] In file included from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/int32_multi_array.hpp:7[m[K,
+[7.453s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:16[m[K,
+[7.453s]                  from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[7.453s] [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32_multi_array__struct.hpp:132:7:[m[K [01;36m[Knote: [m[K‘[01m[Kstd_msgs::msg::Int32MultiArray[m[K’ declared here
+[7.453s]   132 | using [01;36m[KInt32MultiArray[m[K =
+[7.453s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[7.453s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:312:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<rclcpp::Publisher<std_msgs::msg::Int32MultiArray_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<rclcpp::Publisher<std_msgs::msg::Int32MultiArray_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpublish[m[K’
+[7.454s]   312 |       joint_pos_array_pub.[01;31m[Kpublish[m[K(joint_pos_msg);
+[7.454s]       |                           [01;31m[K^~~~~~~[m[K
+[7.454s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:[m[K At global scope:
+[7.454s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:317:58:[m[K [01;31m[Kerror: [m[K‘[01m[KJointStateConstPtr[m[K’ in namespace ‘[01m[Ksensor_msgs[m[K’ does not name a type
+[7.454s]   317 | void scorbot::Teleop::on_joint_states(const sensor_msgs::[01;31m[KJointStateConstPtr[m[K& msg){
+[7.454s]       |                                                          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[7.454s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:317:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid scorbot::Teleop::on_joint_states(const int&)[m[K’
+[7.455s]   317 | void [01;31m[Kscorbot[m[K::Teleop::on_joint_states(const sensor_msgs::JointStateConstPtr& msg){
+[7.455s]       |      [01;31m[K^~~~~~~[m[K
+[7.455s] In file included from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[7.455s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:40:12:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid scorbot::Teleop::on_joint_states(const JointState&)[m[K’
+[7.455s]    40 |       void [01;36m[Kon_joint_states[m[K(const sensor_msgs::msg::JointState& msg);
+[7.455s]       |            [01;36m[K^~~~~~~~~~~~~~~[m[K
+[7.455s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:32:9:[m[K [01;36m[Knote: [m[K‘[01m[Kclass scorbot::Teleop[m[K’ defined here
+[7.455s]    32 |   class [01;36m[KTeleop[m[K
+[7.455s]       |         [01;36m[K^~~~~~[m[K
+[7.456s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:413:52:[m[K [01;31m[Kerror: [m[K‘[01m[KFloat64ConstPtr[m[K’ in namespace ‘[01m[Kstd_msgs[m[K’ does not name a type
+[7.456s]   413 | void scorbot::Teleop::on_tolerance(const std_msgs::[01;31m[KFloat64ConstPtr[m[K& msg){
+[7.456s]       |                                                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+[7.456s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:413:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid scorbot::Teleop::on_tolerance(const int&)[m[K’
+[7.456s]   413 | void [01;31m[Kscorbot[m[K::Teleop::on_tolerance(const std_msgs::Float64ConstPtr& msg){
+[7.456s]       |      [01;31m[K^~~~~~~[m[K
+[7.456s] In file included from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[7.456s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:47:12:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid scorbot::Teleop::on_tolerance(const Float64&)[m[K’
+[7.456s]    47 |       void [01;36m[Kon_tolerance[m[K(const std_msgs::msg::Float64& msg);
+[7.456s]       |            [01;36m[K^~~~~~~~~~~~[m[K
+[7.457s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:32:9:[m[K [01;36m[Knote: [m[K‘[01m[Kclass scorbot::Teleop[m[K’ defined here
+[7.457s]    32 |   class [01;36m[KTeleop[m[K
+[7.458s]       |         [01;36m[K^~~~~~[m[K
+[7.458s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:417:51:[m[K [01;31m[Kerror: [m[K‘[01m[KStringConstPtr[m[K’ in namespace ‘[01m[Kstd_msgs[m[K’ does not name a type
+[7.458s]   417 | void scorbot::Teleop::on_filename(const std_msgs::[01;31m[KStringConstPtr[m[K& msg){
+[7.458s]       |                                                   [01;31m[K^~~~~~~~~~~~~~[m[K
+[7.458s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:417:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid scorbot::Teleop::on_filename(const int&)[m[K’
+[7.459s]   417 | void [01;31m[Kscorbot[m[K::Teleop::on_filename(const std_msgs::StringConstPtr& msg){
+[7.460s]       |      [01;31m[K^~~~~~~[m[K
+[7.460s] In file included from [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:1[m[K:
+[7.460s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:48:12:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid scorbot::Teleop::on_filename(const String&)[m[K’
+[7.460s]    48 |       void [01;36m[Kon_filename[m[K(const std_msgs::msg::String& msg);
+[7.460s]       |            [01;36m[K^~~~~~~~~~~[m[K
+[7.460s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.h:32:9:[m[K [01;36m[Knote: [m[K‘[01m[Kclass scorbot::Teleop[m[K’ defined here
+[7.460s]    32 |   class [01;36m[KTeleop[m[K
+[7.460s]       |         [01;36m[K^~~~~~[m[K
+[7.460s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:421:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kuniversal_teleop[m[K’ does not name a type
+[7.461s]   421 | void scorbot::Teleop::on_controls(const [01;31m[Kuniversal_teleop[m[K::ControlConstPtr& msg)
+[7.461s]       |                                         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[7.461s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:421:74:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+[7.461s]   421 | rbot::Teleop::on_controls(const universal_teleop::ControlConstPtr[01;31m[K&[m[K msg)
+[7.461s]       |                                                                  [01;31m[K^[m[K
+[7.461s] 
+[7.461s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:421:74:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[7.461s]   421 | rbot::Teleop::on_controls[34m[K([m[Kconst universal_teleop::ControlConstPtr[01;31m[K&[m[K msg)
+[7.461s]       |                          [34m[K~[m[K                                       [01;31m[K^[m[K
+[7.461s]       |                                                                  [32m[K)[m[K
+[7.462s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:421:76:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kmsg[m[K’
+[7.462s]   421 | rbot::Teleop::on_controls(const universal_teleop::ControlConstPtr& [01;31m[Kmsg[m[K)
+[7.462s]       |                                                                    [01;31m[K^~~[m[K
+[7.462s] 
+[7.465s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:446:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kuniversal_teleop[m[K’ does not name a type
+[7.465s]   446 | void scorbot::Teleop::on_events(const [01;31m[Kuniversal_teleop[m[K::EventConstPtr& msg)
+[7.465s]       |                                       [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[7.465s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:446:70:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+[7.465s]   446 |  scorbot::Teleop::on_events(const universal_teleop::EventConstPtr[01;31m[K&[m[K msg)
+[7.465s]       |                                                                  [01;31m[K^[m[K
+[7.466s] 
+[7.466s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:446:70:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[7.466s]   446 |  scorbot::Teleop::on_events[34m[K([m[Kconst universal_teleop::EventConstPtr[01;31m[K&[m[K msg)
+[7.466s]       |                            [34m[K~[m[K                                     [01;31m[K^[m[K
+[7.466s]       |                                                                  [32m[K)[m[K
+[7.466s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:446:72:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kmsg[m[K’
+[7.466s]   446 |  scorbot::Teleop::on_events(const universal_teleop::EventConstPtr& [01;31m[Kmsg[m[K)
+[7.466s]       |                                                                    [01;31m[K^~~[m[K
+[7.467s] 
+[7.467s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:[m[K In member function ‘[01m[Kvoid scorbot::Teleop::on_control_cycle()[m[K’:
+[7.467s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:510:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<float>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[7.467s]   510 |     for (int i = 0; [01;35m[Ki < velocities.joint_velocities.size()[m[K; i++) {
+[7.467s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.467s] [01m[K/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/scorbot/src/scorbot.cpp:513:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing SharedPtr = class std::shared_ptr<rclcpp::Publisher<scorbot_msgs::msg::JointVelocities_<std::allocator<void> > > >[m[K’ {aka ‘[01m[Kclass std::shared_ptr<rclcpp::Publisher<scorbot_msgs::msg::JointVelocities_<std::allocator<void> > > >[m[K’} has no member named ‘[01m[Kpublish[m[K’
+[7.467s]   513 |     vel_pub.[01;31m[Kpublish[m[K(velocities);
+[7.468s]       |             [01;31m[K^~~~~~~[m[K
+[17.233s] gmake[2]: *** [CMakeFiles/scorbot.dir/build.make:76: CMakeFiles/scorbot.dir/src/scorbot.cpp.o] Error 1
+[17.234s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/scorbot.dir/all] Error 2
+[17.234s] gmake: *** [Makefile:146: all] Error 2
+[17.237s] Invoked command in '/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot' returned '2': AMENT_PREFIX_PATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs:/home/leon/microros_ws/install/micro_ros_demos_rclc:/home/leon/microros_ws/install/common_interfaces:/home/leon/microros_ws/install/visualization_msgs:/home/leon/microros_ws/install/test_msgs:/home/leon/microros_ws/install/example_interfaces:/home/leon/microros_ws/install/action_msgs:/home/leon/microros_ws/install/unique_identifier_msgs:/home/leon/microros_ws/install/trajectory_msgs:/home/leon/microros_ws/install/stereo_msgs:/home/leon/microros_ws/install/std_srvs:/home/leon/microros_ws/install/shape_msgs:/home/leon/microros_ws/install/sensor_msgs:/home/leon/microros_ws/install/nav_msgs:/home/leon/microros_ws/install/diagnostic_msgs:/home/leon/microros_ws/install/geometry_msgs:/home/leon/microros_ws/install/actionlib_msgs:/home/leon/microros_ws/install/std_msgs:/home/leon/microros_ws/install/statistics_msgs:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_test_msg:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp_tests:/home/leon/microros_ws/install/rmw_microxrcedds:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c_tests:/home/leon/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/leon/microros_ws/install/rosgraph_msgs:/home/leon/microros_ws/install/rclc_parameter:/home/leon/microros_ws/install/rclc:/home/leon/microros_ws/install/composition_interfaces:/home/leon/microros_ws/install/rcl_interfaces:/home/leon/microros_ws/install/microxrcedds_client:/home/leon/microros_ws/install/microcdr:/home/leon/microros_ws/install/micro_ros_utilities:/home/leon/microros_ws/install/micro_ros_setup:/home/leon/microros_ws/install/micro_ros_agent:/home/leon/microros_ws/install/micro_ros_msgs:/home/leon/microros_ws/install/lifecycle_msgs:/home/leon/microros_ws/install/complex_msgs:/home/leon/microros_ws/install/builtin_interfaces:/home/leon/microros_ws/install/sensor_msgs_py:/opt/ros/humble LD_LIBRARY_PATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/install/scorbot_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/leon/robotica/scorbotLabo/software_scorbot/scorbot_ws/build/scorbot -- -j4 -l4
