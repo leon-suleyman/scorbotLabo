@@ -1,6 +1,0 @@
-setup.py
-keyboard_msgs/__init__.py
-keyboard_msgs.egg-info/PKG-INFO
-keyboard_msgs.egg-info/SOURCES.txt
-keyboard_msgs.egg-info/dependency_links.txt
-keyboard_msgs.egg-info/top_level.txt
