@@ -21,30 +21,29 @@ using std::placeholders::_1;
 #define RAD2ENC4(x) ((int32_t)(x / (double)0.000054786))
 #define RAD2ENC5(x) ((int32_t)(x / (double)0.000163399))
 
-scorbot::Teleop::Teleop(std::shared_ptr<rclcpp::Node> n)
+Scorbot::Scorbot() : rclcpp::Node("scorbot_bridge")
 {
-  node = n;
-  node->get_parameter_or("control_frequency", control_frequency, 5);
+  this->get_parameter_or("control_frequency", control_frequency, 5);
 
-  sub_control = node->create_subscription<universal_teleop_msgs::msg::Control>("/universal_teleop/controls", 1, std::bind(&scorbot::Teleop::on_controls, n, _1));
-  sub_events = node->create_subscription<universal_teleop_msgs::msg::Event>("/universal_teleop/events", 1, std::bind(&scorbot::Teleop::on_events, n, _1));
-  vel_pub = node->create_publisher<scorbot_msgs::msg::JointVelocities>("/scorbot/joint_velocities", 1);
-  home_pub = node->create_publisher<std_msgs::msg::Empty>("/scorbot/home", 1);
+  sub_control = this->create_subscription<universal_teleop_msgs::msg::Control>("/universal_teleop/controls", 10, std::bind(&Scorbot::on_controls, this, _1));
+  sub_events = this->create_subscription<universal_teleop_msgs::msg::Event>("/universal_teleop/events", 10, std::bind(&Scorbot::on_events, this, _1));
+  vel_pub = this->create_publisher<scorbot_msgs::msg::JointVelocities>("/scorbot/joint_velocities", 1);
+  home_pub = this->create_publisher<std_msgs::msg::Empty>("/scorbot/home", 1);
   
-  //joint_trajectory_sub = node->create_subscription<control_msgs::msg::FollowJointTrajectoryActionGoal>("/scorbot/arm_position_controller/follow_joint_trajectory/goal", 1, std::bind(&Teleop::on_trajectory, n, _1));
-  //joint_trajectory_pub = node->create_publisher<scorbot::JointTrajectory>("/scorbot/joint_path_command_enc", 1);
-  joint_pos_array_pub = node->create_publisher<std_msgs::msg::Int32MultiArray>("/scorbot/joint_path_command_enc", 1);
-  //goal_reached_sub = node->create_subscription<std_msgs::msg::Empty>("/scorbot/goal_reached", 1, &Teleop::on_goal_reached, n);
-  //trajectory_finished_pub = node->create_publisher<control_msgs::msg::FollowJointTrajectoryActionResult>("/arm_position_controller/follow_joint_trajectory/result", 1);
+  //joint_trajectory_sub = this->create_subscription<control_msgs::msg::FollowJointTrajectoryActionGoal>("/scorbot/arm_position_controller/follow_joint_trajectory/goal", 10, std::bind(&Scorbot::on_trajectory, this, _1));
+  //joint_trajectory_pub = this->create_publisher<JointTrajectory>("/scorbot/joint_path_command_enc", 1);
+  joint_pos_array_pub = this->create_publisher<std_msgs::msg::Int32MultiArray>("/scorbot/joint_path_command_enc", 1);
+  //goal_reached_sub = this->create_subscription<std_msgs::msg::Empty>("/scorbot/goal_reached", 10, &Scorbot::on_goal_reached, n);
+  //trajectory_finished_pub = this->create_publisher<control_msgs::msg::FollowJointTrajectoryActionResult>("/arm_position_controller/follow_joint_trajectory/result", 1);
 
 
-  tolerance_param_sub = node->create_subscription<std_msgs::msg::Float64>("/scorbot/params/tolerance", 1, std::bind(&Teleop::on_tolerance, n, _1));
-  feedback_filename_sub = node->create_subscription<std_msgs::msg::String>("/scorbot/params/filename", 1, std::bind(&Teleop::on_filename, n, _1));
+  tolerance_param_sub = this->create_subscription<std_msgs::msg::Float64>("/scorbot/params/tolerance", 10, std::bind(&Scorbot::on_tolerance, this, _1));
+  feedback_filename_sub = this->create_subscription<std_msgs::msg::String>("/scorbot/params/filename", 10, std::bind(&Scorbot::on_filename, this, _1));
 
-  claw_catch_pub = node->create_publisher<std_msgs::msg::Empty>("/scorbot/claw_catch", 1);
-  claw_release_pub = node->create_publisher<std_msgs::msg::Empty>("/scorbot/claw_release", 1);
+  claw_catch_pub = this->create_publisher<std_msgs::msg::Empty>("/scorbot/claw_catch", 1);
+  claw_release_pub = this->create_publisher<std_msgs::msg::Empty>("/scorbot/claw_release", 1);
 
-  joint_states_sub = node->create_subscription<sensor_msgs::msg::JointState>("/joint_states", 1, std::bind(&Teleop::on_joint_states, n, _1));
+  joint_states_sub = this->create_subscription<sensor_msgs::msg::JointState>("/joint_states", 10, std::bind(&Scorbot::on_joint_states, this, _1));
 
   override_enabled = slow_mode_enabled = false;
   
@@ -74,7 +73,7 @@ scorbot::Teleop::Teleop(std::shared_ptr<rclcpp::Node> n)
   velocities.scaled_flag = false;
 
   std::chrono::duration<double> period(1.0 / (double) control_frequency);
-  control_timer = n->create_wall_timer(period, std::bind(&Teleop::on_control_cycle, n));
+  control_timer = this->create_wall_timer(period, std::bind(&Scorbot::on_control_cycle, this));
 
 
   }
@@ -135,16 +134,16 @@ float set_special_joint_conditions(float vel, int i){
   return res;
 }
 
-/*void scorbot::Teleop::on_trajectory(const control_msgs::FollowJointTrajectoryActionGoal& msg)
+/*void Scorbot::on_trajectory(const control_msgs::FollowJointTrajectoryActionGoal& msg)
 {
   //inicializamos la longitud y el indice del objetivo
   current_goal_length = 0;
   current_goal_index = 0;
   
   //salvamos la id del objetivo para despues confirmar que llegamos bien
-  trajectory_goal_id = msg->goal_id;
+  trajectory_goal_id = msg.goal_id;
   //vamos descascarando el mensaje para llegar a las posiciones
-  control_msgs::FollowJointTrajectoryGoal msg_goal = msg->goal;
+  control_msgs::FollowJointTrajectoryGoal msg_goal = msg.goal;
   trajectory_msgs::JointTrajectory msg_trajectory = msg_goal.trajectory;
   std::vector<trajectory_msgs::JointTrajectoryPoint> msg_points = msg_trajectory.points;
   
@@ -190,7 +189,7 @@ float set_special_joint_conditions(float vel, int i){
   
   joint_pos_array_pub->publish(joint_pos_msg);
 
-  scorbot::JointVelocities velocities_msg;
+  JointVelocities velocities_msg;
   velocities_msg.joint_velocities.resize(5, 0);
   velocities_msg.scaled_flag = true;
 
@@ -202,15 +201,15 @@ float set_special_joint_conditions(float vel, int i){
 
   vel_pub->publish(velocities_msg);
   
-  joint_trajectory_enc.points[0] = RAD2ENC1(msg->points[last_point].positions[0]);
-  joint_trajectory_enc.points[1] = RAD2ENC2(msg->points[last_point].positions[1]);
-  joint_trajectory_enc.points[2] = RAD2ENC3(msg->points[last_point].positions[2]);
-  joint_trajectory_enc.points[3] = RAD2ENC4(msg->points[last_point].positions[3]);
-  joint_trajectory_enc.points[4] = RAD2ENC5(msg->points[last_point].positions[4]);
+  joint_trajectory_enc.points[0] = RAD2ENC1(msg.points[last_point].positions[0]);
+  joint_trajectory_enc.points[1] = RAD2ENC2(msg.points[last_point].positions[1]);
+  joint_trajectory_enc.points[2] = RAD2ENC3(msg.points[last_point].positions[2]);
+  joint_trajectory_enc.points[3] = RAD2ENC4(msg.points[last_point].positions[3]);
+  joint_trajectory_enc.points[4] = RAD2ENC5(msg.points[last_point].positions[4]);
 
 }*/
 
-void scorbot::Teleop::check_trajectory_progress(){
+void Scorbot::check_trajectory_progress(){
 /*
 
   if (current_goal_index == -1) return; // no goal set
@@ -314,15 +313,15 @@ void scorbot::Teleop::check_trajectory_progress(){
 */
 }
 
-void scorbot::Teleop::on_joint_states(const sensor_msgs::msg::JointState::SharedPtr& msg){
+void Scorbot::on_joint_states(const sensor_msgs::msg::JointState& msg){
   
   last_known_pos = pos_juntas;
   
-  pos_juntas[0] = msg->position[0];
-  pos_juntas[1] = msg->position[1];
-  pos_juntas[2] = msg->position[2];
-  pos_juntas[3] = msg->position[3];
-  pos_juntas[4] = msg->position[4];
+  pos_juntas[0] = msg.position[0];
+  pos_juntas[1] = msg.position[1];
+  pos_juntas[2] = msg.position[2];
+  pos_juntas[3] = msg.position[3];
+  pos_juntas[4] = msg.position[4];
   
   /*
   if (current_goal_index == -1) return; // no goal set
@@ -377,7 +376,7 @@ void scorbot::Teleop::on_joint_states(const sensor_msgs::msg::JointState::Shared
 
         joint_pos_array_pub->publish(joint_pos_msg);
         
-        scorbot::JointVelocities velocities_msg;
+        JointVelocities velocities_msg;
         velocities_msg.joint_velocities.resize(5, 0);
         velocities_msg.scaled_flag = true;
 
@@ -391,7 +390,7 @@ void scorbot::Teleop::on_joint_states(const sensor_msgs::msg::JointState::Shared
         
     //  }
     //}else{
-      scorbot::JointVelocities velocities_msg;
+      JointVelocities velocities_msg;
       velocities_msg.joint_velocities.resize(5, 0);
       velocities_msg.scaled_flag = true;
 
@@ -408,50 +407,50 @@ void scorbot::Teleop::on_joint_states(const sensor_msgs::msg::JointState::Shared
   //*/
 }
 
-void scorbot::Teleop::on_tolerance(const std_msgs::msg::Float64::SharedPtr& msg){
-  joint_goal_tolerance = msg->data;
+void Scorbot::on_tolerance(const std_msgs::msg::Float64& msg){
+  joint_goal_tolerance = msg.data;
 }
 
-void scorbot::Teleop::on_filename(const std_msgs::msg::String::SharedPtr& msg){
-  filename = msg->data;
+void Scorbot::on_filename(const std_msgs::msg::String& msg){
+  filename = msg.data;
 }
 
-void scorbot::Teleop::on_controls(const universal_teleop_msgs::msg::Control::SharedPtr& msg)
+void Scorbot::on_controls(const universal_teleop_msgs::msg::Control& msg)
 {
   if (override_enabled) return;
 
-  /*for (int i = 0; i < msg->controls.size(); i++)
+  /*for (int i = 0; i < msg.controls.size(); i++)
   {
-    if (msg->controls[i] == "joint1" || msg->controls[i] == "joint2")
+    if (msg.controls[i] == "joint1" || msg.controls[i] == "joint2")
     {
-      joint_states[msg->controls[i] == "joint1" ? 0 : 1] = (int)(fabsf(msg->values[i]) < 0.1 ? 0 : msg->values[i]);
+      joint_states[msg.controls[i] == "joint1" ? 0 : 1] = (int)(fabsf(msg.values[i]) < 0.1 ? 0 : msg.values[i]);
    
-      velocities.header = msg->header; 
-      velocities.joint_velocities[msg->controls[i] == "joint1" ? 0 : 1] = joint_states[msg->controls[i] == "joint1" ? 0 : 1] * (slow_mode_enabled ? 0.5 : 1);
+      velocities.header = msg.header; 
+      velocities.joint_velocities[msg.controls[i] == "joint1" ? 0 : 1] = joint_states[msg.controls[i] == "joint1" ? 0 : 1] * (slow_mode_enabled ? 0.5 : 1);
       vel_pub->publish(velocities);
     }
   }*/
-  if (msg->control == "base" || msg->control == "shoulder")
+  if (msg.control == "base" || msg.control == "shoulder")
     {
-      joint_states[msg->control == "base" ? 0 : 1] = (int)(fabsf(msg->value) < 0.1 ? 0 : msg->value);
+      joint_states[msg.control == "base" ? 0 : 1] = (int)(fabsf(msg.value) < 0.1 ? 0 : msg.value);
    
-      velocities.header = msg->header; 
-      velocities.joint_velocities[msg->control == "base" ? 0 : 1] = joint_states[msg->control == "base" ? 0 : 1] * (slow_mode_enabled ? 0.5 : 1);
+      velocities.header = msg.header; 
+      velocities.joint_velocities[msg.control == "base" ? 0 : 1] = joint_states[msg.control == "base" ? 0 : 1] * (slow_mode_enabled ? 0.5 : 1);
       vel_pub->publish(velocities);
     }
 }
 
-void scorbot::Teleop::on_events(const universal_teleop_msgs::msg::Event::SharedPtr& msg)
+void Scorbot::on_events(const universal_teleop_msgs::msg::Event& msg)
 {
-  if (msg->event == "slow") {
-    slow_mode_enabled = msg->state;
+  if (msg.event == "slow") {
+    slow_mode_enabled = msg.state;
   }
   
-  if (msg->event == "override")
+  if (msg.event == "override")
   { 
-	override_enabled = msg->state;   
+	override_enabled = msg.state;   
 	
-    velocities.header = msg->header;
+    velocities.header = msg.header;
     for (long unsigned int i = 0; i < velocities.joint_velocities.size(); i++) {
       velocities.joint_velocities[i] = 0;
       joint_states[i] = 0;
@@ -462,49 +461,49 @@ void scorbot::Teleop::on_events(const universal_teleop_msgs::msg::Event::SharedP
 
   if (!override_enabled)
   {
-    if (msg->event == "home" && msg->state) {
+    if (msg.event == "home" && msg.state) {
       home_pub->publish(std_msgs::msg::Empty());
     }
-    else if (msg->event == "claw_catch" && msg->state) {
+    else if (msg.event == "claw_catch" && msg.state) {
       claw_catch_pub->publish(std_msgs::msg::Empty());
     }
-    else if (msg->event == "claw_release" && msg->state) {
+    else if (msg.event == "claw_release" && msg.state) {
       claw_release_pub->publish(std_msgs::msg::Empty());
     }
-    else if (msg->event == "elbow_up") {
-	  joint_states[2] = (msg->state ? 1 : 0);
+    else if (msg.event == "elbow_up") {
+	  joint_states[2] = (msg.state ? 1 : 0);
       velocities.joint_velocities[2] = joint_states[2] * (slow_mode_enabled ? 0.5 : 1);
     }
-    else if (msg->event == "elbow_down") {
-	  joint_states[2] = (msg->state ? -1 : 0);
+    else if (msg.event == "elbow_down") {
+	  joint_states[2] = (msg.state ? -1 : 0);
       velocities.joint_velocities[2] = joint_states[2] * (slow_mode_enabled ? 0.5 : 1);
     }
-    else if (msg->event == "wrist_up") {
-	  joint_states[3] = (msg->state ? 1 : 0);
+    else if (msg.event == "wrist_up") {
+	  joint_states[3] = (msg.state ? 1 : 0);
       velocities.joint_velocities[3] = joint_states[3] * (slow_mode_enabled ? 0.5 : 1);
     }
-    else if (msg->event == "wrist_down") {
-	  joint_states[3] = (msg->state ? -1 : 0);
+    else if (msg.event == "wrist_down") {
+	  joint_states[3] = (msg.state ? -1 : 0);
       velocities.joint_velocities[3] = joint_states[3] * (slow_mode_enabled ? 0.5 : 1);
     }
-    else if (msg->event == "rotate_cw") {
-	  joint_states[4] = (msg->state ? 1 : 0);
+    else if (msg.event == "rotate_cw") {
+	  joint_states[4] = (msg.state ? 1 : 0);
       velocities.joint_velocities[4] = joint_states[4] * (slow_mode_enabled ? 0.5 : 1);
     }
-    else if (msg->event == "rotate_ccw") {
-	  joint_states[4] = (msg->state ? -1 : 0);
+    else if (msg.event == "rotate_ccw") {
+	  joint_states[4] = (msg.state ? -1 : 0);
       velocities.joint_velocities[4] = joint_states[4] * (slow_mode_enabled ? 0.5 : 1);
     }
 
-    velocities.header = msg->header;
+    velocities.header = msg.header;
     vel_pub->publish(velocities);
   }
 }
 
-void scorbot::Teleop::on_control_cycle()
+void Scorbot::on_control_cycle()
 {
   if (override_enabled) {
-    velocities.header.stamp = node->now();
+    velocities.header.stamp = this->now();
     for (long unsigned int i = 0; i < velocities.joint_velocities.size(); i++) {
 	  velocities.joint_velocities[i] = joint_states[i] * (slow_mode_enabled ? 0.5 : 1);
 	}
