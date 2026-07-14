@@ -1,0 +1,14 @@
+1, 2, 3, 4, 5: velocidad positiva a cada junta
+q, w, e, r, t: velocidad negativa a cada junta
+a, s, d, f, g: velocidad nula a cada junta
+posicion: pos [numero_de_junta] posicion
+home: h
+frenar todo (poner 0 en el pid velocidad): x
+frenar todo (poner pwm=0): z
+
+
+
+
+
+
+
