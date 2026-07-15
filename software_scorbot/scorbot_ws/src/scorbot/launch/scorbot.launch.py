@@ -17,6 +17,7 @@ def generate_launch_description():
 
     teleop_key = Node(package='keyboard', executable='keyboard',
                         name='keyboard',
+                        namespace='keyboard',
                         output='screen',
     )
 
@@ -25,10 +26,11 @@ def generate_launch_description():
                         output='screen',
     )
 
-    teleop_params_file = os.path.join(get_package_share_directory("universal_teleop"), 'launch', 'scorbot_input_map.yaml')
+    teleop_params_file = os.path.join(get_package_share_directory("universal_teleop"), 'launch', 'scorbot_input_map.yml')
 
     universal = Node(package='universal_teleop', executable='universal_teleop',
                         name='universal_teleop',
+                        namespace='universal_teleop',
                         output='screen',
                         parameters=[teleop_params_file],
                 
@@ -37,9 +39,7 @@ def generate_launch_description():
     scorbot = Node(package='scorbot', executable='scorbot',
                         name='scorbot',
                         output='screen',
-                        parameters={
-                            'control_frequency' : '4'
-                        },
+                        parameters=[{'control_frequency' : '4'}],
     )
 
     ld = LaunchDescription()
