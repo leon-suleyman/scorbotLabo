@@ -1,5 +1,22 @@
 /universal_teleop:
   ros__parameters:
+    keys:
+      base_cw: 113 
+      base_ccw: 97 
+      shoulder_down: 115 
+      shoulder_up: 119 
+      elbow_down: 100 
+      elbow_up : 101 
+      wrist_down: 102 
+      wrist_up: 114 
+      rotate_cw: 103 
+      rotate_ccw: 116 
+      override: 120 
+      stop: 122 
+      claw_catch: 49 
+      claw_release: 50 
+      home: 104 
+      slow: 121 
     joy_axes:
       base: 6
       shoulder: 7
@@ -16,7 +33,3 @@
       claw_release: 10
       home: 11
       slow: 12
-    keys:
-      home: 104
-      stop: 122
-      action1: 99

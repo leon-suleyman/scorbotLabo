@@ -8,8 +8,8 @@ int main(int argc, char **argv)
   rclcpp::init(argc, argv);
   auto n = rclcpp::Node::make_shared("keyboard");
 
-  auto pub_down = n->create_publisher<keyboard_msgs::msg::Key>("keydown", 10);
-  auto pub_up = n->create_publisher<keyboard_msgs::msg::Key>("keyup", 10);
+  auto pub_down = n->create_publisher<keyboard_msgs::msg::Key>("/keyboard/keydown", 10);
+  auto pub_up = n->create_publisher<keyboard_msgs::msg::Key>("/keyboard/keyup", 10);
 
   keyboard::Keyboard kbd;
 

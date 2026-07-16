@@ -17,7 +17,6 @@ def generate_launch_description():
 
     teleop_key = Node(package='keyboard', executable='keyboard',
                         name='keyboard',
-                        namespace='keyboard',
                         output='screen',
     )
 
@@ -30,7 +29,6 @@ def generate_launch_description():
 
     universal = Node(package='universal_teleop', executable='universal_teleop',
                         name='universal_teleop',
-                        namespace='universal_teleop',
                         output='screen',
                         parameters=[teleop_params_file],
                 

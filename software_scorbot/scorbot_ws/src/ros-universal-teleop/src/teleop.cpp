@@ -29,7 +29,7 @@ teleop::Teleop::Teleop(std::shared_ptr<rclcpp::Node> node)
   n->get_parameters("joy_deadzones", joy_deadzones);
   for (auto& k: joy_deadzones) cout << k.first << " " << k.second << endl;
 
-  std::map<std::string, int> keys = { {"override", 32}, {"start", 113}, {"stop", 97}, {"takeoff", 121}, {"land", 104} };;
+  std::map<std::string, int> keys = {};
   n->get_parameters("keys", keys);
   for (auto& k : keys) key_map[k.second] = k.first;
 
@@ -51,8 +51,8 @@ teleop::Teleop::Teleop(std::shared_ptr<rclcpp::Node> node)
   /* publish events and control commands */  
   pub_vel = n->create_publisher<geometry_msgs::msg::Twist>("/robot/cmd_vel", 5);
   
-  pub_event = n->create_publisher<universal_teleop_msgs::msg::Event>("events", 5);
-  pub_control = n->create_publisher<universal_teleop_msgs::msg::Control>("controls", 1);
+  pub_event = n->create_publisher<universal_teleop_msgs::msg::Event>("/universal_teleop/events", 5);
+  pub_control = n->create_publisher<universal_teleop_msgs::msg::Control>("/universal_teleop/controls", 1);
 }
 
 void teleop::Teleop::process_event(const universal_teleop_msgs::msg::Event& e)

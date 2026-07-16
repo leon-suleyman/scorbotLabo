@@ -470,6 +470,22 @@ void Scorbot::on_events(const universal_teleop_msgs::msg::Event& msg)
     else if (msg.event == "claw_release" && msg.state) {
       claw_release_pub->publish(std_msgs::msg::Empty());
     }
+    else if (msg.event == "base_cw") {
+	  joint_states[0] = (msg.state ? 1 : 0);
+      velocities.joint_velocities[0] = joint_states[0] * (slow_mode_enabled ? 0.5 : 1);
+    }
+    else if (msg.event == "base_ccw") {
+	  joint_states[0] = (msg.state ? -1 : 0);
+      velocities.joint_velocities[0] = joint_states[0] * (slow_mode_enabled ? 0.5 : 1);
+    }
+    else if (msg.event == "shoulder_up") {
+	  joint_states[1] = (msg.state ? 1 : 0);
+      velocities.joint_velocities[1] = joint_states[1] * (slow_mode_enabled ? 0.5 : 1);
+    }
+    else if (msg.event == "shoulder_down") {
+	  joint_states[1] = (msg.state ? -1 : 0);
+      velocities.joint_velocities[1] = joint_states[1] * (slow_mode_enabled ? 0.5 : 1);
+    }
     else if (msg.event == "elbow_up") {
 	  joint_states[2] = (msg.state ? 1 : 0);
       velocities.joint_velocities[2] = joint_states[2] * (slow_mode_enabled ? 0.5 : 1);
