@@ -3,9 +3,12 @@
         ° Migrar Keyboard a ROS2 
         ° Migrar a usar Joy de Humble
         ° Migrar Universal_Teleop a ROS2
-        - Quedó todo en un solo workspace, para que sea fácil de armar. Probs haga lo mismo en scorbot. get_parameters no sobreescribe las entradas previsa del map. Si queremos tener defaults, hay que usar un "If"
+        ° Quedó todo en un solo workspace, para que sea fácil de armar. Probs haga lo mismo en scorbot. get_parameters no sobreescribe las entradas previsa del map. Si queremos tener defaults, hay que usar un "If"
     * Migrar Scorbot:
-        * Migrar el uso principal de Scorbot, sin MoveIt!
+        ° Migrar el uso principal de Scorbot, sin MoveIt!
+        * Migrar el firmware del scorbot.
+            * No hay soporte para MicroROS. Hay que hacer una comunicación por serial a mano.
+                Puede ser un nodo que pasa los mensajes que le llegan de ROS a Strings para pasarle por serial al Mega, y recibe Strings para pasar a mensaje de ROS. Talvez podría estar bueno que se turnen 1 y 1 en leer/escribir mensajes? si no hay para leer, escriben directo o esperan un poquito.
         * Integrar/Migrar al MoveIt! de ROS2
 
 
