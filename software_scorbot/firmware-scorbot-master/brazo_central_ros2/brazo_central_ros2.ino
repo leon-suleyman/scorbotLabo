@@ -13,6 +13,7 @@
 #include <std_msgs/Int32MultiArray.h>
 #include <Wire.h>
 #include "brazo_i2c.h"
+#include <LinkedList.h>
 
 #define SERIAL_DEBUG 0 // poner en 1 para controlar el brazo por terminal serial de arduino, poner en 0 para control desde ROS
 #define SETEAR_CONSTS 0 //poner en 1 para setear las constantes de los microcontroladores (arduinos pro mini) (en caso de updatear las consts PID o reemplazar micro)
@@ -167,6 +168,13 @@ void setup(void)
   /* (optionally) set constants */
   setear_constantes();
 }
+
+/* Comunicación */
+LinkedList<char*> buffer_de_mensajes = LinkedList<char*>();
+char buffer_de_serial[100];
+String leer_Serial(){}
+void escribir_Serial(String mensaje){}
+void escribir_mensaje_en_buffer(String){}
 
 /***************** ROS **************/
 void on_velocities(const scorbot::JointVelocities& vel_msg)
