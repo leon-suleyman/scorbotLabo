@@ -172,7 +172,27 @@ void setup(void)
 /* Comunicación */
 LinkedList<char*> buffer_de_mensajes = LinkedList<char*>();
 char buffer_de_serial[100];
-String leer_Serial(){}
+String leer_Serial(){
+  uint64_t timeOld = millis();
+
+  while (!SIM800L.available() && !(millis() > timeOld + timeout))
+  {
+      delay(13);
+  }
+
+  _buffer[0] = NULL;
+  char temp[2];
+
+  while(SIM800L.available())
+  {
+      if (SIM800L.available()>0)
+      { 
+        temp[1] = NULL;
+        temp[0] = (char) SIM800L.read();
+        strcat(_buffer, temp);
+      }
+  }
+}
 void escribir_Serial(String mensaje){}
 void escribir_mensaje_en_buffer(String){}
 
