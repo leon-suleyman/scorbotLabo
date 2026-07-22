@@ -14,6 +14,7 @@
 #include <Wire.h>
 #include "brazo_i2c.h"
 #include <LinkedList.h>
+#include <SoftwareSerial.h>
 
 #define SERIAL_DEBUG 0 // poner en 1 para controlar el brazo por terminal serial de arduino, poner en 0 para control desde ROS
 #define SETEAR_CONSTS 0 //poner en 1 para setear las constantes de los microcontroladores (arduinos pro mini) (en caso de updatear las consts PID o reemplazar micro)
@@ -171,11 +172,14 @@ void setup(void)
 
 /* Comunicación */
 LinkedList<char*> buffer_de_mensajes = LinkedList<char*>();
-char buffer_de_serial[100];
-String leer_Serial(){
+LinkedList<char*> buffer_de_tipos_de_mesnaje = LinkedList<char*>();
+char _buffer[100];
+SoftwareSerial ROSNODE(0, 1);
+
+void leer_Serial(){
   uint64_t timeOld = millis();
 
-  while (!SIM800L.available() && !(millis() > timeOld + timeout))
+  while (!ROSNODE.available() && !(millis() > timeOld + timeout))
   {
       delay(13);
   }
@@ -183,18 +187,41 @@ String leer_Serial(){
   _buffer[0] = NULL;
   char temp[2];
 
-  while(SIM800L.available())
+  while(ROSNODE.available())
   {
-      if (SIM800L.available()>0)
+      if (ROSNODE.available()>0)
       { 
         temp[1] = NULL;
-        temp[0] = (char) SIM800L.read();
+        temp[0] = (char) ROSNODE.read();
         strcat(_buffer, temp);
       }
   }
 }
-void escribir_Serial(String mensaje){}
-void escribir_mensaje_en_buffer(String){}
+
+void mandar_mensaje_Serial(char* tipo_de_mensaje, char* mensaje){
+  //mensaje inicial para empezar la conversación y empezar a mandar los datos.
+  ROSNODE.print(tipo_de_mensaje);
+  //esperamos y luego leemos la respuesta.
+  leer_Serial();
+  if(_buffer != "OK"){
+
+  }
+  //si la respuesta es positiva, enviamos los datos.
+  ROSNODE.print(mensaje);
+  //esperamos y leemos la respuesta.
+  leer_Serial();
+  if(_buffer != "OK"){
+
+  }
+}
+
+void leer_mensaje_Serial(char* tipo_de_mensaje, char* mensaje){
+  leer_Serial();
+
+  if(_buffer != NULL){
+      
+  }
+}
 
 /***************** ROS **************/
 void on_velocities(const scorbot::JointVelocities& vel_msg)
