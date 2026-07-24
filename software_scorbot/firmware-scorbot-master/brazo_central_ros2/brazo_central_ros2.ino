@@ -172,7 +172,7 @@ void setup(void)
 
 /* Comunicación */
 LinkedList<char*> buffer_de_mensajes = LinkedList<char*>();
-LinkedList<char*> buffer_de_tipos_de_mesnaje = LinkedList<char*>();
+LinkedList<char*> buffer_de_topics_de_mensaje = LinkedList<char*>();
 char _buffer[100];
 SoftwareSerial ROSNODE(0, 1);
 
@@ -201,43 +201,54 @@ void leer_Serial(){
 bool mandar_mensaje_Serial(){
   //mensaje inicial para empezar la conversación y empezar a mandar los datos.
 
-  char* tipo_de_mensaje = buffer_de_tipos_de_mensaje.pop();
+  char* topic_de_mensaje = buffer_de_topics_de_mensaje.pop();
   char* mensaje = buffer_de_mensajes.pop();
 
-  ROSNODE.print(tipo_de_mensaje);
+  ROSNODE.print(topic_de_mensaje);
   //esperamos y luego leemos la respuesta.
   leer_Serial();
-  if(_buffer != "OK"){
-    //alguna forma de error char* tipo_de_mensaje, char* mensaje
+  if(!strcmp(_buffer, "OK")){
+    //alguna forma de error char* topic_de_mensaje, char* mensaje
     return false;
   }
   //si la respuesta es positiva, enviamos los datos.
   ROSNODE.print(mensaje);
   //esperamos y leemos la respuesta.
   leer_Serial();
-  if(_buffer != "OK"){
+  if(!strcmp(_buffer, "OK")){
     //alguna forma de error
     return false;
   }
   return true;
 }
 
-bool leer_mensaje_Serial(char* tipo_de_mensaje, char* mensaje){
+bool leer_mensaje_Serial(char* topic_de_mensaje, char* mensaje){
   bool res = false;
   leer_Serial();
 
-  if(_buffer != NULL){
-      //reviso que tipo de mensaje es, si es necesario ver el contenido de mensaje y actuar apropiadamente (llamar a un handler para este mensaje)
-      if(_buffer != "???"){
-      //si no es un mensaje de tipo Empty (Claw_Catch, Claw_Release, etc) 
+  if(_buffer[0] != NULL){
+      //reviso que topic de mensaje es, si es necesario ver el contenido de mensaje y actuar apropiadamente (llamar a un handler para este mensaje)
+      if(!topico_en_buffer_es_std_msgs_Empty()){
+      //si no es un mensaje de topic Empty (Claw_Catch, Claw_Release, etc) 
       ROSNODE.print("OK");
       leer_Serial();
       //actuar acordemente.
-      //probablemente quiera un switch aca.  
+      //probablemente quiera un switch aca.
       } 
   }
 
   return res
+}
+
+bool topico_en_buffer_es_std_msgs_Empty(){
+  char topicos[4][] = ["claw_catch", "claw_release", "home", "debug"];
+  bool in = false;
+
+  for(char* topic : topicos){
+    in = in || strcmp(_buffer, topic);
+  }
+
+  return in;
 }
 
 /***************** ROS **************/
