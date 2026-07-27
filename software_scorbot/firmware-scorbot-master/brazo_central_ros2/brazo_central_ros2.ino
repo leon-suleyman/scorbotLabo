@@ -224,31 +224,73 @@ bool mandar_mensaje_Serial(){
 
 bool leer_mensaje_Serial(char* topic_de_mensaje, char* mensaje){
   bool res = false;
+  int id_topic = -1;
   leer_Serial();
 
   if(_buffer[0] != NULL){
       //reviso que topic de mensaje es, si es necesario ver el contenido de mensaje y actuar apropiadamente (llamar a un handler para este mensaje)
-      if(!topico_en_buffer_es_std_msgs_Empty()){
-      //si no es un mensaje de topic Empty (Claw_Catch, Claw_Release, etc) 
-      ROSNODE.print("OK");
-      leer_Serial();
-      //actuar acordemente.
-      //probablemente quiera un switch aca.
-      } 
+      if(!topico_en_buffer_es_std_msgs_Empty(id_topic)){
+        //si no es un mensaje de topic Empty (Claw_Catch, Claw_Release, etc) 
+        id_topic = topico_no_Empty_en_buffer_a_id();
+
+        ROSNODE.print("OK");
+        leer_Serial();
+      }
+
+      res = true;
+
+      switch(id_topic){
+        case 0 : //"claw_catch"
+          handle_claw_catch();
+          break;
+        case 1 : //"claw_release"
+          handle_claw_release();
+          break;
+        case 2 : //"home"
+          handle_home();
+          break;
+        case 3 : //"debug"
+          handle_debug();
+          break;
+        case 4 : //"joint_path_command_enc"
+          handle_joint_path_command_enc();
+          break;
+        case 5 : //"joint_velocities_command"
+          handle_joint_velocities_command();
+          break;
+        case 6 : //no es un mensaje dentro de los tópicos que tenemos.
+          res = false;
+          break;
+      }
   }
 
   return res
 }
 
-bool topico_en_buffer_es_std_msgs_Empty(){
+bool topico_en_buffer_es_std_msgs_Empty(int& id){
   char topicos[4][] = ["claw_catch", "claw_release", "home", "debug"];
   bool in = false;
+  id = 4;
 
   for(char* topic : topicos){
     in = in || strcmp(_buffer, topic);
+    id -= in ? 1 : 0;
   }
 
   return in;
+}
+
+int topico_no_Empty_en_buffer_a_id(){
+  char topicos[2][] = ["joint_path_command_enc", "joint_velocities_command"];
+  bool in = false;
+  int id = 2;
+
+  for(char* topic : topicos){
+    in = in || strcmp(_buffer, topic);
+    id -= in ? 1 : 0;
+  }
+
+  return id + 4;
 }
 
 /***************** ROS **************/

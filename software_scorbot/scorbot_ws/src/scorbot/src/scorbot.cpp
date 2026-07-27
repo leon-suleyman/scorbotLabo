@@ -27,7 +27,7 @@ Scorbot::Scorbot() : rclcpp::Node("scorbot_bridge")
 
   sub_control = this->create_subscription<universal_teleop_msgs::msg::Control>("/universal_teleop/controls", 10, std::bind(&Scorbot::on_controls, this, _1));
   sub_events = this->create_subscription<universal_teleop_msgs::msg::Event>("/universal_teleop/events", 10, std::bind(&Scorbot::on_events, this, _1));
-  vel_pub = this->create_publisher<scorbot_msgs::msg::JointVelocities>("/scorbot/joint_velocities", 1);
+  vel_pub = this->create_publisher<scorbot_msgs::msg::JointVelocities>("/scorbot/joint_velocities_command", 1);
   home_pub = this->create_publisher<std_msgs::msg::Empty>("/scorbot/home", 1);
   
   //joint_trajectory_sub = this->create_subscription<control_msgs::msg::FollowJointTrajectoryActionGoal>("/scorbot/arm_position_controller/follow_joint_trajectory/goal", 10, std::bind(&Scorbot::on_trajectory, this, _1));
