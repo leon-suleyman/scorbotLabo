@@ -80,7 +80,7 @@ ros::Publisher joint_state_pub("/scorbot/joint_states", &joint_state);
 
 /* subscriber de velocidad */
 void on_velocities(const scorbot::JointVelocities& vel_msg);
-ros::Subscriber<scorbot::JointVelocities> vel_sub("/scorbot/joint_velocities", &on_velocities);
+ros::Subscriber<scorbot::JointVelocities> vel_sub("/scorbot/joint_velocities_command", &on_velocities);
 
 //void on_trajectory(const scorbot::JointTrajectory& trajectory);
 //ros::Subscriber<scorbot::JointTrajectory> trajectory_sub("/scorbot/joint_path_command_enc", &on_trajectory);
@@ -323,9 +323,9 @@ void handle_home(){
 
 void handle_joint_path_command_enc(){
 
-  uint32_t posiciones[5] = {0, 0, 0, 0, 0};
+  uint32_t posiciones[NUM_JUNTAS] = {0, 0, 0, 0, 0};
   //para cada articulación
-  for(int joint = 0; joint < 5; joint++){ 
+  for(int joint = 0; joint < NUM_JUNTAS; joint++){ 
     //para cada byte del uint32 que representa la posición de una articulación
     for(int offset_uint = 0; offset_uint < 4; offset_uint++){ 
       //calculamos el offset de donde está el byte relevante en nuestro buffer
@@ -358,7 +358,52 @@ void handle_joint_path_command_enc(){
 }
 
 void handle_joint_velocities_command(){
+  float velocidades[NUM_JUNTAS] = {0.0, 0.0, 0.0, 0.0, 0.0};
+  //para cada articulación
+  for(int joint = 0; joint < NUM_JUNTAS; joint++){ 
+    //armo una union de float y uint32_t para hacer el cambio de 4 chars a un uint_32 y despues a un float.
+    union {
+        float real;
+        uint32_t base;
+      } u_st_velocidad;
+      u_st_velocidad.base = 0;
+    //para cada byte del uint32 que representa la posición de una articulación
+    for(int offset_uint = 0; offset_uint < 4; offset_uint++){ 
+      //calculamos el offset de donde está el byte relevante en nuestro buffer
+      int offset_cstring = joint*4 + offset_uint; 
+      //Hacemos un OR lógico entre uint_32s, donde cada uno tiene un byte original shifteado a su posición correcta.
+      u_st_velocidad.base |= ((uint32_t) (*(_buffer + offset_cstring))) << (8 * offset_uint);
+    }
+    velocidades[joint] = u_st_velocidad.real;
+  }
 
+  current_goal_index = -1; /* desactiva la trayectoria actual */
+  for (int i = 0; i < NUM_JUNTAS; i++)
+  {
+    float vel = velocidades[i]; 
+    switch(i) {
+      case 0:
+        if (vel == 0.0) set_position(1, pos_juntas[0]);
+        else set_speed_junta(0, vel);
+      break;
+      case 1:
+        if (vel == 0.0) set_position(2, pos_juntas[1]);
+        else set_speed_junta(1, vel);
+      break;
+      case 2:
+        if (vel == 0.0) set_position(3, pos_juntas[2]);        
+        else set_speed_junta(2, vel);
+      break;
+      case 3:
+        if (vel == 0.0) set_position(4, pos_juntas[3]);        
+        else set_speed_junta(3, vel);
+      break;
+      case 4:
+        if (vel == 0.0) set_position(5, pos_juntas[4]);        
+        else set_speed_junta(4, vel);
+      break;
+    }
+  }
 }
 
 
@@ -532,21 +577,38 @@ void on_trajectory(const std_msgs::Int32MultiArray& trajectory)
 
 void publish_state(void)
 {
-  float positions[NUM_JUNTAS];
-  joint_state.header.stamp = nh.now();
-  joint_state.name = joint_names;
-  joint_state.name_length = NUM_JUNTAS;
-  joint_state.position = positions;
-    joint_state.position_length = NUM_JUNTAS;
-  joint_state.velocity_length = 0; // TODO: llenar
-  joint_state.effort_length = 0;
+  float posiciones[NUM_JUNTAS];
   
-  positions[0] = ENC2RAD1(pos_juntas[0]);
-  positions[1] = ENC2RAD2(pos_juntas[1]);
-  positions[2] = ENC2RAD3(pos_juntas[2]);
-  positions[3] = ENC2RAD4(pos_juntas[3]);
-  positions[4] = ENC2RAD5(pos_juntas[4]);  
-  joint_state_pub.publish(&joint_state);
+  posiciones[0] = ENC2RAD1(pos_juntas[0]);
+  posiciones[1] = ENC2RAD2(pos_juntas[1]);
+  posiciones[2] = ENC2RAD3(pos_juntas[2]);
+  posiciones[3] = ENC2RAD4(pos_juntas[3]);
+  posiciones[4] = ENC2RAD5(pos_juntas[4]);  
+
+  char mensaje[NUM_JUNTAS*4];
+  mensaje[0] = NULL;
+
+  for(int joint = 0; joint < NUM_JUNTAS; joint++){ 
+    //armo una union de float y uint32_t para hacer el cambio de 4 chars a un uint_32 y despues a un float.
+    union {
+        float real;
+        uint32_t base;
+      } u_st_posicion;
+      u_st_posicion.real = posiciones[joint];
+    //para cada byte del uint32 que representa la posición de una articulación
+    for(int offset_uint = 0; offset_uint < 4; offset_uint++){ 
+      //calculamos el offset de donde está el byte relevante en nuestro buffer
+      int offset_cstring = joint*4 + offset_uint; 
+      //Hacemos un OR lógico entre uint_32s, donde cada uno tiene un byte original shifteado a su posición correcta.
+      u_st_posicion.base |= ((uint32_t) (*(_buffer + offset_cstring))) << (8 * offset_uint);
+      *(mensaje + offset_cstring) = (u_st_posicion.base >> (8 * offset_uint)) & 0xFF;
+    }
+  }
+
+  char topico[] = "joint_states";
+
+  buffer_de_topics_de_mensaje.add(topico);
+  buffer_de_mensajes.add(mensaje);
   
   /*
   trajectory_feedback.header.stamp = nh.now();
