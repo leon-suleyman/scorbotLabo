@@ -249,16 +249,13 @@ bool leer_mensaje_Serial(char* topic_de_mensaje, char* mensaje){
         case 2 : //"home"
           handle_home();
           break;
-        case 3 : //"debug"
-          handle_debug();
-          break;
-        case 4 : //"joint_path_command_enc"
+        case 3 : //"joint_path_command_enc"
           handle_joint_path_command_enc();
           break;
-        case 5 : //"joint_velocities_command"
+        case 4 : //"joint_velocities_command"
           handle_joint_velocities_command();
           break;
-        case 6 : //no es un mensaje dentro de los tópicos que tenemos.
+        case 5 : //no es un mensaje dentro de los tópicos que tenemos.
           res = false;
           break;
       }
@@ -267,10 +264,108 @@ bool leer_mensaje_Serial(char* topic_de_mensaje, char* mensaje){
   return res
 }
 
+void handle_claw_catch(){
+  if(stateClaw == openClaw){
+    digitalWrite(sendClawCommandPin, 1);
+    digitalWrite(sendInterruptToClawPin, 0);
+    delay(10);
+    digitalWrite(sendInterruptToClawPin, 1);
+
+    int clawIsClosed = digitalRead(isClosedClawPin);
+    int clawIsHolding = digitalRead(isHoldingClawPin);
+    int i = 7;
+    while((clawIsClosed != 1) && (clawIsHolding != 1) && (i>0)){
+      int clawIsClosed = digitalRead(isClosedClawPin);
+      int clawIsHolding = digitalRead(isHoldingClawPin);
+      SERIAL_DBG(Serial.print("pins de la garra: "); Serial.print(clawIsClosed); Serial.print(" , "); Serial.println(clawIsHolding));
+      delay(500);
+      i=i-1;
+    }
+    if(clawIsClosed){
+      stateClaw = closedClaw;
+    }else if(clawIsHolding){
+      stateClaw = holdingClaw;
+      //claw_caught_pub.publish(&empty_msg);
+    }
+    digitalWrite(sendInterruptToClawPin, 0);
+  }
+  SERIAL_DBG(Serial.print("Estado de la garra: "); Serial.println(clawStatesStr[stateClaw]));
+}
+
+void handle_claw_release(){
+  if(stateClaw != openClaw){
+    digitalWrite(sendClawCommandPin, 0);
+    digitalWrite(sendInterruptToClawPin, 0);
+    delay(10);
+    digitalWrite(sendInterruptToClawPin, 1);
+
+    int clawIsClosed = digitalRead(isClosedClawPin);
+    int clawIsHolding = digitalRead(isHoldingClawPin);
+    int i = 7;
+    while((clawIsClosed) && (i>0)){
+      int clawIsClosed = digitalRead(isClosedClawPin);
+      int clawIsHolding = digitalRead(isHoldingClawPin);
+      SERIAL_DBG(Serial.print("pins de la garra: "); Serial.print(clawIsClosed); Serial.print(" , "); Serial.println(clawIsHolding));
+      delay(500);
+      i=i-1;
+    }
+    if(i!=0){
+      stateClaw = openClaw;
+    }
+    digitalWrite(sendInterruptToClawPin, 0);
+  }
+  SERIAL_DBG(Serial.print("Estado de la garra: "); Serial.println(clawStatesStr[stateClaw]));
+}
+
+void handle_home(){
+  buscar_home();
+}
+
+void handle_joint_path_command_enc(){
+
+  uint32_t posiciones[5] = {0, 0, 0, 0, 0};
+  //para cada articulación
+  for(int joint = 0; joint < 5; joint++){ 
+    //para cada byte del uint32 que representa la posición de una articulación
+    for(int offset_uint = 0; offset_uint < 4; offset_uint++){ 
+      //calculamos el offset de donde está el byte relevante en nuestro buffer
+      int offset_cstring = joint*4 + offset_uint; 
+      //Hacemos un OR lógico entre uint_32s, donde cada uno tiene un byte original shifteado a su posición correcta.
+      posiciones[joint] |= ((uint32_t) (*(_buffer + offset_cstring))) << (8 * offset_uint);
+    }
+  }
+
+  joint_trajectory_goals[0] = posiciones[0];
+  joint_trajectory_goals[1] = posiciones[1];
+  joint_trajectory_goals[2] = posiciones[2];
+  joint_trajectory_goals[3] = posiciones[3];
+  joint_trajectory_goals[4] = posiciones[4];
+  
+  
+  reached_current_goal[0] = false;
+  reached_current_goal[1] = false;
+  reached_current_goal[2] = false;
+  reached_current_goal[3] = false;
+  reached_current_goal[4] = false;
+
+  unreached_goal = true;  
+  
+  set_position(1, joint_trajectory_goals[0]);
+  set_position(2, joint_trajectory_goals[1]);
+  set_position(3, joint_trajectory_goals[2]);
+  set_position(4, joint_trajectory_goals[3]);
+  set_position(5, joint_trajectory_goals[4]);
+}
+
+void handle_joint_velocities_command(){
+
+}
+
+
 bool topico_en_buffer_es_std_msgs_Empty(int& id){
-  char topicos[4][] = ["claw_catch", "claw_release", "home", "debug"];
+  char topicos[4][] = ["claw_catch", "claw_release", "home"];
   bool in = false;
-  id = 4;
+  id = 3;
 
   for(char* topic : topicos){
     in = in || strcmp(_buffer, topic);
@@ -283,14 +378,14 @@ bool topico_en_buffer_es_std_msgs_Empty(int& id){
 int topico_no_Empty_en_buffer_a_id(){
   char topicos[2][] = ["joint_path_command_enc", "joint_velocities_command"];
   bool in = false;
-  int id = 2;
+  int id = 5;
 
   for(char* topic : topicos){
     in = in || strcmp(_buffer, topic);
     id -= in ? 1 : 0;
   }
 
-  return id + 4;
+  return id;
 }
 
 /***************** ROS **************/
@@ -327,7 +422,7 @@ void on_velocities(const scorbot::JointVelocities& vel_msg)
 
 void on_home(const std_msgs::Empty& msg)
 {
-  buscar_home();
+  buscar_home(); 
 }
 
 //when ordered to catch something we send the close signal to the claw and the wait 3,5seconds to check if it closed correctly.
