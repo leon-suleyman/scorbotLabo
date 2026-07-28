@@ -286,6 +286,9 @@ void handle_claw_catch(){
     }else if(clawIsHolding){
       stateClaw = holdingClaw;
       //claw_caught_pub.publish(&empty_msg);
+      buffer_de_mensajes.add("");
+      buffer_de_topics_de_mensaje.add("claw_caught");
+      mandar_mensaje_Serial();
     }
     digitalWrite(sendInterruptToClawPin, 0);
   }
@@ -920,12 +923,18 @@ void loop(void)
   print_status();
   #else
   nh.spinOnce();
+  leer_mensaje_Serial();
   publish_state();
+  mandar_mensaje_Serial();
+
   #endif
   int clawIsHolding = digitalRead(isHoldingClawPin);
   if(clawIsHolding && stateClaw == closedClaw){
     stateClaw = holdingClaw;
-    claw_caught_pub.publish(&empty_msg);
+    //claw_caught_pub.publish(&empty_msg);
+    buffer_de_mensajes.add("");
+    buffer_de_topics_de_mensaje.add("claw_caught");
+    mandar_mensaje_Serial();
   }
   delay(100);
 }

@@ -9,6 +9,11 @@
         * Migrar el firmware del scorbot.
             * No hay soporte para MicroROS. Hay que hacer una comunicación por serial a mano.
                 Puede ser un nodo que pasa los mensajes que le llegan de ROS a Strings para pasarle por serial al Mega, y recibe Strings para pasar a mensaje de ROS. Talvez podría estar bueno que se turnen 1 y 1 en leer/escribir mensajes? si no hay para leer, escriben directo o esperan un poquito.
+                ° Escritos los reemplazos de la comunicación.
+                * Borrada la biblioteca de ROS.
+                * Testeada la comunicación por serial.
+                * Armar el nodo de ROS2 que se comunica por serial.
+                * Testeado de la comunicación entre el nodo y la placa.
         * Integrar/Migrar al MoveIt! de ROS2
 
 
